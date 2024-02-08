@@ -1,0 +1,49 @@
+############# French navigation ##############
+
+# main menu
+[[main]]
+weight = 1
+name = "Accueil"
+url = ""
+hasChildren = false
+
+
+[[main]]
+name = "Comment ça marche ?"
+url = "how-it-works/"
+weight = 4
+
+
+[[main]]
+name = "Contact"
+url = "contact/"
+weight = 8
+
+
+
+### footer menus
+
+# footer_menu_3
+[[footer_menu_3]]
+name = "Contact"
+url = "contact/"
+weight = 1
+
+[[footer_menu_3]]
+name = "Privacy Policy"
+url = "#!"
+weight = 2
+
+[[footer_menu_3]]
+name = "Terms & Conditions"
+url = "#!"
+weight = 3
+
+
+# footer_menu_4
+[[footer_menu_4]]
+name = "Comment ça marche"
+url = "how-it-works/"
+weight = 1
+
+

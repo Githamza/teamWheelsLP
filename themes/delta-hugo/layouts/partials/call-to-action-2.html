@@ -1,0 +1,57 @@
+{{ if .Params.call_to_action.enable }}
+  <section class="section pb-0 call-to-action call-to-action-2">
+    <div class="container container-delta">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="block bg-white rounded-lg shadow">
+            <div class="row g-0 align-items-center">
+              <div class="col-lg-8">
+                <div class="content-block">
+                  <h3 class="text-capitalize mb-2">
+                    {{ .Params.call_to_action.title | markdownify }}
+                  </h3>
+                  <p class="mb-4">
+                    {{ .Params.call_to_action.subtitle | markdownify }}
+                  </p>
+                  {{ if .Params.call_to_action.button_label }}
+                    <form
+                      action="https://formspree.io/f/mnqepday"
+                      method="POST">
+                      <div class="input-group mb-3">
+                        <input
+                          required
+                          type="email"
+                          name="email"
+                          class="form-control text-dark"
+                          placeholder="Enter your email" />
+                        <button class="btn btn-primary" type="submit">
+                          {{ .Params.call_to_action.button_label }}
+                        </button>
+                      </div>
+                    </form>
+                  {{ end }}
+                </div>
+              </div>
+              {{ with .Params.call_to_action.image }}
+                <div class="col-lg-4">
+                  {{ $img:= resources.Get . }}
+                  {{ $img:= $img.Resize "425x" }}
+                  {{ $imgWebp:= $img.Resize "425x webp" }}
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    class="rounded-lg img-fluid"
+                    width="{{ $img.Width }}"
+                    height="{{ $img.Height }}"
+                    src="{{ $imgWebp.RelPermalink }}"
+                    alt="cta Image"
+                    onerror="this.onerror=null;this.src='{{ $img.RelPermalink }}'" />
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
