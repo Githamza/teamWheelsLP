@@ -2,7 +2,9 @@
 <title>{{ .Title | default site.Title }}</title>
 
 <!-- responsive meta -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=5" />
 
 <!-- theme meta -->
 <meta name="theme-name" content="delta-hugo" />
@@ -36,20 +38,37 @@
 
 
 <!-- matomo analytics -->
-{{/*  {{ partialCached "matomo-analytics.html" . }}  */}}
-
+{{/* {{ partialCached "matomo-analytics.html" . }} */}}
 
 <!--  Baidu analytics -->
-{{/*  {{ partialCached "baidu-analytics.html" . }}  */}}
-
+{{/* {{ partialCached "baidu-analytics.html" . }} */}}
 
 <!-- Plausible Analytics -->
-{{/*  {{ partialCached "plausible-analytics.html" . }}  */}}
-
+{{/* {{ partialCached "plausible-analytics.html" . }} */}}
 
 <!-- Counter Analytics -->
-{{/*  {{ partialCached "counter-analytics.html" . }}  */}}
-
+{{/* {{ partialCached "counter-analytics.html" . }} */}}
 
 <!-- Crisp Chat -->
 {{ partialCached "crisp-chat.html" . }}
+
+
+<!-- MS Clarity -->
+{{ with site.Params.ms_clarity }}
+  {{ if .enable }}
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "{{.ms_clarity_code}}");
+    </script>
+  {{ end }}
+{{ end }}

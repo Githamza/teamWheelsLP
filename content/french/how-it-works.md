@@ -47,14 +47,14 @@ image_and_content_blocks:
     title: "Rechercher des covoiturages disponibles"
     image: "images/how-it-works/04.png"
     content_position: "right" # Value will be - "left/right"
-    content: "Les collaborateurs peuvent rechercher des covoiturages disponibles en fonction de leur lieu de départ et d'arrivée et de l'heure de départ."
+    content: "Les collaborateurs peuvent rechercher des covoiturages disponibles en fonction de leur lieu de départ, d'arrivée et de l'heure de départ."
 
   - enable: true
     subtitle: ""
     title: "Soumettre une demande de covoiturage"
     image: "images/how-it-works/06.jpg"
     content_position: "left" # Value will be - "left/right"
-    content: "Les collaborateurs peuvent soumettre une demande de covoiturage pour un trajet spécifique"
+    content: "Les collaborateurs peuvent soumettre une demande de covoiturage pour un trajet spécifique."
 
   - enable: true
     subtitle: ""
@@ -68,7 +68,7 @@ image_and_content_blocks:
     title: "Heure de départ"
     image: "images/how-it-works/07.jpg"
     content_position: "left" # Value will be - "left/right"
-    content: "Le bot rapelle les participants du covoiturage quand il est temps de partir en envoyant une notification et un message dans le chat. <br> Le covoitureur peut décaller  le covoiturage en répondant au message du bot"
+    content: "Le bot rappelle les participants du covoiturage quand il est temps de partir en envoyant une notification et un message dans le chat. <br> Le covoitureur peut décaller  le covoiturage en répondant au message du bot."
 
 
   - enable: true
@@ -79,7 +79,13 @@ image_and_content_blocks:
     content: "Ayez une vue d'ensemble sur l'utilisation de TeamWheels dans votre entreprise sans pour autant autant enfreindre la vie privée de vos collaborateurs."
 
 
-
+call_to_action:
+  enable: true
+  title: "Prêt à commencer ?"
+  subtitle: "Demandez une démo et découvrez comment TeamWheels est simple à utiliser et peut vous aider à développer le covoiturage en entreprise. <br> Un essai gratuit est disponible."
+  button_label : "demander une démo"
+  button_link : "contact/"
+  image : "images/cta.png"
 
 
 ---

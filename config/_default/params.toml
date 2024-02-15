@@ -72,6 +72,16 @@ description = "TeamWheel est une application de covoiturage pour les équipes de
 author = "Themefisher"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
+# MS Clarity
+[ms_clarity]
+enable = true
+ms_clarity_code = "kzo1gtmmjs"
+
+# Crisp Chat
+[crisp_chat]
+enable = true
+crisp_website_id = "4be5950a-3626-48b5-984f-4127bec3f41f"
+
 # matomo tracking: see https://matomo.org/
 [matomo]
 enable = false

@@ -3,8 +3,8 @@
 # banner
 banner:
   subtitle: "TeamWheels"
-  title: "Le covoiturage en entreprise<br> n'a jamais été aussi simple !"
-  description: "TeamWheels est une solution de covoiturage d'entreprise intégrée  <br>  à Teams qui permet à vos collaborateurs de se déplacer ensemble en toute sécurité et en toute confiance."
+  title: "Le covoiturage en entreprise n'a jamais été aussi simple !"
+  description: "TeamWheels est une solution de covoiturage d'entreprise intégrée à Teams qui permet à vos collaborateurs de se déplacer ensemble en toute sécurité et en toute confiance."
   button:
     enable: true
     button_label: "Demander une demo"
@@ -69,7 +69,7 @@ work_process:
 image_and_content_blocks:
   - enable: true
     subtitle: "Pourquoi choisir TeamWheels ?"
-    title: "TeamWheels est proche de vos collaborateurs, elle les rapproche aussi !"
+    title: "TeamWheels est proche de vos collaborateurs, les rapproche aussi !"
     image: "images/why_use_teamWheels.png"
     content_position: "left" # Value will be - "left/right"
     content: "Notre solution s'interface avec Teams, l'outil de collaboration des entreprises.<br>TeamWheels est donc accessible à tous vos collaborateurs, sans qu'ils aient à installer une nouvelle application.<br>
@@ -84,9 +84,13 @@ image_and_content_blocks:
     * TeamWheels est disponible sur tous les appareils, PC, tablettes et smartphones.
 
     "
+    button:
+      enable: true
+      label: "Demander une démo"
+
 
   - enable: true
-    subtitle: "Que Ce Que Vous Rapporte TeamWheels ?"
+    subtitle: "Que Vous apporte TeamWheels ?"
     title: "Votre entreprise au centre du covoiturage"
     image: "images/carpoolingBenefits.png"
     content_position: "right" # Value will be - "left/right"
@@ -100,16 +104,19 @@ image_and_content_blocks:
     content_position: "left" # Value will be - "left/right"
     content: "Accedez à des statistiques détaillées sur l'utilisation du covoiturage dans votre entreprise et sur les économies réalisées grâce à notre solution.
 
-    * Nombre de trajets effectués
+    * Nombre de trajets effectués.
 
-    * Nombre de collaborateurs ayant effectué du covoiturage
+    * Nombre de collaborateurs ayant effectué du covoiturage.
 
-    * Économies réalisées en CO2
+    * Économies réalisées en CO2.
 
-    * Nombre de kilomètres parcourus en covoiturage
+    * Nombre de kilomètres parcourus en covoiturage.
     
-    * Nombre de trajets effectués par collaborateur
+    * Nombre de trajets effectués par collaborateur.
 "
+    button:
+      enable: true
+      label: "Demander une démo"
   - enable: true
     subtitle: "Coup de pouce du gouvernement"
     title: "Charte d’engagement en faveur du covoiturage des salariés"
@@ -126,11 +133,7 @@ image_and_content_blocks:
     une charte d'engagement en faveur du covoiturage en entreprise
     </a>
     . Déjà 16 grands employeurs, représentatifs de près d'un million de salariés, sont signataires. Ils s'engagent à mettre en place des actions concrètes pour développer le covoiturage domicile-travail. <br> TeamWheels est la solution idéale pour répondre à cette charte et bénéficier des avantages fiscaux associés."
-    button:
-      enable: false
-      label: "En savoir plus"
-      icon: "fas fa-arrow-right"
-      link: "contact/"
+
 
 
 # testimonials
@@ -166,16 +169,20 @@ blog:
 
   button:
     enable: true
-    link: "blog/"
-    label: "Read All Blogs"
-    icon: "fas fa-arrow-right"
+    link: "how-it-works/"
+    label: "Et comment ça fonctionne ?"
+
+next_step_button:
+  enable: true
+  link: "how-it-works/"
+  label: "Et comment ça fonctionne ?"
 
 
 # call_to_action
 call_to_action:
   enable: true
   title: "Prêt à commencer ?"
-  subtitle: "Demander une démo et découvrez comment TeamWheels est simple à utiliser et peut vous aider à développer le covoiturage en entreprise. <br> Un essai gratuit est disponible."
+  subtitle: "Demandez une démo et découvrez comment TeamWheels est simple à utiliser et peut vous aider à développer le covoiturage en entreprise. <br> Un essai gratuit est disponible."
   button_label : "demander une démo"
   button_link : "contact/"
   image : "images/cta.png"
