@@ -7,14 +7,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-
-# Hugo (generated / cache)
-public/
-resources/_gen/
-.hugo_build.lock
-hugo_stats.json
-
-# Editor / tooling
+public/**
+!public/.gitkeep
 .cursor/
-
-
+._bmad/
+public/
