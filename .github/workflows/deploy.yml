@@ -105,7 +105,8 @@ jobs:
             --content-paths "/*"
 
       - name: Summary
-        run: echo "### Deployed to Azure Storage: \`${{ needs.version.outputs.version }}\`" >> "$GITHUB_STEP_SUMMARY"
+        run: |
+          echo "### Deployed to Azure Storage: \`${{ needs.version.outputs.version }}\`" >> "$GITHUB_STEP_SUMMARY"
 
   # ─── Tag release after deployment succeeds ─────────────────────────────
   tag-release:
