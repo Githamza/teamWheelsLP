@@ -1,14 +1,14 @@
 ---
 title: "Contact"
-description: "Libero consequuntur doloremque amet, cum fugiat ipsam blanditiis corrupti praesentium quis."
+description: "Démarrez votre essai gratuit de 30 jours et découvrez comment TeamWheels peut transformer la mobilité de vos collaborateurs."
 draft: false
 layout: "contact"
 
 # contact
 contact:
-  subtitle: ""
-  title: "Programmer une démo"
-  description: "Pourquoi ne pas programmer une démo pour voir comment TeamWheels peut vous aider à améliorer la mobilité de vos collaborateurs?"
+  subtitle: "Essai gratuit 30 jours"
+  title: "Démarrez votre essai gratuit"
+  description: "Remplissez ce formulaire et un membre de notre équipe vous contactera sous 24h pour configurer votre espace TeamWheels. <br><br> ✅ Essai gratuit 30 jours &nbsp;&nbsp; ✅ Déploiement accompagné &nbsp;&nbsp; ✅ Sans engagement"
 
 # contact info
 contact_info:

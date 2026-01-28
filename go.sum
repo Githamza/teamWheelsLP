@@ -12,8 +12,6 @@ github.com/gethugothemes/hugo-modules/components/preloader v0.0.0-20230705095442
 github.com/gethugothemes/hugo-modules/components/preloader v0.0.0-20230705095442-1f2d5ac8b18d/go.mod h1:FP0iQ3tMOesuWFZhLst2KEvUEYPb5Jk1GW+QBP9lrwg=
 github.com/gethugothemes/hugo-modules/components/render-link v0.0.0-20230705095442-1f2d5ac8b18d h1:jQA77cMSmYoCD8LZJsIxwZBPtoACgSv9pY4LjmFTDAg=
 github.com/gethugothemes/hugo-modules/components/render-link v0.0.0-20230705095442-1f2d5ac8b18d/go.mod h1:z3YcIeEBUonAoRDY1/Jv1ojNVkZ5ud35a0Nn8L4Inx0=
-github.com/gethugothemes/hugo-modules/components/social-share v0.0.0-20230705095442-1f2d5ac8b18d h1:YafsTBhqpK/7zPms9rK4D5wwEsfuFYujqhFknD1zNfs=
-github.com/gethugothemes/hugo-modules/components/social-share v0.0.0-20230705095442-1f2d5ac8b18d/go.mod h1:Gcj4RM/EBECsJMZnPeWjfy/1roRYGqzV9GYNmeHkvFA=
 github.com/gethugothemes/hugo-modules/components/valine-comment v0.0.0-20230705095442-1f2d5ac8b18d h1:C/J0lazZXjGwf5qe7x3c8vRng8zNKIxVCPT4bpJOl84=
 github.com/gethugothemes/hugo-modules/components/valine-comment v0.0.0-20230705095442-1f2d5ac8b18d/go.mod h1:fqeY2MbVoFf9OB8dtyJTnfNNa3qChIX9wsY32VVBYrQ=
 github.com/gethugothemes/hugo-modules/gallery-slider v0.0.0-20230705095442-1f2d5ac8b18d h1:q3GLopQAtqYaB0+/E/30TdrTMrai/Tg9WEpL2SJCoIQ=
@@ -26,18 +24,10 @@ github.com/gethugothemes/hugo-modules/images v0.0.0-20230705095442-1f2d5ac8b18d 
 github.com/gethugothemes/hugo-modules/images v0.0.0-20230705095442-1f2d5ac8b18d/go.mod h1:FKliP3qOW9diIcQeLtyZ0Hdhg3PL8bdAkC/6O+XtU90=
 github.com/gethugothemes/hugo-modules/pwa v0.0.0-20230705095442-1f2d5ac8b18d h1:MpWB3xZuPIttuRmAuaC8AHPcMmmPilq2VfmJSvV6aco=
 github.com/gethugothemes/hugo-modules/pwa v0.0.0-20230705095442-1f2d5ac8b18d/go.mod h1:TRv7iszdfo37O1PbBEE+S8X/enAdpRIxK5DGrp13Qbo=
-github.com/gethugothemes/hugo-modules/seo-tools/baidu-analytics v0.0.0-20230705095442-1f2d5ac8b18d h1:SAfuxvf36uy4QIhNRz2UIvxlsZQpb9BBvdy7vKnUcPc=
-github.com/gethugothemes/hugo-modules/seo-tools/baidu-analytics v0.0.0-20230705095442-1f2d5ac8b18d/go.mod h1:D/bbq2hSHE+r582zpC3rEdvuk8GufDnq9sGL3xCk/C0=
 github.com/gethugothemes/hugo-modules/seo-tools/basic-seo v0.0.0-20230705095442-1f2d5ac8b18d h1:/4LCpHtGjTUCepN5S53I0mcHos5K4vXM8xGQvPgKaN4=
 github.com/gethugothemes/hugo-modules/seo-tools/basic-seo v0.0.0-20230705095442-1f2d5ac8b18d/go.mod h1:Q8dPgjamV7pxwKSQyWV21Xwh5CGi23/k+M8HPTphYbs=
-github.com/gethugothemes/hugo-modules/seo-tools/counter-analytics v0.0.0-20230705095442-1f2d5ac8b18d h1:JDY985GHu4ya5mNq4atp6Jwa66IpjsqVpGu7jNyuSR8=
-github.com/gethugothemes/hugo-modules/seo-tools/counter-analytics v0.0.0-20230705095442-1f2d5ac8b18d/go.mod h1:3kPooRg0PWUkciccThPQbBvIpTfSCo7W9mc3a5GxXHs=
 github.com/gethugothemes/hugo-modules/seo-tools/google-tag-manager v0.0.0-20230705095442-1f2d5ac8b18d h1:fsCAZMRB4Z51rBCzukLoMqDU0dqkj268zsUMo41Bqxk=
 github.com/gethugothemes/hugo-modules/seo-tools/google-tag-manager v0.0.0-20230705095442-1f2d5ac8b18d/go.mod h1:cCq50yd55eFTrpqOfeyOK5X0hU5E7qxsqOD7IzTsgLA=
-github.com/gethugothemes/hugo-modules/seo-tools/matomo-analytics v0.0.0-20230705095442-1f2d5ac8b18d h1:goXIeNuaH9UWbvXTnAwxe7OswMA6RJs5MIlddrXp4xo=
-github.com/gethugothemes/hugo-modules/seo-tools/matomo-analytics v0.0.0-20230705095442-1f2d5ac8b18d/go.mod h1:P2GLltWjXFBJlatFKh4l6WOBszW7+f09myLkZoBBgEs=
-github.com/gethugothemes/hugo-modules/seo-tools/plausible-analytics v0.0.0-20230705095442-1f2d5ac8b18d h1:R3LY1CIhd6dRRfDxxmw5DcE6tlWc8z5eVMOjVf6MsRA=
-github.com/gethugothemes/hugo-modules/seo-tools/plausible-analytics v0.0.0-20230705095442-1f2d5ac8b18d/go.mod h1:MOJtK8ttzyqQiqs0xQkk6xgPaxGbcH7WI5thobpNvqg=
 github.com/gethugothemes/hugo-modules/seo-tools/site-verifications v0.0.0-20230705095442-1f2d5ac8b18d h1:uruEG9JH6C1jP07LFeut03+a4foZ70CH+VS0EvJQjSk=
 github.com/gethugothemes/hugo-modules/seo-tools/site-verifications v0.0.0-20230705095442-1f2d5ac8b18d/go.mod h1:iXielaya126qJscz7Bc2G2WB91moloQOoWru6UoBUyE=
 github.com/gethugothemes/hugo-modules/shortcodes/button v0.0.0-20230705095442-1f2d5ac8b18d h1:/iW6rzcTpffNsKi4VvK2yloYqHZqJU/wz/1VONMMVXs=

@@ -1,6 +1,6 @@
 ######################## default configuration ####################
-baseURL = "https://www.teamwheelsapp.com/"
-title = "TeamWheels - Le covoiturage pour les entreprises facilité"
+baseURL = "http://localhost:3000/"
+title = "TeamWheels - Covoiturage Entreprise intégré à Microsoft Teams"
 theme = "delta-hugo"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 timeZone = "Europe/Paris"

@@ -1,17 +1,16 @@
 ---
 title: "How It Works"
-description: "Libero consequuntur doloremque amet, cum fugiat ipsam blanditiis corrupti praesentium quis."
-draft: false
+description: "TeamWheels is a carpooling solution that is easy to use and can help you develop carpooling in your company"
 layout: "how-it-works"
 
 # banner
 banner:
-  subtitle: ""
-  title: "Faites la différence sur la route et cultivez la solidarité au travail!"
-  description: ""
+  subtitle: "Simple, rapide, intégré"
+  title: "Comment fonctionne TeamWheels ?"
+  description: "En 5 minutes, transformez Microsoft Teams en plateforme de covoiturage pour vos équipes."
   button:
     enable: true
-    button_label: "Demandez une démo"
+    button_label: "🚀 Essai gratuit 30 jours"
     icon: "fas fa-arrow-right"
     link: "contact/"
 
@@ -30,17 +29,17 @@ image_and_content_blocks:
 
   - enable: true
     subtitle: ""
-    title: "un bot qui répond à vos besoins"
+    title: "Un bot qui répond à vos besoins"
     image: "images/how-it-works/bot.jpg"
     content_position: "right" # Value will be - "left/right"
     content: "Notre bot est là pour vous aider à organiser vos trajets, à trouver des covoitureurs et avoir plus d'informations sur vos trajets"
 
   - enable: true
     subtitle: ""
-    title: "Déclarer vos trajets en un clic"
+    title: "Déclarez vos trajets en un clic"
     image: "images/how-it-works/03.jpg"
     content_position: "left" # Value will be - "left/right"
-    content: "le covoitureur déclare son trajet grâce auc commandes prédéfinis par le bost. il mentionne la date/heure du trajet , le point de départ et d'arrivée et le nombre de places disponibles."
+    content: "Le covoitureur déclare son trajet grâce aux commandes prédéfinies par le bot. Il mentionne la date/heure du trajet, le point de départ et d'arrivée et le nombre de places disponibles."
 
   - enable: true
     subtitle: ""
@@ -68,7 +67,7 @@ image_and_content_blocks:
     title: "Heure de départ"
     image: "images/how-it-works/07.jpg"
     content_position: "left" # Value will be - "left/right"
-    content: "Le bot rappelle les participants du covoiturage quand il est temps de partir en envoyant une notification et un message dans le chat. <br> Le covoitureur peut décaller  le covoiturage en répondant au message du bot."
+    content: "Le bot rappelle les participants du covoiturage quand il est temps de partir en envoyant une notification et un message dans le chat. <br> Le covoitureur peut décaler le covoiturage en répondant au message du bot."
 
 
   - enable: true
@@ -76,14 +75,14 @@ image_and_content_blocks:
     title: "Un tableau de bord pour les administrateurs"
     image: "images/how-it-works/dashboard.png"
     content_position: "right" # Value will be - "left/right"
-    content: "Ayez une vue d'ensemble sur l'utilisation de TeamWheels dans votre entreprise sans pour autant autant enfreindre la vie privée de vos collaborateurs."
+    content: "Ayez une vue d'ensemble sur l'utilisation de TeamWheels dans votre entreprise sans pour autant enfreindre la vie privée de vos collaborateurs."
 
 
 call_to_action:
   enable: true
-  title: "Prêt à commencer ?"
-  subtitle: "Demandez une démo et découvrez comment TeamWheels est simple à utiliser et peut vous aider à développer le covoiturage en entreprise. <br> Un essai gratuit est disponible."
-  button_label : "demander une démo"
+  title: "🚀 Prêt à transformer vos trajets domicile-travail ?"
+  subtitle: "Rejoignez les entreprises qui facilitent le covoiturage de leurs équipes et réduisent leur empreinte carbone. <br><br> <strong>Offre de lancement :</strong> Essai gratuit 30 jours + déploiement accompagné."
+  button_label : "Commencer mon essai gratuit →"
   button_link : "contact/"
   image : "images/cta.png"
 

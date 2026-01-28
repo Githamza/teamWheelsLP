@@ -26,8 +26,8 @@ theme_copyright = true
 career_form_action = "#!" # career form works with https://formspree.io or any formspree-alternatives
 
 # OpenGraph / Twitter Card metadata
-description = "This is meta description"
-author = "Themefisher"
+description = "TeamWheels - La solution de covoiturage intégrée à Microsoft Teams. Réduisez les frais de trajet et l'empreinte carbone de votre entreprise. Essai gratuit 30 jours."
+author = "TeamWheels"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
 # Preloader
@@ -37,9 +37,9 @@ preloader = "images/logo.png" # use jpg, png, svg or gif format.
 
 # contact info
 [contact_info]
-address = "9567 Turner Trace Apt. BC C3G8A4"
-mobile = "+211234565523"
-email = "info@email.com"
+address = ""
+mobile = ""
+email = "contact@teamwheels.fr"
 # contact form action
 contact_form_action = "https://formspree.io/f/mnqepday" # contact form works with https://formspree.io or any formspree-alternatives
 
@@ -58,18 +58,18 @@ link = "#!"
 # Call to action
 [call_to_action]
 enable = true
-title = "test"
-subtitle = "Pellentesque in ipsum id orci porta dapibus.porttitor lectus nibh. <br> Praesent sapien massa, convallis a pellentesque nec nisi."
-button_label = "Contact Us"
+title = "Lancez le covoiturage dans votre entreprise"
+subtitle = "Rejoignez les entreprises qui facilitent les trajets de leurs équipes et réduisent leur empreinte carbone. <br> <strong>Offre de lancement :</strong> Essai gratuit 30 jours + déploiement accompagné."
+button_label = "Commencer mon essai gratuit →"
 button_link = "contact/"
 image = "images/cta.png"
 
 
 # seo meta data for OpenGraph / Twitter Card
 [metadata]
-keywords = [ "Carpooling", "Teams application", "covoiturage"]
-description = "TeamWheel est une application de covoiturage pour les équipes de travail. Elle permet de faciliter le covoiturage entre collègues et de réduire les coûts de transport"
-author = "Themefisher"
+keywords = [ "Covoiturage entreprise", "Microsoft Teams covoiturage", "covoiturage domicile travail", "forfait mobilité durable", "FMD", "RSE mobilité", "application covoiturage B2B", "réduction empreinte carbone entreprise"]
+description = "TeamWheels - La solution de covoiturage intégrée à Microsoft Teams. Réduisez les frais de trajet et l'empreinte carbone de votre entreprise. Essai gratuit 30 jours."
+author = "TeamWheels"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
 # MS Clarity
@@ -122,4 +122,4 @@ button = "I Accept"
 [[social]]
 title = "linkedin"
 icon = "fab fa-linkedin" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "https://www.linkedin.com/company/teamweels/"
+link = "https://www.linkedin.com/company/teamwheels/"

@@ -22,7 +22,7 @@
                         type="email"
                         name="email"
                         class="form-control text-dark"
-                        placeholder="Enter your email" />
+                        placeholder="Entrez votre email professionnel" />
                       <button class="btn btn-primary" type="submit">
                         {{ .button_label }}
                       </button>
@@ -53,13 +53,14 @@
                 {{ $img:= $img.Resize "1000x" }}
                 {{ $imgWebp:= $img.Resize "1000x webp" }}
                 <img
-                  loading="lazy"
+                  loading="eager"
                   decoding="async"
+                  fetchpriority="high"
                   class="img-fluid"
                   width="{{ $img.Width }}"
                   height="{{ $img.Height }}"
                   src="{{ $imgWebp.RelPermalink }}"
-                  alt="Banner Image"
+                  alt="TeamWheels - Covoiturage intégré à Microsoft Teams"
                   onerror="this.onerror=null;this.src='{{ $img.RelPermalink }}'" />
               </div>
             {{ end }}
@@ -260,7 +261,7 @@
                           type="email"
                           name="email"
                           class="form-control text-dark"
-                          placeholder="Enter your email" />
+                          placeholder="Entrez votre email professionnel" />
                         <button class="btn btn-primary" type="submit">
                           {{ .label }}
                         </button>
@@ -533,7 +534,7 @@
   {{ with .Params.next_step_button }}
     {{ if .enable }}
       <div class="text-center mt-5 pt-2">
-        <a href="{{ .link | relLangURL }}" class="btn btn-primary">
+        <a href="{{ .link | relLangURL }}" class="btn btn-dark">
           {{ .label }} <i class="arrow-right {{ .icon }}"></i>
         </a>
       </div>
