@@ -3,7 +3,7 @@
 languageName = "En"
 languageCode = "en-us"
 contentDir = "content/english"
-weight = 1
+weight = 2
 
 [en.params]
 # copyright
@@ -16,7 +16,7 @@ copyright = "Copyright by hmz-digital"
 languageName = "Fr"
 languageCode = "fr-fr"
 contentDir = "content/french"
-weight = 2
+weight = 1
 
 [fr.params]
 # copyright

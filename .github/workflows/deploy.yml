@@ -75,7 +75,7 @@ jobs:
     needs: [version, build]
     environment: production
     env:
-      AZURE_CDN_PROFILE: ${{ secrets.AZURE_CDN_PROFILE }}
+      AZURE_FRONTDOOR_PROFILE: ${{ secrets.AZURE_FRONTDOOR_PROFILE }}
     steps:
       - name: Download build artifact
         uses: actions/download-artifact@v4
@@ -117,15 +117,16 @@ jobs:
             done
           done
 
-      - name: Purge CDN endpoint (optional)
-        if: ${{ env.AZURE_CDN_PROFILE != '' }}
+      - name: Purge Front Door cache (optional)
+        if: ${{ env.AZURE_FRONTDOOR_PROFILE != '' }}
         continue-on-error: true
         run: |
-          az cdn endpoint purge \
+          az afd endpoint purge \
             --resource-group "${{ secrets.AZURE_RESOURCE_GROUP }}" \
-            --profile-name "${{ secrets.AZURE_CDN_PROFILE }}" \
-            --name "${{ secrets.AZURE_CDN_ENDPOINT }}" \
-            --content-paths "/*"
+            --profile-name "${{ secrets.AZURE_FRONTDOOR_PROFILE }}" \
+            --endpoint-name "${{ secrets.AZURE_FRONTDOOR_ENDPOINT }}" \
+            --content-paths "/*" \
+            --domains "${{ secrets.AZURE_FRONTDOOR_DOMAIN }}"
 
       - name: Summary
         run: |
