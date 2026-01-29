@@ -175,15 +175,15 @@ testimonials:
 
 # blog
 blog:
-  enable: false
+  enable: true
   subtitle: "Ressources"
   title: "Actualités et guides pratiques"
   description: "Découvrez nos conseils pour développer le covoiturage dans votre entreprise"
 
   button:
     enable: true
-    link: "how-it-works/"
-    label: "Découvrir comment ça marche →"
+    link: "blog/"
+    label: "Voir tous les articles →"
 
 next_step_button:
   enable: true
