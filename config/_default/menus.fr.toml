@@ -7,17 +7,25 @@ name = "Accueil"
 url = ""
 hasChildren = false
 
-
 [[main]]
 name = "Comment ça marche ?"
 url = "how-it-works/"
-weight = 4
+weight = 2
 
+[[main]]
+name = "Tarifs"
+url = "pricing/"
+weight = 3
+
+[[main]]
+name = "Blog"
+url = "blog/"
+weight = 4
 
 [[main]]
 name = "Contact"
 url = "contact/"
-weight = 8
+weight = 5
 
 
 
@@ -45,5 +53,15 @@ weight = 3
 name = "Comment ça marche"
 url = "how-it-works/"
 weight = 1
+
+[[footer_menu_4]]
+name = "Tarifs"
+url = "pricing/"
+weight = 2
+
+[[footer_menu_4]]
+name = "Blog"
+url = "blog/"
+weight = 3
 
 
