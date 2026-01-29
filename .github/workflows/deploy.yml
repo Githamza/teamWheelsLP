@@ -74,8 +74,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: [version, build]
     environment: production
-    env:
-      AZURE_CDN_PROFILE: ${{ secrets.AZURE_CDN_PROFILE }}
     steps:
       - name: Download build artifact
         uses: actions/download-artifact@v4
@@ -98,7 +96,7 @@ jobs:
             --auth-mode login
 
       - name: Purge CDN endpoint (optional)
-        if: ${{ env.AZURE_CDN_PROFILE != '' }}
+        if: ${{ secrets.AZURE_CDN_PROFILE != '' }}
         continue-on-error: true
         run: |
           az cdn endpoint purge \
