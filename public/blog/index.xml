@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on TeamWheels - Le covoiturage pour les entreprises facilité</title><link>http://localhost:3000/blog/</link><description>Recent content in Blog on TeamWheels - Le covoiturage pour les entreprises facilité</description><generator>Hugo -- gohugo.io</generator><language>fr-fr</language><atom:link href="http://localhost:3000/blog/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on TeamWheels - Covoiturage Entreprise intégré à Microsoft Teams</title>
+    <link>/blog/</link>
+    <description>Recent content in Blog on TeamWheels - Covoiturage Entreprise intégré à Microsoft Teams</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0100</lastBuildDate>
+    <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Forfait Mobilité Durable 2025 : Le Guide Complet pour les Entreprises</title>
+      <link>/blog/forfait-mobilite-durable-guide-complet-2025/</link>
+      <pubDate>Wed, 29 Jan 2025 00:00:00 +0100</pubDate>
+      <guid>/blog/forfait-mobilite-durable-guide-complet-2025/</guid>
+      <description>Le Forfait Mobilité Durable (FMD) est devenu un levier incontournable pour les entreprises qui souhaitent encourager les mobilités douces tout en offrant un avantage attractif à leurs collaborateurs.</description>
+    </item>
+  </channel>
+</rss>

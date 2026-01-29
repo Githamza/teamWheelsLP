@@ -1,1 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on TeamWheels - Covoiturage Entreprise intégré à Microsoft Teams</title><link>/tags/</link><description>Recent content in Tags on TeamWheels - Covoiturage Entreprise intégré à Microsoft Teams</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on TeamWheels - Covoiturage Entreprise intégré à Microsoft Teams</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on TeamWheels - Covoiturage Entreprise intégré à Microsoft Teams</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0100</lastBuildDate>
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>avantages salariés</title>
+      <link>/tags/avantages-salari%C3%A9s/</link>
+      <pubDate>Wed, 29 Jan 2025 00:00:00 +0100</pubDate>
+      <guid>/tags/avantages-salari%C3%A9s/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>covoiturage</title>
+      <link>/tags/covoiturage/</link>
+      <pubDate>Wed, 29 Jan 2025 00:00:00 +0100</pubDate>
+      <guid>/tags/covoiturage/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FMD</title>
+      <link>/tags/fmd/</link>
+      <pubDate>Wed, 29 Jan 2025 00:00:00 +0100</pubDate>
+      <guid>/tags/fmd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Forfait Mobilité Durable</title>
+      <link>/tags/forfait-mobilit%C3%A9-durable/</link>
+      <pubDate>Wed, 29 Jan 2025 00:00:00 +0100</pubDate>
+      <guid>/tags/forfait-mobilit%C3%A9-durable/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RSE</title>
+      <link>/tags/rse/</link>
+      <pubDate>Wed, 29 Jan 2025 00:00:00 +0100</pubDate>
+      <guid>/tags/rse/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
