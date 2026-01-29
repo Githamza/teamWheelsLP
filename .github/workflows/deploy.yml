@@ -96,7 +96,7 @@ jobs:
             --auth-mode login
 
       - name: Purge CDN endpoint (optional)
-        if: ${{ secrets.AZURE_CDN_PROFILE != '' }}
+        if: vars.AZURE_CDN_ENABLED == 'true'
         continue-on-error: true
         run: |
           az cdn endpoint purge \
