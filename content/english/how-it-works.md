@@ -17,6 +17,29 @@ banner:
   image: "images/how-it-works/carpooling_people.jpeg"
 
 
+# work_process - Brief overview shown on landing page
+work_process:
+  enable: true
+  subtitle: "Quick overview"
+  title: "How TeamWheels works"
+  process_item:
+    - title: "Install in Teams"
+      image: "images/process/01.jpg"
+      content: "Add TeamWheels from AppSource to your Microsoft Teams in just a few clicks."
+
+    - title: "Offer or find rides"
+      image: "images/process/02.jpg"
+      content: "Use the bot to declare your commute or search for available carpools nearby."
+
+    - title: "Connect & confirm"
+      image: "images/process/03.jpg"
+      content: "Request to join a carpool. The driver approves, and you're all set to ride together."
+
+    - title: "Track your impact"
+      image: "images/process/04.jpg"
+      content: "Monitor CO₂ savings and carpooling stats through the admin dashboard."
+
+
 # image_and_content_block
 image_and_content_blocks:
   - enable: true
