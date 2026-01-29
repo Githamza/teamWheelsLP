@@ -16,7 +16,7 @@ googleAnalytics = "G-RCT397F8XD" # example: UA-123456-78, for more info, read th
 
 # Language settings (must be at top level, before any [table] definitions)
 defaultContentLanguage = 'fr'
-disableLanguages = ["en"] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
+disableLanguages = [] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
 hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
 
 ############################# Services ###############################

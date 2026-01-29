@@ -1,26 +1,27 @@
 ---
+
 # banner
 banner:
-  subtitle: "We Are Delta"
-  title: "covoiturage d'entreprise,<br>  l'innovation qui rapproche et responsabilise !"
-  description: "CoDrive est une solution de covoiturage d'entreprise qui permet aux collaborateurs de se déplacer ensemble en toute sécurité et en toute confiance."
+  subtitle: "The carpooling solution built into Microsoft Teams"
+  title: "Carpooling, right inside Teams"
+  description: "TeamWheels transforms Microsoft Teams into your corporate carpooling platform. Zero extra apps, 5-minute deployment, instant adoption. Your teams share their daily commutes—everyone wins."
   button:
     enable: true
-    label: "Get started now"
+    button_label: "Start free 30-day trial"
     icon: "fas fa-arrow-right"
     link: "contact/"
   video_button:
     enable: true
-    label: "Watch demo"
+    label: "Watch demo (2 min)"
     video_url: "https://www.youtube.com/embed/dyZcRRWiuuw"
-  
-  image: "images/banner-home.png"
+
+  image: "images/homeBannerimg2.png"
 
 # brands
 brands:
   enable: true
-  title: "150M+ users trusted Delta worldwide"
-  images: 
+  title: "Certified & Compliant"
+  images:
   - "images/clients/01.png"
   - "images/clients/02.png"
   - "images/clients/03.png"
@@ -35,27 +36,31 @@ features:
 # fun facts
 fun_facts:
   enable: true
-  title: "En France"
+  title: "Corporate carpooling by the numbers"
   fact_item:
-  - icon: "fas fa-fighter-jet"
-    counter: "+1"
-    counter_suffix: "M"
-    content: "Spend 80% less time <br> on admin"
+  - icon: "fas fa-dollar-sign"
+    counter: "2000"
+    counter_suffix: "$"
+    counter_prefix: ""
+    content: "average annual savings per employee on commuting costs"
 
-  - icon: "far fa-dot-circle"
-    counter: "40"
-    counter_suffix: "x"
-    content: "Attract 40x more <br> the candidate"
+  - icon: "fas fa-clock"
+    counter: "5"
+    counter_suffix: " min"
+    counter_prefix: ""
+    content: "to deploy TeamWheels in your organization"
 
-  - icon: "fas fa-dice"
-    counter: "83"
+  - icon: "fas fa-car"
+    counter: "6"
+    counter_suffix: " kg"
+    counter_prefix: "-"
+    content: "CO₂ saved per shared commute"
+
+  - icon: "fas fa-chart-line"
+    counter: "10.6"
     counter_suffix: "%"
-    content: "Reduce recruitment <br> agency spend"
-
-  - icon: "fas fa-dice-d6"
-    counter: "40"
-    counter_suffix: "%"
-    content: "Make hires 40% <br> faster"
+    counter_prefix: "+"
+    content: "annual growth in corporate carpooling adoption"
 
 # work_process
 work_process:
@@ -63,80 +68,136 @@ work_process:
   section: "how-it-works"
 
 # image_and_content_block
-image_and_content_block:
-  enable: true
-  subtitle: "We Are Delta"
-  title: "Lots of people love us, <br> and we're also."
-  image: "images/block-image-01.png"
-  content_position: "left" # Value will be - "left/right"
-  content: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum 
+image_and_content_blocks:
+  - enable: true
+    subtitle: "Why choose TeamWheels?"
+    title: "Carpooling directly inside Microsoft Teams"
+    image: "images/why_use_teamWheels.png"
+    content_position: "right"
+    content: "Why force your teams to install yet another app? TeamWheels integrates natively with Teams—the tool they already use every day.
 
-  
-  * luctus et ultrices uere cubia Curae Donec verglit
+    * **Zero friction** - No new app to install, no new account to create
 
-  * Neque auctor congue leo eget malesuada Vivamus
+    * **Smart bot** - Your employees find and offer rides through simple chat conversations
 
-  * Sit amet dui Nulla quis lorem ut libero malesuada feugiat
+    * **Multi-device** - PC, tablets, smartphones—anywhere Teams works
 
-  * Donec verglit neque, auctor congue leo  malesuada.
-  "
+    * **5-minute deployment** - One admin, a few clicks, done
 
-# slider_and_content_block
-slider_and_content_block:
-  enable: true
-  subtitle: "We Are Delta"
-  title: "Let your lead reach <br> out to sales people"
-  slider:
-    - "images/block-image-02.png"
-    - "images/block-image-02.png"
-  content_position: "right" # Value will be - "left/right"
-  content: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ante 
+    Unlike standalone carpooling apps, TeamWheels lives where your teams already work.
+    "
+    button:
+      enable: true
+      label: "Discover features →"
 
-  
-  orci luctus et ultrices pos uere cubilia Curae; Donec verglit neque, auctor congue leo eget malesuada. Vivamus susr cipit sit amet dui. Nulla quis lorem ut libero malesuada feugiat. "
+  - enable: true
+    subtitle: "Real results"
+    title: "Sustainability, savings, and well-being"
+    image: "images/carpoolingBenefits.png"
+    content_position: "left"
+    content: "TeamWheels helps you meet your ESG goals while improving your employees' daily lives.
+
+    * **Cost savings for your teams** - Employees share commuting expenses
+
+    * **Measurable carbon impact** - Fewer cars = lower CO₂ emissions, tracked in real-time
+
+    * **Well-being and connection** - Less stress, more camaraderie among colleagues
+
+    * **Stronger employer brand** - An attractive benefit for recruiting and retention
+
+    * **Less parking pressure** - Fewer cars = more available parking spaces
+
+    "
+    button:
+      enable: true
+      label: "Discover benefits →"
+
+  - enable: true
+    subtitle: "Maximize your commuter benefits"
+    title: "Pre-tax commuter programs made easy"
+    image: "images/commitment.png"
+    content_position: "right"
+    content: "Help your employees get the most from their commuter benefits.
+
+    **Pre-tax savings**: In many regions, carpooling qualifies for tax-advantaged commuter benefit programs. Employees can save on transportation costs while reducing their tax burden.
+
+    **Corporate sustainability programs**: Leading organizations worldwide are committing to reduce commute-related emissions. TeamWheels provides the tracking and reporting you need.
+
+    TeamWheels generates the documentation and reports you need for compliance and program administration."
+    button:
+      enable: true
+      label: "Learn more about benefits →"
+
+  - enable: true
+    subtitle: "Security & Compliance"
+    title: "A certified and secure solution"
+    image: "images/why_use_teamWheels.png"
+    content_position: "left"
+    content: "TeamWheels meets the strictest security requirements to protect your data and your employees' privacy.
+
+    * **Microsoft Partner Certified** - Validated application on AppSource
+
+    * **Enterprise SSO** - Secure authentication via Azure AD
+
+    * **GDPR Compliant** - Data protection built in
+
+    * **Admin dashboard** - Track adoption and CO₂ impact without compromising privacy
+
+    "
+    button:
+      enable: true
+      label: "Learn more about security →"
 
 
 # testimonials
 testimonials:
   enable: true
-  subtitle: "People Say's"
-  title: "about Three million users <br> Testimonial Together"
-  image: "images/testimonials-group.png"
+  subtitle: "Customer feedback"
+  title: "What our customers say about TeamWheels"
+  image_1: "images/testimonials-group-1.png"
+  image_2: "images/testimonials-group-2.png"
   reviews:
-    - name: "Erica Carlina"
-      designation: "CEO & Founder, Ammarait"
-      rating: "5.0" # ex: "3", "3.8"
-      content: "Consectetur adipisicing elit. Cum voluptates odio nostrum impedit deleniti cupiditate deserunt harum doloremque veritatis accusantium, unde sint, laudantium distinctio, velit atque asperiores aspernatur laboriosam officiis obcaecati molestias laudantium corporis doloremque qui, voluptate minus?"
+    - name: "Sarah Johnson"
+      designation: "HR Director, TechCorp Inc."
+      image: "images/avatar/04.jpg"
+      content: "Deployed in one week, instant adoption by our teams. 40% of our employees now carpool regularly."
 
-    - name: "Justin Rubela"
-      designation: "Founder, Justin Inc."
-      rating: "4.5" # ex: "3", "3.8"
-      content: "Dolorsit amet consectetur, adipisicing elit. Expedita repellendus optio quaerat iste aliquam, rerum quas ab? Adipisci maxime tempore doloremque laborum suscipit debitis autem ducimus dicta delectus, atque abofficiis obcaecati molestias laudantium corporis doloremque qui, voluptate minus?"
-      
-    - name: "William Broke"
-      designation: "Developer, Ammarait"
-      rating: "4.2" # ex: "3", "3.8"
-      content: "Amet consectetur adipisicing elit. Voluptates, suscipit dolorum! Quis explicabo quibusdam error expedita dolore veritatis magni fugiat rem provident qui, in dolorem quo laboriosam modi tenetur aperiam. obcaecati molestias laudantium corporis doloremque qui, voluptate minus?"
+    - name: "Michael Chen"
+      designation: "Sustainability Manager, Global Solutions"
+      image: "images/avatar/02.jpg"
+      content: "Perfect for our carbon reporting. Intuitive interface in Teams—our employees love it."
+
+    - name: "Emily Rodriguez"
+      designation: "Office Manager, StartupHub"
+      image: "images/avatar/07.jpg"
+      content: "Easy to set up and free for 30 days. We could test it with no commitment required."
 
 
 # blog
 blog:
   enable: true
-  subtitle: "Recent Articles"
-  title: "Recent Posts to serve better"
-  description: "Vestibulum ante ipsum primis in faucibus  luctus et ultrices posuere <br> cubilia Curae; Donec velit neque, auctor sit amet aliquamvel, ullamsw rfgws ercor"
+  subtitle: "Resources"
+  title: "News and practical guides"
+  description: "Discover our tips for developing carpooling in your organization"
 
   button:
     enable: true
     link: "blog/"
-    label: "Read All Blogs"
-    icon: "fas fa-arrow-right"
+    label: "View all articles →"
+
+next_step_button:
+  enable: true
+  link: "how-it-works/"
+  label: "See how it works →"
 
 
 # call_to_action
 call_to_action:
   enable: true
-  title: "Prêt à commencer ?"
-  subtitle: "Demander une démo et découvrez comment TeamWheels est simple à utiliser et peut vous aider à développer le covoiturage en entreprise. <br> Un essai gratuit est disponible."
+  title: "Launch carpooling in your organization"
+  subtitle: "Join the companies that make commuting easier for their teams while reducing their carbon footprint. <br><br> <strong>Launch offer:</strong> Free 30-day trial + guided deployment. <br> <em>Limited spots for personalized onboarding.</em>"
+  button_label : "Start my free trial →"
+  button_link : "contact/"
+  image : "images/cta.png"
 
 ---
