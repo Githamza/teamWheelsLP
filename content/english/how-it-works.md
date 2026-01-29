@@ -24,19 +24,19 @@ work_process:
   title: "How TeamWheels works"
   process_item:
     - title: "Install in Teams"
-      image: "images/process/01.jpg"
+      image: "images/how-it-works/01.jpg"
       content: "Add TeamWheels from AppSource to your Microsoft Teams in just a few clicks."
 
     - title: "Offer or find rides"
-      image: "images/process/02.jpg"
+      image: "images/how-it-works/03.jpg"
       content: "Use the bot to declare your commute or search for available carpools nearby."
 
     - title: "Connect & confirm"
-      image: "images/process/03.jpg"
+      image: "images/how-it-works/05.png"
       content: "Request to join a carpool. The driver approves, and you're all set to ride together."
 
     - title: "Track your impact"
-      image: "images/process/04.jpg"
+      image: "images/how-it-works/dashboard.png"
       content: "Monitor CO₂ savings and carpooling stats through the admin dashboard."
 
 
