@@ -95,7 +95,27 @@ jobs:
             --source build-output/ \
             --destination '$web' \
             --overwrite \
-            --auth-mode login
+            --auth-mode login \
+            --content-cache-control "max-age=3600"
+
+          # Fix Content-Type for web assets (Azure sometimes misdetects)
+          for ext_type in "css:text/css" "js:application/javascript" "json:application/json" "svg:image/svg+xml"; do
+            ext="${ext_type%%:*}"
+            mime="${ext_type#*:}"
+            az storage blob list \
+              --account-name "${{ secrets.AZURE_STORAGE_ACCOUNT }}" \
+              --container-name '$web' \
+              --auth-mode login \
+              --query "[?ends_with(name, '.$ext')].name" -o tsv | \
+            while read -r blob; do
+              [ -n "$blob" ] && az storage blob update \
+                --account-name "${{ secrets.AZURE_STORAGE_ACCOUNT }}" \
+                --container-name '$web' \
+                --name "$blob" \
+                --content-type "$mime" \
+                --auth-mode login
+            done
+          done
 
       - name: Purge CDN endpoint (optional)
         if: ${{ env.AZURE_CDN_PROFILE != '' }}
