@@ -19,7 +19,7 @@ banner:
 
 # brands
 brands:
-  enable: true
+  enable: false
   title: "Certifié et conforme"
   images:
   - "images/clients/01.png"
