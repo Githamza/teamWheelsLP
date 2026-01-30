@@ -3,7 +3,7 @@
 # banner
 banner:
   subtitle: "The carpooling solution built into Microsoft Teams"
-  title: "Carpooling, right inside Teams"
+  title: 'Carpooling, right inside <img class="inline-teams-logo" src="/images/microsoft-teams.png" alt="Microsoft Teams" loading="lazy" decoding="async" />'
   description: "TeamWheels transforms Microsoft Teams into your corporate carpooling platform. Zero extra apps, 5-minute deployment, instant adoption. Your teams share their daily commutes—everyone wins."
   button:
     enable: true
