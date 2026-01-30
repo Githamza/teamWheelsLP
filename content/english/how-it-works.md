@@ -19,7 +19,7 @@ banner:
 
 # work_process - Brief overview shown on landing page
 work_process:
-  enable: true
+  enable: false
   subtitle: "Quick overview"
   title: "How TeamWheels works"
   process_item:

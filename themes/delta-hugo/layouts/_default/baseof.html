@@ -1,11 +1,110 @@
 <!DOCTYPE html>
 <html
-  lang="{{ site.LanguageCode | default `en-US` }}"
+  lang="en-us"
+  data-hugo-lang-code="{{ site.LanguageCode | default `en-US` }}"
   itemscope
   itemtype="http://schema.org/WebPage">
   <head>
+    <meta charset="utf-8" />
+    <title>{{ .Title | default site.Title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      (function () {
+        try {
+          var code = document.documentElement.getAttribute(
+            "data-hugo-lang-code"
+          );
+          if (code) document.documentElement.setAttribute("lang", code);
+        } catch (e) {
+          // no-op
+        }
+      })();
+    </script>
+
     <!-- head (don't cache it) -->
     {{ partial "essentials/head.html" . }}
+
+    {{/* Language redirect (only on the root homepage "/").
+      - Uses navigator.languages / navigator.language / navigator.userLanguage
+      - Redirects to the matching Hugo language home (e.g. "/en/" vs "/")
+      - Does NOT run on "/en/" or any other page (prevents redirect loops)
+    */}}
+    {{ if and .IsHome (eq .RelPermalink "/") }}
+      {{ $langToHome := dict }}
+      {{ range .Sites }}
+        {{ $langToHome = merge $langToHome (dict .Language.Lang .Home.RelPermalink) }}
+      {{ end }}
+      <meta
+        name="co-language-redirect"
+        data-lang-to-home="{{ $langToHome | jsonify }}"
+        data-default-lang="{{ site.Language.Lang }}" />
+      <script>
+        (function () {
+          try {
+            // If the visitor already chose a language, you can persist it here:
+            // localStorage.setItem('preferred_lang', 'en' | 'fr')
+            var preferred = null;
+            try {
+              preferred = localStorage.getItem("preferred_lang");
+            } catch (e) {}
+
+            var meta = document.querySelector(
+              'meta[name="co-language-redirect"]'
+            );
+            if (!meta) return;
+            var langToHome = JSON.parse(
+              meta.getAttribute("data-lang-to-home") || "{}"
+            );
+            var defaultLang = meta.getAttribute("data-default-lang") || "fr";
+
+            function normalizePrimary(tag) {
+              if (!tag || typeof tag !== "string") return null;
+              return tag.toLowerCase().split("-")[0];
+            }
+
+            function pickLang() {
+              if (preferred && langToHome[preferred]) return preferred;
+
+              var candidates = [];
+              if (Array.isArray(navigator.languages))
+                candidates = candidates.concat(navigator.languages);
+              if (navigator.language) candidates.push(navigator.language);
+              if (navigator.userLanguage)
+                candidates.push(navigator.userLanguage);
+
+              // Rule: if browser language is French -> default language, else -> English.
+              var isFrench = false;
+              for (var i = 0; i < candidates.length; i++) {
+                var primary = normalizePrimary(candidates[i]);
+                if (primary === "fr") {
+                  isFrench = true;
+                  break;
+                }
+              }
+
+              if (isFrench) return defaultLang;
+              if (langToHome.en) return "en";
+              return defaultLang;
+            }
+
+            var targetLang = pickLang();
+            var targetPath =
+              langToHome[targetLang] || langToHome[defaultLang] || "/";
+
+            // Only run on the real root homepage, never on "/en/" etc.
+            if (window.location.pathname !== "/") return;
+
+            if (targetPath !== "/" && targetPath !== window.location.pathname) {
+              window.location.replace(
+                targetPath + window.location.search + window.location.hash
+              );
+            }
+          } catch (e) {
+            // no-op
+          }
+        })();
+      </script>
+    {{ end }}
 
 
     <!-- cache partial only in production -->
@@ -22,11 +121,11 @@
       {{ partialCached "gtm-noscript.html" . }}
     {{ end }}
 
+
     <main>
       {{ block "main" . }}{{ end }}
     </main>
-		<main class="pt-0">{{ block "main-sm" . }}{{ end }}</main>
-
+    <main class="pt-0">{{ block "main-sm" . }}{{ end }}</main>
 
     <!-- cache partial only in production -->
     {{ if hugo.IsProduction }}
