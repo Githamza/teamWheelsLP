@@ -1,5 +1,5 @@
 ---
 title: "Blog"
-description: "Practical guides, news, and tips for developing carpooling and sustainable mobility in your organization."
+description: "Insights and news about corporate carpooling, sustainable mobility, and workplace transportation solutions."
 draft: false
 ---
