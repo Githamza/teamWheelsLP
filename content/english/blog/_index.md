@@ -1,5 +1,5 @@
 ---
 title: "Blog"
-description: "meta description"
-draft: true
+description: "Insights and news about corporate carpooling, sustainable mobility, and workplace transportation solutions."
+draft: false
 ---
