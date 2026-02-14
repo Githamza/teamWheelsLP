@@ -105,7 +105,7 @@ username = "" # your username
 
 # site verifications
 [site_verification]
-google = "" # Your verification code
+google = "u6bODqGgyMFvDU5mx3g6GbVGUUwoNCsBCZXb1V2OuuE"
 bing = "" # Your verification code
 baidu = "" # Your verification code
 facebook = "" # Your verification code
