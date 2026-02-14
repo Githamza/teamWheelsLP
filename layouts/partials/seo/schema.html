@@ -1,0 +1,92 @@
+{{- $scr := .Scratch -}}
+{{- $page := . -}}
+
+{{- if eq .Type "blog" -}}
+{{- $scr.Set "schema_type" "Article" -}}
+{{- else if eq .Type "contact" -}}
+{{- $scr.Set "schema_type" "ContactPage" -}}
+{{- else -}}
+{{- $scr.Set "schema_type" "WebPage" -}}
+{{- end -}}
+
+{{- $title := .Title -}}
+{{- if .IsHome -}}
+  {{- $title = .Site.Title -}}
+{{- end -}}
+
+{{- $description := .Description -}}
+{{- if not $description -}}
+  {{- $description = .Site.Params.metadata.description -}}
+{{- end -}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": {{ $scr.Get "schema_type" | jsonify }},
+  "name": {{ $title | jsonify }},
+  "description": {{ $description | jsonify }},
+  "url": {{ .Permalink | jsonify }},
+  {{- if .IsHome }}
+  "@type": "WebSite",
+  "publisher": {
+    "@type": "Organization",
+    "name": "TeamWheels",
+    "url": "https://www.teamwheelsapp.com"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://www.teamwheelsapp.com/search?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  },
+  {{- end }}
+  {{- if not .IsHome }}
+  "headline": {{ $title | jsonify }},
+  {{- end }}
+  "inLanguage": {{ .Site.LanguageCode | default "en" | jsonify }},
+  {{- with .Params.image }}
+  "image": {
+    "@type": "ImageObject",
+    "url": {{ . | absURL | jsonify }}
+  },
+  {{- end }}
+  "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }}
+}
+</script>
+
+{{- /* Organization Schema for all pages */ -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "TeamWheels",
+  "url": "https://www.teamwheelsapp.com",
+  "logo": "https://www.teamwheelsapp.com/images/logo.png",
+  "description": "Corporate carpooling platform integrated into Microsoft Teams. Reduce commute costs and carbon footprint.",
+  "foundingDate": "2024",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": ["FR", "UK", "CA", "US"]
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "contact@teamwheels.fr",
+    "contactType": "Sales"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/teamwheels/",
+    "https://twitter.com/teamwheels"
+  ],
+  "areaServed": ["France", "United Kingdom", "Canada", "United States"],
+  "serviceType": "Corporate Carpooling",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR",
+    "description": "Free 30-day trial"
+  }
+}
+</script>
