@@ -1,39 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TeamWheels - Covoiturage Entreprise intégré à Microsoft Teams</title>
-    <link>/</link>
-    <description>Recent content on TeamWheels - Covoiturage Entreprise intégré à Microsoft Teams</description>
+    <title>TeamWheels - Corporate Carpooling in Microsoft Teams on TeamWheels - Covoiturage Entreprise intégré à Microsoft Teams</title>
+    <link>https://www.teamwheelsapp.com/</link>
+    <description>Recent content in TeamWheels - Corporate Carpooling in Microsoft Teams on TeamWheels - Covoiturage Entreprise intégré à Microsoft Teams</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0100</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0100</lastBuildDate>
+    <atom:link href="https://www.teamwheelsapp.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Forfait Mobilité Durable 2025 : Le Guide Complet pour les Entreprises</title>
-      <link>/blog/forfait-mobilite-durable-guide-complet-2025/</link>
-      <pubDate>Wed, 29 Jan 2025 00:00:00 +0100</pubDate>
-      <guid>/blog/forfait-mobilite-durable-guide-complet-2025/</guid>
-      <description>Le Forfait Mobilité Durable (FMD) est devenu un levier incontournable pour les entreprises qui souhaitent encourager les mobilités douces tout en offrant un avantage attractif à leurs collaborateurs.</description>
+      <title>UK Carpooling Trends 2025: Rising Costs Drive Shared Mobility Renaissance</title>
+      <link>https://www.teamwheelsapp.com/blog/uk-carpooling-trends-2025-cost-living-sustainable-commuting/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0100</pubDate>
+      <guid>https://www.teamwheelsapp.com/blog/uk-carpooling-trends-2025-cost-living-sustainable-commuting/</guid>
+      <description>British commuters are facing a perfect storm: rising travel costs, increasing bus fares, and persistent pressure from the cost of living crisis.</description>
+    </item>
+    <item>
+      <title>Enterprise Carpooling in 2025: The Sustainable Commute Revolution</title>
+      <link>https://www.teamwheelsapp.com/blog/enterprise-carpooling-2025-sustainable-commute-revolution/</link>
+      <pubDate>Fri, 31 Jan 2025 00:00:00 +0100</pubDate>
+      <guid>https://www.teamwheelsapp.com/blog/enterprise-carpooling-2025-sustainable-commute-revolution/</guid>
+      <description>The corporate world is witnessing a fundamental shift in how employees commute.</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>/contact/</link>
+      <link>https://www.teamwheelsapp.com/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/contact/</guid>
+      <guid>https://www.teamwheelsapp.com/contact/</guid>
       <description></description>
     </item>
     <item>
       <title>How It Works</title>
-      <link>/how-it-works/</link>
+      <link>https://www.teamwheelsapp.com/how-it-works/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/how-it-works/</guid>
+      <guid>https://www.teamwheelsapp.com/how-it-works/</guid>
       <description></description>
     </item>
     <item>
-      <title>Tarifs</title>
-      <link>/pricing/</link>
+      <title>Pricing</title>
+      <link>https://www.teamwheelsapp.com/pricing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/pricing/</guid>
+      <guid>https://www.teamwheelsapp.com/pricing/</guid>
       <description></description>
     </item>
   </channel>

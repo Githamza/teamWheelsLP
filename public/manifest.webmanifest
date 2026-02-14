@@ -1,10 +1,10 @@
 {
   "name": "TeamWheels - Covoiturage Entreprise intégré à Microsoft Teams",
   "short_name": "TeamWheels - Covoiturage Entreprise intégré à Microsoft Teams",
-  "lang": "fr-fr",
+  "lang": "en-us",
   "display": "fullscreen",
   "orientation" : "portrait",
-  "start_url": "/?utm_source=web_app_manifest",
+  "start_url": "https://www.teamwheelsapp.com/?utm_source=web_app_manifest",
   "background_color": "#fff",
   "theme_color": "#5b5fc7",
 

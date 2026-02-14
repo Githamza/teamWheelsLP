@@ -2,45 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on TeamWheels - Covoiturage Entreprise intégré à Microsoft Teams</title>
-    <link>/tags/</link>
+    <link>https://www.teamwheelsapp.com/tags/</link>
     <description>Recent content in Tags on TeamWheels - Covoiturage Entreprise intégré à Microsoft Teams</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0100</lastBuildDate>
-    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0100</lastBuildDate>
+    <atom:link href="https://www.teamwheelsapp.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>avantages salariés</title>
-      <link>/tags/avantages-salari%C3%A9s/</link>
-      <pubDate>Wed, 29 Jan 2025 00:00:00 +0100</pubDate>
-      <guid>/tags/avantages-salari%C3%A9s/</guid>
+      <title>car sharing</title>
+      <link>https://www.teamwheelsapp.com/tags/car-sharing/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0100</pubDate>
+      <guid>https://www.teamwheelsapp.com/tags/car-sharing/</guid>
       <description></description>
     </item>
     <item>
-      <title>covoiturage</title>
-      <link>/tags/covoiturage/</link>
-      <pubDate>Wed, 29 Jan 2025 00:00:00 +0100</pubDate>
-      <guid>/tags/covoiturage/</guid>
+      <title>commuting costs</title>
+      <link>https://www.teamwheelsapp.com/tags/commuting-costs/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0100</pubDate>
+      <guid>https://www.teamwheelsapp.com/tags/commuting-costs/</guid>
       <description></description>
     </item>
     <item>
-      <title>FMD</title>
-      <link>/tags/fmd/</link>
-      <pubDate>Wed, 29 Jan 2025 00:00:00 +0100</pubDate>
-      <guid>/tags/fmd/</guid>
+      <title>corporate carpooling</title>
+      <link>https://www.teamwheelsapp.com/tags/corporate-carpooling/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0100</pubDate>
+      <guid>https://www.teamwheelsapp.com/tags/corporate-carpooling/</guid>
       <description></description>
     </item>
     <item>
-      <title>Forfait Mobilité Durable</title>
-      <link>/tags/forfait-mobilit%C3%A9-durable/</link>
-      <pubDate>Wed, 29 Jan 2025 00:00:00 +0100</pubDate>
-      <guid>/tags/forfait-mobilit%C3%A9-durable/</guid>
+      <title>cost of living</title>
+      <link>https://www.teamwheelsapp.com/tags/cost-of-living/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0100</pubDate>
+      <guid>https://www.teamwheelsapp.com/tags/cost-of-living/</guid>
       <description></description>
     </item>
     <item>
-      <title>RSE</title>
-      <link>/tags/rse/</link>
-      <pubDate>Wed, 29 Jan 2025 00:00:00 +0100</pubDate>
-      <guid>/tags/rse/</guid>
+      <title>sustainable transport</title>
+      <link>https://www.teamwheelsapp.com/tags/sustainable-transport/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0100</pubDate>
+      <guid>https://www.teamwheelsapp.com/tags/sustainable-transport/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>UK carpooling</title>
+      <link>https://www.teamwheelsapp.com/tags/uk-carpooling/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0100</pubDate>
+      <guid>https://www.teamwheelsapp.com/tags/uk-carpooling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>carbon footprint</title>
+      <link>https://www.teamwheelsapp.com/tags/carbon-footprint/</link>
+      <pubDate>Fri, 31 Jan 2025 00:00:00 +0100</pubDate>
+      <guid>https://www.teamwheelsapp.com/tags/carbon-footprint/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>carpooling</title>
+      <link>https://www.teamwheelsapp.com/tags/carpooling/</link>
+      <pubDate>Fri, 31 Jan 2025 00:00:00 +0100</pubDate>
+      <guid>https://www.teamwheelsapp.com/tags/carpooling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>corporate mobility</title>
+      <link>https://www.teamwheelsapp.com/tags/corporate-mobility/</link>
+      <pubDate>Fri, 31 Jan 2025 00:00:00 +0100</pubDate>
+      <guid>https://www.teamwheelsapp.com/tags/corporate-mobility/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>employee benefits</title>
+      <link>https://www.teamwheelsapp.com/tags/employee-benefits/</link>
+      <pubDate>Fri, 31 Jan 2025 00:00:00 +0100</pubDate>
+      <guid>https://www.teamwheelsapp.com/tags/employee-benefits/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ESG</title>
+      <link>https://www.teamwheelsapp.com/tags/esg/</link>
+      <pubDate>Fri, 31 Jan 2025 00:00:00 +0100</pubDate>
+      <guid>https://www.teamwheelsapp.com/tags/esg/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>sustainability</title>
+      <link>https://www.teamwheelsapp.com/tags/sustainability/</link>
+      <pubDate>Fri, 31 Jan 2025 00:00:00 +0100</pubDate>
+      <guid>https://www.teamwheelsapp.com/tags/sustainability/</guid>
       <description></description>
     </item>
   </channel>
