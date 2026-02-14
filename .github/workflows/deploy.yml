@@ -81,14 +81,16 @@ jobs:
           path: build-output/
 
       - name: Deploy to FTP server
-        uses: easingthemes/sftp-deploy@v2
-        with:
-          host: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          port: 21
-          source: build-output/
-          # remote-dir: /
+        run: |
+          # Install lftp
+          apt-get update && apt-get install -y lftp
+          
+          # Deploy via FTP
+          lftp -c "
+            set ftp:ssl-allow no
+            open -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_HOST }}
+            mirror -R build-output/ / --verbose --parallel=5
+          "
 
       - name: Summary
         run: |
