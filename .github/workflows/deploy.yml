@@ -82,15 +82,41 @@ jobs:
 
       - name: Deploy to FTP server
         run: |
-          # Install lftp
-          apt-get update && apt-get install -y lftp
+          python3 << 'PYTHON_SCRIPT'
+          import os
+          import ftplib
           
-          # Deploy using lftp with proper escaping
-          lftp -c "
-            set ftp:ssl-allow no
-            open -u ${FTP_USERNAME},${FTP_PASSWORD} ${FTP_HOST}
-            mirror -R --verbose build-output/ /
-          "
+          host = os.environ['FTP_HOST']
+          username = os.environ['FTP_USERNAME']
+          password = os.environ['FTP_PASSWORD']
+          
+          print(f"Connecting to {host}...")
+          ftp = ftplib.FTP(host)
+          ftp.login(username, password)
+          print("Connected!")
+          
+          # Upload directory recursively
+          def upload_dir(local_dir, remote_dir):
+              try:
+                  ftp.mkd(remote_dir)
+              except:
+                  pass
+              ftp.cwd(remote_dir)
+              
+              for item in os.listdir(local_dir):
+                  local_path = os.path.join(local_dir, item)
+                  if os.path.isfile(local_path):
+                      print(f"Uploading {local_path}...")
+                      with open(local_path, 'rb') as f:
+                          ftp.storbinary(f'STOR {item}', f)
+                  elif os.path.isdir(local_path):
+                      upload_dir(local_path, item)
+              ftp.cwd('..')
+          
+          upload_dir('build-output', '/')
+          ftp.quit()
+          print("Done!")
+          PYTHON_SCRIPT
         env:
           FTP_HOST: ${{ secrets.FTP_HOST }}
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
