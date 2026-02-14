@@ -10,7 +10,7 @@ logo_width = "147x"
 # logo text will only show when logo is missing.
 logo_text = "TeamWheels"
 # purgeCSS
-purge_css = false
+purge_css = true
 # content-gallery
 content_gallery = false
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 

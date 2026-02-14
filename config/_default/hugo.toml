@@ -95,6 +95,14 @@ unsafe= true
 [markup.highlight]
 style = 'monokai' # see https://xyproto.github.io/splash/docs/all.html
 
+############################# Minify ###############################
+[minify]
+minifyOutput = true
+[minify.minifyJS]
+minify = true
+[minify.minifyCSS]
+minify = true
+
 ############################ Media types ############################
 [mediaTypes]
 [mediaTypes."application/manifest+json"]
