@@ -68,3 +68,31 @@
 <!-- Custom SEO Schema -->
 {{ partial "seo/schema.html" . }}
 {{ partial "seo/hreflang.html" . }}
+
+<!-- Custom styles for Teams logo -->
+<style>
+.teams-brand {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+.teams-brand::after {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
+  vertical-align: middle;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/eb/Microsoft_Teams_icon_%282020%29.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  .teams-brand::after {
+    width: 28px;
+    height: 28px;
+    margin-left: 6px;
+  }
+}
+</style>

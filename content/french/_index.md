@@ -3,7 +3,7 @@
 # banner
 banner:
   subtitle: "La solution de covoiturage intégrée à Microsoft Teams"
-  title: 'Le covoiturage, directement dans <img class="inline-teams-logo" src="/images/microsoft-teams.png" alt="Microsoft Teams" loading="lazy" decoding="async" />'
+  title: 'Le covoiturage, directement dans <span class="teams-brand">Microsoft Teams</span>'
   description: "TeamWheels transforme Microsoft Teams en plateforme de covoiturage d'entreprise. Zéro app supplémentaire, déploiement en 5 minutes, adoption immédiate. Vos équipes partagent leurs trajets domicile-travail, tout le monde y gagne."
   button:
     enable: true
