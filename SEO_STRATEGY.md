@@ -11,6 +11,26 @@
 
 ---
 
+## Technical SEO - Status
+
+### ✅ Already Done
+- JSON-LD Schema (Organization, WebSite, FAQPage) ✓
+- hreflang tags for EN/FR ✓
+- Canonical URLs ✓
+- Open Graph + Twitter Cards ✓
+- Sitemap.xml ✓
+
+### ⚡ Fixed This Session
+- Font display swap (FOIT fix)
+
+### 🚧 To Do (requires deployment)
+- Image optimization (WebP + proper sizing)
+- Cache headers (server config)
+- Minify CSS/JS (Hugo build optimization)
+- Defer non-critical JS
+
+---
+
 ## Content Gaps & Opportunities
 
 ### English Market (UK/USA)
@@ -54,7 +74,15 @@
 
 ## Technical SEO Next Steps
 
-- [ ] Add JSON-LD schema (Organization, WebSite, FAQPage)
-- [ ] Add hreflang tags for bilingual content
-- [ ] Create canonical URLs for EN/FR pages
-- [ ] Submit sitemap.xml to Google Search Console
+- [ ] Add FAQPage schema to blog posts
+- [ ] Add more internal linking between pages
+- [ ] Optimize images (convert to WebP)
+- [ ] Set up proper cache headers on deployment
+- [ ] Add breadcrumbs schema
+
+---
+
+## Performance Score
+
+- Desktop: 95-97 ✓
+- Mobile: 76 ⚠️ (needs work)
