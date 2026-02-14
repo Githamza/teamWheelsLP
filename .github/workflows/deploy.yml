@@ -81,14 +81,13 @@ jobs:
           path: build-output/
 
       - name: Deploy to FTP server
-        uses: SamMcDonald/sftp-deployer@v1
+        uses: easingthemes/sftp-deploy@v2
         with:
           host: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           source: build-output/
-          # Adjust the remote directory based on your server setup
           # remote-dir: /
 
       - name: Summary
