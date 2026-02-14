@@ -12,7 +12,7 @@ logo_text = "TeamWheels"
 # purgeCSS
 purge_css = false
 # content-gallery
-content_gallery = true
+content_gallery = false
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
 custom_script= "" 
 
