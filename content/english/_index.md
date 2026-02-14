@@ -1,4 +1,7 @@
 ---
+title: "TeamWheels - Corporate Carpooling in Microsoft Teams"
+description: "Transform Microsoft Teams into your corporate carpooling platform. Zero extra apps, 5-minute deployment, instant adoption. Save $2000/year per employee."
+keywords: "corporate carpooling, Microsoft Teams, employee commuting, carpooling software, ESG, sustainable commuting"
 
 # banner
 banner:

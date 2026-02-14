@@ -7,9 +7,12 @@ weight = 2
 
 [en.params]
 # copyright
-copyright = "Copyright by hmz-digital"
-
-# <a target="_blank" rel="noopener noreferrer" href="">
+copyright = "Copyright © 2024 TeamWheels. All rights reserved."
+# meta
+title = "TeamWheels - Corporate Carpooling in Microsoft Teams"
+description = "Transform Microsoft Teams into your corporate carpooling platform. Zero extra apps, 5-minute deployment, instant adoption. Save $2000/year per employee."
+# navigation
+home = "Home"
 
 ################################### French language #####################################
 [fr]
@@ -22,3 +25,6 @@ weight = 1
 # copyright
 home = "Accueil"
 copyright = "Copyright © 2024 TeamWheels. All rights reserved."
+# meta
+title = "TeamWheels - Covoiturage Entreprise intégré à Microsoft Teams"
+description = "Transformez Microsoft Teams en plateforme de covoiturage entreprise. Déploiement en 5 minutes, adoption instantanée. Économisez 2000€/an par employé."

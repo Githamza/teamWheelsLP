@@ -26,7 +26,7 @@ theme_copyright = true
 career_form_action = "#!" # career form works with https://formspree.io or any formspree-alternatives
 
 # OpenGraph / Twitter Card metadata
-description = "TeamWheels - La solution de covoiturage intégrée à Microsoft Teams. Réduisez les frais de trajet et l'empreinte carbone de votre entreprise. Essai gratuit 30 jours."
+description = "TeamWheels - Corporate carpooling integrated into Microsoft Teams. Reduce commute costs and carbon footprint. Free 30-day trial. Deploy in 5 minutes."
 author = "TeamWheels"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
@@ -67,8 +67,8 @@ image = "images/cta.png"
 
 # seo meta data for OpenGraph / Twitter Card
 [metadata]
-keywords = [ "Covoiturage entreprise", "Microsoft Teams covoiturage", "covoiturage domicile travail", "forfait mobilité durable", "FMD", "RSE mobilité", "application covoiturage B2B", "réduction empreinte carbone entreprise"]
-description = "TeamWheels - La solution de covoiturage intégrée à Microsoft Teams. Réduisez les frais de trajet et l'empreinte carbone de votre entreprise. Essai gratuit 30 jours."
+keywords = [ "corporate carpooling", "Microsoft Teams carpooling", "employee carpooling", "commute benefits", "sustainable commuting", "B2B carpooling app", "carbon reduction", "ESG commuting", "enterprise carpooling", "carpooling software", "employee benefits", "covoiturage entreprise", "Microsoft Teams covoiturage", "covoiturage domicile travail"]
+description = "TeamWheels - Corporate carpooling integrated into Microsoft Teams. Reduce commute costs and carbon footprint. Free 30-day trial. Deploy in 5 minutes."
 author = "TeamWheels"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
