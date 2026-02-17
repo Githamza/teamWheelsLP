@@ -116,15 +116,17 @@ jobs:
                           pass  # Directory already exists
                       else:
                           print(f"Error creating dir {remote_dir}: {e}")
-                  
+
                   ftp.cwd(remote_dir)
-                  
+
                   for item in os.listdir(local_dir):
                       local_path = os.path.join(local_dir, item)
                       if os.path.isfile(local_path):
                           print(f"Uploading {local_path}...")
                           with open(local_path, 'rb') as f:
                               ftp.storbinary(f'STOR {item}', f)
+                      elif os.path.isdir(local_path):
+                          upload_dir(local_path, item)
                   ftp.cwd('..')
               
               upload_dir('build-output', '/')
