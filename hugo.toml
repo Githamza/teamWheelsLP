@@ -81,6 +81,3 @@ link = "plugins/cookie.js"
 link = "plugins/lazy-loader.js"
 [[params.plugins.js]]
 link = "plugins/webfont/webfont-loader-2.js"
-[[params.plugins.js]]
-link = "https://cpwebassets.codepen.io/assets/embed/ei.js"
-attributes = "async"

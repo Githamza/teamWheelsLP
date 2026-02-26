@@ -49,19 +49,27 @@
           <div class="col-lg-9 mt-5 mt-lg-0">
             {{ with .image }}
               <div>
-                {{ $img:= resources.Get . }}
-                {{ $img:= $img.Resize "1000x" }}
-                {{ $imgWebp:= $img.Resize "1000x webp" }}
-                <img
-                  loading="eager"
-                  decoding="async"
-                  fetchpriority="high"
-                  class="img-fluid"
-                  width="{{ $img.Width }}"
-                  height="{{ $img.Height }}"
-                  src="{{ $imgWebp.RelPermalink }}"
-                  alt="TeamWheels - Covoiturage intégré à Microsoft Teams"
-                  onerror="this.onerror=null;this.src='{{ $img.RelPermalink }}'" />
+                {{ $imgOrig:= resources.Get . }}
+                {{ $imgFallback:= $imgOrig.Resize "1000x" }}
+                {{ $imgXL:= $imgOrig.Resize "1000x webp" }}
+                {{ $imgLG:= $imgOrig.Resize "700x webp" }}
+                {{ $imgMD:= $imgOrig.Resize "500x webp" }}
+                {{ $imgSM:= $imgOrig.Resize "400x webp" }}
+                <picture>
+                  <source srcset="{{ $imgSM.RelPermalink }}" media="(max-width: 575px)" type="image/webp">
+                  <source srcset="{{ $imgMD.RelPermalink }}" media="(max-width: 767px)" type="image/webp">
+                  <source srcset="{{ $imgLG.RelPermalink }}" media="(max-width: 991px)" type="image/webp">
+                  <source srcset="{{ $imgXL.RelPermalink }}" type="image/webp">
+                  <img
+                    loading="eager"
+                    decoding="async"
+                    fetchpriority="high"
+                    class="img-fluid"
+                    width="{{ $imgFallback.Width }}"
+                    height="{{ $imgFallback.Height }}"
+                    src="{{ $imgFallback.RelPermalink }}"
+                    alt="TeamWheels - Covoiturage intégré à Microsoft Teams" />
+                </picture>
               </div>
             {{ end }}
           </div>
@@ -283,18 +291,22 @@
                 <div
                   class="bg-secondary-soft py-3 py-md-6 px-2 px-md-4 rounded-md">
                   {{ with .image }}
-                    {{ $img:= resources.Get . }}
-                    {{ $img:= $img.Resize "570x" }}
-                    {{ $imgWebp:= $img.Resize "570x webp" }}
-                    <img
-                      loading="lazy"
-                      decoding="async"
-                      class="img-fluid px-0 px-md-3 py-6"
-                      width="{{ $img.Width }}"
-                      height="{{ $img.Height }}"
-                      src="{{ $imgWebp.RelPermalink }}"
-                      alt="image"
-                      onerror="this.onerror=null;this.src='{{ $img.RelPermalink }}'" />
+                    {{ $imgOrig:= resources.Get . }}
+                    {{ $imgFallback:= $imgOrig.Resize "570x" }}
+                    {{ $imgDesktop:= $imgOrig.Resize "570x webp" }}
+                    {{ $imgMobile:= $imgOrig.Resize "400x webp" }}
+                    <picture>
+                      <source srcset="{{ $imgMobile.RelPermalink }}" media="(max-width: 767px)" type="image/webp">
+                      <source srcset="{{ $imgDesktop.RelPermalink }}" type="image/webp">
+                      <img
+                        loading="lazy"
+                        decoding="async"
+                        class="img-fluid px-0 px-md-3 py-6"
+                        width="{{ $imgFallback.Width }}"
+                        height="{{ $imgFallback.Height }}"
+                        src="{{ $imgFallback.RelPermalink }}"
+                        alt="image" />
+                    </picture>
                   {{ end }}
                 </div>
               </div>

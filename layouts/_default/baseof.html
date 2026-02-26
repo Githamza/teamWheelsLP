@@ -8,6 +8,12 @@
     <meta charset="utf-8" />
     <title>{{ .Title | default site.Title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- DNS prefetch & preconnect for critical third-party origins -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script>
       (function () {
         try {
@@ -20,6 +26,19 @@
         }
       })();
     </script>
+
+    <!-- preload hero image for LCP on homepage -->
+    {{ if .IsHome }}
+      {{ with .Params.banner.image }}
+        {{ $imgOrig := resources.Get . }}
+        {{ if $imgOrig }}
+          {{ $imgSM := $imgOrig.Resize "400x webp" }}
+          {{ $imgXL := $imgOrig.Resize "1000x webp" }}
+          <link rel="preload" as="image" type="image/webp" href="{{ $imgSM.RelPermalink }}" media="(max-width: 575px)">
+          <link rel="preload" as="image" type="image/webp" href="{{ $imgXL.RelPermalink }}" media="(min-width: 576px)">
+        {{ end }}
+      {{ end }}
+    {{ end }}
 
     <!-- head (don't cache it) -->
     {{ partial "essentials/head.html" . }}
