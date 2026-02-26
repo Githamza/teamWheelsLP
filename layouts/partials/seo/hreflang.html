@@ -1,9 +1,10 @@
 {{- /* hreflang tags for multilingual SEO */ -}}
 {{- if .IsHome -}}
-{{- /* For homepage, list all language versions */ -}}
-<link rel="alternate" hreflang="fr" href="{{ "/" | absURL }}" />
-<link rel="alternate" hreflang="en" href="{{ "/en/" | absURL }}" />
-<link rel="alternate" hreflang="x-default" href="{{ "/" | absURL }}" />
+{{- /* For homepage, dynamically list all language versions */ -}}
+{{- range .Sites -}}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Home.Permalink }}" />
+{{- end -}}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
 {{- else -}}
 {{- /* For content pages */ -}}
 {{- /* Current page's language */ -}}
