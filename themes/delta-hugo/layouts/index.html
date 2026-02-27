@@ -207,12 +207,12 @@
                 {{ range .fact_item }}
                   <div class="col-lg-3 col-sm-6 fact-item-alt">
                     <div class="block">
-                      <h4 class="title text-xl">
+                      <h3 class="title text-xl">
                         {{ .counter_prefix }}
                         <span class="counter" data-count="{{ .counter }}"
                           >0</span
                         >{{ .counter_suffix }}
-                      </h4>
+                      </h3>
                       <p class="mb-0">{{ .content | markdownify }}</p>
                     </div>
                   </div>
@@ -425,7 +425,7 @@
                             >{{ .content | markdownify }}<i
                               class="quote fas fa-quote-right"></i>
                           </div>
-                          <h5 class="mb-1">{{ .name | markdownify }}</h5>
+                          <h3 class="h5 mb-1">{{ .name | markdownify }}</h3>
                           <p class="mb-0">{{ .designation | markdownify }}</p>
                         </div>
                       </div>

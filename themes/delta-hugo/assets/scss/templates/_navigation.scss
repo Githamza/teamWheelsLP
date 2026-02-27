@@ -93,7 +93,7 @@
 
     .nav-link:hover,
     &.active .nav-link {
-      color: $color-primary !important
+      color: darken($color-primary, 15%) !important
     }
     &.dropdown .nav-link::after {
       display: inline-block;

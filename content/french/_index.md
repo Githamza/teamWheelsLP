@@ -121,7 +121,7 @@ image_and_content_blocks:
 
     **Forfait Mobilité Durable (FMD)** : Vous pouvez verser jusqu'à 800€/an par salarié, exonérés de charges sociales et d'impôt. Un avantage attractif pour vos équipes !
 
-    **Charte ADEME** : Rejoignez les 16 grands employeurs (1M de salariés) signataires de la <a style='color: #007bff;' href='https://employeursprocovoiturage.ademe.fr/' target='_blank'>charte d'engagement covoiturage</a>.
+    **Charte ADEME** : Rejoignez les 16 grands employeurs (1M de salariés) signataires de la <a style='color: #0056b3; text-decoration: underline;' href='https://employeursprocovoiturage.ademe.fr/' target='_blank'>charte d'engagement covoiturage</a>.
 
     TeamWheels vous fournit les justificatifs nécessaires pour mettre en place le FMD."
     button:

@@ -491,10 +491,10 @@ form label {
 
 // content style
 .content {
-  color: #777;
+  color: $text-color;
 
   p {
-    color: #777;
+    color: $text-color;
   }
 
   img {
@@ -567,7 +567,8 @@ form label {
   }
 
   a:not(.btn) {
-    color: #777;
+    color: $text-color;
+    text-decoration: underline;
 
     &:hover {
       color: $color-primary;
@@ -594,7 +595,7 @@ form label {
 
     li {
       margin-bottom: 0.625rem;
-      color: #777;
+      color: $text-color;
     }
   }
 

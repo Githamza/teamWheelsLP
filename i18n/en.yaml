@@ -72,3 +72,6 @@
 
 - id: footer_menu_5_title
   translation: Other Pages
+
+- id: select_language
+  translation: Select language
