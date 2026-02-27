@@ -1,0 +1,191 @@
+// Critical CSS — inlined in <head> to unblock rendering.
+// Contains only styles needed for above-the-fold hero section.
+// The full stylesheet loads asynchronously via media="print" trick.
+
+{{ with site.Params.variables }}
+$color-primary: {{ .color_primary | default "#4262FF" }};
+$color-quaternary: {{ .color_quaternary | default "#6E9240" }};
+$font-primary: '{{ replace (replaceRE ":[ital,]*[ital@]*[wght@]*[0-9,;]+" "" .font_primary | default "Lato") "+" " " }}', {{ .font_primary_type | default "sans-serif" }};
+$font-secondary: '{{ replace (replaceRE ":[ital,]*[ital@]*[wght@]*[0-9,;]+" "" .font_secondary | default "Lato") "+" " " }}', {{ .font_secondary_type | default "sans-serif" }};
+{{ end }}
+
+// === Resets ===
+*,*::before,*::after { box-sizing: border-box }
+body {
+  margin: 0;
+  background: #fff;
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  -webkit-font-smoothing: antialiased;
+}
+img { vertical-align: middle; border: 0; max-width: 100%; height: auto }
+a, a:hover, a:focus { text-decoration: none }
+
+// === Main wrapper ===
+main {
+  overflow: hidden;
+  padding: .625rem;
+  padding-bottom: 0 !important;
+  @media (min-width: 768px) { padding: 2.5rem; padding-bottom: 0 !important }
+  @media (min-width: 992px) { padding: 3.75rem; padding-bottom: 0 !important }
+  @media (min-width: 1400px) { padding: 4.68rem; padding-bottom: 0 !important }
+}
+main:empty { display: none }
+
+// === Bootstrap grid (minimal) ===
+.container {
+  width: 100%;
+  padding-right: .75rem;
+  padding-left: .75rem;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 576px) { max-width: 540px }
+  @media (min-width: 768px) { max-width: 720px }
+  @media (min-width: 992px) { max-width: 960px }
+  @media (min-width: 1200px) { max-width: 1140px }
+  @media (min-width: 1400px) { max-width: 1320px }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -.75rem;
+  margin-left: -.75rem;
+  > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: .75rem;
+    padding-left: .75rem;
+  }
+}
+.col-lg-6, .col-lg-9 { width: 100% }
+@media (min-width: 992px) {
+  .col-lg-6 { flex: 0 0 auto; width: 50% }
+  .col-lg-9 { flex: 0 0 auto; width: 75% }
+}
+
+// === Container delta ===
+.container-delta {
+  padding: 0 17px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 575px) { padding: 0 2.5rem }
+  @media (min-width: 1400px) { max-width: 1300px; padding: 0 55px }
+}
+
+// === Navigation ===
+.navigation {
+  position: relative;
+  z-index: 9999;
+  padding: 0;
+  background-color: transparent;
+  @media (min-width: 576px) { padding: 1.25rem 0 }
+  @media (min-width: 768px) { padding: 1.875rem 0 }
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 0;
+}
+.navbar-brand {
+  white-space: nowrap;
+  margin-right: 1rem;
+  img { max-width: 7.5rem }
+  @media (min-width: 576px) { img { max-width: none } }
+}
+.navbar-expand-xl {
+  .navbar-toggler { display: flex }
+  @media (min-width: 1200px) {
+    .navbar-toggler { display: none }
+    .navbar-collapse { display: flex !important }
+  }
+}
+.navbar-toggler {
+  padding: 0;
+  border: 0;
+  font-size: 29px;
+  background: transparent;
+}
+.navbar-actions { display: flex; align-items: center }
+.navbar-collapse { display: none }
+
+// === Banner hero ===
+.banner .block {
+  padding-top: 2.5rem;
+  padding-bottom: 50px;
+  @media (min-width: 768px) { padding-bottom: 5.6rem }
+}
+.bg-primary-soft {
+  background: lighten(desaturate(adjust-hue($color-primary, -19), 13.79), 31.37) !important;
+}
+.rounded-lg { border-radius: 1.25rem !important }
+.overflow-hidden { overflow: hidden !important }
+.wave-block { position: relative; z-index: 1 }
+
+// === Typography ===
+h1, h2, h3, h4, h5, h6 { font-family: $font-primary; font-weight: 900; color: #000 }
+.text-xl {
+  font-size: 2.3rem;
+  @media (min-width: 768px) { font-size: 3rem }
+  @media (min-width: 992px) { font-size: 3.625rem }
+}
+.subtitle { font-family: $font-secondary; font-weight: 700; text-transform: capitalize; color: $color-quaternary }
+.title { text-transform: capitalize }
+
+// === Images ===
+.img-fluid { max-width: 100%; height: auto }
+picture { display: block }
+
+// === Form ===
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  > .form-control { position: relative; flex: 1 1 auto; width: 1%; min-width: 0 }
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: .375rem;
+}
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  padding: .95em 1.9em;
+  font-size: 16px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  font-family: $font-secondary;
+}
+.btn-primary { color: #fff; background-color: $color-primary; border-color: $color-primary }
+
+// === Bootstrap utilities (used in hero) ===
+.text-center { text-align: center !important }
+.text-lg-start { text-align: center !important }
+@media (min-width: 992px) { .text-lg-start { text-align: start !important } }
+.align-items-center { align-items: center !important }
+.flex-lg-nowrap { flex-wrap: wrap !important }
+@media (min-width: 992px) { .flex-lg-nowrap { flex-wrap: nowrap !important } }
+.pe-0 { padding-right: 0 !important }
+@media (min-width: 992px) { .pe-lg-5 { padding-right: 3rem !important } }
+.mt-5 { margin-top: 3rem !important }
+@media (min-width: 992px) { .mt-lg-0 { margin-top: 0 !important } }
+.mb-3 { margin-bottom: 1rem !important }
+.mb-4 { margin-bottom: 1.5rem !important }
+.d-inline { display: inline !important }
+.d-xl-none { display: inline !important }
+@media (min-width: 1200px) { .d-xl-none { display: none !important } }
