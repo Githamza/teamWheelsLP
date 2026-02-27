@@ -2,7 +2,7 @@
 title: "Covoiturage entreprise : 5 étapes pour démarrer"
 description: "Guide pratique pour lancer un programme de covoiturage professionnel en 30 jours. Étapes, conseils et bonnes pratiques."
 date: 2025-01-15
-image: images/blog/carpooling-program.jpg
+image: images/how-it-works/carpooling_people.png
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
 categories:

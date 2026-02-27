@@ -34,3 +34,9 @@ $gutters: (
   vertical-align: -0.25em;
   margin-left: 0.25em;
 }
+
+// Constrain blog post featured image height
+.section-sm img.rounded-lg {
+  max-height: 380px;
+  object-fit: cover;
+}

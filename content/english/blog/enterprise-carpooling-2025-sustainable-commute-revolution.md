@@ -3,7 +3,7 @@ title: "Enterprise Carpooling in 2025: The Sustainable Commute Revolution"
 date: 2025-01-31
 draft: false
 description: "Discover how corporate carpooling is transforming workplace mobility with $34B market growth, 30+ tonnes CO2 savings per company, and proven ROI for forward-thinking enterprises."
-image: "images/commitment.png"
+image: "images/carpooling_benefits.png"
 author: ""
 categories: ["Sustainability", "Mobility"]
 tags: ["carpooling", "corporate mobility", "sustainability", "employee benefits", "carbon footprint", "ESG"]

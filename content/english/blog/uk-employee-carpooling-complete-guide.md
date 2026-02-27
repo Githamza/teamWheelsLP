@@ -2,7 +2,7 @@
 title: "Employee Carpooling in the UK: A Complete Guide for HR and Sustainability Leaders"
 description: "Everything UK employers need to know about setting up a corporate carpooling programme. Tax benefits, ESG reporting, and how to get started."
 date: 2025-02-01
-image: images/blog/uk-carpooling-guide.jpg
+image: images/blog/04.jpg
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
 categories:
