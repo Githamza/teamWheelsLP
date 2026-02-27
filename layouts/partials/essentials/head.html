@@ -24,29 +24,17 @@
 {{ partialCached "custom-script.html" . }}
 
 
-<!-- google analytics -->
-{{ template "_internal/google_analytics.html" . }}
-
-
 <!-- google tag manager -->
 {{ partialCached "gtm.html" . }}
 
-
-<!-- matomo analytics -->
-{{/* {{ partialCached "matomo-analytics.html" . }} */}}
-
-<!--  Baidu analytics -->
-{{/* {{ partialCached "baidu-analytics.html" . }} */}}
-
-<!-- Plausible Analytics -->
-{{/* {{ partialCached "plausible-analytics.html" . }} */}}
-
-<!-- Counter Analytics -->
-{{/* {{ partialCached "counter-analytics.html" . }} */}}
-
-<!-- Crisp Chat & MS Clarity - deferred to improve mobile performance -->
+<!-- Deferred analytics & third-party scripts for mobile performance -->
 <script>
 function _loadDeferred() {
+  {{ with site.Config.Services.GoogleAnalytics.ID }}
+  var gs=document.createElement("script");gs.src="https://www.googletagmanager.com/gtag/js?id={{ . }}";gs.async=1;document.head.appendChild(gs);
+  window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+  gtag('js',new Date());gtag('config','{{ . }}');
+  {{ end }}
   {{ with site.Params.crisp_chat }}{{ if .enable }}
   window.$crisp=[];window.CRISP_WEBSITE_ID="{{ .crisp_website_id }}";
   var cs=document.createElement("script");cs.src="https://client.crisp.chat/l.js";cs.async=1;document.head.appendChild(cs);
@@ -61,31 +49,3 @@ if(typeof requestIdleCallback!=="undefined"){requestIdleCallback(_loadDeferred)}
 <!-- Custom SEO Schema -->
 {{ partial "seo/schema.html" . }}
 {{ partial "seo/hreflang.html" . }}
-
-<!-- Custom styles for Teams logo -->
-<style>
-.teams-brand {
-  position: relative;
-  display: inline-block;
-  white-space: nowrap;
-}
-.teams-brand::after {
-  content: "";
-  display: inline-block;
-  width: 36px;
-  height: 36px;
-  margin-left: 10px;
-  vertical-align: middle;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/eb/Microsoft_Teams_icon_%282020%29.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-@media (max-width: 768px) {
-  .teams-brand::after {
-    width: 28px;
-    height: 28px;
-    margin-left: 6px;
-  }
-}
-</style>
