@@ -50,7 +50,6 @@
             {{ with .image }}
               <div>
                 {{ $imgOrig:= resources.Get . }}
-                {{ $imgFallback:= $imgOrig.Resize "700x" }}
                 {{ $imgXL:= $imgOrig.Resize "1000x webp" }}
                 {{ $imgLG:= $imgOrig.Resize "700x webp" }}
                 {{ $imgMD:= $imgOrig.Resize "500x webp" }}
@@ -65,9 +64,9 @@
                     decoding="sync"
                     fetchpriority="high"
                     class="img-fluid"
-                    width="{{ $imgFallback.Width }}"
-                    height="{{ $imgFallback.Height }}"
-                    src="{{ $imgFallback.RelPermalink }}"
+                    width="{{ $imgLG.Width }}"
+                    height="{{ $imgLG.Height }}"
+                    src="{{ $imgLG.RelPermalink }}"
                     alt="TeamWheels - Covoiturage intégré à Microsoft Teams" />
                 </picture>
               </div>
@@ -292,7 +291,6 @@
                   class="bg-secondary-soft py-3 py-md-6 px-2 px-md-4 rounded-md">
                   {{ with .image }}
                     {{ $imgOrig:= resources.Get . }}
-                    {{ $imgFallback:= $imgOrig.Resize "570x" }}
                     {{ $imgDesktop:= $imgOrig.Resize "570x webp" }}
                     {{ $imgMobile:= $imgOrig.Resize "400x webp" }}
                     <picture>
@@ -302,9 +300,9 @@
                         loading="lazy"
                         decoding="async"
                         class="img-fluid px-0 px-md-3 py-6"
-                        width="{{ $imgFallback.Width }}"
-                        height="{{ $imgFallback.Height }}"
-                        src="{{ $imgFallback.RelPermalink }}"
+                        width="{{ $imgDesktop.Width }}"
+                        height="{{ $imgDesktop.Height }}"
+                        src="{{ $imgDesktop.RelPermalink }}"
                         alt="image" />
                     </picture>
                   {{ end }}
@@ -361,17 +359,15 @@
                         <div class="swiper-wrapper">
                           {{ range . }}
                             {{ $img:= resources.Get . }}
-                            {{ $img:= $img.Resize "600x" }}
                             {{ $imgWebp:= $img.Resize "600x webp" }}
                             <img
                               loading="lazy"
                               decoding="async"
                               class="swiper-slide img-fluid px-2"
-                              width="{{ $img.Width }}"
-                              height="{{ $img.Height }}"
+                              width="{{ $imgWebp.Width }}"
+                              height="{{ $imgWebp.Height }}"
                               src="{{ $imgWebp.RelPermalink }}"
-                              alt="image"
-                              onerror="this.onerror=null;this.src='{{ $img.RelPermalink }}'" />
+                              alt="image" />
                           {{ end }}
                         </div>
                         <div class="swiper-pagination"></div>
@@ -412,17 +408,15 @@
                           {{ with .image }}
                             <div class="avatar mb-4">
                               {{ $img:= resources.Get . }}
-                              {{ $img:= $img.Resize "120x" }}
                               {{ $imgWebp:= $img.Resize "120x webp" }}
                               <img
                                 loading="lazy"
                                 decoding="async"
                                 class="img-fluid rounded-circle"
-                                width="{{ $img.Width }}"
-                                height="{{ $img.Height }}"
+                                width="{{ $imgWebp.Width }}"
+                                height="{{ $imgWebp.Height }}"
                                 src="{{ $imgWebp.RelPermalink }}"
-                                alt="testimonials image"
-                                onerror="this.onerror=null;this.src='{{ $img.RelPermalink }}'" />
+                                alt="testimonials image" />
                             </div>
                           {{ end }}
                           <div
@@ -445,31 +439,27 @@
             {{ with .image_1 }}
               <div class="image-left">
                 {{ $img:= resources.Get . }}
-                {{ $img:= $img.Resize "360x" }}
                 {{ $imgWebp:= $img.Resize "360x webp" }}
                 <img
                   loading="lazy"
                   decoding="async"
-                  width="{{ $img.Width }}"
-                  height="{{ $img.Height }}"
+                  width="{{ $imgWebp.Width }}"
+                  height="{{ $imgWebp.Height }}"
                   src="{{ $imgWebp.RelPermalink }}"
-                  alt="testimonials image"
-                  onerror="this.onerror=null;this.src='{{ $img.RelPermalink }}'" />
+                  alt="testimonials image" />
               </div>
             {{ end }}
             {{ with .image_2 }}
               <div class="image-right">
                 {{ $img:= resources.Get . }}
-                {{ $img:= $img.Resize "360x" }}
                 {{ $imgWebp:= $img.Resize "360x webp" }}
                 <img
                   loading="lazy"
                   decoding="async"
-                  width="{{ $img.Width }}"
-                  height="{{ $img.Height }}"
+                  width="{{ $imgWebp.Width }}"
+                  height="{{ $imgWebp.Height }}"
                   src="{{ $imgWebp.RelPermalink }}"
-                  alt="testimonials image"
-                  onerror="this.onerror=null;this.src='{{ $img.RelPermalink }}'" />
+                  alt="testimonials image" />
               </div>
             {{ end }}
           </div>
