@@ -129,7 +129,7 @@ jobs:
                           upload_dir(local_path, item)
                   ftp.cwd('..')
               
-              upload_dir('build-output', '/')
+              upload_dir('build-output', '/public_html')
               ftp.quit()
               print("Done!")
           except Exception as e:
