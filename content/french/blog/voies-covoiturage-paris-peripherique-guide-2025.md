@@ -3,7 +3,7 @@ title: "Voies de covoiturage à Paris : tout savoir sur la révolution du périp
 date: 2026-02-26
 draft: false
 description: "Voies réservées au covoiturage sur le périphérique parisien, l'A1 et l'A13 : fonctionnement, bilan, témoignages d'usagers et impact sur la mobilité en Île-de-France."
-image: images/blog/03.jpg
+image: images/carpoolingBenefits.png
 author: TeamWheels
 categories:
   - Covoiturage
