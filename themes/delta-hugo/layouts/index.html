@@ -50,7 +50,7 @@
             {{ with .image }}
               <div>
                 {{ $imgOrig:= resources.Get . }}
-                {{ $imgFallback:= $imgOrig.Resize "1000x" }}
+                {{ $imgFallback:= $imgOrig.Resize "700x" }}
                 {{ $imgXL:= $imgOrig.Resize "1000x webp" }}
                 {{ $imgLG:= $imgOrig.Resize "700x webp" }}
                 {{ $imgMD:= $imgOrig.Resize "500x webp" }}
@@ -62,7 +62,7 @@
                   <source srcset="{{ $imgXL.RelPermalink }}" type="image/webp">
                   <img
                     loading="eager"
-                    decoding="async"
+                    decoding="sync"
                     fetchpriority="high"
                     class="img-fluid"
                     width="{{ $imgFallback.Width }}"
