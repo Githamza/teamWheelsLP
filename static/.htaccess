@@ -4,70 +4,82 @@
   ## Enable expiration control
   ExpiresActive On
 
-  ## CSS and JS expiration: 1 week after request
-  ExpiresByType text/css "now plus 1 week"
-  ExpiresByType application/javascript "now plus 1 week"
-  ExpiresByType application/x-javascript "now plus 1 week"
+  ## Default expiration: 1 month (fallback for any unmatched types)
+  ExpiresDefault "access plus 1 month"
 
-  ## Image files expiration: 1 month after request
-  ExpiresByType image/bmp "now plus 1 month"
-  ExpiresByType image/gif "now plus 1 month"
-  ExpiresByType image/jpeg "now plus 1 month"
-  ExpiresByType image/webp "now plus 1 month"
-  ExpiresByType image/jp2 "now plus 1 month"
-  ExpiresByType image/pipeg "now plus 1 month"
-  ExpiresByType image/png "now plus 1 month"
-  ExpiresByType image/svg+xml "now plus 1 month"
-  ExpiresByType image/tiff "now plus 1 month"
-  ExpiresByType image/x-icon "now plus 1 month"
-  ExpiresByType image/ico "now plus 1 month"
-  ExpiresByType image/icon "now plus 1 month"
-  ExpiresByType text/ico "now plus 1 month"
-  ExpiresByType application/ico "now plus 1 month"
-  ExpiresByType image/vnd.wap.wbmp "now plus 1 month"
+  ## HTML pages: short cache to allow quick updates
+  ExpiresByType text/html "access plus 10 minutes"
 
-  ## Font files expiration: 1 month after request
-  ExpiresByType application/x-font-ttf "now plus 1 month"
-  ExpiresByType application/x-font-opentype "now plus 1 month"
-  ExpiresByType application/x-font-woff "now plus 1 month"
-  ExpiresByType font/woff2 "now plus 1 month"
-  ExpiresByType image/svg+xml "now plus 1 month"
+  ## CSS and JS expiration: 1 year (Hugo uses cache-busted filenames)
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType application/x-javascript "access plus 1 year"
 
-  ## Audio files expiration: 1 month after request
-  ExpiresByType audio/ogg "now plus 1 month"
-  ExpiresByType application/ogg "now plus 1 month"
-  ExpiresByType audio/basic "now plus 1 month"
-  ExpiresByType audio/mid "now plus 1 month"
-  ExpiresByType audio/midi "now plus 1 month"
-  ExpiresByType audio/mpeg "now plus 1 month"
-  ExpiresByType audio/mp3 "now plus 1 month"
-  ExpiresByType audio/x-aiff "now plus 1 month"
-  ExpiresByType audio/x-mpegurl "now plus 1 month"
-  ExpiresByType audio/x-pn-realaudio "now plus 1 month"
-  ExpiresByType audio/x-wav "now plus 1 month"
+  ## Image files expiration: 1 year (Hugo fingerprints image filenames)
+  ExpiresByType image/bmp "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/jp2 "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType image/ico "access plus 1 year"
+  ExpiresByType image/icon "access plus 1 year"
+  ExpiresByType image/avif "access plus 1 year"
 
-  ## Movie files expiration: 1 month after request
-  ExpiresByType application/x-shockwave-flash "now plus 1 month"
-  ExpiresByType x-world/x-vrml "now plus 1 month"
-  ExpiresByType video/x-msvideo "now plus 1 month"
-  ExpiresByType video/mpeg "now plus 1 month"
-  ExpiresByType video/mp4 "now plus 1 month"
-  ExpiresByType video/quicktime "now plus 1 month"
-  ExpiresByType video/x-la-asf "now plus 1 month"
-  ExpiresByType video/x-ms-asf "now plus 1 month"
+  ## Font files expiration: 1 year
+  ExpiresByType application/x-font-ttf "access plus 1 year"
+  ExpiresByType application/x-font-opentype "access plus 1 year"
+  ExpiresByType application/x-font-woff "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/font-woff "access plus 1 year"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+
+  ## Audio files expiration: 1 year
+  ExpiresByType audio/ogg "access plus 1 year"
+  ExpiresByType application/ogg "access plus 1 year"
+  ExpiresByType audio/mpeg "access plus 1 year"
+  ExpiresByType audio/mp3 "access plus 1 year"
+  ExpiresByType audio/x-wav "access plus 1 year"
+
+  ## Video files expiration: 1 year
+  ExpiresByType video/x-msvideo "access plus 1 year"
+  ExpiresByType video/mpeg "access plus 1 year"
+  ExpiresByType video/mp4 "access plus 1 year"
+  ExpiresByType video/quicktime "access plus 1 year"
+  ExpiresByType video/webm "access plus 1 year"
 </IfModule>
 ##### Optimize default expiration time - END
 
-##### 1 Month for most static resources
-<filesMatch ".(css|jpg|jpeg|png|webp|gif|js|ico|woff|woff2|eot|ttf)$">
-  Header set Cache-Control "max-age=2592000, public"
-</filesMatch>
+##### Cache-Control headers
+<IfModule mod_headers.c>
+  ## HTML: short cache, must revalidate
+  <FilesMatch "\.(html)$">
+    Header set Cache-Control "max-age=600, public, must-revalidate"
+  </FilesMatch>
+
+  ## Static assets: 1 year cache with immutable (Hugo fingerprints filenames)
+  <FilesMatch "\.(css|js|jpg|jpeg|png|webp|avif|gif|ico|svg|woff|woff2|eot|ttf|otf|mp4|webm|ogg|mp3)$">
+    Header set Cache-Control "max-age=31536000, public, immutable"
+  </FilesMatch>
+</IfModule>
 
 ##### Enable gzip compression for resources
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+  AddOutputFilterByType DEFLATE application/json application/xml
+  AddOutputFilterByType DEFLATE application/rss+xml application/atom+xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE font/woff font/woff2 application/font-woff application/font-woff2
+</IfModule>
+
 <ifModule mod_gzip.c>
   mod_gzip_on Yes
   mod_gzip_dechunk Yes
-  mod_gzip_item_include file .(html?|txt|css|js|php)$
+  mod_gzip_item_include file \.(html?|txt|css|js|php)$
   mod_gzip_item_include handler ^cgi-script$
   mod_gzip_item_include mime ^text/.*
   mod_gzip_item_include mime ^application/x-javascript.*
@@ -75,14 +87,9 @@
   mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
 </ifModule>
 
-##### Or, compress certain file types by extension:
-<FilesMatch "\.(html|css|jpg|jpeg|webp|png|gif|js|ico)$">
-  SetOutputFilter DEFLATE
-</FilesMatch>
-
 ##### Set Header Vary: Accept-Encoding
 <IfModule mod_headers.c>
-  <FilesMatch ".(js|css|xml|gz|html)$">
+  <FilesMatch "\.(js|css|xml|gz|html|svg|json)$">
     Header append Vary: Accept-Encoding
   </FilesMatch>
 </IfModule>
