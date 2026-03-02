@@ -102,10 +102,31 @@ jobs:
               print(f"Connected! Welcome: {ftp.getwelcome()}")
               print(f"Current dir: {ftp.pwd()}")
               
-              # List files
-              print("Files in root:")
-              ftp.retrlines('LIST')
-              
+              # Clean remote directory before uploading
+              def clean_dir(remote_dir):
+                  ftp.cwd(remote_dir)
+                  items = []
+                  ftp.retrlines('LIST', items.append)
+                  for item in items:
+                      parts = item.split(None, 8)
+                      if len(parts) < 9:
+                          continue
+                      name = parts[8]
+                      if name in ('.', '..'):
+                          continue
+                      if item.startswith('d'):
+                          clean_dir(name)
+                          ftp.rmd(name)
+                          print(f"Removed dir: {name}")
+                      else:
+                          ftp.delete(name)
+                          print(f"Removed file: {name}")
+                  ftp.cwd('..')
+
+              print("Cleaning /public_html...")
+              clean_dir('/public_html')
+              print("Clean complete.")
+
               # Upload directory recursively
               def upload_dir(local_dir, remote_dir):
                   try:
