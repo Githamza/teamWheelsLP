@@ -2,7 +2,7 @@ backend:
   name: github
   repo: Githamza/teamWheelsLP
   branch: main
-  base_url: https://your-oauth-proxy.example.com # Replace with your OAuth proxy URL
+  base_url: sveltia-cms-auth.hamzavelizy.workers.dev # Replace with your OAuth proxy URL
 
 media_folder: static/images/uploads
 public_folder: /images/uploads
