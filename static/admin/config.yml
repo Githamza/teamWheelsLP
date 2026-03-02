@@ -1,0 +1,81 @@
+backend:
+  name: github
+  repo: Githamza/teamWheelsLP
+  branch: main
+  base_url: https://your-oauth-proxy.example.com # Replace with your OAuth proxy URL
+
+media_folder: static/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: blog-english
+    label: "Blog Posts (English)"
+    folder: content/english/blog
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields:
+      - { label: "Title", name: title, widget: string, required: true }
+      - { label: "Description", name: description, widget: text, required: false }
+      - { label: "Date", name: date, widget: datetime }
+      - { label: "Draft", name: draft, widget: boolean, default: false }
+      - { label: "Image", name: image, widget: image, required: false }
+      - { label: "Author", name: author, widget: string, required: false }
+      - { label: "Categories", name: categories, widget: list, required: false }
+      - { label: "Tags", name: tags, widget: list, required: false }
+      - { label: "Body", name: body, widget: markdown }
+
+  - name: blog-french
+    label: "Blog Posts (French)"
+    folder: content/french/blog
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields:
+      - { label: "Titre", name: title, widget: string, required: true }
+      - { label: "Description", name: description, widget: text, required: false }
+      - { label: "Date", name: date, widget: datetime }
+      - { label: "Brouillon", name: draft, widget: boolean, default: false }
+      - { label: "Image", name: image, widget: image, required: false }
+      - { label: "Auteur", name: author, widget: string, required: false }
+      - { label: "Catégories", name: categories, widget: list, required: false }
+      - { label: "Tags", name: tags, widget: list, required: false }
+      - { label: "Contenu", name: body, widget: markdown }
+
+  - name: pages-english
+    label: "Pages (English)"
+    files:
+      - label: "Homepage"
+        name: homepage-en
+        file: content/english/_index.md
+        fields:
+          - { label: "Title", name: title, widget: string }
+          - { label: "Description", name: description, widget: text }
+          - { label: "Keywords", name: keywords, widget: string, required: false }
+          - label: "Banner"
+            name: banner
+            widget: object
+            fields:
+              - { label: "Subtitle", name: subtitle, widget: string }
+              - { label: "Title", name: title, widget: string }
+              - { label: "Description", name: description, widget: text }
+              - { label: "Image", name: image, widget: image }
+
+  - name: pages-french
+    label: "Pages (French)"
+    files:
+      - label: "Page d'accueil"
+        name: homepage-fr
+        file: content/french/_index.md
+        fields:
+          - { label: "Titre", name: title, widget: string }
+          - { label: "Description", name: description, widget: text }
+          - { label: "Mots-clés", name: keywords, widget: string, required: false }
+          - label: "Bannière"
+            name: banner
+            widget: object
+            fields:
+              - { label: "Sous-titre", name: subtitle, widget: string }
+              - { label: "Titre", name: title, widget: string }
+              - { label: "Description", name: description, widget: text }
+              - { label: "Image", name: image, widget: image }
