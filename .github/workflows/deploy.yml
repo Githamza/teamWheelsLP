@@ -98,8 +98,9 @@ jobs:
           
           try:
               print(f"Connecting to {host}...")
-              ftp = ftplib.FTP(host)
+              ftp = ftplib.FTP_TLS(host)
               ftp.login(username, password)
+              ftp.prot_p()  # Switch to secure data connection
               print(f"Connected! Welcome: {ftp.getwelcome()}")
               print(f"Current dir: {ftp.pwd()}")
               
