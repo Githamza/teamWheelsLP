@@ -15,7 +15,7 @@
 {{ $scripts = $scripts | append (resources.Get "js/script.js") }}
 {{ $scripts = $scripts | resources.Concat "js/scripts.js" }}
 {{ if hugo.IsProduction }}
-  {{ $scripts = $scripts | fingerprint "sha512" }}
+  {{ $scripts = $scripts | minify | fingerprint "sha512" }}
 {{ end }}
 <script crossorigin="anonymous" defer {{ if hugo.IsProduction }}integrity="{{ $scripts.Data.Integrity }}"{{end}} type="application/javascript" src="{{ $scripts.RelPermalink }}"></script>
 

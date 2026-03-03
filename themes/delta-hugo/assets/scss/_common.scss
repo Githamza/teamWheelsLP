@@ -58,7 +58,7 @@ a,
 button,
 select {
   cursor: pointer;
-  transition: .2s ease;
+  transition: color .2s ease, background-color .2s ease, border-color .2s ease, box-shadow .2s ease, opacity .2s ease, transform .2s ease;
 
   &:focus {
     outline: 0;
@@ -241,7 +241,7 @@ body {
     display: block;
     background-color: $white;
     border: 1px solid #dee2e6;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, transform .15s ease-in-out;
   }
 }
 
@@ -411,7 +411,7 @@ body {
   padding: 1.25rem;
   border: 1px solid rgba($black, 0.1);
   height: 56px;
-  transition: .3s ease;
+  transition: border-color .3s ease, box-shadow .3s ease;
 
   &:focus {
     border-color: rgba($color-primary, 0.5);

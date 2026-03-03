@@ -2,7 +2,7 @@
 .navigation {
   background-color: transparent;
   padding: 1.875rem 0;
-  transition: .15s ease-out;
+  transition: background-color .15s ease-out, padding .15s ease-out;
   position: relative;
   z-index: 9999;
 
@@ -50,7 +50,7 @@
     width: 26px;
     color: lighten($black, 13.33);
     border: 0;
-    transition: .3s ease;
+    transition: color .3s ease;
 
     &:focus {
       box-shadow: none;
@@ -172,13 +172,13 @@
         background-color: $white;
         z-index: -1;
         border-radius: 6px;
-        transition: 0.15s;
+        transition: height 0.15s ease;
         box-shadow: 0 0.9rem 25px rgba($black, 0.1);
       }
       li {
         transform: translateX(20px) translateY(0px);
         opacity: 0;
-        transition: .1s;
+        transition: transform .1s ease, opacity .1s ease;
       }
     }
     .dropdown-menu[data-bs-popper] {
@@ -190,13 +190,13 @@
       visibility: visible;
       height: 0;
       &::after {
-        transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: height 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
         height: 100%;
       }
       li {
         opacity: 1;
         transform: translate(0);
-        transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: transform .4s cubic-bezier(0.165, 0.84, 0.44, 1), opacity .4s cubic-bezier(0.165, 0.84, 0.44, 1);
       }
       $base-time: 0.05;
       $max-menu-item: 10;

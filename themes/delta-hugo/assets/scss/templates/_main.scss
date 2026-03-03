@@ -216,7 +216,7 @@ main:empty {
       border-radius: 0.9rem;
       box-shadow: 0px 0.9rem 50px 0.625rem rgba($black, 0.05);
       border: 2px solid transparent;
-      transition: .3s;
+      transition: box-shadow .3s ease, border-color .3s ease;
       padding: 2.8rem 35px;
       @include mobile {
         padding: 1.875rem 25px;
@@ -228,7 +228,7 @@ main:empty {
         margin-bottom: 1.875rem;
       }
       h3{
-        transition: .3s;
+        transition: color .3s ease;
       }
       .icon {
         font-size: 50px;
@@ -620,7 +620,7 @@ main:empty {
     margin: 0;
     padding: 1.875rem 0.9rem;
   }
-  transition: .3s;
+  transition: border-color .3s ease;
   &:hover {
     border-color: $color-primary !important;
   }
@@ -855,11 +855,11 @@ main:empty {
 
 // features-box
 .features-box {
-  transition: 0.3s;
+  transition: transform 0.3s ease;
   .block {
     padding: 3.75rem 2.5rem 1.875rem 2.5rem;
     border: 2px solid transparent;
-    transition: 0.3s;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
     @include desktop-lg {
       padding: 50px 1.875rem 1.875rem 1.875rem;
     }
