@@ -18,7 +18,7 @@ tags:
   - carbon footprint
   - ESG
 ---
-The entreprise world is witnessing a fundamental shift in how employees commute. **Enterprise carpooling** has emerged as one of the most effective strategies for companies looking to reduce costs, attract talent, and meet ambitious sustainability targets. With the global carpooling market projected to reach **$34 billion by 2034**, now is the time to understand why leading organizations are making shared commuting a strategic priority.
+The entreprise world is witnessing a fundamental shift in how employees commute. **Enterprise carpooling** has emerged as one of the most effective strategies for companies looking to reduce costs, attract talents, and meet ambitious sustainability targets. With the global carpooling market projected to reach **$34 billion by 2034**, now is the time to understand why leading organizations are making shared commuting a strategic priority.
 
 This guide explores the latest trends, proven benefits, and implementation strategies for enterprise carpooling programs in 2025.
 
