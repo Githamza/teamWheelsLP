@@ -85,21 +85,39 @@ jobs:
           python3 << 'PYTHON_SCRIPT'
           import os
           import sys
+          import ssl
           import ftplib
           import traceback
-          
+
           host = os.environ['FTP_HOST']
           username = os.environ['FTP_USERNAME']
           password = os.environ['FTP_PASSWORD']
-          
+
           print(f"FTP Host: {host}")
           print(f"FTP User: {username}")
           print(f"FTP Pass: {'*' * len(password)}")
-          
+
+          # Subclass to reuse the control channel's TLS session on data
+          # connections. Many shared-hosting FTP servers require this.
+          class FTP_TLS_Reuse(ftplib.FTP_TLS):
+              def ntransfercmd(self, cmd, rest=None):
+                  conn, size = ftplib.FTP.ntransfercmd(self, cmd, rest)
+                  if self._prot_p:
+                      conn = self.context.wrap_socket(
+                          conn, server_hostname=self.host,
+                          session=self.sock.session)
+                  return conn, size
+
           try:
-              print(f"Connecting to {host}...")
-              ftp = ftplib.FTP(host)
+              print(f"Connecting to {host} (FTPS)...")
+              ctx = ssl.create_default_context()
+              ctx.check_hostname = False
+              ctx.verify_mode = ssl.CERT_NONE
+              ftp = FTP_TLS_Reuse(context=ctx)
+              ftp.connect(host, 21)
+              ftp.auth()
               ftp.login(username, password)
+              ftp.prot_p()  # Secure the data channel
               print(f"Connected! Welcome: {ftp.getwelcome()}")
               print(f"Current dir: {ftp.pwd()}")
               
