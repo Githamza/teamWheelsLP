@@ -16,6 +16,7 @@
         {{ if .IsTranslated }}
           <select
             class="border-0 d-inline d-xl-none"
+            aria-label="{{ i18n "select_language" | default "Select language" }}"
             onchange="location = this.value;">
             {{ $siteLanguages := site.Languages }}
             {{ $pageLang := .Page.Lang }}
@@ -132,6 +133,7 @@
               <select
                 class="border-0"
                 id="select-language"
+                aria-label="{{ i18n "select_language" | default "Select language" }}"
                 onchange="location = this.value;">
                 {{ $siteLanguages := site.Languages }}
                 {{ $pageLang := .Page.Lang }}
