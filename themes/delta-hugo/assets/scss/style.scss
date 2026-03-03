@@ -3,8 +3,8 @@
 $color-primary: {{.color_primary | default "#4262FF"}};
 $color-secondary: {{.color_secondary | default "#FFD02F"}};
 $color-tertiary: {{.color_tertiary | default "#ED6F78"}};
-$color-quaternary: {{.color_quaternary | default "#6E9240"}};
-$text-color: {{.text_color | default "#777"}};
+$color-quaternary: {{.color_quaternary | default "#527D2D"}};
+$text-color: {{.text_color | default "#666"}};
 $text-dark: {{.text_dark | default "#222"}};
 $text-light: {{.text_light | default "#999"}};
 $body-color: {{.body_color | default "#fff"}};
