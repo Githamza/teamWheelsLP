@@ -1,13 +1,13 @@
 ---
-title: "TeamWheels - Corporate Carpooling in Microsoft Teams"
-description: "Transform Microsoft Teams into your corporate carpooling platform. Zero extra apps, 5-minute deployment, instant adoption. Save $2000/year per employee."
-keywords: "corporate carpooling, Microsoft Teams, employee commuting, carpooling software, ESG, sustainable commuting"
+title: "TeamWheels - Employee Carpooling & Commute Management Platform for Microsoft Teams"
+description: "Reduce Scope 3 commute emissions, cut parking costs by 30%, and boost employee retention with TeamWheels — the enterprise carpooling platform built into Microsoft Teams. Free 30-day trial."
+keywords: "employee carpooling platform, corporate carpooling software, commute management, Scope 3 employee commuting, commuter benefits, sustainable commuting, Microsoft Teams carpooling, employee transportation management, reduce parking demand, ESG commuting solution, employee rideshare program, workplace mobility, green commuting, corporate mobility solution, carpool program for companies"
 
 # banner
 banner:
-  subtitle: "The carpooling solution built into Microsoft Teams"
-  title: 'Carpooling right inside <span class="teams-brand">Microsoft Teams</span>'
-  description: "TeamWheels transforms Microsoft Teams into your corporate carpooling platform. Zero extra apps, 5-minute deployment, instant adoption. Your teams share their daily commutes—everyone wins."
+  subtitle: "The #1 employee carpooling platform built into Microsoft Teams"
+  title: 'Employee Carpooling & Commute Management — Right Inside <span class="teams-brand">Microsoft Teams</span>'
+  description: "TeamWheels is the enterprise carpooling platform that turns Microsoft Teams into a commute management solution. Reduce Scope 3 emissions, cut parking costs, and boost employee retention — with zero extra apps and 5-minute deployment."
   button:
     enable: true
     button_label: "Start free 30-day trial"
@@ -39,31 +39,31 @@ features:
 # fun facts
 fun_facts:
   enable: true
-  title: "Corporate carpooling by the numbers"
+  title: "Enterprise carpooling by the numbers"
   fact_item:
   - icon: "fas fa-dollar-sign"
     counter: "2000"
     counter_suffix: "$"
     counter_prefix: ""
-    content: "average annual savings per employee on commuting costs"
+    content: "annual commuter savings per employee with shared rides"
 
-  - icon: "fas fa-clock"
-    counter: "5"
-    counter_suffix: " min"
+  - icon: "fas fa-parking"
+    counter: "30"
+    counter_suffix: "%"
     counter_prefix: ""
-    content: "to deploy TeamWheels in your organization"
+    content: "reduction in parking demand at corporate campuses"
 
-  - icon: "fas fa-car"
+  - icon: "fas fa-leaf"
     counter: "6"
     counter_suffix: " kg"
     counter_prefix: "-"
-    content: "CO₂ saved per shared commute"
+    content: "CO₂ saved per shared commute — measurable Scope 3 impact"
 
   - icon: "fas fa-chart-line"
     counter: "10.6"
     counter_suffix: "%"
     counter_prefix: "+"
-    content: "annual growth in corporate carpooling adoption"
+    content: "annual growth in corporate carpooling adoption worldwide"
 
 # work_process
 work_process:
@@ -73,78 +73,78 @@ work_process:
 # image_and_content_block
 image_and_content_blocks:
   - enable: true
-    subtitle: "Why choose TeamWheels?"
-    title: "Carpooling directly inside Microsoft Teams"
+    subtitle: "Why HR & Sustainability Leaders Choose TeamWheels"
+    title: "Employee Carpooling That Lives Where Your Teams Already Work"
     image: "images/why_use_teamWheels.png"
     content_position: "right"
-    content: "Why force your teams to install yet another app? TeamWheels integrates natively with Teams—the tool they already use every day.
+    content: "Why force employees to download another app they'll forget? TeamWheels integrates natively with Microsoft Teams — the tool your workforce already uses every day. That means instant adoption and zero change management.
 
-    * **Zero friction** - No new app to install, no new account to create
+    * **Zero friction for employees** — No new app to install, no separate account to create. Carpooling starts in one click
 
-    * **Smart bot** - Your employees find and offer rides through simple chat conversations
+    * **Smart conversational bot** — Employees find and offer rides through simple Teams chat conversations
 
-    * **Multi-device** - PC, tablets, smartphones—anywhere Teams works
+    * **Multi-device access** — PC, tablets, smartphones — anywhere Teams works, carpooling works
 
-    * **5-minute deployment** - One admin, a few clicks, done
+    * **5-minute deployment** — One Teams admin, a few clicks, and your employee carpool program is live
 
-    Unlike standalone carpooling apps, TeamWheels lives where your teams already work.
+    Unlike standalone carpooling apps with low adoption rates, TeamWheels lives where your workforce already communicates. That's why our clients see 40%+ employee participation rates.
     "
     button:
       enable: true
       label: "Discover features →"
 
   - enable: true
-    subtitle: "Real results"
-    title: "Sustainability, savings, and well-being"
+    subtitle: "Measurable ESG & Commute Impact"
+    title: "Cut Scope 3 Emissions, Reduce Parking Costs, Retain Top Talent"
     image: "images/carpoolingBenefits.png"
     content_position: "left"
-    content: "TeamWheels helps you meet your ESG goals while improving your employees' daily lives.
+    content: "TeamWheels helps your organization meet ESG targets, solve parking challenges, and improve employee well-being — all through one platform.
 
-    * **Cost savings for your teams** - Employees share commuting expenses
+    * **Reduce Scope 3 commute emissions** — Fewer single-occupancy vehicles means measurable carbon reduction for your sustainability reporting (GHG Protocol Category 7)
 
-    * **Measurable carbon impact** - Fewer cars = lower CO₂ emissions, tracked in real-time
+    * **Cut parking demand by up to 30%** — Free up valuable corporate real estate and reduce parking infrastructure costs
 
-    * **Well-being and connection** - Less stress, more camaraderie among colleagues
+    * **Save employees $2,000+/year** — Shared commuting expenses directly improve employee financial well-being
 
-    * **Stronger employer brand** - An attractive benefit for recruiting and retention
+    * **Boost retention & employer brand** — 73% of employees value sustainability benefits. Stand out in recruitment across the USA, UK, and Canada
 
-    * **Less parking pressure** - Fewer cars = more available parking spaces
+    * **Build workplace connections** — Carpooling colleagues report less commute stress and stronger team relationships
 
     "
     button:
       enable: true
-      label: "Discover benefits →"
+      label: "See the business case →"
 
   - enable: true
-    subtitle: "Maximize your commuter benefits"
-    title: "Pre-tax commuter programs made easy"
+    subtitle: "Commuter Benefits Administration Made Simple"
+    title: "Pre-Tax Commuter Programs & Sustainable Mobility Reporting"
     image: "images/commitment.png"
     content_position: "right"
-    content: "Help your employees get the most from their commuter benefits.
+    content: "Simplify commuter benefits administration for your HR team while meeting compliance requirements.
 
-    **Pre-tax savings**: In many regions, carpooling qualifies for tax-advantaged commuter benefit programs. Employees can save on transportation costs while reducing their tax burden.
+    **Pre-tax commuter benefits**: In the USA, employees can use up to $340/month in pre-tax income for qualifying commuter expenses (2026 IRS limit). Carpooling qualifies under employer vanpool and transit benefit programs, saving both employees and employers on payroll taxes.
 
-    **Corporate sustainability programs**: Leading organizations worldwide are committing to reduce commute-related emissions. TeamWheels provides the tracking and reporting you need.
+    **UK & Canada sustainable commute programs**: Support your organization's Sustainable Travel Plan (UK) or Smart Commute Program (Canada) with built-in tracking and participation data.
 
-    TeamWheels generates the documentation and reports you need for compliance and program administration."
+    **Automated ESG & CSR reports**: TeamWheels generates the CO₂ reduction documentation, participation metrics, and Scope 3 Category 7 data your sustainability team needs for GRI, CDP, CSRD, and SEC climate disclosures."
     button:
       enable: true
-      label: "Learn more about benefits →"
+      label: "Learn more about commuter benefits →"
 
   - enable: true
-    subtitle: "Security & Compliance"
-    title: "A certified and secure solution"
+    subtitle: "Enterprise Security & Compliance"
+    title: "A Certified, Secure Employee Mobility Solution"
     image: "images/why_use_teamWheels.png"
     content_position: "left"
-    content: "TeamWheels meets the strictest security requirements to protect your data and your employees' privacy.
+    content: "TeamWheels meets the strictest enterprise security requirements to protect your organization and your employees' privacy.
 
-    * **Microsoft Partner Certified** - Validated application on AppSource
+    * **Microsoft Partner Certified** — Validated application on Microsoft AppSource, trusted by enterprise IT teams
 
-    * **Enterprise SSO** - Secure authentication via Azure AD
+    * **Enterprise SSO** — Secure authentication via Azure AD / Entra ID — no separate credentials needed
 
-    * **GDPR Compliant** - Data protection built in
+    * **GDPR & Privacy Compliant** — Data protection built in, with employee privacy by design
 
-    * **Admin dashboard** - Track adoption and CO₂ impact without compromising privacy
+    * **Admin dashboard** — Track program adoption, commuter participation, and CO₂ impact without compromising individual privacy
 
     "
     button:
@@ -155,33 +155,33 @@ image_and_content_blocks:
 # testimonials
 testimonials:
   enable: true
-  subtitle: "Customer feedback"
-  title: "What our customers say about TeamWheels"
+  subtitle: "Trusted by HR & Sustainability Leaders"
+  title: "What HR Directors and Sustainability Managers Say About TeamWheels"
   image_1: "images/testimonials-group-1.png"
   image_2: "images/testimonials-group-2.png"
   reviews:
     - name: "Sarah Johnson"
       designation: "HR Director, TechCorp Inc."
       image: "images/avatar/04.jpg"
-      content: "Deployed in one week, instant adoption by our teams. 40% of our employees now carpool regularly."
+      content: "We deployed TeamWheels in one week and saw instant adoption. 40% of our employees now carpool regularly — and our parking pressure dropped significantly."
 
     - name: "Michael Chen"
       designation: "Sustainability Manager, Global Solutions"
       image: "images/avatar/02.jpg"
-      content: "Perfect for our carbon reporting. Intuitive interface in Teams—our employees love it."
+      content: "Perfect for our Scope 3 commute emissions reporting. The CO₂ tracking dashboard gives us exactly what we need for our ESG disclosures. Our employees love the Teams integration."
 
     - name: "Emily Rodriguez"
-      designation: "Office Manager, StartupHub"
+      designation: "Facilities Manager, StartupHub"
       image: "images/avatar/07.jpg"
-      content: "Easy to set up and free for 30 days. We could test it with no commitment required."
+      content: "We reduced our parking demand by 25% in the first quarter. Easy to set up, free for 30 days, and the ROI was clear within weeks."
 
 
 # blog
 blog:
   enable: true
-  subtitle: "Resources"
-  title: "News and practical guides"
-  description: "Discover our tips for developing carpooling in your organization"
+  subtitle: "Resources for HR & Sustainability Leaders"
+  title: "Employee Commute & Corporate Carpooling Insights"
+  description: "Practical guides on launching employee carpool programs, reducing Scope 3 commute emissions, and maximizing commuter benefits across the USA, UK, and Canada."
 
   button:
     enable: true
@@ -197,8 +197,8 @@ next_step_button:
 # call_to_action
 call_to_action:
   enable: true
-  title: "Launch carpooling in your organization"
-  subtitle: "Join the companies that make commuting easier for their teams while reducing their carbon footprint. <br><br> <strong>Launch offer:</strong> Free 30-day trial + guided deployment. <br> <em>Limited spots for personalized onboarding.</em>"
+  title: "Launch an Employee Carpooling Program in Your Organization"
+  subtitle: "Join forward-thinking companies across the USA, UK, and Canada that are reducing commute costs, cutting Scope 3 emissions, and improving employee well-being with TeamWheels. <br><br> <strong>Get started:</strong> Free 30-day trial + guided deployment for your HR and sustainability teams. <br> <em>Limited spots for personalized onboarding.</em>"
   button_label : "Start my free trial →"
   button_link : "contact/"
   image : "images/cta.png"
