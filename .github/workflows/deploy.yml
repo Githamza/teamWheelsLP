@@ -85,21 +85,28 @@ jobs:
           python3 << 'PYTHON_SCRIPT'
           import os
           import sys
+          import ssl
           import ftplib
           import traceback
-          
+
           host = os.environ['FTP_HOST']
           username = os.environ['FTP_USERNAME']
           password = os.environ['FTP_PASSWORD']
-          
+
           print(f"FTP Host: {host}")
           print(f"FTP User: {username}")
           print(f"FTP Pass: {'*' * len(password)}")
-          
+
           try:
-              print(f"Connecting to {host}...")
-              ftp = ftplib.FTP(host)
+              print(f"Connecting to {host} (FTPS)...")
+              ctx = ssl.create_default_context()
+              ctx.check_hostname = False
+              ctx.verify_mode = ssl.CERT_NONE
+              ftp = ftplib.FTP_TLS(context=ctx)
+              ftp.connect(host, 21)
+              ftp.auth()
               ftp.login(username, password)
+              ftp.prot_p()  # Secure the data channel
               print(f"Connected! Welcome: {ftp.getwelcome()}")
               print(f"Current dir: {ftp.pwd()}")
               
