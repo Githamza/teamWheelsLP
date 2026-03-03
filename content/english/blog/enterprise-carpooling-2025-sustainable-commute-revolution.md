@@ -1,12 +1,22 @@
 ---
 title: "Enterprise Carpooling in 2025: The Sustainable Commute Revolution"
+description: Discover how corporate carpooling is transforming workplace
+  mobility with $34B market growth, 30+ tonnes CO2 savings per company, and
+  proven ROI for forward-thinking enterprises.
 date: 2025-01-31
 draft: false
-description: "Discover how corporate carpooling is transforming workplace mobility with $34B market growth, 30+ tonnes CO2 savings per company, and proven ROI for forward-thinking enterprises."
-image: "images/carpooling_benefits.png"
+image: https://www.flexigo.com/hubfs/blog%20flexicar.png
 author: ""
-categories: ["Sustainability", "Mobility"]
-tags: ["carpooling", "corporate mobility", "sustainability", "employee benefits", "carbon footprint", "ESG"]
+categories:
+  - Sustainability
+  - Mobility
+tags:
+  - carpooling
+  - corporate mobility
+  - sustainability
+  - employee benefits
+  - carbon footprint
+  - ESG
 ---
 
 The corporate world is witnessing a fundamental shift in how employees commute. **Enterprise carpooling** has emerged as one of the most effective strategies for companies looking to reduce costs, attract talent, and meet ambitious sustainability targets. With the global carpooling market projected to reach **$34 billion by 2034**, now is the time to understand why leading organizations are making shared commuting a strategic priority.
