@@ -26,7 +26,7 @@ theme_copyright = true
 career_form_action = "#!" # career form works with https://formspree.io or any formspree-alternatives
 
 # OpenGraph / Twitter Card metadata
-description = "TeamWheels - Corporate carpooling integrated into Microsoft Teams. Reduce commute costs and carbon footprint. Free 30-day trial. Deploy in 5 minutes."
+description = "TeamWheels - Enterprise employee carpooling platform for Microsoft Teams. Reduce Scope 3 commute emissions, cut parking costs, and improve employee retention. Free 30-day trial. Deploy in 5 minutes."
 author = "TeamWheels"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
@@ -67,8 +67,8 @@ image = "images/cta.png"
 
 # seo meta data for OpenGraph / Twitter Card
 [metadata]
-keywords = [ "corporate carpooling", "Microsoft Teams carpooling", "employee carpooling", "commute benefits", "sustainable commuting", "B2B carpooling app", "carbon reduction", "ESG commuting", "enterprise carpooling", "carpooling software", "employee benefits", "covoiturage entreprise", "Microsoft Teams covoiturage", "covoiturage domicile travail"]
-description = "TeamWheels - Corporate carpooling integrated into Microsoft Teams. Reduce commute costs and carbon footprint. Free 30-day trial. Deploy in 5 minutes."
+keywords = [ "corporate carpooling", "enterprise carpooling platform", "employee carpooling program", "Microsoft Teams carpooling", "commute management platform", "commuter benefits", "sustainable commuting", "employee transportation management", "Scope 3 employee commuting", "Scope 3 Category 7", "ESG commuting solution", "carpooling software", "reduce parking demand", "employee rideshare program", "corporate mobility solution", "employee commute benefits", "workplace carpooling app", "green commuting", "carbon reduction commuting", "pre-tax commuter benefits", "employee retention commute", "corporate sustainability commuting", "covoiturage entreprise", "Microsoft Teams covoiturage", "covoiturage domicile travail"]
+description = "TeamWheels - Enterprise carpooling platform integrated into Microsoft Teams. Reduce Scope 3 commute emissions, cut parking costs by 30%, and boost employee retention. Free 30-day trial. Deploy in 5 minutes."
 author = "TeamWheels"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 

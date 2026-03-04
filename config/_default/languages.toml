@@ -9,8 +9,8 @@ weight = 2
 # copyright
 copyright = "Copyright © 2024 TeamWheels. All rights reserved."
 # meta
-title = "TeamWheels - Corporate Carpooling in Microsoft Teams"
-description = "Transform Microsoft Teams into your corporate carpooling platform. Zero extra apps, 5-minute deployment, instant adoption. Save $2000/year per employee."
+title = "TeamWheels - Employee Carpooling & Commute Management Platform for Microsoft Teams"
+description = "Reduce Scope 3 commute emissions, cut parking costs by 30%, and boost employee retention with TeamWheels — the enterprise carpooling platform built into Microsoft Teams. Free 30-day trial."
 # navigation
 home = "Home"
 

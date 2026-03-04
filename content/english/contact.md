@@ -1,31 +1,30 @@
 ---
-title: "Contact"
-description: "Libero consequuntur doloremque amet, cum fugiat ipsam blanditiis corrupti praesentium quis."
+title: "Schedule a Demo | TeamWheels Employee Carpooling"
+description: "Book a personalized demo of TeamWheels — the employee carpooling platform for Microsoft Teams. See how HR and Sustainability teams reduce commute costs and Scope 3 emissions."
 draft: false
 layout: "contact"
+keywords: "schedule carpooling demo, corporate carpooling consultation, employee mobility platform demo, commute management solution demo"
 
 # contact
 contact:
-  subtitle: "We Are the pioneer"
-  title: "Schedule a Demo"
-  description: "Please note: If you need to make a payment or need a copy of a receipt, please call 877-735-2910 and select Option 1."
+  subtitle: "See TeamWheels in action"
+  title: "Schedule a Demo with Our Team"
+  description: "Tell us about your organization's commute challenges — parking pressure, Scope 3 targets, employee satisfaction, or commuter benefit programs — and we'll show you how TeamWheels can help."
 
 # contact info
 contact_info:
   enable : true
-  title : "Our Contact Info"
+  title : "Get in Touch"
   address_list:
-  - "thedelta@gmail.com"
-  - "(207) 555-0119"
-  - "3891 Ranchview Dr. Richardson Main Road Near Amazon, California 62639"
+  - "contact@teamwheels.fr"
 
 # Services
 services:
   enable : true
-  title : "Why Delta?"
+  title : "Why Organizations Choose TeamWheels"
   service_list:
-  - "Focus critical developer resources on your core business"
-  - "Launch new products faster with less payments code"
-  - "Improve conversion from international customers"
+  - "Deploy an employee carpooling program in Microsoft Teams in under 5 minutes"
+  - "Reduce parking demand by up to 30% and cut Scope 3 commute emissions"
+  - "Boost employee retention with a meaningful, measurable commuter benefit"
 
 ---
