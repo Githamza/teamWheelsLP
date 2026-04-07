@@ -19,18 +19,26 @@
 {{ end }}
 <script crossorigin="anonymous" defer {{ if hugo.IsProduction }}integrity="{{ $scripts.Data.Integrity }}"{{end}} type="application/javascript" src="{{ $scripts.RelPermalink }}"></script>
 
-<!-- font family -->
+<!-- font family (deferred to avoid blocking main thread) -->
 {{ $pf:= site.Params.variables.font_primary }}
 {{ $sf:= site.Params.variables.font_secondary }}
 <script type="application/javascript">
-  WebFont.load({
-    google: {
-      api: 'https://fonts.googleapis.com/css2',
-      families: ['{{$pf | default `Lato:wght@400`}}:wght@400;700&display=swap'{{with $sf}},'{{. | default `Lato:wght@400`}}:wght@400;500;600&display=swap'{{end}}],
-      version: 2
-    },
-    active: () => {sessionStorage.fontsLoaded = true}
-  });
+  (function(){
+    function loadFonts(){
+      if(typeof WebFont!=='undefined'){
+        WebFont.load({
+          google: {
+            api: 'https://fonts.googleapis.com/css2',
+            families: ['{{$pf | default `Lato:wght@400`}}:wght@400;700&display=swap'{{with $sf}},'{{. | default `Lato:wght@400`}}:wght@400;500;600&display=swap'{{end}}],
+            version: 2
+          },
+          active: function(){sessionStorage.fontsLoaded=true}
+        });
+      }
+    }
+    if('requestIdleCallback' in window){requestIdleCallback(loadFonts)}
+    else{setTimeout(loadFonts,50)}
+  })();
 </script>
 
 <!-- progressive web app -->

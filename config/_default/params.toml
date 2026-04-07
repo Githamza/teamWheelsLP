@@ -32,7 +32,7 @@ image = "images/logo.png" # this image will be used as fallback if a page has no
 
 # Preloader
 [preloader]
-enable = true
+enable = false
 preloader = "images/logo.png" # use jpg, png, svg or gif format.
 
 # contact info
