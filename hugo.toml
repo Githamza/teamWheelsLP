@@ -11,9 +11,9 @@
 color_primary = "#5b5fc7"
 color_secondary = "#7f85f5"
 color_tertiary = "#115ea3"
-color_quaternary = "#2886de"
+color_quaternary = "#155a99"
 body_color = "#fff"
-text_color = "#555"
+text_color = "#444"
 text_dark = "#222222"
 text_light = "#959595"
 border_color = "#ACB9C4"
@@ -75,9 +75,5 @@ link = "js/gallery-slider.js"
 link = "js/accordion.js"
 [[params.plugins.js]]
 link = "js/tab.js"
-[[params.plugins.js]]
-link = "plugins/cookie.js"
-[[params.plugins.js]]
-link = "plugins/lazy-loader.js"
 [[params.plugins.js]]
 link = "plugins/webfont/webfont-loader-2.js"
