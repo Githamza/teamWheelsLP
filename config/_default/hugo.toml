@@ -24,8 +24,7 @@ hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/K
 [sitemap]
   filename = "sitemap.xml"
   changefreq = "weekly"
-  priority = 0.5
-  gzip = true
+  priority = 0.7
 
 # disqus short name (deprecated, use [services.disqus] below)
 # disqusShortname = "themefisher-template"

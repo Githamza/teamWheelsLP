@@ -17,4 +17,9 @@ hugo_stats.json
 # Editor / tooling
 .cursor/
 
+# Google Search Console credentials & data
+scripts/search-console/tokens.json
+scripts/search-console/client_secret.json
+scripts/search-console/data/
+
 

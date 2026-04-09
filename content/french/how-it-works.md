@@ -1,7 +1,8 @@
 ---
-title: "How It Works"
-description: "TeamWheels is a carpooling solution that is easy to use and can help you develop carpooling in your company"
+title: "Comment fonctionne le covoiturage d'entreprise avec TeamWheels"
+description: "Découvrez comment TeamWheels transforme Microsoft Teams en plateforme de covoiturage. Déploiement en 5 minutes, bot conversationnel, tableau de bord admin pour le suivi Scope 3. Lancez votre programme de covoiturage."
 layout: "how-it-works"
+keywords: "comment fonctionne covoiturage entreprise, mise en place covoiturage entreprise, covoiturage Microsoft Teams, bot covoiturage, plateforme mobilité domicile travail"
 
 # banner
 banner:
