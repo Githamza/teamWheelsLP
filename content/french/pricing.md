@@ -1,8 +1,9 @@
 ---
-title: "Tarifs"
-description: "Tarification simple et transparente. 5€ par collaborateur par mois, tout inclus."
+title: "Tarifs covoiturage entreprise | TeamWheels"
+description: "Tarification simple et transparente pour votre programme de covoiturage. Essai gratuit 30 jours, puis 5€/collaborateur/mois, toutes fonctionnalités incluses. Suivi Scope 3 et rapports RSE."
 draft: false
 layout: "pricing"
+keywords: "tarifs covoiturage entreprise, prix plateforme covoiturage, coût programme covoiturage, covoiturage entreprise prix, forfait mobilité durable covoiturage"
 
 # pricing
 pricing:

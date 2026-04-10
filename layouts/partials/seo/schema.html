@@ -19,32 +19,71 @@
   {{- $description = .Site.Params.metadata.description -}}
 {{- end -}}
 
+{{- if .IsHome -}}
+{{- /* Homepage: WebSite schema with SearchAction */ -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": {{ $scr.Get "schema_type" | jsonify }},
+  "@type": "WebSite",
   "name": {{ $title | jsonify }},
   "description": {{ $description | jsonify }},
   "url": {{ .Permalink | jsonify }},
-  {{- if .IsHome }}
-  "@type": "WebSite",
   "publisher": {
     "@type": "Organization",
     "name": "TeamWheels",
     "url": "https://www.teamwheelsapp.com"
   },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "https://www.teamwheelsapp.com/search?q={search_term_string}"
-    },
-    "query-input": "required name=search_term_string"
+  "inLanguage": {{ .Site.LanguageCode | default "en" | jsonify }},
+  "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }}
+}
+</script>
+{{- else if eq .Type "blog" -}}
+{{- /* Blog posts: Article schema with enhanced metadata */ -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ $title | jsonify }},
+  "description": {{ $description | jsonify }},
+  "url": {{ .Permalink | jsonify }},
+  "inLanguage": {{ .Site.LanguageCode | default "en" | jsonify }},
+  {{- with .Params.image }}
+  "image": {
+    "@type": "ImageObject",
+    "url": {{ . | absURL | jsonify }}
   },
   {{- end }}
-  {{- if not .IsHome }}
+  "author": {
+    "@type": "Organization",
+    "name": "TeamWheels"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "TeamWheels",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.teamwheelsapp.com/images/logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ .Permalink | jsonify }}
+  },
+  "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }}
+}
+</script>
+{{- else -}}
+{{- /* Other pages: WebPage/ContactPage schema */ -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": {{ $scr.Get "schema_type" | jsonify }},
+  "name": {{ $title | jsonify }},
   "headline": {{ $title | jsonify }},
-  {{- end }}
+  "description": {{ $description | jsonify }},
+  "url": {{ .Permalink | jsonify }},
   "inLanguage": {{ .Site.LanguageCode | default "en" | jsonify }},
   {{- with .Params.image }}
   "image": {
@@ -56,6 +95,7 @@
   "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }}
 }
 </script>
+{{- end -}}
 
 {{- /* Organization Schema for all pages */ -}}
 <script type="application/ld+json">
@@ -64,7 +104,10 @@
   "@type": "Organization",
   "name": "TeamWheels",
   "url": "https://www.teamwheelsapp.com",
-  "logo": "https://www.teamwheelsapp.com/images/logo.png",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://www.teamwheelsapp.com/images/logo.png"
+  },
   "description": "Enterprise employee carpooling and commute management platform for Microsoft Teams. Reduce Scope 3 commute emissions, cut parking costs, and boost employee retention. Serving organizations in the USA, UK, Canada, and France.",
   "foundingDate": "2024",
   "address": {
@@ -77,19 +120,98 @@
     "contactType": "Sales"
   },
   "sameAs": [
-    "https://www.linkedin.com/company/teamwheels/",
-    "https://twitter.com/teamwheels"
+    "https://www.linkedin.com/company/teamwheels/"
   ],
-  "areaServed": ["France", "United Kingdom", "Canada", "United States"],
-  "serviceType": ["Corporate Carpooling", "Employee Commute Management", "Enterprise Mobility Platform"],
+  "areaServed": [
+    {"@type": "Country", "name": "France"},
+    {"@type": "Country", "name": "United Kingdom"},
+    {"@type": "Country", "name": "Canada"},
+    {"@type": "Country", "name": "United States"}
+  ]
+}
+</script>
+
+{{- /* SoftwareApplication Schema - product rich results */ -}}
+{{- if or .IsHome (eq .Layout "pricing") (eq .Layout "how-it-works") -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "TeamWheels",
+  "applicationCategory": "BusinessApplication",
+  "applicationSubCategory": "Employee Carpooling & Commute Management",
+  "operatingSystem": "Microsoft Teams (Windows, macOS, iOS, Android, Web)",
+  "description": "Enterprise employee carpooling platform integrated into Microsoft Teams. Reduce Scope 3 commute emissions, cut parking costs by 30%, and boost employee retention.",
+  "url": "https://www.teamwheelsapp.com",
+  "screenshot": "https://www.teamwheelsapp.com/images/homeBannerimg2.png",
+  "featureList": [
+    "Microsoft Teams native integration",
+    "Conversational carpooling bot",
+    "Scope 3 emissions tracking dashboard",
+    "Admin analytics dashboard",
+    "Azure AD / Entra ID SSO",
+    "GDPR compliant",
+    "Multi-language (English, French)"
+  ],
   "offers": {
-    "@type": "Offer",
-    "price": "0",
+    "@type": "AggregateOffer",
+    "lowPrice": "0",
+    "highPrice": "5",
     "priceCurrency": "EUR",
-    "description": "Free 30-day trial"
+    "offerCount": "3",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Free Trial",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "description": "30-day free trial for up to 50 employees"
+      },
+      {
+        "@type": "Offer",
+        "name": "TeamWheels",
+        "price": "5",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "5",
+          "priceCurrency": "EUR",
+          "unitText": "seat/month"
+        },
+        "description": "Complete employee carpooling & commute management"
+      }
+    ]
   }
 }
 </script>
+{{- end -}}
+
+{{- /* FAQPage Schema for pricing page - enables rich FAQ results in Google */ -}}
+{{- if eq .Layout "pricing" -}}
+{{- with .Params.faq -}}
+{{- if .enable -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{- range $index, $faq := .faq_list -}}
+    {{- if $index }},{{ end }}
+    {
+      "@type": "Question",
+      "name": {{ $faq.title | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ $faq.content | jsonify }}
+      }
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{- end -}}
+{{- end -}}
+{{- end -}}
 
 {{- /* BreadcrumbList Schema */ -}}
 {{- $breadcrumbs := slice -}}

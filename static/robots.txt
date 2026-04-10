@@ -1,4 +1,16 @@
 User-agent: *
 Allow: /
 
+# Allow Google and Bing to crawl freely
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block crawling of admin and internal paths
+Disallow: /admin/
+Disallow: /tags/
+Disallow: /categories/
+
 Sitemap: https://www.teamwheelsapp.com/sitemap.xml
