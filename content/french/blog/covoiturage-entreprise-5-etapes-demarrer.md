@@ -1,7 +1,9 @@
 ---
-title: "Covoiturage entreprise : 5 étapes pour démarrer"
-description: "Guide pratique pour lancer un programme de covoiturage professionnel en 30 jours. Étapes, conseils et bonnes pratiques."
+title: "Outil de Covoiturage Entreprise : Guide en 5 Étapes pour Démarrer"
+description: "Comment choisir un outil de covoiturage entreprise et lancer un programme domicile-travail en 30 jours. Comparatif des solutions, étapes clés, Forfait Mobilité Durable et bonnes pratiques."
+keywords: "outil covoiturage entreprise, covoiturage entreprise, covoiturage en entreprise, organiser un covoiturage, application covoiturage travail, plateforme covoiturage entreprise"
 date: 2025-01-15
+lastmod: 2026-04-11
 image: images/how-it-works/carpooling_people.png
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg

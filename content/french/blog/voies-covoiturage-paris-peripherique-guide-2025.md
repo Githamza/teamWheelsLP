@@ -1,8 +1,9 @@
 ---
-title: "Voies de covoiturage à Paris en 2026 : guide complet du périphérique et des autoroutes franciliennes"
+title: "Voies de covoiturage Paris : horaires, périphérique, A1 & A13 — Guide 2026"
 date: 2026-04-07
 draft: false
-description: "Voies réservées au covoiturage sur le périphérique parisien, l'A1 et l'A13 : bilan après un an, application Covoit IDFM, amendes, et tout ce qui change en 2026 pour la mobilité en Île-de-France."
+description: "Horaires des voies de covoiturage à Paris (périphérique, A1, A13), application Covoit IDFM, amendes et bilan après un an. Guide complet 2026 pour la mobilité en Île-de-France."
+keywords: "voie covoiturage périphérique paris horaires, voies covoiturage paris 2026, horaire voie covoiturage paris, voie covoiturage A1 horaire, aire de covoiturage paris, covoit idfm"
 image: images/carpoolingBenefits.png
 author: TeamWheels
 categories:

@@ -1,16 +1,9 @@
 User-agent: *
 Allow: /
-
-# Allow Google and Bing to crawl freely
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-# Block crawling of admin and internal paths
 Disallow: /admin/
-Disallow: /tags/
-Disallow: /categories/
+
+# Note: /tags/ and /categories/ are NOT disallowed here — they use <meta robots="noindex">
+# which requires Google to crawl the page to see the directive. Disallowing would
+# block the crawl and prevent Google from seeing the noindex.
 
 Sitemap: https://www.teamwheelsapp.com/sitemap.xml

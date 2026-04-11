@@ -1,7 +1,7 @@
 ---
-title: "TeamWheels - Covoiturage Entreprise intégré à Microsoft Teams"
-description: "Plateforme de covoiturage domicile-travail intégrée à Microsoft Teams. Réduisez vos émissions Scope 3, vos coûts parking et améliorez le bien-être de vos collaborateurs. Essai gratuit 30 jours."
-keywords: "covoiturage entreprise, covoiturage domicile travail, Microsoft Teams covoiturage, plateforme covoiturage entreprise, forfait mobilité durable, mobilité durable entreprise, RSE covoiturage, Scope 3 trajets domicile travail, application covoiturage professionnel, réduire empreinte carbone entreprise"
+title: "TeamWheels | Logiciel de Covoiturage Entreprise pour Microsoft Teams"
+description: "Outil de covoiturage entreprise intégré à Microsoft Teams. Gérez les trajets domicile-travail, le Forfait Mobilité Durable et votre Scope 3. Déploiement en 5 minutes, essai gratuit 30 jours."
+keywords: "covoiturage entreprise, outil covoiturage entreprise, plateforme covoiturage entreprise, logiciel covoiturage entreprise, application covoiturage travail, Microsoft Teams covoiturage, forfait mobilité durable, mobilité durable entreprise, organiser un covoiturage, covoiturage domicile travail"
 
 # banner
 banner:

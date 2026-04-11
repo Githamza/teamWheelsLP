@@ -1,10 +1,11 @@
 ---
-title: "Scope 3 Employee Commuting: Why Corporate Carpooling Is the Fastest ESG Win for US Companies in 2026"
+title: "Scope 3 Employee Commuting Emissions: 2026 US Compliance Guide (SB 253)"
 date: 2026-02-17
 draft: false
-description: "With California SB 253 Scope 3 reporting starting in 2027 and SBTi targets tightening, employee commuting emissions are under the spotlight. Learn how corporate carpooling delivers measurable ROI while cutting your Scope 3 footprint."
+description: "How to measure and reduce Scope 3 Category 7 employee commuting emissions for SB 253, SBTi & CSRD compliance. Corporate carpooling ROI, implementation guide & KPIs for US companies in 2026."
+keywords: "scope 3 employee commuting, employee commuting emissions, scope 3 category 7, SB 253 compliance, employee commuting software, commuter benefits, corporate carpooling, ESG reporting employee commuting"
 image: "images/carpooling_kpis.png"
-author: ""
+author: "TeamWheels"
 categories: ["Sustainability", "Compliance", "Mobility"]
 tags: ["scope 3 emissions", "employee commuting", "corporate carpooling", "SB 253", "ESG reporting", "sustainability", "USA", "carbon footprint", "SBTi", "net zero"]
 ---

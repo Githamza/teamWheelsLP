@@ -1,7 +1,7 @@
 ---
-title: "TeamWheels - Employee Carpooling & Commute Management Platform for Microsoft Teams"
-description: "Reduce Scope 3 commute emissions, cut parking costs by 30%, and boost employee retention with TeamWheels — the enterprise carpooling platform built into Microsoft Teams. Free 30-day trial."
-keywords: "employee carpooling platform, corporate carpooling software, commute management, Scope 3 employee commuting, commuter benefits, sustainable commuting, Microsoft Teams carpooling, employee transportation management, reduce parking demand, ESG commuting solution, employee rideshare program, workplace mobility, green commuting, corporate mobility solution, carpool program for companies"
+title: "TeamWheels | Corporate Carpooling Software for Microsoft Teams"
+description: "Corporate carpooling software built into Microsoft Teams. Reduce Scope 3 commute emissions, cut parking costs 30%, track employee commuting — deployed in 5 minutes. Free 30-day trial."
+keywords: "corporate carpooling software, corporate carpooling, corporate carpooling solution, corporate carpooling app, carpool management software, carpool administration software, employee carpool, employee commuting software, commute management platform, Microsoft Teams carpooling, corporate mobility app, employee mobility app, carpooling software, carpool software"
 
 # banner
 banner:

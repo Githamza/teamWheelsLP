@@ -1,6 +1,21 @@
 <!-- theme meta -->
 <meta name="theme-name" content="delta-hugo" />
 
+{{/*
+  Robots directives — driven by Google Search Console data (Q1 2026).
+  - Root "/" is a JS-redirect shim that Googlebot still indexes as a duplicate
+    of /fr/ (101 imp, pos 8.1). Noindex it and canonical to the default language.
+  - Taxonomy pages (tags, categories) get 100+ impressions with 0 clicks and
+    dilute topical authority. Noindex, follow.
+*/}}
+{{- $isRootRedirect := and .IsHome (eq .RelPermalink "/") -}}
+{{- $isTaxonomy := or (eq .Kind "term") (eq .Kind "taxonomy") -}}
+{{- if or $isRootRedirect $isTaxonomy -}}
+<meta name="robots" content="noindex, follow" />
+{{- else -}}
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+{{- end }}
+
 <!-- DNS prefetch and preconnect for faster third-party loading -->
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
 <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
@@ -21,8 +36,12 @@
 {{ partialCached "site-verifications.html" . }}
 
 
-<!-- canonical URL -->
+{{/* Canonical URL — root "/" redirect shim points to default language home */}}
+{{- if $isRootRedirect -}}
+<link rel="canonical" href="{{ site.Home.Permalink }}" />
+{{- else -}}
 <link rel="canonical" href="{{ .Permalink }}" />
+{{- end }}
 
 <!-- opengraph and twitter card -->
 {{ partial "basic-seo.html" . }}
