@@ -1,18 +1,30 @@
 #!/usr/bin/env node
 /**
- * Google Search Console - Data Fetcher
+ * Google Search Console - Deep Data Fetcher
  *
- * Fetches search performance data and saves it for analysis.
+ * Fetches a comprehensive snapshot of Search Console data for analysis:
+ *   - Current period query/page/country/device/date breakdowns
+ *   - Previous period (same length, immediately before) for comparison
+ *   - 52-week daily trend
+ *   - searchAppearance (rich results coverage)
+ *   - Per-country query drilldowns (USA, FRA, GBR, AUS, CAN)
+ *   - Sitemaps list + health (submitted / warnings / errors / last download)
+ *   - Sitemap URL extraction (parses live sitemap.xml)
+ *   - URL Inspection for EVERY URL in the sitemap (indexation status,
+ *     canonical, last crawl, mobile usability, rich results)
  *
  * Usage:
  *   node scripts/search-console/fetch-data.js
- *   node scripts/search-console/fetch-data.js --start 2025-09-01 --end 2025-09-30
- *   node scripts/search-console/fetch-data.js --months 3
+ *   node scripts/search-console/fetch-data.js --start 2026-01-01 --end 2026-03-31
+ *   node scripts/search-console/fetch-data.js --light          (skip URL inspection)
+ *   node scripts/search-console/fetch-data.js --key-urls-only  (inspect only KEY_URLS, skip sitemap crawl)
  */
 
 const { google } = require('googleapis');
 const fs = require('fs');
 const path = require('path');
+const https = require('https');
+const zlib = require('zlib');
 const config = require('./config');
 const { getOAuth2Client } = require('./auth');
 
@@ -21,11 +33,15 @@ function parseArgs() {
   const opts = {
     startDate: config.DEFAULT_START_DATE,
     endDate: config.DEFAULT_END_DATE,
+    light: false,
+    keyUrlsOnly: false,
   };
 
   for (let i = 0; i < args.length; i++) {
     if (args[i] === '--start' && args[i + 1]) opts.startDate = args[++i];
     if (args[i] === '--end' && args[i + 1]) opts.endDate = args[++i];
+    if (args[i] === '--light') opts.light = true;
+    if (args[i] === '--key-urls-only') opts.keyUrlsOnly = true;
     if (args[i] === '--months' && args[i + 1]) {
       const months = parseInt(args[++i], 10);
       const end = new Date();
@@ -38,19 +54,30 @@ function parseArgs() {
   return opts;
 }
 
+function daysBetween(start, end) {
+  const s = new Date(start);
+  const e = new Date(end);
+  return Math.round((e - s) / (1000 * 60 * 60 * 24));
+}
+
+function shiftDate(dateStr, days) {
+  const d = new Date(dateStr);
+  d.setDate(d.getDate() + days);
+  return d.toISOString().split('T')[0];
+}
+
 async function getAuthenticatedClient() {
   const oauth2Client = await getOAuth2Client();
 
   if (!fs.existsSync(config.TOKEN_PATH)) {
     console.error('No authentication tokens found.');
-    console.error('Run first: node scripts/search-console/auth.js');
+    console.error('Run first: node scripts/search-console/auth-manual.js');
     process.exit(1);
   }
 
   const tokens = JSON.parse(fs.readFileSync(config.TOKEN_PATH, 'utf8'));
   oauth2Client.setCredentials(tokens);
 
-  // Auto-refresh tokens
   oauth2Client.on('tokens', (newTokens) => {
     const existing = JSON.parse(fs.readFileSync(config.TOKEN_PATH, 'utf8'));
     const merged = { ...existing, ...newTokens };
@@ -60,93 +87,435 @@ async function getAuthenticatedClient() {
   return oauth2Client;
 }
 
-async function fetchSearchAnalytics(auth, { startDate, endDate, dimensions, rowLimit = 1000, dimensionFilterGroups }) {
+// ---------------------------------------------------------------------------
+// Search Analytics
+// ---------------------------------------------------------------------------
+
+async function fetchSearchAnalytics(auth, params) {
   const searchconsole = google.searchconsole({ version: 'v1', auth });
-  const siteUrl = config.SITE_URL;
-
-  const requestBody = {
-    startDate,
-    endDate,
-    dimensions,
-    rowLimit,
-    dataState: 'all',
-  };
-
-  if (dimensionFilterGroups) {
-    requestBody.dimensionFilterGroups = dimensionFilterGroups;
-  }
-
+  const requestBody = { dataState: 'all', ...params };
   const response = await searchconsole.searchanalytics.query({
-    siteUrl,
+    siteUrl: config.SITE_URL,
     requestBody,
   });
-
   return response.data;
 }
 
-async function fetchAllData(auth, opts) {
-  const { startDate, endDate } = opts;
-  console.log(`\nFetching data for ${startDate} to ${endDate}...\n`);
+async function fetchPeriodBundle(auth, startDate, endDate, label) {
+  console.log(`\nFetching ${label} (${startDate} → ${endDate})...`);
 
-  // Fetch multiple dimensions in parallel
-  const [queryData, pageData, countryData, deviceData, dateData, queryPageData] = await Promise.all([
-    // Top queries
-    fetchSearchAnalytics(auth, {
+  const [queries, pages, countries, devices, dates, queryPages] = await Promise.all([
+    fetchSearchAnalytics(auth, { startDate, endDate, dimensions: ['query'], rowLimit: 1000 }),
+    fetchSearchAnalytics(auth, { startDate, endDate, dimensions: ['page'], rowLimit: 500 }),
+    fetchSearchAnalytics(auth, { startDate, endDate, dimensions: ['country'], rowLimit: 50 }),
+    fetchSearchAnalytics(auth, { startDate, endDate, dimensions: ['device'], rowLimit: 10 }),
+    fetchSearchAnalytics(auth, { startDate, endDate, dimensions: ['date'], rowLimit: 500 }),
+    fetchSearchAnalytics(auth, { startDate, endDate, dimensions: ['query', 'page'], rowLimit: 2000 }),
+  ]);
+
+  console.log(`  queries=${queries.rows?.length || 0}, pages=${pages.rows?.length || 0}, queryPages=${queryPages.rows?.length || 0}`);
+
+  return { metadata: { startDate, endDate, label }, queries, pages, countries, devices, dates, queryPages };
+}
+
+async function fetchSearchAppearance(auth, startDate, endDate) {
+  console.log('\nFetching search appearance (rich results coverage)...');
+  try {
+    // First get the aggregate
+    const overall = await fetchSearchAnalytics(auth, {
       startDate,
       endDate,
-      dimensions: ['query'],
-      rowLimit: 1000,
-    }).then(d => { console.log(`  Queries: ${d.rows?.length || 0} rows`); return d; }),
-
-    // Top pages
-    fetchSearchAnalytics(auth, {
-      startDate,
-      endDate,
-      dimensions: ['page'],
-      rowLimit: 500,
-    }).then(d => { console.log(`  Pages: ${d.rows?.length || 0} rows`); return d; }),
-
-    // By country
-    fetchSearchAnalytics(auth, {
-      startDate,
-      endDate,
-      dimensions: ['country'],
+      dimensions: ['searchAppearance'],
       rowLimit: 50,
-    }).then(d => { console.log(`  Countries: ${d.rows?.length || 0} rows`); return d; }),
+    });
 
-    // By device
-    fetchSearchAnalytics(auth, {
+    // Then per searchAppearance, get the pages (to see which pages get which features)
+    const byPage = {};
+    if (overall.rows && overall.rows.length > 0) {
+      for (const row of overall.rows) {
+        const appearance = row.keys[0];
+        try {
+          const pageData = await fetchSearchAnalytics(auth, {
+            startDate,
+            endDate,
+            dimensions: ['page'],
+            dimensionFilterGroups: [
+              {
+                filters: [
+                  { dimension: 'searchAppearance', operator: 'equals', expression: appearance },
+                ],
+              },
+            ],
+            rowLimit: 20,
+          });
+          byPage[appearance] = pageData.rows || [];
+        } catch (err) {
+          byPage[appearance] = { error: err.message };
+        }
+      }
+    }
+    console.log(`  appearance types: ${overall.rows?.length || 0}`);
+    return { overall, byPage };
+  } catch (err) {
+    console.log(`  (searchAppearance not available: ${err.message})`);
+    return { error: err.message };
+  }
+}
+
+async function fetchCountryDrilldowns(auth, startDate, endDate) {
+  console.log('\nFetching per-country query drilldowns...');
+  const result = {};
+  for (const country of config.COUNTRY_DRILLDOWNS) {
+    try {
+      const data = await fetchSearchAnalytics(auth, {
+        startDate,
+        endDate,
+        dimensions: ['query'],
+        dimensionFilterGroups: [
+          { filters: [{ dimension: 'country', operator: 'equals', expression: country }] },
+        ],
+        rowLimit: 200,
+      });
+      result[country] = data;
+      console.log(`  ${country}: ${data.rows?.length || 0} queries`);
+    } catch (err) {
+      result[country] = { error: err.message };
+      console.log(`  ${country}: error — ${err.message}`);
+    }
+  }
+  return result;
+}
+
+async function fetchDeviceQueryBreakdown(auth, startDate, endDate) {
+  console.log('\nFetching device × query breakdown...');
+  try {
+    const data = await fetchSearchAnalytics(auth, {
       startDate,
       endDate,
-      dimensions: ['device'],
-      rowLimit: 10,
-    }).then(d => { console.log(`  Devices: ${d.rows?.length || 0} rows`); return d; }),
+      dimensions: ['query', 'device'],
+      rowLimit: 2000,
+    });
+    console.log(`  ${data.rows?.length || 0} rows`);
+    return data;
+  } catch (err) {
+    return { error: err.message };
+  }
+}
 
-    // By date (daily performance)
-    fetchSearchAnalytics(auth, {
+async function fetch12MonthTrend(auth, endDate) {
+  console.log('\nFetching 12-month daily trend...');
+  const startDate = shiftDate(endDate, -365);
+  try {
+    const data = await fetchSearchAnalytics(auth, {
       startDate,
       endDate,
       dimensions: ['date'],
       rowLimit: 500,
-    }).then(d => { console.log(`  Dates: ${d.rows?.length || 0} rows`); return d; }),
+    });
+    console.log(`  ${data.rows?.length || 0} daily data points`);
+    return { metadata: { startDate, endDate }, data };
+  } catch (err) {
+    return { error: err.message };
+  }
+}
 
-    // Query + Page combinations (for content gap analysis)
-    fetchSearchAnalytics(auth, {
-      startDate,
-      endDate,
-      dimensions: ['query', 'page'],
-      rowLimit: 2000,
-    }).then(d => { console.log(`  Query+Page: ${d.rows?.length || 0} rows`); return d; }),
-  ]);
+// ---------------------------------------------------------------------------
+// Sitemap URL extraction (parses live sitemap.xml)
+// ---------------------------------------------------------------------------
+
+function httpGet(url) {
+  return new Promise((resolve, reject) => {
+    https
+      .get(url, { headers: { 'User-Agent': 'TeamWheels-GSC-Fetcher/1.0' } }, (res) => {
+        if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+          return resolve(httpGet(new URL(res.headers.location, url).toString()));
+        }
+        if (res.statusCode !== 200) {
+          return reject(new Error(`HTTP ${res.statusCode} for ${url}`));
+        }
+
+        const chunks = [];
+        let stream = res;
+        const enc = res.headers['content-encoding'];
+        if (enc === 'gzip') stream = res.pipe(zlib.createGunzip());
+        else if (enc === 'deflate') stream = res.pipe(zlib.createInflate());
+        else if (enc === 'br') stream = res.pipe(zlib.createBrotliDecompress());
+
+        stream.on('data', (c) => chunks.push(c));
+        stream.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')));
+        stream.on('error', reject);
+      })
+      .on('error', reject);
+  });
+}
+
+function extractLocs(xml) {
+  // Minimal XML parsing: extract <loc>...</loc> values
+  const out = [];
+  const re = /<loc>\s*([^<]+?)\s*<\/loc>/gi;
+  let m;
+  while ((m = re.exec(xml)) !== null) out.push(m[1]);
+  return out;
+}
+
+async function discoverSitemapUrls(rootSitemapUrl) {
+  console.log(`\nDiscovering URLs from sitemap: ${rootSitemapUrl}`);
+  const seen = new Set();
+  const urls = new Set();
+  const queue = [rootSitemapUrl];
+
+  while (queue.length > 0) {
+    const sm = queue.shift();
+    if (seen.has(sm)) continue;
+    seen.add(sm);
+
+    try {
+      const xml = await httpGet(sm);
+      const locs = extractLocs(xml);
+      const isIndex = /<sitemapindex/i.test(xml);
+
+      if (isIndex) {
+        // It's a sitemap index — queue children
+        locs.forEach((loc) => queue.push(loc));
+        console.log(`  sitemap index ${sm}: ${locs.length} child sitemap(s)`);
+      } else {
+        locs.forEach((loc) => urls.add(loc));
+        console.log(`  sitemap ${sm}: ${locs.length} URL(s)`);
+      }
+    } catch (err) {
+      console.log(`  ERROR fetching ${sm}: ${err.message}`);
+    }
+  }
+
+  const urlList = Array.from(urls);
+  console.log(`  total unique URLs discovered: ${urlList.length}`);
+  return urlList;
+}
+
+// ---------------------------------------------------------------------------
+// URL Inspection API
+// ---------------------------------------------------------------------------
+
+async function inspectUrl(auth, inspectionUrl) {
+  const searchconsole = google.searchconsole({ version: 'v1', auth });
+  const response = await searchconsole.urlInspection.index.inspect({
+    requestBody: {
+      inspectionUrl,
+      siteUrl: config.SITE_URL,
+    },
+  });
+  return response.data.inspectionResult;
+}
+
+async function fetchUrlInspections(auth, urls, label = 'pages') {
+  console.log(`\nFetching URL inspections for ${urls.length} ${label}...`);
+  const results = {};
+  let done = 0;
+  const start = Date.now();
+
+  for (const url of urls) {
+    const shortUrl = url.replace(config.SITE_URL.replace(/\/$/, ''), '') || '/';
+    done++;
+    process.stdout.write(`  [${done}/${urls.length}] ${shortUrl.slice(0, 60)} ... `);
+    try {
+      const data = await inspectUrl(auth, url);
+      results[url] = data;
+      const verdict = data?.indexStatusResult?.verdict || '?';
+      const coverage = data?.indexStatusResult?.coverageState || '?';
+      console.log(`${verdict} (${coverage.slice(0, 40)})`);
+    } catch (err) {
+      results[url] = { error: err.message };
+      console.log(`ERROR`);
+    }
+    // Rate limit: URL Inspection has ~2000 req/day quota, ~60/min
+    await new Promise((r) => setTimeout(r, 700));
+  }
+
+  const elapsed = ((Date.now() - start) / 1000).toFixed(0);
+  console.log(`  done in ${elapsed}s`);
+  return results;
+}
+
+function buildIndexationReport(inspections) {
+  const buckets = {
+    indexed: [],
+    crawledNotIndexed: [],
+    discoveredNotIndexed: [],
+    duplicate: [],
+    noindex: [],
+    blocked: [],
+    error: [],
+    other: [],
+  };
+
+  for (const [url, result] of Object.entries(inspections)) {
+    if (!result || result.error) {
+      buckets.error.push({ url, reason: result?.error || 'unknown' });
+      continue;
+    }
+    const coverage = (result.indexStatusResult?.coverageState || '').toLowerCase();
+    const entry = {
+      url,
+      coverage: result.indexStatusResult?.coverageState,
+      verdict: result.indexStatusResult?.verdict,
+      lastCrawlTime: result.indexStatusResult?.lastCrawlTime,
+      googleCanonical: result.indexStatusResult?.googleCanonical,
+      userCanonical: result.indexStatusResult?.userCanonical,
+      canonicalMismatch:
+        result.indexStatusResult?.googleCanonical &&
+        result.indexStatusResult?.userCanonical &&
+        result.indexStatusResult.googleCanonical !== result.indexStatusResult.userCanonical,
+    };
+
+    if (coverage.includes('submitted and indexed') || coverage.includes('indexed, not submitted')) {
+      buckets.indexed.push(entry);
+    } else if (coverage.includes('crawled - currently not indexed')) {
+      buckets.crawledNotIndexed.push(entry);
+    } else if (coverage.includes('discovered - currently not indexed')) {
+      buckets.discoveredNotIndexed.push(entry);
+    } else if (coverage.includes('duplicate')) {
+      buckets.duplicate.push(entry);
+    } else if (coverage.includes('noindex')) {
+      buckets.noindex.push(entry);
+    } else if (coverage.includes('blocked')) {
+      buckets.blocked.push(entry);
+    } else {
+      buckets.other.push(entry);
+    }
+  }
 
   return {
-    metadata: { startDate, endDate, fetchedAt: new Date().toISOString(), siteUrl: config.SITE_URL },
-    queries: queryData,
-    pages: pageData,
-    countries: countryData,
-    devices: deviceData,
-    dates: dateData,
-    queryPages: queryPageData,
+    counts: {
+      indexed: buckets.indexed.length,
+      crawledNotIndexed: buckets.crawledNotIndexed.length,
+      discoveredNotIndexed: buckets.discoveredNotIndexed.length,
+      duplicate: buckets.duplicate.length,
+      noindex: buckets.noindex.length,
+      blocked: buckets.blocked.length,
+      error: buckets.error.length,
+      other: buckets.other.length,
+      total: Object.values(buckets).reduce((a, b) => a + b.length, 0),
+    },
+    buckets,
+  };
+}
+
+// ---------------------------------------------------------------------------
+// Sitemaps API
+// ---------------------------------------------------------------------------
+
+async function fetchSitemaps(auth) {
+  console.log('\nFetching sitemaps status...');
+  const searchconsole = google.searchconsole({ version: 'v1', auth });
+  try {
+    const listRes = await searchconsole.sitemaps.list({ siteUrl: config.SITE_URL });
+    const sitemaps = listRes.data.sitemap || [];
+    console.log(`  found ${sitemaps.length} sitemap(s)`);
+
+    const details = {};
+    for (const sm of sitemaps) {
+      try {
+        const detailRes = await searchconsole.sitemaps.get({
+          siteUrl: config.SITE_URL,
+          feedpath: sm.path,
+        });
+        details[sm.path] = detailRes.data;
+        const submitted = detailRes.data.contents?.reduce((sum, c) => sum + parseInt(c.submitted || 0, 10), 0) || 0;
+        const indexed = detailRes.data.contents?.reduce((sum, c) => sum + parseInt(c.indexed || 0, 10), 0) || 0;
+        console.log(`  ${sm.path}: ${submitted} submitted, ${indexed} indexed`);
+      } catch (err) {
+        details[sm.path] = { error: err.message };
+      }
+    }
+
+    return { list: sitemaps, details };
+  } catch (err) {
+    return { error: err.message };
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Main
+// ---------------------------------------------------------------------------
+
+async function fetchAllData(auth, opts) {
+  const { startDate, endDate } = opts;
+  const periodLength = daysBetween(startDate, endDate);
+  const prevEnd = shiftDate(startDate, -1);
+  const prevStart = shiftDate(prevEnd, -periodLength);
+
+  // Current period - comprehensive
+  const current = await fetchPeriodBundle(auth, startDate, endDate, 'current');
+
+  // Previous period - same length, immediately before (for period comparison)
+  const previous = await fetchPeriodBundle(auth, prevStart, prevEnd, 'previous');
+
+  // 12-month trend
+  const yearlyTrend = await fetch12MonthTrend(auth, endDate);
+
+  // Search appearance
+  const searchAppearance = await fetchSearchAppearance(auth, startDate, endDate);
+
+  // Country drilldowns
+  const countryDrilldowns = await fetchCountryDrilldowns(auth, startDate, endDate);
+
+  // Device × query
+  const deviceQueries = await fetchDeviceQueryBreakdown(auth, startDate, endDate);
+
+  // Sitemaps (GSC-registered)
+  const sitemaps = await fetchSitemaps(auth);
+
+  // Discover URLs from the live sitemap (parses sitemap.xml + any sub-sitemaps)
+  let sitemapUrls = [];
+  if (!opts.light && !opts.keyUrlsOnly) {
+    try {
+      const rootSitemap = config.SITE_URL.replace(/\/$/, '') + '/sitemap.xml';
+      sitemapUrls = await discoverSitemapUrls(rootSitemap);
+    } catch (err) {
+      console.log(`  could not discover sitemap URLs: ${err.message}`);
+    }
+  }
+
+  // URL Inspection: inspect either KEY_URLS only, or KEY_URLS + all sitemap URLs
+  let urlsToInspect = [];
+  if (opts.light) {
+    console.log('\n(--light mode: skipping URL inspection)');
+  } else if (opts.keyUrlsOnly) {
+    urlsToInspect = config.KEY_URLS;
+  } else {
+    const set = new Set([...config.KEY_URLS, ...sitemapUrls]);
+    urlsToInspect = Array.from(set);
+  }
+
+  const urlInspections = opts.light
+    ? { skipped: true }
+    : await fetchUrlInspections(auth, urlsToInspect, 'URLs');
+
+  // Build indexation coverage report from inspection data
+  const indexationReport = opts.light ? null : buildIndexationReport(urlInspections);
+
+  return {
+    metadata: {
+      siteUrl: config.SITE_URL,
+      current: { startDate, endDate },
+      previous: { startDate: prevStart, endDate: prevEnd },
+      periodLengthDays: periodLength,
+      fetchedAt: new Date().toISOString(),
+      light: opts.light,
+      keyUrlsOnly: opts.keyUrlsOnly,
+      sitemapUrlCount: sitemapUrls.length,
+      inspectedUrlCount: urlsToInspect.length,
+    },
+    current,
+    previous,
+    yearlyTrend,
+    searchAppearance,
+    countryDrilldowns,
+    deviceQueries,
+    sitemaps,
+    sitemapUrls,
+    urlInspections,
+    indexationReport,
   };
 }
 
@@ -155,70 +524,130 @@ function saveData(data, opts) {
     fs.mkdirSync(config.DATA_DIR, { recursive: true });
   }
 
-  const filename = `gsc-data_${opts.startDate}_${opts.endDate}.json`;
+  const filename = `gsc-deep_${opts.startDate}_${opts.endDate}.json`;
   const filepath = path.join(config.DATA_DIR, filename);
   fs.writeFileSync(filepath, JSON.stringify(data, null, 2));
-  console.log(`\nData saved to: ${filepath}`);
+
+  const stats = fs.statSync(filepath);
+  const sizeKB = (stats.size / 1024).toFixed(1);
+  console.log(`\nData saved to: ${filepath} (${sizeKB} KB)`);
   return filepath;
 }
 
 function printSummary(data) {
-  console.log('\n' + '='.repeat(60));
-  console.log('SEARCH CONSOLE DATA SUMMARY');
-  console.log('='.repeat(60));
-  console.log(`Period: ${data.metadata.startDate} to ${data.metadata.endDate}`);
+  const sep = '='.repeat(70);
+  console.log('\n' + sep);
+  console.log('  SEARCH CONSOLE DEEP FETCH SUMMARY');
+  console.log(sep);
 
-  // Overall metrics from date data
-  if (data.dates.rows) {
-    const totalClicks = data.dates.rows.reduce((sum, r) => sum + r.clicks, 0);
-    const totalImpressions = data.dates.rows.reduce((sum, r) => sum + r.impressions, 0);
-    const avgCtr = totalClicks / totalImpressions;
-    const avgPosition = data.dates.rows.reduce((sum, r) => sum + r.position, 0) / data.dates.rows.length;
+  const cur = data.current;
+  const prev = data.previous;
 
-    console.log(`\nOverall Performance:`);
-    console.log(`  Total Clicks:       ${totalClicks.toLocaleString()}`);
-    console.log(`  Total Impressions:  ${totalImpressions.toLocaleString()}`);
-    console.log(`  Average CTR:        ${(avgCtr * 100).toFixed(2)}%`);
-    console.log(`  Average Position:   ${avgPosition.toFixed(1)}`);
+  function agg(periodData) {
+    if (!periodData.dates?.rows) return { clicks: 0, impressions: 0 };
+    return periodData.dates.rows.reduce(
+      (acc, r) => ({ clicks: acc.clicks + r.clicks, impressions: acc.impressions + r.impressions }),
+      { clicks: 0, impressions: 0 }
+    );
   }
 
-  // Top 10 queries
-  if (data.queries.rows) {
-    console.log(`\nTop 10 Queries by Clicks:`);
-    const sorted = [...data.queries.rows].sort((a, b) => b.clicks - a.clicks);
-    sorted.slice(0, 10).forEach((row, i) => {
-      console.log(`  ${i + 1}. "${row.keys[0]}" - ${row.clicks} clicks, ${row.impressions} imp, pos ${row.position.toFixed(1)}`);
-    });
-  }
+  const curTotals = agg(cur);
+  const prevTotals = agg(prev);
 
-  // Top 10 pages
-  if (data.pages.rows) {
-    console.log(`\nTop 10 Pages by Clicks:`);
-    const sorted = [...data.pages.rows].sort((a, b) => b.clicks - a.clicks);
-    sorted.slice(0, 10).forEach((row, i) => {
-      const pagePath = row.keys[0].replace(config.SITE_URL, '/');
-      console.log(`  ${i + 1}. ${pagePath} - ${row.clicks} clicks, ${row.impressions} imp, CTR ${(row.ctr * 100).toFixed(1)}%`);
-    });
-  }
+  console.log(`\nCurrent  (${cur.metadata.startDate} → ${cur.metadata.endDate}):`);
+  console.log(`  ${curTotals.clicks} clicks / ${curTotals.impressions} impressions`);
+  console.log(`Previous (${prev.metadata.startDate} → ${prev.metadata.endDate}):`);
+  console.log(`  ${prevTotals.clicks} clicks / ${prevTotals.impressions} impressions`);
 
-  // Device breakdown
-  if (data.devices.rows) {
-    console.log(`\nDevice Breakdown:`);
-    data.devices.rows.forEach(row => {
-      console.log(`  ${row.keys[0]}: ${row.clicks} clicks, ${row.impressions} imp, CTR ${(row.ctr * 100).toFixed(1)}%`);
-    });
-  }
+  const clickDelta = curTotals.clicks - prevTotals.clicks;
+  const impDelta = curTotals.impressions - prevTotals.impressions;
+  const clickPct = prevTotals.clicks ? ((clickDelta / prevTotals.clicks) * 100).toFixed(1) : 'N/A';
+  const impPct = prevTotals.impressions ? ((impDelta / prevTotals.impressions) * 100).toFixed(1) : 'N/A';
 
-  // Top countries
-  if (data.countries.rows) {
-    console.log(`\nTop 5 Countries:`);
-    const sorted = [...data.countries.rows].sort((a, b) => b.clicks - a.clicks);
-    sorted.slice(0, 5).forEach(row => {
+  console.log(`Delta:`);
+  console.log(`  Clicks: ${clickDelta >= 0 ? '+' : ''}${clickDelta} (${clickPct}%)`);
+  console.log(`  Impressions: ${impDelta >= 0 ? '+' : ''}${impDelta} (${impPct}%)`);
+
+  // Rich results
+  if (data.searchAppearance?.overall?.rows?.length) {
+    console.log(`\nRich results appearances:`);
+    data.searchAppearance.overall.rows.forEach((row) => {
       console.log(`  ${row.keys[0]}: ${row.clicks} clicks, ${row.impressions} imp`);
     });
+  } else {
+    console.log(`\nRich results: NONE detected (structured data not being picked up or eligible)`);
   }
 
-  console.log('\n' + '='.repeat(60));
+  // Sitemaps
+  if (data.sitemaps?.list?.length) {
+    console.log(`\nSitemaps (registered in Search Console):`);
+    data.sitemaps.list.forEach((sm) => {
+      const detail = data.sitemaps.details[sm.path];
+      const submitted =
+        detail?.contents?.reduce((s, c) => s + parseInt(c.submitted || 0, 10), 0) || 0;
+      console.log(
+        `  ${sm.path}`
+      );
+      console.log(
+        `    submitted=${submitted}, warnings=${detail?.warnings || 0}, errors=${detail?.errors || 0}, lastDownloaded=${detail?.lastDownloaded || 'never'}`
+      );
+    });
+  }
+
+  if (data.sitemapUrls?.length) {
+    console.log(`\nURLs discovered in sitemap.xml: ${data.sitemapUrls.length}`);
+  }
+
+  // Indexation coverage report
+  if (data.indexationReport) {
+    const r = data.indexationReport;
+    console.log(`\nIndexation coverage (inspected ${r.counts.total} URLs):`);
+    console.log(`  indexed:                  ${r.counts.indexed}`);
+    console.log(`  crawled - not indexed:    ${r.counts.crawledNotIndexed}`);
+    console.log(`  discovered - not indexed: ${r.counts.discoveredNotIndexed}`);
+    console.log(`  duplicate:                ${r.counts.duplicate}`);
+    console.log(`  noindex:                  ${r.counts.noindex}`);
+    console.log(`  blocked:                  ${r.counts.blocked}`);
+    console.log(`  other:                    ${r.counts.other}`);
+    console.log(`  error:                    ${r.counts.error}`);
+
+    const indexedRate = r.counts.total ? ((r.counts.indexed / r.counts.total) * 100).toFixed(1) : 0;
+    console.log(`  → indexation rate:        ${indexedRate}%`);
+
+    // Show non-indexed URLs (the actual problems)
+    const problems = [
+      ...r.buckets.crawledNotIndexed,
+      ...r.buckets.discoveredNotIndexed,
+      ...r.buckets.duplicate,
+    ];
+    if (problems.length) {
+      console.log(`\n  Problematic URLs (not indexed but not intentional):`);
+      problems.slice(0, 20).forEach((p) => {
+        const shortUrl = p.url.replace(config.SITE_URL.replace(/\/$/, ''), '') || '/';
+        console.log(`    ${shortUrl}`);
+        console.log(`      → ${p.coverage}`);
+      });
+      if (problems.length > 20) console.log(`    ... and ${problems.length - 20} more`);
+    }
+
+    // Canonical mismatches
+    const canonMismatches = [
+      ...r.buckets.indexed,
+      ...r.buckets.duplicate,
+      ...r.buckets.other,
+    ].filter((e) => e.canonicalMismatch);
+    if (canonMismatches.length) {
+      console.log(`\n  Canonical mismatches (Google picked a different canonical):`);
+      canonMismatches.slice(0, 10).forEach((e) => {
+        const shortUrl = e.url.replace(config.SITE_URL.replace(/\/$/, ''), '') || '/';
+        console.log(`    ${shortUrl}`);
+        console.log(`      user:   ${e.userCanonical}`);
+        console.log(`      google: ${e.googleCanonical}`);
+      });
+    }
+  }
+
+  console.log('\n' + sep);
 }
 
 async function main() {
@@ -230,12 +659,14 @@ async function main() {
     const filepath = saveData(data, opts);
     printSummary(data);
 
-    console.log(`\nNext step: node scripts/search-console/analyze.js ${filepath}`);
+    console.log(`\n✓ Deep fetch complete.`);
+    console.log(`\nPaste the contents of ${filepath} in your chat with Claude.`);
   } catch (err) {
     if (err.code === 401 || err.code === 403) {
-      console.error('Authentication error. Re-run: node scripts/search-console/auth.js');
+      console.error('\nAuthentication error. Re-run: node scripts/search-console/auth-manual.js');
     } else {
-      console.error('Error fetching data:', err.message);
+      console.error('\nError:', err.message);
+      if (err.stack) console.error(err.stack);
     }
     process.exit(1);
   }
