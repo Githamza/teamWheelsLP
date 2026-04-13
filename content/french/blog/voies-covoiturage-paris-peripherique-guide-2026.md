@@ -6,6 +6,8 @@ description: "Horaires des voies de covoiturage à Paris (périphérique, A1, A1
 keywords: "voie covoiturage périphérique paris horaires, voies covoiturage paris 2026, horaire voie covoiturage paris, voie covoiturage A1 horaire, aire de covoiturage paris, covoit idfm"
 image: images/carpoolingBenefits.png
 author: TeamWheels
+aliases:
+  - /fr/blog/voies-covoiturage-paris-peripherique-guide-2025/
 categories:
   - Covoiturage
   - Mobilité
