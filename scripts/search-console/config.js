@@ -34,7 +34,28 @@ module.exports = {
   CLIENT_SECRET_PATH: path.join(__dirname, 'client_secret.json'),
   DATA_DIR: path.join(__dirname, 'data'),
 
-  // Default date range (September 2025)
-  DEFAULT_START_DATE: '2025-09-01',
-  DEFAULT_END_DATE: '2025-09-30',
+  // Default date range for the "current" period
+  DEFAULT_START_DATE: '2026-01-01',
+  DEFAULT_END_DATE: '2026-03-31',
+
+  // Key URLs to run URL Inspection API against
+  // Ordered by priority (from Q1 2026 GSC data — top impression drivers)
+  KEY_URLS: [
+    'https://www.teamwheelsapp.com/',
+    'https://www.teamwheelsapp.com/en/',
+    'https://www.teamwheelsapp.com/fr/',
+    'https://www.teamwheelsapp.com/en/how-it-works/',
+    'https://www.teamwheelsapp.com/en/pricing/',
+    'https://www.teamwheelsapp.com/fr/pricing/',
+    'https://www.teamwheelsapp.com/fr/blog/voies-covoiturage-paris-peripherique-guide-2025/',
+    'https://www.teamwheelsapp.com/en/blog/scope-3-employee-commuting-corporate-carpooling-usa-compliance-guide/',
+    'https://www.teamwheelsapp.com/en/blog/enterprise-carpooling-2025-sustainable-commute-revolution/',
+    'https://www.teamwheelsapp.com/fr/blog/forfait-mobilite-durable-guide-complet-2025/',
+    'https://www.teamwheelsapp.com/fr/blog/covoiturage-entreprise-5-etapes-demarrer/',
+  ],
+
+  // Countries to fetch per-country query breakdowns for
+  // Based on Q1 2026 data showing these as top impression sources
+  COUNTRY_DRILLDOWNS: ['usa', 'fra', 'gbr', 'aus', 'can'],
 };
+
