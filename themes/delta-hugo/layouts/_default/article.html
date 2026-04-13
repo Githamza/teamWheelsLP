@@ -2,7 +2,7 @@
   <a href="{{ .RelPermalink }}" title="{{ .Title }}">
     {{ with .Params.image }}
 
-    {{ partial "image.html" (dict "Src" . "Class" "card-img-top h-auto" "Alt" "blog-post") }}
+    {{ partial "images/image.html" (dict "Src" . "Class" "card-img-top h-auto" "Alt" "blog-post") }}
     {{else}}
     <img class="img-fluid" src="https://via.placeholder.com/570x321.png/eee/eee" alt="image-fallback">
     {{end}}

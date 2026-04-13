@@ -31,7 +31,7 @@
       </div>
       <div class="col-lg-6 mt-5 mt-lg-0">
         {{with .image}}
-        {{ partial "image.html" (dict "Src" . "Alt" "Banner Image") }}
+        {{ partial "images/image.html" (dict "Src" . "Alt" "Banner Image") }}
         {{end}}
 
       </div>
@@ -118,7 +118,7 @@
       <div class="col-lg-11 mx-auto">
         {{with .image}}
         <div class="process-image">
-          {{ partial "image.html" (dict "Src" . "Class" "w-100 rounded-lg shadow" "Alt" "image") }}
+          {{ partial "images/image.html" (dict "Src" . "Class" "w-100 rounded-lg shadow" "Alt" "image") }}
 
         </div>
         {{end}}
