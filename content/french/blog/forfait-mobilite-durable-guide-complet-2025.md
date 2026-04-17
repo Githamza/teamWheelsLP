@@ -5,7 +5,7 @@ draft: false
 description: "Tout savoir sur le Forfait Mobilité Durable (FMD) : montants, conditions, mise en place, justificatifs. Guide pratique pour les RH et dirigeants."
 image: "images/commitment.png"
 author: ""
-categories: ["RSE", "Mobilité"]
+categories: ["Mobilité"]
 tags: ["FMD", "Forfait Mobilité Durable", "covoiturage", "RSE", "avantages salariés"]
 ---
 

@@ -1,0 +1,29 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+{{/*
+  Custom sitemap — excludes pages that are noindexed in
+  layouts/partials/essentials/head.html so the sitemap only
+  advertises URLs Google should actually index:
+    - drop the root "/" redirect shim (noindex)
+    - drop taxonomy list pages (/tags/, /categories/) — noindex + redirect
+    - drop taxonomy term pages (/tags/foo/, /categories/bar/) — noindex
+*/}}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {{ range .Data.Pages }}
+    {{- $isRoot := eq .RelPermalink "/" -}}
+    {{- $isTaxonomy := or (eq .Kind "term") (eq .Kind "taxonomy") -}}
+    {{- if and (not $isRoot) (not $isTaxonomy) }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    {{ if not .Lastmod.IsZero }}<lastmod>{{ safeHTML ( .Lastmod.Format "2006-01-02T15:04:05-07:00" ) }}</lastmod>{{ end }}
+    {{ with .Sitemap.ChangeFreq }}<changefreq>{{ . }}</changefreq>{{ end }}
+    {{ if ge .Sitemap.Priority 0.0 }}<priority>{{ .Sitemap.Priority }}</priority>{{ end }}
+    {{ if .IsTranslated }}
+    {{ range .AllTranslations }}
+    <xhtml:link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}"/>
+    {{ end }}
+    {{ end }}
+  </url>
+    {{- end }}
+  {{ end }}
+</urlset>
