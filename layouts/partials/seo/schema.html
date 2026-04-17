@@ -25,17 +25,17 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": {{ $title | jsonify }},
-  "description": {{ $description | jsonify }},
-  "url": {{ .Permalink | jsonify }},
+  "name": {{ $title | jsonify | safeJS }},
+  "description": {{ $description | jsonify | safeJS }},
+  "url": {{ .Permalink | jsonify | safeJS }},
   "publisher": {
     "@type": "Organization",
     "name": "TeamWheels",
     "url": "https://www.teamwheelsapp.com"
   },
-  "inLanguage": {{ .Site.LanguageCode | default "en" | jsonify }},
-  "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
-  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }}
+  "inLanguage": {{ .Site.LanguageCode | default "en" | jsonify | safeJS }},
+  "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | jsonify | safeJS }},
+  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify | safeJS }}
 }
 </script>
 {{- else if eq .Type "blog" -}}
@@ -44,14 +44,14 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": {{ $title | jsonify }},
-  "description": {{ $description | jsonify }},
-  "url": {{ .Permalink | jsonify }},
-  "inLanguage": {{ .Site.LanguageCode | default "en" | jsonify }},
+  "headline": {{ $title | jsonify | safeJS }},
+  "description": {{ $description | jsonify | safeJS }},
+  "url": {{ .Permalink | jsonify | safeJS }},
+  "inLanguage": {{ .Site.LanguageCode | default "en" | jsonify | safeJS }},
   {{- with .Params.image }}
   "image": {
     "@type": "ImageObject",
-    "url": {{ . | absURL | jsonify }}
+    "url": {{ . | absURL | jsonify | safeJS }}
   },
   {{- end }}
   "author": {
@@ -68,10 +68,10 @@
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": {{ .Permalink | jsonify }}
+    "@id": {{ .Permalink | jsonify | safeJS }}
   },
-  "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
-  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }}
+  "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | jsonify | safeJS }},
+  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify | safeJS }}
 }
 </script>
 {{- else -}}
@@ -79,20 +79,20 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": {{ $scr.Get "schema_type" | jsonify }},
-  "name": {{ $title | jsonify }},
-  "headline": {{ $title | jsonify }},
-  "description": {{ $description | jsonify }},
-  "url": {{ .Permalink | jsonify }},
-  "inLanguage": {{ .Site.LanguageCode | default "en" | jsonify }},
+  "@type": {{ $scr.Get "schema_type" | jsonify | safeJS }},
+  "name": {{ $title | jsonify | safeJS }},
+  "headline": {{ $title | jsonify | safeJS }},
+  "description": {{ $description | jsonify | safeJS }},
+  "url": {{ .Permalink | jsonify | safeJS }},
+  "inLanguage": {{ .Site.LanguageCode | default "en" | jsonify | safeJS }},
   {{- with .Params.image }}
   "image": {
     "@type": "ImageObject",
-    "url": {{ . | absURL | jsonify }}
+    "url": {{ . | absURL | jsonify | safeJS }}
   },
   {{- end }}
-  "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
-  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }}
+  "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | jsonify | safeJS }},
+  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify | safeJS }}
 }
 </script>
 {{- end -}}
@@ -158,7 +158,7 @@
     "lowPrice": "0",
     "highPrice": "5",
     "priceCurrency": "EUR",
-    "offerCount": "3",
+    "offerCount": "2",
     "offers": [
       {
         "@type": "Offer",
@@ -170,7 +170,6 @@
       {
         "@type": "Offer",
         "name": "TeamWheels",
-        "price": "5",
         "priceCurrency": "EUR",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
@@ -199,10 +198,10 @@
     {{- if $index }},{{ end }}
     {
       "@type": "Question",
-      "name": {{ $faq.title | jsonify }},
+      "name": {{ $faq.title | jsonify | safeJS }},
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": {{ $faq.content | jsonify }}
+        "text": {{ $faq.content | jsonify | safeJS }}
       }
     }
     {{- end }}
@@ -213,7 +212,8 @@
 {{- end -}}
 {{- end -}}
 
-{{- /* BreadcrumbList Schema */ -}}
+{{- /* BreadcrumbList Schema — skip on homepage (single-item trail has no value) */ -}}
+{{- if not .IsHome -}}
 {{- $breadcrumbs := slice -}}
 {{- $breadcrumbs = $breadcrumbs | append (dict "position" 1 "name" "Home" "url" "/") -}}
 {{- with .Section -}}
@@ -232,10 +232,11 @@
     {
       "@type": "ListItem",
       "position": {{ $crumb.position }},
-      "name": {{ $crumb.name | jsonify }},
-      "item": {{ $crumb.url | absURL | jsonify }}
+      "name": {{ $crumb.name | jsonify | safeJS }},
+      "item": {{ $crumb.url | absURL | jsonify | safeJS }}
     }{{- if ne $crumb.position (len $breadcrumbs) -}},{{- end -}}
     {{- end -}}
   ]
 }
 </script>
+{{- end -}}
