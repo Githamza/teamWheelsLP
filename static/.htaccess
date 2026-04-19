@@ -112,43 +112,35 @@
   </FilesMatch>
 </IfModule>
 
-##### Allow access to /.well-known/ (some shared hosts block dotted dirs)
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteRule "^\.well-known/" - [L]
-</IfModule>
-
-##### Markdown content negotiation for agents (Accept: text/markdown)
+##### Allow access to /.well-known/ and negotiate markdown for agents
 ## Agents that send `Accept: text/markdown` get the pre-generated markdown
-## sibling of each page; browsers keep getting the HTML default. Hugo's
-## `md` output format emits an index.md next to every index.html, and a
-## static /index.md covers the multilang root.
+## sibling of each directory URL; browsers keep getting HTML. Hugo's `md`
+## output format emits an index.md next to every index.html, and a static
+## /index.md covers the multilang root.
 ## See https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  ## Mark requests whose Accept header prefers markdown so downstream
-  ## Header / mod_pagespeed directives can key off PREFER_MARKDOWN.
-  RewriteCond %{HTTP:Accept} text/markdown [NC]
-  RewriteRule ^ - [E=PREFER_MARKDOWN:1]
+  ## Shared hosts sometimes block /.well-known/ — pass it through.
+  RewriteRule "^\.well-known/" - [L]
 
-  ## Directory URL + the markdown sibling exists → rewrite to index.md
-  ## in place (URL unchanged, 200 response). The file-existence test
-  ## uses both REQUEST_FILENAME (already-resolved filesystem path) and
-  ## DOCUMENT_ROOT + REQUEST_URI so it works on shared hosts where
-  ## DOCUMENT_ROOT is symlinked or otherwise opaque to mod_rewrite.
-  RewriteCond %{ENV:PREFER_MARKDOWN} =1
+  ## Directory URL + Accept: text/markdown + an index.md sibling → serve
+  ## the markdown in place (URL unchanged, 200 response, Content-Type
+  ## forced). REQUEST_FILENAME is already resolved past DirectoryIndex
+  ## when a directory URL is requested (e.g. "/en/" → ".../en/index.html"),
+  ## so the file test uses DOCUMENT_ROOT + REQUEST_URI instead.
+  RewriteCond %{HTTP:Accept} text/markdown [NC]
   RewriteCond %{REQUEST_URI} /$
-  RewriteCond %{REQUEST_FILENAME}index.md -f [OR]
   RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}index.md -f
-  RewriteRule ^(.*)$ $1index.md [L,QSA]
+  RewriteRule ^(.*)$ $1index.md [L,QSA,T=text/markdown]
 </IfModule>
 
 ## PageSpeed only knows how to rewrite HTML/CSS/JS — leave markdown alone,
-## otherwise it can strip Content-Type and cache HTML for the same URL
-## without honouring Vary: Accept.
+## and make it honour Vary: Accept so it doesn't serve a cached HTML copy
+## to an agent that asked for text/markdown.
 <IfModule pagespeed_module>
   ModPagespeedDisallow "*.md"
+  ModPagespeedRespectVary on
 </IfModule>
 
 <IfModule mod_headers.c>
