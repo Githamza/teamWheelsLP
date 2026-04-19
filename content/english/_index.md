@@ -13,10 +13,11 @@ banner:
     button_label: "Start free 30-day trial"
     icon: "fas fa-arrow-right"
     link: "contact/"
-  video_button:
+  secondary_button:
     enable: true
-    label: "Watch demo (2 min)"
-    video_url: "https://www.youtube.com/embed/dyZcRRWiuuw"
+    label: "Calculate your savings"
+    icon: "fas fa-calculator"
+    link: "tools/savings-calculator/"
 
   image: "images/homeBannerimg2.png"
 
@@ -150,30 +151,6 @@ image_and_content_blocks:
     button:
       enable: true
       label: "Learn more about security →"
-
-
-# testimonials
-testimonials:
-  enable: true
-  subtitle: "Trusted by HR & Sustainability Leaders"
-  title: "What HR Directors and Sustainability Managers Say About TeamWheels"
-  image_1: "images/testimonials-group-1.png"
-  image_2: "images/testimonials-group-2.png"
-  reviews:
-    - name: "Sarah Johnson"
-      designation: "HR Director, TechCorp Inc."
-      image: "images/avatar/04.jpg"
-      content: "We deployed TeamWheels in one week and saw instant adoption. 40% of our employees now carpool regularly — and our parking pressure dropped significantly."
-
-    - name: "Michael Chen"
-      designation: "Sustainability Manager, Global Solutions"
-      image: "images/avatar/02.jpg"
-      content: "Perfect for our Scope 3 commute emissions reporting. The CO₂ tracking dashboard gives us exactly what we need for our ESG disclosures. Our employees love the Teams integration."
-
-    - name: "Emily Rodriguez"
-      designation: "Facilities Manager, StartupHub"
-      image: "images/avatar/07.jpg"
-      content: "We reduced our parking demand by 25% in the first quarter. Easy to set up, free for 30 days, and the ROI was clear within weeks."
 
 
 # blog

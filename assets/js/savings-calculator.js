@@ -418,11 +418,14 @@
     }
 
     function prepareShare() {
-      var shareText = encodeURIComponent(t(lang, 'share'));
-      var url = encodeURIComponent(window.location.href);
+      var rawText = t(lang, 'share');
+      var pageUrl = window.location.href;
+      var shareText = encodeURIComponent(rawText);
+      var url = encodeURIComponent(pageUrl);
+      var liText = encodeURIComponent(rawText + ' ' + pageUrl);
       var li = document.getElementById('sc-share-linkedin');
       var tw = document.getElementById('sc-share-twitter');
-      if (li) li.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
+      if (li) li.href = 'https://www.linkedin.com/feed/?shareActive=true&text=' + liText;
       if (tw) tw.href = 'https://twitter.com/intent/tweet?text=' + shareText + '&url=' + url;
     }
 

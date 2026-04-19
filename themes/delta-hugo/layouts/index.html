@@ -31,17 +31,13 @@
                 {{ end }}
               {{ end }}
 
-              {{ with .video_button }}
+              {{ with .secondary_button }}
                 {{ if .enable }}
-                  <button
-                    class="btn btn-outline-secondary btn-play m-1"
-                    type="button"
-                    data-bs-toggle="modal"
-                    data-src="{{ .video_url | safeURL }}"
-                    data-bs-target="#videoModal"
-                    aria-label="watch video">
-                    <i class="fas fa-play"></i> {{ .label }}
-                  </button>
+                  <a
+                    class="btn btn-primary m-1"
+                    href="{{ .link | relLangURL }}">
+                    {{ with .icon }}<i class="{{ . }}"></i> {{ end }}{{ .label }}
+                  </a>
                 {{ end }}
               {{ end }}
             </div>

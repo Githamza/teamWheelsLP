@@ -13,10 +13,11 @@ banner:
     button_label: "Essai gratuit 30 jours"
     icon: "fas fa-arrow-right"
     link: "contact/"
-  video_button:
+  secondary_button:
     enable: true
-    label: "Voir la démo (2 min)"
-    video_url: "https://www.youtube.com/embed/dyZcRRWiuuw"
+    label: "Calculez vos économies"
+    icon: "fas fa-calculator"
+    link: "tools/savings-calculator/"
 
   image: "images/homeBannerimg2.png"
 
