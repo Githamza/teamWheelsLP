@@ -121,22 +121,37 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  ## Single rule handles both "/" and "/path/" uniformly:
-  ## when the client prefers markdown and an index.md exists for this
-  ## directory URL, rewrite to it in place (same URL, 200 OK).
+  ## Mark requests whose Accept header prefers markdown so downstream
+  ## Header / mod_pagespeed directives can key off PREFER_MARKDOWN.
   RewriteCond %{HTTP:Accept} text/markdown [NC]
+  RewriteRule ^ - [E=PREFER_MARKDOWN:1]
+
+  ## Directory URL + the markdown sibling exists → rewrite to index.md
+  ## in place (URL unchanged, 200 response). The file-existence test
+  ## uses both REQUEST_FILENAME (already-resolved filesystem path) and
+  ## DOCUMENT_ROOT + REQUEST_URI so it works on shared hosts where
+  ## DOCUMENT_ROOT is symlinked or otherwise opaque to mod_rewrite.
+  RewriteCond %{ENV:PREFER_MARKDOWN} =1
   RewriteCond %{REQUEST_URI} /$
+  RewriteCond %{REQUEST_FILENAME}index.md -f [OR]
   RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}index.md -f
-  RewriteRule .* %{REQUEST_URI}index.md [L,QSA]
+  RewriteRule ^(.*)$ $1index.md [L,QSA]
+</IfModule>
+
+## PageSpeed only knows how to rewrite HTML/CSS/JS — leave markdown alone,
+## otherwise it can strip Content-Type and cache HTML for the same URL
+## without honouring Vary: Accept.
+<IfModule pagespeed_module>
+  ModPagespeedDisallow "*.md"
 </IfModule>
 
 <IfModule mod_headers.c>
-  ## Signal that responses vary by Accept (needed for correct caching)
-  <FilesMatch "\.(html|md)$">
-    Header append Vary "Accept"
-  </FilesMatch>
+  ## Signal that responses vary by Accept so caches key on it. FilesMatch
+  ## on "\.html$" doesn't match directory URLs like "/" or "/fr/", so
+  ## piggy-back on the AGENT_LINKS env var set earlier for every HTML URL.
+  Header always append Vary "Accept" env=AGENT_LINKS
 
-  ## Serve .md files with the correct media type for agents
+  ## Serve .md files with the correct media type for agents.
   <FilesMatch "\.md$">
     Header set Content-Type "text/markdown; charset=utf-8"
   </FilesMatch>
