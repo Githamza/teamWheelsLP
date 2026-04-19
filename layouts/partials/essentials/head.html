@@ -43,6 +43,13 @@
 <link rel="canonical" href="{{ .Permalink }}" />
 {{- end }}
 
+{{/* Advertise the Markdown-for-Agents representation so automated clients
+     can either send `Accept: text/markdown` against the canonical URL or
+     hit the pre-rendered .md sibling directly. */}}
+{{- with .OutputFormats.Get "md" -}}
+<link rel="alternate" type="text/markdown" href="{{ .Permalink }}" title="Markdown for agents" />
+{{- end }}
+
 <!-- opengraph and twitter card -->
 {{ partial "basic-seo.html" . }}
 
