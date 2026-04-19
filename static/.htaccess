@@ -78,7 +78,7 @@
 <IfModule mod_headers.c>
   Header always append Link "</.well-known/api-catalog>; rel=\"api-catalog\"; type=\"application/linkset+json\""
   Header always append Link "</.well-known/agent-skills/index.json>; rel=\"https://agentskills.io/rel/index\"; type=\"application/json\""
-  Header always append Link "</sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\""
+  Header always append Link "</sitemap.xml>; rel=\"sitemap http://www.sitemaps.org/schemas/sitemap/0.9\"; type=\"application/xml\""
   Header always append Link "</fr/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"fr\""
   Header always append Link "</en/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"en\""
   Header always append Link "</status.json>; rel=\"status\"; type=\"application/json\""
