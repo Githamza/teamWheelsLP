@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agentskills.io/schemas/index/v0.2.0.json",
+  "version": "0.2.0",
+  "updated": "2026-04-19",
+  "publisher": {
+    "name": "TeamWheels",
+    "url": "https://www.teamwheelsapp.com/"
+  },
+  "skills": [
+    {
+      "name": "teamwheels-overview",
+      "type": "md",
+      "description": "Overview of TeamWheels (Microsoft Teams-native corporate carpooling): canonical URLs, discovery endpoints, and key facts an AI agent needs to answer user questions or hand off to a human.",
+      "url": "https://www.teamwheelsapp.com/.well-known/agent-skills/teamwheels-overview/SKILL.md",
+      "sha256": "2a2455606b1614d0f796dbc26909ca9660ee864b16bd857ba01194fef481bc95"
+    }
+  ]
+}

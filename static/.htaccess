@@ -81,6 +81,7 @@
 
 <IfModule mod_headers.c>
   Header always append Link "</.well-known/api-catalog>; rel=\"api-catalog\"; type=\"application/linkset+json\"" env=AGENT_LINKS
+  Header always append Link "</.well-known/agent-skills/index.json>; rel=\"https://agentskills.io/rel/index\"; type=\"application/json\"" env=AGENT_LINKS
   Header always append Link "</sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\"" env=AGENT_LINKS
   Header always append Link "</fr/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"fr\"" env=AGENT_LINKS
   Header always append Link "</en/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"en\"" env=AGENT_LINKS
@@ -104,6 +105,11 @@
     Header set Content-Type "application/json"
     Header set Cache-Control "max-age=60, public"
   </Files>
+
+  ## Agent Skills discovery index (Cloudflare / agentskills.io RFC v0.2.0).
+  <FilesMatch "^index\.json$">
+    Header set Cache-Control "max-age=3600, public"
+  </FilesMatch>
 </IfModule>
 
 ##### Allow access to /.well-known/ (some shared hosts block dotted dirs)

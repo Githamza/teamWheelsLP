@@ -50,6 +50,16 @@
 <link rel="alternate" type="text/markdown" href="{{ .Permalink }}" title="Markdown for agents" />
 {{- end }}
 
+{{/* Agent-discovery <link> fallbacks mirroring the RFC 8288 Link: response
+     headers emitted from .htaccess. HTML-only crawlers and preview tools
+     that don't inspect response headers can still follow these. */}}
+<link rel="api-catalog" type="application/linkset+json" href="{{ "/.well-known/api-catalog" | absURL }}" title="TeamWheels API catalog (RFC 9727)" />
+<link rel="https://agentskills.io/rel/index" type="application/json" href="{{ "/.well-known/agent-skills/index.json" | absURL }}" title="Agent Skills discovery index" />
+<link rel="sitemap" type="application/xml" href="{{ "/sitemap.xml" | absURL }}" title="Sitemap" />
+<link rel="status" type="application/json" href="{{ "/status.json" | absURL }}" title="Service status" />
+<link rel="service-doc" type="text/html" hreflang="fr" href="{{ "/fr/how-it-works/" | absURL }}" title="Comment ça marche — TeamWheels" />
+<link rel="service-doc" type="text/html" hreflang="en" href="{{ "/en/how-it-works/" | absURL }}" title="How it works — TeamWheels" />
+
 <!-- opengraph and twitter card -->
 {{ partial "basic-seo.html" . }}
 
