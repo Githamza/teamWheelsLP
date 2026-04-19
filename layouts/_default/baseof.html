@@ -78,5 +78,8 @@
       {{ partial "essentials/footer.html" . }}
       {{ partial "essentials/script.html" . }}
     {{ end }}
+
+    {{/* WebMCP: expose site tools to in-browser AI agents. */}}
+    {{ partial "agent/webmcp.html" . }}
   </body>
 </html>
