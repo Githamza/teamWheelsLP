@@ -86,7 +86,18 @@ target = '$1'
 
 ############################# Outputs ##############################
 [outputs]
-home = ["HTML", "RSS", "WebAppManifest", "Sitemap"]
+home    = ["HTML", "RSS", "WebAppManifest", "Sitemap", "md"]
+page    = ["HTML", "md"]
+section = ["HTML", "RSS", "md"]
+
+## Markdown output format for agent content-negotiation (Accept: text/markdown).
+## Apache .htaccess rewrites serve these .md files when agents ask for markdown
+## while HTML remains the default for browsers.
+[outputFormats.md]
+mediaType     = "text/markdown"
+isPlainText   = true
+isHTML        = false
+permalinkable = false
 
 ############################# Imaging ##############################
 [imaging]

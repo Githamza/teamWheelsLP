@@ -66,6 +66,83 @@
   </FilesMatch>
 </IfModule>
 
+##### Agent-discovery Link headers (RFC 8288 / RFC 9727)
+## Advertise machine-readable resources so AI agents and automated clients
+## can find the API catalog, sitemap, service docs and feeds from any HTML page.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html)$">
+    Header append Link "</.well-known/api-catalog>; rel=\"api-catalog\"; type=\"application/linkset+json\""
+    Header append Link "</sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\""
+    Header append Link "</fr/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"fr\""
+    Header append Link "</en/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"en\""
+    Header append Link "</status.json>; rel=\"status\"; type=\"application/json\""
+  </FilesMatch>
+
+  ## Serve the api-catalog with the correct RFC 9264 link-set media type
+  <Files "api-catalog">
+    Header set Content-Type "application/linkset+json"
+    Header set Cache-Control "max-age=3600, public"
+  </Files>
+
+  ## Web Bot Auth — serve the JWKS directory with the IETF media type
+  ## so verifiers can identify signed requests originating from this site.
+  <Files "http-message-signatures-directory">
+    Header set Content-Type "application/http-message-signatures-directory+json"
+    Header set Cache-Control "max-age=3600, public"
+  </Files>
+
+  ## Health endpoint advertised by the api-catalog (rel="status").
+  <Files "status.json">
+    Header set Content-Type "application/json"
+    Header set Cache-Control "max-age=60, public"
+  </Files>
+</IfModule>
+
+##### Allow access to /.well-known/ (some shared hosts block dotted dirs)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule "^\.well-known/" - [L]
+</IfModule>
+
+##### Markdown content negotiation for agents (Accept: text/markdown)
+## Agents that send `Accept: text/markdown` get the pre-generated markdown
+## version of the page; browsers (which send Accept: text/html,...) keep
+## getting the HTML default. Hugo generates the .md files next to each
+## index.html as an output format.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  ## Directory URL (trailing slash or mapped by Apache): serve index.md
+  RewriteCond %{HTTP:Accept} text/markdown [NC]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_FILENAME}/index.md -f
+  RewriteRule ^(.*?)/?$ /$1/index.md [L,QSA]
+
+  ## Root URL: serve /index.md
+  RewriteCond %{HTTP:Accept} text/markdown [NC]
+  RewriteCond %{REQUEST_URI} ^/$
+  RewriteCond %{DOCUMENT_ROOT}/index.md -f
+  RewriteRule ^$ /index.md [L,QSA]
+</IfModule>
+
+<IfModule mod_headers.c>
+  ## Signal that responses vary by Accept (needed for correct caching)
+  <FilesMatch "\.(html|md)$">
+    Header append Vary "Accept"
+  </FilesMatch>
+
+  ## Serve .md files with the correct media type for agents
+  <FilesMatch "\.md$">
+    Header set Content-Type "text/markdown; charset=utf-8"
+  </FilesMatch>
+</IfModule>
+
+## Make sure Apache knows the .md extension maps to text/markdown
+<IfModule mod_mime.c>
+  AddType text/markdown .md
+  AddCharset UTF-8 .md
+</IfModule>
+
 ##### Enable gzip compression for resources
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css

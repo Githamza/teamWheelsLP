@@ -22,4 +22,7 @@ scripts/search-console/tokens.json
 scripts/search-console/client_secret.json
 scripts/search-console/data/
 
+# Web Bot Auth — private signing keys (public JWKS lives under static/.well-known/)
+.secrets/
+
 

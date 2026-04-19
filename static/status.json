@@ -1,0 +1,11 @@
+{
+  "status": "operational",
+  "service": "TeamWheels",
+  "url": "https://www.teamwheelsapp.com/",
+  "description": "Static landing and documentation site for TeamWheels — corporate carpooling integrated with Microsoft Teams. This endpoint indicates the public marketing site is reachable.",
+  "links": {
+    "api-catalog": "https://www.teamwheelsapp.com/.well-known/api-catalog",
+    "sitemap": "https://www.teamwheelsapp.com/sitemap.xml",
+    "home": "https://www.teamwheelsapp.com/"
+  }
+}

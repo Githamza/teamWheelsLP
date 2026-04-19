@@ -1,0 +1,75 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://www.teamwheelsapp.com/",
+      "service-desc": [
+        {
+          "href": "https://www.teamwheelsapp.com/sitemap.xml",
+          "type": "application/xml",
+          "title": "Site map (all public pages, FR + EN)"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://www.teamwheelsapp.com/fr/how-it-works/",
+          "type": "text/html",
+          "hreflang": "fr",
+          "title": "Comment ça marche — TeamWheels"
+        },
+        {
+          "href": "https://www.teamwheelsapp.com/en/how-it-works/",
+          "type": "text/html",
+          "hreflang": "en",
+          "title": "How it works — TeamWheels"
+        },
+        {
+          "href": "https://www.teamwheelsapp.com/fr/pricing/",
+          "type": "text/html",
+          "hreflang": "fr",
+          "title": "Tarifs — TeamWheels"
+        },
+        {
+          "href": "https://www.teamwheelsapp.com/en/pricing/",
+          "type": "text/html",
+          "hreflang": "en",
+          "title": "Pricing — TeamWheels"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://www.teamwheelsapp.com/status.json",
+          "type": "application/json",
+          "title": "TeamWheels service status (health endpoint)"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://www.teamwheelsapp.com/en/index.xml",
+          "type": "application/rss+xml",
+          "hreflang": "en",
+          "title": "TeamWheels blog — English RSS feed"
+        },
+        {
+          "href": "https://www.teamwheelsapp.com/fr/index.xml",
+          "type": "application/rss+xml",
+          "hreflang": "fr",
+          "title": "TeamWheels blog — French RSS feed"
+        }
+      ],
+      "contact": [
+        {
+          "href": "https://www.teamwheelsapp.com/fr/contact/",
+          "type": "text/html",
+          "hreflang": "fr",
+          "title": "Contacter TeamWheels"
+        },
+        {
+          "href": "https://www.teamwheelsapp.com/en/contact/",
+          "type": "text/html",
+          "hreflang": "en",
+          "title": "Contact TeamWheels"
+        }
+      ]
+    }
+  ]
+}
