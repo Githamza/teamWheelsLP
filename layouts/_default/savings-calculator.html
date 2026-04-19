@@ -1,0 +1,188 @@
+{{ define "main" }}
+  {{ partial "essentials/header.html" . }}
+
+  {{ $lang := site.Language.Lang }}
+  {{ $calcJS := resources.Get "js/savings-calculator.js" }}
+  {{ if hugo.IsProduction }}
+    {{ $calcJS = $calcJS | fingerprint "sha512" }}
+  {{ end }}
+
+  <section class="savings-calculator" data-lang="{{ $lang }}" data-country="{{ if eq $lang `fr` }}FR{{ else }}GB{{ end }}">
+    <div class="container container-delta">
+      <div class="sc-head text-center">
+        <p class="subtitle">{{ .Params.intro_subtitle | default "Free tool" }}</p>
+        <h1 class="title text-xl mb-3">{{ .Title }}</h1>
+        <p class="sc-lede">{{ .Params.intro_lede | default .Description }}</p>
+      </div>
+
+      <nav class="sc-stepper" aria-label="progress">
+        <ol>
+          <li class="is-active" data-step="1"><span class="sc-step-num">1</span><span class="sc-step-label" data-i18n="step1.title"></span></li>
+          <li data-step="2"><span class="sc-step-num">2</span><span class="sc-step-label" data-i18n="step2.title"></span></li>
+          <li data-step="3"><span class="sc-step-num">3</span><span class="sc-step-label" data-i18n="step3.title"></span></li>
+          <li data-step="4"><span class="sc-step-num">4</span><span class="sc-step-label" data-i18n="step4.title"></span></li>
+        </ol>
+      </nav>
+
+      <div class="sc-card">
+        <!-- STEP 1 -->
+        <section class="sc-step" data-step="1" aria-hidden="false">
+          <header class="sc-step-head">
+            <h2 data-i18n="step1.title"></h2>
+            <p class="sc-muted" data-i18n="step1.subtitle"></p>
+          </header>
+          <div class="sc-grid">
+            <label class="sc-field">
+              <span data-i18n="fields.country"></span>
+              <select name="country" data-bind="country">
+                <option value="FR" data-i18n="countries.FR"></option>
+                <option value="GB" data-i18n="countries.GB"></option>
+                <option value="US" data-i18n="countries.US"></option>
+              </select>
+            </label>
+            <label class="sc-field">
+              <span data-i18n="fields.employees"></span>
+              <input type="number" name="employees" min="1" max="1000000" value="500" data-bind="employees" />
+            </label>
+            <label class="sc-field">
+              <span data-i18n="fields.distance"></span>
+              <input type="number" name="distanceRaw" min="1" step="0.5" value="30" data-bind="distanceRaw" />
+              <small class="sc-hint" data-bind-text="unitDistance"></small>
+            </label>
+            <label class="sc-field">
+              <span data-i18n="fields.workDays"></span>
+              <input type="number" name="workDays" min="1" max="366" value="220" data-bind="workDays" />
+            </label>
+          </div>
+        </section>
+
+        <!-- STEP 2 -->
+        <section class="sc-step" data-step="2" aria-hidden="true" hidden>
+          <header class="sc-step-head">
+            <h2 data-i18n="step2.title"></h2>
+            <p class="sc-muted" data-i18n="step2.subtitle"></p>
+          </header>
+          <div class="sc-grid">
+            <div class="sc-field sc-slider">
+              <span><span data-i18n="fields.soloPercent"></span> : <strong data-bind-text="soloCarsPercent"></strong>%</span>
+              <input type="range" min="0" max="100" step="1" value="75" data-bind="soloCarsPercent" />
+            </div>
+            <div class="sc-field sc-slider">
+              <span><span data-i18n="fields.targetPercent"></span> : <strong data-bind-text="carpoolTargetPct"></strong>%</span>
+              <input type="range" min="0" max="100" step="1" value="30" data-bind="carpoolTargetPct" />
+            </div>
+            <label class="sc-field">
+              <span data-i18n="fields.consumption"></span>
+              <input type="number" name="fuelConsumptionRaw" step="0.1" min="1" value="7" data-bind="fuelConsumptionRaw" />
+              <small class="sc-hint" data-bind-text="unitConsumption"></small>
+            </label>
+            <label class="sc-field">
+              <span data-i18n="fields.fuelPrice"></span>
+              <input type="number" name="fuelPrice" step="0.01" min="0" value="1.85" data-bind="fuelPrice" />
+              <small class="sc-hint" data-bind-text="unitFuelPrice"></small>
+            </label>
+          </div>
+        </section>
+
+        <!-- STEP 3 -->
+        <section class="sc-step" data-step="3" aria-hidden="true" hidden>
+          <header class="sc-step-head">
+            <h2 data-i18n="step3.title"></h2>
+            <p class="sc-muted" data-i18n="step3.subtitle"></p>
+          </header>
+          <div class="sc-results">
+            <div class="sc-metric sc-metric--co2">
+              <div class="sc-metric-icon" aria-hidden="true">&#127807;</div>
+              <div class="sc-metric-label" data-i18n="results.co2.label"></div>
+              <div class="sc-metric-value"><span data-counter="co2Saved" data-decimals="1">0</span> <span data-i18n="results.co2.unit"></span></div>
+              <div class="sc-metric-desc" data-bind-text="co2Desc"></div>
+            </div>
+            <div class="sc-metric sc-metric--savings">
+              <div class="sc-metric-icon" aria-hidden="true">&#128176;</div>
+              <div class="sc-metric-label" data-i18n="results.savings.label"></div>
+              <div class="sc-metric-value"><span data-counter="savingsPerDriver" data-decimals="0">0</span> <span data-bind-text="unitSavings"></span></div>
+            </div>
+            <div class="sc-metric sc-metric--fmd">
+              <div class="sc-metric-icon" aria-hidden="true">&#127970;</div>
+              <div class="sc-metric-label" data-bind-text="fmdLabel"></div>
+              <div class="sc-metric-value"><span data-counter="fmdGain" data-decimals="0">0</span> <span data-bind-text="unitSavings"></span></div>
+            </div>
+            <div class="sc-metric sc-metric--parking">
+              <div class="sc-metric-icon" aria-hidden="true">&#128663;</div>
+              <div class="sc-metric-label" data-i18n="results.parking.label"></div>
+              <div class="sc-metric-value"><span data-counter="parkingReduced" data-decimals="0">0</span> <span data-i18n="results.parking.unit"></span></div>
+            </div>
+          </div>
+
+          <div class="sc-charts">
+            <div class="sc-chart-box">
+              <h3 data-i18n="results.chartBarTitle"></h3>
+              <div class="sc-chart-canvas">
+                <canvas id="sc-chart-bar" aria-label="Before vs after carpooling"></canvas>
+              </div>
+            </div>
+            <div class="sc-chart-box">
+              <h3 data-i18n="results.chartRseTitle"></h3>
+              <div class="sc-gauge">
+                <canvas id="sc-chart-rse" aria-label="RSE Score"></canvas>
+                <div class="sc-gauge-value"><span data-counter="rseScore" data-decimals="0">0</span><small>/100</small></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- STEP 4 -->
+        <section class="sc-step" data-step="4" aria-hidden="true" hidden>
+          <header class="sc-step-head">
+            <h2 data-i18n="step4.title"></h2>
+            <p class="sc-muted" data-i18n="step4.subtitle"></p>
+          </header>
+          <form class="sc-form" id="sc-lead-form" novalidate>
+            <div class="sc-grid">
+              <label class="sc-field">
+                <span data-i18n="leadForm.firstName"></span>
+                <input type="text" name="firstName" required autocomplete="given-name" />
+              </label>
+              <label class="sc-field">
+                <span data-i18n="leadForm.email"></span>
+                <input type="email" name="email" required autocomplete="email" />
+              </label>
+              <label class="sc-field">
+                <span data-i18n="leadForm.company"></span>
+                <input type="text" name="company" required autocomplete="organization" />
+              </label>
+            </div>
+            <label class="sc-check">
+              <input type="checkbox" name="optin" />
+              <span data-i18n="leadForm.optin"></span>
+            </label>
+            <div class="sc-actions">
+              <button type="submit" class="btn btn-primary sc-btn-primary" data-i18n="cta.download"></button>
+            </div>
+          </form>
+
+          <div class="sc-share">
+            <span data-i18n="cta.shareLabel"></span>
+            <a href="#" id="sc-share-linkedin" class="sc-share-btn" rel="noopener" target="_blank">LinkedIn</a>
+            <a href="#" id="sc-share-twitter" class="sc-share-btn" rel="noopener" target="_blank">X / Twitter</a>
+          </div>
+
+          <div class="sc-cta-demo">
+            <a href="{{ `contact/` | relLangURL }}" class="btn btn-primary" data-i18n="cta.demo"></a>
+          </div>
+        </section>
+
+        <nav class="sc-nav" aria-label="step navigation">
+          <button type="button" class="btn sc-btn-secondary" data-sc-prev hidden data-i18n="nav.prev"></button>
+          <button type="button" class="btn btn-primary sc-btn-primary" data-sc-next data-i18n="nav.next"></button>
+        </nav>
+      </div>
+
+      <p class="sc-disclaimer" data-i18n="disclaimer"></p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js" defer></script>
+  <script src="{{ $calcJS.RelPermalink }}" defer></script>
+{{ end }}

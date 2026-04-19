@@ -18,14 +18,19 @@ url = "pricing/"
 weight = 3
 
 [[main]]
+name = "Calculateur d'économies"
+url = "tools/savings-calculator/"
+weight = 4
+
+[[main]]
 name = "Blog"
 url = "blog/"
-weight = 4
+weight = 5
 
 [[main]]
 name = "Contact"
 url = "contact/"
-weight = 5
+weight = 6
 
 
 
@@ -60,8 +65,13 @@ url = "pricing/"
 weight = 2
 
 [[footer_menu_4]]
+name = "Calculateur d'économies"
+url = "tools/savings-calculator/"
+weight = 3
+
+[[footer_menu_4]]
 name = "Blog"
 url = "blog/"
-weight = 3
+weight = 4
 
 
