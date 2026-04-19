@@ -69,14 +69,22 @@
 ##### Agent-discovery Link headers (RFC 8288 / RFC 9727)
 ## Advertise machine-readable resources so AI agents and automated clients
 ## can find the API catalog, sitemap, service docs and feeds from any HTML page.
+##
+## FilesMatch "\.html$" does NOT match requests for directory URLs like "/"
+## or "/fr/" — Apache evaluates the directive against the request URL, not
+## the DirectoryIndex target. Use SetEnvIf on Request_URI instead so the
+## homepage (and every sub-directory index) gets the headers too.
+<IfModule mod_setenvif.c>
+  SetEnvIf Request_URI "\.html$" AGENT_LINKS=1
+  SetEnvIf Request_URI "/$"      AGENT_LINKS=1
+</IfModule>
+
 <IfModule mod_headers.c>
-  <FilesMatch "\.(html)$">
-    Header append Link "</.well-known/api-catalog>; rel=\"api-catalog\"; type=\"application/linkset+json\""
-    Header append Link "</sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\""
-    Header append Link "</fr/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"fr\""
-    Header append Link "</en/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"en\""
-    Header append Link "</status.json>; rel=\"status\"; type=\"application/json\""
-  </FilesMatch>
+  Header always append Link "</.well-known/api-catalog>; rel=\"api-catalog\"; type=\"application/linkset+json\"" env=AGENT_LINKS
+  Header always append Link "</sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\"" env=AGENT_LINKS
+  Header always append Link "</fr/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"fr\"" env=AGENT_LINKS
+  Header always append Link "</en/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"en\"" env=AGENT_LINKS
+  Header always append Link "</status.json>; rel=\"status\"; type=\"application/json\"" env=AGENT_LINKS
 
   ## Serve the api-catalog with the correct RFC 9264 link-set media type
   <Files "api-catalog">
