@@ -119,7 +119,7 @@ image_and_content_blocks:
   - enable: true
     subtitle: "Commuter Benefits Administration Made Simple"
     title: "Pre-Tax Commuter Programs & Sustainable Mobility Reporting"
-    image: "images/commitment.png"
+    image: "images/rse-carpooling.png"
     content_position: "right"
     content: "Simplify commuter benefits administration for your HR team while meeting compliance requirements.
 

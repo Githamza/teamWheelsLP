@@ -119,7 +119,7 @@ image_and_content_blocks:
   - enable: true
     subtitle: "Coup de pouce du gouvernement"
     title: "Forfait Mobilité Durable : jusqu'à 800€/an par salarié"
-    image: "images/commitment.png"
+    image: "images/rse-carpooling.png"
     content_position: "right"
     content: "Valorisez l'engagement de vos collaborateurs avec le dispositif gouvernemental.
 

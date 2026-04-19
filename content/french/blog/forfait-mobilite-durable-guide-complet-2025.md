@@ -3,7 +3,7 @@ title: "Forfait Mobilité Durable 2025 : Le Guide Complet pour les Entreprises"
 date: 2025-01-29
 draft: false
 description: "Tout savoir sur le Forfait Mobilité Durable (FMD) : montants, conditions, mise en place, justificatifs. Guide pratique pour les RH et dirigeants."
-image: "images/commitment.png"
+image: "images/rse-carpooling.png"
 author: ""
 categories: ["Mobilité"]
 tags: ["FMD", "Forfait Mobilité Durable", "covoiturage", "RSE", "avantages salariés"]
