@@ -112,12 +112,37 @@
   </FilesMatch>
 </IfModule>
 
-##### Allow access to /.well-known/ and negotiate markdown for agents
-## Agents that send `Accept: text/markdown` get the pre-generated markdown
-## sibling of each directory URL; browsers keep getting HTML. Hugo's `md`
-## output format emits an index.md next to every index.html, and a static
-## /index.md covers the multilang root.
+##### Markdown content negotiation for agents (Accept: text/markdown)
+## The shared host silently drops mod_rewrite rules from .htaccess, so
+## drive the negotiation through Apache's native mod_negotiation
+## (MultiViews) instead. Hugo's `md` output format emits an `index.md`
+## next to every `index.html`, and a static `/index.md` covers the
+## multilang root.
+##
+## How it works:
+##   1. `DirectoryIndex index index.html` tells Apache to look for an
+##      `index` (no extension) first when a directory URL is hit.
+##   2. `index` does not exist as a file, so `Options +MultiViews`
+##      kicks in: Apache enumerates `index.*` siblings, ranks them by
+##      the request's Accept header, and serves the winner.
+##   3. Browsers (Accept: text/html,...) get `index.html`; agents
+##      sending `Accept: text/markdown` get `index.md`. Apache sets
+##      Content-Type from the chosen file and adds `Vary: negotiate,
+##      Accept` automatically so caches key on the Accept header.
+##   4. `index.html` stays as the trailing DirectoryIndex fallback so
+##      directories without a markdown sibling (e.g. /admin/) still
+##      resolve — MultiViews serves HTML there since it's the only
+##      representation available.
+##
+## Keep a mod_rewrite rule as a belt-and-braces fallback in case
+## MultiViews is disabled on some hosts.
+##
 ## See https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/
+<IfModule mod_negotiation.c>
+  Options +MultiViews
+  DirectoryIndex index index.html
+</IfModule>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
@@ -125,10 +150,7 @@
   RewriteRule "^\.well-known/" - [L]
 
   ## Directory URL + Accept: text/markdown + an index.md sibling → serve
-  ## the markdown in place (URL unchanged, 200 response, Content-Type
-  ## forced). REQUEST_FILENAME is already resolved past DirectoryIndex
-  ## when a directory URL is requested (e.g. "/en/" → ".../en/index.html"),
-  ## so the file test uses DOCUMENT_ROOT + REQUEST_URI instead.
+  ## the markdown in place. Harmless when MultiViews already handled it.
   RewriteCond %{HTTP:Accept} text/markdown [NC]
   RewriteCond %{REQUEST_URI} /$
   RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}index.md -f
@@ -136,8 +158,8 @@
 </IfModule>
 
 ## PageSpeed only knows how to rewrite HTML/CSS/JS — leave markdown alone,
-## and make it honour Vary: Accept so it doesn't serve a cached HTML copy
-## to an agent that asked for text/markdown.
+## and make it honour Vary: Accept so the cached HTML copy isn't served
+## to an agent that asked for markdown.
 <IfModule pagespeed_module>
   ModPagespeedDisallow "*.md"
   ModPagespeedRespectVary on
