@@ -67,25 +67,21 @@
 </IfModule>
 
 ##### Agent-discovery Link headers (RFC 8288 / RFC 9727)
-## Advertise machine-readable resources so AI agents and automated clients
-## can find the API catalog, sitemap, service docs and feeds from any HTML page.
+## Advertise machine-readable resources so AI agents and automated
+## clients can find the API catalog, agent-skills index, sitemap,
+## service docs and health endpoint from any response on this origin.
 ##
-## FilesMatch "\.html$" does NOT match requests for directory URLs like "/"
-## or "/fr/" — Apache evaluates the directive against the request URL, not
-## the DirectoryIndex target. Use SetEnvIf on Request_URI instead so the
-## homepage (and every sub-directory index) gets the headers too.
-<IfModule mod_setenvif.c>
-  SetEnvIf Request_URI "\.html$" AGENT_LINKS=1
-  SetEnvIf Request_URI "/$"      AGENT_LINKS=1
-</IfModule>
-
+## Emitted unconditionally: SetEnvIf/env= gating is silently skipped
+## on this shared host, and FilesMatch "\.html$" does not match
+## directory URLs like "/" or "/fr/". Emitting on every response is
+## ~500 bytes of HPACK-compressible header per hit — fine.
 <IfModule mod_headers.c>
-  Header always append Link "</.well-known/api-catalog>; rel=\"api-catalog\"; type=\"application/linkset+json\"" env=AGENT_LINKS
-  Header always append Link "</.well-known/agent-skills/index.json>; rel=\"https://agentskills.io/rel/index\"; type=\"application/json\"" env=AGENT_LINKS
-  Header always append Link "</sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\"" env=AGENT_LINKS
-  Header always append Link "</fr/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"fr\"" env=AGENT_LINKS
-  Header always append Link "</en/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"en\"" env=AGENT_LINKS
-  Header always append Link "</status.json>; rel=\"status\"; type=\"application/json\"" env=AGENT_LINKS
+  Header always append Link "</.well-known/api-catalog>; rel=\"api-catalog\"; type=\"application/linkset+json\""
+  Header always append Link "</.well-known/agent-skills/index.json>; rel=\"https://agentskills.io/rel/index\"; type=\"application/json\""
+  Header always append Link "</sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\""
+  Header always append Link "</fr/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"fr\""
+  Header always append Link "</en/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"en\""
+  Header always append Link "</status.json>; rel=\"status\"; type=\"application/json\""
 
   ## Serve the api-catalog with the correct RFC 9264 link-set media type
   <Files "api-catalog">
@@ -166,10 +162,13 @@
 </IfModule>
 
 <IfModule mod_headers.c>
-  ## Signal that responses vary by Accept so caches key on it. FilesMatch
-  ## on "\.html$" doesn't match directory URLs like "/" or "/fr/", so
-  ## piggy-back on the AGENT_LINKS env var set earlier for every HTML URL.
-  Header always append Vary "Accept" env=AGENT_LINKS
+  ## Signal that HTML/MD responses vary by Accept so caches key on it.
+  ## Directory URLs served via MultiViews already get `Vary: negotiate,
+  ## accept` from mod_negotiation automatically, so this FilesMatch only
+  ## needs to cover the direct `.html`/`.md` requests.
+  <FilesMatch "\.(html|md)$">
+    Header append Vary "Accept"
+  </FilesMatch>
 
   ## Serve .md files with the correct media type for agents.
   <FilesMatch "\.md$">
