@@ -106,23 +106,20 @@
 
 ##### Markdown content negotiation for agents (Accept: text/markdown)
 ## Agents that send `Accept: text/markdown` get the pre-generated markdown
-## version of the page; browsers (which send Accept: text/html,...) keep
-## getting the HTML default. Hugo generates the .md files next to each
-## index.html as an output format.
+## sibling of each page; browsers keep getting the HTML default. Hugo's
+## `md` output format emits an index.md next to every index.html, and a
+## static /index.md covers the multilang root.
+## See https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  ## Directory URL (trailing slash or mapped by Apache): serve index.md
+  ## Single rule handles both "/" and "/path/" uniformly:
+  ## when the client prefers markdown and an index.md exists for this
+  ## directory URL, rewrite to it in place (same URL, 200 OK).
   RewriteCond %{HTTP:Accept} text/markdown [NC]
-  RewriteCond %{REQUEST_FILENAME} -d
-  RewriteCond %{REQUEST_FILENAME}/index.md -f
-  RewriteRule ^(.*?)/?$ /$1/index.md [L,QSA]
-
-  ## Root URL: serve /index.md
-  RewriteCond %{HTTP:Accept} text/markdown [NC]
-  RewriteCond %{REQUEST_URI} ^/$
-  RewriteCond %{DOCUMENT_ROOT}/index.md -f
-  RewriteRule ^$ /index.md [L,QSA]
+  RewriteCond %{REQUEST_URI} /$
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}index.md -f
+  RewriteRule .* %{REQUEST_URI}index.md [L,QSA]
 </IfModule>
 
 <IfModule mod_headers.c>
