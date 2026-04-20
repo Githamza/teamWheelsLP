@@ -184,7 +184,7 @@
 
 ##### Enable gzip compression for resources
 <IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/markdown
   AddOutputFilterByType DEFLATE application/javascript application/x-javascript
   AddOutputFilterByType DEFLATE application/json application/xml
   AddOutputFilterByType DEFLATE application/rss+xml application/atom+xml
@@ -205,7 +205,7 @@
 
 ##### Set Header Vary: Accept-Encoding
 <IfModule mod_headers.c>
-  <FilesMatch "\.(js|css|xml|gz|html|svg|json)$">
+  <FilesMatch "\.(js|css|xml|gz|html|svg|json|md)$">
     Header append Vary: Accept-Encoding
   </FilesMatch>
 </IfModule>
