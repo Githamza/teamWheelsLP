@@ -23,6 +23,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="dns-prefetch" href="https://www.clarity.ms" />
 <link rel="dns-prefetch" href="https://client.crisp.chat" />
+<link rel="dns-prefetch" href="https://ipapi.co" />
 
 <!-- favicon -->
 {{ partialCached "favicon" . }}
@@ -62,6 +63,10 @@
 
 <!-- opengraph and twitter card -->
 {{ partial "basic-seo.html" . }}
+
+
+<!-- visitor country detection (IP geolocation) -->
+{{ partial "essentials/country-detect.html" . }}
 
 
 <!-- custom script -->

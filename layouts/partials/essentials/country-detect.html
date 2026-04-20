@@ -1,0 +1,40 @@
+<!-- Visitor country detection via IP geolocation.
+     Tries Cloudflare's edge trace first (free, zero-latency when the site sits
+     behind Cloudflare), falls back to ipapi.co. Result is cached in
+     sessionStorage so subsequent page views skip the network call. -->
+<script>
+(function () {
+  function apply(cc, source, cached) {
+    if (!cc) return;
+    cc = String(cc).trim().toUpperCase();
+    if (cc.length !== 2) return;
+    window.userCountry = cc;
+    document.documentElement.dataset.country = cc;
+    if (!cached) {
+      try { sessionStorage.setItem('userCountry', cc); } catch (e) {}
+    }
+    document.dispatchEvent(new CustomEvent('usercountry', {
+      detail: { country: cc, source: source, cached: !!cached }
+    }));
+  }
+
+  try {
+    var hit = sessionStorage.getItem('userCountry');
+    if (hit) { apply(hit, 'cache', true); return; }
+  } catch (e) {}
+
+  fetch('/cdn-cgi/trace', { cache: 'no-store' })
+    .then(function (r) { return r.ok ? r.text() : Promise.reject(); })
+    .then(function (t) {
+      var m = /(?:^|\n)loc=([A-Za-z]{2})/.exec(t);
+      if (!m) throw 0;
+      apply(m[1], 'cloudflare');
+    })
+    .catch(function () {
+      return fetch('https://ipapi.co/country/', { cache: 'no-store' })
+        .then(function (r) { return r.ok ? r.text() : Promise.reject(); })
+        .then(function (t) { apply(t, 'ipapi'); });
+    })
+    .catch(function () { /* detection failed; stay silent */ });
+})();
+</script>
