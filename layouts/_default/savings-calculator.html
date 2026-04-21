@@ -153,9 +153,8 @@
               </label>
               <label class="sc-field">
                 <span data-i18n="leadForm.country"></span>
-                <select name="country" id="sc-lead-country" required autocomplete="country">
-                  <option value="" data-i18n="leadForm.countryPlaceholder"></option>
-                </select>
+                <input type="text" name="country" id="sc-lead-country" list="sc-country-list" required autocomplete="country-name" spellcheck="false" />
+                <datalist id="sc-country-list"></datalist>
               </label>
             </div>
             <label class="sc-check">

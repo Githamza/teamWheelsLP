@@ -35,7 +35,8 @@
         email: 'Email professionnel',
         company: 'Entreprise',
         country: 'Pays',
-        countryPlaceholder: 'Sélectionnez un pays…',
+        countryPlaceholder: 'Commencez à taper un pays…',
+        countryInvalid: 'Choisissez un pays dans la liste.',
         optin: "J'accepte de recevoir des informations de TeamWheels."
       },
       cta: {
@@ -92,7 +93,8 @@
         email: 'Work email',
         company: 'Company',
         country: 'Country',
-        countryPlaceholder: 'Select a country…',
+        countryPlaceholder: 'Start typing a country…',
+        countryInvalid: 'Please pick a country from the list.',
         optin: 'I agree to receive updates from TeamWheels.'
       },
       cta: {
@@ -264,10 +266,11 @@
   }
 
   function populateCountrySelect(lang) {
-    var select = document.getElementById('sc-lead-country');
-    if (!select) return;
-    var placeholder = select.querySelector('option[value=""]');
-    if (placeholder) placeholder.textContent = t(lang, 'leadForm.countryPlaceholder');
+    var input = document.getElementById('sc-lead-country');
+    var list = document.getElementById('sc-country-list');
+    if (!input || !list) return;
+
+    input.placeholder = t(lang, 'leadForm.countryPlaceholder');
 
     var displayLocale = lang === 'fr' ? 'fr' : 'en';
     var displayNames = null;
@@ -292,14 +295,20 @@
       return collator ? collator.compare(a.name, b.name) : (a.name < b.name ? -1 : a.name > b.name ? 1 : 0);
     });
 
+    var nameToCode = {};
     var frag = document.createDocumentFragment();
     items.forEach(function (item) {
+      nameToCode[item.name.toLowerCase()] = item.code;
       var opt = document.createElement('option');
-      opt.value = item.code;
-      opt.textContent = item.name;
+      opt.value = item.name;
+      opt.setAttribute('data-code', item.code);
       frag.appendChild(opt);
     });
-    select.appendChild(frag);
+    list.innerHTML = '';
+    list.appendChild(frag);
+
+    input._countryNameToCode = nameToCode;
+    input.addEventListener('input', function () { input.setCustomValidity(''); });
   }
 
   function init() {
@@ -512,11 +521,23 @@
       form.addEventListener('submit', function (e) {
         e.preventDefault();
         var fd = new FormData(form);
+        var countryInput = document.getElementById('sc-lead-country');
+        var typedCountry = (fd.get('country') || '').trim();
+        var nameMap = (countryInput && countryInput._countryNameToCode) || {};
+        var countryCode = nameMap[typedCountry.toLowerCase()] || '';
+        if (countryInput) {
+          if (typedCountry && !countryCode) {
+            countryInput.setCustomValidity(t(lang, 'leadForm.countryInvalid') || 'Please pick a country from the list');
+          } else {
+            countryInput.setCustomValidity('');
+          }
+        }
         var userInfo = {
           firstName: fd.get('firstName') || '',
           email: fd.get('email') || '',
           company: fd.get('company') || '',
-          country: fd.get('country') || '',
+          country: countryCode,
+          countryName: typedCountry,
           optin: !!fd.get('optin')
         };
         if (!userInfo.email || !userInfo.firstName || !userInfo.company || !userInfo.country) {
