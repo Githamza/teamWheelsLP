@@ -45,7 +45,13 @@
   
 - id: website
   translation: Website
-  
+
+- id: optional
+  translation: optional
+
+- id: contact_form_subject
+  translation: New message from TeamWheels contact form
+
 - id: message
   translation: Message
   
