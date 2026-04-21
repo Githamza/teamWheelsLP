@@ -3,13 +3,13 @@
 
   var TRANSLATIONS = {
     fr: {
-      countries: { FR: 'France', GB: 'Royaume-Uni', US: 'États-Unis' },
+      currencies: { EUR: 'Euro (€)', GBP: 'Livre sterling (£)', USD: 'Dollar US ($)' },
       step1: { title: 'Votre entreprise', subtitle: "Quelques infos sur votre organisation." },
       step2: { title: 'Mobilité actuelle', subtitle: 'Comment vos salariés se déplacent aujourd\u2019hui.' },
       step3: { title: 'Vos économies potentielles', subtitle: 'Résultats estimés avec TeamWheels.' },
       step4: { title: 'Votre rapport personnalisé', subtitle: 'Téléchargez votre analyse complète.' },
       fields: {
-        country: 'Pays',
+        currency: 'Devise',
         employees: 'Nombre de salariés',
         distance: 'Distance domicile-travail (aller-retour)',
         workDays: 'Jours travaillés / an',
@@ -34,6 +34,9 @@
         firstName: 'Prénom',
         email: 'Email professionnel',
         company: 'Entreprise',
+        country: 'Pays',
+        countryPlaceholder: 'Commencez à taper un pays…',
+        countryInvalid: 'Choisissez un pays dans la liste.',
         optin: "J'accepte de recevoir des informations de TeamWheels."
       },
       cta: {
@@ -58,13 +61,13 @@
       }
     },
     en: {
-      countries: { FR: 'France', GB: 'United Kingdom', US: 'United States' },
+      currencies: { EUR: 'Euro (€)', GBP: 'Pound sterling (£)', USD: 'US dollar ($)' },
       step1: { title: 'Your company', subtitle: 'A few details about your organisation.' },
       step2: { title: 'Current mobility', subtitle: 'How your employees commute today.' },
       step3: { title: 'Your potential savings', subtitle: 'Estimated results with TeamWheels.' },
       step4: { title: 'Your personalised report', subtitle: 'Download your full analysis.' },
       fields: {
-        country: 'Country',
+        currency: 'Currency',
         employees: 'Number of employees',
         distance: 'Home-to-work distance (round trip)',
         workDays: 'Working days / year',
@@ -89,6 +92,9 @@
         firstName: 'First name',
         email: 'Work email',
         company: 'Company',
+        country: 'Country',
+        countryPlaceholder: 'Start typing a country…',
+        countryInvalid: 'Please pick a country from the list.',
         optin: 'I agree to receive updates from TeamWheels.'
       },
       cta: {
@@ -115,10 +121,30 @@
   };
 
   var DEFAULTS = {
-    FR: { fuelPrice: 1.85, currency: 'EUR', currencySymbol: '\u20AC', fuelPriceUnit: '\u20AC/L', distUnit: 'km', consumptionUnit: 'L/100km' },
-    GB: { fuelPrice: 1.55, currency: 'GBP', currencySymbol: '\u00A3', fuelPriceUnit: '\u00A3/L', distUnit: 'miles', consumptionUnit: 'MPG' },
-    US: { fuelPrice: 3.50, currency: 'USD', currencySymbol: '$', fuelPriceUnit: '$/gal', distUnit: 'miles', consumptionUnit: 'MPG' }
+    EUR: { fuelPrice: 1.85, currency: 'EUR', currencySymbol: '\u20AC', fuelPriceUnit: '\u20AC/L', distUnit: 'km', consumptionUnit: 'L/100km' },
+    GBP: { fuelPrice: 1.55, currency: 'GBP', currencySymbol: '\u00A3', fuelPriceUnit: '\u00A3/L', distUnit: 'miles', consumptionUnit: 'MPG' },
+    USD: { fuelPrice: 3.50, currency: 'USD', currencySymbol: '$', fuelPriceUnit: '$/gal', distUnit: 'miles', consumptionUnit: 'MPG' }
   };
+
+  var COUNTRY_CODES = [
+    'AF','AL','DZ','AS','AD','AO','AI','AQ','AG','AR','AM','AW','AU','AT','AZ',
+    'BS','BH','BD','BB','BY','BE','BZ','BJ','BM','BT','BO','BA','BW','BR','IO',
+    'BN','BG','BF','BI','CV','KH','CM','CA','KY','CF','TD','CL','CN','CX','CC',
+    'CO','KM','CG','CD','CK','CR','CI','HR','CU','CW','CY','CZ','DK','DJ','DM',
+    'DO','EC','EG','SV','GQ','ER','EE','SZ','ET','FK','FO','FJ','FI','FR','GF',
+    'PF','GA','GM','GE','DE','GH','GI','GR','GL','GD','GP','GU','GT','GG','GN',
+    'GW','GY','HT','HN','HK','HU','IS','IN','ID','IR','IQ','IE','IM','IL','IT',
+    'JM','JP','JE','JO','KZ','KE','KI','KP','KR','KW','KG','LA','LV','LB','LS',
+    'LR','LY','LI','LT','LU','MO','MG','MW','MY','MV','ML','MT','MH','MQ','MR',
+    'MU','YT','MX','FM','MD','MC','MN','ME','MS','MA','MZ','MM','NA','NR','NP',
+    'NL','NC','NZ','NI','NE','NG','NU','NF','MK','MP','NO','OM','PK','PW','PS',
+    'PA','PG','PY','PE','PH','PN','PL','PT','PR','QA','RE','RO','RU','RW','BL',
+    'SH','KN','LC','MF','PM','VC','WS','SM','ST','SA','SN','RS','SC','SL','SG',
+    'SX','SK','SI','SB','SO','ZA','GS','SS','ES','LK','SD','SR','SJ','SE','CH',
+    'SY','TW','TJ','TZ','TH','TL','TG','TK','TO','TT','TN','TR','TM','TC','TV',
+    'UG','UA','AE','GB','US','UY','UZ','VU','VA','VE','VN','VG','VI','WF','EH',
+    'YE','ZM','ZW'
+  ];
 
   var KM_PER_MILE = 1.609344;
   var LITERS_PER_GALLON = 3.78541;
@@ -134,12 +160,12 @@
     return node == null ? '' : String(node);
   }
 
-  function getCountryDefaults(country) {
-    return DEFAULTS[country] || DEFAULTS.FR;
+  function getCurrencyDefaults(currency) {
+    return DEFAULTS[currency] || DEFAULTS.EUR;
   }
 
   function computeSavings(state) {
-    var cd = getCountryDefaults(state.country);
+    var cd = getCurrencyDefaults(state.currency);
     var employees = Math.max(1, Number(state.employees) || 0);
     var distanceKm = (cd.distUnit === 'miles') ? (Number(state.distanceRaw) || 0) * KM_PER_MILE : (Number(state.distanceRaw) || 0);
     var workDays = Math.max(1, Number(state.workDays) || 220);
@@ -239,6 +265,52 @@
     });
   }
 
+  function populateCountrySelect(lang) {
+    var input = document.getElementById('sc-lead-country');
+    var list = document.getElementById('sc-country-list');
+    if (!input || !list) return;
+
+    input.placeholder = t(lang, 'leadForm.countryPlaceholder');
+
+    var displayLocale = lang === 'fr' ? 'fr' : 'en';
+    var displayNames = null;
+    try {
+      if (typeof Intl !== 'undefined' && Intl.DisplayNames) {
+        displayNames = new Intl.DisplayNames([displayLocale], { type: 'region' });
+      }
+    } catch (e) {}
+
+    var items = COUNTRY_CODES.map(function (code) {
+      var name = code;
+      if (displayNames) {
+        try {
+          var n = displayNames.of(code);
+          if (n) name = n;
+        } catch (e) {}
+      }
+      return { code: code, name: name };
+    });
+    var collator = (typeof Intl !== 'undefined' && Intl.Collator) ? new Intl.Collator(displayLocale) : null;
+    items.sort(function (a, b) {
+      return collator ? collator.compare(a.name, b.name) : (a.name < b.name ? -1 : a.name > b.name ? 1 : 0);
+    });
+
+    var nameToCode = {};
+    var frag = document.createDocumentFragment();
+    items.forEach(function (item) {
+      nameToCode[item.name.toLowerCase()] = item.code;
+      var opt = document.createElement('option');
+      opt.value = item.name;
+      opt.setAttribute('data-code', item.code);
+      frag.appendChild(opt);
+    });
+    list.innerHTML = '';
+    list.appendChild(frag);
+
+    input._countryNameToCode = nameToCode;
+    input.addEventListener('input', function () { input.setCustomValidity(''); });
+  }
+
   function init() {
     var root = document.querySelector('.savings-calculator');
     if (!root) return;
@@ -246,12 +318,14 @@
     var lang = (root.getAttribute('data-lang') || 'fr').toLowerCase();
     if (!TRANSLATIONS[lang]) lang = 'en';
 
-    var initialCountry = root.getAttribute('data-country') || 'FR';
-    var cd = getCountryDefaults(initialCountry);
+    var initialCurrency = root.getAttribute('data-currency') || 'EUR';
+    if (!DEFAULTS[initialCurrency]) initialCurrency = 'EUR';
+    var cd = getCurrencyDefaults(initialCurrency);
 
     var state = {
       lang: lang,
-      country: initialCountry,
+      currency: initialCurrency,
+      country: '',
       employees: 500,
       distanceRaw: cd.distUnit === 'miles' ? 20 : 30,
       workDays: 220,
@@ -267,6 +341,7 @@
     var lastResult = null;
 
     applyI18n(root, lang);
+    populateCountrySelect(lang);
 
     root.querySelectorAll('[data-bind]').forEach(function (input) {
       var key = input.getAttribute('data-bind');
@@ -275,8 +350,8 @@
       input.addEventListener(evt, function () {
         var val = input.tagName === 'SELECT' ? input.value : (input.type === 'number' || input.type === 'range' ? Number(input.value) : input.value);
         state[key] = val;
-        if (key === 'country') {
-          var d = getCountryDefaults(state.country);
+        if (key === 'currency') {
+          var d = getCurrencyDefaults(state.currency);
           state.fuelPrice = d.fuelPrice;
           state.distanceRaw = d.distUnit === 'miles' ? 20 : 30;
           state.fuelConsumptionRaw = d.consumptionUnit === 'MPG' ? 30 : 7;
@@ -293,7 +368,7 @@
     });
 
     function refreshDynamicText() {
-      var cd2 = getCountryDefaults(state.country);
+      var cd2 = getCurrencyDefaults(state.currency);
       root.querySelectorAll('[data-bind-text="unitDistance"]').forEach(function (el) { el.textContent = cd2.distUnit; });
       root.querySelectorAll('[data-bind-text="unitConsumption"]').forEach(function (el) { el.textContent = cd2.consumptionUnit; });
       root.querySelectorAll('[data-bind-text="unitFuelPrice"]').forEach(function (el) { el.textContent = cd2.fuelPriceUnit; });
@@ -446,17 +521,32 @@
       form.addEventListener('submit', function (e) {
         e.preventDefault();
         var fd = new FormData(form);
+        var countryInput = document.getElementById('sc-lead-country');
+        var typedCountry = (fd.get('country') || '').trim();
+        var nameMap = (countryInput && countryInput._countryNameToCode) || {};
+        var countryCode = nameMap[typedCountry.toLowerCase()] || '';
+        if (countryInput) {
+          if (typedCountry && !countryCode) {
+            countryInput.setCustomValidity(t(lang, 'leadForm.countryInvalid') || 'Please pick a country from the list');
+          } else {
+            countryInput.setCustomValidity('');
+          }
+        }
         var userInfo = {
           firstName: fd.get('firstName') || '',
           email: fd.get('email') || '',
           company: fd.get('company') || '',
+          country: countryCode,
+          countryName: typedCountry,
           optin: !!fd.get('optin')
         };
-        if (!userInfo.email || !userInfo.firstName || !userInfo.company) {
+        if (!userInfo.email || !userInfo.firstName || !userInfo.company || !userInfo.country) {
           form.reportValidity();
           return;
         }
-        var result = lastResult || computeSavings(state);
+        state.country = userInfo.country;
+        var result = computeSavings(state);
+        lastResult = result;
         generatePDF(result, state, userInfo);
         sendLead(userInfo, state, result);
         try {
@@ -467,12 +557,13 @@
 
     function sendLead(userInfo, st, res) {
       try {
-        var cd2 = getCountryDefaults(st.country);
+        var cd2 = getCurrencyDefaults(st.currency);
         var sym = cd2.currencySymbol;
         var payload = {
           _subject: '[Savings Calculator] ' + (userInfo.company || '') + ' - ' + (userInfo.firstName || ''),
           source: 'savings-calculator',
           language: lang,
+          currency: st.currency,
           country: st.country,
           firstName: userInfo.firstName,
           email: userInfo.email,
@@ -524,7 +615,7 @@
       var pageW = doc.internal.pageSize.getWidth();
       var margin = 48;
       var y = margin;
-      var cd2 = getCountryDefaults(st.country);
+      var cd2 = getCurrencyDefaults(st.currency);
       var sym = cd2.currencySymbol;
 
       doc.setFillColor(37, 99, 235);
