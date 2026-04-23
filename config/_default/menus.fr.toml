@@ -13,24 +13,29 @@ url = "how-it-works/"
 weight = 2
 
 [[main]]
+name = "Avantages"
+url = "benefits/"
+weight = 3
+
+[[main]]
 name = "Tarifs"
 url = "pricing/"
-weight = 3
+weight = 4
 
 [[main]]
 name = "Calculateur d'économies"
 url = "tools/savings-calculator/"
-weight = 4
+weight = 5
 
 [[main]]
 name = "Blog"
 url = "blog/"
-weight = 5
+weight = 6
 
 [[main]]
 name = "Contact"
 url = "contact/"
-weight = 6
+weight = 7
 
 
 
