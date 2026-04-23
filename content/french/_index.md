@@ -78,79 +78,48 @@ image_and_content_blocks:
     title: "Le covoiturage directement dans Microsoft Teams"
     image: "images/why_use_teamWheels.png"
     content_position: "right"
-    content: "Pourquoi obliger vos équipes à installer une app de plus ? TeamWheels s'intègre nativement à Teams, l'outil qu'elles utilisent déjà au quotidien.
+    content: "TeamWheels s'intègre nativement à Microsoft Teams — zéro app supplémentaire, adoption immédiate. Un admin, quelques clics, et votre programme covoiturage est en ligne en 5 minutes avec 40%+ de participation.
 
-    * **Zéro friction** - Pas de nouvelle app à installer, pas de nouveau compte
-
-    * **Bot intelligent** - Vos collaborateurs déclarent et recherchent des trajets par simple conversation
-
-    * **Multi-devices** - PC, tablettes, smartphones, partout où Teams fonctionne
-
-    * **Déploiement en 5 min** - Un admin, quelques clics, c'est fait
-
-    Contrairement aux apps de covoiturage classiques, TeamWheels vit là où vos équipes travaillent déjà.
+    [En savoir plus →](benefits/#integration-teams)
     "
     button:
-      enable: true
-      label: "Découvrir les fonctionnalités →"
+      enable: false
 
   - enable: true
     subtitle: "Des résultats concrets"
     title: "RSE, économies et bien-être au quotidien"
     image: "images/carpoolingBenefits.png"
     content_position: "left"
-    content: "TeamWheels vous aide à atteindre vos objectifs RSE tout en améliorant le quotidien de vos collaborateurs.
+    content: "Moins de trajets solo = émissions CO₂ mesurables, 30% de places de parking libérées, et des économies concrètes sur les frais de trajet — tout en renforçant le bien-être et la marque employeur.
 
-    * **Économies pour vos équipes** - Vos collaborateurs partagent les frais de trajet
-
-    * **Impact carbone mesurable** - Moins de voitures = moins d'émissions CO₂, suivi en temps réel
-
-    * **Bien-être et cohésion** - Moins de stress, plus de convivialité entre collègues
-
-    * **Marque employeur renforcée** - Un avantage attractif pour recruter et fidéliser
-
-    * **Moins de tension parking** - Moins de voitures = plus de places disponibles
-
+    [En savoir plus →](benefits/#resultats)
     "
     button:
-      enable: true
-      label: "Découvrir les avantages →"
+      enable: false
 
   - enable: true
     subtitle: "Coup de pouce du gouvernement"
     title: "Forfait Mobilité Durable : jusqu'à 800€/an par salarié"
     image: "images/rse-carpooling.png"
     content_position: "right"
-    content: "Valorisez l'engagement de vos collaborateurs avec le dispositif gouvernemental.
+    content: "Versez jusqu'à 800€/an par salarié, exonérés de charges et d'impôt. TeamWheels génère automatiquement les justificatifs FMD et vous permet de rejoindre la charte ADEME.
 
-    **Forfait Mobilité Durable (FMD)** : Vous pouvez verser jusqu'à 800€/an par salarié, exonérés de charges sociales et d'impôt. Un avantage attractif pour vos équipes !
-
-    **Charte ADEME** : Rejoignez les 16 grands employeurs (1M de salariés) signataires de la <a style='color: #007bff;' href='https://employeursprocovoiturage.ademe.fr/' target='_blank'>charte d'engagement covoiturage</a>.
-
-    TeamWheels vous fournit les justificatifs nécessaires pour mettre en place le FMD."
+    [En savoir plus →](benefits/#fmd)
+    "
     button:
-      enable: true
-      label: "En savoir plus sur le FMD →"
+      enable: false
 
   - enable: true
     subtitle: "Sécurité & Conformité"
     title: "Une solution certifiée et sécurisée"
     image: "images/why_use_teamWheels.png"
     content_position: "left"
-    content: "TeamWheels répond aux exigences de sécurité les plus strictes pour protéger vos données et celles de vos collaborateurs.
+    content: "Certifié Microsoft Partner, SSO via Azure AD, données hébergées en France et RGPD compliant — une solution enterprise sécurisée, sans identifiants supplémentaires.
 
-    * **Certifié Microsoft Partner** - Application validée sur AppSource
-
-    * **SSO Entreprise** - Authentification sécurisée via Azure AD
-
-    * **RGPD Compliant** - Données hébergées en France
-
-    * **Dashboard admin** - Suivez l'adoption et l'impact CO₂ sans atteinte à la vie privée
-
+    [En savoir plus →](benefits/#securite)
     "
     button:
-      enable: true
-      label: "En savoir plus sur la sécurité →"
+      enable: false
 
 
 # testimonials
