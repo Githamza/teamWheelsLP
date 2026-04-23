@@ -78,17 +78,13 @@ image_and_content_blocks:
     title: "Le covoiturage directement dans Microsoft Teams"
     image: "images/why_use_teamWheels.png"
     content_position: "right"
-    content: "Pourquoi obliger vos équipes à installer une app de plus ? TeamWheels s'intègre nativement à Teams, l'outil qu'elles utilisent déjà au quotidien.
+    content: "TeamWheels s'intègre nativement à Microsoft Teams — aucune app supplémentaire, aucun compte séparé. Vos collaborateurs covoiturent en quelques secondes, là où ils travaillent déjà.
 
-    * **Zéro friction** - Pas de nouvelle app à installer, pas de nouveau compte
+    * **Zéro friction** — Un clic pour démarrer, depuis Teams
+    * **Bot intelligent** — Trouver ou proposer un trajet par simple conversation
+    * **Déploiement en 5 min** — Un admin, zéro complexité IT
 
-    * **Bot intelligent** - Vos collaborateurs déclarent et recherchent des trajets par simple conversation
-
-    * **Multi-devices** - PC, tablettes, smartphones, partout où Teams fonctionne
-
-    * **Déploiement en 5 min** - Un admin, quelques clics, c'est fait
-
-    Contrairement aux apps de covoiturage classiques, TeamWheels vit là où vos équipes travaillent déjà.
+    [En savoir plus →](pourquoi-teamwheels/#integration-teams)
     "
     button:
       enable: true
@@ -99,18 +95,13 @@ image_and_content_blocks:
     title: "RSE, économies et bien-être au quotidien"
     image: "images/carpoolingBenefits.png"
     content_position: "left"
-    content: "TeamWheels vous aide à atteindre vos objectifs RSE tout en améliorant le quotidien de vos collaborateurs.
+    content: "Moins de voitures, moins d'émissions CO₂, moins de stress parking — et des collaborateurs plus détendus. Tous les indicateurs RSE calculés automatiquement.
 
-    * **Économies pour vos équipes** - Vos collaborateurs partagent les frais de trajet
+    * **–6 kg CO₂** par trajet partagé (Scope 3 Catégorie 7)
+    * **–30% de pression parking** sur vos sites
+    * **+800€/an** pour vos salariés via le Forfait Mobilité Durable
 
-    * **Impact carbone mesurable** - Moins de voitures = moins d'émissions CO₂, suivi en temps réel
-
-    * **Bien-être et cohésion** - Moins de stress, plus de convivialité entre collègues
-
-    * **Marque employeur renforcée** - Un avantage attractif pour recruter et fidéliser
-
-    * **Moins de tension parking** - Moins de voitures = plus de places disponibles
-
+    [En savoir plus →](pourquoi-teamwheels/#impact-rse)
     "
     button:
       enable: true
@@ -121,13 +112,10 @@ image_and_content_blocks:
     title: "Forfait Mobilité Durable : jusqu'à 800€/an par salarié"
     image: "images/rse-carpooling.png"
     content_position: "right"
-    content: "Valorisez l'engagement de vos collaborateurs avec le dispositif gouvernemental.
+    content: "Versez jusqu'à 800€/an par salarié avec le Forfait Mobilité Durable — exonérés de charges sociales. TeamWheels génère automatiquement tous les justificatifs pour votre service RH.
 
-    **Forfait Mobilité Durable (FMD)** : Vous pouvez verser jusqu'à 800€/an par salarié, exonérés de charges sociales et d'impôt. Un avantage attractif pour vos équipes !
-
-    **Charte ADEME** : Rejoignez les 16 grands employeurs (1M de salariés) signataires de la <a style='color: #007bff;' href='https://employeursprocovoiturage.ademe.fr/' target='_blank'>charte d'engagement covoiturage</a>.
-
-    TeamWheels vous fournit les justificatifs nécessaires pour mettre en place le FMD."
+    [En savoir plus →](pourquoi-teamwheels/#forfait-mobilite)
+    "
     button:
       enable: true
       label: "En savoir plus sur le FMD →"
@@ -137,16 +125,12 @@ image_and_content_blocks:
     title: "Une solution certifiée et sécurisée"
     image: "images/why_use_teamWheels.png"
     content_position: "left"
-    content: "TeamWheels répond aux exigences de sécurité les plus strictes pour protéger vos données et celles de vos collaborateurs.
+    content: "Certifié Microsoft Partner, SSO Azure AD, hébergement RGPD. Votre DSI valide en 5 minutes — sur une stack qu'il connaît déjà.
 
-    * **Certifié Microsoft Partner** - Application validée sur AppSource
+    * **Zéro nouvelles credentials** — Authentification Azure AD / Entra ID native
+    * **Privacy by design** — Données salariés protégées par défaut
 
-    * **SSO Entreprise** - Authentification sécurisée via Azure AD
-
-    * **RGPD Compliant** - Données hébergées en France
-
-    * **Dashboard admin** - Suivez l'adoption et l'impact CO₂ sans atteinte à la vie privée
-
+    [En savoir plus →](pourquoi-teamwheels/#securite)
     "
     button:
       enable: true
@@ -199,7 +183,7 @@ next_step_button:
 call_to_action:
   enable: true
   title: "Lancez le covoiturage dans votre entreprise"
-  subtitle: "Rejoignez les entreprises qui facilitent les trajets de leurs équipes et réduisent leur empreinte carbone. <br><br> <strong>Offre de lancement :</strong> Essai gratuit 30 jours + déploiement accompagné. <br> <em>Places limitées pour l'accompagnement personnalisé.</em>"
+  subtitle: "Rejoignez les entreprises qui réduisent leurs émissions et leurs coûts de mobilité. <br><br> <strong>Essai gratuit 30 jours</strong> — déploiement en 5 minutes, accompagnement inclus."
   button_label : "Commencer mon essai gratuit →"
   button_link : "contact/"
   image : "images/cta.png"

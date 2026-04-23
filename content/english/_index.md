@@ -6,8 +6,8 @@ keywords: "corporate carpooling software, corporate carpooling, corporate carpoo
 # banner
 banner:
   subtitle: "The #1 employee carpooling platform built into Microsoft Teams"
-  title: 'Employee Carpooling & Commute Management — Right Inside <span class="teams-brand">Microsoft Teams</span>'
-  description: "TeamWheels is the enterprise carpooling platform that turns Microsoft Teams into a commute management solution. Reduce Scope 3 emissions, cut parking costs, and boost employee retention — with zero extra apps and 5-minute deployment."
+  title: 'Employee Carpooling, Built Into <span class="teams-brand">Microsoft Teams</span>'
+  description: "The enterprise carpooling platform built into Microsoft Teams. Cut Scope 3 emissions, reduce parking costs, and boost retention — deployed in 5 minutes."
   button:
     enable: true
     button_label: "Start free 30-day trial"
@@ -78,17 +78,13 @@ image_and_content_blocks:
     title: "Employee Carpooling That Lives Where Your Teams Already Work"
     image: "images/why_use_teamWheels.png"
     content_position: "right"
-    content: "Why force employees to download another app they'll forget? TeamWheels integrates natively with Microsoft Teams — the tool your workforce already uses every day. That means instant adoption and zero change management.
+    content: "No new app. No new login. TeamWheels lives inside Microsoft Teams — your workforce adopts it instantly.
 
-    * **Zero friction for employees** — No new app to install, no separate account to create. Carpooling starts in one click
+    * **Zero friction** — Carpooling starts in one click, right inside Teams
+    * **Smart bot** — Find or offer rides through a simple chat conversation
+    * **5-minute deployment** — One admin, zero IT complexity
 
-    * **Smart conversational bot** — Employees find and offer rides through simple Teams chat conversations
-
-    * **Multi-device access** — PC, tablets, smartphones — anywhere Teams works, carpooling works
-
-    * **5-minute deployment** — One Teams admin, a few clicks, and your employee carpool program is live
-
-    Unlike standalone carpooling apps with low adoption rates, TeamWheels lives where your workforce already communicates. That's why our clients see 40%+ employee participation rates.
+    [Read more →](why-teamwheels/#teams-integration)
     "
     button:
       enable: true
@@ -99,18 +95,13 @@ image_and_content_blocks:
     title: "Cut Scope 3 Emissions, Reduce Parking Costs, Retain Top Talent"
     image: "images/carpoolingBenefits.png"
     content_position: "left"
-    content: "TeamWheels helps your organization meet ESG targets, solve parking challenges, and improve employee well-being — all through one platform.
+    content: "Measurable impact from day one — automatically tracked and ready for your sustainability reports.
 
-    * **Reduce Scope 3 commute emissions** — Fewer single-occupancy vehicles means measurable carbon reduction for your sustainability reporting (GHG Protocol Category 7)
+    * **–30% parking demand** — Free up real estate and reduce infrastructure costs
+    * **–6 kg CO₂ per shared ride** — Scope 3 Category 7 data built in
+    * **$2,000+/year saved** per employee on commuting costs
 
-    * **Cut parking demand by up to 30%** — Free up valuable corporate real estate and reduce parking infrastructure costs
-
-    * **Save employees $2,000+/year** — Shared commuting expenses directly improve employee financial well-being
-
-    * **Boost retention & employer brand** — 73% of employees value sustainability benefits. Stand out in recruitment across the USA, UK, and Canada
-
-    * **Build workplace connections** — Carpooling colleagues report less commute stress and stronger team relationships
-
+    [Read more →](why-teamwheels/#esg-impact)
     "
     button:
       enable: true
@@ -121,13 +112,10 @@ image_and_content_blocks:
     title: "Pre-Tax Commuter Programs & Sustainable Mobility Reporting"
     image: "images/rse-carpooling.png"
     content_position: "right"
-    content: "Simplify commuter benefits administration for your HR team while meeting compliance requirements.
+    content: "Pre-tax commuter benefits up to $340/month (USA), Sustainable Travel Plan data (UK), Smart Commute Program tracking (Canada). All compliance reports generated automatically — zero extra work for your HR team.
 
-    **Pre-tax commuter benefits**: In the USA, employees can use up to $340/month in pre-tax income for qualifying commuter expenses (2026 IRS limit). Carpooling qualifies under employer vanpool and transit benefit programs, saving both employees and employers on payroll taxes.
-
-    **UK & Canada sustainable commute programs**: Support your organization's Sustainable Travel Plan (UK) or Smart Commute Program (Canada) with built-in tracking and participation data.
-
-    **Automated ESG & CSR reports**: TeamWheels generates the CO₂ reduction documentation, participation metrics, and Scope 3 Category 7 data your sustainability team needs for GRI, CDP, CSRD, and SEC climate disclosures."
+    [Read more →](why-teamwheels/#commuter-benefits)
+    "
     button:
       enable: true
       label: "Learn more about commuter benefits →"
@@ -137,16 +125,12 @@ image_and_content_blocks:
     title: "A Certified, Secure Employee Mobility Solution"
     image: "images/why_use_teamWheels.png"
     content_position: "left"
-    content: "TeamWheels meets the strictest enterprise security requirements to protect your organization and your employees' privacy.
+    content: "Microsoft Partner Certified, Azure AD SSO, and GDPR-compliant by design. Your IT team gets a solution they already trust — deployed in minutes.
 
-    * **Microsoft Partner Certified** — Validated application on Microsoft AppSource, trusted by enterprise IT teams
+    * **Zero new credentials** — Azure AD / Entra ID authentication out of the box
+    * **Privacy by design** — Employee data protected by default, admin reporting without exposure
 
-    * **Enterprise SSO** — Secure authentication via Azure AD / Entra ID — no separate credentials needed
-
-    * **GDPR & Privacy Compliant** — Data protection built in, with employee privacy by design
-
-    * **Admin dashboard** — Track program adoption, commuter participation, and CO₂ impact without compromising individual privacy
-
+    [Read more →](why-teamwheels/#security)
     "
     button:
       enable: true
@@ -175,7 +159,7 @@ next_step_button:
 call_to_action:
   enable: true
   title: "Launch an Employee Carpooling Program in Your Organization"
-  subtitle: "Join forward-thinking companies across the USA, UK, and Canada that are reducing commute costs, cutting Scope 3 emissions, and improving employee well-being with TeamWheels. <br><br> <strong>Get started:</strong> Free 30-day trial + guided deployment for your HR and sustainability teams. <br> <em>Limited spots for personalized onboarding.</em>"
+  subtitle: "Join companies across the USA, UK, and Canada cutting emissions and commute costs. <br><br> <strong>Free 30-day trial</strong> — deploy in 5 minutes, guided onboarding included."
   button_label : "Start my free trial →"
   button_link : "contact/"
   image : "images/cta.png"
