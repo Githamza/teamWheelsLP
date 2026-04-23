@@ -7,7 +7,7 @@ keywords: "covoiturage entreprise, outil covoiturage entreprise, plateforme covo
 banner:
   subtitle: "La solution de covoiturage intégrée à Microsoft Teams"
   title: 'Le covoiturage, directement dans <span class="teams-brand">Microsoft Teams</span>'
-  description: "TeamWheels transforme Microsoft Teams en plateforme de covoiturage d'entreprise. Zéro app supplémentaire, déploiement en 5 minutes, adoption immédiate. Vos équipes partagent leurs trajets domicile-travail, tout le monde y gagne."
+  description: "Réduisez votre Scope 3, libérez du parking et versez le Forfait Mobilité Durable — zéro app supplémentaire, déployé en 5 minutes."
   button:
     enable: true
     button_label: "Essai gratuit 30 jours"
@@ -168,7 +168,7 @@ next_step_button:
 call_to_action:
   enable: true
   title: "Lancez le covoiturage dans votre entreprise"
-  subtitle: "Rejoignez les entreprises qui facilitent les trajets de leurs équipes et réduisent leur empreinte carbone. <br><br> <strong>Offre de lancement :</strong> Essai gratuit 30 jours + déploiement accompagné. <br> <em>Places limitées pour l'accompagnement personnalisé.</em>"
+  subtitle: "Rejoignez les entreprises qui réduisent leur Scope 3 et améliorent le bien-être de leurs équipes. <br><strong>Essai gratuit 30 jours</strong> + déploiement accompagné inclus. <em>Sans engagement.</em>"
   button_label : "Commencer mon essai gratuit →"
   button_link : "contact/"
   image : "images/cta.png"

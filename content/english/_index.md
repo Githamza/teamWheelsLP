@@ -5,9 +5,9 @@ keywords: "corporate carpooling software, corporate carpooling, corporate carpoo
 
 # banner
 banner:
-  subtitle: "The #1 employee carpooling platform built into Microsoft Teams"
-  title: 'Employee Carpooling & Commute Management — Right Inside <span class="teams-brand">Microsoft Teams</span>'
-  description: "TeamWheels is the enterprise carpooling platform that turns Microsoft Teams into a commute management solution. Reduce Scope 3 emissions, cut parking costs, and boost employee retention — with zero extra apps and 5-minute deployment."
+  subtitle: "Trusted by HR & Sustainability teams across the USA, UK & Canada"
+  title: 'Employee Carpooling Built Into <span class="teams-brand">Microsoft Teams</span>'
+  description: "Reduce Scope 3 emissions, cut parking demand by 30%, and save employees $2,000/year — zero extra apps, deployed in 5 minutes."
   button:
     enable: true
     button_label: "Start free 30-day trial"
@@ -127,7 +127,7 @@ blog:
   enable: true
   subtitle: "Resources for HR & Sustainability Leaders"
   title: "Employee Commute & Corporate Carpooling Insights"
-  description: "Practical guides on launching employee carpool programs, reducing Scope 3 commute emissions, and maximizing commuter benefits across the USA, UK, and Canada."
+  description: "Practical guides on corporate carpooling programs, Scope 3 reduction, and commuter benefits for HR & Sustainability leaders."
 
   button:
     enable: true
@@ -144,7 +144,7 @@ next_step_button:
 call_to_action:
   enable: true
   title: "Launch an Employee Carpooling Program in Your Organization"
-  subtitle: "Join forward-thinking companies across the USA, UK, and Canada that are reducing commute costs, cutting Scope 3 emissions, and improving employee well-being with TeamWheels. <br><br> <strong>Get started:</strong> Free 30-day trial + guided deployment for your HR and sustainability teams. <br> <em>Limited spots for personalized onboarding.</em>"
+  subtitle: "Join companies across the USA, UK, and Canada reducing Scope 3 emissions and improving employee well-being. <br><strong>Free 30-day trial</strong> + guided deployment included. <em>No credit card required.</em>"
   button_label : "Start my free trial →"
   button_link : "contact/"
   image : "images/cta.png"
