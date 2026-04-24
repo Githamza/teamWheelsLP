@@ -170,16 +170,42 @@
     Header append Vary "Accept"
   </FilesMatch>
 
-  ## Serve .md files with the correct media type for agents.
+  ## Serve .md files with the correct media type for agents. This also strips
+  ## the `qs=0.8` parameter that AddType leaks into the Content-Type header on
+  ## Apache 2.4.
   <FilesMatch "\.md$">
     Header set Content-Type "text/markdown; charset=utf-8"
   </FilesMatch>
+
+  ## Same clean-up for .xml: AddType below uses `qs=0.5` to rank RSS below
+  ## HTML in MultiViews, but Apache would otherwise emit `Content-Type:
+  ## application/rss+xml; qs=0.5` — strip it back to the canonical media type
+  ## so strict XML clients (sitemap consumers, feed readers) don't trip over
+  ## the stray parameter.
+  <FilesMatch "sitemap[^/]*\.xml$">
+    Header set Content-Type "application/xml; charset=utf-8"
+  </FilesMatch>
+  <FilesMatch "^(index|feed|rss)\.xml$">
+    Header set Content-Type "application/rss+xml; charset=utf-8"
+  </FilesMatch>
 </IfModule>
 
-## Make sure Apache knows the .md extension maps to text/markdown
+## Make sure Apache knows the .md extension maps to text/markdown.
+## Source-quality `qs=0.8` keeps HTML as the default when MultiViews sees an
+## `Accept: */*` or missing Accept header (typical for curl, bots, and some
+## scanners). Clients that explicitly send `Accept: text/markdown` still get
+## markdown because they express a strong preference.
+##
+## Hugo also emits `index.xml` (RSS) next to `index.html`, so MultiViews has
+## three representations to choose from on section/home URLs. Drop the qs on
+## `.xml` below the markdown qs so HTML wins for `*/*` while RSS remains
+## reachable via `Accept: application/rss+xml` or direct `.xml` URLs. The
+## Content-Type header for `.xml` responses is normalised by the FilesMatch
+## block above so the `qs=…` ranking hint never leaks to clients.
 <IfModule mod_mime.c>
-  AddType text/markdown .md
+  AddType "text/markdown;qs=0.8" .md
   AddCharset UTF-8 .md
+  AddType "application/rss+xml;qs=0.5" .xml
 </IfModule>
 
 ##### Enable gzip compression for resources
