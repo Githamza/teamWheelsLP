@@ -1,6 +1,6 @@
 ---
-title: "Covoiturage Domicile-Travail en Entreprise : Le Guide Complet 2025"
-date: 2025-04-29
+title: "Covoiturage Domicile-Travail en Entreprise : Le Guide Complet 2026"
+date: 2026-04-29
 draft: false
 description: "Qu'est-ce que le covoiturage ? Comment réduire les coûts de mobilité de votre entreprise grâce au covoiturage domicile-travail et aux déplacements professionnels partagés ? Guide complet avec FMD, loi LOM et avantages RSE."
 image: "images/carpoolingBenefits.png"
@@ -30,7 +30,7 @@ schema: |
       {
         "@type": "BlogPosting",
         "inLanguage": "fr-FR",
-        "headline": "Covoiturage Domicile-Travail en Entreprise : Le Guide Complet 2025",
+        "headline": "Covoiturage Domicile-Travail en Entreprise : Le Guide Complet 2026",
         "description": "Guide complet du covoiturage d'entreprise en France — FMD, loi LOM, déplacements inter-sites, flotte de véhicules et intégration Microsoft Teams avec TeamWheels.",
         "datePublished": "2025-04-29",
         "author": { "@type": "Organization", "name": "TeamWheels", "url": "https://teamwheels.app" },
@@ -79,7 +79,7 @@ schema: |
 
 # Covoiturage en entreprise : comment diviser par deux vos coûts de mobilité
 
-**Guide stratégique · Mobilité d'entreprise 2025 · 9 min de lecture**
+**Guide stratégique · Mobilité d'entreprise 2026 · 9 min de lecture**
 
 *FMD, loi LOM, déplacements inter-sites, gestion de flotte — tout ce que les DRH et DAF français doivent savoir pour transformer la mobilité salariale en levier de performance.*
 
@@ -229,6 +229,6 @@ TeamWheels est **gratuit jusqu'à 30 salariés**. Installation en moins d'une he
 
 ---
 
-*Article publié par l'équipe TeamWheels · 29 avril 2025*
+*Article publié par l'équipe TeamWheels · 29 avril 2026*
 
 *Mots-clés : covoiturage entreprise · covoiturage domicile-travail · Forfait Mobilité Durable · loi LOM · RSE · CSRD · DPEF · ridesharing · mobilité durable · Microsoft Teams · déplacements professionnels · gestion de flotte · TeamWheels*
