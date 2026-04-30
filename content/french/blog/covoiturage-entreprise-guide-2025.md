@@ -107,7 +107,7 @@ En France, on distingue deux grandes familles de mobilité partagée :
 
 Pour une entreprise, la différence est considérable : un salarié qui prend un VTC quotidiennement coûte entre **3 000 et 6 000 €/an** en notes de frais. Le même trajet en covoiturage organisé revient à **moins de 500 €/an**, partiellement exonéré grâce au FMD.
 
-> **Le Forfait Mobilité Durable (FMD) en clair**
+> **Le Forfait Mobilité Durable (FMD) en clair** — [guide complet FMD →](/fr/blog/forfait-mobilite-durable-guide-complet-2025/)
 >
 > Instauré par la **loi LOM** (Loi d'Orientation des Mobilités, 2019), le Forfait Mobilité Durable permet à tout employeur privé ou public de prendre en charge jusqu'à **800 € par an et par salarié** les frais de covoiturage domicile-travail. Cette somme est totalement exonérée de cotisations sociales et d'impôt sur le revenu. Elle peut se cumuler avec le remboursement des abonnements transport en commun dans la limite de 800 €.
 
@@ -119,7 +119,7 @@ Trois forces convergentes rendent le covoiturage d'entreprise inévitable en 202
 
 ### La pression réglementaire s'accélère
 
-La directive **CSRD** (Corporate Sustainability Reporting Directive), applicable aux grandes entreprises françaises depuis le 1er janvier 2024 et aux ETI à partir de 2025, impose de quantifier et déclarer les émissions de **scope 3** — dont les déplacements domicile-travail des salariés. Le covoiturage est l'un des seuls leviers immédiatement activables pour réduire ces émissions de manière mesurable et auditée.
+La directive **CSRD** (Corporate Sustainability Reporting Directive), applicable aux grandes entreprises françaises depuis le 1er janvier 2024 et aux ETI à partir de 2025, impose de quantifier et déclarer les émissions de **scope 3** — voir aussi notre article sur la [flambée des carburants 2026](/fr/blog/flambee-carburants-covoiturage-entreprise-2026/) — dont les déplacements domicile-travail des salariés. Le covoiturage est l'un des seuls leviers immédiatement activables pour réduire ces émissions de manière mesurable et auditée.
 
 ### Le coût de la vie pèse sur la fidélisation
 
@@ -188,7 +188,7 @@ TeamWheels intègre un module de gestion de flotte directement dans Microsoft Te
 
 ## 5. Pourquoi choisir TeamWheels plutôt qu'une solution standalone {#teamwheels}
 
-L'obstacle numéro un à l'adoption d'un programme de covoiturage est la **friction d'usage**. Moins de 15 % des salariés s'inscrivent sur une plateforme standalone quand l'entreprise la propose. Avec TeamWheels, qui vit dans Microsoft Teams, ce taux dépasse systématiquement **60 % dès la première semaine**.
+L'obstacle numéro un à l'adoption d'un programme de covoiturage est la **friction d'usage** — un sujet que nous analysons en détail dans [pourquoi vos employés sont sceptiques face au covoiturage](/fr/blog/pourquoi-vos-employes-sont-sceptiques-sur-le-covoiturage/). Moins de 15 % des salariés s'inscrivent sur une plateforme standalone quand l'entreprise la propose. Avec TeamWheels, qui vit dans Microsoft Teams, ce taux dépasse systématiquement **60 % dès la première semaine**.
 
 - ✅ **Zéro friction d'adoption** — aucune nouvelle app, aucun nouveau mot de passe. L'outil s'installe en 10 minutes par l'administrateur Teams.
 - ✅ **Matching automatique** — l'algorithme apparie conducteurs et passagers selon le domicile, le site et les horaires habituels.
@@ -201,7 +201,7 @@ L'obstacle numéro un à l'adoption d'un programme de covoiturage est la **frict
 
 ## 6. Lancer votre programme en 4 semaines {#deploiement}
 
-Un programme de covoiturage d'entreprise n'a pas besoin de mois de préparation.
+Un programme de covoiturage d'entreprise n'a pas besoin de mois de préparation. Pour une feuille de route encore plus détaillée, consultez notre guide [covoiturage entreprise : 5 étapes pour démarrer](/fr/blog/covoiturage-entreprise-5-etapes-demarrer/).
 
 ### Semaine 1 — Audit & cartographie des trajets
 

@@ -131,6 +131,10 @@ Track these KPIs to measure program success:
 4. **No communication plan** - Keep employees informed
 5. **Going it alone** - Use technology to automate matching
 
+---
+
+> **Related guide:** [Corporate Carpooling 2026: The Complete Guide](/blog/corporate-carpooling-guide-2025/) — platform comparison, IRS / UK / AU tax benefits, ESG reporting, and ROI formula.
+
 ## Ready to Launch?
 
 A successful carpooling program can save your organization thousands while improving employee wellbeing and meeting sustainability goals.

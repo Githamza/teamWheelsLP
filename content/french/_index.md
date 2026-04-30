@@ -105,6 +105,8 @@ image_and_content_blocks:
     content: "Versez jusqu'à 800€/an par salarié, exonérés de charges et d'impôt. TeamWheels génère automatiquement les justificatifs FMD et vous permet de rejoindre la charte ADEME.
 
     [En savoir plus →](benefits/#fmd)
+
+    [Guide complet : covoiturage domicile-travail en entreprise →](blog/covoiturage-entreprise-guide-2025/)
     "
     button:
       enable: false

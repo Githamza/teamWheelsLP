@@ -86,3 +86,7 @@ Here is why TeamWheels is the perfect solution to overcome employee skepticism, 
 Employees aren't against saving money or reducing their carbon footprint—they are against friction, safety risks, and wasted time. By utilizing TeamWheels, you remove the exact pain points that cause carpooling skepticism. You give your employees a safe, app-free way to connect, while your company reaps the rewards of lower parking costs and measurable Scope 3 emissions reductions.
 
 Ready to transform your company's commute? Transform Microsoft Teams into your most powerful sustainability tool and start your free 30-day trial with TeamWheels today.
+
+---
+
+> **Go deeper:** [Corporate Carpooling 2026: The Complete Guide](/blog/corporate-carpooling-guide-2025/) — why Teams-native adoption beats standalone apps, IRS / UK / AU tax benefits, and a 30-day launch plan.

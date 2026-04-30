@@ -186,6 +186,8 @@ TeamWheels rend le lancement de votre plateforme de covoiturage plus rapide que 
 
 **Prêt à lancer votre plateforme de covoiturage cette semaine ?**
 
+> **Article associé :** Consultez d'abord notre [guide complet du covoiturage domicile-travail en entreprise 2026](/fr/blog/covoiturage-entreprise-guide-2025/) — FMD, loi LOM, cas d'usage et comparatif des plateformes.
+
 [Démarrez votre essai gratuit →](/fr/contact/)
 
 *30 jours gratuits, sans engagement, sans carte bancaire.*

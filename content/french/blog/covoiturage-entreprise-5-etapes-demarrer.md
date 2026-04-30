@@ -133,6 +133,10 @@ Suivez ces KPIs pour mesurer la réussite du programme :
 4. **Pas de plan de communication** - Informez régulièrement les salariés
 5. **Tout faire seul** - Utilisez la technologie pour automatiser le matching
 
+---
+
+> **Article associé :** Avant de vous lancer, consultez notre [guide complet du covoiturage d'entreprise 2026](/fr/blog/covoiturage-entreprise-guide-2025/) — FMD, comparatif des solutions, cas d'usage domicile-travail et inter-sites.
+
 ## Prêt à lancer ?
 
 Un programme de covoiturage réussi peut faire économiser des milliers d'euros à votre organisation tout en améliorant le bien-être des salariés et en atteignant vos objectifs de développement durable.

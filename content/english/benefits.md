@@ -65,7 +65,9 @@ image_and_content_blocks:
 
     **UK & Canada sustainable commute programs**: Support your organization's Sustainable Travel Plan (UK) or Smart Commute Program (Canada) with built-in tracking and participation data.
 
-    **Automated ESG & CSR reports**: TeamWheels generates the CO₂ reduction documentation, participation metrics, and Scope 3 Category 7 data your sustainability team needs for GRI, CDP, CSRD, and SEC climate disclosures."
+    **Automated ESG & CSR reports**: TeamWheels generates the CO₂ reduction documentation, participation metrics, and Scope 3 Category 7 data your sustainability team needs for GRI, CDP, CSRD, and SEC climate disclosures.
+
+    [Complete corporate carpooling guide →](blog/corporate-carpooling-guide-2025/)"
     button:
       enable: false
 

@@ -156,6 +156,10 @@ Les engagements incluent :
 
 C'est un excellent moyen de **valoriser votre engagement RSE** et de rejoindre une communauté d'entreprises engagées.
 
+---
+
+> **Article associé :** Pour replacer le FMD dans une stratégie de mobilité complète, consultez notre [guide complet du covoiturage domicile-travail en entreprise 2026](/fr/blog/covoiturage-entreprise-guide-2025/) — définitions, comparatif des plateformes, déploiement en 4 semaines.
+
 ## Passez à l'action
 
 Le FMD est une opportunité rare : un dispositif qui **avantage tout le monde** — salariés, entreprise, et planète.
