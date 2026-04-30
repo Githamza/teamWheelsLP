@@ -67,7 +67,7 @@ image_and_content_blocks:
 
     **Automated ESG & CSR reports**: TeamWheels generates the CO₂ reduction documentation, participation metrics, and Scope 3 Category 7 data your sustainability team needs for GRI, CDP, CSRD, and SEC climate disclosures.
 
-    [Complete corporate carpooling guide →](blog/corporate-carpooling-guide-2025/)"
+    [Complete corporate carpooling guide →](/blog/corporate-carpooling-guide-2026/)"
     button:
       enable: false
 

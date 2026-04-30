@@ -135,7 +135,7 @@ Suivez ces KPIs pour mesurer la réussite du programme :
 
 ---
 
-> **Article associé :** Avant de vous lancer, consultez notre [guide complet du covoiturage d'entreprise 2026](/fr/blog/covoiturage-entreprise-guide-2025/) — FMD, comparatif des solutions, cas d'usage domicile-travail et inter-sites.
+> **Article associé :** Avant de vous lancer, consultez notre [guide complet du covoiturage d'entreprise 2026](/fr/blog/covoiturage-entreprise-guide-2026/) — FMD, comparatif des solutions, cas d'usage domicile-travail et inter-sites.
 
 ## Prêt à lancer ?
 

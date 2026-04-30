@@ -161,7 +161,7 @@ Ready to launch carpooling in your organisation? Here's how:
 
 **Ready to transform your organisation's commuting?** Start your free trial today.
 
-> **Related guide:** [Corporate Carpooling 2026: The Complete Guide](/blog/corporate-carpooling-guide-2025/) — Clean Air Zone compliance, FBT, ESG Scope 3, platform comparison, and 30-day launch plan.
+> **Related guide:** [Corporate Carpooling 2026: The Complete Guide](/blog/corporate-carpooling-guide-2026/) — Clean Air Zone compliance, FBT, ESG Scope 3, platform comparison, and 30-day launch plan.
 
 **[Book a Demo →](/contact/)**
 

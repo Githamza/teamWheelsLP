@@ -106,7 +106,7 @@ image_and_content_blocks:
 
     [En savoir plus →](benefits/#fmd)
 
-    [Guide complet : covoiturage domicile-travail en entreprise →](blog/covoiturage-entreprise-guide-2025/)
+    [Guide complet : covoiturage domicile-travail en entreprise →](/fr/blog/covoiturage-entreprise-guide-2026/)
     "
     button:
       enable: false

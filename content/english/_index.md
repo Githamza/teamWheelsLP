@@ -106,7 +106,7 @@ image_and_content_blocks:
 
     [Read more →](benefits/#commuter-benefits)
 
-    [Complete corporate carpooling guide →](blog/corporate-carpooling-guide-2025/)
+    [Complete corporate carpooling guide →](/blog/corporate-carpooling-guide-2026/)
     "
     button:
       enable: false

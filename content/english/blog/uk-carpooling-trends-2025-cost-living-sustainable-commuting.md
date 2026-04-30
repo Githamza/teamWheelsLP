@@ -279,7 +279,7 @@ Ready to cut your commute costs and carbon footprint? Whether you're a commuter 
 
 [Get Started Today →](/contact/)
 
-> **Related guide:** [Corporate Carpooling 2026: The Complete Guide](/blog/corporate-carpooling-guide-2025/) — UK Clean Air Zones, SECR reporting, platform comparison, and a 30-day launch plan.
+> **Related guide:** [Corporate Carpooling 2026: The Complete Guide](/blog/corporate-carpooling-guide-2026/) — UK Clean Air Zones, SECR reporting, platform comparison, and a 30-day launch plan.
 
 *30 days free for corporate programmes. No commitment, no credit card required.*
 

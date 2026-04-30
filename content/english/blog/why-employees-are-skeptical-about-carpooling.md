@@ -89,4 +89,4 @@ Ready to transform your company's commute? Transform Microsoft Teams into your m
 
 ---
 
-> **Go deeper:** [Corporate Carpooling 2026: The Complete Guide](/blog/corporate-carpooling-guide-2025/) — why Teams-native adoption beats standalone apps, IRS / UK / AU tax benefits, and a 30-day launch plan.
+> **Go deeper:** [Corporate Carpooling 2026: The Complete Guide](/blog/corporate-carpooling-guide-2026/) — why Teams-native adoption beats standalone apps, IRS / UK / AU tax benefits, and a 30-day launch plan.

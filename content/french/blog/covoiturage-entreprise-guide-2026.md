@@ -22,7 +22,7 @@ tags:
   - TeamWheels
 reading_time: "9 min"
 keywords: "covoiturage entreprise, covoiturage domicile-travail, Forfait Mobilité Durable, loi LOM, RSE, CSRD, DPEF, ridesharing, mobilité durable, Microsoft Teams, déplacements professionnels, gestion de flotte, TeamWheels"
-canonical: "https://teamwheels.app/blog/fr/covoiturage-entreprise-guide-2025"
+canonical: "https://teamwheels.app/blog/fr/covoiturage-entreprise-guide-2026"
 schema: |
   {
     "@context": "https://schema.org",
@@ -32,7 +32,7 @@ schema: |
         "inLanguage": "fr-FR",
         "headline": "Covoiturage Domicile-Travail en Entreprise : Le Guide Complet 2026",
         "description": "Guide complet du covoiturage d'entreprise en France — FMD, loi LOM, déplacements inter-sites, flotte de véhicules et intégration Microsoft Teams avec TeamWheels.",
-        "datePublished": "2025-04-29",
+        "datePublished": "2026-04-29",
         "author": { "@type": "Organization", "name": "TeamWheels", "url": "https://teamwheels.app" },
         "publisher": { "@type": "Organization", "name": "TeamWheels" }
       },
@@ -88,7 +88,7 @@ schema: |
 ## Sommaire
 
 1. [Ridesharing, covoiturage : de quoi parle-t-on ?](#definitions)
-2. [Pourquoi 2025 est l'année charnière](#pourquoi)
+2. [Pourquoi 2026 est l'année charnière](#pourquoi)
 3. [BlaBlaCar, Klaxit, Uber vs TeamWheels](#comparatif)
 4. [Les deux cas d'usage en entreprise](#usages)
 5. [Pourquoi choisir TeamWheels](#teamwheels)
@@ -113,9 +113,9 @@ Pour une entreprise, la différence est considérable : un salarié qui prend un
 
 ---
 
-## 2. Pourquoi 2025 est l'année charnière pour la mobilité d'entreprise {#pourquoi}
+## 2. Pourquoi 2026 est l'année charnière pour la mobilité d'entreprise {#pourquoi}
 
-Trois forces convergentes rendent le covoiturage d'entreprise inévitable en 2025 :
+Trois forces convergentes rendent le covoiturage d'entreprise inévitable en 2026 :
 
 ### La pression réglementaire s'accélère
 
