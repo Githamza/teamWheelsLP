@@ -1,11 +1,11 @@
 ---
-title: "Corporate Carpooling 2025: The Complete Guide for US, UK & Australian Companies"
-date: 2025-04-29
+title: "Corporate Carpooling 2026: The Complete Guide for Companies"
+date: 2026-04-29
 draft: false
-description: "What is ridesharing and carpooling — and why should your company care? Discover how corporate carpooling cuts commuting costs by 60%, supports ESG reporting, and outperforms Uber, Bolt and BlaBlaCar for business mobility in the US, UK and Australia."
+description: "What is ridesharing and carpooling — and why should your company care? Discover how corporate carpooling cuts commuting costs by 60%, supports ESG reporting, and outperforms Uber, Bolt and BlaBlaCar for business mobility."
 image: "images/carpoolingBenefits.png"
 author: "TeamWheels Editorial"
-categories: ["Corporate Mobility Guide", "2025"]
+categories: ["Corporate Mobility Guide", "2026"]
 tags:
   - ridesharing
   - carpooling
@@ -33,9 +33,9 @@ schema: |
       {
         "@type": "BlogPosting",
         "inLanguage": "en",
-        "headline": "Corporate Carpooling 2025: The Complete Guide for US, UK & Australian Companies",
-        "description": "A definitive guide to ridesharing and carpooling for businesses across anglophone markets — IRS benefits, UK Clean Air Zones, Australian FBT, ESG reporting, and how TeamWheels integrates into Microsoft Teams.",
-        "datePublished": "2025-04-29",
+        "headline": "Corporate Carpooling 2026: The Complete Guide for Companies",
+        "description": "A definitive guide to ridesharing and carpooling for businesses — IRS benefits, UK Clean Air Zones, Australian FBT, ESG reporting, and how TeamWheels integrates into Microsoft Teams.",
+        "datePublished": "2026-04-29",
         "author": { "@type": "Organization", "name": "TeamWheels", "url": "https://teamwheels.app" },
         "publisher": { "@type": "Organization", "name": "TeamWheels" }
       },
@@ -82,9 +82,7 @@ schema: |
 
 # The Smarter Way to Beat the Commute — and Cut Costs by 60%
 
-**Corporate Mobility Guide · April 2025 · 10 min read**
-
-*Markets covered: 🇺🇸 United States · 🇬🇧 United Kingdom · 🇦🇺 Australia*
+**Corporate Mobility Guide · April 2026 · 10 min read**
 
 Ridesharing apps were built for individuals on the go. What your company actually needs is structured corporate carpooling — with IRS pre-tax benefits, Clean Air Zone compliance, and zero new apps for your employees to install.
 
@@ -273,6 +271,6 @@ TeamWheels is **free for teams up to 25**. Enterprise pilots for larger organisa
 
 ---
 
-*Published by TeamWheels Editorial · April 29, 2025*
+*Published by TeamWheels Editorial · April 29, 2026*
 
 *Tags: ridesharing · carpooling · ridesharing company · what is ridesharing · what is carpooling · corporate mobility · IRS commuter benefits · Clean Air Zone · FBT Australia · ESG scope 3 · Microsoft Teams · TeamWheels · sustainable commuting · Uber alternative · BlaBlaCar enterprise*
