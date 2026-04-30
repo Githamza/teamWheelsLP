@@ -191,3 +191,7 @@ Le covoiturage entre collègues n'est plus une contrainte — c'est un avantage 
 **[Découvrir TeamWheels →](/contact/)**
 
 *Identifiez vos collègues de trajet en quelques clics et commencez à covoiturer dès demain.*
+
+---
+
+> **Pour aller plus loin :** [Guide complet du covoiturage domicile-travail en entreprise 2026](/fr/blog/covoiturage-entreprise-guide-2025/) — FMD, loi LOM, comparatif des plateformes et plan de déploiement en 4 semaines.

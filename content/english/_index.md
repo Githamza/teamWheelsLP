@@ -105,6 +105,8 @@ image_and_content_blocks:
     content: "Automate pre-tax commuter benefit tracking ($340/month IRS limit), generate CSRD/CDP-ready Scope 3 reports, and stay compliant across the USA, UK, and Canada — all without extra admin overhead.
 
     [Read more →](benefits/#commuter-benefits)
+
+    [Complete corporate carpooling guide →](blog/corporate-carpooling-guide-2025/)
     "
     button:
       enable: false

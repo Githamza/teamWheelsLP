@@ -146,7 +146,7 @@ One of the most compelling arguments for corporate carpooling is that each marke
 
 ### 🇺🇸 United States
 
-- **IRS Section 132(f):** Employees can exclude up to **$315/month (2025)** in employer-provided commuter benefits from taxable income
+- **IRS Section 132(f):** Employees can exclude up to **$315/month (2025)** in employer-provided commuter benefits from taxable income — see our [US Scope 3 compliance guide](/blog/scope-3-employee-commuting-corporate-carpooling-usa-compliance-guide/)
 - Pre-tax payroll deduction reduces employer **FICA tax** burden
 - **Vanpool alternatives:** Organised carpooling qualifies where traditional vanpools are impractical
 - **LEED / WELL certification:** Carpool programmes earn sustainability credits
@@ -157,7 +157,7 @@ One of the most compelling arguments for corporate carpooling is that each marke
 - **Clean Air Zones (CAZ):** Carpooling reduces vehicles entering Birmingham, Bath, Bradford, and Bristol CAZs — cutting daily charges of £8–£12 per vehicle
 - **NIC savings:** Employer-facilitated car-sharing reduces National Insurance contributions on company car benefits
 - **EV carpooling:** HMRC's Advisory Electricity Rate (AER) makes shared EV commuting particularly cost-efficient
-- **SECR reporting:** Corporate carpooling programmes generate auditable Scope 3 commute data for Streamlined Energy and Carbon Reporting
+- **SECR reporting:** Corporate carpooling programmes generate auditable Scope 3 commute data for Streamlined Energy and Carbon Reporting — see our [UK employee carpooling complete guide](/blog/uk-employee-carpooling-complete-guide/)
 - **Net Zero Transport Plan:** Direct alignment with government-mandated sustainability targets
 
 ### 🇦🇺 Australia
@@ -237,13 +237,13 @@ Annual savings = (Employees × % driving solo × Commute miles/day
 100 × 0.70 × 20 × 230 × 0.40 × 0.55 × $0.67 = ~$89,000/year
 ```
 
-**[Use the full interactive calculator](https://teamwheels.app/calculator)** — includes parking cost reduction, IRS pre-tax savings, and ESG CO₂ value.
+**[Use the full interactive calculator](https://teamwheels.app/calculator)** — includes parking cost reduction, IRS pre-tax savings, and ESG CO₂ value. Or read our [carpooling savings calculator guide](/blog/carpooling-savings-calculator-corporate-co2-roi-2026/) to understand every metric.
 
 ---
 
 ## 7. How to Launch in 30 Days {#launch}
 
-Corporate carpooling doesn't require a six-month project. With TeamWheels, the path from decision to first shared trips takes four weeks:
+Corporate carpooling doesn't require a six-month project. With TeamWheels, the path from decision to first shared trips takes four weeks. For a more detailed step-by-step walkthrough, see [how to launch a corporate carpooling program in 30 days](/blog/how-to-launch-corporate-carpooling-program/).
 
 ### Week 1 — Audit
 

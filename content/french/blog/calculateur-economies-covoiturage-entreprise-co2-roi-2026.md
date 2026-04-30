@@ -159,7 +159,7 @@ Le calculateur répond à la question *"combien peut-on économiser ?"*. La suit
 4. **Mesurer l'adoption réelle après 6 à 8 semaines** et relancer le calculateur avec le taux de participation constaté.
 5. **Généraliser à toute l'entreprise** avec un business case validé et un storytelling RSE clair.
 
-Pour un playbook plus détaillé, consultez notre guide [comment lancer rapidement une plateforme de covoiturage personnalisable pour votre entreprise](/fr/blog/comment-lancer-rapidement-plateforme-covoiturage-personnalisable-entreprise/), et notre article [flambée des carburants 2026 : pourquoi le covoiturage n'est plus une option](/fr/blog/flambee-carburants-covoiturage-entreprise-2026/).
+Pour un playbook plus détaillé, consultez notre guide [comment lancer rapidement une plateforme de covoiturage personnalisable pour votre entreprise](/fr/blog/comment-lancer-rapidement-plateforme-covoiturage-personnalisable-entreprise/), notre article [flambée des carburants 2026 : pourquoi le covoiturage n'est plus une option](/fr/blog/flambee-carburants-covoiturage-entreprise-2026/), et notre [guide complet du covoiturage domicile-travail en entreprise 2026](/fr/blog/covoiturage-entreprise-guide-2025/).
 
 ## Questions fréquentes
 

@@ -76,7 +76,9 @@ image_and_content_blocks:
     title: "Un tableau de bord pour les administrateurs"
     image: "images/how-it-works/dashboard.png"
     content_position: "right" # Value will be - "left/right"
-    content: "Ayez une vue d'ensemble sur l'utilisation de TeamWheels dans votre entreprise sans pour autant enfreindre la vie privée de vos collaborateurs."
+    content: "Ayez une vue d'ensemble sur l'utilisation de TeamWheels dans votre entreprise sans pour autant enfreindre la vie privée de vos collaborateurs.
+
+    [Guide complet : lancer votre programme covoiturage →](blog/covoiturage-entreprise-guide-2025/)"
 
 
 call_to_action:

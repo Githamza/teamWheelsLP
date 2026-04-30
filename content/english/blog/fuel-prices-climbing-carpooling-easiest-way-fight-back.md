@@ -59,3 +59,7 @@ Just a quiet daily reminder that the seat next to you doesn't have to stay empty
 **Fuel prices aren't coming back down. But with the right tool, your team's commute costs can.**
 
 👉 *See how TeamWheels is helping companies in the UK, US and Australia turn empty seats into $1,000+ in savings per employee per year.*
+
+---
+
+> **Go deeper:** [Corporate Carpooling 2026: The Complete Guide](/blog/corporate-carpooling-guide-2025/) — IRS pre-tax benefits, Clean Air Zone compliance, FBT exemptions, ESG reporting, and a 30-day launch plan.

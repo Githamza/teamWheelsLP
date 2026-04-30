@@ -217,3 +217,7 @@ The infrastructure is being built. The incentives are growing. The only question
 **[Start Matching With Colleagues →](/contact/)**
 
 *TeamWheels identifies coworkers on your route automatically. Set up your company's carpooling programme in minutes, not months.*
+
+---
+
+> **Go deeper:** [Corporate Carpooling 2026: The Complete Guide](/blog/corporate-carpooling-guide-2025/) — IRS, Clean Air Zone and FBT incentives, platform comparison, ESG reporting, and a 30-day launch plan.

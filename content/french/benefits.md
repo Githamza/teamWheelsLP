@@ -65,7 +65,9 @@ image_and_content_blocks:
 
     **Charte ADEME** : Rejoignez les 16 grands employeurs (1M de salariés) signataires de la <a style='color: #007bff;' href='https://employeursprocovoiturage.ademe.fr/' target='_blank'>charte d'engagement covoiturage</a>.
 
-    **Justificatifs automatisés** : TeamWheels génère automatiquement les attestations et justificatifs nécessaires pour mettre en place le FMD dans votre entreprise, sans charge administrative supplémentaire pour vos équipes RH."
+    **Justificatifs automatisés** : TeamWheels génère automatiquement les attestations et justificatifs nécessaires pour mettre en place le FMD dans votre entreprise, sans charge administrative supplémentaire pour vos équipes RH.
+
+    [Lire le guide complet du covoiturage d'entreprise →](blog/covoiturage-entreprise-guide-2025/)"
     button:
       enable: false
 

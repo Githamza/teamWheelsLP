@@ -159,7 +159,7 @@ The calculator answers *"how much could we save?"*. The natural next question is
 4. **Measure real adoption after 6–8 weeks** and re-run the calculator with the actual participation rate.
 5. **Scale company-wide** with the validated business case and a clear ESG narrative.
 
-For a deeper implementation playbook, see our step-by-step guide on [how to quickly launch a customizable carpool platform for your company](/blog/how-to-quickly-launch-customizable-carpool-platform-for-your-company/), and our compliance-focused overview on [Scope 3 employee commuting in the USA](/blog/scope-3-employee-commuting-corporate-carpooling-usa-compliance-guide/).
+For a deeper implementation playbook, see our step-by-step guide on [how to quickly launch a customizable carpool platform for your company](/blog/how-to-quickly-launch-customizable-carpool-platform-for-your-company/), our compliance-focused overview on [Scope 3 employee commuting in the USA](/blog/scope-3-employee-commuting-corporate-carpooling-usa-compliance-guide/), and our [complete corporate carpooling guide 2026](/blog/corporate-carpooling-guide-2025/).
 
 ## Frequently Asked Questions
 
