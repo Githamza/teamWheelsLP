@@ -186,7 +186,7 @@ TeamWheels makes launching your corporate carpool platform faster than ever:
 
 **Ready to launch your carpool platform this week?**
 
-> **Related guide:** [Corporate Carpooling 2026: The Complete Guide](/blog/corporate-carpooling-guide-2025/) — platform comparison, IRS / UK / AU tax benefits, ESG reporting, and ROI formula.
+> **Related guide:** [Corporate Carpooling 2026: The Complete Guide](/blog/corporate-carpooling-guide-2026/) — platform comparison, IRS / UK / AU tax benefits, ESG reporting, and ROI formula.
 
 [Start Your Free Trial →](/contact/)
 

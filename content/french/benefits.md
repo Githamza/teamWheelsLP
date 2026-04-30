@@ -67,7 +67,7 @@ image_and_content_blocks:
 
     **Justificatifs automatisés** : TeamWheels génère automatiquement les attestations et justificatifs nécessaires pour mettre en place le FMD dans votre entreprise, sans charge administrative supplémentaire pour vos équipes RH.
 
-    [Lire le guide complet du covoiturage d'entreprise →](blog/covoiturage-entreprise-guide-2025/)"
+    [Lire le guide complet du covoiturage d'entreprise →](/fr/blog/covoiturage-entreprise-guide-2026/)"
     button:
       enable: false
 

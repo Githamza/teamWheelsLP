@@ -25,7 +25,7 @@ tags:
   - BlaBlaCar-enterprise
 reading_time: "10 min"
 keywords: "ridesharing, carpooling, ridesharing company, what is ridesharing, what is carpooling, corporate carpooling, IRS commuter benefits, Clean Air Zone UK, FBT Australia, ESG scope 3, Microsoft Teams, TeamWheels, sustainable commuting, fleet management"
-canonical: "https://teamwheels.app/blog/en/corporate-carpooling-2025"
+canonical: "https://teamwheels.app/blog/en/corporate-carpooling-2026"
 schema: |
   {
     "@context": "https://schema.org",
@@ -112,7 +112,7 @@ The confusion between ridesharing and carpooling matters enormously for company 
 
 ---
 
-## 2. Ridesharing Companies in 2025 — and What They Miss for Business {#landscape}
+## 2. Ridesharing Companies in 2026 — and What They Miss for Business {#landscape}
 
 The ridesharing industry is dominated by a handful of global platforms. Understanding where each one fits — and where they fall short for enterprise needs — is essential before choosing a mobility solution.
 
@@ -146,7 +146,7 @@ One of the most compelling arguments for corporate carpooling is that each marke
 
 ### 🇺🇸 United States
 
-- **IRS Section 132(f):** Employees can exclude up to **$315/month (2025)** in employer-provided commuter benefits from taxable income — see our [US Scope 3 compliance guide](/blog/scope-3-employee-commuting-corporate-carpooling-usa-compliance-guide/)
+- **IRS Section 132(f):** Employees can exclude up to **$340/month (2026)** in employer-provided commuter benefits from taxable income — see our [US Scope 3 compliance guide](/blog/scope-3-employee-commuting-corporate-carpooling-usa-compliance-guide/)
 - Pre-tax payroll deduction reduces employer **FICA tax** burden
 - **Vanpool alternatives:** Organised carpooling qualifies where traditional vanpools are impractical
 - **LEED / WELL certification:** Carpool programmes earn sustainability credits
@@ -176,7 +176,7 @@ One of the most compelling arguments for corporate carpooling is that each marke
 | Metric | Value |
 |---|---|
 | Per-trip cost reduction vs individual vehicle use | -62% |
-| Monthly IRS pre-tax commuter benefit (2025) | $315/month |
+| Monthly IRS pre-tax commuter benefit (2026) | $315/month |
 | Adoption rate: Teams-native vs standalone apps | 3× higher |
 | Employee retention improvement with mobility benefits (SHRM 2024) | +21% |
 
