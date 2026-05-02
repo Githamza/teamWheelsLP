@@ -109,7 +109,7 @@ google = "u6bODqGgyMFvDU5mx3g6GbVGUUwoNCsBCZXb1V2OuuE"
 bing = "" # Your verification code
 baidu = "" # Your verification code
 facebook = "" # Your verification code
-
+google_tag_manager = "AW-11145026311"                                    
 # cookies
 [cookies]
 enable = false
