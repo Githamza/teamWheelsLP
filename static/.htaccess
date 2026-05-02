@@ -67,16 +67,21 @@
 </IfModule>
 
 ##### Agent-discovery Link headers (RFC 8288 / RFC 9727)
-## Advertise machine-readable resources so AI agents and automated clients
-## can find the API catalog, sitemap, service docs and feeds from any HTML page.
+## Advertise machine-readable resources so AI agents and automated
+## clients can find the API catalog, agent-skills index, sitemap,
+## service docs and health endpoint from any response on this origin.
+##
+## Emitted unconditionally: SetEnvIf/env= gating is silently skipped
+## on this shared host, and FilesMatch "\.html$" does not match
+## directory URLs like "/" or "/fr/". Emitting on every response is
+## ~500 bytes of HPACK-compressible header per hit — fine.
 <IfModule mod_headers.c>
-  <FilesMatch "\.(html)$">
-    Header append Link "</.well-known/api-catalog>; rel=\"api-catalog\"; type=\"application/linkset+json\""
-    Header append Link "</sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\""
-    Header append Link "</fr/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"fr\""
-    Header append Link "</en/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"en\""
-    Header append Link "</status.json>; rel=\"status\"; type=\"application/json\""
-  </FilesMatch>
+  Header always append Link "</.well-known/api-catalog>; rel=\"api-catalog\"; type=\"application/linkset+json\""
+  Header always append Link "</.well-known/agent-skills/index.json>; rel=\"https://agentskills.io/rel/index\"; type=\"application/json\""
+  Header always append Link "</sitemap.xml>; rel=\"sitemap http://www.sitemaps.org/schemas/sitemap/0.9\"; type=\"application/xml\""
+  Header always append Link "</fr/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"fr\""
+  Header always append Link "</en/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"en\""
+  Header always append Link "</status.json>; rel=\"status\"; type=\"application/json\""
 
   ## Serve the api-catalog with the correct RFC 9264 link-set media type
   <Files "api-catalog">
@@ -96,53 +101,116 @@
     Header set Content-Type "application/json"
     Header set Cache-Control "max-age=60, public"
   </Files>
-</IfModule>
 
-##### Allow access to /.well-known/ (some shared hosts block dotted dirs)
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteRule "^\.well-known/" - [L]
+  ## Agent Skills discovery index (Cloudflare / agentskills.io RFC v0.2.0).
+  <FilesMatch "^index\.json$">
+    Header set Cache-Control "max-age=3600, public"
+  </FilesMatch>
 </IfModule>
 
 ##### Markdown content negotiation for agents (Accept: text/markdown)
-## Agents that send `Accept: text/markdown` get the pre-generated markdown
-## sibling of each page; browsers keep getting the HTML default. Hugo's
-## `md` output format emits an index.md next to every index.html, and a
-## static /index.md covers the multilang root.
+## The shared host silently drops mod_rewrite rules from .htaccess, so
+## drive the negotiation through Apache's native mod_negotiation
+## (MultiViews) instead. Hugo's `md` output format emits an `index.md`
+## next to every `index.html`, and a static `/index.md` covers the
+## multilang root.
+##
+## How it works:
+##   1. `DirectoryIndex index index.html` tells Apache to look for an
+##      `index` (no extension) first when a directory URL is hit.
+##   2. `index` does not exist as a file, so `Options +MultiViews`
+##      kicks in: Apache enumerates `index.*` siblings, ranks them by
+##      the request's Accept header, and serves the winner.
+##   3. Browsers (Accept: text/html,...) get `index.html`; agents
+##      sending `Accept: text/markdown` get `index.md`. Apache sets
+##      Content-Type from the chosen file and adds `Vary: negotiate,
+##      Accept` automatically so caches key on the Accept header.
+##   4. `index.html` stays as the trailing DirectoryIndex fallback so
+##      directories without a markdown sibling (e.g. /admin/) still
+##      resolve — MultiViews serves HTML there since it's the only
+##      representation available.
+##
+## Keep a mod_rewrite rule as a belt-and-braces fallback in case
+## MultiViews is disabled on some hosts.
+##
 ## See https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/
+<IfModule mod_negotiation.c>
+  Options +MultiViews
+  DirectoryIndex index index.html
+</IfModule>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  ## Single rule handles both "/" and "/path/" uniformly:
-  ## when the client prefers markdown and an index.md exists for this
-  ## directory URL, rewrite to it in place (same URL, 200 OK).
+  ## Shared hosts sometimes block /.well-known/ — pass it through.
+  RewriteRule "^\.well-known/" - [L]
+
+  ## Directory URL + Accept: text/markdown + an index.md sibling → serve
+  ## the markdown in place. Harmless when MultiViews already handled it.
   RewriteCond %{HTTP:Accept} text/markdown [NC]
   RewriteCond %{REQUEST_URI} /$
   RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}index.md -f
-  RewriteRule .* %{REQUEST_URI}index.md [L,QSA]
+  RewriteRule ^(.*)$ $1index.md [L,QSA,T=text/markdown]
+</IfModule>
+
+## PageSpeed only knows how to rewrite HTML/CSS/JS — leave markdown alone,
+## and make it honour Vary: Accept so the cached HTML copy isn't served
+## to an agent that asked for markdown.
+<IfModule pagespeed_module>
+  ModPagespeedDisallow "*.md"
+  ModPagespeedRespectVary on
 </IfModule>
 
 <IfModule mod_headers.c>
-  ## Signal that responses vary by Accept (needed for correct caching)
+  ## Signal that HTML/MD responses vary by Accept so caches key on it.
+  ## Directory URLs served via MultiViews already get `Vary: negotiate,
+  ## accept` from mod_negotiation automatically, so this FilesMatch only
+  ## needs to cover the direct `.html`/`.md` requests.
   <FilesMatch "\.(html|md)$">
     Header append Vary "Accept"
   </FilesMatch>
 
-  ## Serve .md files with the correct media type for agents
+  ## Serve .md files with the correct media type for agents. This also strips
+  ## the `qs=0.8` parameter that AddType leaks into the Content-Type header on
+  ## Apache 2.4.
   <FilesMatch "\.md$">
     Header set Content-Type "text/markdown; charset=utf-8"
   </FilesMatch>
+
+  ## Same clean-up for .xml: AddType below uses `qs=0.5` to rank RSS below
+  ## HTML in MultiViews, but Apache would otherwise emit `Content-Type:
+  ## application/rss+xml; qs=0.5` — strip it back to the canonical media type
+  ## so strict XML clients (sitemap consumers, feed readers) don't trip over
+  ## the stray parameter.
+  <FilesMatch "sitemap[^/]*\.xml$">
+    Header set Content-Type "application/xml; charset=utf-8"
+  </FilesMatch>
+  <FilesMatch "^(index|feed|rss)\.xml$">
+    Header set Content-Type "application/rss+xml; charset=utf-8"
+  </FilesMatch>
 </IfModule>
 
-## Make sure Apache knows the .md extension maps to text/markdown
+## Make sure Apache knows the .md extension maps to text/markdown.
+## Source-quality `qs=0.8` keeps HTML as the default when MultiViews sees an
+## `Accept: */*` or missing Accept header (typical for curl, bots, and some
+## scanners). Clients that explicitly send `Accept: text/markdown` still get
+## markdown because they express a strong preference.
+##
+## Hugo also emits `index.xml` (RSS) next to `index.html`, so MultiViews has
+## three representations to choose from on section/home URLs. Drop the qs on
+## `.xml` below the markdown qs so HTML wins for `*/*` while RSS remains
+## reachable via `Accept: application/rss+xml` or direct `.xml` URLs. The
+## Content-Type header for `.xml` responses is normalised by the FilesMatch
+## block above so the `qs=…` ranking hint never leaks to clients.
 <IfModule mod_mime.c>
-  AddType text/markdown .md
+  AddType "text/markdown;qs=0.8" .md
   AddCharset UTF-8 .md
+  AddType "application/rss+xml;qs=0.5" .xml
 </IfModule>
 
 ##### Enable gzip compression for resources
 <IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/markdown
   AddOutputFilterByType DEFLATE application/javascript application/x-javascript
   AddOutputFilterByType DEFLATE application/json application/xml
   AddOutputFilterByType DEFLATE application/rss+xml application/atom+xml
@@ -163,7 +231,7 @@
 
 ##### Set Header Vary: Accept-Encoding
 <IfModule mod_headers.c>
-  <FilesMatch "\.(js|css|xml|gz|html|svg|json)$">
+  <FilesMatch "\.(js|css|xml|gz|html|svg|json|md)$">
     Header append Vary: Accept-Encoding
   </FilesMatch>
 </IfModule>

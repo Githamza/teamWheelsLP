@@ -92,7 +92,9 @@ image_and_content_blocks:
     title: "Admin Dashboard for HR, Facilities & Sustainability Teams"
     image: "images/how-it-works/dashboard.png"
     content_position: "left" # Value will be - "left/right"
-    content: "Get a complete overview of your employee carpool program performance — participation rates, commute matches, CO₂ emissions avoided, and parking demand reduction — all without compromising individual employee privacy. Export reports for your ESG disclosures, CSR reporting, and commuter benefit program administration."
+    content: "Get a complete overview of your employee carpool program performance — participation rates, commute matches, CO₂ emissions avoided, and parking demand reduction — all without compromising individual employee privacy. Export reports for your ESG disclosures, CSR reporting, and commuter benefit program administration.
+
+    [Complete corporate carpooling guide →](/blog/corporate-carpooling-guide-2026/)"
 
 
 call_to_action:

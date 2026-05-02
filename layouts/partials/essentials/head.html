@@ -23,6 +23,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="dns-prefetch" href="https://www.clarity.ms" />
 <link rel="dns-prefetch" href="https://client.crisp.chat" />
+<link rel="dns-prefetch" href="https://ipapi.co" />
+<link rel="dns-prefetch" href="https://bat.bing.net" />
 
 <!-- favicon -->
 {{ partialCached "favicon" . }}
@@ -43,8 +45,29 @@
 <link rel="canonical" href="{{ .Permalink }}" />
 {{- end }}
 
+{{/* Advertise the Markdown-for-Agents representation so automated clients
+     can either send `Accept: text/markdown` against the canonical URL or
+     hit the pre-rendered .md sibling directly. */}}
+{{- with .OutputFormats.Get "md" -}}
+<link rel="alternate" type="text/markdown" href="{{ .Permalink }}" title="Markdown for agents" />
+{{- end }}
+
+{{/* Agent-discovery <link> fallbacks mirroring the RFC 8288 Link: response
+     headers emitted from .htaccess. HTML-only crawlers and preview tools
+     that don't inspect response headers can still follow these. */}}
+<link rel="api-catalog" type="application/linkset+json" href="{{ "/.well-known/api-catalog" | absURL }}" title="TeamWheels API catalog (RFC 9727)" />
+<link rel="https://agentskills.io/rel/index" type="application/json" href="{{ "/.well-known/agent-skills/index.json" | absURL }}" title="Agent Skills discovery index" />
+<link rel="sitemap" type="application/xml" href="{{ "/sitemap.xml" | absURL }}" title="Sitemap" />
+<link rel="status" type="application/json" href="{{ "/status.json" | absURL }}" title="Service status" />
+<link rel="service-doc" type="text/html" hreflang="fr" href="{{ "/fr/how-it-works/" | absURL }}" title="Comment ça marche — TeamWheels" />
+<link rel="service-doc" type="text/html" hreflang="en" href="{{ "/en/how-it-works/" | absURL }}" title="How it works — TeamWheels" />
+
 <!-- opengraph and twitter card -->
 {{ partial "basic-seo.html" . }}
+
+
+<!-- visitor country detection (IP geolocation) -->
+{{ partial "essentials/country-detect.html" . }}
 
 
 <!-- custom script -->
@@ -53,6 +76,11 @@
 
 <!-- google tag manager -->
 {{ partialCached "gtm.html" . }}
+
+<!-- Bing UET tag -->
+<script>(function(w, d, t, u, o) {w[u] = w[u] || [], o.ts = (new Date).getTime();var n = d.createElement(t);n.src = "https://bat.bing.net/bat.js?ti=" + o.ti + ("uetq" != u ? "&q=" + u : ""),n.async = 1, n.onload = n.onreadystatechange = function() {var s = this.readyState;s && "loaded" !== s && "complete" !== s ||(o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad"),n.onload = n.onreadystatechange = null)};var i = d.getElementsByTagName(t)[0];i.parentNode.insertBefore(n, i);})(window, document, "script", "uetq", {ti: "187248236",enableAutoSpaTracking: true});</script>
+<!-- UET Consent Mode: default denied; upgraded to granted only after the visitor accepts the cookie banner (#cookie-button sets cookie-consent=true). -->
+<script>window.uetq = window.uetq || [];window.uetq.push('consent', 'default', {'ad_storage': 'denied'});(function(){function grant(){window.uetq.push('consent', 'update', {'ad_storage': 'granted'});}if(document.cookie.split('; ').indexOf('cookie-consent=true') !== -1){grant();}document.addEventListener('click', function(e){var t=e.target;if(t && t.id === 'cookie-button'){grant();}});})();</script>
 
 <!-- Deferred analytics & third-party scripts for mobile performance -->
 <script>

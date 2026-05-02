@@ -1,0 +1,85 @@
+{{/*
+  WebMCP tool exposure for AI agents running in the browser.
+
+  Registers site actions (demo request, savings calculator, language switch,
+  pricing / how-it-works navigation) with `navigator.modelContext` per the
+  W3C Web Machine Learning WebMCP draft so user-side agents can discover
+  and invoke them without a separate MCP server.
+
+  Spec:  https://webmachinelearning.github.io/webmcp/
+  Notes:
+    - `navigator.modelContext` is only present in agent-aware browsers; a
+      feature-detect guard prevents errors elsewhere.
+    - `execute` handlers are side-effect-only (navigation) so we don't need
+      to serialize a structured result; we return `{ ok: true, url }` for
+      agents that log tool outputs.
+*/}}
+{{- $fr := absLangURL "" | replaceRE "^https?://[^/]+" "" -}}
+{{- $fallbackContact := "/fr/contact/" -}}
+{{- $fallbackPricing := "/fr/pricing/" -}}
+{{- $fallbackHow      := "/fr/how-it-works/" -}}
+{{- $fallbackCalc     := "/fr/tools/savings-calculator/" -}}
+<script>
+(function () {
+  if (!('modelContext' in navigator) || typeof navigator.modelContext.provideContext !== 'function') {
+    return;
+  }
+  var lang = (document.documentElement.getAttribute('lang') || 'fr').toLowerCase().slice(0, 2);
+  var base = lang === 'en' ? '/en' : '/fr';
+  function go(path) {
+    var url = base + path;
+    window.location.assign(url);
+    return { ok: true, url: url };
+  }
+  var emptyObj = { type: 'object', properties: {}, additionalProperties: false };
+  try {
+    navigator.modelContext.provideContext({
+      tools: [
+        {
+          name: 'open_demo_request',
+          description: 'Open the TeamWheels demo / contact form so the visitor can request a product demo or talk to the sales team.',
+          inputSchema: emptyObj,
+          execute: function () { return go('/contact/'); }
+        },
+        {
+          name: 'open_pricing',
+          description: 'Open the TeamWheels pricing page (plans and per-employee rates for Microsoft Teams carpooling).',
+          inputSchema: emptyObj,
+          execute: function () { return go('/pricing/'); }
+        },
+        {
+          name: 'open_how_it_works',
+          description: 'Open the “How it works” page describing the TeamWheels onboarding flow, the Microsoft Teams bot, and the admin dashboard.',
+          inputSchema: emptyObj,
+          execute: function () { return go('/how-it-works/'); }
+        },
+        {
+          name: 'open_savings_calculator',
+          description: 'Open the TeamWheels savings calculator that estimates CO₂ avoided, parking demand reduced, and annual € savings for a given employee count.',
+          inputSchema: emptyObj,
+          execute: function () { return go('/tools/savings-calculator/'); }
+        },
+        {
+          name: 'switch_language',
+          description: 'Switch the site to French (fr) or English (en) and navigate to the equivalent page.',
+          inputSchema: {
+            type: 'object',
+            properties: {
+              lang: { type: 'string', enum: ['fr', 'en'], description: 'Target language code.' }
+            },
+            required: ['lang'],
+            additionalProperties: false
+          },
+          execute: function (args) {
+            var target = (args && args.lang === 'en') ? '/en/' : '/fr/';
+            window.location.assign(target);
+            return { ok: true, url: target };
+          }
+        }
+      ]
+    });
+  } catch (e) {
+    // Non-fatal: WebMCP registration is best-effort.
+  }
+})();
+</script>

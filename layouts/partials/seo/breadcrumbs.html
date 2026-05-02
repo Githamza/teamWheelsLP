@@ -3,7 +3,7 @@
 {{- $breadcrumbs := slice -}}
 
 {{- /* Home */ -}}
-{{- $breadcrumbs = $breadcrumbs | append (dict "position" 1 "name" "Home" "url" "/") -}}
+{{- $breadcrumbs = $breadcrumbs | append (dict "position" 1 "name" "Home" "url" .Site.Home.Permalink) -}}
 
 {{- /* Add section if exists */ -}}
 {{- with .Section -}}
@@ -27,7 +27,9 @@
       "@type": "ListItem",
       "position": {{ $crumb.position }},
       "name": {{ $crumb.name | jsonify }},
-      "item": {{ $crumb.url | absURL | jsonify }}
+      "item": {
+        "@id": {{ $crumb.url | jsonify }}
+      }
     }{{- if ne $crumb.position (len $breadcrumbs) -}},{{- end -}}
     {{- end -}}
   ]

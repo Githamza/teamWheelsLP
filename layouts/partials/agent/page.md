@@ -6,6 +6,9 @@
   raw body markdown (blog posts).
 */ -}}
 {{- $p := . -}}
+{{- $lang := .Lang -}}
+{{- $homeURL := (absLangURL "") -}}
+{{- $sitemapURL := printf "%ssitemap.xml" site.BaseURL -}}
 ---
 title: {{ .Title | plainify }}
 {{- with .Description }}
@@ -40,7 +43,22 @@ date: {{ .Format "2006-01-02" }}
 {{- with .description }}{{ . | plainify }}
 
 {{ end -}}
+{{- $btns := slice -}}
+{{- with .button }}{{ if and .enable .link }}{{ $btns = $btns | append (dict "label" (.button_label | default .label) "link" .link) }}{{ end }}{{ end -}}
+{{- with .secondary_button }}{{ if and .enable .link }}{{ $btns = $btns | append (dict "label" (.label | default .button_label) "link" .link) }}{{ end }}{{ end -}}
+{{- with $btns }}{{ range . -}}
+- **{{ .label | plainify | strings.TrimRight "→ " }}** → {{ .link | absLangURL }}
+{{ end }}
+{{ end -}}
 {{- end -}}
+
+{{- /* ─── Tool / landing page intro ─── */ -}}
+{{- with .Params.intro_subtitle }}**{{ . | plainify }}**
+
+{{ end -}}
+{{- with .Params.intro_lede }}{{ . | plainify }}
+
+{{ end -}}
 
 {{- /* ─── Fun facts ─── */ -}}
 {{- with .Params.fun_facts }}
@@ -73,8 +91,24 @@ date: {{ .Format "2006-01-02" }}
 {{ with .subtitle }}*{{ . | plainify }}*
 
 {{ end -}}
-{{ .content }}
+{{ with .content -}}
+{{- /* Normalise content:
+        1. Trim leading/trailing whitespace on each line so YAML indentation
+           doesn't flip bullet lists into 4-space code blocks.
+        2. YAML folds single newlines to spaces and collapses blank-line
+           separators, so any remaining `\n` in the parsed string was
+           originally a paragraph/list break — promote each to a blank line
+           so markdown renders paragraphs and lists correctly. */ -}}
+{{- $lines := split . "\n" -}}
+{{- $out := slice -}}
+{{- range $lines -}}
+{{- $out = $out | append (trim . " \t") -}}
+{{- end -}}
+{{- $joined := trim (delimit $out "\n") " \n\t" -}}
+{{- $joined = replaceRE "\\n+" "\n\n" $joined -}}
+{{ $joined }}
 
+{{ end -}}
 {{ end -}}
 {{ end }}
 {{- end -}}
@@ -94,8 +128,15 @@ date: {{ .Format "2006-01-02" }}
 {{ with .content }}{{ . | plainify }}
 
 {{ end -}}
-{{ with .features }}{{ . }}
+{{ with .features }}{{ trim . " \n\t" }}
 
+{{ end -}}
+{{- $ctas := slice -}}
+{{- if and .free_trial_btn_label .free_trial_btn_link }}{{ $ctas = $ctas | append (dict "label" .free_trial_btn_label "link" .free_trial_btn_link) }}{{ end -}}
+{{- if and .buy_now_btn_label .buy_now_btn_link }}{{ $ctas = $ctas | append (dict "label" .buy_now_btn_label "link" .buy_now_btn_link) }}{{ end -}}
+{{- with $ctas }}{{ range . -}}
+- **{{ .label | plainify | strings.TrimRight "→ " }}** → {{ .link | absLangURL }}
+{{ end }}
 {{ end -}}
 {{ end -}}
 {{- end -}}
@@ -111,12 +152,16 @@ date: {{ .Format "2006-01-02" }}
 {{- end -}}
 {{- end -}}
 
-{{- /* ─── FAQ ─── */ -}}
+{{- /* ─── FAQ (content uses `faq_list`; older data uses `faq_item`) ─── */ -}}
 {{- with .Params.faq }}
 {{- if .enable }}
 ## {{ .title | default "FAQ" | plainify }}
 
-{{ range .faq_item -}}
+{{ with .description }}{{ . | plainify }}
+
+{{ end -}}
+{{ $items := or .faq_list .faq_item -}}
+{{ range $items -}}
 ### {{ .title | plainify }}
 
 {{ .content | plainify }}
@@ -143,6 +188,9 @@ date: {{ .Format "2006-01-02" }}
 {{- with .Params.contact }}
 ## {{ .title | default "Contact" | plainify }}
 
+{{ with .subtitle }}*{{ . | plainify }}*
+
+{{ end -}}
 {{ with .description }}{{ . | plainify }}
 
 {{ end -}}
@@ -166,11 +214,38 @@ date: {{ .Format "2006-01-02" }}
 {{- end -}}
 {{- end -}}
 
-{{- /* ─── Raw body content (blog posts, etc.) ─── */ -}}
-{{- with .RawContent }}
-{{ . }}
+{{- /* ─── Homepage blog teaser ─── */ -}}
+{{- with .Params.blog }}
+{{- if .enable }}
+## {{ .title | default "From the blog" | plainify }}
 
+{{ with .subtitle }}*{{ . | plainify }}*
+
+{{ end -}}
+{{ with .description }}{{ . | plainify }}
+
+{{ end -}}
+{{ $blog := site.GetPage (printf "/blog") -}}
+{{ with $blog }}
+{{ range first 5 (where .Pages "Section" "blog") -}}
+- [{{ .Title | plainify }}]({{ .Permalink }}){{ with .Description }} — {{ . | plainify }}{{ end }}
+{{ end }}
+{{ end -}}
+{{ with .button }}{{ if and .enable .link }}**{{ .label | plainify | strings.TrimRight "→ " }}** → {{ .link | absLangURL }}
+
+{{ end }}{{ end -}}
 {{- end -}}
+{{- end -}}
+
+{{- /* ─── Raw body content (blog posts, etc.) ─── */ -}}
+{{- with .RawContent -}}
+{{- /* The template already emits `# Title` from frontmatter, so strip a
+       leading H1 from the body when it duplicates that title. */ -}}
+{{- $body := . -}}
+{{- $body = replaceRE "^\\s*#\\s+[^\\n]+\\n+" "" $body -}}
+{{ $body }}
+
+{{ end -}}
 
 {{- /* ─── Call to action ─── */ -}}
 {{- with .Params.call_to_action }}
@@ -195,13 +270,25 @@ date: {{ .Format "2006-01-02" }}
 
 {{ end -}}
 {{- end }}
+
+
+{{/* ─── Key links for agents (sitemap, translations, primary nav) ─── */}}
 ---
 
-Canonical HTML version: {{ .Permalink }}
-{{- with .Translations }}
+## Key links
 
-Other languages:
+- Canonical HTML: {{ .Permalink }}
+- Sitemap: {{ $sitemapURL }}
+{{- with .Translations }}
 {{ range . -}}
-- [{{ .Language.LanguageName }}]({{ .Permalink }})
+- {{ .Language.LanguageName }}: {{ .Permalink }}
 {{ end -}}
 {{- end }}
+{{- if .IsHome }}
+{{- $nav := slice "how-it-works" "pricing" "blog" "contact" -}}
+{{- range $nav -}}
+{{- with site.GetPage (printf "/%s" .) }}
+- {{ .Title | plainify }}: {{ .Permalink }}
+{{- end -}}
+{{- end }}
+{{ end }}

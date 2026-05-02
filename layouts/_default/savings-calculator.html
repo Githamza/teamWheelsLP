@@ -7,7 +7,7 @@
     {{ $calcJS = $calcJS | fingerprint "sha512" }}
   {{ end }}
 
-  <section class="savings-calculator" data-lang="{{ $lang }}" data-country="{{ if eq $lang `fr` }}FR{{ else }}GB{{ end }}">
+  <section class="savings-calculator" data-lang="{{ $lang }}" data-currency="{{ if eq $lang `fr` }}EUR{{ else }}GBP{{ end }}">
     <div class="container container-delta">
       <div class="sc-head text-center">
         <p class="subtitle">{{ .Params.intro_subtitle | default "Free tool" }}</p>
@@ -33,11 +33,11 @@
           </header>
           <div class="sc-grid">
             <label class="sc-field">
-              <span data-i18n="fields.country"></span>
-              <select name="country" data-bind="country">
-                <option value="FR" data-i18n="countries.FR"></option>
-                <option value="GB" data-i18n="countries.GB"></option>
-                <option value="US" data-i18n="countries.US"></option>
+              <span data-i18n="fields.currency"></span>
+              <select name="currency" data-bind="currency">
+                <option value="EUR" data-i18n="currencies.EUR"></option>
+                <option value="GBP" data-i18n="currencies.GBP"></option>
+                <option value="USD" data-i18n="currencies.USD"></option>
               </select>
             </label>
             <label class="sc-field">
@@ -150,6 +150,11 @@
               <label class="sc-field">
                 <span data-i18n="leadForm.company"></span>
                 <input type="text" name="company" required autocomplete="organization" />
+              </label>
+              <label class="sc-field">
+                <span data-i18n="leadForm.country"></span>
+                <input type="text" name="country" id="sc-lead-country" list="sc-country-list" required autocomplete="country-name" spellcheck="false" />
+                <datalist id="sc-country-list"></datalist>
               </label>
             </div>
             <label class="sc-check">

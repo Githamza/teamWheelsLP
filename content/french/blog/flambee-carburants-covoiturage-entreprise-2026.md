@@ -71,3 +71,7 @@ Juste un rappel discret, chaque jour, que le siège passager n'a pas à rester v
 **Les prix du carburant ne vont pas redescendre. Mais avec le bon outil, le coût du trajet de vos collaborateurs, lui, peut baisser dès demain.**
 
 👉 *Découvrez comment TeamWheels aide les entreprises en France, en Belgique et en Suisse à transformer les sièges vides en plus de 1 000 € d'économies par salarié et par an.*
+
+---
+
+> **Pour aller plus loin :** [Guide complet du covoiturage domicile-travail en entreprise 2026](/fr/blog/covoiturage-entreprise-guide-2026/) — FMD, loi LOM, comparatif BlaBlaCar / Klaxit / TeamWheels et plan de déploiement en 4 semaines.

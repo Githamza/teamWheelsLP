@@ -215,7 +215,7 @@
 {{- /* BreadcrumbList Schema — skip on homepage (single-item trail has no value) */ -}}
 {{- if not .IsHome -}}
 {{- $breadcrumbs := slice -}}
-{{- $breadcrumbs = $breadcrumbs | append (dict "position" 1 "name" "Home" "url" "/") -}}
+{{- $breadcrumbs = $breadcrumbs | append (dict "position" 1 "name" "Home" "url" .Site.Home.Permalink) -}}
 {{- with .Section -}}
   {{- $sectionPage := site.GetPage . -}}
   {{- if $sectionPage -}}
@@ -233,7 +233,9 @@
       "@type": "ListItem",
       "position": {{ $crumb.position }},
       "name": {{ $crumb.name | jsonify | safeJS }},
-      "item": {{ $crumb.url | absURL | jsonify | safeJS }}
+      "item": {
+        "@id": {{ $crumb.url | jsonify | safeJS }}
+      }
     }{{- if ne $crumb.position (len $breadcrumbs) -}},{{- end -}}
     {{- end -}}
   ]
