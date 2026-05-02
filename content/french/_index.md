@@ -1,7 +1,7 @@
 ---
 title: "TeamWheels | Logiciel de Covoiturage Entreprise pour Microsoft Teams"
-description: "Outil de covoiturage entreprise intégré à Microsoft Teams. Gérez les trajets domicile-travail, le Forfait Mobilité Durable et votre Scope 3. Déploiement en 5 minutes, essai gratuit 30 jours."
-keywords: "covoiturage entreprise, outil covoiturage entreprise, plateforme covoiturage entreprise, logiciel covoiturage entreprise, application covoiturage travail, Microsoft Teams covoiturage, forfait mobilité durable, mobilité durable entreprise, organiser un covoiturage, covoiturage domicile travail"
+description: "Application de covoiturage entreprise dans Microsoft Teams. Pilotez Scope 3, parking et Forfait Mobilité Durable — déployé en 5 minutes. Essai 30 jours."
+keywords: "covoiturage entreprise, BlaBlaCar entreprise, Uber pour salariés, application covoiturage Microsoft Teams, application Teams covoiturage, ridesharing entreprise, plateforme mobilité entreprise, trajet domicile-travail, gestion des trajets salariés, forfait mobilité durable, autopartage entreprise, mobilité durable Scope 3, covoiturage salariés, partage de trajets entreprise, application commute entreprise"
 
 # banner
 banner:

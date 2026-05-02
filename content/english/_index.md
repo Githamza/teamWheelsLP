@@ -1,7 +1,7 @@
 ---
 title: "TeamWheels | Corporate Carpooling Software for Microsoft Teams"
-description: "Corporate carpooling software built into Microsoft Teams. Reduce Scope 3 commute emissions, cut parking costs 30%, track employee commuting — deployed in 5 minutes. Free 30-day trial."
-keywords: "corporate carpooling software, corporate carpooling, corporate carpooling solution, corporate carpooling app, carpool management software, carpool administration software, employee carpool, employee commuting software, commute management platform, Microsoft Teams carpooling, corporate mobility app, employee mobility app, carpooling software, carpool software"
+description: "Employee rideshare & commute platform inside Microsoft Teams. Cut Scope 3 emissions, parking demand & commute costs — live in 5 minutes. Free 30-day trial."
+keywords: "employee rideshare app, corporate ridesharing software, BlaBlaCar for business, Uber for employees, Microsoft Teams app, commute management platform, employee commute tracker, daily commute carpool, corporate carpooling software, carpool management software, corporate mobility app, Scope 3 commute reporting, sustainable commute platform, vanpool alternative, shared rides for work"
 
 # banner
 banner:

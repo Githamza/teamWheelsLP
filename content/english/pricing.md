@@ -1,9 +1,9 @@
 ---
 title: "Employee Carpooling Pricing | TeamWheels"
-description: "Simple, transparent pricing for your corporate carpooling program. From free trial to enterprise. 5€/seat/month, all commute management features included. Start free for 30 days."
+description: "Transparent pricing for your employee rideshare & commute program. Free 30-day trial, then 5€/seat/month inside the Microsoft Teams app — all features."
 draft: false
 layout: "pricing"
-keywords: "corporate carpooling pricing, employee carpool program cost, commute management platform pricing, enterprise carpooling software cost"
+keywords: "employee rideshare pricing, corporate ridesharing cost, BlaBlaCar for business pricing, Uber for employees cost, Microsoft Teams app pricing, commute management platform pricing, ridesharing software cost, carpool program price, vanpool alternative cost, corporate carpooling pricing, daily commute platform pricing"
 
 # pricing
 pricing:

@@ -1,9 +1,9 @@
 ---
 title: "Tarifs covoiturage entreprise | TeamWheels"
-description: "Tarification simple et transparente pour votre programme de covoiturage. Essai gratuit 30 jours, puis 5€/collaborateur/mois, toutes fonctionnalités incluses. Suivi Scope 3 et rapports RSE."
+description: "Tarification simple pour votre application rideshare & commute dans Microsoft Teams : essai gratuit 30 jours, puis 5€/collaborateur/mois, tout inclus."
 draft: false
 layout: "pricing"
-keywords: "tarifs covoiturage entreprise, prix plateforme covoiturage, coût programme covoiturage, covoiturage entreprise prix, forfait mobilité durable covoiturage"
+keywords: "tarifs covoiturage entreprise, prix BlaBlaCar entreprise, coût Uber pour salariés, prix application Microsoft Teams covoiturage, tarif ridesharing entreprise, coût programme commute, abonnement covoiturage entreprise, prix plateforme covoiturage, forfait mobilité durable covoiturage, tarif autopartage entreprise"
 
 # pricing
 pricing:
