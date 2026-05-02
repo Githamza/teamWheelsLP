@@ -6,18 +6,6 @@ description: "Prix du diesel et de l'essence à des records historiques en Franc
 keywords: "prix carburant 2026, flambée carburant France Belgique Suisse, covoiturage entreprise économies, forfait mobilité durable 2026, indemnité kilométrique covoiturage, TeamWheels Microsoft Teams"
 image: images/carpoolingBenefits.png
 author: TeamWheels
-categories:
-  - Covoiturage
-  - Mobilité
-tags:
-  - prix carburant
-  - covoiturage entreprise
-  - forfait mobilité durable
-  - économies salariés
-  - France
-  - Belgique
-  - Suisse
-  - TeamWheels
 reading_time: 7 min
 ---
 

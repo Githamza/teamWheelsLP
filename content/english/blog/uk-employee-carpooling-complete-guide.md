@@ -5,18 +5,6 @@ date: 2025-02-01
 image: images/blog/04.jpg
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
-categories:
-  - Corporate Carpooling
-  - UK
-  - HR
-tags:
-  - UK carpooling
-  - employee benefits
-  - tax benefits
-  - ESG
-  - sustainability
-  - NHS
-  - NHS carpooling
 reading_time: 8 min
 ---
 

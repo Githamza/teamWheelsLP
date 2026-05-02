@@ -5,14 +5,6 @@ date: 2025-01-15
 image: images/how-it-works/carpooling_people.png
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
-categories:
-  - Corporate Carpooling
-  - HR
-tags:
-  - employee benefits
-  - commuting
-  - ESG
-  - program launch
 reading_time: 8 min
 ---
 

@@ -6,8 +6,6 @@ description: "How to measure and reduce Scope 3 Category 7 employee commuting em
 keywords: "scope 3 employee commuting, employee commuting emissions, scope 3 category 7, SB 253 compliance, employee commuting software, commuter benefits, corporate carpooling, ESG reporting employee commuting"
 image: "images/carpooling_kpis.png"
 author: "TeamWheels"
-categories: ["Sustainability", "Compliance", "Mobility"]
-tags: ["scope 3 emissions", "employee commuting", "corporate carpooling", "SB 253", "ESG reporting", "sustainability", "USA", "carbon footprint", "SBTi", "net zero"]
 ---
 
 Employee commuting accounts for **20 to 40% of total emissions** at service-sector companies, yet it remains one of the most overlooked categories in corporate sustainability strategies. That is about to change. With California's SB 253 requiring Scope 3 disclosures starting in 2027, the SBTi tightening its Net-Zero Standard, and investors demanding granular ESG data, **Scope 3 Category 7 — employee commuting — has moved from afterthought to boardroom priority**.

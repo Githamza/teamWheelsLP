@@ -7,16 +7,6 @@ lastmod: 2026-04-11
 draft: false
 image: https://www.flexigo.com/hubfs/blog%20flexicar.png
 author: "TeamWheels"
-categories:
-  - Sustainability
-  - Mobility
-tags:
-  - carpooling
-  - corporate mobility
-  - sustainability
-  - employee benefits
-  - carbon footprint
-  - ESG
 ---
 The enterprise world is witnessing a fundamental shift in how employees commute. **Enterprise carpooling** has emerged as one of the most effective strategies for companies looking to reduce costs, attract talent, and meet ambitious sustainability targets. With the global carpooling market projected to reach **$34 billion by 2034**, now is the time to understand why leading organizations are making shared commuting a strategic priority.
 

@@ -5,15 +5,6 @@ date: 2026-03-04
 image: images/how-it-works/carpooling_people.png
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
-categories:
-  - Corporate Carpooling
-  - Mobility
-tags:
-  - carpool platform
-  - white-label
-  - corporate mobility
-  - employee commuting
-  - sustainability
 reading_time: 10 min
 draft: false
 ---

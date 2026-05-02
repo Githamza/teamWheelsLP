@@ -8,19 +8,6 @@ draft: false
 image: images/carpooling_benefits.png
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
-categories:
-  - Covoiturage
-  - Mobilité
-  - RSE
-tags:
-  - calculateur covoiturage
-  - ROI covoiturage entreprise
-  - Scope 3
-  - bilan carbone
-  - RSE
-  - forfait mobilité durable
-  - économies carburant
-  - déplacements domicile-travail
 reading_time: 9 min
 ---
 

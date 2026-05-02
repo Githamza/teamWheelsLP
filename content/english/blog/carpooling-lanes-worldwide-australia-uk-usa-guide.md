@@ -6,17 +6,6 @@ description: "Explore how carpooling lanes (HOV lanes) work in the USA, UK and A
 image: images/blog/05.jpg
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
-categories:
-  - Carpooling
-  - Commuting
-tags:
-  - HOV lanes
-  - carpooling lanes
-  - carpool commute
-  - USA carpooling
-  - UK carpooling
-  - Australia T2 T3 lanes
-  - sustainable commuting
 reading_time: 11 min
 ---
 

@@ -99,6 +99,14 @@ isPlainText   = true
 isHTML        = false
 permalinkable = false
 
+############################# Taxonomies ##############################
+# Empty [taxonomies] disables Hugo's default `tags` and `categories`,
+# which were producing ~140 zero-click /tags/ and /categories/ pages
+# (already noindexed in head.html and excluded from the sitemap).
+# Blog front matter is being scrubbed in lockstep, so these keys are
+# now neither rendered nor present.
+[taxonomies]
+
 ############################# Imaging ##############################
 [imaging]
 # See https://github.com/disintegration/imaging

@@ -8,18 +8,6 @@ image: images/carpoolingBenefits.png
 author: TeamWheels
 aliases:
   - /fr/blog/voies-covoiturage-paris-peripherique-guide-2025/
-categories:
-  - Covoiturage
-  - Mobilité
-tags:
-  - covoiturage Paris
-  - voies réservées
-  - périphérique parisien
-  - mobilité Île-de-France
-  - Covoit IDFM
-  - Karos
-  - BlaBlaCar Daily
-  - covoiturage 2026
 reading_time: 12 min
 ---
 

@@ -6,18 +6,6 @@ description: "Découvrez les voies de covoiturage en France : avantages concrets
 image: images/blog/04.jpg
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
-categories:
-  - Covoiturage
-  - Mobilité
-tags:
-  - voies de covoiturage
-  - covoiturage domicile-travail
-  - Île-de-France
-  - Loi LOM
-  - Karos
-  - BlaBlaCar Daily
-  - forfait mobilité durable
-  - voies réservées
 reading_time: 12 min
 ---
 

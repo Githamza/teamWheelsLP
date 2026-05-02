@@ -5,15 +5,6 @@ date: 2026-03-04
 image: images/how-it-works/carpooling_people.png
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
-categories:
-  - Covoiturage
-  - Mobilité
-tags:
-  - plateforme covoiturage
-  - white-label
-  - mobilité entreprise
-  - trajets domicile-travail
-  - RSE
 reading_time: 10 min
 draft: false
 ---

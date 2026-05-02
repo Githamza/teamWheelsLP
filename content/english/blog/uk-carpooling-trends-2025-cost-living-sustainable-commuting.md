@@ -5,8 +5,6 @@ draft: false
 description: "Explore how rising commute costs and the £3 bus fare cap are reshaping UK carpooling trends in 2025. With 15% of commuters now sharing rides and 36% interested in trying, discover why carpooling is becoming the smart choice for British commuters."
 image: "images/team-group.jpg"
 author: ""
-categories: ["UK Mobility", "Cost of Living", "Sustainability"]
-tags: ["UK carpooling", "commuting costs", "sustainable transport", "cost of living", "corporate carpooling", "car sharing"]
 ---
 
 British commuters are facing a perfect storm: rising travel costs, increasing bus fares, and persistent pressure from the cost of living crisis. In response, carpooling is experiencing a renaissance across the UK—but without government support, this crucial sustainable transport solution risks remaining underutilised. Here's what the latest 2025 data reveals about carpooling trends in Britain and why now is the time for both commuters and employers to take action.

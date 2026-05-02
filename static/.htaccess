@@ -114,26 +114,19 @@
 ##
 ## Live testing on this shared host (May 2026) showed that mod_rewrite
 ## rules in .htaccess and `Options +MultiViews` are both silently
-## dropped — so the prior MultiViews/RewriteRule strategies never fire.
-## The host does still honour two core Apache 2.4 features that don't
-## need any `Options` or `Rewrite` override:
-##   - `<If>` containers (core, always available on httpd 2.4+)
-##   - `DirectoryIndex` (AllowOverride Indexes, granted on this host)
+## dropped, and `<If>` containers in .htaccess return 500 (the host
+## doesn't grant the AllowOverride scope `<If>` requires).
 ##
-## So we negotiate by swapping the DirectoryIndex priority based on the
-## request's Accept header. Agents that send `Accept: text/markdown`
-## get `index.md` first; everything else (browsers, crawlers without
-## an Accept hint) keeps `index.html` as the default. The `index.html`
-## fallback in both branches means directories without a markdown
-## sibling (e.g. /admin/) still resolve to HTML.
+## The only directive the host reliably honours here is `DirectoryIndex`
+## (AllowOverride Indexes). So fall back to a fixed priority: HTML
+## first, markdown second. Browsers always get `index.html`; agents
+## that need markdown have to fetch the `.md` URL directly (e.g.
+## `/blog/post/index.md` or `/blog/post/.md`), which Hugo emits next
+## to every page. Direct `.md` fetches are served with the correct
+## `Content-Type: text/markdown` by the FilesMatch block below.
 ##
 ## See https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/
-<If "%{HTTP_ACCEPT} =~ /text\/markdown/">
-  DirectoryIndex index.md index.html
-</If>
-<Else>
-  DirectoryIndex index.html index.md
-</Else>
+DirectoryIndex index.html index.md
 
 ## Belt-and-braces: keep MultiViews + a mod_rewrite fallback wrapped in
 ## IfModule so they activate on hosts that DO permit the directives.
@@ -150,23 +143,12 @@
   RewriteRule "^\.well-known/" - [L]
 
   ## Directory URL + Accept: text/markdown + an index.md sibling → serve
-  ## the markdown in place. Harmless when the <If>+DirectoryIndex swap
-  ## (or MultiViews) already handled it.
+  ## the markdown in place. Harmless when MultiViews already handled it.
+  ## No-op on this shared host (mod_rewrite silently dropped).
   RewriteCond %{HTTP:Accept} text/markdown [NC]
   RewriteCond %{REQUEST_URI} /$
   RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}index.md -f
   RewriteRule ^(.*)$ $1index.md [L,QSA,T=text/markdown]
-</IfModule>
-
-## Tell caches that the response is selected by Accept, since the
-## DirectoryIndex switch above picks index.html vs index.md from the
-## Accept header. Mirror it inside an Accept-conditional <If> so the
-## Vary header rides along on the negotiated response itself, and on
-## the FilesMatch covering direct .html/.md fetches further down.
-<IfModule mod_headers.c>
-  <If "%{HTTP_ACCEPT} =~ /text\/markdown/">
-    Header always append Vary "Accept"
-  </If>
 </IfModule>
 
 ## PageSpeed only knows how to rewrite HTML/CSS/JS — leave markdown alone,
@@ -179,8 +161,7 @@
 
 <IfModule mod_headers.c>
   ## Signal that HTML/MD responses vary by Accept so caches key on it.
-  ## Covers direct `.html`/`.md` URL fetches; the Accept-conditional
-  ## <If> above covers directory URLs negotiated via DirectoryIndex.
+  ## Covers direct `.html`/`.md` URL fetches.
   <FilesMatch "\.(html|md)$">
     Header append Vary "Accept"
   </FilesMatch>

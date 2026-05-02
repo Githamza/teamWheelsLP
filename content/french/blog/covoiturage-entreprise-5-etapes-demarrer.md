@@ -7,14 +7,6 @@ lastmod: 2026-04-11
 image: images/how-it-works/carpooling_people.png
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
-categories:
-  - Covoiturage
-  - RH
-tags:
-  - avantages salariés
-  - mobilité
-  - RSE
-  - launches du programme
 reading_time: 8 min
 ---
 

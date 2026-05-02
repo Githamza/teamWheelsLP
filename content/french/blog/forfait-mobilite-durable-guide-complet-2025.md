@@ -5,8 +5,6 @@ draft: false
 description: "Tout savoir sur le Forfait Mobilité Durable (FMD) : montants, conditions, mise en place, justificatifs. Guide pratique pour les RH et dirigeants."
 image: "images/rse-carpooling.png"
 author: ""
-categories: ["Mobilité"]
-tags: ["FMD", "Forfait Mobilité Durable", "covoiturage", "RSE", "avantages salariés"]
 ---
 
 Le **Forfait Mobilité Durable (FMD)** est devenu un levier incontournable pour les entreprises qui souhaitent encourager les mobilités douces tout en offrant un avantage attractif à leurs collaborateurs. Pourtant, sa mise en place reste floue pour beaucoup de DRH et dirigeants.

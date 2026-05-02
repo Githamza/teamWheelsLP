@@ -8,19 +8,6 @@ draft: false
 image: images/carpooling_benefits.png
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
-categories:
-  - Corporate Carpooling
-  - Sustainability
-  - Mobility
-tags:
-  - savings calculator
-  - corporate carpooling ROI
-  - Scope 3 emissions
-  - CO2 calculator
-  - ESG reporting
-  - employee commuting
-  - fuel savings
-  - forfait mobilité durable
 reading_time: 9 min
 ---
 
