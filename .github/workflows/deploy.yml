@@ -254,6 +254,38 @@ jobs:
         run: |
           echo "### Deployed to FTP: \`${{ needs.version.outputs.version }}\`" >> "$GITHUB_STEP_SUMMARY"
 
+  # ─── Notify search engines via IndexNow ────────────────────────────────
+  indexnow:
+    name: Ping IndexNow
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Resolve base ref
+        id: base
+        run: |
+          BEFORE="${{ github.event.before }}"
+          # First push / force-push leaves before=0000000…; fall back to parent.
+          if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ] || ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            BEFORE="HEAD~1"
+          fi
+          echo "ref=$BEFORE" >> "$GITHUB_OUTPUT"
+          echo "Comparing against $BEFORE"
+
+      - name: Submit changed URLs to IndexNow
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: node scripts/indexnow/submit.js --changed --base "${{ steps.base.outputs.ref }}"
+
   # ─── Tag release after deployment succeeds ─────────────────────────────
   tag-release:
     name: Tag Release
