@@ -85,175 +85,23 @@ jobs:
           name: hugo-build-${{ needs.version.outputs.version }}
           path: build-output/
 
+      # Incremental FTPS sync via a server-side state file
+      # (.ftp-deploy-sync-state.json). After the first run, only changed
+      # files are uploaded and removed files are deleted — a typical
+      # commit becomes a handful of round-trips instead of ~2,000.
       - name: Deploy to FTP server
-        run: |
-          python3 << 'PYTHON_SCRIPT'
-          import os
-          import sys
-          import ssl
-          import time
-          import socket
-          import ftplib
-          import traceback
-
-          host = os.environ['FTP_HOST']
-          username = os.environ['FTP_USERNAME']
-          password = os.environ['FTP_PASSWORD']
-
-          TIMEOUT = 60               # seconds per FTP command
-          MAX_RETRIES = 4            # retries per STOR / LIST / DELE
-          BACKOFF = (2, 4, 8, 16)    # seconds between retries
-
-          print(f"FTP Host: {host}")
-          print(f"FTP User: {username}")
-          print(f"FTP Pass: {'*' * len(password)}")
-
-          # Subclass to reuse the control channel's TLS session on data
-          # connections. Many shared-hosting FTP servers require this.
-          class FTP_TLS_Reuse(ftplib.FTP_TLS):
-              def ntransfercmd(self, cmd, rest=None):
-                  conn, size = ftplib.FTP.ntransfercmd(self, cmd, rest)
-                  if self._prot_p:
-                      conn = self.context.wrap_socket(
-                          conn, server_hostname=self.host,
-                          session=self.sock.session)
-                  return conn, size
-
-          ctx = ssl.create_default_context()
-          ctx.check_hostname = False
-          ctx.verify_mode = ssl.CERT_NONE
-
-          def connect():
-              print(f"Connecting to {host} (FTPS)...")
-              c = FTP_TLS_Reuse(context=ctx, timeout=TIMEOUT)
-              c.connect(host, 21)
-              c.auth()
-              c.login(username, password)
-              c.prot_p()
-              print(f"Connected! Welcome: {c.getwelcome()}")
-              return c
-
-          ftp = [connect()]  # boxed so helpers can swap it on reconnect
-
-          def reconnect():
-              try:
-                  ftp[0].close()
-              except Exception:
-                  pass
-              time.sleep(BACKOFF[0])
-              ftp[0] = connect()
-
-          # Wrap a one-shot FTP op with reconnect + exponential backoff.
-          # Raises the last error if every retry fails so the workflow
-          # fails loudly instead of leaving a half-deployed site.
-          def retry(label, op):
-              last = None
-              for attempt in range(MAX_RETRIES + 1):
-                  try:
-                      return op()
-                  except (ftplib.error_temp, ftplib.error_reply,
-                          ftplib.error_proto, socket.error, EOFError,
-                          TimeoutError, ssl.SSLError) as e:
-                      last = e
-                      if attempt == MAX_RETRIES:
-                          raise
-                      delay = BACKOFF[min(attempt, len(BACKOFF) - 1)]
-                      print(f"  {label} failed ({e!r}); reconnecting in {delay}s "
-                            f"[retry {attempt + 1}/{MAX_RETRIES}]")
-                      time.sleep(delay)
-                      try:
-                          reconnect()
-                      except Exception as re:
-                          print(f"  reconnect failed: {re!r}")
-              raise last
-
-          try:
-              print(f"Current dir: {ftp[0].pwd()}")
-
-              # Clean remote directory before uploading.
-              def clean_dir(remote_dir):
-                  retry(f"cwd {remote_dir}", lambda: ftp[0].cwd(remote_dir))
-                  items = []
-                  retry("LIST", lambda: ftp[0].retrlines('LIST', items.append))
-                  for item in items:
-                      parts = item.split(None, 8)
-                      if len(parts) < 9:
-                          continue
-                      name = parts[8]
-                      if name in ('.', '..'):
-                          continue
-                      if item.startswith('d'):
-                          clean_dir(name)
-                          retry(f"rmd {name}", lambda n=name: ftp[0].rmd(n))
-                          print(f"Removed dir: {name}")
-                      else:
-                          retry(f"delete {name}",
-                                lambda n=name: ftp[0].delete(n))
-                          print(f"Removed file: {name}")
-                  retry("cwd ..", lambda: ftp[0].cwd('..'))
-
-              print("Cleaning /public_html...")
-              clean_dir('/public_html')
-              print("Clean complete.")
-
-              uploaded = 0
-
-              def store_file(local_path, name):
-                  def do_store():
-                      with open(local_path, 'rb') as f:
-                          ftp[0].storbinary(f'STOR {name}', f)
-                  retry(f"STOR {local_path}", do_store)
-
-              # Upload directory recursively.
-              def upload_dir(local_dir, remote_dir):
-                  def do_mkd():
-                      try:
-                          ftp[0].mkd(remote_dir)
-                          print(f"Created dir: {remote_dir}")
-                      except ftplib.error_perm as e:
-                          if "550" in str(e):
-                              return  # already exists
-                          raise
-                  retry(f"mkd {remote_dir}", do_mkd)
-                  retry(f"cwd {remote_dir}",
-                        lambda: ftp[0].cwd(remote_dir))
-
-                  for item in sorted(os.listdir(local_dir)):
-                      local_path = os.path.join(local_dir, item)
-                      if os.path.isfile(local_path):
-                          print(f"Uploading {local_path}...")
-                          store_file(local_path, item)
-                          global uploaded
-                          uploaded += 1
-                      elif os.path.isdir(local_path):
-                          upload_dir(local_path, item)
-                  retry("cwd ..", lambda: ftp[0].cwd('..'))
-
-              upload_dir('build-output', '/public_html')
-
-              # Sanity-check the upload count against the local tree so a
-              # half-deploy fails the workflow instead of silently passing.
-              expected = sum(len(files)
-                             for _, _, files in os.walk('build-output'))
-              print(f"Uploaded {uploaded} files (expected {expected}).")
-              if uploaded != expected:
-                  raise RuntimeError(
-                      f"Upload count mismatch: {uploaded} / {expected}")
-
-              try:
-                  ftp[0].quit()
-              except Exception:
-                  ftp[0].close()
-              print("Done!")
-          except Exception as e:
-              print(f"Error: {e}")
-              traceback.print_exc()
-              sys.exit(1)
-          PYTHON_SCRIPT
-        env:
-          FTP_HOST: ${{ secrets.FTP_HOST }}
-          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./build-output/
+          server-dir: /public_html/
+          state-name: .ftp-deploy-sync-state.json
+          dangerous-clean-slate: false
+          log-level: standard
 
       - name: Summary
         run: |
