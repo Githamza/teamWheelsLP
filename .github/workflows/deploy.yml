@@ -67,6 +67,11 @@ jobs:
           name: hugo-build-${{ needs.version.outputs.version }}
           path: public/
           retention-days: 30
+          # v4 defaults to include-hidden-files: false, which silently
+          # strips .htaccess and the entire /.well-known/ tree from the
+          # artifact — breaking Link response headers and agent-discovery
+          # endpoints (api-catalog, agent-skills, JWKS).
+          include-hidden-files: true
 
   # ─── Deploy to FTP Server ─────────────────────────────────────────────
   deploy:
