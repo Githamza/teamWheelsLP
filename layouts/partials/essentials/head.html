@@ -82,12 +82,22 @@
 <!-- UET Consent Mode: default denied; upgraded to granted only after the visitor accepts the cookie banner (#cookie-button sets cookie-consent=true). -->
 <script>window.uetq = window.uetq || [];window.uetq.push('consent', 'default', {'ad_storage': 'denied'});(function(){function grant(){window.uetq.push('consent', 'update', {'ad_storage': 'granted'});}if(document.cookie.split('; ').indexOf('cookie-consent=true') !== -1){grant();}document.addEventListener('click', function(e){var t=e.target;if(t && t.id === 'cookie-button'){grant();}});})();</script>
 
+<!-- Initialize gtag/dataLayer early so conversion events queue even before GA loads -->
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+function gtag_report_conversion(url){
+  var callback=function(){if(typeof(url)!=='undefined'){window.location=url;}};
+  gtag('event','conversion',{'send_to':'AW-11145026311/s8otCKrN2aYcEIe2rsIp','event_callback':callback});
+  return false;
+}
+</script>
+
 <!-- Deferred analytics & third-party scripts for mobile performance -->
 <script>
 function _loadDeferred() {
   {{ with site.Config.Services.GoogleAnalytics.ID }}
   var gs=document.createElement("script");gs.src="https://www.googletagmanager.com/gtag/js?id={{ . }}";gs.async=1;document.head.appendChild(gs);
-  window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
   gtag('js',new Date());gtag('config','{{ . }}');
   {{ end }}
   {{ with site.Params.crisp_chat }}{{ if .enable }}
