@@ -9,6 +9,9 @@ logo_dark = "images/logo-light.png"
 logo_width = "147x"
 # logo text will only show when logo is missing.
 logo_text = "TeamWheels"
+# Google Ads measurement ID for gtag (root param — do not nest under a `[section]`)
+google_ads_id = "AW-11145026311"
+
 # purgeCSS
 purge_css = true
 # content-gallery
@@ -102,9 +105,6 @@ domain = "" # yourdomain.com
 [counter]
 enable = false
 username = "" # your username
-
-# Google Ads measurement ID for gtag (AW-xxxx); also used by gtag_report_conversion in head.html
-google_ads_id = "AW-11145026311"
 
 # Optional: Google Tag Manager container ID only when you create a GTM-xxxx container (not Ads/GA IDs).
 # google_tag_manager = "GTM-XXXXXXX"
