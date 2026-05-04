@@ -103,13 +103,19 @@ domain = "" # yourdomain.com
 enable = false
 username = "" # your username
 
+# Google Ads measurement ID for gtag (AW-xxxx); also used by gtag_report_conversion in head.html
+google_ads_id = "AW-11145026311"
+
+# Optional: Google Tag Manager container ID only when you create a GTM-xxxx container (not Ads/GA IDs).
+# google_tag_manager = "GTM-XXXXXXX"
+
 # site verifications
 [site_verification]
 google = "u6bODqGgyMFvDU5mx3g6GbVGUUwoNCsBCZXb1V2OuuE"
 bing = "" # Your verification code
 baidu = "" # Your verification code
 facebook = "" # Your verification code
-google_tag_manager = "AW-11145026311"                                    
+
 # cookies
 [cookies]
 enable = false

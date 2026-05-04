@@ -82,24 +82,30 @@
 <!-- UET Consent Mode: default denied; upgraded to granted only after the visitor accepts the cookie banner (#cookie-button sets cookie-consent=true). -->
 <script>window.uetq = window.uetq || [];window.uetq.push('consent', 'default', {'ad_storage': 'denied'});(function(){function grant(){window.uetq.push('consent', 'update', {'ad_storage': 'granted'});}if(document.cookie.split('; ').indexOf('cookie-consent=true') !== -1){grant();}document.addEventListener('click', function(e){var t=e.target;if(t && t.id === 'cookie-button'){grant();}});})();</script>
 
-<!-- Initialize gtag/dataLayer early so conversion events queue even before GA loads -->
+{{/* Google tag (gtag.js): load immediately so Search Console / Tag Assistant sees the tag without idle delay */}}
+{{- with site.Config.Services.GoogleAnalytics.ID }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+{{- end }}
 <script>
 window.dataLayer=window.dataLayer||[];
 function gtag(){dataLayer.push(arguments);}
+{{ with site.Config.Services.GoogleAnalytics.ID }}
+gtag('js',new Date());
+gtag('config','{{ . }}');
+{{ end }}
+{{ with site.Params.google_ads_id }}
+gtag('config','{{ . }}');
+{{ end }}
 function gtag_report_conversion(url){
   var callback=function(){if(typeof(url)!=='undefined'){window.location=url;}};
-  gtag('event','conversion',{'send_to':'AW-11145026311/s8otCKrN2aYcEIe2rsIp','event_callback':callback});
+  gtag('event','conversion',{'send_to':'{{ site.Params.google_ads_id }}/s8otCKrN2aYcEIe2rsIp','event_callback':callback});
   return false;
 }
 </script>
 
-<!-- Deferred analytics & third-party scripts for mobile performance -->
+<!-- Deferred third-party scripts (GA/gtag stays above so verification tools detect it) -->
 <script>
 function _loadDeferred() {
-  {{ with site.Config.Services.GoogleAnalytics.ID }}
-  var gs=document.createElement("script");gs.src="https://www.googletagmanager.com/gtag/js?id={{ . }}";gs.async=1;document.head.appendChild(gs);
-  gtag('js',new Date());gtag('config','{{ . }}');
-  {{ end }}
   {{ with site.Params.crisp_chat }}{{ if .enable }}
   window.$crisp=[];window.CRISP_WEBSITE_ID="{{ .crisp_website_id }}";
   var cs=document.createElement("script");cs.src="https://client.crisp.chat/l.js";cs.async=1;document.head.appendChild(cs);
