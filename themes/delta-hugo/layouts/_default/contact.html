@@ -22,7 +22,8 @@
           <form
             method="POST"
             class="rounded-md shadow-md p-4 p-md-5"
-            action="{{ site.Params.contact_info.contact_form_action }}">
+            action="{{ site.Params.contact_info.contact_form_action }}"
+            onsubmit="if(typeof gtag==='function'){gtag('event','conversion',{'send_to':'{{ site.Params.google_ads_id }}/s8otCKrN2aYcEIe2rsIp'});}">
             <input type="hidden" name="_subject" value="{{ i18n `contact_form_subject` }}" />
             <div class="form-group mb-3">
               <label class="fw-600 text-dark mb-1" for="fname"
