@@ -13,7 +13,11 @@
     "update-modules": "node ./scripts/clearModules.js && hugo mod clean --all && hugo mod get -u ./... && hugo mod tidy",
     "project-setup": "node ./scripts/projectSetup.js",
     "theme-setup": "node ./scripts/themeSetup.js",
-    "format": "prettier -w ."
+    "format": "prettier -w .",
+    "indexnow:changed": "node ./scripts/indexnow/submit.js --changed",
+    "indexnow:all": "node ./scripts/indexnow/submit.js --all",
+    "indexnow:dry": "node ./scripts/indexnow/submit.js --changed --dry-run",
+    "deploy:notify": "npm run indexnow:changed"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
