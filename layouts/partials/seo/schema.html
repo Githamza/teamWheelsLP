@@ -246,31 +246,64 @@
 </script>
 {{- end -}}
 
-{{- /* FAQPage Schema for pricing page - enables rich FAQ results in Google */ -}}
-{{- if eq .Layout "pricing" -}}
+{{- /* FAQPage Schema — emits on ANY page that declares an FAQ in front
+       matter, not just /pricing/. Supports two front-matter shapes:
+
+         1. Pricing-style (enable + faq_list with title/content):
+              faq:
+                enable: true
+                faq_list:
+                  - title: "Question?"
+                    content: "Answer."
+
+         2. Lightweight per-page list (question/answer):
+              faq:
+                - question: "Question?"
+                  answer: "Answer."
+
+       Q&A blocks are the format LLMs preferentially extract — Search
+       Engine Land found 72.4% of pages cited by ChatGPT contain a
+       short, direct answer immediately after a question heading. */ -}}
+{{- $faqEntries := slice -}}
 {{- with .Params.faq -}}
-{{- if .enable -}}
+  {{- if reflect.IsMap . -}}
+    {{- if and .enable .faq_list -}}
+      {{- range .faq_list -}}
+        {{- $faqEntries = $faqEntries | append (dict
+            "question" (or .title .question)
+            "answer"   (or .content .answer)) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- else if reflect.IsSlice . -}}
+    {{- range . -}}
+      {{- $q := or (index . "question") (index . "title") -}}
+      {{- $a := or (index . "answer")   (index . "content") -}}
+      {{- if and $q $a -}}
+        {{- $faqEntries = $faqEntries | append (dict "question" $q "answer" $a) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if $faqEntries -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {{- range $index, $faq := .faq_list -}}
+    {{- range $index, $faq := $faqEntries -}}
     {{- if $index }},{{ end }}
     {
       "@type": "Question",
-      "name": {{ $faq.title | jsonify | safeJS }},
+      "name": {{ $faq.question | jsonify | safeJS }},
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": {{ $faq.content | jsonify | safeJS }}
+        "text": {{ $faq.answer | jsonify | safeJS }}
       }
     }
     {{- end }}
   ]
 }
 </script>
-{{- end -}}
-{{- end -}}
 {{- end -}}
 
 {{- /* BreadcrumbList Schema — skip on homepage (single-item trail has no value) */ -}}
