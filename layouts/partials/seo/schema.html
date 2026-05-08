@@ -97,12 +97,21 @@
 </script>
 {{- end -}}
 
-{{- /* Organization Schema for all pages */ -}}
+{{- /* Organization Schema for all pages.
+       sameAs is the entity-disambiguation surface LLMs use (Wikidata,
+       Wikipedia, LinkedIn, Crunchbase, etc.). The wider and more
+       cross-referenced this graph is, the more reliably ChatGPT,
+       Gemini, Claude and Perplexity recognise TeamWheels as a single
+       entity rather than conflating it with competitors.
+       Profile URLs that don't yet exist are commented out — uncomment
+       as each one is created. */ -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://www.teamwheelsapp.com/#organization",
   "name": "TeamWheels",
+  "alternateName": ["TeamWheels App", "Team Wheels"],
   "url": "https://www.teamwheelsapp.com",
   "logo": {
     "@type": "ImageObject",
@@ -121,6 +130,18 @@
   },
   "sameAs": [
     "https://www.linkedin.com/company/teamwheels/"
+    {{/* Add the following once each profile is live. Wikidata is the
+         highest-priority entry — it's the canonical entity disambiguation
+         source for ChatGPT, Gemini and Perplexity.
+    , "https://www.wikidata.org/wiki/Q__________"
+    , "https://appsource.microsoft.com/en-us/product/web-apps/<publisher>.<offer>"
+    , "https://www.crunchbase.com/organization/teamwheels"
+    , "https://twitter.com/teamwheelsapp"
+    , "https://www.youtube.com/@teamwheels"
+    , "https://github.com/teamwheels"
+    , "https://www.g2.com/products/teamwheels"
+    , "https://www.capterra.com/p/000000/TeamWheels/"
+    */}}
   ],
   "areaServed": [
     {"@type": "Country", "name": "France"},
