@@ -86,7 +86,7 @@ target = '$1'
 
 ############################# Outputs ##############################
 [outputs]
-home    = ["HTML", "RSS", "WebAppManifest", "Sitemap", "md"]
+home    = ["HTML", "RSS", "WebAppManifest", "Sitemap", "md", "llmsfull"]
 page    = ["HTML", "md"]
 section = ["HTML", "RSS", "md"]
 
@@ -98,6 +98,19 @@ mediaType     = "text/markdown"
 isPlainText   = true
 isHTML        = false
 permalinkable = false
+
+## llms-full.txt — full corpus dump per Jeremy Howard's spec.
+## Concatenates the markdown rendering of every key page so LLMs and IDE
+## agents (Cursor, Claude Code, ChatGPT) can ingest the whole site in one
+## fetch. Emitted at /<lang>/llms-full.txt; the bilingual root index is
+## the hand-curated static/llms.txt.
+[outputFormats.llmsfull]
+mediaType     = "text/plain"
+baseName      = "llms-full"
+isPlainText   = true
+isHTML        = false
+permalinkable = false
+notAlternative = true
 
 ############################# Taxonomies ##############################
 # Empty [taxonomies] disables Hugo's default `tags` and `categories`,

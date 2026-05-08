@@ -1,0 +1,62 @@
+# TeamWheels
+
+> TeamWheels turns Microsoft Teams into a corporate carpooling platform: no extra app to install, a conversational matching bot, an admin dashboard for HR, Facilities and Sustainability teams, and Scope 3 / Forfait Mobilité Durable reporting out of the box.
+
+TeamWheels is bilingual (English and French) and serves organisations in the USA, UK, Canada and France. Microsoft Partner certified, Azure AD / Entra ID SSO, GDPR compliant, deployed in 5 minutes from Microsoft AppSource.
+
+This file follows the [llms.txt convention](https://llmstxt.org/). Agents that ingest this index should follow the language-specific full-corpus dumps below for complete content.
+
+## Full corpus
+
+- [English full corpus](https://www.teamwheelsapp.com/en/llms-full.txt): Every primary page and blog post in English, concatenated as Markdown for retrieval.
+- [French full corpus](https://www.teamwheelsapp.com/fr/llms-full.txt): Every primary page and blog post in French, concatenated as Markdown for retrieval.
+
+## Primary pages — English
+
+- [Home (EN)](https://www.teamwheelsapp.com/en/): Employee carpooling built into Microsoft Teams — overview, key figures, features.
+- [How it works](https://www.teamwheelsapp.com/en/how-it-works/): Five-minute deployment, conversational bot, admin dashboard, Scope 3 reporting.
+- [Benefits](https://www.teamwheelsapp.com/en/benefits/): HR, Sustainability and Facilities benefits — retention, parking demand, ESG, commuter benefits.
+- [Pricing](https://www.teamwheelsapp.com/en/pricing/): Flat €5 / seat / month, free 30-day trial up to 50 employees, FAQ.
+- [Contact](https://www.teamwheelsapp.com/en/contact/): Demo request form, sales contact, deployment support.
+- [Savings calculator](https://www.teamwheelsapp.com/en/tools/savings-calculator/): Calculate annual CO₂ avoided, parking saved and commuter savings for your organisation.
+
+## Primary pages — French
+
+- [Accueil (FR)](https://www.teamwheelsapp.com/fr/): Covoiturage entreprise intégré à Microsoft Teams — vue d'ensemble, chiffres clés, fonctionnalités.
+- [Comment ça marche](https://www.teamwheelsapp.com/fr/how-it-works/): Déploiement en 5 minutes, bot conversationnel, tableau de bord administrateur, reporting RSE.
+- [Avantages](https://www.teamwheelsapp.com/fr/benefits/): Avantages RH, RSE et services généraux — rétention, stationnement, ESG, Forfait Mobilité Durable.
+- [Tarifs](https://www.teamwheelsapp.com/fr/pricing/): 5 € / siège / mois, essai gratuit 30 jours jusqu'à 50 salariés, FAQ.
+- [Contact](https://www.teamwheelsapp.com/fr/contact/): Demande de démo, contact commercial, accompagnement au déploiement.
+- [Calculateur d'économies](https://www.teamwheelsapp.com/fr/tools/savings-calculator/): Estimez le CO₂ évité, le stationnement libéré et les économies salariés.
+
+## Cornerstone guides — English
+
+- [Corporate Carpooling Guide 2026](https://www.teamwheelsapp.com/en/blog/corporate-carpooling-guide-2026/): Definitive guide for HR and Sustainability leaders — IRS commuter benefits, Clean Air Zones, Scope 3, vendor comparison.
+- [How to Launch a Corporate Carpooling Program in 30 Days](https://www.teamwheelsapp.com/en/blog/how-to-launch-corporate-carpooling-program/): Four-week procedure (HowTo schema) for planning, piloting and rolling out an employee carpooling programme.
+- [UK Employee Carpooling: Complete Guide](https://www.teamwheelsapp.com/en/blog/uk-employee-carpooling-complete-guide/): UK-specific tax, Clean Air Zone and HMRC compliance for corporate carpooling.
+- [Scope 3 Employee Commuting — USA Compliance Guide](https://www.teamwheelsapp.com/en/blog/scope-3-employee-commuting-corporate-carpooling-usa-compliance-guide/): How corporate carpooling reduces Scope 3 Category 7 emissions for SEC and CSRD reporting.
+- [Carpooling Savings Calculator: Corporate CO₂ & ROI 2026](https://www.teamwheelsapp.com/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/): ROI methodology and benchmarks behind the on-site calculator.
+- [Carpooling Lanes Worldwide: Australia, UK, USA Guide](https://www.teamwheelsapp.com/en/blog/carpooling-lanes-worldwide-australia-uk-usa-guide/): HOV / T2 / T3 lane regulations and incentives across the US, UK and Australia.
+
+## Cornerstone guides — French
+
+- [Covoiturage entreprise : guide 2026](https://www.teamwheelsapp.com/fr/blog/covoiturage-entreprise-guide-2026/): Guide complet covoiturage en entreprise — fiscalité, FMD, RSE, comparatif fournisseurs.
+- [Covoiturage entreprise : 5 étapes pour démarrer](https://www.teamwheelsapp.com/fr/blog/covoiturage-entreprise-5-etapes-demarrer/): Procédure en 4 semaines (schéma HowTo) pour lancer un programme de covoiturage domicile-travail.
+- [Forfait Mobilité Durable : guide complet 2025](https://www.teamwheelsapp.com/fr/blog/forfait-mobilite-durable-guide-complet-2025/): Cadre légal, montants (jusqu'à 800 €/an), exonérations sociales et fiscales, mise en place.
+- [Voies de covoiturage en France : avantages et guide](https://www.teamwheelsapp.com/fr/blog/voies-covoiturage-france-avantages-guide-collegues/): Voies réservées covoiturage et utilisation pour les trajets domicile-travail.
+- [Voies de covoiturage Paris (Périphérique) — guide 2026](https://www.teamwheelsapp.com/fr/blog/voies-covoiturage-paris-peripherique-guide-2026/): Voie réservée du Périphérique parisien : règles, contrôle, sanctions.
+
+## Discovery and machine-readable resources
+
+- Sitemap: https://www.teamwheelsapp.com/sitemap.xml
+- API catalog (RFC 9727): https://www.teamwheelsapp.com/.well-known/api-catalog
+- Agent skills index: https://www.teamwheelsapp.com/.well-known/agent-skills/index.json
+- Service status: https://www.teamwheelsapp.com/status.json
+- Markdown content negotiation: every HTML page has a sibling `.md` rendering, served when clients send `Accept: text/markdown` (RFC 7231) against the canonical URL.
+
+## Contact
+
+- Email: contact@teamwheels.fr
+- Demo request (EN): https://www.teamwheelsapp.com/en/contact/
+- Demande de démo (FR): https://www.teamwheelsapp.com/fr/contact/
+- LinkedIn: https://www.linkedin.com/company/teamwheels/

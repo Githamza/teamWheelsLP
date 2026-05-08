@@ -5,9 +5,31 @@ keywords: "outil covoiturage entreprise, covoiturage entreprise, covoiturage en 
 date: 2025-01-15
 lastmod: 2026-04-11
 image: images/how-it-works/carpooling_people.png
-author: TeamWheels
+author: teamwheels-editorial
 author_image: images/avatar/teamwheels.jpg
 reading_time: 8 min
+howto:
+  name: "Lancer un programme de covoiturage entreprise en 30 jours"
+  description: "Procédure en quatre semaines pour les équipes RH et RSE pour planifier, piloter et déployer un programme de covoiturage domicile-travail en 30 jours."
+  totalTime: "P30D"
+  image: "images/how-it-works/carpooling_people.png"
+  tool:
+    - "Microsoft Teams"
+    - "TeamWheels"
+    - "Outil de sondage interne"
+  step:
+    - name: "Étape 1 — Planification et diagnostic"
+      text: "Définir les objectifs du programme (coût, RSE, stationnement, rétention), sonder les salariés sur leurs trajets et leur disposition au partage, et choisir une plateforme de covoiturage compatible avec votre SSO et vos outils collaboratifs."
+      url: "#étape-1--planification-et-diagnostic-jours-1-7"
+    - name: "Étape 2 — Préparation"
+      text: "Configurer la technologie (SSO Azure AD, synchronisation annuaire, zones géographiques), publier la charte covoiturage couvrant sécurité, frais et conduite, et préparer le plan de communication managers et salariés."
+      url: "#étape-2--préparation-jours-8-14"
+    - name: "Étape 3 — Lancement pilote"
+      text: "Recruter 20 à 50 ambassadeurs dans plusieurs services, lancer une phase pilote avec suivi quotidien des mises en relation et des retours, et ajuster les règles d'appariement et l'UX en fonction des apprentissages."
+      url: "#étape-3--lancement-pilote-jours-15-21"
+    - name: "Étape 4 — Lancement complet"
+      text: "Affiner le programme à partir des retours du pilote, organiser une annonce interne avec relai du comex, et installer un cycle d'optimisation continue — mesurer chaque mois la participation, le CO2 évité et la baisse du stationnement."
+      url: "#étape-4--lancement-complet-jours-22-30"
 ---
 
 # Covoiturage entreprise : 5 étapes pour démarrer

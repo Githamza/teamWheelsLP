@@ -1,0 +1,58 @@
+# Author records for Article schema (Person JSON-LD).
+#
+# Reference an author from a blog post's front matter via:
+#   author: "<slug>"          # e.g. author: "marie-dupont"
+#
+# layouts/partials/seo/schema.html looks up the slug here and emits a
+# schema.org Person with credentials and sameAs links — required for
+# E-E-A-T signals that Gemini 3, AI Overviews and Claude weight heavily.
+#
+# Posts that reference a slug NOT in this file fall back to the
+# Organization author (legacy behavior). Add a real entry for every
+# named human writer.
+#
+# Required fields per author:
+#   name        Full display name
+#   slug        URL-safe key matching the front-matter `author` value
+#   jobTitle    Role (e.g. "Sustainability Lead", "Editor")
+#   url         Canonical author page on the site (or external)
+#
+# Recommended fields:
+#   image       Headshot URL
+#   description One-sentence bio
+#   sameAs      Array of URLs (LinkedIn, ORCID, Twitter, personal site)
+#   knowsAbout  Array of topics (drives topical authority)
+
+# --- Editorial team ---------------------------------------------------------
+
+teamwheels-editorial:
+  name: "TeamWheels Editorial"
+  slug: "teamwheels-editorial"
+  jobTitle: "Editorial Team"
+  url: "https://www.teamwheelsapp.com/en/author/teamwheels-editorial/"
+  description: "The TeamWheels editorial team covers corporate carpooling, Scope 3 commuting, and sustainable mobility for HR and ESG leaders."
+  knowsAbout:
+    - "Corporate carpooling"
+    - "Scope 3 emissions"
+    - "Employee commuting"
+    - "Sustainable mobility"
+    - "Microsoft Teams"
+  sameAs:
+    - "https://www.linkedin.com/company/teamwheels/"
+
+# --- Add real human authors below. Example template: -----------------------
+#
+# marie-dupont:
+#   name: "Marie Dupont"
+#   slug: "marie-dupont"
+#   jobTitle: "Head of Sustainability, TeamWheels"
+#   url: "https://www.teamwheelsapp.com/en/author/marie-dupont/"
+#   image: "https://www.teamwheelsapp.com/images/authors/marie-dupont.jpg"
+#   description: "Marie leads Scope 3 commuting analytics at TeamWheels and previously advised Fortune 500 ESG teams on CSRD compliance."
+#   knowsAbout:
+#     - "Scope 3 emissions"
+#     - "CSRD compliance"
+#     - "ESG reporting"
+#   sameAs:
+#     - "https://www.linkedin.com/in/marie-dupont/"
+#     - "https://orcid.org/0000-0000-0000-0000"
