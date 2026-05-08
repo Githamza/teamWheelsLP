@@ -39,7 +39,15 @@
 }
 </script>
 {{- else if eq .Type "blog" -}}
-{{- /* Blog posts: Article schema with enhanced metadata */ -}}
+{{- /* Blog posts: Article schema with enhanced metadata.
+       Author resolution: front-matter `author` is treated as a slug
+       lookup against site.Data.authors. If the slug exists, emit a
+       schema.org Person with credentials and sameAs (E-E-A-T signal
+       that Gemini 3 and Claude weight heavily). Otherwise fall back
+       to the Organization author for legacy posts. */ -}}
+{{- $authorSlug := .Params.author | default "" -}}
+{{- $authorKey := $authorSlug | urlize -}}
+{{- $author := index site.Data.authors $authorKey -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -54,12 +62,44 @@
     "url": {{ . | absURL | jsonify | safeJS }}
   },
   {{- end }}
-  "author": {
+  "author": {{ if $author -}}
+  {
+    "@type": "Person",
+    "name": {{ $author.name | jsonify | safeJS }},
+    {{- with $author.jobTitle }}
+    "jobTitle": {{ . | jsonify | safeJS }},
+    {{- end }}
+    {{- with $author.url }}
+    "url": {{ . | jsonify | safeJS }},
+    {{- end }}
+    {{- with $author.image }}
+    "image": {{ . | jsonify | safeJS }},
+    {{- end }}
+    {{- with $author.description }}
+    "description": {{ . | jsonify | safeJS }},
+    {{- end }}
+    {{- with $author.knowsAbout }}
+    "knowsAbout": {{ . | jsonify | safeJS }},
+    {{- end }}
+    {{- with $author.sameAs }}
+    "sameAs": {{ . | jsonify | safeJS }},
+    {{- end }}
+    "worksFor": {
+      "@type": "Organization",
+      "@id": "https://www.teamwheelsapp.com/#organization",
+      "name": "TeamWheels"
+    }
+  }
+  {{- else -}}
+  {
     "@type": "Organization",
+    "@id": "https://www.teamwheelsapp.com/#organization",
     "name": "TeamWheels"
-  },
+  }
+  {{- end }},
   "publisher": {
     "@type": "Organization",
+    "@id": "https://www.teamwheelsapp.com/#organization",
     "name": "TeamWheels",
     "logo": {
       "@type": "ImageObject",
