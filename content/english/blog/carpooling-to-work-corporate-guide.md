@@ -1,15 +1,13 @@
-# Carpooling to Work: How to Set It Up for Your Team (2025 Guide)
-
-**Meta description:** Learn how to set up a corporate carpooling programme for your employees, cut commuting costs, meet sustainability targets, and boost team cohesion. Step-by-step guide for HR and operations teams.
-
-**Target URL:** `teamwheels.app/blog/carpooling-to-work-corporate-guide`
-**Primary keyword:** carpooling to work
-**Secondary keywords:** benefits of carpooling, set up carpooling, corporate carpooling, employee carpooling programme, carpooling groups
-**Intent:** Informational → Commercial
-**Reading time:** 7 min
-
 ---
-
+title: "Carpooling to Work: How to Set It Up for Your Team (2025 Guide)"
+date: 2026-05-12
+draft: false
+description: "Learn how to set up a corporate carpooling programme for your employees, cut commuting costs, meet sustainability targets, and boost team cohesion. Step-by-step guide for HR and operations teams."
+image: "images/team-group.jpg"
+author: "TeamWheels Editorial"
+reading_time: "7 min"
+keywords: "carpooling to work, benefits of carpooling, set up carpooling, corporate carpooling, employee carpooling programme, carpooling groups, workplace carpooling, commuter carpooling"
+canonical: "https://teamwheels.app/blog/en/carpooling-to-work-corporate-guide"
 Every day, millions of employees drive to work alone. Empty seats, congested roads, and unnecessary emissions — while a colleague who lives two streets away makes the exact same journey. Workplace carpooling exists to fix this paradox. But turning the idea into something that actually works across an organisation is where most companies get stuck.
 
 This guide covers exactly that: how to set up a carpooling programme for your team that employees will genuinely use, not just sign up to and forget.
