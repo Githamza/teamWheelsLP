@@ -8,11 +8,11 @@ author: "TeamWheels Editorial"
 reading_time: "7 min"
 keywords: "carpooling to work, benefits of carpooling, set up carpooling, corporate carpooling, employee carpooling programme, carpooling groups, workplace carpooling, commuter carpooling"
 canonical: "https://teamwheels.app/blog/en/carpooling-to-work-corporate-guide"
+---
+
 Every day, millions of employees drive to work alone. Empty seats, congested roads, and unnecessary emissions — while a colleague who lives two streets away makes the exact same journey. Workplace carpooling exists to fix this paradox. But turning the idea into something that actually works across an organisation is where most companies get stuck.
 
 This guide covers exactly that: how to set up a carpooling programme for your team that employees will genuinely use, not just sign up to and forget.
-
----
 
 ## What is workplace carpooling?
 
@@ -25,7 +25,6 @@ Two things make it different from casual carpooling:
 
 That second point is where everything hinges. A carpooling solution that slots naturally into your employees' existing work tools — without asking them to download yet another app — achieves adoption rates that standalone platforms simply can't match.
 
----
 
 ## Why set up carpooling for your employees?
 
@@ -53,7 +52,6 @@ The daily commute is consistently rated one of the highest sources of workplace 
 
 This isn't a soft benefit. Commute experience has a documented impact on employee retention, punctuality, and morning productivity — all measurable outcomes.
 
----
 
 ## How to set up carpooling in your organisation
 
@@ -94,7 +92,6 @@ If your organisation offers financial incentives tied to sustainable commuting �
 
 This tracking should be automatic, not self-reported. Manual attestation is error-prone and burdensome for HR. Look for a carpooling platform that generates participation data your payroll or sustainability team can actually use.
 
----
 
 ## Common pitfalls to avoid
 
@@ -104,7 +101,6 @@ This tracking should be automatic, not self-reported. Manual attestation is erro
 
 **Matching by postcode alone.** Tools that only match employees based on their home postcode and work address produce suggestions that look sensible on paper but are awkward in practice. Time of departure, route preferences, and driver/passenger role flexibility all matter. Granular matching is what separates programmes people stick with from ones they quietly abandon.
 
----
 
 ## The numbers: what carpooling looks like at scale
 
@@ -119,7 +115,6 @@ Here's what the impact looks like for a typical mid-sized organisation:
 
 These figures are illustrative but consistent with outcomes reported across comparable European and UK deployments. The gains appear in the first quarter and compound as the habit embeds.
 
----
 
 ## TeamWheels: carpooling built for Microsoft 365
 
@@ -133,6 +128,5 @@ For HR and operations teams:
 
 **Ready to get started?** [Install TeamWheels free →](https://teamwheels.app)
 
----
 
 *Updated January 2025. Emissions figures referenced from ADEME and UK Department for Transport commute data. Cost figures based on average UK fuel and vehicle running costs for a 30-mile daily round trip.*
