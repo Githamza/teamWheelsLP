@@ -8,11 +8,11 @@ author: "TeamWheels Editorial"
 reading_time: "7 min"
 keywords: "covoiturage domicile travail, covoiturage entreprise, forfait mobilité durable, covoiturage salariés, avantages covoiturage, covoiturage pendulaire"
 canonical: "https://teamwheels.app/blog/fr/covoiturage-domicile-travail-entreprise"
+---
+
 Chaque matin, des millions de salariés rejoignent leur lieu de travail seuls dans leur voiture. Des places vides, des routes engorgées, des émissions inutiles — et souvent, un collègue qui habite à deux kilomètres qui fait exactement le même trajet. Le covoiturage domicile-travail existe pour résoudre précisément ce paradoxe. Mais passer de l'idée à la mise en œuvre dans une organisation, c'est une autre histoire.
 
 Ce guide vous explique comment faire — concrètement, efficacement, et sans que ça devienne un projet chronophage pour vos équipes RH.
-
----
 
 ## Qu'est-ce que le covoiturage domicile-travail ?
 
