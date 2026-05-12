@@ -1,15 +1,13 @@
-# Covoiturage domicile-travail : comment l'organiser pour vos équipes en 2025 ?
-
-**Méta-description :** Découvrez comment mettre en place le covoiturage domicile-travail dans votre entreprise, profiter du Forfait Mobilité Durable et réduire l'empreinte carbone de vos équipes. Guide complet 2025.
-
-**URL cible :** `teamwheels.app/blog/covoiturage-domicile-travail-entreprise`
-**Mot-clé principal :** covoiturage domicile travail
-**Mots-clés secondaires :** covoiturage entreprise, forfait mobilité durable, covoiturage salariés, avantages covoiturage
-**Intent :** Informationnel → Commercial
-**Temps de lecture estimé :** 7 min
-
 ---
-
+title: "Covoiturage domicile-travail : comment l'organiser pour vos équipes en 2025 ?"
+date: 2026-05-12
+draft: false
+description: "Découvrez comment mettre en place le covoiturage domicile-travail dans votre entreprise, profiter du Forfait Mobilité Durable et réduire l'empreinte carbone de vos équipes. Guide complet 2025."
+image: "images/team-group.jpg"
+author: "TeamWheels Editorial"
+reading_time: "7 min"
+keywords: "covoiturage domicile travail, covoiturage entreprise, forfait mobilité durable, covoiturage salariés, avantages covoiturage, covoiturage pendulaire"
+canonical: "https://teamwheels.app/blog/fr/covoiturage-domicile-travail-entreprise"
 Chaque matin, des millions de salariés rejoignent leur lieu de travail seuls dans leur voiture. Des places vides, des routes engorgées, des émissions inutiles — et souvent, un collègue qui habite à deux kilomètres qui fait exactement le même trajet. Le covoiturage domicile-travail existe pour résoudre précisément ce paradoxe. Mais passer de l'idée à la mise en œuvre dans une organisation, c'est une autre histoire.
 
 Ce guide vous explique comment faire — concrètement, efficacement, et sans que ça devienne un projet chronophage pour vos équipes RH.
