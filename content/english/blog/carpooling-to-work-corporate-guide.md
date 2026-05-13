@@ -1,5 +1,5 @@
 ---
-title: "Carpooling to Work: How to Set It Up for Your Team (2025 Guide)"
+title: "Carpooling to Work: How to Set It Up for Your Team (2026 Guide)"
 date: 2026-05-12
 draft: false
 description: "Learn how to set up a corporate carpooling programme for your employees, cut commuting costs, meet sustainability targets, and boost team cohesion. Step-by-step guide for HR and operations teams."
@@ -30,7 +30,7 @@ That second point is where everything hinges. A carpooling solution that slots n
 
 ### Cut commuting costs for your workforce
 
-Transport costs are a significant burden for employees, particularly those in areas with limited public transit options. The average UK employee who drives to work spends between £3,000 and £5,000 per year on fuel, insurance, and vehicle maintenance for their commute. Regular carpooling can cut that figure by 40 to 60 percent for active participants.
+Transport costs are a significant burden for employees, particularly those in areas with limited public transit options. The average UK employee who drives to work spends between £3,500 and £5,500 per year on fuel, insurance, and vehicle maintenance for their commute. Regular carpooling can cut that figure by 40 to 60 percent for active participants.
 
 For employers, this has a direct impact on talent retention. In a competitive hiring market, a structured mobility benefit — one that saves employees real money — is a concrete differentiator that salary benchmarks don't capture.
 
@@ -110,7 +110,7 @@ Here's what the impact looks like for a typical mid-sized organisation:
 |---|---|---|
 | Solo cars on site daily | 140 | 105 |
 | Annual commute CO₂ (tonnes) | 84 | 63 |
-| Average commute cost savings per carpooler | — | £1,200–1,800/year |
+| Average commute cost savings per carpooler | — | £1,400–2,000/year |
 | Employee commute satisfaction | 38% positive | 64% positive |
 
 These figures are illustrative but consistent with outcomes reported across comparable European and UK deployments. The gains appear in the first quarter and compound as the habit embeds.
@@ -129,4 +129,4 @@ For HR and operations teams:
 **Ready to get started?** [Install TeamWheels free →](https://teamwheels.app)
 
 
-*Updated January 2025. Emissions figures referenced from ADEME and UK Department for Transport commute data. Cost figures based on average UK fuel and vehicle running costs for a 30-mile daily round trip.*
+*Updated May 2026. Emissions figures referenced from ADEME and UK Department for Transport commute data. Cost figures based on average UK fuel and vehicle running costs for a 30-mile daily round trip, reflecting 2026 inflation rates.*

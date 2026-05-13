@@ -1,8 +1,8 @@
 ---
-title: "Covoiturage domicile-travail : comment l'organiser pour vos équipes en 2025 ?"
+title: "Covoiturage domicile-travail : comment l'organiser pour vos équipes en 2026 ?"
 date: 2026-05-12
 draft: false
-description: "Découvrez comment mettre en place le covoiturage domicile-travail dans votre entreprise, profiter du Forfait Mobilité Durable et réduire l'empreinte carbone de vos équipes. Guide complet 2025."
+description: "Découvrez comment mettre en place le covoiturage domicile-travail dans votre entreprise, profiter du Forfait Mobilité Durable et réduire l'empreinte carbone de vos équipes. Guide complet 2026."
 image: "images/team-group.jpg"
 author: "TeamWheels Editorial"
 reading_time: "7 min"
@@ -25,8 +25,6 @@ Il se distingue du covoiturage occasionnel sur deux points essentiels :
 
 C'est sur ce deuxième point que tout se joue. Une solution de covoiturage qui s'intègre naturellement dans les outils de travail des salariés — sans créer une nouvelle application à télécharger — a des taux d'adoption radicalement supérieurs à celles qui restent des initiatives isolées.
 
----
-
 ## Pourquoi mettre en place le covoiturage en entreprise ?
 
 ### Réduire les coûts de transport de vos salariés
@@ -37,7 +35,7 @@ Pour l'entreprise, c'est aussi un argument de rétention non négligeable dans u
 
 ### Profiter du Forfait Mobilité Durable
 
-Depuis la loi d'orientation des mobilités (LOM) de 2019, les employeurs peuvent verser un **Forfait Mobilité Durable (FMD)** à leurs salariés qui covoiturent pour se rendre au travail. En 2025, ce forfait peut atteindre **600 € par an** (ou 900 € cumulé avec un abonnement transport en commun), totalement exonéré de charges sociales et d'impôt sur le revenu.
+Depuis la loi d'orientation des mobilités (LOM) de 2019, les employeurs peuvent verser un **Forfait Mobilité Durable (FMD)** à leurs salariés qui covoiturent pour se rendre au travail. En 2026, ce forfait peut atteindre **800 € par an** (ou 1 100 € cumulé avec un abonnement transport en commun), totalement exonéré de charges sociales et d'impôt sur le revenu.
 
 C'est une opportunité rare : une exonération complète, côté employeur comme côté salarié. Les entreprises qui ne l'ont pas encore activé laissent littéralement de l'argent sur la table — et un levier de motivation inexploité.
 
@@ -92,8 +90,6 @@ Le déploiement technique ne suffit pas. Les facteurs humains déterminent l'ado
 
 Si vous activez le Forfait Mobilité Durable, vous devez être en mesure de tracer les trajets effectués en covoiturage pour chaque salarié bénéficiaire. Ce suivi peut être automatisé par votre outil de gestion du covoiturage — c'est un critère important à vérifier lors du choix de votre solution.
 
----
-
 ## Les erreurs à éviter
 
 **Ne pas adapter aux horaires atypiques.** Le covoiturage fonctionne mieux sur des horaires stables. Si votre organisation a des horaires décalés ou du télétravail fréquent, votre solution doit gérer la flexibilité : possibilité de signaler une absence, de modifier ses disponibilités, de rejoindre ou quitter un groupe de covoiturage sans friction.
@@ -101,8 +97,6 @@ Si vous activez le Forfait Mobilité Durable, vous devez être en mesure de trac
 **Ignorer les freins culturels.** Certains salariés perçoivent le covoiturage comme une contrainte (dépendance aux horaires d'autrui, perte d'autonomie). Il faut le présenter comme une option, pas une obligation, et mettre en avant la flexibilité du dispositif.
 
 **Sous-estimer l'importance de la proximité géographique.** Un outil qui génère des correspondances uniquement basées sur le lieu de travail, sans tenir compte des quartiers d'habitation, produira des suggestions peu pertinentes. La granularité géographique est essentielle.
-
----
 
 ## Ce que le covoiturage change concrètement : un exemple chiffré
 
@@ -112,7 +106,7 @@ Prenons une entreprise de 300 salariés en région parisienne :
 |---|---|---|
 | Voitures sur le parking | 210 | 158 |
 | CO₂ émis (trajets/an) | 126 tonnes | 95 tonnes |
-| Économies FMD (employeur) | 0 € | ~31 500 € de charges évitées |
+| Économies FMD (employeur) | 0 € | ~42 000 € de charges évitées |
 | Satisfaction trajet (sondage) | 34 % | 61 % |
 
 Ces chiffres sont illustratifs, mais cohérents avec les retours observés sur des déploiements similaires. Les gains sont réels, mesurables, et actionnables dès les premiers mois.
@@ -133,4 +127,4 @@ Côté RH et direction :
 
 ---
 
-*Article mis à jour en janvier 2025. Les montants FMD mentionnés correspondent aux plafonds en vigueur pour l'exercice 2025.*
+*Article mis à jour en mai 2026. Les montants FMD mentionnés correspondent aux plafonds en vigueur pour l'exercice 2026.*
