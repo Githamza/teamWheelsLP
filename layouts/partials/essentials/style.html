@@ -1,7 +1,6 @@
-<!-- DNS preconnect (deduplicated — baseof.html handles fonts) -->
+<!-- Resource hints are consolidated in baseof.html (preconnect) and
+     essentials/head.html (dns-prefetch); GTM/GA are already preconnected there. -->
 <meta http-equiv="x-dns-prefetch-control" content="on" />
-<link rel="dns-prefetch" href="//www.googletagmanager.com" />
-<link rel="dns-prefetch" href="//www.google-analytics.com" />
 
 <!-- Critical CSS: inline above-the-fold styles to unblock rendering -->
 <style>

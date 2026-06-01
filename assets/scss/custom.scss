@@ -352,3 +352,32 @@ $gutters: (
     margin-right: auto;
   }
 }
+
+// ─── FontAwesome font-display override ───────────────────────────────────────
+// The font-awesome hugo-module ships its @font-face rules with
+// `font-display: block`, which hides icon text for up to 3s (Lighthouse flags
+// this under "Ensure text remains visible during webfont load"). custom.scss is
+// imported last in style.scss, so it is concatenated AFTER the font-awesome
+// plugin CSS — these identical @font-face declarations therefore win the
+// cascade and only flip font-display to `swap`. Only the two faces actually
+// loaded by this site (brands.css + solid.css per hugo.toml) are overridden.
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/webfonts/fa-brands-400.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/webfonts/fa-brands-400.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/webfonts/fa-solid-900.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/webfonts/fa-solid-900.ttf")
+      format("truetype");
+}
