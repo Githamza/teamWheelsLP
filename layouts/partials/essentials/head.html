@@ -16,11 +16,9 @@
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 {{- end }}
 
-<!-- DNS prefetch and preconnect for faster third-party loading -->
-<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
-<link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
-<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<!-- DNS prefetch for lower-priority third parties. The 4 preconnect hints
+     (fonts + GTM + GA) live once in baseof.html; preconnecting more than 4
+     origins is discouraged, so the rest only get a cheap DNS prefetch. -->
 <link rel="dns-prefetch" href="https://www.clarity.ms" />
 <link rel="dns-prefetch" href="https://client.crisp.chat" />
 <link rel="dns-prefetch" href="https://ipapi.co" />

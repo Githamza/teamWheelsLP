@@ -9,11 +9,17 @@
     <title>{{ .Title | default site.Title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- DNS prefetch & preconnect for critical third-party origins -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <!-- Preconnect to the 4 most important origins (Lighthouse warns above 4).
+         Declared once here, at the top of <head>, so they are not duplicated in
+         the head/style partials.
+         - fonts.googleapis.com: stylesheet fetch is NOT CORS → no crossorigin
+           (a crossorigin hint would open a second, unused connection).
+         - fonts.gstatic.com: font files ARE CORS → keep crossorigin.
+         - googletagmanager/google-analytics: plain script + beacon → no crossorigin. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
     <script>
       (function () {
         try {

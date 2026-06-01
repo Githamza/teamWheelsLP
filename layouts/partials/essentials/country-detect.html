@@ -18,23 +18,45 @@
     }));
   }
 
+  // Cached result is applied immediately (no network) so data-country is set
+  // as early as possible on repeat views.
   try {
     var hit = sessionStorage.getItem('userCountry');
     if (hit) { apply(hit, 'cache', true); return; }
   } catch (e) {}
 
-  fetch('/cdn-cgi/trace', { cache: 'no-store' })
-    .then(function (r) { return r.ok ? r.text() : Promise.reject(); })
-    .then(function (t) {
-      var m = /(?:^|\n)loc=([A-Za-z]{2})/.exec(t);
-      if (!m) throw 0;
-      apply(m[1], 'cloudflare');
-    })
-    .catch(function () {
-      return fetch('https://ipapi.co/country/', { cache: 'no-store' })
-        .then(function (r) { return r.ok ? r.text() : Promise.reject(); })
-        .then(function (t) { apply(t, 'ipapi'); });
-    })
-    .catch(function () { /* detection failed; stay silent */ });
+  // The geolocation lookups (/cdn-cgi/trace, then ipapi.co fallback) are not
+  // needed for first paint and were showing up in Lighthouse's critical request
+  // chain. Defer them until the browser is idle / after load so they stay off
+  // the critical path.
+  function detect() {
+    fetch('/cdn-cgi/trace', { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.text() : Promise.reject(); })
+      .then(function (t) {
+        var m = /(?:^|\n)loc=([A-Za-z]{2})/.exec(t);
+        if (!m) throw 0;
+        apply(m[1], 'cloudflare');
+      })
+      .catch(function () {
+        return fetch('https://ipapi.co/country/', { cache: 'no-store' })
+          .then(function (r) { return r.ok ? r.text() : Promise.reject(); })
+          .then(function (t) { apply(t, 'ipapi'); });
+      })
+      .catch(function () { /* detection failed; stay silent */ });
+  }
+
+  function schedule() {
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(detect, { timeout: 3000 });
+    } else {
+      setTimeout(detect, 1500);
+    }
+  }
+
+  if (document.readyState === 'complete') {
+    schedule();
+  } else {
+    window.addEventListener('load', schedule, { once: true });
+  }
 })();
 </script>
