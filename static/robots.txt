@@ -1,3 +1,9 @@
+# TeamWheels — robots.txt
+# Explicit allow-list for AI/LLM crawlers and traditional search bots.
+# Verify in server/CDN logs that these user-agents actually receive 200 responses;
+# Cloudflare and other WAFs can silently override robots.txt at the edge.
+
+# --- Cloudflare Content Signals (advisory, honored by Cloudflare bot tooling) ---
 User-agent: *
 Content-Signal: ai-train=yes, search=yes, ai-input=yes
 Allow: /
@@ -6,5 +12,91 @@ Disallow: /admin/
 # Note: /tags/ and /categories/ are NOT disallowed here — they use <meta robots="noindex">
 # which requires Google to crawl the page to see the directive. Disallowing would
 # block the crawl and prevent Google from seeing the noindex.
+
+# --- OpenAI: ChatGPT training, search, and user-triggered browsing ---
+# https://platform.openai.com/docs/bots
+User-agent: GPTBot
+Allow: /
+Disallow: /admin/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin/
+
+# --- Anthropic: Claude (Claude-Web and anthropic-ai are deprecated) ---
+# https://support.anthropic.com/en/articles/8896518
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin/
+
+User-agent: claude-web
+Allow: /
+Disallow: /admin/
+
+# --- Perplexity: index + user-triggered fetches ---
+# https://docs.perplexity.ai/guides/bots
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin/
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /admin/
+
+# --- Google: Gemini, AI Overviews, AI Mode (separate from Googlebot) ---
+# https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin/
+
+User-agent: GoogleOther
+Allow: /
+Disallow: /admin/
+
+# --- Apple Intelligence ---
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /admin/
+
+# --- Meta AI ---
+User-agent: Meta-ExternalAgent
+Allow: /
+Disallow: /admin/
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+Disallow: /admin/
+
+# --- Amazon Rufus / Bedrock ---
+User-agent: Amazonbot
+Allow: /
+Disallow: /admin/
+
+# --- Common Crawl: feeds many open-source models and is a free training pipeline ---
+User-agent: CCBot
+Allow: /
+Disallow: /admin/
+
+# --- Microsoft Copilot uses Bingbot + the OpenAI bots above ---
+User-agent: bingbot
+Allow: /
+Disallow: /admin/
+
+# --- Other research / academic crawlers ---
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /admin/
+
+User-agent: YouBot
+Allow: /
+Disallow: /admin/
+
+User-agent: Diffbot
+Allow: /
+Disallow: /admin/
 
 Sitemap: https://www.teamwheelsapp.com/sitemap.xml

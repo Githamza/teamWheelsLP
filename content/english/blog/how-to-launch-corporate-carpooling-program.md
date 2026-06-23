@@ -6,6 +6,28 @@ image: images/blog/launch-program.jpg
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
 reading_time: 8 min
+howto:
+  name: "Launch a Corporate Carpooling Program in 30 Days"
+  description: "A four-week procedure for HR and Sustainability teams to plan, pilot, and roll out an employee carpooling program in 30 days."
+  totalTime: "P30D"
+  image: "images/how-it-works/carpooling_people.png"
+  tool:
+    - "Microsoft Teams"
+    - "TeamWheels"
+    - "Employee survey tool"
+  step:
+    - name: "Week 1 — Planning & Assessment"
+      text: "Define program objectives (cost, ESG, parking, retention), survey employees on commute patterns and willingness to share rides, and select a carpooling platform that integrates with your existing identity and collaboration stack."
+      url: "#week-1-planning--assessment-days-1-7"
+    - name: "Week 2 — Preparation"
+      text: "Configure the technology (SSO, employee directory sync, geographic zones), publish carpooling guidelines covering safety, costs, and conduct, and prepare launch communications for managers and employees."
+      url: "#week-2-preparation-days-8-14"
+    - name: "Week 3 — Pilot Launch"
+      text: "Recruit 20-50 early adopters across departments, run a soft launch with daily monitoring of matches and feedback, and iterate on the matching rules and UX based on what you learn."
+      url: "#week-3-pilot-launch-days-15-21"
+    - name: "Week 4 — Full Launch"
+      text: "Refine the program based on pilot feedback, run a company-wide announcement with executive endorsement, and put ongoing optimization in place — measuring participation, CO2 saved, and parking demand monthly."
+      url: "#week-4-full-launch-days-22-30"
 ---
 
 # How to Launch a Corporate Carpooling Program in 30 Days

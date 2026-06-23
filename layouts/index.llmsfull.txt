@@ -1,0 +1,86 @@
+{{- /*
+  llms-full.txt — full corpus dump for LLMs and IDE agents.
+  Format: per Jeremy Howard's llms.txt spec (https://llmstxt.org/).
+
+  Concatenates the markdown rendering of every key page in the current
+  language: home, primary nav (how-it-works, benefits, pricing, contact),
+  every blog post, and every tool page. Section dividers and metadata
+  blocks separate documents so retrieval pipelines can split them back
+  out cleanly.
+*/ -}}
+{{- $lang := .Lang -}}
+{{- $homeURL := absLangURL "" -}}
+# {{ site.Title | plainify }} — full corpus
+
+> {{ site.Params.metadata.description | plainify }}
+
+This file concatenates every primary page and blog post on the {{ $lang }} TeamWheels site as Markdown. Section dividers (`---`) and per-document metadata blocks separate individual pages.
+
+- Site: {{ $homeURL }}
+- Sitemap: {{ printf "%ssitemap.xml" site.BaseURL }}
+- Bilingual index (llms.txt convention): {{ printf "%sllms.txt" site.BaseURL }}
+- Generated: {{ now.Format "2006-01-02" }}
+
+---
+
+{{- /* Primary pages first (home, how-it-works, benefits, pricing, contact) */ -}}
+{{- $primary := slice "" "how-it-works" "benefits" "pricing" "contact" -}}
+{{- range $primary -}}
+  {{- $page := site.GetPage (printf "/%s" .) -}}
+  {{- if $page -}}
+
+## {{ $page.Title | plainify }}
+
+URL: {{ $page.Permalink }}
+
+{{ partial "agent/page.md" $page }}
+
+---
+
+  {{- end -}}
+{{- end -}}
+
+{{- /* All blog posts */ -}}
+{{- $blog := site.GetPage "/blog" -}}
+{{- if $blog -}}
+
+# Blog posts
+
+{{ range (where $blog.Pages "Section" "blog").ByDate.Reverse -}}
+
+## {{ .Title | plainify }}
+
+URL: {{ .Permalink }}
+Date: {{ .Date.Format "2006-01-02" }}
+{{- with .Lastmod }}
+Updated: {{ .Format "2006-01-02" }}
+{{- end }}
+{{- with .Description }}
+Summary: {{ . | plainify }}
+{{- end }}
+
+{{ partial "agent/page.md" . }}
+
+---
+
+{{ end -}}
+{{- end -}}
+
+{{- /* Tool pages (savings calculator, etc.) */ -}}
+{{- $tools := site.GetPage "/tools" -}}
+{{- if $tools -}}
+
+# Tools
+
+{{ range $tools.Pages -}}
+
+## {{ .Title | plainify }}
+
+URL: {{ .Permalink }}
+
+{{ partial "agent/page.md" . }}
+
+---
+
+{{ end -}}
+{{- end -}}
