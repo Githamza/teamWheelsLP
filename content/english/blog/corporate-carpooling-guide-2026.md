@@ -3,7 +3,7 @@ title: "Corporate Carpooling 2026: The Complete Guide for Companies"
 date: 2026-04-29
 draft: false
 description: "What is ridesharing and carpooling — and why should your company care? Discover how corporate carpooling cuts commuting costs by 60%, supports ESG reporting, and outperforms Uber, Bolt and BlaBlaCar for business mobility."
-image: "images/carpoolingBenefits.png"
+image: "images/blog/corporate-carpooling.jpg"
 author: "TeamWheels Editorial"
 reading_time: "10 min"
 keywords: "ridesharing, carpooling, ridesharing company, what is ridesharing, what is carpooling, corporate carpooling, IRS commuter benefits, Clean Air Zone UK, FBT Australia, ESG scope 3, Microsoft Teams, TeamWheels, sustainable commuting, fleet management"

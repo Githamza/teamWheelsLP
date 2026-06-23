@@ -5,7 +5,7 @@ keywords: "carpooling savings calculator, corporate carpooling ROI calculator, e
 date: 2026-04-20
 lastmod: 2026-04-20
 draft: false
-image: images/carpooling_benefits.png
+image: images/blog/savings-calculator.jpg
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
 reading_time: 9 min

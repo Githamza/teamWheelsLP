@@ -3,7 +3,7 @@ title: "Covoiturage Domicile-Travail en Entreprise : Le Guide Complet 2026"
 date: 2026-04-29
 draft: false
 description: "Qu'est-ce que le covoiturage ? Comment réduire les coûts de mobilité de votre entreprise grâce au covoiturage domicile-travail et aux déplacements professionnels partagés ? Guide complet avec FMD, loi LOM et avantages RSE."
-image: "images/carpoolingBenefits.png"
+image: "images/blog/corporate-carpooling.jpg"
 author: "TeamWheels Editorial"
 reading_time: "9 min"
 keywords: "covoiturage entreprise, covoiturage domicile-travail, Forfait Mobilité Durable, loi LOM, RSE, CSRD, DPEF, ridesharing, mobilité durable, Microsoft Teams, déplacements professionnels, gestion de flotte, TeamWheels"

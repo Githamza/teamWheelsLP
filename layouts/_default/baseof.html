@@ -32,14 +32,19 @@
       {{ with .Params.banner.image }}
         {{ $imgOrig := resources.Get . }}
         {{ if $imgOrig }}
-          {{ $imgSM := $imgOrig.Resize "400x webp" }}
-          {{ $imgMD := $imgOrig.Resize "500x webp" }}
-          {{ $imgLG := $imgOrig.Resize "700x webp" }}
-          {{ $imgXL := $imgOrig.Resize "1000x webp" }}
-          <link rel="preload" as="image" type="image/webp" href="{{ $imgSM.RelPermalink }}" media="(max-width: 575px)">
-          <link rel="preload" as="image" type="image/webp" href="{{ $imgMD.RelPermalink }}" media="(min-width: 576px) and (max-width: 767px)">
-          <link rel="preload" as="image" type="image/webp" href="{{ $imgLG.RelPermalink }}" media="(min-width: 768px) and (max-width: 991px)">
-          <link rel="preload" as="image" type="image/webp" href="{{ $imgXL.RelPermalink }}" media="(min-width: 992px)">
+          {{ if eq $imgOrig.MediaType.SubType "svg" }}
+            {{/* SVG banner: single preload, no webp variants (SVG can't be resized) */}}
+            <link rel="preload" as="image" type="image/svg+xml" href="{{ $imgOrig.RelPermalink }}">
+          {{ else }}
+            {{ $imgSM := $imgOrig.Resize "400x webp" }}
+            {{ $imgMD := $imgOrig.Resize "500x webp" }}
+            {{ $imgLG := $imgOrig.Resize "700x webp" }}
+            {{ $imgXL := $imgOrig.Resize "1000x webp" }}
+            <link rel="preload" as="image" type="image/webp" href="{{ $imgSM.RelPermalink }}" media="(max-width: 575px)">
+            <link rel="preload" as="image" type="image/webp" href="{{ $imgMD.RelPermalink }}" media="(min-width: 576px) and (max-width: 767px)">
+            <link rel="preload" as="image" type="image/webp" href="{{ $imgLG.RelPermalink }}" media="(min-width: 768px) and (max-width: 991px)">
+            <link rel="preload" as="image" type="image/webp" href="{{ $imgXL.RelPermalink }}" media="(min-width: 992px)">
+          {{ end }}
         {{ end }}
       {{ end }}
     {{ end }}

@@ -18,6 +18,29 @@ banner:
   image: "images/how-it-works/carpooling_people.jpeg"
 
 
+# work_process - Aperçu rapide affiché sur la page d'accueil
+work_process:
+  enable: true
+  subtitle: "Aperçu rapide"
+  title: "Comment fonctionne le covoiturage d'entreprise"
+  process_item:
+    - title: "Installez dans Teams"
+      image: "images/how-it-works/01.png"
+      content: "Ajoutez TeamWheels depuis l'AppSource à votre Microsoft Teams en quelques clics."
+
+    - title: "Proposez ou trouvez un trajet"
+      image: "images/how-it-works/02.png"
+      content: "Utilisez le bot pour déclarer votre trajet ou rechercher des covoiturages disponibles à proximité."
+
+    - title: "Connectez & confirmez"
+      image: "images/how-it-works/03.png"
+      content: "Demandez à rejoindre un covoiturage. Le conducteur valide, et vous voilà prêts à partir ensemble."
+
+    - title: "Suivez votre impact"
+      image: "images/how-it-works/dashboard.png"
+      content: "Suivez les économies de CO₂ et les statistiques de covoiturage depuis le tableau de bord administrateur."
+
+
 # image_and_content_block
 image_and_content_blocks:
   - enable: true

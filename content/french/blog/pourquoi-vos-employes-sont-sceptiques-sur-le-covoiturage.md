@@ -3,7 +3,7 @@ title: "Pourquoi vos employés sont sceptiques face au covoiturage (et comment c
 description: "Découvrez pourquoi les employés résistent au covoiturage en entreprise et apprenez à surmonter leur scepticisme. Découvrez comment TeamWheels supprime les frictions, garantit la sécurité et bénéficie à votre personnel comme à votre résultat net."
 keywords: "covoiturage entreprise, scepticisme covoiturage, programme covoiturage salariés, covoiturage Microsoft Teams, TeamWheels, mobilité durable entreprise"
 date: 2026-04-23
-image: images/how-it-works/carpooling_people.png
+image: images/blog/employee-skeptical.jpg
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
 reading_time: 7 min

@@ -46,25 +46,38 @@
             {{ with .image }}
               <div>
                 {{ $imgOrig:= resources.Get . }}
-                {{ $imgXL:= $imgOrig.Resize "1000x webp" }}
-                {{ $imgLG:= $imgOrig.Resize "700x webp" }}
-                {{ $imgMD:= $imgOrig.Resize "500x webp" }}
-                {{ $imgSM:= $imgOrig.Resize "400x webp" }}
-                <picture>
-                  <source srcset="{{ $imgSM.RelPermalink }}" media="(max-width: 575px)" type="image/webp">
-                  <source srcset="{{ $imgMD.RelPermalink }}" media="(max-width: 767px)" type="image/webp">
-                  <source srcset="{{ $imgLG.RelPermalink }}" media="(max-width: 991px)" type="image/webp">
-                  <source srcset="{{ $imgXL.RelPermalink }}" type="image/webp">
+                {{ if eq $imgOrig.MediaType.SubType "svg" }}
+                  {{/* Animated SVG banner: serve directly so CSS float animations run (Hugo can't resize SVG) */}}
                   <img
                     loading="eager"
-                    decoding="sync"
+                    decoding="async"
                     fetchpriority="high"
                     class="img-fluid"
-                    width="{{ $imgLG.Width }}"
-                    height="{{ $imgLG.Height }}"
-                    src="{{ $imgLG.RelPermalink }}"
+                    width="1223"
+                    height="1194"
+                    src="{{ $imgOrig.RelPermalink }}"
                     alt="TeamWheels - Covoiturage intégré à Microsoft Teams" />
-                </picture>
+                {{ else }}
+                  {{ $imgXL:= $imgOrig.Resize "1000x webp" }}
+                  {{ $imgLG:= $imgOrig.Resize "700x webp" }}
+                  {{ $imgMD:= $imgOrig.Resize "500x webp" }}
+                  {{ $imgSM:= $imgOrig.Resize "400x webp" }}
+                  <picture>
+                    <source srcset="{{ $imgSM.RelPermalink }}" media="(max-width: 575px)" type="image/webp">
+                    <source srcset="{{ $imgMD.RelPermalink }}" media="(max-width: 767px)" type="image/webp">
+                    <source srcset="{{ $imgLG.RelPermalink }}" media="(max-width: 991px)" type="image/webp">
+                    <source srcset="{{ $imgXL.RelPermalink }}" type="image/webp">
+                    <img
+                      loading="eager"
+                      decoding="sync"
+                      fetchpriority="high"
+                      class="img-fluid"
+                      width="{{ $imgLG.Width }}"
+                      height="{{ $imgLG.Height }}"
+                      src="{{ $imgLG.RelPermalink }}"
+                      alt="TeamWheels - Covoiturage intégré à Microsoft Teams" />
+                  </picture>
+                {{ end }}
               </div>
             {{ end }}
           </div>

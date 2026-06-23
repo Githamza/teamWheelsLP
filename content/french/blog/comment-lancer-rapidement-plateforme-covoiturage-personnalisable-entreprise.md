@@ -2,7 +2,7 @@
 title: "Comment lancer rapidement une plateforme de covoiturage personnalisable pour votre entreprise"
 description: "Découvrez comment déployer une plateforme de covoiturage personnalisée et à votre marque en quelques jours. Du choix de la solution au lancement, voici votre guide complet."
 date: 2026-03-04
-image: images/how-it-works/carpooling_people.png
+image: images/blog/carpool-platform.jpg
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
 reading_time: 10 min

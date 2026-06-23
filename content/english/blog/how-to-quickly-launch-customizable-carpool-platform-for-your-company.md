@@ -2,7 +2,7 @@
 title: "How to Quickly Launch a Customizable Carpool Platform for Your Company"
 description: "Learn how to deploy a branded, customizable carpooling platform for your organization in days — not months. From white-label solutions to integration strategies, here's your complete guide."
 date: 2026-03-04
-image: images/how-it-works/carpooling_people.png
+image: images/blog/carpool-platform.jpg
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
 reading_time: 10 min

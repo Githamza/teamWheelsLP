@@ -19,7 +19,7 @@ banner:
     icon: "fas fa-calculator"
     link: "tools/savings-calculator/"
 
-  image: "images/homeBannerimg2.png"
+  image: "images/homeBannerimg2.svg"
 
 # brands
 brands:

@@ -20,20 +20,20 @@ banner:
 
 # work_process - Brief overview shown on landing page
 work_process:
-  enable: false
+  enable: true
   subtitle: "Quick overview"
   title: "How Employee Carpooling Works"
   process_item:
     - title: "Install in Teams"
-      image: "images/how-it-works/01.jpg"
+      image: "images/how-it-works/01.png"
       content: "Add TeamWheels from AppSource to your Microsoft Teams in just a few clicks."
 
     - title: "Offer or find rides"
-      image: "images/how-it-works/03.jpg"
+      image: "images/how-it-works/02.png"
       content: "Use the bot to declare your commute or search for available carpools nearby."
 
     - title: "Connect & confirm"
-      image: "images/how-it-works/05.png"
+      image: "images/how-it-works/03.png"
       content: "Request to join a carpool. The driver approves, and you're all set to ride together."
 
     - title: "Track your impact"

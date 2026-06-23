@@ -4,7 +4,7 @@ date: 2026-04-07
 draft: false
 description: "Horaires des voies de covoiturage à Paris (périphérique, A1, A13), application Covoit IDFM, amendes et bilan après un an. Guide complet 2026 pour la mobilité en Île-de-France."
 keywords: "voie covoiturage périphérique paris horaires, voies covoiturage paris 2026, horaire voie covoiturage paris, voie covoiturage A1 horaire, aire de covoiturage paris, covoit idfm"
-image: images/carpoolingBenefits.png
+image: images/blog/paris-carpool-lane.jpg
 author: TeamWheels
 aliases:
   - /fr/blog/voies-covoiturage-paris-peripherique-guide-2025/

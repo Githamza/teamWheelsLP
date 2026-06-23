@@ -4,7 +4,7 @@ date: 2026-02-17
 draft: false
 description: "How to measure and reduce Scope 3 Category 7 employee commuting emissions for SB 253, SBTi & CSRD compliance. Corporate carpooling ROI, implementation guide & KPIs for US companies in 2026."
 keywords: "scope 3 employee commuting, employee commuting emissions, scope 3 category 7, SB 253 compliance, employee commuting software, commuter benefits, corporate carpooling, ESG reporting employee commuting"
-image: "images/carpooling_kpis.png"
+image: "images/blog/scope-3-emissions.jpg"
 author: "TeamWheels"
 ---
 

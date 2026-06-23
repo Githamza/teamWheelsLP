@@ -3,7 +3,7 @@ title: "Fuel Prices Are Climbing. Carpooling Is the Easiest Way to Fight Back."
 date: 2026-04-19
 draft: false
 description: "Fuel prices have surged across the UK, US and Australia in 2026. Discover how carpooling can save your team $1,000–$2,000 per employee per year — and how TeamWheels makes it effortless inside Microsoft Teams."
-image: images/blog/06.jpg
+image: images/blog/fuel-prices.jpg
 author: ""
 ---
 

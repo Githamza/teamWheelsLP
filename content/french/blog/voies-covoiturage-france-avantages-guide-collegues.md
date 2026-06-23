@@ -3,7 +3,7 @@ title: "Voies de covoiturage en France : avantages, dispositifs et guide pratiqu
 date: 2026-04-07
 draft: false
 description: "Découvrez les voies de covoiturage en France : avantages concrets, mesures gouvernementales, lignes en Île-de-France et guide pour covoiturer entre collègues au quotidien."
-image: images/blog/04.jpg
+image: images/blog/carpool-lanes.jpg
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
 reading_time: 12 min
