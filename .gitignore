@@ -25,4 +25,9 @@ scripts/search-console/data/
 # Web Bot Auth — private signing keys (public JWKS lives under static/.well-known/)
 .secrets/
 
+# Agent / skill tooling (installed locally, not part of the site)
+# Note: .claude/commands/ is tracked — only ignore the locally-installed skills.
+.agents/
+.claude/skills/
+skills-lock.json
 
