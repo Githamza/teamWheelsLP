@@ -7,7 +7,7 @@ image: "images/blog/corporate-carpooling.jpg"
 author: "TeamWheels Editorial"
 reading_time: "9 min"
 keywords: "covoiturage entreprise, covoiturage domicile-travail, Forfait Mobilité Durable, loi LOM, RSE, CSRD, DPEF, ridesharing, mobilité durable, Microsoft Teams, déplacements professionnels, gestion de flotte, TeamWheels"
-canonical: "https://teamwheels.app/blog/fr/covoiturage-entreprise-guide-2026"
+canonical: "https://www.teamwheelsapp.com/fr/blog/covoiturage-entreprise-guide-2026/"
 schema: |
   {
     "@context": "https://schema.org",
@@ -18,7 +18,7 @@ schema: |
         "headline": "Covoiturage Domicile-Travail en Entreprise : Le Guide Complet 2026",
         "description": "Guide complet du covoiturage d'entreprise en France — FMD, loi LOM, déplacements inter-sites, flotte de véhicules et intégration Microsoft Teams avec TeamWheels.",
         "datePublished": "2026-04-29",
-        "author": { "@type": "Organization", "name": "TeamWheels", "url": "https://teamwheels.app" },
+        "author": { "@type": "Organization", "name": "TeamWheels", "url": "https://www.teamwheelsapp.com" },
         "publisher": { "@type": "Organization", "name": "TeamWheels" }
       },
       {
@@ -173,7 +173,7 @@ TeamWheels intègre un module de gestion de flotte directement dans Microsoft Te
 
 ## 5. Pourquoi choisir TeamWheels plutôt qu'une solution standalone {#teamwheels}
 
-L'obstacle numéro un à l'adoption d'un programme de covoiturage est la **friction d'usage** — un sujet que nous analysons en détail dans [pourquoi vos employés sont sceptiques face au covoiturage](/fr/blog/pourquoi-vos-employes-sont-sceptiques-sur-le-covoiturage/). Moins de 15 % des salariés s'inscrivent sur une plateforme standalone quand l'entreprise la propose. Avec TeamWheels, qui vit dans Microsoft Teams, ce taux dépasse systématiquement **60 % dès la première semaine**.
+L'obstacle numéro un à l'adoption d'un programme de covoiturage est la **friction d'usage** — un sujet que nous analysons en détail dans [pourquoi vos employés sont sceptiques face au covoiturage](/fr/blog/pourquoi-vos-employes-sont-sceptiques-sur-le-covoiturage/). Moins de 15 % des salariés s'inscrivent sur une plateforme standalone quand l'entreprise la propose. Avec TeamWheels, qui vit dans Microsoft Teams, ce taux dépasse systématiquement **60 % dès la première semaine**. Découvrez notre [logiciel de covoiturage entreprise](/fr/corporate-carpooling-software/) intégré à Teams.
 
 - ✅ **Zéro friction d'adoption** — aucune nouvelle app, aucun nouveau mot de passe. L'outil s'installe en 10 minutes par l'administrateur Teams.
 - ✅ **Matching automatique** — l'algorithme apparie conducteurs et passagers selon le domicile, le site et les horaires habituels.
@@ -210,7 +210,7 @@ Les premiers matchings se font automatiquement. La plupart des entreprises attei
 
 TeamWheels est **gratuit jusqu'à 30 salariés**. Installation en moins d'une heure dans votre environnement Microsoft 365. Aucun engagement.
 
-**[Demander une démo gratuite](https://teamwheels.app/contact)** · **[Simuler mes économies FMD](https://teamwheels.app/calculator)**
+**[Demander une démo gratuite](/fr/contact/)** · **[Simuler mes économies FMD](/fr/tools/savings-calculator/)**
 
 ---
 

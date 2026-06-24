@@ -1,6 +1,6 @@
 ---
-title: "How Employee Carpooling Works in Microsoft Teams | TeamWheels"
-description: "See how the TeamWheels app turns Microsoft Teams into an employee rideshare hub: 5-minute deploy, conversational carpool bot, Scope 3 commute dashboard."
+title: "How Employee Carpooling Works in Microsoft Teams — Live in 5 Min"
+description: "See how TeamWheels turns Microsoft Teams into an employee carpooling hub — 5-minute deploy, conversational bot, Scope 3 dashboard. Book a demo."
 layout: "how-it-works"
 keywords: "how employee rideshare works, BlaBlaCar for business setup, Uber for employees deployment, Microsoft Teams app integration, employee carpool matching, commute bot, ridesharing program rollout, daily commute coordination, corporate carpooling setup, employee rideshare matching, commute management platform, carpool program deployment"
 
@@ -94,7 +94,7 @@ image_and_content_blocks:
     content_position: "left" # Value will be - "left/right"
     content: "Get a complete overview of your employee carpool program performance — participation rates, commute matches, CO₂ emissions avoided, and parking demand reduction — all without compromising individual employee privacy. Export reports for your ESG disclosures, CSR reporting, and commuter benefit program administration.
 
-    [Complete corporate carpooling guide →](/blog/corporate-carpooling-guide-2026/)"
+    [Complete corporate carpooling guide →](/en/blog/corporate-carpooling-guide-2026/)"
 
 
 call_to_action:

@@ -8,34 +8,39 @@ url = ""
 hasChildren = false
 
 [[main]]
+name = "Logiciel Covoiturage"
+url = "corporate-carpooling-software/"
+weight = 2
+
+[[main]]
 name = "Comment ça marche ?"
 url = "how-it-works/"
-weight = 2
+weight = 3
 
 [[main]]
 name = "Avantages"
 url = "benefits/"
-weight = 3
+weight = 4
 
 [[main]]
 name = "Tarifs"
 url = "pricing/"
-weight = 4
+weight = 5
 
 [[main]]
 name = "Calculateur d'économies"
 url = "tools/savings-calculator/"
-weight = 5
+weight = 6
 
 [[main]]
 name = "Blog"
 url = "blog/"
-weight = 6
+weight = 7
 
 [[main]]
 name = "Contact"
 url = "contact/"
-weight = 7
+weight = 8
 
 
 
@@ -60,23 +65,28 @@ weight = 3
 
 # footer_menu_4
 [[footer_menu_4]]
+name = "Logiciel Covoiturage"
+url = "corporate-carpooling-software/"
+weight = 1
+
+[[footer_menu_4]]
 name = "Comment ça marche"
 url = "how-it-works/"
-weight = 1
+weight = 2
 
 [[footer_menu_4]]
 name = "Tarifs"
 url = "pricing/"
-weight = 2
+weight = 3
 
 [[footer_menu_4]]
 name = "Calculateur d'économies"
 url = "tools/savings-calculator/"
-weight = 3
+weight = 4
 
 [[footer_menu_4]]
 name = "Blog"
 url = "blog/"
-weight = 4
+weight = 5
 
 

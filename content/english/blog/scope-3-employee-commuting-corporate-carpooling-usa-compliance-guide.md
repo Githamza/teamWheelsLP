@@ -1,8 +1,8 @@
 ---
-title: "Scope 3 Employee Commuting Emissions: 2026 US Compliance Guide (SB 253)"
+title: "Scope 3 Employee Commuting: 2026 Compliance Guide (SB 253 & CSRD)"
 date: 2026-02-17
 draft: false
-description: "How to measure and reduce Scope 3 Category 7 employee commuting emissions for SB 253, SBTi & CSRD compliance. Corporate carpooling ROI, implementation guide & KPIs for US companies in 2026."
+description: "Measure and cut Scope 3 Category 7 commuting emissions for SB 253, CSRD & SBTi. Step-by-step method, KPIs, and carpooling ROI for US sustainability teams in 2026."
 keywords: "scope 3 employee commuting, employee commuting emissions, scope 3 category 7, SB 253 compliance, employee commuting software, commuter benefits, corporate carpooling, ESG reporting employee commuting"
 image: "images/blog/scope-3-emissions.jpg"
 author: "TeamWheels"
@@ -224,7 +224,7 @@ Modern carpooling platforms generate automatic compliance reports with exact CO2
 
 **The window to establish baseline data and demonstrate year-over-year improvement is now.** Companies that launch carpooling programs in 2026 will have measurable reduction trends to report when Scope 3 disclosures become mandatory in 2027.
 
-> **Related guide:** [Corporate Carpooling 2026: The Complete Guide](/blog/corporate-carpooling-guide-2026/) — IRS commuter benefits, ESG dashboard, fleet management, and a 30-day launch plan.
+> **Related guide:** [Corporate Carpooling 2026: The Complete Guide](/en/blog/corporate-carpooling-guide-2026/) — IRS commuter benefits, ESG dashboard, fleet management, and a 30-day launch plan.
 
 ## Why TeamWheels for Your US Carpooling Program
 
@@ -244,7 +244,7 @@ By integrating directly into the tool your employees already use every day, Team
 
 **Ready to turn employee commuting from a Scope 3 liability into a sustainability win?**
 
-[Start Your Free Trial →](/contact/)
+[Start Your Free Trial →](/en/contact/)
 
 *30 days free for corporate programs. No commitment, no credit card required.*
 

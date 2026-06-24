@@ -7,7 +7,7 @@ image: "images/team-group.jpg"
 author: "TeamWheels Editorial"
 reading_time: "7 min"
 keywords: "carpooling to work, benefits of carpooling, set up carpooling, corporate carpooling, employee carpooling programme, carpooling groups, workplace carpooling, commuter carpooling"
-canonical: "https://teamwheels.app/blog/en/carpooling-to-work-corporate-guide"
+canonical: "https://www.teamwheelsapp.com/en/blog/carpooling-to-work-corporate-guide/"
 ---
 
 Every day, millions of employees drive to work alone. Empty seats, congested roads, and unnecessary emissions — while a colleague who lives two streets away makes the exact same journey. Workplace carpooling exists to fix this paradox. But turning the idea into something that actually works across an organisation is where most companies get stuck.
@@ -118,7 +118,7 @@ These figures are illustrative but consistent with outcomes reported across comp
 
 ## TeamWheels: carpooling built for Microsoft 365
 
-TeamWheels is the first corporate carpooling solution built natively into Microsoft Teams. No extra app, no new interface to learn, no context switching. Employees offer and join carpooling trips directly from the Teams interface they already open every morning.
+TeamWheels is the first [corporate carpooling solution](/en/corporate-carpooling-software/) built natively into Microsoft Teams. No extra app, no new interface to learn, no context switching. Employees offer and join carpooling trips directly from the Teams interface they already open every morning.
 
 For HR and operations teams:
 
@@ -126,7 +126,7 @@ For HR and operations teams:
 - CO₂ savings dashboard with exportable data for ESG disclosures
 - Deployed on your existing Microsoft 365 tenant in under an hour
 
-**Ready to get started?** [Install TeamWheels free →](https://teamwheels.app)
+**Ready to get started?** [Install TeamWheels free →](/en/contact/)
 
 
 *Updated May 2026. Emissions figures referenced from ADEME and UK Department for Transport commute data. Cost figures based on average UK fuel and vehicle running costs for a 30-mile daily round trip, reflecting 2026 inflation rates.*

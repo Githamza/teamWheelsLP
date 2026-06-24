@@ -1,13 +1,13 @@
 ---
-title: "Corporate Carpooling 2026: The Complete Guide for Companies"
+title: "Corporate Carpooling Guide (2026): Costs, ROI & Best Software"
 date: 2026-04-29
 draft: false
-description: "What is ridesharing and carpooling — and why should your company care? Discover how corporate carpooling cuts commuting costs by 60%, supports ESG reporting, and outperforms Uber, Bolt and BlaBlaCar for business mobility."
+description: "Cut employee commute costs up to 60%, hit Scope 3 targets, and choose the right corporate carpooling software. The 2026 guide for HR & sustainability teams."
 image: "images/blog/corporate-carpooling.jpg"
 author: "TeamWheels Editorial"
 reading_time: "10 min"
 keywords: "ridesharing, carpooling, ridesharing company, what is ridesharing, what is carpooling, corporate carpooling, IRS commuter benefits, Clean Air Zone UK, FBT Australia, ESG scope 3, Microsoft Teams, TeamWheels, sustainable commuting, fleet management"
-canonical: "https://teamwheels.app/blog/en/corporate-carpooling-2026"
+canonical: "https://www.teamwheelsapp.com/en/blog/corporate-carpooling-guide-2026/"
 schema: |
   {
     "@context": "https://schema.org",
@@ -15,10 +15,10 @@ schema: |
       {
         "@type": "BlogPosting",
         "inLanguage": "en",
-        "headline": "Corporate Carpooling 2026: The Complete Guide for Companies",
+        "headline": "Corporate Carpooling Guide (2026): Costs, ROI & Best Software",
         "description": "A definitive guide to ridesharing and carpooling for businesses — IRS benefits, UK Clean Air Zones, Australian FBT, ESG reporting, and how TeamWheels integrates into Microsoft Teams.",
         "datePublished": "2026-04-29",
-        "author": { "@type": "Organization", "name": "TeamWheels", "url": "https://teamwheels.app" },
+        "author": { "@type": "Organization", "name": "TeamWheels", "url": "https://www.teamwheelsapp.com" },
         "publisher": { "@type": "Organization", "name": "TeamWheels" }
       },
       {
@@ -128,7 +128,7 @@ One of the most compelling arguments for corporate carpooling is that each marke
 
 ### 🇺🇸 United States
 
-- **IRS Section 132(f):** Employees can exclude up to **$340/month (2026)** in employer-provided commuter benefits from taxable income — see our [US Scope 3 compliance guide](/blog/scope-3-employee-commuting-corporate-carpooling-usa-compliance-guide/)
+- **IRS Section 132(f):** Employees can exclude up to **$340/month (2026)** in employer-provided commuter benefits from taxable income — see our [US Scope 3 compliance guide](/en/blog/scope-3-employee-commuting-corporate-carpooling-usa-compliance-guide/)
 - Pre-tax payroll deduction reduces employer **FICA tax** burden
 - **Vanpool alternatives:** Organised carpooling qualifies where traditional vanpools are impractical
 - **LEED / WELL certification:** Carpool programmes earn sustainability credits
@@ -139,7 +139,7 @@ One of the most compelling arguments for corporate carpooling is that each marke
 - **Clean Air Zones (CAZ):** Carpooling reduces vehicles entering Birmingham, Bath, Bradford, and Bristol CAZs — cutting daily charges of £8–£12 per vehicle
 - **NIC savings:** Employer-facilitated car-sharing reduces National Insurance contributions on company car benefits
 - **EV carpooling:** HMRC's Advisory Electricity Rate (AER) makes shared EV commuting particularly cost-efficient
-- **SECR reporting:** Corporate carpooling programmes generate auditable Scope 3 commute data for Streamlined Energy and Carbon Reporting — see our [UK employee carpooling complete guide](/blog/uk-employee-carpooling-complete-guide/)
+- **SECR reporting:** Corporate carpooling programmes generate auditable Scope 3 commute data for Streamlined Energy and Carbon Reporting — see our [UK employee carpooling complete guide](/en/blog/uk-employee-carpooling-complete-guide/)
 - **Net Zero Transport Plan:** Direct alignment with government-mandated sustainability targets
 
 ### 🇦🇺 Australia
@@ -192,7 +192,7 @@ Commuting stress is the third most cited reason employees change jobs in the UK 
 
 ## 5. Why TeamWheels — Corporate Carpooling Inside Microsoft Teams {#teamwheels}
 
-The single biggest reason corporate carpooling programmes fail is **adoption**. Employees don't download a new app, create a new account, and change their daily routine because an HR memo told them to. The data is consistent: standalone carpooling apps see **under 18% employee uptake**. TeamWheels, embedded directly in Microsoft Teams, consistently exceeds **55% within the first month**.
+The single biggest reason corporate carpooling programmes fail is **adoption**. Employees don't download a new app, create a new account, and change their daily routine because an HR memo told them to. The data is consistent: standalone carpooling apps see **under 18% employee uptake**. TeamWheels, embedded directly in Microsoft Teams, consistently exceeds **55% within the first month**. See how our [corporate carpooling software](/en/corporate-carpooling-software/) turns Teams into a complete carpool program.
 
 - 🔌 **Zero new apps:** TeamWheels lives inside Teams. Employees find it in their sidebar, the same way they find their project channels. No download. No separate login.
 - 🤝 **Smart colleague matching:** The algorithm pairs employees by home postcode/zip code, work schedule, and office site — recurring commutes are matched once, not re-arranged every day.
@@ -219,13 +219,13 @@ Annual savings = (Employees × % driving solo × Commute miles/day
 100 × 0.70 × 20 × 230 × 0.40 × 0.55 × $0.67 = ~$89,000/year
 ```
 
-**[Use the full interactive calculator](https://teamwheels.app/calculator)** — includes parking cost reduction, IRS pre-tax savings, and ESG CO₂ value. Or read our [carpooling savings calculator guide](/blog/carpooling-savings-calculator-corporate-co2-roi-2026/) to understand every metric.
+**[Use the full interactive calculator](/en/tools/savings-calculator/)** — includes parking cost reduction, IRS pre-tax savings, and ESG CO₂ value. Or read our [carpooling savings calculator guide](/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/) to understand every metric.
 
 ---
 
 ## 7. How to Launch in 30 Days {#launch}
 
-Corporate carpooling doesn't require a six-month project. With TeamWheels, the path from decision to first shared trips takes four weeks. For a more detailed step-by-step walkthrough, see [how to launch a corporate carpooling program in 30 days](/blog/how-to-launch-corporate-carpooling-program/).
+Corporate carpooling doesn't require a six-month project. With TeamWheels, the path from decision to first shared trips takes four weeks. For a more detailed step-by-step walkthrough, see [how to launch a corporate carpooling program in 30 days](/en/blog/how-to-launch-corporate-carpooling-program/).
 
 ### Week 1 — Audit
 
@@ -249,7 +249,7 @@ The algorithm begins matching commuters. The HR/Sustainability dashboard goes li
 
 TeamWheels is **free for teams up to 25**. Enterprise pilots for larger organisations include full onboarding support and a guaranteed ROI analysis within 30 days.
 
-**[Book a Free Demo](https://teamwheels.app/contact)** · **[Download the ROI Template](https://teamwheels.app/roi-template)**
+**[Book a Free Demo](/en/contact/)** · **[Download the ROI Template](/en/tools/savings-calculator/)**
 
 ---
 

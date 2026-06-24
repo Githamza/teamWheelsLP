@@ -78,9 +78,9 @@ image_and_content_blocks:
     title: "Employee Carpooling That Lives Where Your Teams Already Work"
     image: "images/why_use_teamWheels.png"
     content_position: "right"
-    content: "TeamWheels integrates natively with Microsoft Teams — no extra app, no change management. One Teams admin, a few clicks, and your carpool program is live in 5 minutes with 40%+ employee participation.
+    content: "TeamWheels is corporate carpooling software that integrates natively with Microsoft Teams — no extra app, no change management. One Teams admin, a few clicks, and your carpool program is live in 5 minutes with 40%+ employee participation.
 
-    [Read more →](benefits/#teams-integration)
+    [Explore the corporate carpooling software →](/en/corporate-carpooling-software/) · [Read more →](benefits/#teams-integration)
     "
     button:
       enable: false
@@ -106,7 +106,7 @@ image_and_content_blocks:
 
     [Read more →](benefits/#commuter-benefits)
 
-    [Complete corporate carpooling guide →](/blog/corporate-carpooling-guide-2026/)
+    [Complete corporate carpooling guide →](/en/blog/corporate-carpooling-guide-2026/)
     "
     button:
       enable: false

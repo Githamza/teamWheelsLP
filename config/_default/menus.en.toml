@@ -8,34 +8,39 @@ url = ""
 hasChildren = false
 
 [[main]]
+name = "Carpool Software"
+url = "corporate-carpooling-software/"
+weight = 2
+
+[[main]]
 name = "How It Works"
 url = "how-it-works/"
-weight = 2
+weight = 3
 
 [[main]]
 name = "Benefits"
 url = "benefits/"
-weight = 3
+weight = 4
 
 [[main]]
 name = "Pricing"
 url = "pricing/"
-weight = 4
+weight = 5
 
 [[main]]
 name = "Savings Calculator"
 url = "tools/savings-calculator/"
-weight = 5
+weight = 6
 
 [[main]]
 name = "Blog"
 url = "blog/"
-weight = 6
+weight = 7
 
 [[main]]
 name = "Contact"
 url = "contact/"
-weight = 7
+weight = 8
 
 
 
@@ -60,22 +65,27 @@ weight = 3
 
 # footer_menu_4
 [[footer_menu_4]]
+name = "Carpool Software"
+url = "corporate-carpooling-software/"
+weight = 1
+
+[[footer_menu_4]]
 name = "How It Works"
 url = "how-it-works/"
-weight = 1
+weight = 2
 
 [[footer_menu_4]]
 name = "Pricing"
 url = "pricing/"
-weight = 2
+weight = 3
 
 [[footer_menu_4]]
 name = "Savings Calculator"
 url = "tools/savings-calculator/"
-weight = 3
+weight = 4
 
 [[footer_menu_4]]
 name = "Blog"
 url = "blog/"
-weight = 4
+weight = 5
 

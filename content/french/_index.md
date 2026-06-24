@@ -78,9 +78,9 @@ image_and_content_blocks:
     title: "Le covoiturage directement dans Microsoft Teams"
     image: "images/why_use_teamWheels.png"
     content_position: "right"
-    content: "TeamWheels s'intègre nativement à Microsoft Teams — zéro app supplémentaire, adoption immédiate. Un admin, quelques clics, et votre programme covoiturage est en ligne en 5 minutes avec 40%+ de participation.
+    content: "TeamWheels est un logiciel de covoiturage entreprise qui s'intègre nativement à Microsoft Teams — zéro app supplémentaire, adoption immédiate. Un admin, quelques clics, et votre programme covoiturage est en ligne en 5 minutes avec 40%+ de participation.
 
-    [En savoir plus →](benefits/#integration-teams)
+    [Découvrir le logiciel de covoiturage entreprise →](/fr/corporate-carpooling-software/) · [En savoir plus →](benefits/#integration-teams)
     "
     button:
       enable: false

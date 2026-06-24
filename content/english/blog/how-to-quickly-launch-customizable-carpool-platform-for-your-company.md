@@ -177,9 +177,9 @@ TeamWheels makes launching your corporate carpool platform faster than ever:
 
 **Ready to launch your carpool platform this week?**
 
-> **Related guide:** [Corporate Carpooling 2026: The Complete Guide](/blog/corporate-carpooling-guide-2026/) — platform comparison, IRS / UK / AU tax benefits, ESG reporting, and ROI formula.
+> **Related guide:** [Corporate Carpooling 2026: The Complete Guide](/en/blog/corporate-carpooling-guide-2026/) — platform comparison, IRS / UK / AU tax benefits, ESG reporting, and ROI formula.
 
-[Start Your Free Trial →](/contact/)
+[Start Your Free Trial →](/en/contact/)
 
 *30 days free, no commitment, no credit card required.*
 

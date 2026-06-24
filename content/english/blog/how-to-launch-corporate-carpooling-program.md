@@ -147,7 +147,7 @@ Track these KPIs to measure program success:
 
 ---
 
-> **Related guide:** [Corporate Carpooling 2026: The Complete Guide](/blog/corporate-carpooling-guide-2026/) — platform comparison, IRS / UK / AU tax benefits, ESG reporting, and ROI formula.
+> **Related guide:** [Corporate Carpooling 2026: The Complete Guide](/en/blog/corporate-carpooling-guide-2026/) — platform comparison, IRS / UK / AU tax benefits, ESG reporting, and ROI formula.
 
 ## Ready to Launch?
 
@@ -155,4 +155,4 @@ A successful carpooling program can save your organization thousands while impro
 
 Start your 30-day journey today with a free trial of TeamWheels - the carpooling solution built into Microsoft Teams.
 
-**[Start Free Trial →](/contact/)**
+**[Start Free Trial →](/en/contact/)**

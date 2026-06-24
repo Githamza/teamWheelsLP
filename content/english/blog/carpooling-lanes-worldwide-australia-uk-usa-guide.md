@@ -165,7 +165,7 @@ You don't need a dedicated carpool lane to benefit from ride-sharing. But where 
 The biggest barrier isn't willingness — it's finding someone with a compatible route and schedule.
 
 - **Ask at work first.** A simple message in your team chat can surface commute matches you never knew existed
-- **Use a matching platform.** Tools like [TeamWheels](/contact/) automatically match colleagues based on home location, work schedule and route compatibility
+- **Use a matching platform.** Tools like [TeamWheels](/en/contact/) automatically match colleagues based on home location, work schedule and route compatibility
 - **Start with 2-3 days per week.** Full-time carpooling isn't necessary to access HOV lanes or save money
 
 ### Step 2: Know Your Local Rules
@@ -203,10 +203,10 @@ Carpooling lanes are expanding worldwide. The US is adding camera enforcement an
 
 The infrastructure is being built. The incentives are growing. The only question is whether you'll be in the carpool lane — or stuck watching it from the traffic jam next to it.
 
-**[Start Matching With Colleagues →](/contact/)**
+**[Start Matching With Colleagues →](/en/contact/)**
 
 *TeamWheels identifies coworkers on your route automatically. Set up your company's carpooling programme in minutes, not months.*
 
 ---
 
-> **Go deeper:** [Corporate Carpooling 2026: The Complete Guide](/blog/corporate-carpooling-guide-2026/) — IRS, Clean Air Zone and FBT incentives, platform comparison, ESG reporting, and a 30-day launch plan.
+> **Go deeper:** [Corporate Carpooling 2026: The Complete Guide](/en/blog/corporate-carpooling-guide-2026/) — IRS, Clean Air Zone and FBT incentives, platform comparison, ESG reporting, and a 30-day launch plan.

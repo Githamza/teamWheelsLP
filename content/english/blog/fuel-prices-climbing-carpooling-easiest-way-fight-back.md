@@ -60,4 +60,4 @@ Just a quiet daily reminder that the seat next to you doesn't have to stay empty
 
 ---
 
-> **Go deeper:** [Corporate Carpooling 2026: The Complete Guide](/blog/corporate-carpooling-guide-2026/) — IRS pre-tax benefits, Clean Air Zone compliance, FBT exemptions, ESG reporting, and a 30-day launch plan.
+> **Go deeper:** [Corporate Carpooling 2026: The Complete Guide](/en/blog/corporate-carpooling-guide-2026/) — IRS pre-tax benefits, Clean Air Zone compliance, FBT exemptions, ESG reporting, and a 30-day launch plan.

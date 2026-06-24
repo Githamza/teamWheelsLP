@@ -15,7 +15,7 @@ reading_time: 9 min
 
 How much could your company save by moving employees from solo driving to carpooling? Until now, answering that question required a spreadsheet, a sustainability consultant, and several weeks of back-and-forth. Not anymore.
 
-The new **[TeamWheels Carpooling Savings Calculator](/tools/savings-calculator/)** gives HR, sustainability, and mobility leaders an instant, evidence-based estimate of the CO₂, euros, parking spots and ESG score a corporate carpooling program can unlock — in under two minutes, and with a free personalised PDF report at the end.
+The new **[TeamWheels Carpooling Savings Calculator](/en/tools/savings-calculator/)** gives HR, sustainability, and mobility leaders an instant, evidence-based estimate of the CO₂, euros, parking spots and ESG score a corporate carpooling program can unlock — in under two minutes, and with a free personalised PDF report at the end.
 
 This guide walks through **what the calculator measures, how it works, and how to turn the numbers into a business case** your CFO and sustainability committee will actually approve.
 
@@ -146,7 +146,7 @@ The calculator answers *"how much could we save?"*. The natural next question is
 4. **Measure real adoption after 6–8 weeks** and re-run the calculator with the actual participation rate.
 5. **Scale company-wide** with the validated business case and a clear ESG narrative.
 
-For a deeper implementation playbook, see our step-by-step guide on [how to quickly launch a customizable carpool platform for your company](/blog/how-to-quickly-launch-customizable-carpool-platform-for-your-company/), our compliance-focused overview on [Scope 3 employee commuting in the USA](/blog/scope-3-employee-commuting-corporate-carpooling-usa-compliance-guide/), and our [complete corporate carpooling guide 2026](/blog/corporate-carpooling-guide-2026/).
+For a deeper implementation playbook, see our step-by-step guide on [how to quickly launch a customizable carpool platform for your company](/en/blog/how-to-quickly-launch-customizable-carpool-platform-for-your-company/), our compliance-focused overview on [Scope 3 employee commuting in the USA](/en/blog/scope-3-employee-commuting-corporate-carpooling-usa-compliance-guide/), and our [complete corporate carpooling guide 2026](/en/blog/corporate-carpooling-guide-2026/).
 
 ## Frequently Asked Questions
 
@@ -180,11 +180,11 @@ The calculator quantifies the **opportunity**. A demo shows how TeamWheels — i
 
 Stop estimating. Start measuring.
 
-[**Launch the free Carpooling Savings Calculator →**](/tools/savings-calculator/)
+[**Launch the free Carpooling Savings Calculator →**](/en/tools/savings-calculator/)
 
 *Two minutes, no credit card, personalised PDF report.*
 
-Already convinced? [Book a 20-minute TeamWheels demo](/contact/) and we'll walk you through how to turn your calculator results into a live programme inside Microsoft Teams.
+Already convinced? [Book a 20-minute TeamWheels demo](/en/contact/) and we'll walk you through how to turn your calculator results into a live programme inside Microsoft Teams.
 
 ---
 

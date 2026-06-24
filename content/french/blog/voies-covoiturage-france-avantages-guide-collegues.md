@@ -176,7 +176,7 @@ Le covoiturage entre collègues n'est plus une contrainte — c'est un avantage 
 
 **80 % des trajets de covoiturage** en France se font en zone périurbaine, exactement là où les transports en commun sont les moins denses. Si vous habitez en grande couronne francilienne, le covoiturage avec vos collègues est probablement la solution la plus efficace pour améliorer votre quotidien.
 
-**[Découvrir TeamWheels →](/contact/)**
+**[Découvrir TeamWheels →](/fr/contact/)**
 
 *Identifiez vos collègues de trajet en quelques clics et commencez à covoiturer dès demain.*
 
