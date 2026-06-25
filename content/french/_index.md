@@ -126,7 +126,7 @@ image_and_content_blocks:
 
 # testimonials
 testimonials:
-  enable: true
+  enable: false
   subtitle: "Retours d'expérience"
   title: "Ce que nos clients disent de TeamWheels"
   image_1: "images/testimonials-group-1.png"
