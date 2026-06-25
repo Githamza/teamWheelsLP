@@ -99,6 +99,27 @@ image_and_content_blocks:
       enable: false
 
   - enable: true
+    anchor: "marque-blanche-integration-rh"
+    subtitle: "Marque blanche & intégration RH"
+    title: "Les avantages d'une app de covoiturage en marque blanche intégrée à vos systèmes RH"
+    image: "images/why_use_teamWheels.png"
+    content_position: "left"
+    content: "Une app de covoiturage en marque blanche intégrée à vos systèmes RH et d'identité, c'est des salariés qui rejoignent le programme avec leur compte professionnel existant, et des équipes RH, paie et RSE qui disposent de données propres sans export manuel. TeamWheels tourne dans votre propre tenant Microsoft 365, à votre marque — pas une app tierce séparée.
+
+    * **SSO, zéro onboarding** — Le SSO Azure AD / Entra ID fait de votre annuaire salariés la liste des covoitureurs. Pas d'invitations, pas de comptes séparés à créer ou désactiver
+
+    * **Votre marque, votre tenant** — Une expérience en marque blanche dans Microsoft Teams, régie par vos politiques IT et vos règles de résidence des données
+
+    * **Prêt pour la paie & le FMD** — Les justificatifs de trajets alimentent le versement du Forfait Mobilité Durable et les remboursements, sans tableur
+
+    * **Reporting RSE automatisé** — Les données de participation et de CO₂ s'exportent directement dans le reporting Scope 3 (poste 7) et CSRD
+
+    Parce que l'identité, la RH et le covoiturage partagent une seule source de vérité, votre programme reste juste au fil des évolutions d'effectif — pas de listes obsolètes, pas de comptes orphelins.
+    "
+    button:
+      enable: false
+
+  - enable: true
     anchor: "faq"
     subtitle: "Questions fréquentes"
     title: "FAQ — Logiciel de covoiturage entreprise"
@@ -116,6 +137,24 @@ image_and_content_blocks:
     "
     button:
       enable: false
+
+faq:
+  - question: "Existe-t-il une application Microsoft Teams pour le covoiturage ?"
+    answer: "Oui. TeamWheels est une application de covoiturage validée par Microsoft qui s'installe dans Microsoft Teams depuis AppSource. Les salariés trouvent et proposent des trajets via un bot conversationnel dans Teams — aucune app séparée à télécharger, ce qui explique un taux de participation supérieur à 40 %, contre moins de 18 % pour les apps de covoiturage autonomes."
+  - question: "Peut-on déployer une plateforme de covoiturage entreprise en marque blanche ?"
+    answer: "Oui. TeamWheels se déploie en marque blanche dans votre propre tenant Microsoft 365, à votre marque et selon vos politiques IT. Les salariés s'authentifient avec leur compte professionnel existant via le SSO Azure AD / Entra ID : aucun compte séparé à provisionner, et l'expérience s'intègre à vos outils internes plutôt qu'à une app tierce."
+  - question: "Quels sont les avantages d'une app de covoiturage en marque blanche intégrée aux systèmes RH ?"
+    answer: "Intégrer une app de covoiturage en marque blanche à vos systèmes RH et d'identité permet aux salariés de rejoindre automatiquement le programme avec leur compte professionnel, et aux équipes RH, paie et RSE d'obtenir des données propres sans export manuel. Avantages clés : SSO via Entra ID (l'annuaire devient la liste des covoitureurs), versement du Forfait Mobilité Durable et remboursements alimentés directement par les justificatifs de trajets, et reporting RSE Scope 3 / CSRD généré automatiquement."
+  - question: "En combien de temps peut-on lancer une plateforme de covoiturage personnalisable ?"
+    answer: "Environ 5 minutes. Un administrateur Teams installe TeamWheels depuis Microsoft AppSource dans votre tenant Microsoft 365 existant — pas de projet IT, pas d'infrastructure, pas de déploiement d'app. La plateforme est personnalisable (marque, sites, reporting RH/RSE), et vous pouvez d'abord tester gratuitement pendant 30 jours jusqu'à 50 salariés."
+  - question: "Est-ce vraiment juste une application Microsoft Teams ?"
+    answer: "Oui. TeamWheels s'installe dans votre tenant Microsoft 365 existant depuis AppSource — aucune app séparée à télécharger pour les salariés."
+  - question: "Comment les données des salariés sont-elles sécurisées ?"
+    answer: "L'authentification passe par le SSO Azure AD / Entra ID, et la plateforme est conforme RGPD, privacy by design."
+  - question: "Combien coûte un logiciel de covoiturage entreprise ?"
+    answer: "TeamWheels propose un essai gratuit de 30 jours, puis une tarification transparente par utilisateur à partir de 5 € par utilisateur et par mois. La plupart des organisations atteignent un ROI positif dès le premier trimestre grâce aux seules économies de parking."
+  - question: "Le Forfait Mobilité Durable est-il géré ?"
+    answer: "Oui — TeamWheels génère les justificatifs de trajets nécessaires au versement du FMD (jusqu'à 900 € par an et par salarié) et au reporting RSE."
 
 call_to_action:
   enable: true

@@ -99,6 +99,27 @@ image_and_content_blocks:
       enable: false
 
   - enable: true
+    anchor: "white-label-hr-integration"
+    subtitle: "White-Label & HR-System Integration"
+    title: "Benefits of a White-Label Carpool App Integrated With Your HR Systems"
+    image: "images/why_use_teamWheels.png"
+    content_position: "left"
+    content: "A white-label carpool app integrated with your HR and identity systems means employees join with their existing work account, while HR, payroll, and ESG teams get clean data with no manual exports. TeamWheels runs inside your own Microsoft 365 tenant under your branding — not a separate third-party app.
+
+    * **Single sign-on, zero onboarding** — Azure AD / Entra ID SSO makes your employee directory the carpool roster. No invites, no separate accounts to provision or offboard
+
+    * **Your brand, your tenant** — A white-label experience inside Microsoft Teams, governed by your own IT policies and data-residency rules
+
+    * **Pre-tax & payroll ready** — Trip records feed commuter-benefit and reimbursement workflows (US IRS Section 132f, UK schemes, France's Forfait Mobilité Durable) without spreadsheets
+
+    * **ESG reporting on autopilot** — Participation and CO₂ data export straight into Scope 3 Category 7 and CSRD reporting
+
+    Because identity, HR, and carpooling share one source of truth, your program stays accurate as headcount changes — no stale rosters, no orphaned accounts.
+    "
+    button:
+      enable: false
+
+  - enable: true
     anchor: "faq"
     subtitle: "Common Questions"
     title: "Corporate Carpooling Software FAQ"
@@ -116,6 +137,24 @@ image_and_content_blocks:
     "
     button:
       enable: false
+
+faq:
+  - question: "Is there a Microsoft Teams app for carpooling?"
+    answer: "Yes. TeamWheels is a Microsoft-validated carpooling app that installs inside Microsoft Teams from AppSource. Employees find and offer rides through a conversational bot in Teams — there is no separate app to download, which is why participation reaches 40%+ versus under 18% for standalone carpooling apps."
+  - question: "Can you white-label a corporate carpool platform?"
+    answer: "Yes. TeamWheels deploys as a white-label carpool platform inside your own Microsoft 365 tenant, under your branding and IT policies. Employees authenticate with their existing work account via Azure AD / Entra ID SSO, so there are no separate accounts to provision and the experience feels like part of your internal toolset rather than a third-party app."
+  - question: "What are the benefits of a white-label carpool app integrated with HR systems?"
+    answer: "Integrating a white-label carpool app with your HR and identity systems means employees join automatically with their work account, and HR, payroll, and sustainability teams get clean data with no manual exports. Key benefits: single sign-on via Entra ID (the directory becomes the carpool roster), pre-tax and reimbursement workflows fed directly from trip records (IRS Section 132f, UK schemes, France's Forfait Mobilité Durable), and Scope 3 / CSRD ESG reporting generated automatically."
+  - question: "How fast can you launch a customizable corporate carpool platform?"
+    answer: "About 5 minutes. A Teams administrator installs TeamWheels from Microsoft AppSource into your existing Microsoft 365 tenant — no IT project, no infrastructure, no app rollout. The platform is customizable to your branding, sites, and HR/ESG reporting needs, and you can run a free 30-day trial for up to 50 employees first."
+  - question: "Is it really just a Microsoft Teams app?"
+    answer: "Yes. TeamWheels installs inside your existing Microsoft 365 tenant from AppSource — there's no separate app for employees to download."
+  - question: "How is employee data secured?"
+    answer: "Authentication runs through Azure AD / Entra ID SSO, and the platform is GDPR compliant with privacy by design."
+  - question: "What does corporate carpooling software cost?"
+    answer: "TeamWheels offers a free 30-day trial, then transparent per-seat pricing from 5€ per seat per month. Most organizations reach positive ROI within the first quarter through parking-cost savings alone."
+  - question: "Which countries does TeamWheels support?"
+    answer: "Companies across the USA, UK, and Canada run TeamWheels today, with full support for France including the Forfait Mobilité Durable."
 
 call_to_action:
   enable: true

@@ -90,6 +90,18 @@ image_and_content_blocks:
     button:
       enable: false
 
+faq:
+  - question: "Existe-t-il une application Microsoft Teams pour le covoiturage des salariés ?"
+    answer: "Oui. TeamWheels est une application de covoiturage validée par Microsoft qui fonctionne dans Microsoft Teams. Les salariés proposent et trouvent des trajets via un bot conversationnel dans Teams, sans app séparée à télécharger — ce qui explique un taux de participation supérieur à 40 %, contre moins de 18 % pour les apps autonomes."
+  - question: "Quel est le taux de participation moyen d'un programme de covoiturage entreprise ?"
+    answer: "Les applications de covoiturage autonomes dépassent rarement 18 % de participation, faute d'adoption. Les programmes intégrés à un outil déjà utilisé au quotidien — comme TeamWheels dans Microsoft Teams — atteignent généralement plus de 40 %."
+  - question: "Comment le covoiturage réduit-il les émissions Scope 3 ?"
+    answer: "Les trajets domicile-travail relèvent du poste 7 (Scope 3) du GHG Protocol. Le covoiturage réduit le nombre de voitures en solo et donc les émissions. TeamWheels comptabilise les trajets partagés et exporte les données pour le reporting Scope 3, CSRD et bilan GES — chaque trajet partagé évite environ 6 kg de CO₂."
+  - question: "Combien un salarié peut-il économiser en covoiturant ?"
+    answer: "Un salarié qui covoiture économise généralement plus de 2 000 € par an en partageant carburant, péages et stationnement. Avec le Forfait Mobilité Durable (jusqu'à 900 €/an, exonérés de charges), l'employeur peut en plus subventionner ces trajets sans charges sociales."
+  - question: "Les salariés doivent-ils installer quelque chose pour utiliser TeamWheels ?"
+    answer: "Non. TeamWheels s'installe une fois dans votre tenant Microsoft 365 depuis AppSource. Les salariés l'utilisent dans Microsoft Teams avec leur compte professionnel existant — sans nouvelle app, sans identifiant séparé, sans onboarding."
+
 call_to_action:
   enable: true
   title: "Lancez le covoiturage dans votre entreprise"

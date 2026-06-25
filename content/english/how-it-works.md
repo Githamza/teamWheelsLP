@@ -97,6 +97,16 @@ image_and_content_blocks:
     [Complete corporate carpooling guide →](/en/blog/corporate-carpooling-guide-2026/)"
 
 
+faq:
+  - question: "How does carpooling work inside Microsoft Teams?"
+    answer: "A Teams administrator installs TeamWheels from Microsoft AppSource in about 5 minutes. Employees then offer or find rides through a conversational bot directly in Teams: the bot matches them by route and schedule, coordinates daily rides, and sends reminders — all without leaving Teams or installing a separate app."
+  - question: "How long does it take to set up TeamWheels?"
+    answer: "About 5 minutes. The app is validated by Microsoft and available on AppSource, so a Teams administrator installs it into your existing Microsoft 365 tenant with no IT project, no infrastructure, and no change management."
+  - question: "Do employees need a separate account or app?"
+    answer: "No. Employees use TeamWheels through Microsoft Teams with their existing work account via Azure AD / Entra ID SSO. There's nothing to download and no new password to manage."
+  - question: "How are carpool matches made?"
+    answer: "TeamWheels matches employees automatically by home location, route, and schedule, so colleagues find compatible carpool partners in seconds. The bot confirms rides and notifies participants when it's time to leave."
+
 call_to_action:
   enable: true
   title: "Ready to Launch Employee Carpooling in Your Organization?"

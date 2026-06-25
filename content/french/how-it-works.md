@@ -104,6 +104,16 @@ image_and_content_blocks:
     [Guide complet : lancer votre programme covoiturage →](/fr/blog/covoiturage-entreprise-guide-2026/)"
 
 
+faq:
+  - question: "Comment fonctionne le covoiturage dans Microsoft Teams ?"
+    answer: "Un administrateur Teams installe TeamWheels depuis Microsoft AppSource en environ 5 minutes. Les salariés proposent ou trouvent ensuite des trajets via un bot conversationnel directement dans Teams : le bot les met en relation par trajet et horaires, coordonne les trajets quotidiens et envoie des rappels — sans quitter Teams ni installer d'app séparée."
+  - question: "Combien de temps faut-il pour déployer TeamWheels ?"
+    answer: "Environ 5 minutes. L'application est validée par Microsoft et disponible sur AppSource : un administrateur Teams l'installe dans votre tenant Microsoft 365 existant, sans projet IT, sans infrastructure et sans conduite du changement."
+  - question: "Les salariés ont-ils besoin d'un compte ou d'une app séparée ?"
+    answer: "Non. Les salariés utilisent TeamWheels dans Microsoft Teams avec leur compte professionnel existant via le SSO Azure AD / Entra ID. Rien à télécharger, aucun nouveau mot de passe à gérer."
+  - question: "Comment se fait la mise en relation des covoitureurs ?"
+    answer: "TeamWheels met en relation les salariés automatiquement selon leur domicile, leur trajet et leurs horaires : les collègues trouvent des covoitureurs compatibles en quelques secondes. Le bot confirme les trajets et notifie les participants au moment de partir."
+
 call_to_action:
   enable: true
   title: "🚀 Prêt à transformer vos trajets domicile-travail ?"

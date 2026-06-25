@@ -7,6 +7,36 @@ author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
 reading_time: 10 min
 draft: false
+howto:
+  name: "Launch a Customizable Corporate Carpool Platform Quickly"
+  description: "How to deploy a branded, customizable employee carpool platform in days using a white-label, ready-made solution instead of building from scratch."
+  totalTime: "P14D"
+  tool:
+    - "Microsoft Teams"
+    - "TeamWheels"
+  step:
+    - name: "Define your goals and scope"
+      text: "Pick one or two primary goals (parking, ESG / Scope 3, employee savings, retention) and the metrics you'll track before choosing any technology."
+      url: "#step-1-define-your-goals-and-scope"
+    - name: "Choose the right platform"
+      text: "Select a platform you can go live with in days, brand without code, integrate with Microsoft Teams and your SSO, and scale from a 50-user pilot to thousands."
+      url: "#step-2-choose-the-right-platform"
+    - name: "Configure and brand your platform"
+      text: "Upload your logo and colors, define office locations, set matching rules and policies, and assign admins — typically completed in a single afternoon."
+      url: "#step-3-configure-and-brand-your-platform"
+    - name: "Run a pilot program"
+      text: "Launch with 30-50 early adopters from high-commute departments for 2-4 weeks, gather feedback, and document quick wins."
+      url: "#step-4-run-a-pilot-program"
+    - name: "Scale company-wide"
+      text: "Use pilot data to justify a broader rollout: share results, run a communication campaign, add incentives, and assign department champions."
+      url: "#step-5-scale-company-wide"
+faq:
+  - question: "Can you white-label a corporate carpool platform?"
+    answer: "Yes. Rather than building from scratch, most companies adopt a ready-made, white-label carpool platform they can brand and configure to their organization. TeamWheels deploys as a white-label experience inside your own Microsoft 365 tenant under your branding, with employees signing in through your existing Azure AD / Entra ID identity — no separate app or accounts."
+  - question: "How fast can you launch a customizable carpool platform?"
+    answer: "With a white-label SaaS platform you can go live in 1-2 weeks, and often much faster — TeamWheels installs from Microsoft AppSource in about 5 minutes. Building a carpooling app from scratch, by contrast, typically takes 14-16 weeks and costs $20,000-$200,000+."
+  - question: "Should you build or buy a corporate carpool platform?"
+    answer: "Building from scratch only makes sense for large enterprises with very specific requirements and dedicated IT budgets (14-16 weeks, $20,000-$200,000+). For most organizations, a customizable ready-made platform like TeamWheels is faster, cheaper, and lower-risk — live in days, with matching, dashboards, SSO, and ESG reporting already built in."
 ---
 
 # How to Quickly Launch a Customizable Carpool Platform for Your Company
@@ -14,6 +44,8 @@ draft: false
 Launching a corporate carpooling program used to require months of planning, custom software development, and significant upfront investment. Today, companies of all sizes can deploy a fully branded, customizable carpool platform in a matter of days — and start seeing results almost immediately.
 
 Whether you're an HR leader looking to improve employee benefits, a sustainability officer targeting Scope 3 emissions, or a facilities manager seeking to reduce parking pressure, this guide walks you through the fastest path to getting your carpool platform live.
+
+> **Quick answer:** You can launch a customizable corporate carpool platform in days, not months, by adopting a white-label, ready-made solution instead of building from scratch. The fastest path: choose a platform that runs inside Microsoft Teams (so there's no separate app for employees), brand and configure it in an afternoon, pilot with 30–50 early adopters for 2–4 weeks, then scale company-wide. TeamWheels deploys in about 5 minutes via Microsoft AppSource.
 
 ## Why Companies Are Launching Their Own Carpool Platforms
 

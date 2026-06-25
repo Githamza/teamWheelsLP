@@ -7,6 +7,31 @@ author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
 reading_time: 10 min
 draft: false
+howto:
+  name: "Lancer rapidement une plateforme de covoiturage personnalisable"
+  description: "Comment déployer une plateforme de covoiturage salariés personnalisée et à votre marque en quelques jours grâce à une solution clé en main en marque blanche, plutôt qu'un développement sur mesure."
+  totalTime: "P14D"
+  tool:
+    - "Microsoft Teams"
+    - "TeamWheels"
+  step:
+    - name: "Définir vos objectifs et votre périmètre"
+      text: "Choisissez un ou deux objectifs prioritaires (parking, RSE / Scope 3, économies salariés, rétention) et les indicateurs à suivre avant de choisir une technologie."
+    - name: "Choisir la bonne plateforme"
+      text: "Sélectionnez une plateforme opérationnelle en quelques jours, personnalisable sans code, intégrée à Microsoft Teams et à votre SSO, et capable de passer d'un pilote de 50 utilisateurs à plusieurs milliers."
+    - name: "Configurer et personnaliser votre plateforme"
+      text: "Chargez votre logo et vos couleurs, définissez vos sites, paramétrez les règles de matching et les politiques, et désignez les administrateurs — réalisable en un après-midi."
+    - name: "Lancer un programme pilote"
+      text: "Démarrez avec 30 à 50 adoptants précoces dans les services à longs trajets pendant 2 à 4 semaines, recueillez les retours et documentez les premiers succès."
+    - name: "Passer à l'échelle de l'entreprise"
+      text: "Utilisez les données du pilote pour justifier un déploiement plus large : partagez les résultats, lancez une campagne de communication, ajoutez des incitations et désignez des ambassadeurs."
+faq:
+  - question: "Peut-on déployer une plateforme de covoiturage entreprise en marque blanche ?"
+    answer: "Oui. Plutôt que de développer de zéro, la plupart des entreprises adoptent une plateforme de covoiturage clé en main, en marque blanche, qu'elles personnalisent à leur image. TeamWheels se déploie en marque blanche dans votre propre tenant Microsoft 365, à votre marque, avec une authentification des salariés via votre identité Azure AD / Entra ID existante — sans app ni comptes séparés."
+  - question: "En combien de temps peut-on lancer une plateforme de covoiturage personnalisable ?"
+    answer: "Avec une plateforme SaaS en marque blanche, vous pouvez être opérationnel en 1 à 2 semaines, et souvent bien plus vite — TeamWheels s'installe depuis Microsoft AppSource en environ 5 minutes. Construire une app de covoiturage de zéro prend, à l'inverse, généralement 14 à 16 semaines pour 20 000 à plus de 200 000 €."
+  - question: "Faut-il développer ou acheter une plateforme de covoiturage ?"
+    answer: "Le développement sur mesure ne se justifie que pour les grandes entreprises aux besoins très spécifiques et au budget IT dédié (14 à 16 semaines, 20 000 à plus de 200 000 €). Pour la plupart des organisations, une plateforme clé en main personnalisable comme TeamWheels est plus rapide, moins chère et moins risquée — opérationnelle en quelques jours, avec matching, tableaux de bord, SSO et reporting RSE déjà intégrés."
 ---
 
 # Comment lancer rapidement une plateforme de covoiturage personnalisable pour votre entreprise
@@ -14,6 +39,8 @@ draft: false
 Lancer un programme de covoiturage d'entreprise nécessitait autrefois des mois de planification, un développement logiciel sur mesure et un investissement initial conséquent. Aujourd'hui, les entreprises de toutes tailles peuvent déployer une plateforme de covoiturage entièrement personnalisée et à leur image en quelques jours seulement — et commencer à voir des résultats presque immédiatement.
 
 Que vous soyez responsable RH souhaitant améliorer les avantages salariés, responsable RSE visant les émissions Scope 3, ou gestionnaire de site cherchant à réduire la pression sur le stationnement, ce guide vous accompagne vers le lancement le plus rapide possible.
+
+> **Réponse rapide :** Vous pouvez lancer une plateforme de covoiturage personnalisable en quelques jours, pas en quelques mois, en adoptant une solution clé en main en marque blanche plutôt qu'un développement sur mesure. Le chemin le plus rapide : choisir une plateforme intégrée à Microsoft Teams (aucune app séparée pour les salariés), la personnaliser en un après-midi, piloter avec 30 à 50 adoptants pendant 2 à 4 semaines, puis passer à l'échelle. TeamWheels se déploie en environ 5 minutes via Microsoft AppSource.
 
 ## Pourquoi les entreprises lancent leur propre plateforme de covoiturage
 

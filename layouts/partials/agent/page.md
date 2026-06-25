@@ -152,22 +152,43 @@ date: {{ .Format "2006-01-02" }}
 {{- end -}}
 {{- end -}}
 
-{{- /* ─── FAQ (content uses `faq_list`; older data uses `faq_item`) ─── */ -}}
-{{- with .Params.faq }}
-{{- if .enable }}
-## {{ .title | default "FAQ" | plainify }}
-
-{{ with .description }}{{ . | plainify }}
-
-{{ end -}}
-{{ $items := or .faq_list .faq_item -}}
-{{ range $items -}}
-### {{ .title | plainify }}
-
-{{ .content | plainify }}
-
-{{ end -}}
+{{- /* ─── FAQ ───
+       Supports two front-matter shapes (same as seo/schema.html):
+         1. Map shape (pricing-style):  faq: {enable, title, faq_list:[{title,content}]}
+         2. Slice shape (per-page):     faq: [{question, answer}]
+*/ -}}
+{{- $faqItems := slice -}}
+{{- $faqTitle := "FAQ" -}}
+{{- $faqDesc := "" -}}
+{{- with .Params.faq -}}
+  {{- if reflect.IsMap . -}}
+    {{- if .enable -}}
+      {{- $faqTitle = .title | default "FAQ" -}}
+      {{- $faqDesc = .description | default "" -}}
+      {{- range (or .faq_list .faq_item) -}}
+        {{- $faqItems = $faqItems | append (dict "q" (or .title .question) "a" (or .content .answer)) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- else if reflect.IsSlice . -}}
+    {{- range . -}}
+      {{- $q := or (index . "question") (index . "title") -}}
+      {{- $a := or (index . "answer") (index . "content") -}}
+      {{- if and $q $a -}}{{- $faqItems = $faqItems | append (dict "q" $q "a" $a) -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
 {{- end -}}
+{{- with $faqItems }}
+## {{ $faqTitle | plainify }}
+
+{{ with $faqDesc }}{{ . | plainify }}
+
+{{ end -}}
+{{ range . -}}
+### {{ .q | plainify }}
+
+{{ .a | plainify }}
+
+{{ end -}}
 {{- end -}}
 
 {{- /* ─── Testimonials ─── */ -}}

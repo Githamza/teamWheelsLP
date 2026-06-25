@@ -8,58 +8,15 @@ author: "TeamWheels Editorial"
 reading_time: "10 min"
 keywords: "ridesharing, carpooling, ridesharing company, what is ridesharing, what is carpooling, corporate carpooling, IRS commuter benefits, Clean Air Zone UK, FBT Australia, ESG scope 3, Microsoft Teams, TeamWheels, sustainable commuting, fleet management"
 canonical: "https://www.teamwheelsapp.com/en/blog/corporate-carpooling-guide-2026/"
-schema: |
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BlogPosting",
-        "inLanguage": "en",
-        "headline": "Corporate Carpooling Guide (2026): Costs, ROI & Best Software",
-        "description": "A definitive guide to ridesharing and carpooling for businesses — IRS benefits, UK Clean Air Zones, Australian FBT, ESG reporting, and how TeamWheels integrates into Microsoft Teams.",
-        "datePublished": "2026-04-29",
-        "author": { "@type": "Organization", "name": "TeamWheels", "url": "https://www.teamwheelsapp.com" },
-        "publisher": { "@type": "Organization", "name": "TeamWheels" }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is ridesharing?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Ridesharing is the broad practice of sharing a vehicle journey between two or more people travelling in the same direction. It covers two distinct models: ride-hailing (paying a professional driver through an app like Uber or Bolt) and carpooling (sharing a private vehicle between peers, with costs split between participants, no driver fee). For businesses, ridesharing most commonly refers to organised employee carpooling programmes for commuting and inter-site business travel."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is carpooling?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Carpooling is a specific form of ridesharing where two or more people share a privately-owned vehicle for a common trip — most often a recurring commute. There is no professional driver: fuel and toll costs are split between participants. Carpooling qualifies for pre-tax commuter benefits in the US (IRS Section 132f), Clean Air Zone incentives in the UK, and FBT exemptions in Australia."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How much can a company save with a corporate carpooling programme?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Companies typically reduce ground transportation and fleet costs by 40–70% through structured carpooling. A 100-person company where employees commute an average of 20 miles daily can save between $80,000 and $180,000 per year in mileage reimbursements, parking subsidies, and fleet operating costs."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the difference between Uber, BlaBlaCar, and corporate carpooling?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Uber and Bolt are ride-hailing services — you pay a professional or gig-economy driver per trip. BlaBlaCar is a peer-to-peer platform designed for long-distance leisure journeys, not daily commutes. Corporate carpooling platforms like TeamWheels are purpose-built for businesses: they match colleagues by home location and schedule, integrate into Microsoft Teams, handle mileage tracking and reimbursement automatically, and generate ESG reporting data."
-            }
-          }
-        ]
-      }
-    ]
-  }
+faq:
+  - question: "What is ridesharing?"
+    answer: "Ridesharing is the broad practice of sharing a vehicle journey between two or more people travelling in the same direction. It covers two distinct models: ride-hailing (paying a professional driver through an app like Uber or Bolt) and carpooling (sharing a private vehicle between peers, with costs split between participants, no driver fee). For businesses, ridesharing most commonly refers to organised employee carpooling programmes for commuting and inter-site business travel."
+  - question: "What is carpooling?"
+    answer: "Carpooling is a specific form of ridesharing where two or more people share a privately-owned vehicle for a common trip — most often a recurring commute. There is no professional driver: fuel and toll costs are split between participants. Carpooling qualifies for pre-tax commuter benefits in the US (IRS Section 132f), Clean Air Zone incentives in the UK, and FBT exemptions in Australia."
+  - question: "How much can a company save with a corporate carpooling programme?"
+    answer: "Companies typically reduce ground transportation and fleet costs by 40–70% through structured carpooling. A 100-person company where employees commute an average of 20 miles daily can save between $80,000 and $180,000 per year in mileage reimbursements, parking subsidies, and fleet operating costs."
+  - question: "What is the difference between Uber, BlaBlaCar, and corporate carpooling?"
+    answer: "Uber and Bolt are ride-hailing services — you pay a professional or gig-economy driver per trip. BlaBlaCar is a peer-to-peer platform designed for long-distance leisure journeys, not daily commutes. Corporate carpooling platforms like TeamWheels are purpose-built for businesses: they match colleagues by home location and schedule, integrate into Microsoft Teams, handle mileage tracking and reimbursement automatically, and generate ESG reporting data."
 ---
 
 # The Smarter Way to Beat the Commute — and Cut Costs by 60%

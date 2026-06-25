@@ -8,58 +8,15 @@ author: "TeamWheels Editorial"
 reading_time: "9 min"
 keywords: "covoiturage entreprise, covoiturage domicile-travail, Forfait Mobilité Durable, loi LOM, RSE, CSRD, DPEF, ridesharing, mobilité durable, Microsoft Teams, déplacements professionnels, gestion de flotte, TeamWheels"
 canonical: "https://www.teamwheelsapp.com/fr/blog/covoiturage-entreprise-guide-2026/"
-schema: |
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BlogPosting",
-        "inLanguage": "fr-FR",
-        "headline": "Covoiturage Domicile-Travail en Entreprise : Le Guide Complet 2026",
-        "description": "Guide complet du covoiturage d'entreprise en France — FMD, loi LOM, déplacements inter-sites, flotte de véhicules et intégration Microsoft Teams avec TeamWheels.",
-        "datePublished": "2026-04-29",
-        "author": { "@type": "Organization", "name": "TeamWheels", "url": "https://www.teamwheelsapp.com" },
-        "publisher": { "@type": "Organization", "name": "TeamWheels" }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Qu'est-ce que le covoiturage domicile-travail ?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Le covoiturage domicile-travail consiste pour des salariés d'une même entreprise — ou de sites proches — à partager un véhicule particulier pour effectuer leur trajet entre leur domicile et leur lieu de travail. C'est une forme de ridesharing entre pairs, sans chauffeur professionnel, où les frais (carburant, péages) sont partagés. En France, ce dispositif est encadré par la loi d'Orientation des Mobilités (LOM) et peut être pris en charge par l'employeur via le Forfait Mobilité Durable (FMD) jusqu'à 800 € par an, exonérés de charges sociales."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Qu'est-ce que le Forfait Mobilité Durable (FMD) ?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Le Forfait Mobilité Durable est un dispositif fiscal français permettant aux employeurs de rembourser jusqu'à 800 € par an et par salarié les frais de covoiturage, vélo et trottinette pour les trajets domicile-travail. Cette somme est exonérée de cotisations sociales et d'impôt sur le revenu pour le salarié."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Quelle est la différence entre covoiturage et ridesharing ?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Le ridesharing est le terme anglophone générique désignant le partage d'un trajet en véhicule. Il englobe deux réalités : le ride-hailing (chauffeur professionnel payé à la course, comme Uber ou Bolt) et le covoiturage (véhicule privé entre particuliers avec partage des frais, sans chauffeur rémunéré). Le covoiturage est la solution la plus économique et la plus conforme aux dispositifs réglementaires français comme le FMD."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Le covoiturage inter-sites est-il éligible au FMD ?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Non. Le FMD couvre uniquement les trajets domicile-travail. Les déplacements professionnels inter-sites relèvent des indemnités kilométriques selon le barème fiscal. TeamWheels gère les deux régimes dans une interface unifiée."
-            }
-          }
-        ]
-      }
-    ]
-  }
+faq:
+  - question: "Qu'est-ce que le covoiturage domicile-travail ?"
+    answer: "Le covoiturage domicile-travail consiste pour des salariés d'une même entreprise — ou de sites proches — à partager un véhicule particulier pour effectuer leur trajet entre leur domicile et leur lieu de travail. C'est une forme de ridesharing entre pairs, sans chauffeur professionnel, où les frais (carburant, péages) sont partagés. En France, ce dispositif est encadré par la loi d'Orientation des Mobilités (LOM) et peut être pris en charge par l'employeur via le Forfait Mobilité Durable (FMD) jusqu'à 800 € par an, exonérés de charges sociales."
+  - question: "Qu'est-ce que le Forfait Mobilité Durable (FMD) ?"
+    answer: "Le Forfait Mobilité Durable est un dispositif fiscal français permettant aux employeurs de rembourser jusqu'à 800 € par an et par salarié les frais de covoiturage, vélo et trottinette pour les trajets domicile-travail. Cette somme est exonérée de cotisations sociales et d'impôt sur le revenu pour le salarié."
+  - question: "Quelle est la différence entre covoiturage et ridesharing ?"
+    answer: "Le ridesharing est le terme anglophone générique désignant le partage d'un trajet en véhicule. Il englobe deux réalités : le ride-hailing (chauffeur professionnel payé à la course, comme Uber ou Bolt) et le covoiturage (véhicule privé entre particuliers avec partage des frais, sans chauffeur rémunéré). Le covoiturage est la solution la plus économique et la plus conforme aux dispositifs réglementaires français comme le FMD."
+  - question: "Le covoiturage inter-sites est-il éligible au FMD ?"
+    answer: "Non. Le FMD couvre uniquement les trajets domicile-travail. Les déplacements professionnels inter-sites relèvent des indemnités kilométriques selon le barème fiscal. TeamWheels gère les deux régimes dans une interface unifiée."
 ---
 
 # Covoiturage en entreprise : comment diviser par deux vos coûts de mobilité

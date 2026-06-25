@@ -90,6 +90,18 @@ image_and_content_blocks:
     button:
       enable: false
 
+faq:
+  - question: "Is there a Microsoft Teams app for employee carpooling?"
+    answer: "Yes. TeamWheels is a Microsoft-validated employee carpooling app that runs inside Microsoft Teams. Employees offer and find rides through a conversational bot in Teams, with no separate app to download — which is why participation typically reaches 40%+ versus under 18% for standalone carpooling apps."
+  - question: "What is the average participation rate for corporate carpooling programs?"
+    answer: "Standalone carpooling apps usually see participation below 18% because employees won't adopt yet another app. Programs that live inside a tool employees already use daily — like TeamWheels inside Microsoft Teams — typically reach 40%+ participation."
+  - question: "How does employee carpooling reduce Scope 3 emissions?"
+    answer: "Employee commuting falls under Scope 3 Category 7 of the GHG Protocol. Carpooling cuts the number of single-occupancy vehicles, directly lowering commute emissions. TeamWheels tracks shared trips and exports the data for Scope 3, CSRD, and SEC climate disclosures — each shared commute saves roughly 6 kg of CO₂."
+  - question: "How much can employees save by carpooling to work?"
+    answer: "Employees who carpool typically save $2,000 or more per year by splitting fuel, tolls, and parking. In countries with commuter-benefit schemes (US IRS Section 132f, France's Forfait Mobilité Durable up to €900/year), the savings are higher and can be employer-subsidized tax-free."
+  - question: "Do employees need to install anything to use TeamWheels?"
+    answer: "No. TeamWheels installs once inside your Microsoft 365 tenant from AppSource. Employees use it through Microsoft Teams with their existing work account — no new app, no separate login, no onboarding."
+
 call_to_action:
   enable: true
   title: "Launch an Employee Carpooling Program in Your Organization"
