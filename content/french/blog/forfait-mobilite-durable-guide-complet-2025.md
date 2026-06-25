@@ -1,15 +1,16 @@
 ---
-title: "Forfait Mobilité Durable 2025 : Le Guide Complet pour les Entreprises"
-date: 2025-01-29
+title: "Forfait Mobilité Durable 2026 : Le Guide Complet pour les Entreprises"
+date: 2026-06-25
 draft: false
-description: "Tout savoir sur le Forfait Mobilité Durable (FMD) : montants, conditions, mise en place, justificatifs. Guide pratique pour les RH et dirigeants."
+description: "Forfait Mobilité Durable (FMD) 2026 : montants, conditions, justificatifs et comment financer le covoiturage de vos salariés. Le guide pratique pour les RH et dirigeants."
 image: "images/blog/sustainable-mobility.jpg"
-author: ""
+author: "TeamWheels Editorial"
+keywords: "forfait mobilité durable, forfait mobilité durable 2026, forfait mobilité durable urssaf, prime covoiturage, FMD covoiturage, FMD entreprise, plafond FMD 2026, mobilité durable entreprise, loi LOM, Microsoft Teams covoiturage"
 ---
 
 Le **Forfait Mobilité Durable (FMD)** est devenu un levier incontournable pour les entreprises qui souhaitent encourager les mobilités douces tout en offrant un avantage attractif à leurs collaborateurs. Pourtant, sa mise en place reste floue pour beaucoup de DRH et dirigeants.
 
-Ce guide vous explique tout ce que vous devez savoir pour déployer le FMD dans votre entreprise en 2025.
+Ce guide vous explique tout ce que vous devez savoir pour déployer le FMD dans votre entreprise en 2026 — et comment l'utiliser pour financer concrètement le covoiturage domicile-travail.
 
 ## Qu'est-ce que le Forfait Mobilité Durable ?
 
@@ -26,20 +27,22 @@ Le FMD couvre les déplacements effectués via :
 - **L'autopartage** avec des véhicules à faibles émissions
 - **Les services de mobilité partagée**
 
-## Les montants du FMD en 2025
+## Les montants du FMD en 2026
 
 ### Plafond d'exonération
 
 | Situation | Montant maximum exonéré |
 |-----------|------------------------|
-| FMD seul | **700 €/an** |
-| FMD cumulé avec abonnement transport | **800 €/an** (dont max 400€ pour transport en commun) |
-| FMD pour salariés en situation de handicap | **800 €/an** |
+| FMD seul | **600 à 700 €/an** selon les sources* |
+| FMD cumulé avec abonnement transport | plafond global **900 €/an** (2026) |
+| FMD pour salariés en situation de handicap | **900 €/an** |
+
+> ⚠️ **Plafonds en vigueur :** les montants d'exonération du FMD sont fixés chaque année par la **loi de finances**. En 2026, le **plafond global d'exonération** (FMD cumulé avec la prise en charge obligatoire des transports en commun) est porté à **900 €/an** (contre 800 € auparavant). *Le plafond du **FMD versé seul** fait l'objet de montants différents selon les sources pour 2026 (de **600 à 700 €/an**) : confirmez-le impérativement sur le [site de l'URSSAF](https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/frais-professionnels.html) ou auprès de votre expert-comptable avant tout versement.
 
 ### Ce que cela signifie concrètement
 
 Pour un salarié qui covoiture régulièrement :
-- L'employeur peut lui verser jusqu'à **700€ par an**
+- L'employeur peut lui verser jusqu'au plafond du **FMD seul** (de 600 à 700 €/an selon le montant en vigueur — voir l'avertissement ci-dessus)
 - Cette somme est **exonérée de cotisations sociales** pour l'entreprise
 - Elle est **exonérée d'impôt sur le revenu** pour le salarié
 
@@ -58,6 +61,8 @@ Chaque trajet en covoiturage, c'est :
 - Une voiture de moins sur le parking
 - Moins de stress pour vos collaborateurs
 
+Ces données alimentent directement votre reporting RSE et votre bilan GES (poste 7 — déplacements domicile-travail), de plus en plus attendu dans le cadre de la CSRD.
+
 ### 3. Économies pour l'entreprise
 
 Le FMD est exonéré de charges sociales. Comparé à une augmentation de salaire équivalente, vous économisez environ **45% du montant versé**.
@@ -72,14 +77,14 @@ Moins de voitures individuelles = moins de places de parking nécessaires. Pour 
 
 Vous devez décider :
 - **Quels modes de transport** vous souhaitez encourager
-- **Quel montant** vous allez verser (jusqu'à 700€ ou 800€)
+- **Quel montant** vous allez verser (dans la limite des plafonds 2026)
 - **Comment calculer** l'allocation (forfait, réel, mixte)
 
 ### Étape 2 : Formaliser l'accord
 
 Le FMD peut être mis en place via :
 - Un **accord d'entreprise** (recommandé pour les entreprises > 50 salariés)
-- Une **décision unilatérale de l'employeur** (DUE)
+- Une **décision unilatérale de l'employeur** (DUE), après consultation du CSE
 - Un **accord de branche** existant
 
 ### Étape 3 : Communiquer auprès des salariés
@@ -93,7 +98,17 @@ Le succès du FMD dépend de son adoption. Communiquez clairement :
 
 C'est souvent le point bloquant. Pour le covoiturage, vous devez pouvoir prouver que vos salariés ont bien effectué des trajets partagés.
 
-**C'est là que TeamWheels intervient** : notre solution génère automatiquement les attestations de covoiturage nécessaires pour justifier le versement du FMD.
+**C'est là que TeamWheels intervient** : notre [logiciel de covoiturage entreprise](/fr/corporate-carpooling-software/) génère automatiquement les attestations de covoiturage nécessaires pour justifier le versement du FMD — directement dans Microsoft Teams.
+
+## FMD et URSSAF : exonérations et conformité
+
+Pour que le FMD soit exonéré de cotisations, l'employeur doit pouvoir le justifier en cas de contrôle URSSAF. Trois points de vigilance :
+
+- **Un justificatif annuel par salarié** est exigé : attestation sur l'honneur **ou** justificatif de paiement / relevé de trajets.
+- **Conservez les preuves** transmises par vos salariés — l'URSSAF peut les réclamer lors d'un contrôle.
+- **Respectez les plafonds** d'exonération en vigueur (voir tableau ci-dessus) : tout dépassement est réintégré dans l'assiette des cotisations.
+
+L'attestation sur l'honneur seule reste **risquée** en cas de contrôle. La solution recommandée est un **relevé de trajets daté et traçable**, ce que produit automatiquement une plateforme de covoiturage intégrée.
 
 ## Les justificatifs requis pour le covoiturage
 
@@ -118,12 +133,27 @@ Le covoiturage est particulièrement adapté au FMD car :
 
 La plupart des entreprises utilisent un **forfait kilométrique** :
 - Entre **0,10€ et 0,25€ par kilomètre** parcouru en covoiturage
-- Plafonné à **700€ ou 800€ par an**
+- Plafonné au montant d'exonération annuel (700€ seul, jusqu'à 900€ en cumul)
 
 **Exemple** : Un salarié qui covoiture 30 km aller-retour, 200 jours par an :
 - 30 km × 200 jours = 6 000 km
 - À 0,10€/km = 600€ de FMD annuel
-- À 0,12€/km = 700€ (plafond atteint)
+- À 0,12€/km = 700€ (plafond FMD seul atteint)
+
+👉 Estimez le FMD et les économies pour votre entreprise avec notre [calculateur d'économies covoiturage](/fr/tools/savings-calculator/).
+
+## Prime covoiturage et FMD : ne pas confondre
+
+Deux dispositifs distincts coexistent — il est essentiel de ne pas les mélanger :
+
+- **Le Forfait Mobilité Durable (FMD)** est versé par **l'employeur** à ses salariés (jusqu'à 700€/an, exonéré).
+- **La Prime Covoiturage** est une aide financée par **l'État** (via les Certificats d'Économie d'Énergie), versée aux conducteurs qui débutent le covoiturage sur certaines plateformes partenaires.
+
+Les deux sont **cumulables** : un salarié peut percevoir la prime covoiturage de l'État **et** le FMD de son employeur. Pour l'entreprise, le FMD reste le levier directement actionnable — et le plus valorisant en matière de RSE et de marque employeur.
+
+## FMD dans la fonction publique
+
+Le FMD existe aussi dans les **trois versants de la fonction publique** (État, territoriale, hospitalière), avec des modalités et des montants propres, fixés par décret et révisés régulièrement. Les règles de versement, de cumul et de justificatifs diffèrent du secteur privé. Si vous êtes un employeur public, vérifiez le décret en vigueur et les conditions spécifiques à votre versant auprès de votre service RH ou de la DGAFP.
 
 ## Erreurs courantes à éviter
 
@@ -137,7 +167,7 @@ En cas de contrôle URSSAF, l'absence de justificatifs entraîne un redressement
 
 ### 3. Cumuler incorrectement avec le remboursement transport
 
-Si vous remboursez déjà 50% de l'abonnement transport, le cumul avec le FMD est possible mais plafonné à 800€ total.
+Si vous remboursez déjà 50% de l'abonnement transport, le cumul avec le FMD est possible mais plafonné au plafond global d'exonération (900€/an en 2026).
 
 ### 4. Imposer le même montant à tous
 
@@ -145,7 +175,7 @@ Le FMD doit être **proportionnel aux trajets effectués**. Un salarié qui ne c
 
 ## La Charte ADEME : aller plus loin
 
-L'ADEME propose aux entreprises de signer la [Charte d'Engagement Covoiturage](https://employeursprocovoiturage.ademe.fr/). En 2025, **16 grands employeurs** représentant plus d'un million de salariés l'ont déjà signée.
+L'ADEME propose aux entreprises de signer la [Charte d'Engagement Covoiturage](https://employeursprocovoiturage.ademe.fr/). De grands employeurs représentant plus d'un million de salariés l'ont déjà signée.
 
 Les engagements incluent :
 - Mettre en place le FMD covoiturage
@@ -153,6 +183,23 @@ Les engagements incluent :
 - Mesurer et publier les résultats
 
 C'est un excellent moyen de **valoriser votre engagement RSE** et de rejoindre une communauté d'entreprises engagées.
+
+## FAQ — Forfait Mobilité Durable 2026
+
+**Quel est le montant du FMD en 2026 ?**
+Le **plafond global d'exonération** est de **900 €/an** par salarié lorsque le FMD est cumulé avec la prise en charge obligatoire des transports en commun. Pour le **FMD versé seul**, les sources 2026 indiquent un plafond compris entre **600 et 700 €/an** : ces montants sont fixés en loi de finances, confirmez-les sur l'URSSAF avant tout versement.
+
+**Le covoiturage est-il éligible au FMD ?**
+Oui. Le covoiturage domicile-travail, comme conducteur ou passager, fait partie des modes de transport éligibles depuis la loi LOM.
+
+**Peut-on cumuler le FMD avec le remboursement de l'abonnement transport ?**
+Oui, dans la limite du plafond global d'exonération (900 €/an en 2026).
+
+**Quels justificatifs fournir pour le covoiturage ?**
+Une attestation de la plateforme de covoiturage ou un relevé de trajets daté est la solution recommandée. L'attestation sur l'honneur seule est acceptée mais risquée en cas de contrôle.
+
+**Le FMD est-il obligatoire ?**
+Non, le FMD reste facultatif pour l'employeur du secteur privé. Mais c'est un avantage de plus en plus attendu par les candidats et un levier RSE concret.
 
 ---
 
@@ -168,10 +215,12 @@ Avec TeamWheels, la mise en place devient simple :
 - **Attestations FMD automatiques** pour vos RH
 - **Dashboard de suivi** de l'impact CO₂
 
+Découvrez notre [logiciel de covoiturage entreprise intégré à Microsoft Teams](/fr/corporate-carpooling-software/) — conçu pour automatiser le FMD de bout en bout.
+
 ---
 
 **Prêt à lancer le covoiturage et le FMD dans votre entreprise ?**
 
-[Démarrer l'essai gratuit →](/fr/contact/)
+[Demander une démo →](/fr/contact/)
 
 *30 jours gratuits, sans engagement, sans carte bancaire.*
