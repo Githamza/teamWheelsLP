@@ -33,16 +33,16 @@ Le FMD couvre les déplacements effectués via :
 
 | Situation | Montant maximum exonéré |
 |-----------|------------------------|
-| FMD seul | **600 à 700 €/an** selon les sources* |
-| FMD cumulé avec abonnement transport | plafond global **900 €/an** (2026) |
-| FMD pour salariés en situation de handicap | **900 €/an** |
+| FMD versé seul | **600 €/an** par salarié |
+| FMD cumulé avec la prise en charge des transports en commun | plafond global **900 €/an** |
+| FMD cumulé avec la prime de transport (carburant) | plafond global **600 €/an** |
 
-> ⚠️ **Plafonds en vigueur :** les montants d'exonération du FMD sont fixés chaque année par la **loi de finances**. En 2026, le **plafond global d'exonération** (FMD cumulé avec la prise en charge obligatoire des transports en commun) est porté à **900 €/an** (contre 800 € auparavant). *Le plafond du **FMD versé seul** fait l'objet de montants différents selon les sources pour 2026 (de **600 à 700 €/an**) : confirmez-le impérativement sur le [site de l'URSSAF](https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/frais-professionnels.html) ou auprès de votre expert-comptable avant tout versement.
+> ⚠️ **Plafonds en vigueur (source URSSAF) :** pour les employeurs privés, le FMD versé seul est exonéré de cotisations sociales **dans la limite de 600 €/an et par salarié**. En cas de cumul avec la prise en charge obligatoire des transports en commun, l'exonération s'applique dans la **limite globale de 900 €/an** (contre 800 € auparavant), après déduction de votre prise en charge de l'abonnement. Ces montants sont fixés par la loi de finances et peuvent évoluer — référez-vous à la page officielle [URSSAF — Frais professionnels (FMD)](https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/frais-professionnels.html#ancre-FMD).
 
 ### Ce que cela signifie concrètement
 
 Pour un salarié qui covoiture régulièrement :
-- L'employeur peut lui verser jusqu'au plafond du **FMD seul** (de 600 à 700 €/an selon le montant en vigueur — voir l'avertissement ci-dessus)
+- L'employeur peut lui verser jusqu'à **600 €/an** (FMD seul), ou jusqu'à **900 €/an** en cumul avec la prise en charge de l'abonnement transport
 - Cette somme est **exonérée de cotisations sociales** pour l'entreprise
 - Elle est **exonérée d'impôt sur le revenu** pour le salarié
 
@@ -133,12 +133,12 @@ Le covoiturage est particulièrement adapté au FMD car :
 
 La plupart des entreprises utilisent un **forfait kilométrique** :
 - Entre **0,10€ et 0,25€ par kilomètre** parcouru en covoiturage
-- Plafonné au montant d'exonération annuel (700€ seul, jusqu'à 900€ en cumul)
+- Plafonné au montant d'exonération annuel (600€ seul, jusqu'à 900€ en cumul avec l'abonnement transport)
 
 **Exemple** : Un salarié qui covoiture 30 km aller-retour, 200 jours par an :
 - 30 km × 200 jours = 6 000 km
-- À 0,10€/km = 600€ de FMD annuel
-- À 0,12€/km = 700€ (plafond FMD seul atteint)
+- À 0,10€/km = 600€ de FMD annuel — soit le **plafond du FMD seul atteint**
+- Au-delà, seul le cumul avec la prise en charge de l'abonnement transport permet d'aller jusqu'à 900€/an
 
 👉 Estimez le FMD et les économies pour votre entreprise avec notre [calculateur d'économies covoiturage](/fr/tools/savings-calculator/).
 
@@ -146,7 +146,7 @@ La plupart des entreprises utilisent un **forfait kilométrique** :
 
 Deux dispositifs distincts coexistent — il est essentiel de ne pas les mélanger :
 
-- **Le Forfait Mobilité Durable (FMD)** est versé par **l'employeur** à ses salariés (jusqu'à 700€/an, exonéré).
+- **Le Forfait Mobilité Durable (FMD)** est versé par **l'employeur** à ses salariés (jusqu'à 600€/an exonérés, ou 900€ en cumul avec l'abonnement transport).
 - **La Prime Covoiturage** est une aide financée par **l'État** (via les Certificats d'Économie d'Énergie), versée aux conducteurs qui débutent le covoiturage sur certaines plateformes partenaires.
 
 Les deux sont **cumulables** : un salarié peut percevoir la prime covoiturage de l'État **et** le FMD de son employeur. Pour l'entreprise, le FMD reste le levier directement actionnable — et le plus valorisant en matière de RSE et de marque employeur.
@@ -187,7 +187,7 @@ C'est un excellent moyen de **valoriser votre engagement RSE** et de rejoindre u
 ## FAQ — Forfait Mobilité Durable 2026
 
 **Quel est le montant du FMD en 2026 ?**
-Le **plafond global d'exonération** est de **900 €/an** par salarié lorsque le FMD est cumulé avec la prise en charge obligatoire des transports en commun. Pour le **FMD versé seul**, les sources 2026 indiquent un plafond compris entre **600 et 700 €/an** : ces montants sont fixés en loi de finances, confirmez-les sur l'URSSAF avant tout versement.
+Le **FMD versé seul** est exonéré jusqu'à **600 €/an** par salarié (employeurs privés). Ce plafond passe à **900 €/an** en cas de cumul avec la prise en charge obligatoire des transports en commun. Ces montants sont fixés en loi de finances (source : URSSAF).
 
 **Le covoiturage est-il éligible au FMD ?**
 Oui. Le covoiturage domicile-travail, comme conducteur ou passager, fait partie des modes de transport éligibles depuis la loi LOM.
