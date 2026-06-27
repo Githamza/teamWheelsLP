@@ -37,6 +37,15 @@ features:
   enable: true
   section: "features"
 
+# video demo — "See it in action" pop-in (modal). Video loads only when the button is clicked.
+video_demo:
+  enable: true
+  button_label: "See it in action"
+  title: "See TeamWheels in action"
+  poster: "videos/teamwheels-demo-poster.jpg"   # optional still frame shown before the clip loads
+  webm: "videos/teamwheels-demo.webm"
+  mp4: "videos/teamwheels-demo.mp4"
+
 # fun facts
 fun_facts:
   enable: true

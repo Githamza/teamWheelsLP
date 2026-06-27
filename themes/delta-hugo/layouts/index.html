@@ -1,4 +1,19 @@
 {{ define "main" }}
+  {{/* ── Video demo: resolve sources once; reused by hero buttons + modal below ── */}}
+  {{ $vd := .Params.video_demo }}
+  {{ $vdWebm := "" }}
+  {{ $vdMp4 := "" }}
+  {{ $vdPoster := "" }}
+  {{ $vdOn := false }}
+  {{ if and $vd $vd.enable }}
+    {{ with $vd.webm }}{{ with resources.Get . }}{{ $vdWebm = .RelPermalink }}{{ end }}{{ end }}
+    {{ with $vd.mp4 }}{{ with resources.Get . }}{{ $vdMp4 = .RelPermalink }}{{ end }}{{ end }}
+    {{ with $vd.poster }}{{ with resources.Get . }}{{ $vdPoster = (.Resize "1100x webp").RelPermalink }}{{ end }}{{ end }}
+    {{ $vdOn = (or $vdWebm $vdMp4) }}
+  {{ end }}
+  {{ $vdLabel := "" }}
+  {{ if $vd }}{{ $vdLabel = (or $vd.button_label "See it in action") }}{{ end }}
+
   <section
     class="banner banner-2 bg-primary-soft rounded-lg wave-block overflow-hidden">
     {{ partial "essentials/header.html" . }}
@@ -34,11 +49,21 @@
               {{ with .secondary_button }}
                 {{ if .enable }}
                   <a
-                    class="btn btn-primary m-1"
+                    class="btn btn-outline-primary m-1"
                     href="{{ .link | relLangURL }}">
                     {{ with .icon }}<i class="{{ . }}"></i> {{ end }}{{ .label }}
                   </a>
                 {{ end }}
+              {{ end }}
+
+              {{/* Demo button — mobile only (under the hero title) */}}
+              {{ if $vdOn }}
+                <button
+                  type="button"
+                  class="btn btn-primary m-1 d-lg-none demo-ripple"
+                  data-open-demo>
+                  <i class="fas fa-play-circle"></i> {{ $vdLabel }}
+                </button>
               {{ end }}
             </div>
           </div>
@@ -78,6 +103,18 @@
                       alt="TeamWheels - Covoiturage intégré à Microsoft Teams" />
                   </picture>
                 {{ end }}
+              </div>
+            {{ end }}
+
+            {{/* Demo button — desktop only (under the SVG) */}}
+            {{ if $vdOn }}
+              <div class="text-center mt-4 d-none d-lg-block">
+                <button
+                  type="button"
+                  class="btn btn-primary demo-ripple"
+                  data-open-demo>
+                  <i class="fas fa-play-circle"></i> {{ $vdLabel }}
+                </button>
               </div>
             {{ end }}
           </div>
@@ -196,6 +233,88 @@
         </section>
       {{ end }}
     {{ end }}
+  {{ end }}
+
+  {{/* ── Video demo pop-in (modal). Hidden until a hero "See it in action" button is clicked. ── */}}
+  {{ if $vdOn }}
+    <div class="demo-modal" id="demoModal" hidden>
+      <div class="demo-modal__backdrop" data-close-demo></div>
+      <div
+        class="demo-modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-label="{{ with $vd }}{{ .title }}{{ end }}">
+        <button
+          type="button"
+          class="demo-modal__close"
+          data-close-demo
+          aria-label="Close demo">
+          &times;
+        </button>
+        <video
+          class="demo-modal__player"
+          id="demoModalVideo"
+          controls loop playsinline muted preload="none"
+          {{ with $vdPoster }}poster="{{ . }}"{{ end }}>
+          {{ with $vdWebm }}<source data-src="{{ . }}" type="video/webm">{{ end }}
+          {{ with $vdMp4 }}<source data-src="{{ . }}" type="video/mp4">{{ end }}
+        </video>
+      </div>
+    </div>
+    <style>
+      .demo-modal{position:fixed;inset:0;z-index:1080;display:flex;align-items:center;justify-content:center;padding:1rem}
+      .demo-modal[hidden]{display:none}
+      .demo-modal__backdrop{position:absolute;inset:0;background:rgba(11,19,43,.82);backdrop-filter:blur(2px)}
+      .demo-modal__dialog{position:relative;width:min(960px,100%);max-height:90vh}
+      .demo-modal__player{width:100%;max-height:90vh;display:block;border-radius:.75rem;background:#0b132b;box-shadow:0 1.25rem 60px rgba(0,0,0,.45);aspect-ratio:16/9;object-fit:contain}
+      .demo-modal__close{position:absolute;top:-.5rem;right:-.5rem;transform:translate(40%,-40%);width:2.5rem;height:2.5rem;border:0;border-radius:50%;background:#fff;color:#0b132b;font-size:1.5rem;line-height:1;cursor:pointer;box-shadow:0 .25rem 12px rgba(0,0,0,.3)}
+      @media(max-width:575px){.demo-modal__close{transform:none;top:.25rem;right:.25rem}}
+      body.demo-open{overflow:hidden}
+      /* Light ripple pulse to draw attention to the demo CTA */
+      .demo-ripple{animation:demoRipple 2.4s cubic-bezier(.4,0,.2,1) infinite}
+      @keyframes demoRipple{
+        0%{box-shadow:0 0 0 0 rgba(123,130,216,.45)}
+        70%{box-shadow:0 0 0 14px rgba(123,130,216,0)}
+        100%{box-shadow:0 0 0 0 rgba(123,130,216,0)}
+      }
+      .demo-ripple:hover{animation-play-state:paused}
+      @media(prefers-reduced-motion:reduce){.demo-ripple{animation:none}}
+    </style>
+    <script>
+      (function () {
+        var modal = document.getElementById('demoModal');
+        var video = document.getElementById('demoModalVideo');
+        if (!modal || !video) return;
+        var loaded = false;
+        function open() {
+          if (!loaded) {
+            loaded = true;
+            video.querySelectorAll('source[data-src]').forEach(function (s) {
+              s.src = s.getAttribute('data-src');
+            });
+            video.load();
+          }
+          modal.hidden = false;
+          document.body.classList.add('demo-open');
+          var p = video.play();
+          if (p && p.catch) p.catch(function () {});
+        }
+        function close() {
+          video.pause();
+          modal.hidden = true;
+          document.body.classList.remove('demo-open');
+        }
+        document.querySelectorAll('[data-open-demo]').forEach(function (btn) {
+          btn.addEventListener('click', open);
+        });
+        document.querySelectorAll('[data-close-demo]').forEach(function (el) {
+          el.addEventListener('click', close);
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && !modal.hidden) close();
+        });
+      })();
+    </script>
   {{ end }}
 
   {{ with .Params.fun_facts }}

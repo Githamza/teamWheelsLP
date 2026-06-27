@@ -37,6 +37,15 @@ features:
   enable: true
   section: "features"
 
+# démo vidéo — pop-in "Voir en action". La vidéo se charge uniquement au clic.
+video_demo:
+  enable: true
+  button_label: "Voir en action"
+  title: "Découvrez TeamWheels en action"
+  poster: "videos/teamwheels-demo-poster.jpg"   # image fixe optionnelle affichée avant le chargement
+  webm: "videos/teamwheels-demo.webm"
+  mp4: "videos/teamwheels-demo.mp4"
+
 # fun facts
 fun_facts:
   enable: true
