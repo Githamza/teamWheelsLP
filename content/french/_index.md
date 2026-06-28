@@ -5,7 +5,7 @@ keywords: "covoiturage entreprise, BlaBlaCar entreprise, Uber pour salariés, ap
 
 # banner
 banner:
-  subtitle: "La solution de covoiturage intégrée à Microsoft Teams"
+  subtitle: "Plébiscité par les équipes RH & développement durable"
   title: 'Le covoiturage, directement dans <span class="teams-brand">Microsoft Teams</span>'
   description: "Réduisez votre Scope 3, libérez du parking et versez le Forfait Mobilité Durable — zéro app supplémentaire, déployé en 5 minutes."
   button:

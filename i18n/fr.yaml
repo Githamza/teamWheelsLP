@@ -42,6 +42,12 @@
   
 - id: email
   translation: Adresse e-mail
+
+- id: hero_email_label
+  translation: Entrez votre email professionnel pour démarrer
+
+- id: hero_email_placeholder
+  translation: nom@entreprise.com
   
 - id: website
   translation: Site Internet
