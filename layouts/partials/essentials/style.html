@@ -123,10 +123,10 @@ main:empty{display:none}
 /* Hero/CTA email capture — make the email field obvious */
 .hero-email-label{display:block;font-weight:600;font-size:.95rem;color:#222;margin-bottom:.5rem}
 .hero-cta-form .input-group{gap:.5rem}
-.hero-cta-form .form-control{flex:1 1 220px;min-width:200px;border:1px solid rgba(0,0,0,.28);box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.hero-cta-form .input-group>.form-control{min-width:220px;border:1px solid rgba(0,0,0,.28);box-shadow:0 1px 2px rgba(0,0,0,.06)}
 .hero-cta-form .form-control::placeholder{color:#6b7280;opacity:1}
 .hero-cta-form .form-control:focus{border-color:#4d51a9;box-shadow:0 0 0 3px rgba(77,81,169,.18)}
-@media(max-width:767px){.hero-cta-form .input-group{flex-direction:column}.hero-cta-form .form-control,.hero-cta-form .btn{width:100%}}
+@media(max-width:767px){.hero-cta-form .input-group{flex-direction:column}.hero-cta-form .input-group>.form-control{flex:0 0 auto;width:100%;min-width:0}.hero-cta-form .btn{width:100%}}
 
 /* === Custom (Teams brand) === */
 .inline-teams-logo{display:inline-block;height:1.6em;width:auto;vertical-align:-.25em;margin-left:.25em}
