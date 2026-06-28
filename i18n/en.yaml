@@ -42,6 +42,12 @@
   
 - id: email
   translation: Email Address
+
+- id: hero_email_label
+  translation: Enter your work email to get started
+
+- id: hero_email_placeholder
+  translation: name@company.com
   
 - id: website
   translation: Website
