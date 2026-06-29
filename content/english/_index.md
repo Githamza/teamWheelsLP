@@ -19,7 +19,7 @@ banner:
     icon: "fas fa-calculator"
     link: "tools/savings-calculator/"
 
-  image: "images/homeBannerimg2.svg"
+  image: "images/teamwheels_demo_image.svg"
 
 # brands
 brands:
