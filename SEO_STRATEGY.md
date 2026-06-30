@@ -8,6 +8,7 @@
 
 ### French (FR)
 - ✅ Forfait Mobilité Durable 2025 : Le Guide Complet pour les Entreprises
+- ✅ Covoiturage et RSE : intégrer la mobilité durable dans votre politique d'entreprise
 
 ---
 
@@ -64,7 +65,7 @@
 
 ### February
 - [ ] **EN**: "Carpooling and ESG: A Complete Guide for HR Directors"
-- [ ] **FR**: "Covoiturage et RSE : Guide complet pour les DRH"
+- [x] **FR**: "Covoiturage et RSE : Guide complet pour les DRH" → publié sous "Covoiturage et RSE : intégrer la mobilité durable dans votre politique d'entreprise"
 
 ### March
 - [ ] **EN**: "Employee Carpooling Tax Benefits in the UK & USA"
