@@ -46,7 +46,10 @@ $level-size: $font-size;
   h#{$level},
   .h#{$level} {
     font-size: $level-size;
-    line-height: calc(10px + 2ex + 2px);
+    // 0.97em == 2 × Catamaran x-height ratio (was 2ex). Using em instead of ex
+    // makes the line box independent of the rendered font's x-height, so the
+    // web-font swap causes no reflow (no CLS). Visually identical once loaded.
+    line-height: calc(12px + 0.97em);
     @include desktop {
       font-size: calc( #{$level-size} * .85);
     }
