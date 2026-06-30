@@ -5,9 +5,11 @@
 ### English (EN)
 - ✅ Enterprise Carpooling in 2025: The Sustainable Commute Revolution
 - ✅ UK Carpooling Trends 2025: Rising Costs Drive Shared Mobility Renaissance
+- ✅ Carpooling and ESG: A Complete Guide for HR & Sustainability Directors
 
 ### French (FR)
 - ✅ Forfait Mobilité Durable 2025 : Le Guide Complet pour les Entreprises
+- ✅ Covoiturage et RSE : intégrer la mobilité durable dans votre politique d'entreprise
 
 ---
 
@@ -63,8 +65,8 @@
 - [ ] **FR**: "Covoiturage entreprise : 5 étapes pour démarrer"
 
 ### February
-- [ ] **EN**: "Carpooling and ESG: A Complete Guide for HR Directors"
-- [ ] **FR**: "Covoiturage et RSE : Guide complet pour les DRH"
+- [x] **EN**: "Carpooling and ESG: A Complete Guide for HR Directors" → published as "Carpooling and ESG: A Complete Guide for HR & Sustainability Directors"
+- [x] **FR**: "Covoiturage et RSE : Guide complet pour les DRH" → publié sous "Covoiturage et RSE : intégrer la mobilité durable dans votre politique d'entreprise"
 
 ### March
 - [ ] **EN**: "Employee Carpooling Tax Benefits in the UK & USA"
