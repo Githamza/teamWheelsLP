@@ -18,10 +18,32 @@ $light: {{.light | default "#EDF6F5"}};
 // Font Variables
 $font-size: {{.font_size | default "16px"}};
 $font-scale: {{.font_scale | default "1.25"}};
-$font-primary: '{{replace (replaceRE ":[ital,]*[ital@]*[wght@]*[0-9,;]+" "" .font_primary | default "Lato") "+" " "}}', {{.font_primary_type | default "sans-serif"}};
-$font-secondary: '{{replace (replaceRE ":[ital,]*[ital@]*[wght@]*[0-9,;]+" "" .font_secondary | default "Lato") "+" " "}}', {{.font_secondary_type | default "sans-serif"}};
+$font-primary: '{{replace (replaceRE ":[ital,]*[ital@]*[wght@]*[0-9,;]+" "" .font_primary | default "Lato") "+" " "}}', 'Catamaran Fallback', {{.font_primary_type | default "sans-serif"}};
+$font-secondary: '{{replace (replaceRE ":[ital,]*[ital@]*[wght@]*[0-9,;]+" "" .font_secondary | default "Lato") "+" " "}}', 'Rubik Fallback', {{.font_secondary_type | default "sans-serif"}};
 $font-icon: '{{.font_icon | default "Font Awesome 5 Free"}}';
 {{ end }}
+
+// Metric-matched fallback fonts to eliminate web-font swap layout shift (CLS).
+// The override values make Arial occupy the exact line box of the loaded web
+// font, so swapping from fallback to the real font causes no reflow. Values are
+// computed against Arial for the configured Catamaran (headings) + Rubik (body);
+// recompute them if either font is changed.
+@font-face {
+  font-family: 'Catamaran Fallback';
+  src: local('Arial');
+  size-adjust: 132.08%;
+  ascent-override: 83.28%;
+  descent-override: 40.88%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'Rubik Fallback';
+  src: local('Arial');
+  size-adjust: 140.91%;
+  ascent-override: 66.35%;
+  descent-override: 17.74%;
+  line-gap-override: 0%;
+}
 
 @import 'bootstrap/bootstrap';
 
