@@ -149,8 +149,11 @@ style = 'monokai' # see https://xyproto.github.io/splash/docs/all.html
 ############################# Minify ###############################
 [minify]
 minifyOutput = true
-[minify.minifyJS]
-minify = true
+# Keep inline JS un-minified so the Google tag (gtag.js) snippet ships in Google's
+# exact canonical form. Hugo's JS minifier collapses `gtag('js', new Date());` +
+# `gtag('config', ...)` into a comma-sequence with `new Date` (no parens), which
+# Google's Tag Assistant flags as "altered / incomplete / syntax error".
+disableJS = true
 [minify.minifyCSS]
 minify = true
 
