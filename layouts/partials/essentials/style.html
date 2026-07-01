@@ -4,16 +4,22 @@
 
 <!-- Critical CSS: inline above-the-fold styles to unblock rendering -->
 <style>
+/* === Metric-matched fallback fonts (eliminate web-font swap CLS) ===
+   Overrides make Arial occupy the loaded web font's exact line box, so the
+   swap from fallback to the real font causes no reflow. Computed against Arial
+   for Catamaran (headings) + Rubik (body); recompute if either font changes. */
+@font-face{font-family:"Catamaran Fallback";src:local("Arial");size-adjust:132.08%;ascent-override:83.28%;descent-override:40.88%;line-gap-override:0%}
+@font-face{font-family:"Rubik Fallback";src:local("Arial");size-adjust:140.91%;ascent-override:66.35%;descent-override:17.74%;line-gap-override:0%}
 /* === Reset & Base === */
 *,*::before,*::after{box-sizing:border-box}
-body{margin:0;font-family:"Rubik",sans-serif;font-size:16px;font-weight:400;line-height:1.7;color:#444;background-color:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body{margin:0;font-family:"Rubik","Rubik Fallback",sans-serif;font-size:16px;font-weight:400;line-height:1.7;color:#444;background-color:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 @media(min-width:1440px){body{font-size:1.125rem}}
 img{vertical-align:middle;border:0;max-width:100%;height:auto}
 a,a:hover,a:focus{text-decoration:none}
 a,button,select{cursor:pointer;transition:.2s ease}
 a:hover{color:#5b5fc7}
-h1,h2,h3,h4,h5,h6{color:#000;font-family:"Catamaran",sans-serif;font-weight:900}
-h1,.h1{font-size:2.48832rem;line-height:calc(10px + 2ex + 2px)}
+h1,h2,h3,h4,h5,h6{color:#000;font-family:"Catamaran","Catamaran Fallback",sans-serif;font-weight:900}
+h1,.h1{font-size:2.48832rem;line-height:calc(12px + 0.97em)}
 p,.paragraph{font-weight:400;color:#444}
 .img-fluid{max-width:100%;height:auto}
 
@@ -55,7 +61,7 @@ p,.paragraph{font-weight:400;color:#444}
 .text-xl{font-size:3.625rem}
 @media(max-width:991px){.text-xl{font-size:3rem}}
 @media(max-width:767px){.text-xl{font-size:2.3rem}}
-.subtitle{font-family:"Rubik",sans-serif;font-weight:700;color:#155a99!important}
+.subtitle{font-family:"Rubik","Rubik Fallback",sans-serif;font-weight:700;color:#155a99!important}
 .text-dark{color:#222!important}
 
 /* === Rounded === */
@@ -90,8 +96,11 @@ p,.paragraph{font-weight:400;color:#444}
 
 /* === Buttons === */
 .btn{display:inline-block;font-weight:400;line-height:1.5;color:#222;text-align:center;text-decoration:none;vertical-align:middle;cursor:pointer;-webkit-user-select:none;user-select:none;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;border-radius:.375rem;transition:color .15s,background-color .15s,border-color .15s,box-shadow .15s}
-.btn{font-size:16px;font-family:"Rubik",sans-serif;text-transform:capitalize;padding:.95em 1.9em;font-weight:500;border-radius:50px;border:1px solid;position:relative;z-index:1;transition:.2s ease}
+.btn{font-size:16px;font-family:"Rubik","Rubik Fallback",sans-serif;text-transform:capitalize;padding:.95em 1.9em;font-weight:500;border-radius:50px;border:1px solid;position:relative;z-index:1;transition:.2s ease}
 .btn-primary{background:linear-gradient(135deg,#7b82d8 0%,#4d51a9 100%);color:#fff;border:0}
+/* "See it in action" demo button — green gradient to stand out from the primary CTA */
+.btn.demo-ripple{background:linear-gradient(135deg,#2bd576 0%,#0f9d58 100%);color:#fff;border:0}
+.btn.demo-ripple:hover,.btn.demo-ripple:focus{background:linear-gradient(135deg,#25c46b 0%,#0b8a4d 100%);color:#fff}
 .btn-outline-secondary{color:#050038;border-color:#C2C2C2}
 .btn-play{padding:6px 25px 6px 7px}
 .btn-play i{border:1px solid #C2C2C2;border-radius:50px;height:2.5rem;width:2.5rem;line-height:2.5rem;margin-right:8px;font-size:13px;padding-left:2px;background-color:#fff;color:#5b5fc7;text-align:center;transition:.2s}
