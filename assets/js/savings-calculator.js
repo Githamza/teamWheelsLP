@@ -340,6 +340,22 @@
     var gaugeChart = null;
     var lastResult = null;
 
+    // Fire a GA4 event via gtag (loaded site-wide) and mirror to dataLayer for
+    // future GTM. Mark these as Secondary/observe-only micro-conversions in Ads.
+    function track(eventName, params) {
+      var data = params || {};
+      try {
+        if (typeof window.gtag === 'function') window.gtag('event', eventName, data);
+      } catch (e) {}
+      try {
+        if (window.dataLayer) {
+          var payload = { event: eventName };
+          for (var k in data) { if (data.hasOwnProperty(k)) payload[k] = data[k]; }
+          window.dataLayer.push(payload);
+        }
+      } catch (e2) {}
+    }
+
     applyI18n(root, lang);
     populateCountrySelect(lang);
 
@@ -402,9 +418,9 @@
       }
       if (n === 3) renderResults();
       if (n === 4) prepareShare();
-      try {
-        if (window.dataLayer) window.dataLayer.push({ event: 'calculator_step_complete', step: n });
-      } catch (e) {}
+      track('calculator_step_complete', { step: n, lang: lang });
+      // Reaching the results step is a strong intent signal.
+      if (n === 3) track('calculator_results_viewed', { lang: lang });
     }
 
     function renderResults() {
@@ -549,9 +565,9 @@
         lastResult = result;
         generatePDF(result, state, userInfo);
         sendLead(userInfo, state, result);
-        try {
-          if (window.dataLayer) window.dataLayer.push({ event: 'calculator_pdf_downloaded', lang: lang, country: state.country });
-        } catch (e2) {}
+        // Lead captured + report downloaded — the calculator micro-conversion.
+        track('calculator_lead_submit', { lang: lang, country: state.country });
+        track('calculator_pdf_downloaded', { lang: lang, country: state.country });
       });
     }
 

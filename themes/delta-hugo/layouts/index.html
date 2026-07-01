@@ -31,6 +31,9 @@
               {{ with .button }}
                 {{ if .enable }}
                   <form action="https://formspree.io/f/mnqepday" method="POST" class="hero-cta-form">
+                    {{/* Formspree redirect on success → fires the Google Ads
+                         conversion from the thank-you page. */}}
+                    <input type="hidden" name="_next" value="{{ absLangURL "thank-you/" }}" />
                     <label for="hero-email" class="hero-email-label">{{ i18n "hero_email_label" }}</label>
                     <div class="input-group mb-2">
                       <input
