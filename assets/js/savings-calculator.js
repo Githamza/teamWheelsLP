@@ -576,7 +576,8 @@
         var cd2 = getCurrencyDefaults(st.currency);
         var sym = cd2.currencySymbol;
         var payload = {
-          _subject: '[Savings Calculator] ' + (userInfo.company || '') + ' - ' + (userInfo.firstName || ''),
+          access_key: 'a39ddfc6-490f-4161-8857-2e9ec0086121',
+          subject: '[Savings Calculator] ' + (userInfo.company || '') + ' - ' + (userInfo.firstName || ''),
           source: 'savings-calculator',
           language: lang,
           currency: st.currency,
@@ -600,7 +601,7 @@
           submittedAt: new Date().toISOString(),
           pageUrl: window.location.href
         };
-        fetch('https://formspree.io/f/mnqepday', {
+        fetch('https://api.web3forms.com/submit', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
           body: JSON.stringify(payload)

@@ -43,8 +43,10 @@ preloader = "images/logo.png" # use jpg, png, svg or gif format.
 address = ""
 mobile = ""
 email = "contact@teamwheels.fr"
-# contact form action
-contact_form_action = "https://formspree.io/f/mnqepday" # contact form works with https://formspree.io or any formspree-alternatives
+# contact form action (Web3Forms — https://web3forms.com)
+contact_form_action = "https://api.web3forms.com/submit"
+# Web3Forms public access key (safe to expose client-side; tied to the destination email)
+web3forms_access_key = "a39ddfc6-490f-4161-8857-2e9ec0086121"
 
 # Navigation buttons
 [navigation_button]

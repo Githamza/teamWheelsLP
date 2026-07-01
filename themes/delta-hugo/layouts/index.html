@@ -30,10 +30,13 @@
 
               {{ with .button }}
                 {{ if .enable }}
-                  <form action="https://formspree.io/f/mnqepday" method="POST" class="hero-cta-form">
-                    {{/* Formspree redirect on success → fires the Google Ads
+                  <form action="{{ site.Params.contact_info.contact_form_action }}" method="POST" class="hero-cta-form">
+                    {{/* Web3Forms redirect on success → fires the Google Ads
                          conversion from the thank-you page. */}}
-                    <input type="hidden" name="_next" value="{{ absLangURL "thank-you/" }}" />
+                    <input type="hidden" name="access_key" value="{{ site.Params.contact_info.web3forms_access_key }}" />
+                    <input type="hidden" name="redirect" value="{{ absLangURL "thank-you/" }}" />
+                    <input type="hidden" name="subject" value="{{ i18n `contact_form_subject` }}" />
+                    <input type="checkbox" name="botcheck" class="d-none" style="display:none" tabindex="-1" autocomplete="off" />
                     <label for="hero-email" class="hero-email-label">{{ i18n "hero_email_label" }}</label>
                     <div class="input-group mb-2">
                       <input
@@ -396,9 +399,13 @@
                 {{ with .button }}
                   {{ if .enable }}
                     <form
-                      action="https://formspree.io/f/mnqepday"
+                      action="{{ site.Params.contact_info.contact_form_action }}"
                       method="POST"
                       class="hero-cta-form">
+                      <input type="hidden" name="access_key" value="{{ site.Params.contact_info.web3forms_access_key }}" />
+                      <input type="hidden" name="redirect" value="{{ absLangURL "thank-you/" }}" />
+                      <input type="hidden" name="subject" value="{{ i18n `contact_form_subject` }}" />
+                      <input type="checkbox" name="botcheck" class="d-none" style="display:none" tabindex="-1" autocomplete="off" />
                       <label for="cta-email" class="hero-email-label">{{ i18n "hero_email_label" }}</label>
                       <div class="input-group my-2">
                         <input

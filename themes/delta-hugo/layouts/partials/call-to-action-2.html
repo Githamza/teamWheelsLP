@@ -15,11 +15,13 @@
                   </p>
                   {{ if .Params.call_to_action.button_label }}
                     <form
-                      action="https://formspree.io/f/mnqepday"
+                      action="{{ site.Params.contact_info.contact_form_action }}"
                       method="POST">
-                      {{/* Formspree redirect on success → fires the Google Ads
+                      {{/* Web3Forms redirect on success → fires the Google Ads
                            conversion from the thank-you page. */}}
-                      <input type="hidden" name="_next" value="{{ absLangURL "thank-you/" }}" />
+                      <input type="hidden" name="access_key" value="{{ site.Params.contact_info.web3forms_access_key }}" />
+                      <input type="hidden" name="redirect" value="{{ absLangURL "thank-you/" }}" />
+                      <input type="hidden" name="subject" value="{{ i18n `contact_form_subject` }}" />
                       <div class="input-group mb-3">
                         <input
                           required
