@@ -107,7 +107,7 @@ enable = false
 username = "" # your username
 
 # Optional: Google Tag Manager container ID only when you create a GTM-xxxx container (not Ads/GA IDs).
-# google_tag_manager = "GTM-XXXXXXX"
+google_tag_manager = "GTM-T56H84HP"
 
 # site verifications
 [site_verification]
