@@ -10,7 +10,10 @@
 */}}
 {{- $isRootRedirect := and .IsHome (eq .RelPermalink "/") -}}
 {{- $isTaxonomy := or (eq .Kind "term") (eq .Kind "taxonomy") -}}
-{{- if or $isRootRedirect $isTaxonomy -}}
+{{- /* Pages opting out of indexing via `noindex: true` front matter (e.g. the
+       post-submit thank-you pages — conversion landing pages, not SEO targets). */ -}}
+{{- $isNoindex := .Params.noindex -}}
+{{- if or $isRootRedirect $isTaxonomy $isNoindex -}}
 <meta name="robots" content="noindex, follow" />
 {{- else -}}
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />

@@ -16,8 +16,10 @@
                   {{ if .Params.call_to_action.button_label }}
                     <form
                       action="https://formspree.io/f/mnqepday"
-                      method="POST"
-                      onsubmit="if(typeof gtag==='function'){gtag('event','conversion',{'send_to':'{{ site.Params.google_ads_id }}/s8otCKrN2aYcEIe2rsIp'});}">
+                      method="POST">
+                      {{/* Formspree redirect on success → fires the Google Ads
+                           conversion from the thank-you page. */}}
+                      <input type="hidden" name="_next" value="{{ absLangURL "thank-you/" }}" />
                       <div class="input-group mb-3">
                         <input
                           required

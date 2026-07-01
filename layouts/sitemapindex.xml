@@ -18,7 +18,8 @@
     {{- range .Pages -}}
       {{- $isRoot := eq .RelPermalink "/" -}}
       {{- $isTaxonomy := or (eq .Kind "term") (eq .Kind "taxonomy") -}}
-      {{- if and (not $isRoot) (not $isTaxonomy) }}
+      {{- $isNoindex := .Params.noindex -}}
+      {{- if and (not $isRoot) (not $isTaxonomy) (not $isNoindex) }}
   <url>
     <loc>{{ .Permalink }}</loc>
     {{- if not .Lastmod.IsZero }}
