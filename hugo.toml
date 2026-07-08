@@ -75,5 +75,5 @@ link = "js/gallery-slider.js"
 link = "js/accordion.js"
 [[params.plugins.js]]
 link = "js/tab.js"
-[[params.plugins.js]]
-link = "plugins/webfont/webfont-loader-2.js"
+# Web fonts are self-hosted via @font-face (see essentials/style.html); the
+# webfont-loader plugin is intentionally removed to shrink the JS bundle.
