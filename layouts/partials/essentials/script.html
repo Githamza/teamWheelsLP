@@ -25,18 +25,24 @@
 <script type="application/javascript">
   (function(){
     function loadFonts(){
-      if(typeof WebFont!=='undefined'){
-        WebFont.load({
-          google: {
-            api: 'https://fonts.googleapis.com/css2',
-            families: ['{{$pf | default `Lato:wght@400`}}:wght@400;700&display=swap'{{with $sf}},'{{. | default `Lato:wght@400`}}:wght@400;500;600&display=swap'{{end}}],
-            version: 2
-          },
-          active: function(){sessionStorage.fontsLoaded=true}
-        });
-      }
+      // WebFont is defined by the deferred, concatenated scripts.js bundle. On a
+      // cold first load that bundle can still be in flight when this idle callback
+      // fires, leaving WebFont undefined. Previously we bailed silently and never
+      // retried, so the page stayed on the Arial fallback until a manual reload.
+      // Re-schedule instead of giving up — this keeps the lazy, non-blocking load
+      // strategy intact (no critical-path or CLS impact) while guaranteeing the
+      // real fonts eventually apply on the first visit.
+      if(typeof WebFont==='undefined'){setTimeout(loadFonts,150);return}
+      WebFont.load({
+        google: {
+          api: 'https://fonts.googleapis.com/css2',
+          families: ['{{$pf | default `Lato:wght@400`}}:wght@400;700&display=swap'{{with $sf}},'{{. | default `Lato:wght@400`}}:wght@400;500;600&display=swap'{{end}}],
+          version: 2
+        },
+        active: function(){sessionStorage.fontsLoaded=true}
+      });
     }
-    if('requestIdleCallback' in window){requestIdleCallback(loadFonts)}
+    if('requestIdleCallback' in window){requestIdleCallback(loadFonts,{timeout:1500})}
     else{setTimeout(loadFonts,50)}
   })();
 </script>
