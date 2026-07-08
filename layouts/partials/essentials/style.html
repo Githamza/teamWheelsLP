@@ -10,6 +10,15 @@
    for Catamaran (headings) + Rubik (body); recompute if either font changes. */
 @font-face{font-family:"Catamaran Fallback";src:local("Arial");size-adjust:132.08%;ascent-override:83.28%;descent-override:40.88%;line-gap-override:0%}
 @font-face{font-family:"Rubik Fallback";src:local("Arial");size-adjust:140.91%;ascent-override:66.35%;descent-override:17.74%;line-gap-override:0%}
+/* === Self-hosted web fonts (variable, subset to latin + latin-ext) ===
+   Served same-origin from /fonts/ — no third-party round-trip and no JS font
+   loader, so there is no race that can leave the first paint on the fallback.
+   font-display:swap keeps text visible immediately; the *Fallback families
+   above are metric-matched so the swap to the real font causes no reflow. */
+@font-face{font-family:"Catamaran";font-style:normal;font-weight:700 900;font-display:swap;src:url("/fonts/catamaran-latin.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Catamaran";font-style:normal;font-weight:700 900;font-display:swap;src:url("/fonts/catamaran-latin-ext.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Rubik";font-style:normal;font-weight:400 600;font-display:swap;src:url("/fonts/rubik-latin.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Rubik";font-style:normal;font-weight:400 600;font-display:swap;src:url("/fonts/rubik-latin-ext.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 /* === Reset & Base === */
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;font-family:"Rubik","Rubik Fallback",sans-serif;font-size:16px;font-weight:400;line-height:1.7;color:#444;background-color:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
