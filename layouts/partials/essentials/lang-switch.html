@@ -1,0 +1,26 @@
+{{- /* Flag-based language switcher. Renders every site language as a
+       flag + code link so the current/available languages are obvious at a
+       glance. Links to the translated page when it exists, otherwise to the
+       target language home. Pass the current page as context. */ -}}
+{{- $page := . -}}
+{{- $cur := .Lang -}}
+<div class="lang-switch" role="group" aria-label="{{ i18n `select_language` | default `Select language` }}">
+  {{- range site.Languages -}}
+    {{- $l := . -}}
+    {{- $url := "" -}}
+    {{- range $page.AllTranslations -}}
+      {{- if eq .Lang $l.Lang -}}{{- $url = .Permalink -}}{{- end -}}
+    {{- end -}}
+    {{- if not $url -}}{{- $url = printf "/%s/" $l.Lang | relURL -}}{{- end -}}
+    {{- $active := eq $l.Lang $cur -}}
+    <a
+      href="{{ $url }}"
+      class="lang-switch__item{{ if $active }} is-active{{ end }}"
+      hreflang="{{ $l.Lang }}"
+      {{ if $active }}aria-current="true"{{ end }}
+      title="{{ $l.LanguageName | default ($l.Lang | upper) }}">
+      {{ partial "essentials/flag.html" $l.Lang }}
+      <span class="lang-switch__label">{{ $l.Lang | upper }}</span>
+    </a>
+  {{- end -}}
+</div>
