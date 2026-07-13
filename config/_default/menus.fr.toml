@@ -1,46 +1,74 @@
 ############# French navigation ##############
+# Regroupé en menus déroulants logiques pour alléger la barre :
+#   Accueil · Produit ▾ · Tarifs · Ressources ▾ · Contact
+# Les menus s'ouvrent au survol (desktop) — voir le CSS .navbar
+# dans assets/scss/custom.scss.
 
 # main menu
 [[main]]
 weight = 1
 name = "Accueil"
 url = ""
-hasChildren = false
 
+# ── Produit ▾ ──
 [[main]]
-name = "Logiciel Covoiturage"
-url = "corporate-carpooling-software/"
+identifier = "product"
+name = "Produit"
 weight = 2
 
 [[main]]
+parent = "product"
+name = "Logiciel Covoiturage"
+url = "corporate-carpooling-software/"
+weight = 1
+
+[[main]]
+parent = "product"
 name = "Comment ça marche ?"
 url = "how-it-works/"
+weight = 2
+
+[[main]]
+parent = "product"
+name = "Avantages"
+url = "benefits/"
 weight = 3
 
 [[main]]
-name = "Avantages"
-url = "benefits/"
+parent = "product"
+name = "Voir la démo"
+url = "demo/"
 weight = 4
 
+# ── Tarifs (autonome) ──
 [[main]]
 name = "Tarifs"
 url = "pricing/"
-weight = 5
+weight = 3
+
+# ── Ressources ▾ ──
+[[main]]
+identifier = "resources"
+name = "Ressources"
+weight = 4
 
 [[main]]
+parent = "resources"
 name = "Calculateur d'économies"
 url = "tools/savings-calculator/"
-weight = 6
+weight = 1
 
 [[main]]
+parent = "resources"
 name = "Blog"
 url = "blog/"
-weight = 7
+weight = 2
 
+# ── Contact (autonome) ──
 [[main]]
 name = "Contact"
 url = "contact/"
-weight = 8
+weight = 5
 
 
 
