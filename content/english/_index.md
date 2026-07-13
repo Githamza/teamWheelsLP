@@ -42,7 +42,15 @@ video_demo:
   enable: true
   button_label: "See it in action"
   title: "See TeamWheels in action"
-  poster: "videos/teamwheels-demo-poster.jpg"   # optional still frame shown before the clip loads
+  # description / uploadDate / duration feed the VideoObject structured data
+  # (layouts/partials/seo/schema.html) that makes the clip eligible as a
+  # Google video result. uploadDate is ISO 8601; duration is ISO 8601 (PT#M#S).
+  description: "A 60-second walkthrough of TeamWheels — the employee carpooling and commute-management app that runs natively inside Microsoft Teams. See ride matching, the conversational bot, and the Scope 3 emissions dashboard in action."
+  uploadDate: "2026-07-13"
+  duration: "PT1M1S"        # ISO 8601, for VideoObject JSON-LD
+  duration_seconds: 61      # plain seconds, for the video sitemap
+  watch_page: "/demo/"                            # dedicated watch page for this video
+  poster: "videos/teamwheels-demo-poster.jpg"   # still frame shown before the clip loads / video thumbnail
   webm: "videos/teamwheels-demo.webm"
   mp4: "videos/teamwheels-demo.mp4"
 

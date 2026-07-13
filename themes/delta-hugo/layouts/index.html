@@ -267,8 +267,11 @@
           id="demoModalVideo"
           controls loop playsinline muted preload="none"
           {{ with $vdPoster }}poster="{{ . }}"{{ end }}>
-          {{ with $vdWebm }}<source data-src="{{ . }}" type="video/webm">{{ end }}
-          {{ with $vdMp4 }}<source data-src="{{ . }}" type="video/mp4">{{ end }}
+          {{/* Real `src` (not data-src) so Googlebot can discover the video file.
+               `preload="none"` on the <video> keeps the bytes from downloading
+               until the visitor actually plays — zero cost to initial page load. */}}
+          {{ with $vdWebm }}<source src="{{ . }}" type="video/webm">{{ end }}
+          {{ with $vdMp4 }}<source src="{{ . }}" type="video/mp4">{{ end }}
         </video>
       </div>
     </div>
@@ -300,9 +303,7 @@
         function open() {
           if (!loaded) {
             loaded = true;
-            video.querySelectorAll('source[data-src]').forEach(function (s) {
-              s.src = s.getAttribute('data-src');
-            });
+            // Sources carry a real `src`; kick off the load on first open.
             video.load();
           }
           modal.hidden = false;
