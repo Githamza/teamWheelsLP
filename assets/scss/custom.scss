@@ -421,3 +421,53 @@ $gutters: (
     white-space: nowrap;
   }
 }
+
+// ─────────────────────────────────────────────────────────────
+// Flag-based language switcher (replaces the old <select>).
+// Shows FR / EN with an inline SVG flag so the active + available
+// languages read at a glance.
+// ─────────────────────────────────────────────────────────────
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.45rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: $text-dark;
+    text-decoration: none;
+    opacity: 0.55;
+    transition: opacity 0.15s ease, background-color 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      opacity: 1;
+      background-color: rgba(91, 95, 199, 0.1); // color_primary @ 10%
+      color: $color-primary;
+    }
+
+    &.is-active {
+      opacity: 1;
+      color: $color-primary;
+    }
+  }
+
+  &__label {
+    text-transform: uppercase;
+  }
+
+  .lang-flag {
+    display: block;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(11, 19, 43, 0.12);
+    flex-shrink: 0;
+  }
+}

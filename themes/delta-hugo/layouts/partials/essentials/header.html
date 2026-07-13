@@ -12,38 +12,10 @@
       </a>
 
       <div class="navbar-actions">
-        <!-- Language List -->
-        {{ if .IsTranslated }}
-          <select
-            class="border-0 d-inline d-xl-none"
-            aria-label="{{ i18n "select_language" | default "Select language" }}"
-            onchange="location = this.value;">
-            {{ $siteLanguages := site.Languages }}
-            {{ $pageLang := .Page.Lang }}
-            {{ range .Page.AllTranslations }}
-              {{ $translation := . }}
-              {{ range $siteLanguages }}
-                {{ if eq $translation.Lang .Lang }}
-                  {{ $selected := false }}
-                  {{ if eq $pageLang .Lang }}
-                    <option
-                      id="{{ $translation.Language }}"
-                      value="{{ $translation.RelPermalink }}"
-                      selected>
-                      {{ .LanguageName }}
-                    </option>
-                  {{ else }}
-                    <option
-                      id="{{ $translation.Language }}"
-                      value="{{ $translation.RelPermalink }}">
-                      {{ .LanguageName }}
-                    </option>
-                  {{ end }}
-                {{ end }}
-              {{ end }}
-            {{ end }}
-          </select>
-        {{ end }}
+        <!-- Language switcher (flags) — mobile / below xl -->
+        <div class="d-inline-flex d-xl-none me-2">
+          {{ partial "essentials/lang-switch.html" . }}
+        </div>
 
 
         <button
@@ -128,39 +100,8 @@
             {{ end }}
           {{ end }}
           <li class="nav-item d-none d-xl-block">
-            <!-- Language List -->
-            {{ if .IsTranslated }}
-              <select
-                class="border-0"
-                id="select-language"
-                aria-label="{{ i18n "select_language" | default "Select language" }}"
-                onchange="location = this.value;">
-                {{ $siteLanguages := site.Languages }}
-                {{ $pageLang := .Page.Lang }}
-                {{ range .Page.AllTranslations }}
-                  {{ $translation := . }}
-                  {{ range $siteLanguages }}
-                    {{ if eq $translation.Lang .Lang }}
-                      {{ $selected := false }}
-                      {{ if eq $pageLang .Lang }}
-                        <option
-                          id="{{ $translation.Language }}"
-                          value="{{ $translation.RelPermalink }}"
-                          selected>
-                          {{ .LanguageName }}
-                        </option>
-                      {{ else }}
-                        <option
-                          id="{{ $translation.Language }}"
-                          value="{{ $translation.RelPermalink }}">
-                          {{ .LanguageName }}
-                        </option>
-                      {{ end }}
-                    {{ end }}
-                  {{ end }}
-                {{ end }}
-              </select>
-            {{ end }}
+            <!-- Language switcher (flags) — desktop / xl and up -->
+            {{ partial "essentials/lang-switch.html" . }}
           </li>
         </ul>
 
