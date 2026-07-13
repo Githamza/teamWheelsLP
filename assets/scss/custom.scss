@@ -383,41 +383,41 @@ $gutters: (
 }
 
 // ─────────────────────────────────────────────────────────────
-// Grouped navigation: open dropdowns on hover (desktop / ≥xl).
-// Below the navbar-expand-xl breakpoint the menu collapses to a
-// vertical list and Bootstrap's click-toggle takes over, so the
-// hover rules are scoped to the expanded (desktop) layout only.
+// Grouped navigation dropdowns (desktop / ≥xl).
+// The theme (_navigation.scss) draws the panel background with a
+// `::after` pseudo whose height is *animated* from 0 → 100% while the
+// menu itself is forced to height:0. With more than a couple of items
+// that animation leaves the lower entries (Benefits, Watch Demo)
+// sitting outside the white box, on top of the page. Replace that
+// fragile mechanism with a plain solid panel that always fits its
+// content, keeping the hover-to-open behaviour.
 // ─────────────────────────────────────────────────────────────
 @media (min-width: 1200px) {
-  .navbar .nav-item.dropdown {
-    // let the pointer travel from the toggle to the panel without a gap
-    .dropdown-menu {
-      display: block;
-      margin-top: 0;
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-      transform: translateY(6px);
-      transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
-      border: 0;
-      border-radius: 0.5rem;
-      box-shadow: 0 0.75rem 2rem rgba(11, 19, 43, 0.14);
-      padding: 0.4rem;
-      min-width: 13rem;
+  .navbar .nav-item.dropdown > .dropdown-menu {
+    height: auto !important;              // undo the theme's height:0
+    background-color: #fff !important;    // solid, opaque panel
+    border-radius: 0.5rem;
+    padding: 0.4rem;
+    min-width: 13rem;
+    box-shadow: 0 0.9rem 2rem rgba(11, 19, 43, 0.14);
+
+    // Kill the animated white pseudo-background that was clipping items.
+    &::after {
+      display: none !important;
     }
 
-    &:hover > .dropdown-menu,
-    &:focus-within > .dropdown-menu {
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
-      transform: translateY(0);
+    // The theme staggers items in with opacity:0 + translateX; ensure
+    // they're fully visible once the panel is open.
+    li {
+      opacity: 1 !important;
+      transform: none !important;
     }
+  }
 
-    .dropdown-item {
-      border-radius: 0.375rem;
-      padding: 0.5rem 0.85rem;
-      font-weight: 500;
-    }
+  .navbar .nav-item.dropdown .dropdown-item {
+    border-radius: 0.375rem;
+    padding: 0.5rem 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
   }
 }
