@@ -42,7 +42,14 @@ video_demo:
   enable: true
   button_label: "Voir en action"
   title: "Découvrez TeamWheels en action"
-  poster: "videos/teamwheels-demo-poster.jpg"   # image fixe optionnelle affichée avant le chargement
+  # description / uploadDate / duration alimentent les données structurées
+  # VideoObject (layouts/partials/seo/schema.html) et le sitemap vidéo.
+  description: "Démonstration de 60 secondes de TeamWheels — l'application de covoiturage et de gestion des trajets domicile-travail intégrée nativement à Microsoft Teams. Découvrez le matching de trajets, le bot conversationnel et le tableau de bord des émissions Scope 3."
+  uploadDate: "2026-07-13"
+  duration: "PT1M1S"
+  duration_seconds: 61
+  watch_page: "/demo/"
+  poster: "videos/teamwheels-demo-poster.jpg"   # image fixe affichée avant le chargement / miniature de la vidéo
   webm: "videos/teamwheels-demo.webm"
   mp4: "videos/teamwheels-demo.mp4"
 
