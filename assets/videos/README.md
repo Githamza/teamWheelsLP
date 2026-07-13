@@ -25,8 +25,11 @@ ffmpeg -i demo-source.mov -c:v libvpx-vp9 -b:v 0 -crf 33 -an \
 ffmpeg -i demo-source.mov -c:v libx264 -crf 28 -an -movflags +faststart \
   -vf "scale=1280:-2" assets/videos/teamwheels-demo.mp4
 
-# Poster (grab a representative frame, e.g. at 2s)
-ffmpeg -i demo-source.mov -ss 00:00:02 -frames:v 1 \
+# Poster / video thumbnail — grab a REPRESENTATIVE, settled frame.
+# The opening seconds aren't meaningful, so pull a frame from mid-clip
+# (the current poster is the TeamWheels home screen at ~25s). Pick a
+# moment where the UI is static, not mid-animation, so text stays sharp.
+ffmpeg -i demo-source.mov -ss 00:00:25 -frames:v 1 -q:v 2 \
   assets/videos/teamwheels-demo-poster.jpg
 ```
 
