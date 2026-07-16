@@ -272,7 +272,13 @@
   {{- with $vPoster }}
   "thumbnailUrl": [{{ . | jsonify | safeJS }}],
   {{- end }}
-  "uploadDate": {{ (or .uploadDate ($page.PublishDate.Format "2006-01-02")) | jsonify | safeJS }},
+  {{- /* uploadDate must be a full ISO 8601 datetime WITH a timezone offset,
+         or Google Search Console flags it ("missing a timezone" / "invalid
+         datetime"). Front matter may supply a bare date (e.g. 2026-07-13);
+         normalize it — and the PublishDate fallback — to 00:00:00 at the
+         numeric offset (Z for UTC) via time.AsTime. */ -}}
+  {{- $uploadDate := or .uploadDate $page.PublishDate -}}
+  "uploadDate": {{ (time.AsTime $uploadDate).Format "2006-01-02T15:04:05Z07:00" | jsonify | safeJS }},
   {{- with .duration }}
   "duration": {{ . | jsonify | safeJS }},
   {{- end }}
