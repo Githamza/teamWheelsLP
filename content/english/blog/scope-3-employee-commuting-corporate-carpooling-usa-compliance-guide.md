@@ -238,7 +238,7 @@ TeamWheels was built specifically for the enterprise carpooling use case — not
 - **Azure AD SSO integration** — employees sign in with existing corporate credentials
 - **Multi-device support** — works on desktop, tablet, and mobile within Teams
 
-By integrating directly into the tool your employees already use every day, TeamWheels eliminates the adoption barrier that kills most corporate carpooling initiatives before they gain traction.
+By integrating directly into the tool your employees already use every day, TeamWheels' [employee transportation software](/en/corporate-carpooling-software/) eliminates the adoption barrier that kills most corporate carpooling initiatives before they gain traction.
 
 ---
 

@@ -99,6 +99,29 @@ image_and_content_blocks:
       enable: false
 
   - enable: true
+    anchor: "how-to-choose"
+    subtitle: "Buyer's Guide"
+    title: "How to Choose Carpool Management Software"
+    image: "images/carpooling_kpis.png"
+    content_position: "right"
+    content: "Comparison lists of carpool management software rank dozens of vendors — but for an employee commute program, five criteria decide whether the investment pays off:
+
+    * **Adoption path** — Will employees actually use it? Standalone employee transportation software depends on app downloads; TeamWheels removes that step entirely by living inside Microsoft Teams
+
+    * **Admin control & visibility** — Participation, ride, and site-level data in one dashboard, without spreadsheet exports
+
+    * **Reporting depth** — Scope 3 Category 7, CSRD, and commuter-benefit documentation generated from real trip records
+
+    * **Commute mode coverage** — Carpool-first, with room to grow into vanpool groups and multi-site programs as participation scales
+
+    * **Security & compliance** — SSO through your identity provider, GDPR compliance, and data that stays in your Microsoft 365 tenant
+
+    Shortlisting vendors? [Compare pricing →](/en/pricing/) or put TeamWheels through the same test with a free 30-day trial.
+    "
+    button:
+      enable: false
+
+  - enable: true
     anchor: "white-label-hr-integration"
     subtitle: "White-Label & HR-System Integration"
     title: "Benefits of a White-Label Carpool App Integrated With Your HR Systems"
@@ -155,6 +178,10 @@ faq:
     answer: "TeamWheels offers a free 30-day trial, then transparent per-seat pricing from 5€ per seat per month. Most organizations reach positive ROI within the first quarter through parking-cost savings alone."
   - question: "Which countries does TeamWheels support?"
     answer: "Companies across the USA, UK, and Canada run TeamWheels today, with full support for France including the Forfait Mobilité Durable."
+  - question: "How do I choose the best carpool management software?"
+    answer: "Evaluate five criteria: employee adoption path (the #1 failure point — software employees must download separately rarely passes 18% participation), admin visibility and controls, reporting depth for Scope 3 and commuter benefits, commute mode coverage including vanpool options, and security (SSO, GDPR, data residency). TeamWheels leads on adoption because it runs inside Microsoft Teams, reaching 40%+ participation with no separate app."
+  - question: "Does TeamWheels cover vanpools and other employee transportation modes?"
+    answer: "TeamWheels is carpool-first employee transportation software: it matches drivers and passengers by route and schedule for daily commutes. Recurring shared rides work like informal vanpool groups — several colleagues riding together on a fixed schedule — and the admin dashboard tracks every shared trip for parking, participation, and Scope 3 reporting across sites."
 
 call_to_action:
   enable: true

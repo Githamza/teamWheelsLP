@@ -9,7 +9,7 @@
 */}}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  {{ range .Data.Pages }}
+  {{ range .Site.Pages }}
     {{- $isRoot := eq .RelPermalink "/" -}}
     {{- $isTaxonomy := or (eq .Kind "term") (eq .Kind "taxonomy") -}}
     {{- $isNoindex := .Params.noindex -}}

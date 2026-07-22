@@ -94,7 +94,7 @@ image_and_content_blocks:
     content_position: "left" # Value will be - "left/right"
     content: "Get a complete overview of your employee carpool program performance — participation rates, commute matches, CO₂ emissions avoided, and parking demand reduction — all without compromising individual employee privacy. Export reports for your ESG disclosures, CSR reporting, and commuter benefit program administration.
 
-    [Complete corporate carpooling guide →](/en/blog/corporate-carpooling-guide-2026/)"
+    [Complete corporate carpooling guide →](/en/blog/corporate-carpooling-guide-2026/) · [Explore the carpool management software →](/en/corporate-carpooling-software/)"
 
 
 faq:
