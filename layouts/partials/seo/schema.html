@@ -246,6 +246,61 @@
 </script>
 {{- end -}}
 
+{{- /* VideoObject Schema — emits on ANY page that declares an enabled
+       `video_demo:` block in front matter (homepage modal + the /demo/
+       watch page). This is what makes the demo clip eligible to be indexed
+       and served as a Google video result. Google requires, at minimum:
+       name, description, thumbnailUrl, uploadDate, and a resolvable video
+       (contentUrl). Resources are re-resolved here so the absolute file
+       URLs match what the <video> element actually serves. */ -}}
+{{- with .Params.video_demo -}}
+{{- if .enable -}}
+  {{- $vWebm := "" -}}
+  {{- $vMp4 := "" -}}
+  {{- $vPoster := "" -}}
+  {{- with .webm }}{{ with resources.Get . }}{{ $vWebm = .Permalink }}{{ end }}{{ end -}}
+  {{- with .mp4 }}{{ with resources.Get . }}{{ $vMp4 = .Permalink }}{{ end }}{{ end -}}
+  {{- with .poster }}{{ with resources.Get . }}{{ $vPoster = .Permalink }}{{ end }}{{ end -}}
+  {{- $vContent := or $vWebm $vMp4 -}}
+  {{- if $vContent -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": {{ .title | jsonify | safeJS }},
+  "description": {{ (or .description $description) | jsonify | safeJS }},
+  {{- with $vPoster }}
+  "thumbnailUrl": [{{ . | jsonify | safeJS }}],
+  {{- end }}
+  {{- /* uploadDate must be a full ISO 8601 datetime WITH a timezone offset,
+         or Google Search Console flags it ("missing a timezone" / "invalid
+         datetime"). Front matter may supply a bare date (e.g. 2026-07-13);
+         normalize it — and the PublishDate fallback — to 00:00:00 at the
+         numeric offset (Z for UTC) via time.AsTime. */ -}}
+  {{- $uploadDate := or .uploadDate $page.PublishDate -}}
+  "uploadDate": {{ (time.AsTime $uploadDate).Format "2006-01-02T15:04:05Z07:00" | jsonify | safeJS }},
+  {{- with .duration }}
+  "duration": {{ . | jsonify | safeJS }},
+  {{- end }}
+  "contentUrl": {{ $vContent | jsonify | safeJS }},
+  {{- with .watch_page }}
+  "embedUrl": {{ . | absLangURL | jsonify | safeJS }},
+  {{- end }}
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.teamwheelsapp.com/#organization",
+    "name": "TeamWheels",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.teamwheelsapp.com/images/logo.png"
+    }
+  }
+}
+</script>
+  {{- end -}}
+{{- end -}}
+{{- end -}}
+
 {{- /* FAQPage Schema — emits on ANY page that declares an FAQ in front
        matter, not just /pricing/. Supports two front-matter shapes:
 

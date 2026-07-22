@@ -163,6 +163,43 @@
     </div>
   </section>
 
+  {{/* ── Inline demo video, directly under the hero ──
+       Uses the same resolved sources as the hero buttons + modal.
+       Real `src` (crawlable) + preload="none" so the bytes only load
+       when the visitor hits play — no cost to LCP. */}}
+  {{ if $vdOn }}
+    <section class="section hero-demo-video" id="demo">
+      <div class="container container-delta">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            {{ with $vd }}
+              <h2 class="h1 title mb-3">{{ .title }}</h2>
+              {{ with .description }}<p class="mb-4 hero-demo-video__lede">{{ . }}</p>{{ end }}
+            {{ end }}
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <video
+              class="hero-demo-video__player"
+              controls
+              playsinline
+              preload="none"
+              {{ with $vdPoster }}poster="{{ . }}"{{ end }}>
+              {{ with $vdWebm }}<source src="{{ . }}" type="video/webm">{{ end }}
+              {{ with $vdMp4 }}<source src="{{ . }}" type="video/mp4">{{ end }}
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <style>
+      .hero-demo-video{padding-top:2.5rem;padding-bottom:1rem}
+      .hero-demo-video__lede{max-width:42rem;margin-left:auto;margin-right:auto}
+      .hero-demo-video__player{width:100%;display:block;border-radius:.75rem;background:#0b132b;box-shadow:0 1.25rem 60px rgba(11,19,43,.28);aspect-ratio:16/9;object-fit:contain}
+    </style>
+  {{ end }}
+
   {{ if .Params.brands.enable }}
     {{ partial "brands-slider.html" . }}
   {{ end }}
@@ -267,8 +304,11 @@
           id="demoModalVideo"
           controls loop playsinline muted preload="none"
           {{ with $vdPoster }}poster="{{ . }}"{{ end }}>
-          {{ with $vdWebm }}<source data-src="{{ . }}" type="video/webm">{{ end }}
-          {{ with $vdMp4 }}<source data-src="{{ . }}" type="video/mp4">{{ end }}
+          {{/* Real `src` (not data-src) so Googlebot can discover the video file.
+               `preload="none"` on the <video> keeps the bytes from downloading
+               until the visitor actually plays — zero cost to initial page load. */}}
+          {{ with $vdWebm }}<source src="{{ . }}" type="video/webm">{{ end }}
+          {{ with $vdMp4 }}<source src="{{ . }}" type="video/mp4">{{ end }}
         </video>
       </div>
     </div>
@@ -300,9 +340,7 @@
         function open() {
           if (!loaded) {
             loaded = true;
-            video.querySelectorAll('source[data-src]').forEach(function (s) {
-              s.src = s.getAttribute('data-src');
-            });
+            // Sources carry a real `src`; kick off the load on first open.
             video.load();
           }
           modal.hidden = false;

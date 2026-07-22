@@ -1,0 +1,66 @@
+{{ define "main" }}
+  {{ partial "essentials/header.html" . }}
+
+  {{/* ── Resolve the demo video sources (mirrors the homepage resolver) ── */}}
+  {{ $vd := .Params.video_demo }}
+  {{ $vdWebm := "" }}
+  {{ $vdMp4 := "" }}
+  {{ $vdPoster := "" }}
+  {{ if and $vd $vd.enable }}
+    {{ with $vd.webm }}{{ with resources.Get . }}{{ $vdWebm = .RelPermalink }}{{ end }}{{ end }}
+    {{ with $vd.mp4 }}{{ with resources.Get . }}{{ $vdMp4 = .RelPermalink }}{{ end }}{{ end }}
+    {{ with $vd.poster }}{{ with resources.Get . }}{{ $vdPoster = (.Resize "1280x webp").RelPermalink }}{{ end }}{{ end }}
+  {{ end }}
+
+  <section class="section demo-watch">
+    <div class="container container-delta">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-9">
+          <p class="subtitle">{{ .Params.subtitle | default "Product demo" }}</p>
+          <h1 class="title text-xl mb-3">{{ with $vd }}{{ .title }}{{ else }}{{ .Title }}{{ end }}</h1>
+          {{ with $vd }}<p class="mb-4 demo-watch__lede">{{ .description }}</p>{{ end }}
+        </div>
+      </div>
+
+      {{ if or $vdWebm $vdMp4 }}
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            {{/* Prominent, non-hidden player. `preload="metadata"` gives Google
+                 a lightweight signal while keeping the page fast; the poster is
+                 shown immediately as the video thumbnail. */}}
+            <video
+              class="demo-watch__player"
+              controls
+              playsinline
+              preload="metadata"
+              {{ with $vdPoster }}poster="{{ . }}"{{ end }}>
+              {{ with $vdWebm }}<source src="{{ . }}" type="video/webm">{{ end }}
+              {{ with $vdMp4 }}<source src="{{ . }}" type="video/mp4">{{ end }}
+              {{ i18n "video_not_supported" | default "Your browser does not support the video tag." }}
+            </video>
+          </div>
+        </div>
+      {{ end }}
+
+      {{ with .Params.cta }}
+        <div class="row justify-content-center text-center mt-4">
+          <div class="col-lg-8">
+            <a class="btn btn-primary m-1" href="{{ .link | relLangURL }}">{{ .label }}</a>
+          </div>
+        </div>
+      {{ end }}
+
+      {{ with .Content }}
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-8 content">{{ . }}</div>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <style>
+    .demo-watch{padding-top:2.5rem}
+    .demo-watch__lede{max-width:42rem;margin-left:auto;margin-right:auto}
+    .demo-watch__player{width:100%;display:block;border-radius:.75rem;background:#0b132b;box-shadow:0 1.25rem 60px rgba(0,0,0,.35);aspect-ratio:16/9;object-fit:contain}
+  </style>
+{{ end }}
