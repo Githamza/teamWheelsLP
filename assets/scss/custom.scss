@@ -471,3 +471,27 @@ $gutters: (
     flex-shrink: 0;
   }
 }
+
+// ============================================================
+// Legal pages (privacy policy, terms & conditions)
+// ------------------------------------------------------------
+// Long-form legal copy in a narrow reading column. The data
+// tables in these pages have a min-content width wider than the
+// column on small screens, so they are made horizontally
+// scrollable instead of being clipped at the container edge.
+// ============================================================
+.legal-content {
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  h2 {
+    margin-top: 2.5rem;
+  }
+
+  h3 {
+    margin-top: 1.75rem;
+  }
+}

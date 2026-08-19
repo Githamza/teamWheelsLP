@@ -81,13 +81,13 @@ url = "contact/"
 weight = 1
 
 [[footer_menu_3]]
-name = "Privacy Policy"
-url = "#!"
+name = "Politique de confidentialité"
+url = "privacy-policy/"
 weight = 2
 
 [[footer_menu_3]]
-name = "Terms & Conditions"
-url = "#!"
+name = "Conditions générales"
+url = "terms-and-conditions/"
 weight = 3
 
 

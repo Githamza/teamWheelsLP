@@ -1,0 +1,43 @@
+{{ define "main" }}
+  <section class="page-header bg-primary-soft rounded-lg wave-block">
+    {{ partial "essentials/header.html" . }}
+
+    <div class="container container-delta">
+      <div class="row">
+        <div class="block col-12 text-center">
+          <h1 class="title">{{ .Title }}</h1>
+          <nav aria-label="breadcrumb">
+            <ol
+              class="breadcrumb justify-content-center bg-transparent p-0 mb-0">
+              <li class="breadcrumb-item">
+                <a class="text-muted" href="{{ "" | relLangURL }}"
+                  >{{ site.Params.home | default "Home" }}</a
+                >
+              </li>
+              <li class="breadcrumb-item text-muted" aria-current="page">
+                {{ .Title }}
+              </li>
+            </ol>
+          </nav>
+          {{ with .Params.last_updated }}
+            <p class="text-muted mb-0 mt-3">
+              <small>{{ $.Params.last_updated_label | default "Last updated:" }} {{ . }}</small>
+            </p>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container container-delta">
+      <div class="row">
+        <div class="col-lg-9 mx-auto">
+          <div class="content legal-content">
+            {{ .Content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

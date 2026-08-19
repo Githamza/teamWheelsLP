@@ -82,12 +82,12 @@ weight = 1
 
 [[footer_menu_3]]
 name = "Privacy Policy"
-url = "#!"
+url = "privacy-policy/"
 weight = 2
 
 [[footer_menu_3]]
 name = "Terms & Conditions"
-url = "#!"
+url = "terms-and-conditions/"
 weight = 3
 
 
