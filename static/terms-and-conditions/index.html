@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>https://www.teamwheelsapp.com/fr/terms-and-conditions/</title>
+  <link rel="canonical" href="https://www.teamwheelsapp.com/fr/terms-and-conditions/" />
+  <meta name="robots" content="noindex" />
+  <meta charset="utf-8" />
+  <link rel="alternate" hreflang="fr" href="https://www.teamwheelsapp.com/fr/terms-and-conditions/" />
+  <link rel="alternate" hreflang="en" href="https://www.teamwheelsapp.com/en/terms-and-conditions/" />
+  <!-- Shortcut URL for the terms &amp; conditions (the URL given in the Microsoft
+       Partner Center listing). Static shim: mod_rewrite is silently dropped on
+       this host, so the redirect is done client-side. Language detection
+       mirrors layouts/alias.html: a stored preference wins, then the browser
+       languages, else English. -->
+  <script>
+    (function () {
+      try {
+        var preferred = null;
+        try { preferred = localStorage.getItem("preferred_lang"); } catch (e) {}
+
+        function normalizePrimary(tag) {
+          if (!tag || typeof tag !== "string") return null;
+          return tag.toLowerCase().split("-")[0];
+        }
+
+        function pickLang() {
+          if (preferred && (preferred === "en" || preferred === "fr")) return preferred;
+
+          var candidates = [];
+          if (Array.isArray(navigator.languages)) candidates = candidates.concat(navigator.languages);
+          if (navigator.language) candidates.push(navigator.language);
+          if (navigator.userLanguage) candidates.push(navigator.userLanguage);
+
+          for (var i = 0; i < candidates.length; i++) {
+            if (normalizePrimary(candidates[i]) === "fr") return "fr";
+          }
+          return "en";
+        }
+
+        var target = "/" + pickLang() + "/terms-and-conditions/";
+        window.location.replace(target + window.location.search + window.location.hash);
+      } catch (e) {
+        window.location.replace("/fr/terms-and-conditions/");
+      }
+    })();
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/fr/terms-and-conditions/" />
+  </noscript>
+</head>
+<body>
+  <p>Redirecting to <a href="/fr/terms-and-conditions/">the TeamWheels terms &amp; conditions</a>…</p>
+</body>
+</html>
