@@ -77,7 +77,7 @@ The faster alternative is adopting a ready-made carpooling solution that can be 
 - **Employee-facing apps** that are intuitive and require minimal training
 - **Analytics and reporting** for ESG compliance and program optimization
 
-With a white-label or SaaS approach, companies can go live in **as little as 1-2 weeks** — and often much faster.
+With a white-label or SaaS approach, companies can go live in **as little as 1-2 weeks** — and often much faster. See what this looks like in practice on our [white-label carpool platform](/en/white-label-carpool-platform/) page.
 
 ## Step-by-Step: Launching Your Carpool Platform Quickly
 

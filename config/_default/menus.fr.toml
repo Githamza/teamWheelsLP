@@ -24,21 +24,27 @@ weight = 1
 
 [[main]]
 parent = "product"
+name = "Marque Blanche"
+url = "white-label-carpool-platform/"
+weight = 2
+
+[[main]]
+parent = "product"
 name = "Comment ça marche ?"
 url = "how-it-works/"
-weight = 2
+weight = 3
 
 [[main]]
 parent = "product"
 name = "Avantages"
 url = "benefits/"
-weight = 3
+weight = 4
 
 [[main]]
 parent = "product"
 name = "Voir la démo"
 url = "demo/"
-weight = 4
+weight = 5
 
 # ── Tarifs (autonome) ──
 [[main]]
@@ -98,23 +104,28 @@ url = "corporate-carpooling-software/"
 weight = 1
 
 [[footer_menu_4]]
+name = "Covoiturage Marque Blanche"
+url = "white-label-carpool-platform/"
+weight = 2
+
+[[footer_menu_4]]
 name = "Comment ça marche"
 url = "how-it-works/"
-weight = 2
+weight = 3
 
 [[footer_menu_4]]
 name = "Tarifs"
 url = "pricing/"
-weight = 3
+weight = 4
 
 [[footer_menu_4]]
 name = "Calculateur d'économies"
 url = "tools/savings-calculator/"
-weight = 4
+weight = 5
 
 [[footer_menu_4]]
 name = "Blog"
 url = "blog/"
-weight = 5
+weight = 6
 
 

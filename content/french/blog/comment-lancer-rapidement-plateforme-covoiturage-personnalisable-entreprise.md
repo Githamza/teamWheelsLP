@@ -72,7 +72,7 @@ L'alternative la plus rapide consiste à adopter une solution de covoiturage cl�
 - **Applications pour les salariés** intuitives et nécessitant un minimum de formation
 - **Analytiques et reporting** pour la conformité RSE et l'optimisation du programme
 
-Avec une approche white-label ou SaaS, les entreprises peuvent être opérationnelles en **aussi peu que 1 à 2 semaines** — et souvent bien plus rapidement.
+Avec une approche white-label ou SaaS, les entreprises peuvent être opérationnelles en **aussi peu que 1 à 2 semaines** — et souvent bien plus rapidement. Voyez concrètement ce que cela donne sur notre page [plateforme de covoiturage en marque blanche](/fr/white-label-carpool-platform/).
 
 ## Étape par étape : lancer votre plateforme de covoiturage rapidement
 

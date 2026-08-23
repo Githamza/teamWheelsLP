@@ -59,6 +59,7 @@ Select a carpooling solution that:
 - Requires minimal app installation
 - Offers privacy and security
 - Provides analytics and reporting
+- Can run under your own brand — see what a [white-label carpool platform](/en/white-label-carpool-platform/) looks like in practice
 
 ## Week 2: Preparation (Days 8-14)
 

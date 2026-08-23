@@ -114,7 +114,7 @@ image_and_content_blocks:
 
     * **Reporting RSE automatisé** — Les données de participation et de CO₂ s'exportent directement dans le reporting Scope 3 (poste 7) et CSRD
 
-    Parce que l'identité, la RH et le covoiturage partagent une seule source de vérité, votre programme reste juste au fil des évolutions d'effectif — pas de listes obsolètes, pas de comptes orphelins.
+    Parce que l'identité, la RH et le covoiturage partagent une seule source de vérité, votre programme reste juste au fil des évolutions d'effectif — pas de listes obsolètes, pas de comptes orphelins. Envie d'aller plus loin ? [Découvrez la plateforme de covoiturage en marque blanche →](/fr/white-label-carpool-platform/)
     "
     button:
       enable: false
