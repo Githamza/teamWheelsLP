@@ -24,21 +24,27 @@ weight = 1
 
 [[main]]
 parent = "product"
+name = "White-Label Platform"
+url = "white-label-carpool-platform/"
+weight = 2
+
+[[main]]
+parent = "product"
 name = "How It Works"
 url = "how-it-works/"
-weight = 2
+weight = 3
 
 [[main]]
 parent = "product"
 name = "Benefits"
 url = "benefits/"
-weight = 3
+weight = 4
 
 [[main]]
 parent = "product"
 name = "Watch Demo"
 url = "demo/"
-weight = 4
+weight = 5
 
 # ── Pricing (standalone) ──
 [[main]]
@@ -98,22 +104,27 @@ url = "corporate-carpooling-software/"
 weight = 1
 
 [[footer_menu_4]]
+name = "White-Label Platform"
+url = "white-label-carpool-platform/"
+weight = 2
+
+[[footer_menu_4]]
 name = "How It Works"
 url = "how-it-works/"
-weight = 2
+weight = 3
 
 [[footer_menu_4]]
 name = "Pricing"
 url = "pricing/"
-weight = 3
+weight = 4
 
 [[footer_menu_4]]
 name = "Savings Calculator"
 url = "tools/savings-calculator/"
-weight = 4
+weight = 5
 
 [[footer_menu_4]]
 name = "Blog"
 url = "blog/"
-weight = 5
+weight = 6
 

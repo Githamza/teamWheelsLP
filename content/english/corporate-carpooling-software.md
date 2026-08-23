@@ -1,7 +1,7 @@
 ---
 title: "Corporate Carpooling Software for Microsoft Teams | TeamWheels"
 description: "Corporate carpooling software built into Microsoft Teams. Cut commute costs & parking, hit Scope 3 targets, deploy in 5 minutes. Book a demo — free 30-day trial."
-keywords: "corporate carpooling software, corporate carpool software, corporate carpooling solution, carpool management software, carpool software, corporate carpooling app, carpool administration software, employee carpool program software, workplace ride sharing software, commute management platform, Microsoft Teams carpooling"
+keywords: "corporate carpooling software, corporate carpool software, corporate carpooling solution, carpool management software, carpool software, corporate carpooling app, carpool administration software, carpool booking software, corporate ride sharing software, employee carpool program software, workplace ride sharing software, commute management platform, Microsoft Teams carpooling"
 layout: "benefits"
 
 banner:
@@ -70,7 +70,7 @@ image_and_content_blocks:
 
     * **Admin dashboard** — Track adoption, active carpoolers, and program health from a single view
 
-    * **Scheduling & reminders** — The bot coordinates daily rides and sends Teams notifications when it's time to leave
+    * **Carpool booking & reminders** — Employees book their seat in a couple of taps; the bot coordinates daily rides and sends Teams notifications when it's time to leave
 
     * **Reporting & analytics** — Export participation metrics and CO₂ impact for sustainability and finance teams
 
@@ -104,7 +104,7 @@ image_and_content_blocks:
     title: "How to Choose Carpool Management Software"
     image: "images/carpooling_kpis.png"
     content_position: "right"
-    content: "Comparison lists of carpool management software rank dozens of vendors — but for an employee commute program, five criteria decide whether the investment pays off:
+    content: "Comparison lists of carpool management and corporate ride sharing software rank dozens of vendors — but for an employee commute program, five criteria decide whether the investment pays off:
 
     * **Adoption path** — Will employees actually use it? Standalone employee transportation software depends on app downloads; TeamWheels removes that step entirely by living inside Microsoft Teams
 
@@ -137,7 +137,7 @@ image_and_content_blocks:
 
     * **ESG reporting on autopilot** — Participation and CO₂ data export straight into Scope 3 Category 7 and CSRD reporting
 
-    Because identity, HR, and carpooling share one source of truth, your program stays accurate as headcount changes — no stale rosters, no orphaned accounts.
+    Because identity, HR, and carpooling share one source of truth, your program stays accurate as headcount changes — no stale rosters, no orphaned accounts. Want the full picture? [Explore the white-label carpool platform →](/en/white-label-carpool-platform/)
     "
     button:
       enable: false
