@@ -1,8 +1,10 @@
 ---
 title: "Corporate Carbon Reduction Planning: Building a Decarbonization Action Plan for 2026"
+seoTitle: "Corporate carbon reduction plan: the 2026 guide"
+translationKey: "corporate-carbon-reduction-plan"
 date: 2026-07-15
 draft: false
-description: "How to build a corporate decarbonization action plan in 2026: set science-based targets, break down emissions by source, sequence a MACC-driven roadmap, and track progress."
+description: "Build a corporate decarbonization action plan in 2026: science-based targets, emissions by source, a MACC-driven roadmap and progress tracking."
 image: "images/blog/scope-3-emissions.jpg"
 author: "TeamWheels Editorial"
 reading_time: "12 min"
@@ -125,9 +127,9 @@ The rules moved in 2026, so treat the table below as a signpost and verify curre
 | Framework | Who it hits (as of 2026) | Key point |
 |-----------|--------------------------|-----------|
 | **UK PPN 006** (formerly PPN 06/21) | Suppliers bidding for major government contracts **£5m+/year** | A compliant [Carbon Reduction Plan](https://www.gov.uk/government/publications/procurement-policy-note-0621-taking-account-of-carbon-reduction-plans-in-the-procurement-of-major-government-contracts) is a condition of bidding |
-| **EU CSRD / ESRS E1** | Post-Omnibus, broadly **>1,000 employees and >€450m revenue** | Climate disclosure required; mandatory scenario analysis was [eased under Omnibus](https://www.bdo.com/insights/sustainability-and-esg/csrd-post-omnibus-revised-scope-and-requirements) |
-| **California SB 253** | US firms **>$1bn revenue** doing business in California | Scope 1 & 2 due **10 Aug 2026**, Scope 3 from 2027; [CARB rules](https://www.gtlaw.com/en/insights/2026/3/carb-adopts-initial-climate-disclosure-reporting-regulations-to-implement-sb-253-and-sb-261) with penalties up to $500k/year |
-| **California SB 261** | US firms **>$500m revenue** | Biennial climate-risk report; enforcement **paused pending Ninth Circuit litigation** as of 2026 |
+| **EU CSRD / ESRS E1** | Post-Omnibus, broadly **over 1,000 employees and over €450m revenue** | Climate disclosure required; mandatory scenario analysis was [eased under Omnibus](https://www.bdo.com/insights/sustainability-and-esg/csrd-post-omnibus-revised-scope-and-requirements) |
+| **California SB 253** | US firms **over $1bn revenue** doing business in California | Scope 1 & 2 due **10 Aug 2026**, Scope 3 from 2027; [CARB rules](https://www.gtlaw.com/en/insights/2026/3/carb-adopts-initial-climate-disclosure-reporting-regulations-to-implement-sb-253-and-sb-261) with penalties up to $500k/year |
+| **California SB 261** | US firms **over $500m revenue** | Biennial climate-risk report; enforcement **paused pending Ninth Circuit litigation** as of 2026 |
 | **CDP** | Voluntary; requested by 540+ investors representing ~$110tn AUM | 2026 questionnaire [aligned with IFRS S2](https://www.cdp.net/en/disclosure-2026) |
 
 Two 2026 caveats worth flagging to your leadership: the **CSRD Omnibus I package** entered into force in March 2026 and narrowed who must report, and **California is applying first-year enforcement discretion** for good-faith SB 253 filers while SB 261 enforcement is on hold during litigation. The direction of travel is unchanged — more granular, assured, value-chain reporting — so building the capability now is the safe bet even where a specific deadline slips.

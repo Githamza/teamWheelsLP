@@ -1,6 +1,6 @@
 ---
 title: "Demander une démo | TeamWheels covoiturage entreprise"
-description: "Réservez une démo personnalisée de TeamWheels, la plateforme de covoiturage pour Microsoft Teams. Découvrez comment réduire vos coûts de mobilité et vos émissions Scope 3."
+description: "Réservez une démo personnalisée de TeamWheels, la plateforme de covoiturage pour Microsoft Teams, et réduisez coûts de mobilité et Scope 3."
 draft: false
 layout: "contact"
 keywords: "démo covoiturage entreprise, essai gratuit covoiturage, contact TeamWheels, consultation mobilité entreprise"

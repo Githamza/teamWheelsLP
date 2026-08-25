@@ -1,8 +1,10 @@
 ---
 title: "Aides à la mobilité durable en entreprise 2026 : règles, plafonds et cumuls (le guide employeur)"
+seoTitle: "Aides mobilité durable entreprise 2026 : règles et cumuls"
+translationKey: "sustainable-mobility-incentives"
 date: 2026-07-15
 draft: false
-description: "Toutes les aides à la mobilité durable en entreprise en 2026 : FMD, prise en charge transports en commun, prime de transport. Règles, plafonds d'exonération et cumuls URSSAF pour RH et DAF."
+description: "Aides à la mobilité durable en entreprise 2026 : FMD, prise en charge des transports, prime de transport. Règles, plafonds et cumuls URSSAF."
 image: "images/blog/sustainable-mobility.jpg"
 author: "TeamWheels Editorial"
 reading_time: "12 min"

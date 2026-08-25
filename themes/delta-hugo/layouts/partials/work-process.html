@@ -19,7 +19,7 @@
                 {{$img:= resources.Get . }}
                 {{$img:= $img.Resize "350x"}}
                 {{$imgWebp:= $img.Resize "350x webp"}}
-                <img loading="lazy" decoding="async" class="w-100" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="Banner Image" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+                <img loading="lazy" decoding="async" class="w-100" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="{{ $item.image_alt | default $item.title }}" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
               </div>
               {{end}}
               <h3 class="title h4">{{.title | markdownify}}</h3>

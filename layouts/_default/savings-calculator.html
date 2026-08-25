@@ -15,7 +15,12 @@
         <p class="sc-lede">{{ .Params.intro_lede | default .Description }}</p>
       </div>
 
-      <nav class="sc-stepper" aria-label="progress">
+      {{/* Elements carrying `data-i18n` are rewritten at runtime by
+           assets/js/savings-calculator.js. They used to ship empty, so the
+           page served four empty <h2>s and unlabelled buttons to crawlers
+           and to anyone without JS. The server-rendered text below is the
+           same string the script writes, so nothing changes visually. */}}
+      <nav class="sc-stepper" aria-label="{{ i18n `sc_progress` }}">
         <ol>
           <li class="is-active" data-step="1"><span class="sc-step-num">1</span><span class="sc-step-label" data-i18n="step1.title"></span></li>
           <li data-step="2"><span class="sc-step-num">2</span><span class="sc-step-label" data-i18n="step2.title"></span></li>
@@ -28,7 +33,7 @@
         <!-- STEP 1 -->
         <section class="sc-step" data-step="1" aria-hidden="false">
           <header class="sc-step-head">
-            <h2 data-i18n="step1.title"></h2>
+            <h2 data-i18n="step1.title">{{ i18n `sc_step1_title` }}</h2>
             <p class="sc-muted" data-i18n="step1.subtitle"></p>
           </header>
           <div class="sc-grid">
@@ -59,7 +64,7 @@
         <!-- STEP 2 -->
         <section class="sc-step" data-step="2" aria-hidden="true" hidden>
           <header class="sc-step-head">
-            <h2 data-i18n="step2.title"></h2>
+            <h2 data-i18n="step2.title">{{ i18n `sc_step2_title` }}</h2>
             <p class="sc-muted" data-i18n="step2.subtitle"></p>
           </header>
           <div class="sc-grid">
@@ -87,7 +92,7 @@
         <!-- STEP 3 -->
         <section class="sc-step" data-step="3" aria-hidden="true" hidden>
           <header class="sc-step-head">
-            <h2 data-i18n="step3.title"></h2>
+            <h2 data-i18n="step3.title">{{ i18n `sc_step3_title` }}</h2>
             <p class="sc-muted" data-i18n="step3.subtitle"></p>
           </header>
           <div class="sc-results">
@@ -116,15 +121,15 @@
 
           <div class="sc-charts">
             <div class="sc-chart-box">
-              <h3 data-i18n="results.chartBarTitle"></h3>
+              <h3 data-i18n="results.chartBarTitle">{{ i18n `sc_chart_bar_title` }}</h3>
               <div class="sc-chart-canvas">
-                <canvas id="sc-chart-bar" aria-label="Before vs after carpooling"></canvas>
+                <canvas id="sc-chart-bar" role="img" aria-label="{{ i18n `sc_chart_bar_title` }}"></canvas>
               </div>
             </div>
             <div class="sc-chart-box">
-              <h3 data-i18n="results.chartRseTitle"></h3>
+              <h3 data-i18n="results.chartRseTitle">{{ i18n `sc_chart_rse_title` }}</h3>
               <div class="sc-gauge">
-                <canvas id="sc-chart-rse" aria-label="RSE Score"></canvas>
+                <canvas id="sc-chart-rse" role="img" aria-label="{{ i18n `sc_chart_rse_title` }}"></canvas>
                 <div class="sc-gauge-value"><span data-counter="rseScore" data-decimals="0">0</span><small>/100</small></div>
               </div>
             </div>
@@ -134,7 +139,7 @@
         <!-- STEP 4 -->
         <section class="sc-step" data-step="4" aria-hidden="true" hidden>
           <header class="sc-step-head">
-            <h2 data-i18n="step4.title"></h2>
+            <h2 data-i18n="step4.title">{{ i18n `sc_step4_title` }}</h2>
             <p class="sc-muted" data-i18n="step4.subtitle"></p>
           </header>
           <form class="sc-form" id="sc-lead-form" novalidate>
@@ -162,7 +167,7 @@
               <span data-i18n="leadForm.optin"></span>
             </label>
             <div class="sc-actions">
-              <button type="submit" class="btn btn-primary sc-btn-primary" data-i18n="cta.download"></button>
+              <button type="submit" class="btn btn-primary sc-btn-primary" data-i18n="cta.download">{{ i18n `sc_cta_download` }}</button>
             </div>
           </form>
 
@@ -177,9 +182,9 @@
           </div>
         </section>
 
-        <nav class="sc-nav" aria-label="step navigation">
-          <button type="button" class="btn sc-btn-secondary" data-sc-prev hidden data-i18n="nav.prev"></button>
-          <button type="button" class="btn btn-primary sc-btn-primary" data-sc-next data-i18n="nav.next"></button>
+        <nav class="sc-nav" aria-label="{{ i18n `sc_step_nav` }}">
+          <button type="button" class="btn sc-btn-secondary" data-sc-prev hidden data-i18n="nav.prev">{{ i18n `sc_nav_prev` }}</button>
+          <button type="button" class="btn btn-primary sc-btn-primary" data-sc-next data-i18n="nav.next">{{ i18n `sc_nav_next` }}</button>
         </nav>
       </div>
 

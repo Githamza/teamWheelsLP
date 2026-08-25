@@ -1,8 +1,10 @@
 ---
 title: "Voies réservées au covoiturage en France (2026) : réglementation, signalisation & contrôle automatisé"
+seoTitle: "Voies réservées covoiturage : réglementation 2026"
+translationKey: "carpool-lanes-regulation-enforcement"
 date: 2026-07-15
 draft: false
-description: "Voies réservées au covoiturage (VR2+) en 2026 : règles d'accès, seuil d'occupation, signalisation losange, contrôle automatisé homologué et amende. La référence nationale pour automobilistes et employeurs."
+description: "Voies réservées au covoiturage (VR2+) en 2026 : règles d'accès, seuil d'occupation, signalisation losange, contrôle automatisé et amende."
 image: "images/blog/paris-carpool-lane.jpg"
 author: "TeamWheels Editorial"
 reading_time: "12 min"
@@ -80,7 +82,7 @@ Le tableau suivant récapitule les règles générales d'accès. Il s'agit d'un 
 | VTC | Autorisé avec client à bord | — |
 | Crit'Air 0/1 | Souvent autorisés | Selon arrêté |
 | Personnes à mobilité réduite | Souvent autorisées | Selon arrêté |
-| Poids lourds > 3,5 t | Généralement interdits quand la voie est active | Selon arrêté |
+| Poids lourds de plus de 3,5 t | Généralement interdits quand la voie est active | Selon arrêté |
 | Période d'activation | Heures de pointe ou permanente | Selon signalisation |
 
 ## La signalisation réglementaire : le losange, mode d'emploi

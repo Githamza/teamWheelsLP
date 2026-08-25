@@ -1,10 +1,14 @@
+{{/* Project override of the pwa module's manifest template. The module
+      version still calls the deprecated site.LanguageCode (a build warning on
+      Hugo 0.163) and takes precedence over the theme copy, so the fixed
+      template has to live here, at project level. */}}
 {
   "name": "{{site.Title}}",
   "short_name": "{{site.Title}}",
   "lang": "{{ site.Language.Locale | default `en-us` }}",
   "display": "fullscreen",
   "orientation" : "portrait",
-  "start_url": "{{ site.BaseURL | relLangURL }}?utm_source=web_app_manifest",
+  "start_url": "{{ site.Home.Permalink }}?utm_source=web_app_manifest",
   "background_color": "{{ site.Params.variables.body_color | default `#fff`}}",
   "theme_color": "{{ site.Params.variables.color_primary | default `#000`}}",
 

@@ -1,6 +1,7 @@
 ---
 title: "Outil de Covoiturage Entreprise : Guide en 5 Étapes pour Démarrer"
-description: "Comment choisir un outil de covoiturage entreprise et lancer un programme domicile-travail en 30 jours. Comparatif des solutions, étapes clés, Forfait Mobilité Durable et bonnes pratiques."
+translationKey: "launch-carpooling-program"
+description: "Choisir un outil de covoiturage entreprise et lancer un programme domicile-travail en 30 jours : comparatif, étapes clés et Forfait Mobilité Durable."
 keywords: "outil covoiturage entreprise, covoiturage entreprise, covoiturage en entreprise, organiser un covoiturage, application covoiturage travail, plateforme covoiturage entreprise"
 date: 2025-01-15
 lastmod: 2026-04-11

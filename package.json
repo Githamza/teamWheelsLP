@@ -17,10 +17,12 @@
     "indexnow:changed": "node ./scripts/indexnow/submit.js --changed",
     "indexnow:all": "node ./scripts/indexnow/submit.js --all",
     "indexnow:dry": "node ./scripts/indexnow/submit.js --changed --dry-run",
-    "deploy:notify": "npm run indexnow:changed"
+    "deploy:notify": "npm run indexnow:changed",
+    "validate:html": "html-validate \"public/**/*.html\""
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
+    "html-validate": "^8.29.0",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
     "prettier": "^2.8.7",

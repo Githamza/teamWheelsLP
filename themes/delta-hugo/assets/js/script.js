@@ -71,6 +71,12 @@ $(document).ready(function () {
 	}
 	
 	// counterUp
+	//
+	// The markup now ships the final figure (see layouts/index.html), so the
+	// page reads correctly to crawlers and with JS disabled. The animation
+	// therefore has to start from 0 explicitly instead of reading the current
+	// text, and to restore the exact authored value on completion — rounding
+	// the last frame turned "10.6" into "11".
 	if($('.counter').length !== 0) {
 		var a = 0;
 		$(window).scroll(function () {
@@ -79,8 +85,9 @@ $(document).ready(function () {
 				$('.counter').each(function () {
 					var $this = $(this),
 						countTo = $this.attr('data-count');
+					$this.text('0');
 					$({
-						countNum: $this.text()
+						countNum: 0
 					}).animate({
 							countNum: countTo
 						}, {
@@ -92,9 +99,7 @@ $(document).ready(function () {
 								);
 							},
 							complete: function () {
-								$this.text(
-									Math.ceil(this.countNum).toLocaleString('en')
-								);
+								$this.text(countTo);
 							}
 						}
 					);

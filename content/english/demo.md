@@ -1,6 +1,7 @@
 ---
 title: "TeamWheels Product Demo — Employee Carpooling in Microsoft Teams"
-description: "Watch the TeamWheels product demo: a 60-second walkthrough of employee carpooling, the conversational ride-matching bot, and the Scope 3 emissions dashboard — all native to Microsoft Teams."
+seoTitle: "TeamWheels demo: carpooling in Microsoft Teams"
+description: "Watch the TeamWheels demo: a 60-second walkthrough of employee carpooling, the ride-matching bot and the Scope 3 dashboard inside Teams."
 layout: "demo"
 keywords: "TeamWheels demo, employee carpooling demo, Microsoft Teams carpool app video, commute management demo, Scope 3 dashboard demo"
 

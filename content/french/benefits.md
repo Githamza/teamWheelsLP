@@ -1,5 +1,6 @@
 ---
 title: "Avantages TeamWheels | Pourquoi choisir le covoiturage entreprise Microsoft Teams"
+seoTitle: "Avantages du covoiturage entreprise | TeamWheels"
 description: "Application rideshare TeamWheels : réduisez Scope 3, parking et coûts trajet domicile-travail. Versez le Forfait Mobilité Durable depuis Microsoft Teams."
 keywords: "avantages covoiturage entreprise, ROI covoiturage entreprise, BlaBlaCar entreprise avantages, Uber pour salariés, application Microsoft Teams, ridesharing entreprise avantages, Scope 3 trajets domicile-travail, Forfait Mobilité Durable, économies trajet salarié, mobilité durable entreprise, autopartage entreprise, bien-être salarié mobilité, gestion commute salariés"
 layout: "benefits"

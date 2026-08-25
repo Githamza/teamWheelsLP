@@ -1,5 +1,7 @@
 ---
 title: "Commute vs Working Time: Employer Obligations Explained (2026 UK & US Guide)"
+seoTitle: "Commute vs working time: employer obligations 2026"
+translationKey: "commute-working-time-law"
 date: 2026-07-15
 draft: false
 description: "When does commuting count as working time? A 2026 HR guide to UK & US rules on travel-time pay, employer duty of care, commute costs, and accident cover."

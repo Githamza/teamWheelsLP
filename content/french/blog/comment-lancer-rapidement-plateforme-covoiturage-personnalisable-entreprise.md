@@ -1,6 +1,7 @@
 ---
 title: "Comment lancer rapidement une plateforme de covoiturage personnalisable pour votre entreprise"
-description: "Découvrez comment déployer une plateforme de covoiturage personnalisée et à votre marque en quelques jours. Du choix de la solution au lancement, voici votre guide complet."
+translationKey: "launch-customizable-carpool-platform"
+description: "Déployez une plateforme de covoiturage à votre marque en quelques jours : choix de la solution, intégration et lancement. Le guide complet."
 date: 2026-03-04
 image: images/blog/carpool-platform.jpg
 author: TeamWheels

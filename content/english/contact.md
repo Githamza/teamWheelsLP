@@ -1,6 +1,6 @@
 ---
 title: "Schedule a Demo | TeamWheels Employee Carpooling"
-description: "Book a personalized demo of TeamWheels — the employee carpooling platform for Microsoft Teams. See how HR and Sustainability teams reduce commute costs and Scope 3 emissions."
+description: "Book a personalized demo of TeamWheels, the employee carpooling platform for Microsoft Teams, and cut commute costs and Scope 3 emissions."
 draft: false
 layout: "contact"
 keywords: "schedule carpooling demo, corporate carpooling consultation, employee mobility platform demo, commute management solution demo"

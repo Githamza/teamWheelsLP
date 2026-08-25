@@ -1,6 +1,8 @@
 ---
 title: "Why Your Employees Are Skeptical About Carpooling (And How to Change Their Minds)"
-description: "Discover why employees resist corporate carpooling and learn how to overcome their skepticism. Find out how TeamWheels removes friction, ensures safety, and benefits both your workforce and your bottom line."
+seoTitle: "Employees skeptical about carpooling: what to do"
+translationKey: "employees-skeptical-carpooling"
+description: "Why employees resist corporate carpooling and how to overcome it: TeamWheels removes friction, ensures safety and protects your bottom line."
 date: 2026-04-23
 image: images/blog/employee-skeptical.jpg
 author: TeamWheels

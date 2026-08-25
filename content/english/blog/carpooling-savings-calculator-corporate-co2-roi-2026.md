@@ -1,6 +1,8 @@
 ---
 title: "Carpooling Savings Calculator 2026: Measure Corporate CO₂ and ROI in 2 Minutes"
-description: "Use the free TeamWheels carpooling savings calculator to estimate CO₂ reductions, fuel savings, parking gains and ESG score for your company. Built on ADEME and EPA emission factors. Instant PDF report."
+seoTitle: "Carpooling savings calculator 2026: CO₂ and ROI"
+translationKey: "carpooling-savings-calculator"
+description: "Free carpooling savings calculator: estimate CO₂ reductions, fuel savings, parking gains and ESG score. ADEME and EPA factors, instant PDF."
 keywords: "carpooling savings calculator, corporate carpooling ROI calculator, employee commute CO2 calculator, Scope 3 commuting calculator, ESG mobility score, ADEME emission factors, EPA emission factors, fuel savings calculator company, FMD forfait mobilité durable calculator"
 date: 2026-04-20
 lastmod: 2026-04-20

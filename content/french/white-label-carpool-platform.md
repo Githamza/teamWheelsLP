@@ -1,6 +1,6 @@
 ---
 title: "Plateforme de Covoiturage en Marque Blanche | TeamWheels"
-description: "Lancez une app de covoiturage en marque blanche à votre marque — sans projet de développement. Covoiturage entreprise dans votre tenant Microsoft 365, intégré RH, opérationnel en quelques jours."
+description: "Lancez une app de covoiturage à votre marque sans projet de développement : covoiturage entreprise dans votre tenant Microsoft 365, en quelques jours."
 keywords: "covoiturage marque blanche, application covoiturage marque blanche, plateforme covoiturage marque blanche, plateforme covoiturage personnalisable, app covoiturage personnalisée entreprise, covoiturage intégration RH"
 layout: "benefits"
 

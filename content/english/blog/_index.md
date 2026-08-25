@@ -1,5 +1,6 @@
 ---
-title: "TeamWheels Blog — Carpooling & Commuting Resources"
-description: "Articles and practical guides on launching employee carpool programs, measuring commute emissions, and running successful corporate mobility initiatives."
+title: "Corporate carpooling and commuting guides"
+seoTitle: "Corporate Carpooling & Commuting Blog | TeamWheels"
+description: "Practical guides for employers: launching an employee carpooling programme, funding commuter benefits and cutting Scope 3 commuting emissions."
 draft: false
 ---

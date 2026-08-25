@@ -1,5 +1,11 @@
 // main content
-main {
+//
+// `.main-block` is the second content slot in baseof.html (blog posts and
+// other `main-sm` pages render into it). It used to be a duplicate <main>
+// element; it is now a <div> so the document exposes a single landmark, and
+// it has to keep exactly the same box as <main> so nothing moves.
+main,
+.main-block {
   overflow: hidden;
   padding: 4.68rem;
   @include desktop-xl {
@@ -16,7 +22,8 @@ main {
   }
   padding-bottom: 0 !important;
 }
-main:empty {
+main:empty,
+.main-block:empty {
   display: none;
 }
 

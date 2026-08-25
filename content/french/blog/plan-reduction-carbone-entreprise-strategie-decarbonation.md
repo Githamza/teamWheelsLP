@@ -1,8 +1,10 @@
 ---
 title: "Plan de réduction carbone en entreprise : construire une stratégie de décarbonation qui tient en 2026"
+seoTitle: "Plan de réduction carbone entreprise : guide 2026"
+translationKey: "corporate-carbon-reduction-plan"
 date: 2026-07-15
 draft: false
-description: "Bilan carbone, BEGES, scope 1/2/3, trajectoire SBTi, CSRD : la méthode pour bâtir un plan de décarbonation mesurable, par phases, avec un suivi annuel. Guide 2026."
+description: "Bilan carbone, BEGES, scope 1/2/3, SBTi, CSRD : la méthode pour bâtir un plan de décarbonation mesurable, par phases, avec un suivi annuel."
 image: "images/blog/scope-3-emissions.jpg"
 author: "TeamWheels Editorial"
 reading_time: "13 min"

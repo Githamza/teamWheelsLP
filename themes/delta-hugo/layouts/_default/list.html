@@ -26,7 +26,7 @@
         {{ $upper_limit := (sub $paginator.TotalPages $adjacent_links) }}
         <!-- If there's more than one page. -->
         {{ if gt $paginator.TotalPages 1 }}
-        <nav>
+        <nav aria-label="{{ i18n `nav_pagination` }}">
           <ul class="pagination justify-content-center flex-wrap mb-0">
             <!-- Previous page. -->
             {{ if $paginator.HasPrev }}

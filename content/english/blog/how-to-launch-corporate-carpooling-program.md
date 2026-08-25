@@ -1,5 +1,6 @@
 ---
 title: "How to Launch a Corporate Carpooling Program in 30 Days"
+translationKey: "launch-carpooling-program"
 description: "A step-by-step guide to launching a successful employee carpooling program in your organization. From planning to launch in just 30 days."
 date: 2025-01-15
 image: images/blog/launch-program.jpg

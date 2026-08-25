@@ -1,8 +1,9 @@
 ---
 title: "Carpooling to Work: How to Set It Up for Your Team (2026 Guide)"
+translationKey: "carpooling-to-work"
 date: 2026-05-12
 draft: false
-description: "Learn how to set up a corporate carpooling programme for your employees, cut commuting costs, meet sustainability targets, and boost team cohesion. Step-by-step guide for HR and operations teams."
+description: "Set up a corporate carpooling programme for your employees: cut commuting costs, meet sustainability targets and boost team cohesion."
 image: "images/team-group.jpg"
 author: "TeamWheels Editorial"
 reading_time: "7 min"

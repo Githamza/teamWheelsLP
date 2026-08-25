@@ -1,3 +1,56 @@
+##### 301 redirects (SEO) — BEGIN
+##
+## Deployment note: despite the "Coolify / Nginx" assumption in the brief, this
+## site is published as static files over FTPS to an Apache shared host (see
+## .github/workflows/deploy.yml). Apache reads this file, so every permanent
+## redirect below lives here — there is no Nginx/Caddy vhost to edit.
+##
+## Two implementations of the same rules are shipped on purpose:
+##   1. mod_alias (RedirectMatch) — needs only AllowOverride FileInfo and is
+##      what we expect to actually fire on this host.
+##   2. mod_rewrite — richer (Accept-Language negotiation on "/"), used when
+##      the host grants it. Live testing in May 2026 showed mod_rewrite rules
+##      being silently dropped here, hence the mod_alias safety net.
+## mod_rewrite runs before mod_alias, so when both are active the rewrite
+## rules win and the RedirectMatch lines never see the request. Neither set
+## can loop: every pattern is anchored and no target matches its own pattern.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  ## "/" → language home. Backlinks and direct traffic used to land on the
+  ## noindex JS-redirect shim; send a real 301 instead.
+  ## English speakers first: Accept-Language starting with "en" → /en/.
+  RewriteCond %{HTTP:Accept-Language} ^en(-[A-Za-z0-9]+)?\b [NC]
+  RewriteRule ^$ /en/ [R=301,L]
+  ## Everyone else → /fr/ (default content language).
+  RewriteRule ^$ /fr/ [R=301,L]
+
+  ## Language roots without the trailing slash. mod_dir would 301 these
+  ## anyway, but only after a directory probe — make it explicit.
+  RewriteRule ^(fr|en)$ /$1/ [R=301,L]
+
+  ## /career/ was untouched delta-hugo demo content (lorem ipsum, a broken
+  ## /career/about link). The pages are deleted; send their equity to contact.
+  RewriteRule ^(fr|en)/career(/.*)?$ /$1/contact/ [R=301,L]
+  RewriteRule ^career(/.*)?$ /fr/contact/ [R=301,L]
+
+  ## Renamed article. Hugo `aliases` only emit a meta-refresh stub, which
+  ## passes no PageRank — the 301 has to be declared here.
+  RewriteRule ^fr/blog/voies-covoiturage-paris-peripherique-guide-2025/?$ /fr/blog/voies-covoiturage-paris-peripherique-guide-2026/ [R=301,L]
+</IfModule>
+
+<IfModule mod_alias.c>
+  ## Same rules without Accept-Language negotiation: "/" always goes to the
+  ## French home, which is the default content language.
+  RedirectMatch 301 "^/$" "/fr/"
+  RedirectMatch 301 "^/(fr|en)$" "/$1/"
+  RedirectMatch 301 "^/(fr|en)/career(/.*)?$" "/$1/contact/"
+  RedirectMatch 301 "^/career(/.*)?$" "/fr/contact/"
+  RedirectMatch 301 "^/fr/blog/voies-covoiturage-paris-peripherique-guide-2025/?$" "/fr/blog/voies-covoiturage-paris-peripherique-guide-2026/"
+</IfModule>
+##### 301 redirects (SEO) — END
+
 ##### Optimize default expiration time - BEGIN
 <IfModule mod_expires.c>
 

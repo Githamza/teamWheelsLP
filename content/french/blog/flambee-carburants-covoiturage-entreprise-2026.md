@@ -1,8 +1,10 @@
 ---
 title: "Flambée des carburants 2026 : pourquoi le covoiturage n'est plus une option"
+seoTitle: "Flambée des carburants 2026 : le covoiturage entreprise"
+translationKey: "fuel-prices-carpooling"
 date: 2026-04-19
 draft: false
-description: "Prix du diesel et de l'essence à des records historiques en France, Belgique et Suisse. Comment le covoiturage entreprise fait économiser 1 000 à 2 000 € par salarié et par an en 2026."
+description: "Diesel et essence au plus haut en France, Belgique et Suisse : le covoiturage entreprise fait économiser 1 000 à 2 000 € par salarié et par an."
 keywords: "prix carburant 2026, flambée carburant France Belgique Suisse, covoiturage entreprise économies, forfait mobilité durable 2026, indemnité kilométrique covoiturage, TeamWheels Microsoft Teams"
 image: images/blog/fuel-prices.jpg
 author: TeamWheels

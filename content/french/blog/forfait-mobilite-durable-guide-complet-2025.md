@@ -2,7 +2,7 @@
 title: "Forfait Mobilité Durable 2026 : Le Guide Complet pour les Entreprises"
 date: 2026-06-25
 draft: false
-description: "Forfait Mobilité Durable (FMD) 2026 : montants, conditions, justificatifs et comment financer le covoiturage de vos salariés. Le guide pratique pour les RH et dirigeants."
+description: "Forfait Mobilité Durable 2026 : montants, conditions, justificatifs et mise en place pour financer le covoiturage de vos salariés. Guide RH."
 image: "images/blog/sustainable-mobility.jpg"
 author: "TeamWheels Editorial"
 keywords: "forfait mobilité durable, forfait mobilité durable 2026, forfait mobilité durable urssaf, prime covoiturage, FMD covoiturage, FMD entreprise, plafond FMD 2026, mobilité durable entreprise, loi LOM, Microsoft Teams covoiturage"
@@ -83,7 +83,7 @@ Vous devez décider :
 ### Étape 2 : Formaliser l'accord
 
 Le FMD peut être mis en place via :
-- Un **accord d'entreprise** (recommandé pour les entreprises > 50 salariés)
+- Un **accord d'entreprise** (recommandé pour les entreprises de plus de 50 salariés)
 - Une **décision unilatérale de l'employeur** (DUE), après consultation du CSE
 - Un **accord de branche** existant
 

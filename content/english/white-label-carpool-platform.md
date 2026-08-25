@@ -1,6 +1,6 @@
 ---
 title: "White-Label Carpool Platform for Companies | TeamWheels"
-description: "Launch a white-label carpool app under your own brand — no development project. Corporate carpooling in your Microsoft 365 tenant, HR-integrated, live in days."
+description: "Launch a white-label carpool app under your own brand — no development project. Corporate carpooling in your Microsoft 365 tenant, live in days."
 keywords: "white label carpool app, white label carpool platform, white label carpooling platform, white label corporate carpool platform, customizable carpool platform, branded carpool app, white label rideshare app for employees, carpool app with HR integration"
 layout: "benefits"
 
