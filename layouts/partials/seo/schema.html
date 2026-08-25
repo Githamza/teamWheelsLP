@@ -33,7 +33,7 @@
     "name": "TeamWheels",
     "url": "https://www.teamwheelsapp.com"
   },
-  "inLanguage": {{ .Site.LanguageCode | default "en" | jsonify | safeJS }},
+  "inLanguage": {{ .Site.Language.Locale | default "en" | jsonify | safeJS }},
   "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | jsonify | safeJS }},
   "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify | safeJS }}
 }
@@ -41,13 +41,13 @@
 {{- else if eq .Type "blog" -}}
 {{- /* Blog posts: Article schema with enhanced metadata.
        Author resolution: front-matter `author` is treated as a slug
-       lookup against site.Data.authors. If the slug exists, emit a
+       lookup against hugo.Data.authors. If the slug exists, emit a
        schema.org Person with credentials and sameAs (E-E-A-T signal
        that Gemini 3 and Claude weight heavily). Otherwise fall back
        to the Organization author for legacy posts. */ -}}
 {{- $authorSlug := .Params.author | default "" -}}
 {{- $authorKey := $authorSlug | urlize -}}
-{{- $author := index site.Data.authors $authorKey -}}
+{{- $author := index hugo.Data.authors $authorKey -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -55,7 +55,7 @@
   "headline": {{ $title | jsonify | safeJS }},
   "description": {{ $description | jsonify | safeJS }},
   "url": {{ .Permalink | jsonify | safeJS }},
-  "inLanguage": {{ .Site.LanguageCode | default "en" | jsonify | safeJS }},
+  "inLanguage": {{ .Site.Language.Locale | default "en" | jsonify | safeJS }},
   {{- with .Params.image }}
   "image": {
     "@type": "ImageObject",
@@ -124,7 +124,7 @@
   "headline": {{ $title | jsonify | safeJS }},
   "description": {{ $description | jsonify | safeJS }},
   "url": {{ .Permalink | jsonify | safeJS }},
-  "inLanguage": {{ .Site.LanguageCode | default "en" | jsonify | safeJS }},
+  "inLanguage": {{ .Site.Language.Locale | default "en" | jsonify | safeJS }},
   {{- with .Params.image }}
   "image": {
     "@type": "ImageObject",

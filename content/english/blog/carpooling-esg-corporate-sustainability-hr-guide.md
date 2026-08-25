@@ -1,8 +1,10 @@
 ---
 title: "Carpooling and ESG: A Complete Guide for HR & Sustainability Directors"
+seoTitle: "Carpooling and ESG: guide for HR and sustainability"
+translationKey: "carpooling-esg-csr"
 date: 2026-06-30
 draft: false
-description: "How corporate carpooling strengthens your ESG strategy: cut Scope 3 Category 7 commuting emissions, hit CSRD & SB 253 disclosure, track the right KPIs, and boost employee engagement. The 2026 guide for HR and sustainability leaders."
+description: "How corporate carpooling strengthens ESG: cut Scope 3 Category 7 commuting emissions, meet CSRD and SB 253 disclosure, track the right KPIs."
 image: "images/blog/sustainable-mobility.jpg"
 author: "TeamWheels Editorial"
 reading_time: "11 min"

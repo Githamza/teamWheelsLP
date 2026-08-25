@@ -1,6 +1,7 @@
 ---
 title: "Démo TeamWheels — Covoiturage domicile-travail dans Microsoft Teams"
-description: "Regardez la démo de TeamWheels : une présentation de 60 secondes du covoiturage domicile-travail, du bot de matching conversationnel et du tableau de bord des émissions Scope 3 — le tout intégré à Microsoft Teams."
+seoTitle: "Démo TeamWheels : covoiturage dans Microsoft Teams"
+description: "Démo TeamWheels en 60 secondes : covoiturage domicile-travail, bot de matching conversationnel et tableau de bord Scope 3 dans Microsoft Teams."
 layout: "demo"
 subtitle: "Démo du produit"
 keywords: "démo TeamWheels, démo covoiturage entreprise, application covoiturage Microsoft Teams, gestion des trajets, tableau de bord Scope 3"

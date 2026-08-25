@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html
   lang="en-us"
-  data-hugo-lang-code="{{ site.LanguageCode | default `en-US` }}"
+  data-hugo-lang-code="{{ site.Language.Locale | default `en-US` }}"
   itemscope
   itemtype="http://schema.org/WebPage">
   <head>
@@ -122,10 +122,17 @@
     {{ end }}
 
 
-    <main>
-      {{ block "main" . }}{{ end }}
-    </main>
-    <main class="pt-0">{{ block "main-sm" . }}{{ end }}</main>
+    {{/* Two content slots, one <main> landmark.
+         `main-sm` is the slot blog posts and other single pages render into
+         (see _default/single.html); `main` is used by every list/landing
+         page. Whichever one is unused stays empty and is hidden by the
+         `:empty` rule in scss/templates/_main.scss. It used to be a second
+         <main> element, which made every page ship two document landmarks —
+         invalid HTML and an accessibility-tree ambiguity. `.main-block`
+         mirrors <main>'s styling (see scss/custom.scss) so the rendering is
+         unchanged. */}}
+    <main>{{ block "main" . }}{{ end }}</main>
+    <div class="main-block pt-0">{{ block "main-sm" . }}{{ end }}</div>
 
     <!-- cache partial only in production -->
     {{ if hugo.IsProduction }}

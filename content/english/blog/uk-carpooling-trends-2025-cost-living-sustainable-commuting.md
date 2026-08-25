@@ -1,8 +1,9 @@
 ---
 title: "UK Carpooling Trends 2025: Rising Costs Drive Shared Mobility Renaissance"
+seoTitle: "UK carpooling trends 2025: costs drive shared mobility"
 date: 2026-02-10
 draft: false
-description: "Explore how rising commute costs and the £3 bus fare cap are reshaping UK carpooling trends in 2025. With 15% of commuters now sharing rides and 36% interested in trying, discover why carpooling is becoming the smart choice for British commuters."
+description: "How rising commute costs and the £3 bus fare cap are reshaping UK carpooling in 2025, with 15% of commuters now sharing rides and 36% keen."
 image: "images/blog/uk-carpooling-trends.jpg"
 author: ""
 ---

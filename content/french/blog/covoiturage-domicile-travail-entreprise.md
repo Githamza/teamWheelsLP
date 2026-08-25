@@ -1,8 +1,9 @@
 ---
 title: "Covoiturage domicile-travail : comment l'organiser pour vos équipes en 2026 ?"
+translationKey: "carpooling-to-work"
 date: 2026-05-12
 draft: false
-description: "Découvrez comment mettre en place le covoiturage domicile-travail dans votre entreprise, profiter du Forfait Mobilité Durable et réduire l'empreinte carbone de vos équipes. Guide complet 2026."
+description: "Mettez en place le covoiturage domicile-travail dans votre entreprise : Forfait Mobilité Durable, étapes clés et baisse de l'empreinte carbone."
 image: "images/team-group.jpg"
 author: "TeamWheels Editorial"
 reading_time: "7 min"

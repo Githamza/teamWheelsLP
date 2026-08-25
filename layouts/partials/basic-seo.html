@@ -18,21 +18,15 @@
   <link rel="canonical" href="{{ . }}" itemprop="url" />
 {{ end }}
 
-<!-- multilingual SEO optimizations -->
-{{ if .IsTranslated }}
-  {{ range .AllTranslations }}
-    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
-  {{ end }}
-  <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
-{{ end }}
+<!-- multilingual SEO optimizations: emitted once by partials/seo/hreflang.html,
+     which is the single source of truth for hreflang annotations. Duplicating
+     them here made every translated page carry two conflicting sets. -->
 
 
-<!-- meta keywords -->
-{{ if .Params.keywords }}
-  <meta name="keywords" content="{{ delimit .Params.keywords `, ` }}" />
-{{ else if site.Params.metadata.keywords }}
-  <meta name="keywords" content="{{ delimit site.Params.metadata.keywords `, ` }}" />
-{{ end }}
+<!-- meta keywords: deliberately not emitted. Google has ignored the tag
+     since 2009, the site-wide list was off-topic on most pages, and it
+     published our keyword strategy to competitors. Front-matter `keywords`
+     are kept because other partials still read them. -->
 
 
 <!-- meta description -->
@@ -47,6 +41,9 @@
 {{ $title := site.Title }}
 {{ if .Params.og_title }}
   {{ $title = .Params.og_title }}
+  <!-- checking seo title -->
+{{ else if .Params.seoTitle }}
+  {{ $title = .Params.seoTitle }}
   <!-- checking page title -->
 {{ else if .Title }}
   {{ $title = .Title }}

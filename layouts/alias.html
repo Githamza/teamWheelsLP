@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ with .Page }}{{ .Language.Lang }}{{ else }}fr{{ end }}">
 <head>
   <title>{{ .Permalink }}</title>
   <link rel="canonical" href="{{ .Permalink }}" />

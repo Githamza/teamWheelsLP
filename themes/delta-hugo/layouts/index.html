@@ -36,7 +36,9 @@
                     <input type="hidden" name="access_key" value="{{ site.Params.contact_info.web3forms_access_key }}" />
                     <input type="hidden" name="redirect" value="{{ absLangURL "thank-you/" }}" />
                     <input type="hidden" name="subject" value="{{ i18n `contact_form_subject` }}" />
-                    <input type="checkbox" name="botcheck" class="d-none" style="display:none" tabindex="-1" autocomplete="off" />
+                    {{/* Web3Forms honeypot. `autocomplete` is not valid on a checkbox and
+                         browsers never autofilled it — dropped so the page validates. */}}
+                    <input type="checkbox" name="botcheck" class="d-none" style="display:none" tabindex="-1" />
                     <label for="hero-email" class="hero-email-label">{{ i18n "hero_email_label" }}</label>
                     <div class="input-group mb-2">
                       <input
@@ -47,7 +49,6 @@
                         autocomplete="email"
                         inputmode="email"
                         class="form-control text-dark"
-                        aria-label="{{ i18n `hero_email_label` }}"
                         placeholder="{{ i18n `hero_email_placeholder` }}" />
                       <button class="btn btn-primary" type="submit">
                         {{ .button_label }}
@@ -384,12 +385,20 @@
                 {{ range .fact_item }}
                   <div class="col-lg-3 col-sm-6 fact-item-alt">
                     <div class="block">
-                      <h3 class="title text-xl">
-                        {{ .counter_prefix }}
+                      {{/* Statistic, not a section heading. These were <h3>s
+                           holding "0 €" / "0 min" until JS ran, so crawlers
+                           (and screen readers) saw a page full of headings
+                           that said nothing. Now: a <p> styled like the old
+                           heading, with the real figure rendered server-side.
+                           js/script.js resets it to 0 and counts back up, so
+                           the animation is unchanged and the value survives
+                           with JS disabled. */}}
+                      <p class="title text-xl fact-counter">
+                        {{- .counter_prefix -}}
                         <span class="counter" data-count="{{ .counter }}"
-                          >0</span
-                        >{{ .counter_suffix }}
-                      </h3>
+                          >{{ .counter }}</span
+                        >{{- .counter_suffix -}}
+                      </p>
                       <p class="mb-0">{{ .content | markdownify }}</p>
                     </div>
                   </div>
@@ -443,7 +452,9 @@
                       <input type="hidden" name="access_key" value="{{ site.Params.contact_info.web3forms_access_key }}" />
                       <input type="hidden" name="redirect" value="{{ absLangURL "thank-you/" }}" />
                       <input type="hidden" name="subject" value="{{ i18n `contact_form_subject` }}" />
-                      <input type="checkbox" name="botcheck" class="d-none" style="display:none" tabindex="-1" autocomplete="off" />
+                      {{/* Web3Forms honeypot. `autocomplete` is not valid on a checkbox and
+                           browsers never autofilled it — dropped so the page validates. */}}
+                      <input type="checkbox" name="botcheck" class="d-none" style="display:none" tabindex="-1" />
                       <label for="cta-email" class="hero-email-label">{{ i18n "hero_email_label" }}</label>
                       <div class="input-group my-2">
                         <input
@@ -454,7 +465,6 @@
                           autocomplete="email"
                           inputmode="email"
                           class="form-control text-dark"
-                          aria-label="{{ i18n `hero_email_label` }}"
                           placeholder="{{ i18n `hero_email_placeholder` }}" />
                         <button class="btn btn-primary" type="submit">
                           {{ .label }}

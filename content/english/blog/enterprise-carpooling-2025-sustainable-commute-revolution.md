@@ -1,6 +1,7 @@
 ---
 title: "Enterprise Carpooling in 2026: Trends, ROI & Implementation Guide"
-description: "How corporate carpooling is transforming workplace mobility in 2026: $34B market, 30+ tonnes CO2 savings per company, proven ROI and step-by-step implementation guide for HR and sustainability leaders."
+seoTitle: "Enterprise carpooling 2026: trends, ROI and rollout"
+description: "How corporate carpooling is reshaping workplace mobility in 2026: market size, CO2 savings per company, proven ROI and a step-by-step rollout."
 keywords: "enterprise carpooling, corporate carpooling 2026, corporate carpooling software, corporate carpooling solution, corporate mobility app, innovations in carpooling 2026, carpooling trends"
 date: 2025-01-31
 lastmod: 2026-04-11

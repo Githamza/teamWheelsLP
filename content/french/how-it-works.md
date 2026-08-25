@@ -1,5 +1,6 @@
 ---
 title: "Comment fonctionne le covoiturage d'entreprise avec TeamWheels"
+seoTitle: "Covoiturage dans Microsoft Teams : comment ça marche"
 description: "Découvrez comment l'app TeamWheels transforme Microsoft Teams en plateforme rideshare entreprise : bot conversationnel, déploiement 5 min, suivi Scope 3."
 layout: "how-it-works"
 keywords: "fonctionnement covoiturage entreprise, déploiement BlaBlaCar entreprise, Uber pour salariés mise en place, application Microsoft Teams covoiturage, ridesharing entreprise, bot covoiturage Teams, plateforme trajet domicile-travail, organisation commute salariés, mise en place covoiturage entreprise, autopartage entreprise"
@@ -26,18 +27,22 @@ work_process:
   process_item:
     - title: "Installez dans Teams"
       image: "images/how-it-works/01.png"
+      image_alt: "Installation de TeamWheels depuis AppSource dans Microsoft Teams"
       content: "Ajoutez TeamWheels depuis l'AppSource à votre Microsoft Teams en quelques clics."
 
     - title: "Proposez ou trouvez un trajet"
       image: "images/how-it-works/02.png"
+      image_alt: "Recherche d'un covoiturage domicile-travail dans le bot TeamWheels"
       content: "Utilisez le bot pour déclarer votre trajet ou rechercher des covoiturages disponibles à proximité."
 
     - title: "Connectez & confirmez"
       image: "images/how-it-works/03.png"
+      image_alt: "Validation par le conducteur d'une demande de covoiturage dans Teams"
       content: "Demandez à rejoindre un covoiturage. Le conducteur valide, et vous voilà prêts à partir ensemble."
 
     - title: "Suivez votre impact"
       image: "images/how-it-works/dashboard.png"
+      image_alt: "Tableau de bord administrateur TeamWheels : trajets partagés et CO₂ évité"
       content: "Suivez les économies de CO₂ et les statistiques de covoiturage depuis le tableau de bord administrateur."
 
 

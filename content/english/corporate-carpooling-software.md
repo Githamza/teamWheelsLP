@@ -1,6 +1,7 @@
 ---
 title: "Corporate Carpooling Software for Microsoft Teams | TeamWheels"
-description: "Corporate carpooling software built into Microsoft Teams. Cut commute costs & parking, hit Scope 3 targets, deploy in 5 minutes. Book a demo — free 30-day trial."
+seoTitle: "Corporate carpooling software | TeamWheels"
+description: "Corporate carpooling software built into Microsoft Teams. Cut commute costs and parking, hit Scope 3 targets, deploy in 5 minutes. Free trial."
 keywords: "corporate carpooling software, corporate carpool software, corporate carpooling solution, carpool management software, carpool software, corporate carpooling app, carpool administration software, carpool booking software, corporate ride sharing software, employee carpool program software, workplace ride sharing software, commute management platform, Microsoft Teams carpooling"
 layout: "benefits"
 

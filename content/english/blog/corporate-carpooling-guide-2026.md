@@ -1,8 +1,9 @@
 ---
 title: "Corporate Carpooling Guide (2026): Costs, ROI & Best Software"
+translationKey: "corporate-carpooling-guide-2026"
 date: 2026-04-29
 draft: false
-description: "Cut employee commute costs up to 60%, hit Scope 3 targets, and choose the right corporate carpooling software. The 2026 guide for HR & sustainability teams."
+description: "Cut employee commute costs by up to 60%, hit Scope 3 targets and choose the right corporate carpooling software. The 2026 guide for HR teams."
 image: "images/blog/corporate-carpooling.jpg"
 author: "TeamWheels Editorial"
 reading_time: "10 min"

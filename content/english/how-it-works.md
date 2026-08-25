@@ -1,5 +1,6 @@
 ---
 title: "How Employee Carpooling Works in Microsoft Teams — Live in 5 Min"
+seoTitle: "How corporate carpooling works in Microsoft Teams"
 description: "See how TeamWheels turns Microsoft Teams into an employee carpooling hub — 5-minute deploy, conversational bot, Scope 3 dashboard. Book a demo."
 layout: "how-it-works"
 keywords: "how employee rideshare works, BlaBlaCar for business setup, Uber for employees deployment, Microsoft Teams app integration, employee carpool matching, commute bot, ridesharing program rollout, daily commute coordination, corporate carpooling setup, employee rideshare matching, commute management platform, carpool program deployment"
@@ -26,18 +27,22 @@ work_process:
   process_item:
     - title: "Install in Teams"
       image: "images/how-it-works/01.png"
+      image_alt: "Installing TeamWheels from AppSource inside Microsoft Teams"
       content: "Add TeamWheels from AppSource to your Microsoft Teams in just a few clicks."
 
     - title: "Offer or find rides"
       image: "images/how-it-works/02.png"
+      image_alt: "Searching for a commute carpool in the TeamWheels bot"
       content: "Use the bot to declare your commute or search for available carpools nearby."
 
     - title: "Connect & confirm"
       image: "images/how-it-works/03.png"
+      image_alt: "A driver approving a carpool request inside Microsoft Teams"
       content: "Request to join a carpool. The driver approves, and you're all set to ride together."
 
     - title: "Track your impact"
       image: "images/how-it-works/dashboard.png"
+      image_alt: "TeamWheels admin dashboard showing shared rides and CO₂ savings"
       content: "Monitor CO₂ savings and carpooling stats through the admin dashboard."
 
 

@@ -1,6 +1,7 @@
 ---
 title: "Logiciel de Covoiturage Entreprise pour Microsoft Teams | TeamWheels"
-description: "Logiciel de covoiturage entreprise intégré à Microsoft Teams. Réduisez les coûts de trajet et le parking, versez le Forfait Mobilité Durable, déployez en 5 minutes."
+seoTitle: "Logiciel de covoiturage entreprise | TeamWheels"
+description: "Logiciel de covoiturage entreprise intégré à Microsoft Teams : moins de coûts de trajet et de parking, Forfait Mobilité Durable, 5 min de déploiement."
 keywords: "logiciel covoiturage entreprise, outil covoiturage entreprise, application covoiturage entreprise, covoiturage entreprise, plateforme covoiturage entreprise, covoiturage domicile-travail, logiciel covoiturage salariés, Forfait Mobilité Durable, covoiturage Microsoft Teams"
 layout: "benefits"
 

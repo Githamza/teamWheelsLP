@@ -5,8 +5,8 @@
 {{- $page := . -}}
 {{- $cur := .Lang -}}
 <div class="lang-switch" role="group" aria-label="{{ i18n `select_language` | default `Select language` }}">
-  {{- range site.Languages -}}
-    {{- $l := . -}}
+  {{- range hugo.Sites -}}
+    {{- $l := .Language -}}
     {{- $url := "" -}}
     {{- range $page.AllTranslations -}}
       {{- if eq .Lang $l.Lang -}}{{- $url = .Permalink -}}{{- end -}}
@@ -18,7 +18,7 @@
       class="lang-switch__item{{ if $active }} is-active{{ end }}"
       hreflang="{{ $l.Lang }}"
       {{ if $active }}aria-current="true"{{ end }}
-      title="{{ $l.LanguageName | default ($l.Lang | upper) }}">
+      title="{{ $l.Label | default ($l.Lang | upper) }}">
       {{ partial "essentials/flag.html" $l.Lang }}
       <span class="lang-switch__label">{{ $l.Lang | upper }}</span>
     </a>

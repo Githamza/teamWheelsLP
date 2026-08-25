@@ -1,6 +1,6 @@
 ---
 title: "Politique de confidentialité"
-description: "Comment TeamWheels collecte, utilise et protège les données personnelles sur teamwheelsapp.com et au sein de l'application de covoiturage entreprise pour Microsoft Teams et Microsoft 365 Copilot."
+description: "Comment TeamWheels collecte, utilise et protège les données personnelles sur teamwheelsapp.com et dans l'application pour Microsoft Teams."
 draft: false
 layout: "legal"
 last_updated: "19 août 2026"

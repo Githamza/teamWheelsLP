@@ -302,7 +302,7 @@ date: {{ .Format "2006-01-02" }}
 - Sitemap: {{ $sitemapURL }}
 {{- with .Translations }}
 {{ range . -}}
-- {{ .Language.LanguageName }}: {{ .Permalink }}
+- {{ .Language.Label }}: {{ .Permalink }}
 {{ end -}}
 {{- end }}
 {{- if .IsHome }}

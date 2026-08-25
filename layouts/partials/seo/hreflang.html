@@ -1,18 +1,30 @@
-{{- /* hreflang tags for multilingual SEO */ -}}
-{{- if .IsHome -}}
-{{- /* For homepage, dynamically list all language versions */ -}}
-{{- range .Sites -}}
-<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Home.Permalink }}" />
-{{- end -}}
-<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
-{{- else -}}
-{{- /* For content pages */ -}}
-{{- /* Current page's language */ -}}
-<link rel="alternate" hreflang="{{ .Site.Language.Lang }}" href="{{ .Permalink }}" />
-{{- /* Alternative languages - check if translations exist */ -}}
-{{- range .Translations -}}
+{{- /*
+  Reciprocal hreflang annotations (FR ↔ EN).
+
+  Rules:
+    - A translated page lists every language version (including itself),
+      always as absolute URLs with a trailing slash.
+    - x-default always points at the French version when one exists —
+      French is the default content language and the market we target.
+    - A page with no translation only advertises itself + x-default, so the
+      annotation stays self-consistent and reciprocal.
+    - The root "/" shim is excluded: it is a 301 target at the server level
+      (see static/.htaccess) and must never advertise itself as a language
+      alternate.
+*/ -}}
+{{- if ne .RelPermalink "/" -}}
+  {{- if .IsTranslated -}}
+    {{- range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
-{{- end -}}
-{{- /* x-default for the primary language version */ -}}
+    {{- end }}
+    {{- $fr := where .AllTranslations "Language.Lang" "fr" -}}
+    {{- with $fr }}
+<link rel="alternate" hreflang="x-default" href="{{ (index . 0).Permalink }}" />
+    {{- else }}
 <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+    {{- end }}
+  {{- else }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+  {{- end }}
 {{- end -}}

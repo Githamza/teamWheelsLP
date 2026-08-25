@@ -1,8 +1,10 @@
 ---
 title: "HOV & Carpool Lane Rules 2026: Occupancy Requirements, Camera Enforcement and Fines"
+seoTitle: "HOV lane rules 2026: occupancy, cameras and fines"
+translationKey: "carpool-lanes-regulation-enforcement"
 date: 2026-07-15
 draft: false
-description: "HOV and carpool lane rules for 2026: occupancy thresholds, active hours, EV exemptions, diamond signage, AI camera enforcement and fines across the US, UK and Australia."
+description: "HOV and carpool lane rules for 2026: occupancy thresholds, active hours, EV exemptions, diamond signage, camera enforcement and fines."
 image: "images/blog/carpool-lanes.jpg"
 author: "TeamWheels Editorial"
 reading_time: "11 min"

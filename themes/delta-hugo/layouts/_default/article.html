@@ -2,7 +2,7 @@
   <a href="{{ .RelPermalink }}" title="{{ .Title }}">
     {{ with .Params.image }}
 
-    {{ partial "image.html" (dict "Src" . "Class" "card-img-top h-auto" "Alt" "blog-post") }}
+    {{ partial "image.html" (dict "Src" . "Class" "card-img-top h-auto" "Alt" $.Title) }}
     {{else}}
     <img class="img-fluid" src="https://via.placeholder.com/570x321.png/eee/eee" alt="image-fallback">
     {{end}}
@@ -12,7 +12,7 @@
     <h3 class="h5">
       <a class="blog-title" href="{{.RelPermalink}}" title="{{.Title}}">{{.Title}}</a>
     </h3>
-    <p class="mb-0">{{ .Plain | truncate 110 }}</p>
+    <p class="mb-0">{{ .Plain | plainify | truncate 110 }}</p>
   </div>
 
   {{ with site.GetPage (string .Params.Author | urlize | lower) }}

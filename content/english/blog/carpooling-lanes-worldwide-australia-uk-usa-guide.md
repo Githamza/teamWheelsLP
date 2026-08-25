@@ -1,8 +1,10 @@
 ---
 title: "Carpooling Lanes Around the World: How the USA, UK and Australia Are Tackling Traffic"
+seoTitle: "Carpool lanes worldwide: USA, UK and Australia guide"
+translationKey: "carpool-lanes-overview"
 date: 2026-04-07
 draft: false
-description: "Explore how carpooling lanes (HOV lanes) work in the USA, UK and Australia. Real examples, time savings data and what commuters need to know to use carpool lanes effectively."
+description: "How carpool (HOV) lanes work in the USA, UK and Australia: real examples, time-savings data and what commuters need to know to use them."
 image: images/blog/carpool-lanes.jpg
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg

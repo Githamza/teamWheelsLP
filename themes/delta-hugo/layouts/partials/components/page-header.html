@@ -7,7 +7,7 @@
         <h1 class="title">{{ .Title }}</h1>
         <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
           <ol class="breadcrumb justify-content-center bg-transparent p-0 mb-0">
-            <li class="breadcrumb-item"><a class="text-muted" href="{{ site.BaseURL | relLangURL }}/">Home</a></li>
+            <li class="breadcrumb-item"><a class="text-muted" href="{{ site.Home.RelPermalink }}">{{ site.Params.home | default "Home" }}</a></li>
             <li class="breadcrumb-item text-muted" aria-current="page">{{ .Title }}</li>
           </ol>
         </nav>

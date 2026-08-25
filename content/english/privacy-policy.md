@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-description: "How TeamWheels collects, uses, and protects personal data on teamwheelsapp.com and within the TeamWheels employee carpooling app for Microsoft Teams and Microsoft 365 Copilot."
+description: "How TeamWheels collects, uses and protects personal data on teamwheelsapp.com and within the employee carpooling app for Microsoft Teams."
 draft: false
 layout: "legal"
 last_updated: "19 August 2026"

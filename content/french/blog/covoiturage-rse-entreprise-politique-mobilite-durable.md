@@ -1,8 +1,10 @@
 ---
 title: "Covoiturage et RSE : intégrer la mobilité durable dans votre politique d'entreprise"
+seoTitle: "Covoiturage et RSE : politique de mobilité durable"
+translationKey: "carpooling-esg-csr"
 date: 2026-06-30
 draft: false
-description: "Comment le covoiturage domicile-travail renforce votre politique RSE : réduction du scope 3, conformité CSRD, indicateurs pour le bilan carbone et leviers d'engagement RH. Le guide pour DRH et responsables RSE."
+description: "Le covoiturage domicile-travail au service de votre politique RSE : réduction du scope 3, conformité CSRD, indicateurs et engagement salarié."
 image: "images/blog/sustainable-mobility.jpg"
 author: "TeamWheels Editorial"
 reading_time: "11 min"

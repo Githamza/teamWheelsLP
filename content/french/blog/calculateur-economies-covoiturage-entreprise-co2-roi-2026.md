@@ -1,6 +1,8 @@
 ---
 title: "Calculateur d'économies covoiturage 2026 : mesurez CO₂ et ROI en 2 minutes"
-description: "Utilisez le calculateur d'économies covoiturage gratuit TeamWheels pour estimer le CO₂ évité, les économies de carburant, les places de parking libérées et votre score RSE. Basé sur les facteurs ADEME. Rapport PDF instantané."
+seoTitle: "Calculateur d'économies covoiturage entreprise 2026"
+translationKey: "carpooling-savings-calculator"
+description: "Calculateur gratuit d'économies covoiturage : CO₂ évité, carburant et places de parking libérées. Facteurs ADEME, rapport PDF instantané."
 keywords: "calculateur covoiturage entreprise, calculateur économies covoiturage, calculateur CO2 covoiturage, bilan carbone mobilité domicile-travail, Scope 3 déplacements salariés, score RSE mobilité, facteurs ADEME, calculateur forfait mobilité durable, FMD calculateur, ROI covoiturage entreprise"
 date: 2026-04-20
 lastmod: 2026-04-20

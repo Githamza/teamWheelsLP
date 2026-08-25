@@ -1,8 +1,10 @@
 ---
 title: "Sustainable Mobility Incentives 2026: The Employer's Commuter Benefits Playbook (UK & US)"
+seoTitle: "Commuter benefits 2026: the UK and US employer playbook"
+translationKey: "sustainable-mobility-incentives"
 date: 2026-07-15
 draft: false
-description: "2026 employer guide to sustainable mobility and commuter benefit incentives: US Section 132(f) pre-tax caps, UK Cycle to Work & AMAP rates, eligible modes and carpooling ROI."
+description: "2026 employer guide to commuter benefit incentives: US Section 132(f) pre-tax caps, UK Cycle to Work and AMAP rates, eligible modes and ROI."
 image: "images/blog/sustainable-mobility.jpg"
 author: "TeamWheels Editorial"
 reading_time: "12 min"

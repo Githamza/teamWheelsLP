@@ -84,3 +84,49 @@
 
 - id: footer_menu_5_title
   translation: Autres pages
+
+- id: nav_main
+  translation: Navigation principale
+
+- id: nav_pagination
+  translation: Pagination des articles
+
+- id: select_language
+  translation: Choisir la langue
+
+- id: video_player_title
+  translation: Lecteur vidéo TeamWheels
+
+
+- id: sc_step1_title
+  translation: "Votre entreprise"
+
+- id: sc_step2_title
+  translation: "Mobilité actuelle"
+
+- id: sc_step3_title
+  translation: "Vos économies potentielles"
+
+- id: sc_step4_title
+  translation: "Votre rapport personnalisé"
+
+- id: sc_chart_bar_title
+  translation: "Émissions CO₂ : avant vs après"
+
+- id: sc_chart_rse_title
+  translation: "Score RSE Mobilité"
+
+- id: sc_cta_download
+  translation: "Télécharger mon rapport PDF"
+
+- id: sc_nav_prev
+  translation: "← Précédent"
+
+- id: sc_nav_next
+  translation: "Suivant →"
+
+- id: sc_progress
+  translation: "Progression du calculateur"
+
+- id: sc_step_nav
+  translation: "Navigation entre les étapes"

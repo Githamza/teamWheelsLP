@@ -1,8 +1,10 @@
 ---
 title: "Temps de Trajet Domicile-Travail 2026 : Temps de Travail ou Non ? Obligations de l'Employeur"
+seoTitle: "Temps de trajet domicile-travail : obligations employeur"
+translationKey: "commute-working-time-law"
 date: 2026-07-15
 draft: false
-description: "Temps de trajet domicile-travail 2026 : est-ce du temps de travail effectif ? Contreparties, frais de transport, accident de trajet. Le guide des obligations employeur."
+description: "Temps de trajet domicile-travail 2026 : est-ce du temps de travail effectif ? Contreparties, frais de transport et accident de trajet."
 image: "images/blog/corporate-carpooling.jpg"
 author: "TeamWheels Editorial"
 reading_time: "11 min"
@@ -118,7 +120,7 @@ Ne pas l'appliquer expose l'entreprise à un **redressement URSSAF** et à des *
 | Prise en charge 50 % transports publics | Abonnements bus/train/métro | **Obligatoire** (L3261-2) |
 | Prime de transport | Frais de carburant / recharge véhicule | Facultatif |
 | Forfait Mobilité Durable (FMD) | Vélo, covoiturage, autopartage, EDP | Facultatif |
-| Prise en charge > 50 % de l'abonnement | Part au-delà du minimum légal | Facultatif, exonéré jusqu'à un plafond |
+| Prise en charge de plus de 50 % de l'abonnement | Part au-delà du minimum légal | Facultatif, exonéré jusqu'à un plafond |
 
 Pour 2026, l'ensemble de ces aides à la mobilité peut être exonéré de cotisations sociales dans une limite globale (relevée à **900 € par an et par salarié** en cas de cumul du FMD avec la prise en charge des transports publics). La possibilité pour l'employeur de rembourser l'abonnement au-delà de 50 %, jusqu'à 75 %, en conservant un cadre d'exonération, a par ailleurs été prorogée. Les montants exacts sont fixés par la loi de finances et évoluent : référez-vous aux pages officielles [URSSAF — Frais professionnels](https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/frais-professionnels.html) et [economie.gouv.fr](https://www.economie.gouv.fr/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/frais-de-transport-des-salaries-quelles).
 

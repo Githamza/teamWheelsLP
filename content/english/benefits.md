@@ -1,5 +1,6 @@
 ---
 title: "TeamWheels Benefits | Why Choose Employee Carpooling for Microsoft Teams"
+seoTitle: "Corporate carpooling benefits | TeamWheels"
 description: "TeamWheels employee rideshare cuts Scope 3 emissions, saves $2,000+/employee, slashes parking 30% & simplifies commuter benefits — inside Microsoft Teams."
 keywords: "employee rideshare benefits, corporate ridesharing ROI, BlaBlaCar for business benefits, Uber for employees, Microsoft Teams app, Scope 3 commute emissions, pre-tax commuter benefits, employee commute savings, carpool program ROI, daily commute benefits, sustainable commute platform, vanpool alternative, employee well-being commuting"
 layout: "benefits"

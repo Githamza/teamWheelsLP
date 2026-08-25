@@ -84,3 +84,49 @@
 
 - id: footer_menu_5_title
   translation: Other Pages
+
+- id: nav_main
+  translation: Main navigation
+
+- id: nav_pagination
+  translation: Article pagination
+
+- id: select_language
+  translation: Select language
+
+- id: video_player_title
+  translation: TeamWheels video player
+
+
+- id: sc_step1_title
+  translation: "Your company"
+
+- id: sc_step2_title
+  translation: "Current mobility"
+
+- id: sc_step3_title
+  translation: "Your potential savings"
+
+- id: sc_step4_title
+  translation: "Your personalised report"
+
+- id: sc_chart_bar_title
+  translation: "CO₂ emissions: before vs after"
+
+- id: sc_chart_rse_title
+  translation: "Mobility ESG Score"
+
+- id: sc_cta_download
+  translation: "Download my PDF report"
+
+- id: sc_nav_prev
+  translation: "← Back"
+
+- id: sc_nav_next
+  translation: "Next →"
+
+- id: sc_progress
+  translation: "Calculator progress"
+
+- id: sc_step_nav
+  translation: "Step navigation"

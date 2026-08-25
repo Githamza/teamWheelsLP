@@ -1,6 +1,6 @@
 ---
 title: "Terms & Conditions"
-description: "The terms governing use of the TeamWheels website and the TeamWheels employee carpooling platform for Microsoft Teams."
+description: "The terms governing use of the TeamWheels website and of the TeamWheels employee carpooling platform for Microsoft Teams. Updated 2026."
 draft: false
 layout: "legal"
 last_updated: "19 August 2026"

@@ -1,8 +1,10 @@
 ---
 title: "Voies de covoiturage en France : avantages, dispositifs et guide pratique pour les trajets domicile-travail"
+seoTitle: "Voies de covoiturage en France : guide pratique 2026"
+translationKey: "carpool-lanes-overview"
 date: 2026-04-07
 draft: false
-description: "Découvrez les voies de covoiturage en France : avantages concrets, mesures gouvernementales, lignes en Île-de-France et guide pour covoiturer entre collègues au quotidien."
+description: "Les voies de covoiturage en France : avantages, mesures gouvernementales, lignes en Île-de-France et guide pour covoiturer entre collègues."
 image: images/blog/carpool-lanes.jpg
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg

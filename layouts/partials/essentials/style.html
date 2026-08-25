@@ -115,13 +115,17 @@ p,.paragraph{font-weight:400;color:#444}
 .btn-play i{border:1px solid #C2C2C2;border-radius:50px;height:2.5rem;width:2.5rem;line-height:2.5rem;margin-right:8px;font-size:13px;padding-left:2px;background-color:#fff;color:#5b5fc7;text-align:center;transition:.2s}
 .btn-link{background:transparent;color:#5b5fc7;border-color:transparent;text-decoration:none;padding:13px 25px}
 
-/* === Main & Banner === */
-main{overflow:hidden;padding:4.68rem;padding-bottom:0!important}
-@media(max-width:1399px){main{padding:3.75rem}}
-@media(max-width:991px){main{padding:2.5rem}}
-@media(max-width:767px){main{padding:25px}}
-@media(max-width:575px){main{padding:.625rem}}
-main:empty{display:none}
+/* === Main & Banner ===
+   `.main-block` is the second content slot (blog posts render into it). It was
+   a duplicate <main> element until we collapsed the document down to a single
+   landmark; it must keep <main>'s exact box so nothing shifts. */
+main,.main-block{overflow:hidden;padding:4.68rem;padding-bottom:0!important}
+@media(max-width:1399px){main,.main-block{padding:3.75rem}}
+@media(max-width:991px){main,.main-block{padding:2.5rem}}
+@media(max-width:767px){main,.main-block{padding:25px}}
+@media(max-width:575px){main,.main-block{padding:.625rem}}
+main:empty,.main-block:empty{display:none}
+.fact-counter{color:#000;font-family:"Catamaran","Catamaran Fallback",sans-serif;font-weight:900;line-height:calc(12px + 0.97em);margin-top:0;margin-bottom:.5rem}
 .wave-block{position:relative;z-index:1}
 .wave-block .has-wave{position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;pointer-events:none}
 .wave-block .has-wave svg{color:#fff;position:absolute;max-width:100%}
