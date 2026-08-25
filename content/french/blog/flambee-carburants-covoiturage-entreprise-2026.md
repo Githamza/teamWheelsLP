@@ -64,4 +64,4 @@ Juste un rappel discret, chaque jour, que le siège passager n'a pas à rester v
 
 ---
 
-> **Pour aller plus loin :** [Guide complet du covoiturage domicile-travail en entreprise 2026](/fr/blog/covoiturage-entreprise-guide-2026/) — FMD, loi LOM, comparatif BlaBlaCar / Klaxit / TeamWheels et plan de déploiement en 4 semaines.
+> **Pour aller plus loin :** [Guide complet du covoiturage en entreprise](/fr/covoiturage-entreprise/) — FMD, loi LOM, comparatif BlaBlaCar / Klaxit / TeamWheels et plan de déploiement en 4 semaines.

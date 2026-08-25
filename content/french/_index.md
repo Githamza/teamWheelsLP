@@ -60,7 +60,7 @@ fun_facts:
   title: "Le covoiturage domicile-travail en chiffres"
   fact_item:
   - icon: "fas fa-euro-sign"
-    counter: "800"
+    counter: "600"
     counter_suffix: "€"
     counter_prefix: ""
     content: "par an et par salarié avec le Forfait Mobilité Durable"
@@ -116,14 +116,14 @@ image_and_content_blocks:
 
   - enable: true
     subtitle: "Coup de pouce du gouvernement"
-    title: "Forfait Mobilité Durable : jusqu'à 800€/an par salarié"
+    title: "Forfait Mobilité Durable : jusqu'à 600€/an par salarié"
     image: "images/rse-carpooling.png"
     content_position: "right"
-    content: "Versez jusqu'à 800€/an par salarié, exonérés de charges et d'impôt. TeamWheels génère automatiquement les justificatifs FMD et vous permet de rejoindre la charte ADEME.
+    content: "Versez jusqu'à 600€/an par salarié (900€ en cumul avec l'abonnement transport), exonérés de charges et d'impôt. TeamWheels génère automatiquement les justificatifs FMD et vous permet de rejoindre la charte ADEME.
 
-    [En savoir plus →](benefits/#fmd)
+    [Le guide complet du Forfait Mobilité Durable →](/fr/forfait-mobilite-durable/)
 
-    [Guide complet : covoiturage domicile-travail en entreprise →](/fr/blog/covoiturage-entreprise-guide-2026/)
+    [Guide complet : covoiturage domicile-travail en entreprise →](/fr/covoiturage-entreprise/)
     "
     button:
       enable: false

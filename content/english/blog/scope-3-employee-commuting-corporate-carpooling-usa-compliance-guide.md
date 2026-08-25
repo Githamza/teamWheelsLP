@@ -225,7 +225,7 @@ Modern carpooling platforms generate automatic compliance reports with exact CO2
 
 **The window to establish baseline data and demonstrate year-over-year improvement is now.** Companies that launch carpooling programs in 2026 will have measurable reduction trends to report when Scope 3 disclosures become mandatory in 2027.
 
-> **Related guide:** [Corporate Carpooling 2026: The Complete Guide](/en/blog/corporate-carpooling-guide-2026/) — IRS commuter benefits, ESG dashboard, fleet management, and a 30-day launch plan.
+> **Related guide:** [Corporate Carpooling: The Complete Guide](/en/corporate-carpooling/) — IRS commuter benefits, ESG dashboard, fleet management, and a 30-day launch plan.
 
 ## Why TeamWheels for Your US Carpooling Program
 

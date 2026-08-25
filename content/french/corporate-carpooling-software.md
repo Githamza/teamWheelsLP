@@ -94,7 +94,7 @@ image_and_content_blocks:
 
     * **Versez le Forfait Mobilité Durable** — Jusqu'à 900 € par an et par salarié, exonérés de charges, pour récompenser le covoiturage domicile-travail (loi LOM)
 
-    Adopté par des entreprises en France et au Canada. Vous voulez vos chiffres ? [Simulez vos économies →](/fr/tools/savings-calculator/) ou lisez le [guide complet du covoiturage entreprise →](/fr/blog/covoiturage-entreprise-guide-2026/).
+    Adopté par des entreprises en France et au Canada. Vous voulez vos chiffres ? [Simulez vos économies →](/fr/tools/savings-calculator/) ou lisez le [guide complet du covoiturage entreprise →](/fr/covoiturage-entreprise/).
     "
     button:
       enable: false

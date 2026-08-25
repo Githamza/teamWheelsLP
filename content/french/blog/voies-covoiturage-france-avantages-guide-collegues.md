@@ -39,7 +39,7 @@ Mais les économies ne s'arrêtent pas là :
 
 - **Conducteurs** : les plateformes comme Karos versent **0,50 € par trajet déclaré** (minimum 5 km en heures de pointe) et **2 € par passager transporté**
 - **Passagers abonnés Navigo** : trajets de covoiturage **gratuits** en 2025-2026 grâce à Île-de-France Mobilités
-- **Forfait Mobilité Durable** : jusqu'à **800 € par an** exonérés d'impôts et de charges sociales, cumulables avec le remboursement du Pass Navigo
+- **Forfait Mobilité Durable** : jusqu'à **600 € par an** exonérés d'impôts et de charges sociales, porté à 900 € en cumul avec le remboursement du Pass Navigo
 
 ### Un impact environnemental significatif
 
@@ -143,7 +143,7 @@ Les trajets les plus durables reposent sur des règles claires :
 
 Vérifiez ce que votre employeur propose :
 
-- **Forfait Mobilité Durable** : demandez à votre service RH si l'entreprise le propose (jusqu'à 800 €/an)
+- **Forfait Mobilité Durable** : demandez à votre service RH si l'entreprise le propose (jusqu'à 600 €/an)
 - **Places de parking prioritaires** : de plus en plus d'entreprises réservent des places aux covoitureurs
 - **Garantie retour** : certaines entreprises remboursent un taxi ou VTC si votre covoitureur a un imprévu
 - **Jours de télétravail flexibles** : négociez des horaires adaptés au covoiturage
@@ -184,4 +184,4 @@ Le covoiturage entre collègues n'est plus une contrainte — c'est un avantage 
 
 ---
 
-> **Pour aller plus loin :** [Guide complet du covoiturage domicile-travail en entreprise 2026](/fr/blog/covoiturage-entreprise-guide-2026/) — FMD, loi LOM, comparatif des plateformes et plan de déploiement en 4 semaines.
+> **Pour aller plus loin :** [Guide complet du covoiturage en entreprise](/fr/covoiturage-entreprise/) — FMD, loi LOM, comparatif des plateformes et plan de déploiement en 4 semaines.

@@ -66,9 +66,15 @@ weight = 1
 
 [[main]]
 parent = "resources"
+name = "Corporate carpooling guide"
+url = "corporate-carpooling/"
+weight = 2
+
+[[main]]
+parent = "resources"
 name = "Blog"
 url = "blog/"
-weight = 2
+weight = 3
 
 # ── Contact (standalone) ──
 [[main]]
@@ -124,7 +130,12 @@ url = "tools/savings-calculator/"
 weight = 5
 
 [[footer_menu_4]]
+name = "Corporate carpooling guide"
+url = "corporate-carpooling/"
+weight = 6
+
+[[footer_menu_4]]
 name = "Blog"
 url = "blog/"
-weight = 6
+weight = 7
 

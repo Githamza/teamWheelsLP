@@ -11,6 +11,7 @@
     "require-sri": "off",
     "long-title": "off",
     "no-raw-characters": ["error", { "relaxed": true }],
+    "form-dup-name": ["error", { "shared": ["radio", "checkbox"] }],
     "hidden-focusable": "off",
     "prefer-native-element": "off",
     "valid-id": "off",

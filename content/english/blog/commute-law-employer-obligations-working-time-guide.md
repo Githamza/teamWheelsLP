@@ -188,7 +188,7 @@ You cannot legislate the commute away — but you can cut its cost and its burde
 
 **Ready to reduce commute cost without adding legal risk?** Explore our [corporate carpooling software](/en/corporate-carpooling-software/) built natively into Microsoft Teams, or [talk to our team](/en/contact/) about rolling it out across your sites.
 
-> **Go deeper:** For the full picture on costs, ROI, and choosing the right platform, read our [Corporate Carpooling Guide (2026)](/en/blog/corporate-carpooling-guide-2026/).
+> **Go deeper:** For the full picture on costs, ROI, and choosing the right platform, read our [Corporate Carpooling Guide](/en/corporate-carpooling/).
 
 ---
 

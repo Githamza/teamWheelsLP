@@ -6,6 +6,11 @@ draft: false
 sitemap:
   priority: 0.7
   changefreq: "monthly"
+
+linked_tools:
+  - title: "Simulateur Forfait Mobilité Durable"
+    url: "/fr/forfait-mobilite-durable/#fmd-sim-title"
+    description: "Chiffrez le coût employeur d'un FMD, les charges évitées et le gain pour vos salariés, selon votre effectif et vos plafonds de cumul."
 ---
 
 Des calculateurs et simulateurs gratuits, sans inscription, pour chiffrer votre

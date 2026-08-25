@@ -38,6 +38,14 @@
   ## Renamed article. Hugo `aliases` only emit a meta-refresh stub, which
   ## passes no PageRank — the 301 has to be declared here.
   RewriteRule ^fr/blog/voies-covoiturage-paris-peripherique-guide-2025/?$ /fr/blog/voies-covoiturage-paris-peripherique-guide-2026/ [R=301,L]
+
+  ## Cluster merge (SEO step 2). Four FR articles competing on the same intent
+  ## were consolidated into one evergreen pillar, and the FMD guide moved out
+  ## of /blog/. Same for their EN counterparts. The Hugo `aliases` on the new
+  ## pages are only a meta-refresh fallback; these are the real 301s.
+  RewriteRule ^fr/blog/(covoiturage-domicile-travail-entreprise|covoiturage-entreprise-guide-2026|covoiturage-entreprise-5-etapes-demarrer|comment-lancer-rapidement-plateforme-covoiturage-personnalisable-entreprise)/?$ /fr/covoiturage-entreprise/ [R=301,L]
+  RewriteRule ^fr/blog/forfait-mobilite-durable-guide-complet-2025/?$ /fr/forfait-mobilite-durable/ [R=301,L]
+  RewriteRule ^en/blog/(corporate-carpooling-guide-2026|carpooling-to-work-corporate-guide|how-to-launch-corporate-carpooling-program|how-to-quickly-launch-customizable-carpool-platform-for-your-company)/?$ /en/corporate-carpooling/ [R=301,L]
 </IfModule>
 
 <IfModule mod_alias.c>
@@ -48,6 +56,9 @@
   RedirectMatch 301 "^/(fr|en)/career(/.*)?$" "/$1/contact/"
   RedirectMatch 301 "^/career(/.*)?$" "/fr/contact/"
   RedirectMatch 301 "^/fr/blog/voies-covoiturage-paris-peripherique-guide-2025/?$" "/fr/blog/voies-covoiturage-paris-peripherique-guide-2026/"
+  RedirectMatch 301 "^/fr/blog/(covoiturage-domicile-travail-entreprise|covoiturage-entreprise-guide-2026|covoiturage-entreprise-5-etapes-demarrer|comment-lancer-rapidement-plateforme-covoiturage-personnalisable-entreprise)/?$" "/fr/covoiturage-entreprise/"
+  RedirectMatch 301 "^/fr/blog/forfait-mobilite-durable-guide-complet-2025/?$" "/fr/forfait-mobilite-durable/"
+  RedirectMatch 301 "^/en/blog/(corporate-carpooling-guide-2026|carpooling-to-work-corporate-guide|how-to-launch-corporate-carpooling-program|how-to-quickly-launch-customizable-carpool-platform-for-your-company)/?$" "/en/corporate-carpooling/"
 </IfModule>
 ##### 301 redirects (SEO) — END
 

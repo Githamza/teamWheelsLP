@@ -226,7 +226,7 @@ Le poste le plus rapide à activer dans votre plan de décarbonation est aussi l
 
 **[Découvrir le logiciel de covoiturage entreprise](/fr/corporate-carpooling-software/)** · **[Demander une démo gratuite](/fr/contact/)**
 
-> **Pour aller plus loin :** approfondissez l'intégration de la mobilité dans votre démarche RSE avec [covoiturage et RSE : mobilité durable dans votre politique d'entreprise](/fr/blog/covoiturage-rse-entreprise-politique-mobilite-durable/), et retrouvez la vue d'ensemble dans notre [guide du covoiturage d'entreprise 2026](/fr/blog/covoiturage-entreprise-guide-2026/).
+> **Pour aller plus loin :** approfondissez l'intégration de la mobilité dans votre démarche RSE avec [covoiturage et RSE : mobilité durable dans votre politique d'entreprise](/fr/blog/covoiturage-rse-entreprise-politique-mobilite-durable/), et retrouvez la vue d'ensemble dans notre [guide du covoiturage en entreprise](/fr/covoiturage-entreprise/).
 
 ---
 

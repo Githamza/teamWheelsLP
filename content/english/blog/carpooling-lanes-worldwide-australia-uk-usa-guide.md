@@ -211,4 +211,4 @@ The infrastructure is being built. The incentives are growing. The only question
 
 ---
 
-> **Go deeper:** [Corporate Carpooling 2026: The Complete Guide](/en/blog/corporate-carpooling-guide-2026/) — IRS, Clean Air Zone and FBT incentives, platform comparison, ESG reporting, and a 30-day launch plan.
+> **Go deeper:** [Corporate Carpooling: The Complete Guide](/en/corporate-carpooling/) — IRS, Clean Air Zone and FBT incentives, platform comparison, ESG reporting, and a 30-day launch plan.

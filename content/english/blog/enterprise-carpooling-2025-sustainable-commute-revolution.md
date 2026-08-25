@@ -212,7 +212,7 @@ With TeamWheels, launching your carpooling program is simple:
 
 **Ready to transform your corporate commute?**
 
-> **Related guide:** [Corporate Carpooling 2026: The Complete Guide](/en/blog/corporate-carpooling-guide-2026/) — ridesharing vs carpooling, platform comparison, IRS / Clean Air Zone / FBT benefits, and a 30-day launch plan.
+> **Related guide:** [Corporate Carpooling: The Complete Guide](/en/corporate-carpooling/) — ridesharing vs carpooling, platform comparison, IRS / Clean Air Zone / FBT benefits, and a 30-day launch plan.
 
 [Start Your Free Trial →](/en/contact/)
 

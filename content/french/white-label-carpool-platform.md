@@ -32,7 +32,7 @@ image_and_content_blocks:
 
     * **Conçue pour le domicile-travail** — Mise en relation par trajet, horaires et site — pas des fonctions de taxi que vous n'utiliserez jamais
 
-    Vous hésitez entre les deux approches ? Lisez notre guide : [lancer rapidement une plateforme de covoiturage personnalisable →](/fr/blog/comment-lancer-rapidement-plateforme-covoiturage-personnalisable-entreprise/)
+    Vous hésitez entre les deux approches ? Lisez notre guide : [le guide du covoiturage en entreprise →](/fr/covoiturage-entreprise/)
     "
     button:
       enable: false

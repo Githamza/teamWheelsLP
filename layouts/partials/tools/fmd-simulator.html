@@ -1,0 +1,145 @@
+{{/*
+  Simulateur Forfait Mobilité Durable.
+
+  Rendu côté serveur pour que Google et les lecteurs sans JS voient du contenu,
+  pas seulement un formulaire vide :
+    - le tableau statique des plafonds (#fmd-sim-fallback) est visible par
+      défaut et n'est masqué que lorsque le script prend la main ;
+    - le formulaire (#fmd-sim) porte `hidden` jusqu'à ce que assets/js/
+      fmd-simulator.js le révèle.
+  Les constantes légales vivent dans ce script, dans un objet unique.
+
+  Le sélecteur de secteur ne propose que le privé : les plafonds des trois
+  versants de la fonction publique n'ont pas pu être vérifiés contre une source
+  officielle, et publier un montant réglementaire faux serait pire que de ne
+  rien afficher. L'option est présente mais désactivée, avec la raison visible.
+*/}}
+
+{{ $simJS := resources.Get "js/fmd-simulator.js" }}
+{{ if hugo.IsProduction }}{{ $simJS = $simJS | fingerprint "sha512" }}{{ end }}
+
+<section class="fmd-simulator mb-5" aria-labelledby="fmd-sim-title">
+  <h2 id="fmd-sim-title" class="h4">Simulateur : combien coûte un Forfait Mobilité Durable&nbsp;?</h2>
+
+  {{/* Fallback sans JS — également le contenu indexable de la section. */}}
+  <div id="fmd-sim-fallback">
+    <p>Plafonds d’exonération applicables au secteur privé&nbsp;:</p>
+    <table>
+      <caption class="visually-hidden">Plafonds annuels d’exonération du forfait mobilités durables par salarié</caption>
+      <thead>
+        <tr><th scope="col">Situation</th><th scope="col">Plafond annuel exonéré</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>FMD versé seul</td><td>600&nbsp;€ par salarié</td></tr>
+        <tr><td>FMD cumulé avec la prise en charge d’un abonnement de transport en commun</td><td>900&nbsp;€ au total, après déduction de l’abonnement</td></tr>
+      </tbody>
+    </table>
+    <p class="text-muted">Activez JavaScript pour chiffrer votre propre budget avec le simulateur.</p>
+  </div>
+
+  <form id="fmd-sim" class="fmd-sim rounded-lg" hidden>
+    <div class="fmd-sim__grid">
+
+      <div class="fmd-sim__field">
+        <label for="fmd-sector">Secteur</label>
+        <select id="fmd-sector" name="fmd-sector">
+          <option value="private" selected>Secteur privé</option>
+          <option value="public" disabled>Fonction publique (montants en cours de vérification)</option>
+        </select>
+      </div>
+
+      <div class="fmd-sim__field">
+        <label for="fmd-employees">Nombre de salariés concernés</label>
+        <input type="number" id="fmd-employees" name="fmd-employees" min="1" step="1" value="50" inputmode="numeric">
+      </div>
+
+      <fieldset class="fmd-sim__field fmd-sim__field--wide">
+        <legend>Modes éligibles retenus</legend>
+        <div class="fmd-sim__modes">
+          <label><input type="checkbox" name="fmd-mode" value="covoiturage" checked> Covoiturage</label>
+          <label><input type="checkbox" name="fmd-mode" value="velo" checked> Vélo</label>
+          <label><input type="checkbox" name="fmd-mode" value="edp"> Trottinette / EDP</label>
+          <label><input type="checkbox" name="fmd-mode" value="autopartage"> Autopartage</label>
+          <label><input type="checkbox" name="fmd-mode" value="marche"> Marche</label>
+        </div>
+        <p id="fmd-mode-warning" class="fmd-sim__warning" hidden>Sélectionnez au moins un mode pour que le forfait ait un objet.</p>
+      </fieldset>
+
+      <div class="fmd-sim__field fmd-sim__field--wide">
+        <label class="fmd-sim__inline">
+          <input type="checkbox" id="fmd-transit" name="fmd-transit">
+          Cumul avec la prise en charge d’un abonnement de transport en commun
+        </label>
+      </div>
+
+      <div class="fmd-sim__field" id="fmd-transit-row" hidden>
+        <label for="fmd-transit-amount">Prise en charge de l’abonnement (€ / salarié / an)</label>
+        <input type="number" id="fmd-transit-amount" name="fmd-transit-amount" min="0" step="10" value="300" inputmode="numeric">
+      </div>
+
+      <div class="fmd-sim__field fmd-sim__field--wide">
+        <label for="fmd-amount">Montant de FMD versé par salarié et par an</label>
+        <input type="range" id="fmd-amount" name="fmd-amount" min="0" max="600" step="10" value="600">
+        <output id="fmd-amount-out" for="fmd-amount">600 €</output>
+        <p id="fmd-ceiling-note" class="fmd-sim__note"></p>
+      </div>
+
+      <div class="fmd-sim__field">
+        <label for="fmd-employer-rate">Taux de charges patronales retenu (%)</label>
+        <input type="number" id="fmd-employer-rate" name="fmd-employer-rate" min="0" max="100" step="1" value="42" inputmode="numeric">
+      </div>
+
+    </div>
+
+    <div class="fmd-sim__results" aria-live="polite">
+      <h3 class="h5">Résultats estimés</h3>
+      <dl class="fmd-sim__out">
+        <div><dt>Montant exonéré par salarié / an</dt><dd id="fmd-out-per-employee">—</dd></div>
+        <div><dt>Coût total employeur / an</dt><dd id="fmd-out-total">—</dd></div>
+        <div><dt>Charges patronales évitées vs prime équivalente</dt><dd id="fmd-out-savings">—</dd></div>
+        <div><dt>Gain salarié vs prime brute équivalente</dt><dd id="fmd-out-net">—</dd></div>
+      </dl>
+    </div>
+  </form>
+
+  {{/* 200-300 mots de méthode : Google doit voir du texte, pas qu'un formulaire. */}}
+  <div class="content fmd-sim__method">
+    <h3 class="h5">Méthode et hypothèses</h3>
+    <p>
+      Le simulateur applique les plafonds d’exonération du secteur privé&nbsp;: <strong>600&nbsp;€ par
+      salarié et par an</strong> lorsque le forfait est versé seul, <strong>900&nbsp;€</strong> lorsqu’il se
+      cumule avec la prise en charge d’un abonnement de transport en commun. Ce second plafond est
+      <em>global</em>&nbsp;: il s’apprécie après déduction de votre participation à l’abonnement. Si vous
+      remboursez déjà 300&nbsp;€ d’abonnement par an, il reste 600&nbsp;€ de marge pour le FMD, pas 900. Le
+      curseur se borne automatiquement à cette marge, ce qui explique qu’il se déplace lorsque vous
+      cochez le cumul.
+    </p>
+    <p>
+      Le <strong>coût total employeur</strong> est le produit du montant versé par le nombre de salariés
+      concernés, hors charges — puisque le forfait en est exonéré dans la limite du plafond. L’<strong>économie
+      de charges</strong> compare ce versement à une prime classique de même montant, qui serait elle soumise à
+      cotisations&nbsp;: elle vaut le montant versé multiplié par le taux de charges patronales que vous
+      indiquez. La valeur par défaut de 42&nbsp;% est un ordre de grandeur courant, pas une donnée légale&nbsp;;
+      remplacez-la par votre taux réel pour un chiffrage fiable.
+    </p>
+    <p>
+      Le <strong>gain salarié</strong> retenu est la part de cotisations salariales qu’une prime brute
+      équivalente aurait supportée, sur la base d’un taux de 22&nbsp;%. Il est volontairement prudent&nbsp;:
+      le forfait étant aussi exonéré d’impôt sur le revenu, l’avantage réel est supérieur pour un salarié
+      imposable, d’un montant qui dépend de sa tranche marginale.
+    </p>
+    <p>
+      Ces résultats sont des estimations destinées à cadrer un budget. Le montant du forfait, les
+      conditions d’attribution et les modes retenus relèvent de votre décision unilatérale ou de votre
+      accord d’entreprise, et le versement doit apparaître distinctement sur le bulletin de paie.
+    </p>
+  </div>
+
+  <div class="fmd-sim__cta rounded-lg">
+    <p class="mb-2"><strong>TeamWheels génère automatiquement les justificatifs FMD de vos salariés covoitureurs.</strong>
+    Kilomètres partagés, attestations, suivi des plafonds par salarié&nbsp;: le dossier est prêt en cas de contrôle URSSAF.</p>
+    <a class="btn btn-primary" href="{{ "fr/contact/" | absURL }}">Commencer mon essai gratuit →</a>
+  </div>
+</section>
+
+<script src="{{ $simJS.RelPermalink }}" defer></script>

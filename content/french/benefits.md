@@ -57,18 +57,18 @@ image_and_content_blocks:
   - enable: true
     anchor: "fmd"
     subtitle: "Coup de pouce du gouvernement"
-    title: "Forfait Mobilité Durable : jusqu'à 800€/an par salarié"
+    title: "Forfait Mobilité Durable : jusqu'à 600€/an par salarié"
     image: "images/rse-carpooling.png"
     content_position: "right"
     content: "Valorisez l'engagement de vos collaborateurs avec le dispositif gouvernemental.
 
-    **Forfait Mobilité Durable (FMD)** : Vous pouvez verser jusqu'à 800€/an par salarié, exonérés de charges sociales et d'impôt. Un avantage attractif pour vos équipes, et une économie réelle pour votre entreprise !
+    **Forfait Mobilité Durable (FMD)** : Vous pouvez verser jusqu'à 600€/an par salarié — 900€ en cumul avec la prise en charge de l'abonnement transport — exonérés de charges sociales et d'impôt. Un avantage attractif pour vos équipes, et une économie réelle pour votre entreprise !
 
     **Charte ADEME** : Rejoignez les 16 grands employeurs (1M de salariés) signataires de la <a style='color: #007bff;' href='https://employeursprocovoiturage.ademe.fr/' target='_blank'>charte d'engagement covoiturage</a>.
 
     **Justificatifs automatisés** : TeamWheels génère automatiquement les attestations et justificatifs nécessaires pour mettre en place le FMD dans votre entreprise, sans charge administrative supplémentaire pour vos équipes RH.
 
-    [Lire le guide complet du covoiturage d'entreprise →](/fr/blog/covoiturage-entreprise-guide-2026/)"
+    [Lire le guide complet du covoiturage d'entreprise →](/fr/covoiturage-entreprise/)"
     button:
       enable: false
 

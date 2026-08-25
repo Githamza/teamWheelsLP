@@ -192,6 +192,20 @@
     </div>
   </section>
 
+  {{/* Methodology copy. The calculator itself is a JS form, so without this the
+       page shipped ~45 words of indexable text — nothing for Google to rank and
+       nothing for a visitor to judge the numbers by. Authored in Markdown in the
+       page's own body so it stays editable by whoever owns the content. */}}
+  {{ with .Content }}
+    <section class="section-sm pt-0">
+      <div class="container container-delta">
+        <div class="row justify-content-center">
+          <div class="col-lg-9 content">{{ . }}</div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js" defer></script>
   <script src="{{ $calcJS.RelPermalink }}" defer></script>

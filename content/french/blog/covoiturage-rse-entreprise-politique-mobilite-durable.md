@@ -22,7 +22,7 @@ faq:
   - question: "Le covoiturage est-il un argument pour la marque employeur et la QVT ?"
     answer: "Absolument. Réduire le coût et le stress du trajet domicile-travail est l'un des avantages les plus tangibles qu'un employeur puisse offrir : il se ressent chaque jour, contrairement à une prime ponctuelle. Les entreprises qui structurent leur mobilité améliorent leur attractivité, leur rétention et leur score de qualité de vie au travail (QVT). C'est un argument concret de marque employeur, valorisable en entretien comme dans le bilan social."
   - question: "Comment lancer un volet covoiturage dans sa politique RSE ?"
-    answer: "Commencez par cartographier les trajets domicile-travail (données RH anonymisées ou questionnaire), fixez le montant de Forfait Mobilité Durable retenu (jusqu'à 800 €/an exonérés), déployez un outil de mise en relation à faible friction — idéalement intégré aux outils déjà utilisés comme Microsoft Teams — puis suivez les indicateurs CO₂ et d'adoption. La plupart des entreprises atteignent 30 % d'adoption dès le premier mois et disposent de données exploitables pour leur reporting RSE en moins d'un trimestre."
+    answer: "Commencez par cartographier les trajets domicile-travail (données RH anonymisées ou questionnaire), fixez le montant de Forfait Mobilité Durable retenu (jusqu'à 600 €/an exonérés), déployez un outil de mise en relation à faible friction — idéalement intégré aux outils déjà utilisés comme Microsoft Teams — puis suivez les indicateurs CO₂ et d'adoption. La plupart des entreprises atteignent 30 % d'adoption dès le premier mois et disposent de données exploitables pour leur reporting RSE en moins d'un trimestre."
 ---
 
 # Covoiturage et RSE : transformer le trajet domicile-travail en levier de performance durable
@@ -78,7 +78,7 @@ Prenons un trajet domicile-travail moyen de 30 km, 4 jours par semaine :
 
 Sur un effectif de 200 salariés dont 40 % adoptent le covoiturage à deux, l'entreprise évite **plusieurs dizaines de tonnes de CO₂ par an** — un résultat directement déductible du bilan carbone, à condition de **mesurer les kilomètres réellement partagés**.
 
-> **Le point clé : la donnée.** Une politique RSE crédible ne se contente pas d'estimer. Elle prouve. C'est là que la plupart des programmes de covoiturage échouent : sans outil de suivi, impossible de documenter le CO₂ évité. Une plateforme intégrée comme TeamWheels enregistre automatiquement chaque trajet partagé, ses kilomètres et le CO₂ correspondant — des données **audit-ready** pour votre reporting. Pour comprendre l'enjeu réglementaire du scope 3, voir aussi notre [guide complet du covoiturage en entreprise 2026](/fr/blog/covoiturage-entreprise-guide-2026/).
+> **Le point clé : la donnée.** Une politique RSE crédible ne se contente pas d'estimer. Elle prouve. C'est là que la plupart des programmes de covoiturage échouent : sans outil de suivi, impossible de documenter le CO₂ évité. Une plateforme intégrée comme TeamWheels enregistre automatiquement chaque trajet partagé, ses kilomètres et le CO₂ correspondant — des données **audit-ready** pour votre reporting. Pour comprendre l'enjeu réglementaire du scope 3, voir aussi notre [guide complet du covoiturage en entreprise](/fr/covoiturage-entreprise/).
 
 ---
 
@@ -96,7 +96,7 @@ Mais la CSRD ne s'arrête pas au carbone. Le standard social **ESRS S1** attend 
 
 Pour les entreprises encore soumises à la **Déclaration de Performance Extra-Financière (DPEF)**, le covoiturage fournit une section concrète et chiffrée sur la politique de mobilité : km partagés, CO₂ évité, montant de Forfait Mobilité Durable versé.
 
-> **Forfait Mobilité Durable (FMD)** — Instauré par la **loi LOM** (Loi d'Orientation des Mobilités), le FMD permet à l'employeur de prendre en charge jusqu'à **800 € par an et par salarié** les frais de covoiturage domicile-travail, exonérés de cotisations sociales et d'impôt sur le revenu. C'est à la fois un avantage social et une dépense valorisable dans le reporting RSE. [Lire le guide complet du FMD →](/fr/blog/forfait-mobilite-durable-guide-complet-2025/)
+> **Forfait Mobilité Durable (FMD)** — Instauré par la **loi LOM** (Loi d'Orientation des Mobilités), le FMD permet à l'employeur de prendre en charge jusqu'à **600 € par an et par salarié** les frais de covoiturage domicile-travail — 900 € en cumul avec la prise en charge d'un abonnement de transport en commun — exonérés de cotisations sociales et d'impôt sur le revenu. C'est à la fois un avantage social et une dépense valorisable dans le reporting RSE. [Lire le guide complet du FMD →](/fr/forfait-mobilite-durable/)
 
 ---
 
@@ -151,7 +151,7 @@ Le covoiturage est le moyen le plus direct de **donner corps au PDM** :
 2. **Dispositif** — mettre en place un outil de mise en relation et le Forfait Mobilité Durable ;
 3. **Suivi** — mesurer l'adoption et l'impact carbone, et alimenter le reporting RSE.
 
-Un PDM doté d'un programme de covoiturage actif passe du statut de **document de conformité** à celui de **levier de performance mesurable**. Pour la feuille de route détaillée, consultez [covoiturage entreprise : 5 étapes pour démarrer](/fr/blog/covoiturage-entreprise-5-etapes-demarrer/).
+Un PDM doté d'un programme de covoiturage actif passe du statut de **document de conformité** à celui de **levier de performance mesurable**. Pour la feuille de route détaillée, consultez [le guide du covoiturage en entreprise](/fr/covoiturage-entreprise/).
 
 ---
 
@@ -161,7 +161,7 @@ Intégrer le covoiturage à votre politique RSE ne demande pas des mois. La clé
 
 ### Semaine 1 — Diagnostic mobilité
 
-Cartographie des corridors domicile-travail (données RH anonymisées ou questionnaire). Définition du montant de Forfait Mobilité Durable retenu (de 0 à 800 €/an). Identification des indicateurs RSE prioritaires.
+Cartographie des corridors domicile-travail (données RH anonymisées ou questionnaire). Définition du montant de Forfait Mobilité Durable retenu (de 0 à 600 €/an). Identification des indicateurs RSE prioritaires.
 
 ### Semaine 2 — Installation dans Microsoft Teams
 

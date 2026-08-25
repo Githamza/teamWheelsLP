@@ -509,3 +509,174 @@ $gutters: (
   margin-top: 0;
   margin-bottom: $spacer * 0.5;
 }
+
+// ─────────────────────────────────────────────────────────────────────────
+// Pages piliers (layouts/_default/guide.html) et simulateur FMD.
+// Mobile-first : une colonne par défaut, deux à partir de 768px.
+// ─────────────────────────────────────────────────────────────────────────
+
+.guide-keypoints {
+  background: rgba($color-primary, 0.07);
+  border-left: 4px solid $color-primary;
+  padding: 1.5rem 1.5rem 1.5rem 1.75rem;
+
+  ul {
+    padding-left: 1.1rem;
+    margin-bottom: 0;
+  }
+  li + li {
+    margin-top: 0.5rem;
+  }
+}
+
+.guide-faq {
+  dt {
+    color: $black;
+  }
+  dd {
+    margin-bottom: 0;
+    color: $text-color;
+  }
+}
+
+.guide-sources {
+  font-size: 0.95rem;
+
+  ul {
+    padding-left: 1.1rem;
+  }
+}
+
+.fmd-simulator {
+  table {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.fmd-sim {
+  background: rgba($color-primary, 0.05);
+  border: 1px solid rgba($color-primary, 0.2);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__field--wide {
+    @media (min-width: 768px) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__field {
+    label,
+    legend {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+      font-size: 0.95rem;
+    }
+
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 0.55rem 0.7rem;
+      border: 1px solid $border-color;
+      border-radius: 0.4rem;
+      background: $white;
+      color: $text-dark;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+  }
+
+  &__inline {
+    display: flex !important;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-weight: 500 !important;
+
+    input {
+      margin-top: 0.25rem;
+      flex-shrink: 0;
+    }
+  }
+
+  &__modes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+
+    label {
+      font-weight: 400;
+      margin-bottom: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+  }
+
+  &__note,
+  &__warning {
+    font-size: 0.9rem;
+    margin: 0.4rem 0 0;
+    color: $text-light;
+  }
+
+  &__warning {
+    color: $color-tertiary;
+  }
+
+  output {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: $color-primary;
+  }
+
+  &__results {
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba($color-primary, 0.2);
+    padding-top: 1.25rem;
+  }
+
+  &__out {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-bottom: 0;
+
+    @media (min-width: 576px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    dt {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: $text-color;
+    }
+    dd {
+      margin-bottom: 0;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: $color-primary;
+      font-family: $font-primary;
+    }
+  }
+
+  &__cta {
+    background: rgba($color-quaternary, 0.08);
+    padding: 1.25rem 1.5rem;
+    margin-top: 1.5rem;
+  }
+}

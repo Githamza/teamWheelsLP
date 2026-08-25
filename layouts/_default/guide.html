@@ -1,0 +1,90 @@
+{{ define "main" }}
+
+  {{ partial "components/page-header.html" . }}
+
+  {{/* Long-form evergreen pillar pages (the covoiturage and FMD guides).
+       Deliberately not the blog `single` layout: these are not dated posts,
+       they carry no author box or related-posts feed, and they render a FAQ
+       block plus a sources block from front matter. The FAQ is also picked up
+       as FAQPage JSON-LD by partials/seo/schema.html — same `faq` key, so the
+       visible answers and the structured data can never drift apart. */}}
+
+  <section class="section-sm pt-0">
+    <div class="container container-delta">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+
+          {{ with .Lastmod }}
+            <p class="text-muted mb-4">
+              {{ i18n "updated_on" }}
+              <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2 January 2006" }}</time>
+            </p>
+          {{ end }}
+
+          {{/* "L'essentiel en N points" — the summary box that targets the
+               featured snippet and AI Overviews. Rendered before the first H2. */}}
+          {{ with .Params.key_points }}
+            {{ if .enable }}
+              <aside class="guide-keypoints rounded-lg mb-5" aria-labelledby="guide-keypoints-title">
+                <h2 class="h5 mb-3" id="guide-keypoints-title">{{ .title }}</h2>
+                <ul class="mb-0">
+                  {{ range .items }}
+                    <li>{{ . | markdownify }}</li>
+                  {{ end }}
+                </ul>
+              </aside>
+            {{ end }}
+          {{ end }}
+
+          {{/* Interactive tool slot. Placed above the first H2 on the FMD page
+               per the content brief; opt-in so other guides stay static. */}}
+          {{ with .Params.simulator }}
+            {{ if eq . "fmd" }}
+              {{ partial "tools/fmd-simulator.html" $ }}
+            {{ end }}
+          {{ end }}
+
+          <div class="content">
+            {{ .Content }}
+          </div>
+
+          {{ with .Params.faq }}
+            {{ if reflect.IsSlice . }}
+              <section class="guide-faq mt-5" aria-labelledby="guide-faq-title">
+                <h2 id="guide-faq-title">{{ i18n "faq_heading" }}</h2>
+                <dl class="mb-0">
+                  {{ range . }}
+                    <dt class="h5 mt-4">{{ .question }}</dt>
+                    <dd>{{ .answer | markdownify }}</dd>
+                  {{ end }}
+                </dl>
+              </section>
+            {{ end }}
+          {{ end }}
+
+          {{ with .Params.sources }}
+            <section class="guide-sources mt-5" aria-labelledby="guide-sources-title">
+              <h2 id="guide-sources-title" class="h5">{{ i18n "sources_heading" }}</h2>
+              <ul class="mb-0">
+                {{ range . }}
+                  <li>
+                    {{ if .url }}
+                      <a href="{{ .url }}" rel="noopener"{{ if not (hasPrefix .url "/") }} target="_blank"{{ end }}>{{ .label }}</a>
+                    {{ else }}
+                      {{ .label }}
+                    {{ end }}
+                    {{ with .checked }}<span class="text-muted">— {{ i18n "source_checked_on" }} {{ . }}</span>{{ end }}
+                  </li>
+                {{ end }}
+              </ul>
+            </section>
+          {{ end }}
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ partial "call-to-action-2.html" . }}
+
+{{ end }}

@@ -124,7 +124,7 @@ Ne pas l'appliquer expose l'entreprise à un **redressement URSSAF** et à des *
 
 Pour 2026, l'ensemble de ces aides à la mobilité peut être exonéré de cotisations sociales dans une limite globale (relevée à **900 € par an et par salarié** en cas de cumul du FMD avec la prise en charge des transports publics). La possibilité pour l'employeur de rembourser l'abonnement au-delà de 50 %, jusqu'à 75 %, en conservant un cadre d'exonération, a par ailleurs été prorogée. Les montants exacts sont fixés par la loi de finances et évoluent : référez-vous aux pages officielles [URSSAF — Frais professionnels](https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/frais-professionnels.html) et [economie.gouv.fr](https://www.economie.gouv.fr/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/frais-de-transport-des-salaries-quelles).
 
-> Pour un panorama détaillé du FMD, consultez notre [guide complet du Forfait Mobilité Durable](/fr/blog/forfait-mobilite-durable-guide-complet-2025/).
+> Pour un panorama détaillé du FMD, consultez notre [guide complet du Forfait Mobilité Durable](/fr/forfait-mobilite-durable/).
 
 ## L'accident pendant le trajet : accident de trajet ou accident du travail ?
 
@@ -223,7 +223,7 @@ Vous voulez réduire le coût et la pénibilité des trajets domicile-travail de
 
 **[Parlez à notre équipe et planifiez une démo →](/fr/contact/)**
 
-> **Pour aller plus loin :** lisez notre guide [Covoiturage domicile-travail en entreprise](/fr/blog/covoiturage-domicile-travail-entreprise/) pour structurer votre démarche de A à Z.
+> **Pour aller plus loin :** lisez notre guide [Covoiturage en entreprise](/fr/covoiturage-entreprise/) pour structurer votre démarche de A à Z.
 
 ---
 

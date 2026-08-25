@@ -31,8 +31,8 @@ This file follows the [llms.txt convention](https://llmstxt.org/). Agents that i
 
 ## Cornerstone guides — English
 
-- [Corporate Carpooling Guide 2026](https://www.teamwheelsapp.com/en/blog/corporate-carpooling-guide-2026/): Definitive guide for HR and Sustainability leaders — IRS commuter benefits, Clean Air Zones, Scope 3, vendor comparison.
-- [How to Launch a Corporate Carpooling Program in 30 Days](https://www.teamwheelsapp.com/en/blog/how-to-launch-corporate-carpooling-program/): Four-week procedure (HowTo schema) for planning, piloting and rolling out an employee carpooling programme.
+- [Corporate Carpooling Guide 2026](https://www.teamwheelsapp.com/en/corporate-carpooling/): Definitive guide for HR and Sustainability leaders — IRS commuter benefits, Clean Air Zones, Scope 3, vendor comparison.
+- [How to Launch a Corporate Carpooling Program in 30 Days](https://www.teamwheelsapp.com/en/corporate-carpooling/): Four-week procedure (HowTo schema) for planning, piloting and rolling out an employee carpooling programme.
 - [UK Employee Carpooling: Complete Guide](https://www.teamwheelsapp.com/en/blog/uk-employee-carpooling-complete-guide/): UK-specific tax, Clean Air Zone and HMRC compliance for corporate carpooling.
 - [Scope 3 Employee Commuting — USA Compliance Guide](https://www.teamwheelsapp.com/en/blog/scope-3-employee-commuting-corporate-carpooling-usa-compliance-guide/): How corporate carpooling reduces Scope 3 Category 7 emissions for SEC and CSRD reporting.
 - [Carpooling Savings Calculator: Corporate CO₂ & ROI 2026](https://www.teamwheelsapp.com/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/): ROI methodology and benchmarks behind the on-site calculator.
@@ -40,9 +40,9 @@ This file follows the [llms.txt convention](https://llmstxt.org/). Agents that i
 
 ## Cornerstone guides — French
 
-- [Covoiturage entreprise : guide 2026](https://www.teamwheelsapp.com/fr/blog/covoiturage-entreprise-guide-2026/): Guide complet covoiturage en entreprise — fiscalité, FMD, RSE, comparatif fournisseurs.
-- [Covoiturage entreprise : 5 étapes pour démarrer](https://www.teamwheelsapp.com/fr/blog/covoiturage-entreprise-5-etapes-demarrer/): Procédure en 4 semaines (schéma HowTo) pour lancer un programme de covoiturage domicile-travail.
-- [Forfait Mobilité Durable : guide complet 2025](https://www.teamwheelsapp.com/fr/blog/forfait-mobilite-durable-guide-complet-2025/): Cadre légal, montants (jusqu'à 800 €/an), exonérations sociales et fiscales, mise en place.
+- [Covoiturage entreprise : guide 2026](https://www.teamwheelsapp.com/fr/covoiturage-entreprise/): Guide complet covoiturage en entreprise — fiscalité, FMD, RSE, comparatif fournisseurs.
+- [Covoiturage entreprise : 5 étapes pour démarrer](https://www.teamwheelsapp.com/fr/covoiturage-entreprise/): Procédure en 4 semaines (schéma HowTo) pour lancer un programme de covoiturage domicile-travail.
+- [Forfait Mobilité Durable : le guide complet](https://www.teamwheelsapp.com/fr/forfait-mobilite-durable/): Cadre légal, montants (600 €/an, 900 € en cumul), modes éligibles, attestation, déclaration URSSAF, simulateur de budget employeur.
 - [Voies de covoiturage en France : avantages et guide](https://www.teamwheelsapp.com/fr/blog/voies-covoiturage-france-avantages-guide-collegues/): Voies réservées covoiturage et utilisation pour les trajets domicile-travail.
 - [Voies de covoiturage Paris (Périphérique) — guide 2026](https://www.teamwheelsapp.com/fr/blog/voies-covoiturage-paris-peripherique-guide-2026/): Voie réservée du Périphérique parisien : règles, contrôle, sanctions.
 

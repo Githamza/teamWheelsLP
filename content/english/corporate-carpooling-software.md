@@ -94,7 +94,7 @@ image_and_content_blocks:
 
     * **Save employees $2,000+/year** — Shared commuting costs directly improve financial well-being and retention
 
-    Trusted by forward-thinking companies across the USA, UK, and Canada. Want the numbers for your team? [Calculate your savings →](/en/tools/savings-calculator/) or read the [complete corporate carpooling guide →](/en/blog/corporate-carpooling-guide-2026/).
+    Trusted by forward-thinking companies across the USA, UK, and Canada. Want the numbers for your team? [Calculate your savings →](/en/tools/savings-calculator/) or read the [complete corporate carpooling guide →](/en/corporate-carpooling/).
     "
     button:
       enable: false

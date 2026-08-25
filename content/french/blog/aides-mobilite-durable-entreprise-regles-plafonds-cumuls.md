@@ -4,7 +4,7 @@ seoTitle: "Aides mobilité durable entreprise 2026 : règles et cumuls"
 translationKey: "sustainable-mobility-incentives"
 date: 2026-07-15
 draft: false
-description: "Aides à la mobilité durable en entreprise 2026 : FMD, prise en charge des transports, prime de transport. Règles, plafonds et cumuls URSSAF."
+description: "Prime covoiturage et aides à la mobilité durable en entreprise 2026 : FMD, transports en commun, prime de transport. Plafonds et cumuls URSSAF."
 image: "images/blog/sustainable-mobility.jpg"
 author: "TeamWheels Editorial"
 reading_time: "12 min"
@@ -32,6 +32,20 @@ faq:
 La mobilité domicile-travail est devenue un sujet stratégique : coût du carburant, saturation des parkings, attentes des candidats, obligations de reporting RSE et bilan GES. La bonne nouvelle, c'est que l'État a construit un arsenal de dispositifs qui permettent à l'entreprise de **prendre en charge ces trajets avec des exonérations sociales et fiscales**. La mauvaise, c'est que ces aides s'empilent selon des règles de cumul et des plafonds distincts, souvent mal maîtrisés.
 
 Cet article est la **référence transversale** : il compare tous les dispositifs, donne les seuils, les plafonds d'exonération et les cumuls possibles en 2026. Pour l'approfondissement du seul Forfait Mobilités Durables (mise en place, DUE, calcul kilométrique, cas fonction publique), renvoi est fait au guide dédié en fin d'article.
+
+## Prime covoiturage 2026 : montant, conditions, démarches
+
+« Prime covoiturage » recouvre en réalité deux choses très différentes, et la confusion coûte du temps aux deux publics qui la cherchent.
+
+**Côté salarié conducteur**, il s'agit du coup de pouce versé aux nouveaux conducteurs qui se lancent sur une plateforme de covoiturage courte distance, financé par le dispositif des **certificats d'économies d'énergie (CEE)**. Il est versé par la plateforme elle-même, pas par l'employeur ni par l'État directement. Le principe est resté le même : une première partie après le premier trajet effectué, le solde après un nombre de trajets réalisés dans un délai imparti. Les conditions d'éligibilité — trajet de courte distance, inscription en tant que conducteur, plafond d'un versement par personne — et le montant sont fixés par la plateforme dans le cadre de son programme CEE, et varient donc d'un opérateur à l'autre. Vérifiez la fiche du programme sur la plateforme concernée avant de vous engager sur un montant auprès de vos salariés.
+
+**Côté employeur**, ce que l'on appelle couramment « prime covoiturage » n'est pas un dispositif distinct : c'est le **Forfait Mobilité Durable** appliqué au covoiturage. C'est celui-ci que vous versez à vos salariés, dans la limite de **600 € par an et par salarié** exonérés de cotisations et d'impôt, porté à **900 €** en cumul avec la prise en charge d'un abonnement de transport en commun. Aucune démarche auprès de l'administration n'est nécessaire pour le mettre en place : il relève d'un accord d'entreprise ou, à défaut, d'une décision unilatérale de l'employeur.
+
+**Les deux se cumulent-ils ?** Oui. La prime CEE versée par une plateforme au salarié conducteur et le FMD versé par l'employeur n'ont ni la même source ni la même nature juridique. Un salarié peut percevoir la prime de lancement de la plateforme et bénéficier par ailleurs du forfait de son employeur.
+
+**Les démarches, côté employeur, tiennent en quatre points** : choisir le support juridique (accord ou décision unilatérale), écrire les modes éligibles et le montant, collecter chaque année l'attestation sur l'honneur du salarié accompagnée d'un relevé de trajets, et faire apparaître le versement distinctement sur le bulletin de paie. C'est ce dernier point, et la traçabilité des trajets partagés, qui décide de la solidité du dossier en cas de contrôle URSSAF.
+
+Le détail de la mise en place, les modes éligibles et un simulateur de budget figurent dans notre [guide complet du Forfait Mobilité Durable](/fr/forfait-mobilite-durable/).
 
 ## Les trois leviers de l'employeur en un coup d'œil
 
@@ -183,7 +197,7 @@ L'employeur doit pouvoir prouver la réalité des déplacements. Pour le covoitu
 
 ---
 
-> **Pour aller plus loin :** cet article est une vue d'ensemble comparative. Pour tout savoir sur la mise en place du seul Forfait Mobilités Durables — DUE, accord d'entreprise, calcul kilométrique, cas de la fonction publique, erreurs à éviter — consultez notre [guide complet du Forfait Mobilité Durable 2026](/fr/blog/forfait-mobilite-durable-guide-complet-2025/).
+> **Pour aller plus loin :** cet article est une vue d'ensemble comparative. Pour tout savoir sur la mise en place du seul Forfait Mobilités Durables — DUE, accord d'entreprise, calcul kilométrique, cas de la fonction publique, erreurs à éviter — consultez notre [guide complet du Forfait Mobilité Durable](/fr/forfait-mobilite-durable/).
 
 ## Passez à l'action
 

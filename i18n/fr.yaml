@@ -130,3 +130,15 @@
 
 - id: sc_step_nav
   translation: "Navigation entre les étapes"
+
+- id: updated_on
+  translation: "Mis à jour le"
+
+- id: faq_heading
+  translation: "Questions fréquentes"
+
+- id: sources_heading
+  translation: "Sources"
+
+- id: source_checked_on
+  translation: "vérifié le"

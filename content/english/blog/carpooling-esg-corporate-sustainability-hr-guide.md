@@ -149,7 +149,7 @@ Many ESG and HR teams have a mobility *policy* on paper, but no operational trac
 2. **Mechanism** — deploy a matching tool and any commuter incentive;
 3. **Tracking** — measure adoption and carbon impact, and feed the ESG report.
 
-A mobility policy backed by an active carpooling program moves from a **compliance document** to a **measurable performance lever**. For the detailed roadmap, see [how to launch a corporate carpooling program](/en/blog/how-to-launch-corporate-carpooling-program/).
+A mobility policy backed by an active carpooling program moves from a **compliance document** to a **measurable performance lever**. For the detailed roadmap, see [the corporate carpooling guide](/en/corporate-carpooling/).
 
 ---
 

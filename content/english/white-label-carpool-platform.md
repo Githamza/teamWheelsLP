@@ -32,7 +32,7 @@ image_and_content_blocks:
 
     * **Built for employee commutes** — Ride matching by route, schedule, and office site — not taxi dispatch features you'll never use
 
-    Weighing both routes? Read our guide: [how to quickly launch a customizable carpool platform →](/en/blog/how-to-quickly-launch-customizable-carpool-platform-for-your-company/)
+    Weighing both routes? Read our guide: [the corporate carpooling guide →](/en/corporate-carpooling/)
     "
     button:
       enable: false

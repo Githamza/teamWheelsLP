@@ -1,7 +1,12 @@
 {{- $scr := .Scratch -}}
 {{- $page := . -}}
 
-{{- if eq .Type "blog" -}}
+{{- /* `schemaType: "Article"` in front matter opts a page outside /blog/ into
+       the Article branch. The evergreen pillar guides (/fr/covoiturage-entreprise/,
+       /fr/forfait-mobilite-durable/) are articles in Google's sense — bylined,
+       dated, substantive — but they deliberately live outside the blog section. */ -}}
+{{- $isArticle := or (eq .Type "blog") (eq .Params.schemaType "Article") -}}
+{{- if $isArticle -}}
 {{- $scr.Set "schema_type" "Article" -}}
 {{- else if eq .Type "contact" -}}
 {{- $scr.Set "schema_type" "ContactPage" -}}
@@ -38,7 +43,7 @@
   "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify | safeJS }}
 }
 </script>
-{{- else if eq .Type "blog" -}}
+{{- else if $isArticle -}}
 {{- /* Blog posts: Article schema with enhanced metadata.
        Author resolution: front-matter `author` is treated as a slug
        lookup against hugo.Data.authors. If the slug exists, emit a

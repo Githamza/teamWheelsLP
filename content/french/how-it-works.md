@@ -106,7 +106,7 @@ image_and_content_blocks:
     content_position: "right" # Value will be - "left/right"
     content: "Ayez une vue d'ensemble sur l'utilisation de TeamWheels dans votre entreprise sans pour autant enfreindre la vie privée de vos collaborateurs.
 
-    [Guide complet : lancer votre programme covoiturage →](/fr/blog/covoiturage-entreprise-guide-2026/)"
+    [Guide complet : lancer votre programme covoiturage →](/fr/covoiturage-entreprise/)"
 
 
 faq:

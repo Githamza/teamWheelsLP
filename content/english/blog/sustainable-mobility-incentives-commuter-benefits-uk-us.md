@@ -152,7 +152,7 @@ Across both regimes, carpooling and vanpooling stand out because they:
 
 The friction has always been organising the matches, tracking shared trips and paying the right people the right amount. That is a software problem — and it is the one **TeamWheels** solves, inside Microsoft Teams, with no new app for employees to install and automatic mileage and passenger-payment tracking for reimbursement and ESG reporting.
 
-> **Go deeper:** For the full cost, ROI and software-selection breakdown, read the [Corporate Carpooling Guide (2026)](/en/blog/corporate-carpooling-guide-2026/), and model your own numbers with the free [TeamWheels Savings Calculator](/en/tools/savings-calculator/).
+> **Go deeper:** For the full cost, ROI and software-selection breakdown, read the [Corporate Carpooling Guide](/en/corporate-carpooling/), and model your own numbers with the free [TeamWheels Savings Calculator](/en/tools/savings-calculator/).
 
 ## Building Your 2026 Programme: A Quick Checklist
 

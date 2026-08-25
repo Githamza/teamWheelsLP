@@ -66,9 +66,21 @@ weight = 1
 
 [[main]]
 parent = "resources"
+name = "Guide covoiturage entreprise"
+url = "covoiturage-entreprise/"
+weight = 2
+
+[[main]]
+parent = "resources"
+name = "Guide Forfait Mobilité Durable"
+url = "forfait-mobilite-durable/"
+weight = 3
+
+[[main]]
+parent = "resources"
 name = "Blog"
 url = "blog/"
-weight = 2
+weight = 4
 
 # ── Contact (autonome) ──
 [[main]]
@@ -124,8 +136,18 @@ url = "tools/savings-calculator/"
 weight = 5
 
 [[footer_menu_4]]
+name = "Guide covoiturage entreprise"
+url = "covoiturage-entreprise/"
+weight = 6
+
+[[footer_menu_4]]
+name = "Guide FMD"
+url = "forfait-mobilite-durable/"
+weight = 7
+
+[[footer_menu_4]]
 name = "Blog"
 url = "blog/"
-weight = 6
+weight = 8
 
 
