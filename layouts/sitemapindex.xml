@@ -13,7 +13,8 @@
     - drop taxonomy term pages (/tags/foo/, /categories/bar/) — noindex
 */}}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   {{- range . -}}
     {{- range .Pages -}}
       {{- $isRoot := eq .RelPermalink "/" -}}
@@ -36,6 +37,7 @@
     <xhtml:link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}"/>
     {{- end }}
     {{- end }}
+    {{- partial "seo/sitemap-video.html" . -}}
   </url>
       {{- end }}
     {{- end -}}

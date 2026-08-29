@@ -1,0 +1,31 @@
+{{- /* Google video sitemap extension — emits a <video:video> block for any
+       page carrying an enabled `video_demo:` front-matter block (homepage
+       modal + the /demo/ watch pages). Shared by layouts/sitemap.xml
+       (per-language urlsets) and layouts/sitemapindex.xml (root flat
+       urlset — the one robots.txt advertises and GSC crawls, so it MUST
+       carry the same video data or Google never sees it).
+       Context: the Page. Requires xmlns:video on the enclosing <urlset>. */ -}}
+{{- $page := . -}}
+{{- with .Params.video_demo }}
+{{- if .enable }}
+  {{- $vWebm := "" }}{{ $vMp4 := "" }}{{ $vPoster := "" }}
+  {{- with .webm }}{{ with resources.Get . }}{{ $vWebm = .Permalink }}{{ end }}{{ end }}
+  {{- with .mp4 }}{{ with resources.Get . }}{{ $vMp4 = .Permalink }}{{ end }}{{ end }}
+  {{- with .poster }}{{ with resources.Get . }}{{ $vPoster = .Permalink }}{{ end }}{{ end }}
+  {{- $vContent := or $vWebm $vMp4 }}
+  {{- if and $vContent $vPoster }}
+    <video:video>
+      <video:thumbnail_loc>{{ $vPoster }}</video:thumbnail_loc>
+      <video:title>{{ .title }}</video:title>
+      <video:description>{{ .description | default $page.Description }}</video:description>
+      <video:content_loc>{{ $vContent }}</video:content_loc>
+      {{- with .duration_seconds }}
+      <video:duration>{{ . }}</video:duration>
+      {{- end }}
+      {{- with .uploadDate }}
+      <video:publication_date>{{ . }}T00:00:00+00:00</video:publication_date>
+      {{- end }}
+    </video:video>
+  {{- end }}
+{{- end }}
+{{- end }}
