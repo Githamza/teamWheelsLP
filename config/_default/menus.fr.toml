@@ -66,9 +66,15 @@ weight = 1
 
 [[main]]
 parent = "resources"
+name = "Guide FMD & Covoiturage"
+url = "forfait-mobilites-durables-covoiturage/"
+weight = 2
+
+[[main]]
+parent = "resources"
 name = "Blog"
 url = "blog/"
-weight = 2
+weight = 3
 
 # ── Contact (autonome) ──
 [[main]]
@@ -127,5 +133,10 @@ weight = 5
 name = "Blog"
 url = "blog/"
 weight = 6
+
+[[footer_menu_4]]
+name = "Guide FMD Covoiturage"
+url = "forfait-mobilites-durables-covoiturage/"
+weight = 7
 
 
