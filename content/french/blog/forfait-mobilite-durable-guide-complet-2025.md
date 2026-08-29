@@ -120,7 +120,11 @@ Pour que le FMD soit exonéré, vous devez pouvoir justifier les trajets. L'URSS
 
 Avec TeamWheels, chaque trajet déclaré dans Microsoft Teams génère automatiquement une trace. Nous fournissons des attestations mensuelles prêtes pour le versement du FMD.
 
+👉 Le choix du mode de preuve (attestation sur l'honneur, registre de preuve de covoiturage, relevés de plateforme) est détaillé dans notre [guide employeur FMD & covoiturage](/fr/forfait-mobilites-durables-covoiturage/).
+
 ## FMD et covoiturage : le duo gagnant
+
+> 📘 Pour la mise en place pas à pas du FMD appliqué au covoiturage (modalités, formalisation, preuve des trajets, paie), consultez le [guide employeur FMD & covoiturage](/fr/forfait-mobilites-durables-covoiturage/).
 
 Le covoiturage est particulièrement adapté au FMD car :
 

@@ -87,7 +87,7 @@ Le FMD **versé seul** est exonéré de cotisations sociales et d'impôt sur le 
 
 Parmi tous les modes du FMD, le covoiturage se distingue par son **retour sur investissement**. Il ne demande aucun équipement individuel coûteux, mobilise des véhicules déjà présents, **libère des places de parking** (un enjeu majeur en zone tertiaire), crée du lien entre équipes et alimente directement le **poste 7 du bilan GES** (déplacements domicile-travail), de plus en plus scruté dans le cadre de la CSRD.
 
-C'est précisément là que se joue la difficulté opérationnelle : **prouver les trajets**. Une plateforme de covoiturage intégrée à l'environnement de travail génère automatiquement les relevés et attestations exigés par l'URSSAF — c'est le rôle de [TeamWheels, le logiciel de covoiturage d'entreprise dans Microsoft Teams](/fr/corporate-carpooling-software/).
+C'est précisément là que se joue la difficulté opérationnelle : **prouver les trajets**. Une plateforme de covoiturage intégrée à l'environnement de travail génère automatiquement les relevés et attestations exigés par l'URSSAF — c'est le rôle de [TeamWheels, le logiciel de covoiturage d'entreprise dans Microsoft Teams](/fr/corporate-carpooling-software/). Pour la mise en place complète (formalisation, preuve des trajets, paie), suivez notre [guide employeur FMD & covoiturage](/fr/forfait-mobilites-durables-covoiturage/).
 
 ## Dispositif n°3 : la prime de transport (carburant et recharge)
 
