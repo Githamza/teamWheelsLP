@@ -39,6 +39,7 @@
 | Topic | Search Intent | Priority |
 |-------|---------------|----------|
 | "carpooling employee benefits" | Informational | High |
+| "company car registration Microsoft 365" | Informational | ✅ Published |
 | "Microsoft Teams integrations for HR" | Informational | High |
 | "corporate carpooling ROI calculator" | Commercial | Medium |
 | "ESG reporting carpooling" | Commercial | Medium |
