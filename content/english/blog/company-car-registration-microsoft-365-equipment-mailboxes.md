@@ -178,6 +178,8 @@ That single mismatch produces the failure mode every multi-site organisation eve
 
 Exchange behaved perfectly. It treated the second and third requests as **conflicts to be avoided** — when a mobility program would treat them as **matches to be made**. That is the entire gap in one sentence.
 
+> **Go deeper:** the same duplication happens in employees' own cars, where it is called the [grey fleet](/en/blog/grey-fleet-management-uk-guide-reduce-business-mileage/) — and since the UK mileage rate rose to 55p in April 2026, each duplicated journey costs materially more.
+
 The specific things a resource mailbox structurally cannot do:
 
 | What you need | Why a resource mailbox can't |
