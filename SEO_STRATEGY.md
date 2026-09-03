@@ -39,6 +39,8 @@
 | Topic | Search Intent | Priority |
 |-------|---------------|----------|
 | "carpooling employee benefits" | Informational | High |
+| "company car registration Microsoft 365" | Informational | ✅ Published |
+| "grey fleet" / "grey fleet management" (UK, ~1,550/mo cluster) | Informational | ✅ Published |
 | "Microsoft Teams integrations for HR" | Informational | High |
 | "corporate carpooling ROI calculator" | Commercial | Medium |
 | "ESG reporting carpooling" | Commercial | Medium |
