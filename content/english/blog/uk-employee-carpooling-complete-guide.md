@@ -9,8 +9,6 @@ author_image: images/avatar/teamwheels.jpg
 reading_time: 8 min
 ---
 
-# Employee Carpooling in the UK: A Complete Guide for HR and Sustainability Leaders
-
 With fuel prices remaining high, congestion charges expanding in major cities, and UK companies facing increasing pressure to meet ESG targets, employee carpooling has never been more relevant. Here's everything UK employers need to know.
 
 ## The UK Carpooling Landscape in 2025

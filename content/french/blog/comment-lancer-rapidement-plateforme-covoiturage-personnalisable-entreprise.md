@@ -1,5 +1,6 @@
 ---
 title: "Comment lancer rapidement une plateforme de covoiturage personnalisable pour votre entreprise"
+seoTitle: "Plateforme de covoiturage entreprise : lancement rapide"
 translationKey: "launch-customizable-carpool-platform"
 description: "Déployez une plateforme de covoiturage à votre marque en quelques jours : choix de la solution, intégration et lancement. Le guide complet."
 date: 2026-03-04
@@ -34,8 +35,6 @@ faq:
   - question: "Faut-il développer ou acheter une plateforme de covoiturage ?"
     answer: "Le développement sur mesure ne se justifie que pour les grandes entreprises aux besoins très spécifiques et au budget IT dédié (14 à 16 semaines, 20 000 à plus de 200 000 €). Pour la plupart des organisations, une plateforme clé en main personnalisable comme TeamWheels est plus rapide, moins chère et moins risquée — opérationnelle en quelques jours, avec matching, tableaux de bord, SSO et reporting RSE déjà intégrés."
 ---
-
-# Comment lancer rapidement une plateforme de covoiturage personnalisable pour votre entreprise
 
 Lancer un programme de covoiturage d'entreprise nécessitait autrefois des mois de planification, un développement logiciel sur mesure et un investissement initial conséquent. Aujourd'hui, les entreprises de toutes tailles peuvent déployer une plateforme de covoiturage entièrement personnalisée et à leur image en quelques jours seulement — et commencer à voir des résultats presque immédiatement.
 

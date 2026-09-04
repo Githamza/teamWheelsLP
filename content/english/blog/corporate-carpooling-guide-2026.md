@@ -20,7 +20,7 @@ faq:
     answer: "Uber and Bolt are ride-hailing services — you pay a professional or gig-economy driver per trip. BlaBlaCar is a peer-to-peer platform designed for long-distance leisure journeys, not daily commutes. Corporate carpooling platforms like TeamWheels are purpose-built for businesses: they match colleagues by home location and schedule, integrate into Microsoft Teams, handle mileage tracking and reimbursement automatically, and generate ESG reporting data."
 ---
 
-# The Smarter Way to Beat the Commute — and Cut Costs by 60%
+## The Smarter Way to Beat the Commute — and Cut Costs by 60%
 
 **Corporate Mobility Guide · April 2026 · 10 min read**
 

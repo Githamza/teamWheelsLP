@@ -1,5 +1,6 @@
 ---
 title: "How to Quickly Launch a Customizable Carpool Platform for Your Company"
+seoTitle: "Launch a customizable carpool platform for your company"
 translationKey: "launch-customizable-carpool-platform"
 description: "Deploy a branded, customizable carpooling platform for your organization in days, not months: white-label options and integration strategies."
 date: 2026-03-04
@@ -39,8 +40,6 @@ faq:
   - question: "Should you build or buy a corporate carpool platform?"
     answer: "Building from scratch only makes sense for large enterprises with very specific requirements and dedicated IT budgets (14-16 weeks, $20,000-$200,000+). For most organizations, a customizable ready-made platform like TeamWheels is faster, cheaper, and lower-risk — live in days, with matching, dashboards, SSO, and ESG reporting already built in."
 ---
-
-# How to Quickly Launch a Customizable Carpool Platform for Your Company
 
 Launching a corporate carpooling program used to require months of planning, custom software development, and significant upfront investment. Today, companies of all sizes can deploy a fully branded, customizable carpool platform in a matter of days — and start seeing results almost immediately.
 
