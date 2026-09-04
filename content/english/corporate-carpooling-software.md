@@ -14,7 +14,7 @@ banner:
     button_label: "Book a demo"
     icon: "fas fa-arrow-right"
     link: "contact/"
-  image: "images/carpoolingBenefits.png"
+  image: "images/photos/colleagues-carpooling.jpg"
 
 image_and_content_blocks:
   - enable: true
@@ -84,7 +84,7 @@ image_and_content_blocks:
     anchor: "roi"
     subtitle: "Measurable Business Impact"
     title: "Cut Parking Costs, Hit Scope 3 Targets, Save Employees Money"
-    image: "images/rse-carpooling.png"
+    image: "images/photos/commute-reporting-dashboard.jpg"
     content_position: "left"
     content: "Corporate carpooling software pays for itself across three lines of your organization's budget and reporting.
 
@@ -147,7 +147,7 @@ image_and_content_blocks:
     anchor: "faq"
     subtitle: "Common Questions"
     title: "Corporate Carpooling Software FAQ"
-    image: "images/carpooling_benefits.png"
+    image: "images/photos/colleagues-carpooling.jpg"
     content_position: "right"
     content: "**Is it really just a Microsoft Teams app?** Yes. TeamWheels installs inside your existing Microsoft 365 tenant from AppSource — there's no separate app for employees to download.
 

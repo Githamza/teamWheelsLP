@@ -5,7 +5,7 @@ translationKey: "carpool-lanes-overview"
 date: 2026-04-07
 draft: false
 description: "How carpool (HOV) lanes work in the USA, UK and Australia: real examples, time-savings data and what commuters need to know to use them."
-image: images/blog/carpool-lanes.jpg
+image: "images/blog/carpool-lanes-overview.jpg"
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
 reading_time: 11 min

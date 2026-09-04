@@ -4,7 +4,7 @@ translationKey: "carpooling-to-work"
 date: 2026-05-12
 draft: false
 description: "Set up a corporate carpooling programme for your employees: cut commuting costs, meet sustainability targets and boost team cohesion."
-image: "images/team-group.jpg"
+image: "images/blog/carpooling-to-work.jpg"
 author: "TeamWheels Editorial"
 reading_time: "7 min"
 keywords: "carpooling to work, benefits of carpooling, set up carpooling, corporate carpooling, employee carpooling programme, carpooling groups, workplace carpooling, commuter carpooling"

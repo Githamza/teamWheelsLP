@@ -9,7 +9,7 @@ banner:
   subtitle: "Pourquoi choisir TeamWheels ?"
   title: "Tous les avantages du covoiturage entreprise — en une seule plateforme"
   description: "Zéro friction, résultats mesurables, conformité simplifiée : voici tout ce que TeamWheels apporte à votre organisation."
-  image: "images/carpoolingBenefits.png"
+  image: "images/photos/colleagues-carpooling.jpg"
 
 image_and_content_blocks:
   - enable: true
@@ -37,7 +37,7 @@ image_and_content_blocks:
     anchor: "resultats"
     subtitle: "Des résultats concrets"
     title: "RSE, économies et bien-être au quotidien"
-    image: "images/carpoolingBenefits.png"
+    image: "images/photos/office-parking-lot.jpg"
     content_position: "left"
     content: "TeamWheels vous aide à atteindre vos objectifs RSE tout en améliorant le quotidien de vos collaborateurs.
 
@@ -58,7 +58,7 @@ image_and_content_blocks:
     anchor: "fmd"
     subtitle: "Coup de pouce du gouvernement"
     title: "Forfait Mobilité Durable : jusqu'à 800€/an par salarié"
-    image: "images/rse-carpooling.png"
+    image: "images/photos/commute-reporting-dashboard.jpg"
     content_position: "right"
     content: "Valorisez l'engagement de vos collaborateurs avec le dispositif gouvernemental.
 

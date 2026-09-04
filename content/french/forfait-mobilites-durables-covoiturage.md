@@ -13,14 +13,14 @@ banner:
     button_label: "Demander une démo"
     icon: "fas fa-arrow-right"
     link: "contact/"
-  image: "images/rse-carpooling.png"
+  image: "images/photos/commute-reporting-dashboard.jpg"
 
 image_and_content_blocks:
   - enable: true
     anchor: "covoiturage-eligible"
     subtitle: "La réponse courte"
     title: "Oui, le Covoiturage est Éligible au Forfait Mobilités Durables"
-    image: "images/carpooling_benefits.png"
+    image: "images/photos/colleagues-carpooling.jpg"
     content_position: "right"
     content: "Depuis la loi d'orientation des mobilités (LOM), le covoiturage domicile-travail est un mode éligible au forfait mobilités durables (FMD), **que le salarié soit conducteur ou passager**. L'employeur qui le verse bénéficie d'une exonération de cotisations sociales et d'impôt sur le revenu, dans les plafonds fixés par la loi de finances :
 
@@ -104,7 +104,7 @@ image_and_content_blocks:
     anchor: "erreurs"
     subtitle: "Questions fréquentes"
     title: "Erreurs à Éviter & FAQ — FMD Covoiturage"
-    image: "images/carpoolingBenefits.png"
+    image: "images/photos/office-parking-lot.jpg"
     content_position: "right"
     content: "**Les 4 erreurs les plus fréquentes** : verser le FMD sans le formaliser (DUE ou accord) ; ne collecter aucun justificatif de trajets ; dépasser les plafonds de cumul sans réintégrer l'excédent en cotisations ; réserver le FMD à certains salariés à conditions inégales.
 

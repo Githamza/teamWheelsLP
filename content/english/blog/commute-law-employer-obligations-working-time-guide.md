@@ -5,7 +5,7 @@ translationKey: "commute-working-time-law"
 date: 2026-07-15
 draft: false
 description: "When does commuting count as working time? A 2026 HR guide to UK & US rules on travel-time pay, employer duty of care, commute costs, and accident cover."
-image: "images/blog/corporate-carpooling.jpg"
+image: "images/blog/commute-working-time.jpg"
 author: "TeamWheels Editorial"
 reading_time: "12 min"
 keywords: "commute law, working time, employer obligations, travel time pay, Working Time Regulations 1998, Portal-to-Portal Act, FLSA travel time, coming and going rule, commuter benefits, AMAP mileage, duty of care, TeamWheels"

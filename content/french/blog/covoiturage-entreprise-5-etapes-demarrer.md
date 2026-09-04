@@ -5,7 +5,7 @@ description: "Choisir un outil de covoiturage entreprise et lancer un programme 
 keywords: "outil covoiturage entreprise, covoiturage entreprise, covoiturage en entreprise, organiser un covoiturage, application covoiturage travail, plateforme covoiturage entreprise"
 date: 2025-01-15
 lastmod: 2026-04-11
-image: images/blog/launch-program.jpg
+image: "images/blog/launch-program.jpg"
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
 reading_time: 8 min

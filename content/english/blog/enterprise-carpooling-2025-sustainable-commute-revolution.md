@@ -6,7 +6,7 @@ keywords: "enterprise carpooling, corporate carpooling 2026, corporate carpoolin
 date: 2025-01-31
 lastmod: 2026-04-11
 draft: false
-image: images/blog/enterprise-carpooling.jpg
+image: "images/blog/enterprise-carpooling.jpg"
 author: "TeamWheels"
 ---
 The enterprise world is witnessing a fundamental shift in how employees commute. **Enterprise carpooling** has emerged as one of the most effective strategies for companies looking to reduce costs, attract talent, and meet ambitious sustainability targets. With the global carpooling market projected to reach **$34 billion by 2034**, now is the time to understand why leading organizations are making shared commuting a strategic priority.

@@ -5,7 +5,7 @@ translationKey: "corporate-carbon-reduction-plan"
 date: 2026-07-15
 draft: false
 description: "Build a corporate decarbonization action plan in 2026: science-based targets, emissions by source, a MACC-driven roadmap and progress tracking."
-image: "images/blog/scope-3-emissions.jpg"
+image: "images/blog/carbon-reduction-plan.jpg"
 author: "TeamWheels Editorial"
 reading_time: "12 min"
 keywords: "corporate carbon reduction plan, decarbonization action plan, science based targets, GHG Protocol, scope 3 emissions, marginal abatement cost curve, CSRD ESRS E1, SB 253, PPN 006, employee commuting emissions, net zero roadmap, carbon inventory, TeamWheels"

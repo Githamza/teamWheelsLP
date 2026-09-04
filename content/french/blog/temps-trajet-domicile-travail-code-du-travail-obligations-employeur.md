@@ -5,7 +5,7 @@ translationKey: "commute-working-time-law"
 date: 2026-07-15
 draft: false
 description: "Temps de trajet domicile-travail 2026 : est-ce du temps de travail effectif ? Contreparties, frais de transport et accident de trajet."
-image: "images/blog/corporate-carpooling.jpg"
+image: "images/blog/commute-working-time.jpg"
 author: "TeamWheels Editorial"
 reading_time: "11 min"
 keywords: "temps de trajet domicile travail, temps de travail effectif, article L3121-4, obligations employeur trajet, contrepartie temps de trajet, prise en charge transport 50%, accident de trajet, frais de transport salarié, forfait mobilité durable, covoiturage entreprise, TeamWheels"

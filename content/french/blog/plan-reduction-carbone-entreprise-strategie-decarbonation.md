@@ -5,7 +5,7 @@ translationKey: "corporate-carbon-reduction-plan"
 date: 2026-07-15
 draft: false
 description: "Bilan carbone, BEGES, scope 1/2/3, SBTi, CSRD : la méthode pour bâtir un plan de décarbonation mesurable, par phases, avec un suivi annuel."
-image: "images/blog/scope-3-emissions.jpg"
+image: "images/blog/carbon-reduction-plan.jpg"
 author: "TeamWheels Editorial"
 reading_time: "13 min"
 keywords: "plan de réduction carbone, stratégie de décarbonation entreprise, bilan carbone entreprise, BEGES, scope 3, réduction émissions CO2, trajectoire bas-carbone, méthode ACT ADEME, SBTi, CSRD ESRS E1, décret tertiaire, déplacements domicile-travail, plan d'action climat, RSE, TeamWheels"

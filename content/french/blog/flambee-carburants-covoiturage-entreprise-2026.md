@@ -6,7 +6,7 @@ date: 2026-04-19
 draft: false
 description: "Diesel et essence au plus haut en France, Belgique et Suisse : le covoiturage entreprise fait économiser 1 000 à 2 000 € par salarié et par an."
 keywords: "prix carburant 2026, flambée carburant France Belgique Suisse, covoiturage entreprise économies, forfait mobilité durable 2026, indemnité kilométrique covoiturage, TeamWheels Microsoft Teams"
-image: images/blog/fuel-prices.jpg
+image: "images/blog/fuel-prices.jpg"
 author: TeamWheels
 reading_time: 7 min
 ---
