@@ -3,7 +3,7 @@ title: "Forfait Mobilité Durable 2026 : Le Guide Complet pour les Entreprises"
 date: 2026-06-25
 draft: false
 description: "Forfait Mobilité Durable 2026 : montants, conditions, justificatifs et mise en place pour financer le covoiturage de vos salariés. Guide RH."
-image: "images/blog/sustainable-mobility.jpg"
+image: "images/blog/forfait-mobilite-durable.jpg"
 author: "TeamWheels Editorial"
 keywords: "forfait mobilité durable, forfait mobilité durable 2026, forfait mobilité durable urssaf, prime covoiturage, FMD covoiturage, FMD entreprise, plafond FMD 2026, mobilité durable entreprise, loi LOM, Microsoft Teams covoiturage"
 ---

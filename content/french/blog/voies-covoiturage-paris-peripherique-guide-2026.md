@@ -5,7 +5,7 @@ date: 2026-04-07
 draft: false
 description: "Horaires des voies de covoiturage à Paris (périphérique, A1, A13), application Covoit IDFM, amendes et bilan après un an. Guide complet 2026."
 keywords: "voie covoiturage périphérique paris horaires, voies covoiturage paris 2026, horaire voie covoiturage paris, voie covoiturage A1 horaire, aire de covoiturage paris, covoit idfm"
-image: images/blog/paris-carpool-lane.jpg
+image: "images/blog/paris-carpool-lane.jpg"
 author: TeamWheels
 # Hugo resolves aliases relative to the language root, so the leading /fr/
 # was doubled: the stub landed on /fr/fr/blog/… and the real old URL 404'd.

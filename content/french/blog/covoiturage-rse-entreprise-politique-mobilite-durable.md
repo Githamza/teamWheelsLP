@@ -5,7 +5,7 @@ translationKey: "carpooling-esg-csr"
 date: 2026-06-30
 draft: false
 description: "Le covoiturage domicile-travail au service de votre politique RSE : réduction du scope 3, conformité CSRD, indicateurs et engagement salarié."
-image: "images/blog/sustainable-mobility.jpg"
+image: "images/blog/carpooling-esg.jpg"
 author: "TeamWheels Editorial"
 reading_time: "11 min"
 keywords: "covoiturage RSE, politique RSE mobilité, covoiturage entreprise RSE, mobilité durable RSE, scope 3 déplacements domicile-travail, bilan carbone covoiturage, CSRD covoiturage, DPEF mobilité, DRH RSE, responsable RSE, plan de mobilité employeur, PDM, Forfait Mobilité Durable, loi LOM, indicateurs RSE mobilité, QVT mobilité, TeamWheels"

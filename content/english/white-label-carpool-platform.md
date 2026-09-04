@@ -13,7 +13,7 @@ banner:
     button_label: "Book a demo"
     icon: "fas fa-arrow-right"
     link: "contact/"
-  image: "images/carpoolingBenefits.png"
+  image: "images/photos/colleagues-carpooling.jpg"
 
 image_and_content_blocks:
   - enable: true
@@ -81,7 +81,7 @@ image_and_content_blocks:
     anchor: "who-its-for"
     subtitle: "Is This You?"
     title: "Who a White-Label Corporate Carpool Platform Is For"
-    image: "images/rse-carpooling.png"
+    image: "images/photos/commute-reporting-dashboard.jpg"
     content_position: "left"
     content: "TeamWheels is built for organizations that want their people sharing rides under their own brand:
 
@@ -102,7 +102,7 @@ image_and_content_blocks:
     anchor: "faq"
     subtitle: "Common Questions"
     title: "White-Label Carpool Platform FAQ"
-    image: "images/carpooling_benefits.png"
+    image: "images/photos/colleagues-carpooling.jpg"
     content_position: "right"
     content: "**Can you white-label TeamWheels?** Yes — your branding, inside your own Microsoft 365 tenant, under your IT policies.
 

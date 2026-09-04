@@ -5,7 +5,7 @@ translationKey: "carpooling-esg-csr"
 date: 2026-06-30
 draft: false
 description: "How corporate carpooling strengthens ESG: cut Scope 3 Category 7 commuting emissions, meet CSRD and SB 253 disclosure, track the right KPIs."
-image: "images/blog/sustainable-mobility.jpg"
+image: "images/blog/carpooling-esg.jpg"
 author: "TeamWheels Editorial"
 reading_time: "11 min"
 keywords: "carpooling ESG, corporate sustainability commuting, scope 3 category 7, employee commuting emissions, CSRD employee commuting, SB 253 carpooling, ESG reporting carpooling, sustainable commuting program, HR sustainability, employee engagement commuting, mobility KPIs, GHG Protocol commuting, ESG strategy HR directors, TeamWheels"

@@ -4,7 +4,7 @@ seoTitle: "Employees skeptical about carpooling: what to do"
 translationKey: "employees-skeptical-carpooling"
 description: "Why employees resist corporate carpooling and how to overcome it: TeamWheels removes friction, ensures safety and protects your bottom line."
 date: 2026-04-23
-image: images/blog/employee-skeptical.jpg
+image: "images/blog/employee-skeptical.jpg"
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
 reading_time: 7 min

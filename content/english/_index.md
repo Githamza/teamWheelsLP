@@ -106,7 +106,7 @@ image_and_content_blocks:
   - enable: true
     subtitle: "Measurable ESG & Commute Impact"
     title: "Cut Scope 3 Emissions, Reduce Parking Costs, Retain Top Talent"
-    image: "images/carpoolingBenefits.png"
+    image: "images/photos/office-parking-lot.jpg"
     content_position: "left"
     content: "Fewer solo commutes mean measurable Scope 3 reductions, up to 30% less parking demand, and $2,000+ in annual savings per employee — while boosting retention and workplace well-being.
 
@@ -118,7 +118,7 @@ image_and_content_blocks:
   - enable: true
     subtitle: "Commuter Benefits Administration Made Simple"
     title: "Pre-Tax Commuter Programs & Sustainable Mobility Reporting"
-    image: "images/rse-carpooling.png"
+    image: "images/photos/commute-reporting-dashboard.jpg"
     content_position: "right"
     content: "Automate pre-tax commuter benefit tracking ($340/month IRS limit), generate CSRD/CDP-ready Scope 3 reports, and stay compliant across the USA, UK, and Canada — all without extra admin overhead.
 

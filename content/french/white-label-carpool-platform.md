@@ -13,7 +13,7 @@ banner:
     button_label: "Demander une démo"
     icon: "fas fa-arrow-right"
     link: "contact/"
-  image: "images/carpoolingBenefits.png"
+  image: "images/photos/colleagues-carpooling.jpg"
 
 image_and_content_blocks:
   - enable: true
@@ -81,7 +81,7 @@ image_and_content_blocks:
     anchor: "pour-qui"
     subtitle: "C'est pour vous ?"
     title: "À Qui s'Adresse une Plateforme de Covoiturage en Marque Blanche"
-    image: "images/rse-carpooling.png"
+    image: "images/photos/commute-reporting-dashboard.jpg"
     content_position: "left"
     content: "TeamWheels est conçu pour les organisations qui veulent faire covoiturer leurs équipes sous leur propre marque :
 
@@ -102,7 +102,7 @@ image_and_content_blocks:
     anchor: "faq"
     subtitle: "Questions fréquentes"
     title: "FAQ — Covoiturage en Marque Blanche"
-    image: "images/carpooling_benefits.png"
+    image: "images/photos/colleagues-carpooling.jpg"
     content_position: "right"
     content: "**Peut-on déployer TeamWheels en marque blanche ?** Oui — votre marque, dans votre propre tenant Microsoft 365, selon vos politiques IT.
 
