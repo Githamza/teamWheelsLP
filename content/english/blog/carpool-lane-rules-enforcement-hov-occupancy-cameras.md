@@ -5,7 +5,7 @@ translationKey: "carpool-lanes-regulation-enforcement"
 date: 2026-07-15
 draft: false
 description: "HOV and carpool lane rules for 2026: occupancy thresholds, active hours, EV exemptions, diamond signage, camera enforcement and fines."
-image: "images/blog/carpool-lanes.jpg"
+image: "images/blog/carpool-lane-enforcement.jpg"
 author: "TeamWheels Editorial"
 reading_time: "11 min"
 keywords: "HOV lane rules 2026, carpool lane occupancy requirements, HOV-2 vs HOV-3, transit lane fines, AI camera HOV enforcement, clean air vehicle decal, T2 T3 transit lanes, carpool lane fines, diamond lane markings, HOT lane tolling, TeamWheels"

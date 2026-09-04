@@ -5,7 +5,7 @@ translationKey: "employees-skeptical-carpooling"
 description: "Pourquoi vos salariés résistent au covoiturage en entreprise et comment lever leurs objections : sécurité, flexibilité et souplesse des trajets."
 keywords: "covoiturage entreprise, scepticisme covoiturage, programme covoiturage salariés, covoiturage Microsoft Teams, TeamWheels, mobilité durable entreprise"
 date: 2026-04-23
-image: images/blog/employee-skeptical.jpg
+image: "images/blog/employee-skeptical.jpg"
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
 reading_time: 7 min

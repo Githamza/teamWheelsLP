@@ -5,7 +5,7 @@ translationKey: "carpool-lanes-overview"
 date: 2026-04-07
 draft: false
 description: "Les voies de covoiturage en France : avantages, mesures gouvernementales, lignes en Île-de-France et guide pour covoiturer entre collègues."
-image: images/blog/carpool-lanes.jpg
+image: "images/blog/carpool-lanes-overview.jpg"
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
 reading_time: 12 min

@@ -5,7 +5,7 @@ translationKey: "carpool-lanes-regulation-enforcement"
 date: 2026-07-15
 draft: false
 description: "Voies réservées au covoiturage (VR2+) en 2026 : règles d'accès, seuil d'occupation, signalisation losange, contrôle automatisé et amende."
-image: "images/blog/paris-carpool-lane.jpg"
+image: "images/blog/carpool-lane-enforcement.jpg"
 author: "TeamWheels Editorial"
 reading_time: "12 min"
 keywords: "voie réservée covoiturage, VR2+, réglementation voie covoiturage, signalisation losange covoiturage, contrôle automatisé covoiturage, amende voie covoiturage, radar covoiturage, plan national covoiturage, TeamWheels"

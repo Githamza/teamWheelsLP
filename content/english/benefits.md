@@ -9,7 +9,7 @@ banner:
   subtitle: "Why HR & Sustainability Leaders Choose TeamWheels"
   title: "All the Benefits of Employee Carpooling — in One Platform"
   description: "From zero-friction adoption to measurable ESG outcomes, here is everything TeamWheels delivers for your organization."
-  image: "images/carpoolingBenefits.png"
+  image: "images/photos/colleagues-carpooling.jpg"
 
 image_and_content_blocks:
   - enable: true
@@ -37,7 +37,7 @@ image_and_content_blocks:
     anchor: "business-impact"
     subtitle: "Measurable ESG & Commute Impact"
     title: "Cut Scope 3 Emissions, Reduce Parking Costs, Retain Top Talent"
-    image: "images/carpoolingBenefits.png"
+    image: "images/photos/office-parking-lot.jpg"
     content_position: "left"
     content: "TeamWheels helps your organization meet ESG targets, solve parking challenges, and improve employee well-being — all through one platform.
 
@@ -58,7 +58,7 @@ image_and_content_blocks:
     anchor: "commuter-benefits"
     subtitle: "Commuter Benefits Administration Made Simple"
     title: "Pre-Tax Commuter Programs & Sustainable Mobility Reporting"
-    image: "images/rse-carpooling.png"
+    image: "images/photos/commute-reporting-dashboard.jpg"
     content_position: "right"
     content: "Simplify commuter benefits administration for your HR team while meeting compliance requirements.
 

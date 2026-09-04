@@ -4,7 +4,7 @@ translationKey: "carpooling-to-work"
 date: 2026-05-12
 draft: false
 description: "Mettez en place le covoiturage domicile-travail dans votre entreprise : Forfait Mobilité Durable, étapes clés et baisse de l'empreinte carbone."
-image: "images/team-group.jpg"
+image: "images/blog/carpooling-to-work.jpg"
 author: "TeamWheels Editorial"
 reading_time: "7 min"
 keywords: "covoiturage domicile travail, covoiturage entreprise, forfait mobilité durable, covoiturage salariés, avantages covoiturage, covoiturage pendulaire"

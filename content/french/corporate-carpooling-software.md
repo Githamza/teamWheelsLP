@@ -14,7 +14,7 @@ banner:
     button_label: "Demander une démo"
     icon: "fas fa-arrow-right"
     link: "contact/"
-  image: "images/carpoolingBenefits.png"
+  image: "images/photos/colleagues-carpooling.jpg"
 
 image_and_content_blocks:
   - enable: true
@@ -84,7 +84,7 @@ image_and_content_blocks:
     anchor: "roi"
     subtitle: "Un impact métier mesurable"
     title: "Réduisez le parking, atteignez vos objectifs RSE, versez le FMD"
-    image: "images/rse-carpooling.png"
+    image: "images/photos/commute-reporting-dashboard.jpg"
     content_position: "left"
     content: "Un logiciel de covoiturage entreprise se rentabilise sur trois lignes du budget et du reporting de votre organisation.
 
@@ -124,7 +124,7 @@ image_and_content_blocks:
     anchor: "faq"
     subtitle: "Questions fréquentes"
     title: "FAQ — Logiciel de covoiturage entreprise"
-    image: "images/carpooling_benefits.png"
+    image: "images/photos/colleagues-carpooling.jpg"
     content_position: "right"
     content: "**Est-ce vraiment juste une application Microsoft Teams ?** Oui. TeamWheels s'installe dans votre tenant Microsoft 365 existant depuis AppSource — aucune app séparée à télécharger pour les salariés.
 

@@ -105,7 +105,7 @@ image_and_content_blocks:
   - enable: true
     subtitle: "Des résultats concrets"
     title: "RSE, économies et bien-être au quotidien"
-    image: "images/carpoolingBenefits.png"
+    image: "images/photos/office-parking-lot.jpg"
     content_position: "left"
     content: "Moins de trajets solo = émissions CO₂ mesurables, 30% de places de parking libérées, et des économies concrètes sur les frais de trajet — tout en renforçant le bien-être et la marque employeur.
 
@@ -117,7 +117,7 @@ image_and_content_blocks:
   - enable: true
     subtitle: "Coup de pouce du gouvernement"
     title: "Forfait Mobilité Durable : jusqu'à 800€/an par salarié"
-    image: "images/rse-carpooling.png"
+    image: "images/photos/commute-reporting-dashboard.jpg"
     content_position: "right"
     content: "Versez jusqu'à 800€/an par salarié, exonérés de charges et d'impôt. TeamWheels génère automatiquement les justificatifs FMD et vous permet de rejoindre la charte ADEME.
 
