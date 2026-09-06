@@ -93,4 +93,4 @@ L'indemnité kilométrique rembourse l'usage du véhicule personnel du salarié 
 
 *Sources : barème 2025-2026 vérifié auprès de plusieurs cabinets d'expertise comptable (LégiSocial, ECA Experts Comptables) ; formule de calcul confirmée sur la base du décret du 27 mars 2023, dernière revalorisation en vigueur. Vérifiez toujours le montant applicable à votre situation sur [impots.gouv.fr](https://www.impots.gouv.fr/).*
 
-**Vous remboursez plusieurs salariés au barème kilométrique pour le même trajet ?** Découvrez en 2 minutes combien coûteraient réellement leurs trajets en covoiturage avec notre [calculateur d'économies](/fr/tools/savings-calculator/).
+**Vous remboursez plusieurs salariés au barème kilométrique pour le même trajet ?** Découvrez en 2 minutes combien coûteraient réellement leurs trajets en covoiturage avec notre [calculateur d'économies](/fr/tools/savings-calculator/), ou consultez notre [comparatif complet FMD / indemnités kilométriques / voiture de fonction électrique](/fr/blog/mobilite-salaries-isoles-fmd-ik-voiture-electrique-2026/) pour arbitrer selon chaque profil de salarié.
