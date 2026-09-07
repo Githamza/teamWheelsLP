@@ -36,7 +36,7 @@ C'est aussi une question qui dépasse la simple gestion des frais. Depuis la loi
 
 | Dispositif | Coût employeur/an (exemple type) | Exonération | Pour qui |
 |---|---|---|---|
-| **[Forfait Mobilités Durables](/fr/blog/forfait-mobilite-durable-guide-complet-2025/)** (vélo, covoiturage, EDP…) | ≤ 600 € (ou 900 € cumulé avec l'abonnement transport) | Totale | Un mode doux reste possible |
+| **[Forfait Mobilités Durables](/fr/forfait-mobilites-durables-covoiturage/)** (vélo, covoiturage, EDP…) | ≤ 600 € (ou 900 € cumulé avec l'abonnement transport) | Totale | Un mode doux reste possible |
 | **[Prime carburant](/fr/blog/prime-carburant-2026-600-euros-employeur/)** ou **[indemnité kilométrique](/fr/blog/bareme-kilometrique-2026-indemnite-domicile-travail/)** | ≤ 600 € (prime, temporaire 2026) / selon barème pour l'IK | Dans les plafonds | Contraint à la voiture, ponctuellement ou régulièrement |
 | **[Véhicule électrique de fonction éco-scoré](/fr/blog/avantage-en-nature-vehicule-electrique-fonction-eco-score-2026/)** | ≈ 4 400 €/an (exemple LLD citadine) | AEN abattu de 70 % | Isolé durablement, sans alternative |
 
@@ -105,6 +105,6 @@ Plusieurs paramètres pourraient rebattre les cartes : la non-reconduction de la
 
 ## Passez à l'action
 
-Le bon réflexe n'est pas de choisir un dispositif universel, mais de cartographier vos trajets pour savoir qui peut réellement covoiturer — et de ne réserver les options les plus coûteuses qu'à ceux qui en ont vraiment besoin. Simulez vos économies potentielles avec notre [calculateur d'économies covoiturage](/fr/tools/savings-calculator/), ou [demandez une démo de TeamWheels](/fr/contact/) pour voir comment l'identification des salariés isolés fonctionne, directement dans Microsoft Teams.
+Le bon réflexe n'est pas de choisir un dispositif universel, mais de cartographier vos trajets pour savoir qui peut réellement covoiturer — et de ne réserver les options les plus coûteuses qu'à ceux qui en ont vraiment besoin. Simulez vos économies potentielles avec notre [calculateur d'économies covoiturage](/fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/), ou [demandez une démo de TeamWheels](/fr/contact/) pour voir comment l'identification des salariés isolés fonctionne, directement dans Microsoft Teams.
 
 *30 jours gratuits, sans engagement, sans carte bancaire.*

@@ -96,7 +96,7 @@ Mais la CSRD ne s'arrête pas au carbone. Le standard social **ESRS S1** attend 
 
 Pour les entreprises encore soumises à la **Déclaration de Performance Extra-Financière (DPEF)**, le covoiturage fournit une section concrète et chiffrée sur la politique de mobilité : km partagés, CO₂ évité, montant de Forfait Mobilité Durable versé.
 
-> **Forfait Mobilité Durable (FMD)** — Instauré par la **loi LOM** (Loi d'Orientation des Mobilités), le FMD permet à l'employeur de prendre en charge jusqu'à **800 € par an et par salarié** les frais de covoiturage domicile-travail, exonérés de cotisations sociales et d'impôt sur le revenu. C'est à la fois un avantage social et une dépense valorisable dans le reporting RSE. [Lire le guide complet du FMD →](/fr/blog/forfait-mobilite-durable-guide-complet-2025/)
+> **Forfait Mobilité Durable (FMD)** — Instauré par la **loi LOM** (Loi d'Orientation des Mobilités), le FMD permet à l'employeur de prendre en charge jusqu'à **800 € par an et par salarié** les frais de covoiturage domicile-travail, exonérés de cotisations sociales et d'impôt sur le revenu. C'est à la fois un avantage social et une dépense valorisable dans le reporting RSE. [Lire le guide complet du FMD →](/fr/forfait-mobilites-durables-covoiturage/)
 
 ---
 
@@ -137,7 +137,7 @@ Une politique RSE crédible se pilote par les chiffres. Voici les **KPI essentie
 | Forfait Mobilité Durable versé | Social / Gouvernance | DPEF, avantages salariés |
 | Économies réalisées par salarié | Social | QVT, pouvoir d'achat |
 
-> **Astuce reporting** — Ces indicateurs doivent être **collectés automatiquement**, pas reconstitués à la main en fin d'année. Un tableau de bord temps réel transforme votre reporting RSE d'une corvée annuelle en un suivi continu. [Estimez vos économies et votre CO₂ évité →](/fr/tools/savings-calculator/)
+> **Astuce reporting** — Ces indicateurs doivent être **collectés automatiquement**, pas reconstitués à la main en fin d'année. Un tableau de bord temps réel transforme votre reporting RSE d'une corvée annuelle en un suivi continu. [Estimez vos économies et votre CO₂ évité →](/fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/)
 
 ---
 
@@ -151,7 +151,7 @@ Le covoiturage est le moyen le plus direct de **donner corps au PDM** :
 2. **Dispositif** — mettre en place un outil de mise en relation et le Forfait Mobilité Durable ;
 3. **Suivi** — mesurer l'adoption et l'impact carbone, et alimenter le reporting RSE.
 
-Un PDM doté d'un programme de covoiturage actif passe du statut de **document de conformité** à celui de **levier de performance mesurable**. Pour la feuille de route détaillée, consultez [covoiturage entreprise : 5 étapes pour démarrer](/fr/blog/covoiturage-entreprise-5-etapes-demarrer/).
+Un PDM doté d'un programme de covoiturage actif passe du statut de **document de conformité** à celui de **levier de performance mesurable**. Pour la feuille de route détaillée, consultez [covoiturage entreprise : 5 étapes pour démarrer](/fr/blog/covoiturage-entreprise-guide-2026/).
 
 ---
 
@@ -183,7 +183,7 @@ Le covoiturage d'entreprise n'est pas un gadget vert de plus. C'est l'un des rar
 
 **TeamWheels** réunit ces trois bénéfices dans une solution intégrée à Microsoft 365 : matching automatique, gestion du Forfait Mobilité Durable audit-ready, et **tableau de bord RSE en temps réel** (km partagés, CO₂ évité, adoption). Gratuit jusqu'à 30 salariés, installation en moins d'une heure, aucun engagement.
 
-**[Demander une démo gratuite](/fr/contact/)** · **[Simuler mon impact CO₂ et mes économies](/fr/tools/savings-calculator/)**
+**[Demander une démo gratuite](/fr/contact/)** · **[Simuler mon impact CO₂ et mes économies](/fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/)**
 
 ---
 
