@@ -1,5 +1,6 @@
 ---
 title: "Corporate Carpooling Guide (2026): Costs, ROI & Best Software"
+seoTitle: "Corporate Carpooling in 2026: Costs, ROI & Software"
 translationKey: "corporate-carpooling-guide-2026"
 date: 2026-04-29
 draft: false
@@ -158,6 +159,7 @@ The single biggest reason corporate carpooling programmes fail is **adoption**. 
 - 📊 **Real-time ESG dashboard:** Scope 3 emissions avoided, trips shared, miles pooled, cost savings — updated daily, exportable for GRI / SECR / TCFD reporting.
 - 🚐 **Fleet integration:** Company vehicles can be booked, dispatched, and tracked for inter-site professional travel — all within the same Teams interface.
 - 🔒 **Enterprise-grade security:** All employee data remains within your Microsoft 365 tenant. No third-party data sharing. SOC 2-ready.
+- 🏷️ **Your brand, if you want it:** campuses, hospitals and multi-employer business parks can run the same program under their own name with the [white-label carpool platform](/en/white-label-carpool-platform/) — same tenant, same data, your logo.
 
 ---
 
@@ -177,7 +179,7 @@ Annual savings = (Employees × % driving solo × Commute miles/day
 100 × 0.70 × 20 × 230 × 0.40 × 0.55 × $0.67 = ~$89,000/year
 ```
 
-**[Use the full interactive calculator](/en/tools/savings-calculator/)** — includes parking cost reduction, IRS pre-tax savings, and ESG CO₂ value. Or read our [carpooling savings calculator guide](/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/) to understand every metric.
+**[Use the full interactive calculator](/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/)** — includes parking cost reduction, IRS pre-tax savings, and ESG CO₂ value. Or read our [carpooling savings calculator guide](/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/) to understand every metric.
 
 ---
 
@@ -207,7 +209,7 @@ The algorithm begins matching commuters. The HR/Sustainability dashboard goes li
 
 TeamWheels is **free for teams up to 25**. Enterprise pilots for larger organisations include full onboarding support and a guaranteed ROI analysis within 30 days.
 
-**[Book a Free Demo](/en/contact/)** · **[Download the ROI Template](/en/tools/savings-calculator/)**
+**[Book a Free Demo](/en/contact/)** · **[Download the ROI Template](/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/)**
 
 ---
 

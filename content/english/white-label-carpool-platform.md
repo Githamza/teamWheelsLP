@@ -1,8 +1,9 @@
 ---
 title: "White-Label Carpool Platform for Companies | TeamWheels"
-description: "Launch a white-label carpool app under your own brand — no development project. Corporate carpooling in your Microsoft 365 tenant, live in days."
-keywords: "white label carpool app, white label carpool platform, white label carpooling platform, white label corporate carpool platform, customizable carpool platform, branded carpool app, white label rideshare app for employees, carpool app with HR integration"
+description: "Buy a white-label carpool platform instead of building one: your brand, your Microsoft 365 tenant, HR integration, live in days. Comparison, pricing and how to buy."
+keywords: "white label carpool app, white label carpool platform, white label carpool software, buy white label carpool software, white label carpooling platform, white label corporate carpool platform, customizable carpool platform, branded carpool app, white label rideshare app for employees, carpool app with HR integration"
 layout: "benefits"
+lastmod: 2026-09-07
 
 banner:
   subtitle: "For Employers, Campuses & Business Parks"
@@ -38,20 +39,48 @@ image_and_content_blocks:
       enable: false
 
   - enable: true
-    anchor: "your-brand-your-tenant"
-    subtitle: "Your Brand, Your Tenant"
-    title: "White-Label Means Your Name on It — and Your Rules Behind It"
+    anchor: "comparison"
+    subtitle: "Build vs. Buy"
+    title: "White-label vs. building your own: the honest comparison"
+    content_position: "left"
+    content: |
+      Most organisations that ask us about a white-label carpool platform have already scoped an in-house build. The estimate usually comes back at six figures and nine months — not because ride-matching is hard, but because everything around it is: identity, privacy, mobile clients, notification infrastructure, and the reporting layer your sustainability team will ask for six months after launch. Here is the comparison we would want to see if we were on your side of the table.
+
+      | | Build in-house | White-label TeamWheels | Generic carpooling app |
+      |---|---|---|---|
+      | **Time to production** | 6–9 months (spec, build, security review, app-store release) | Days: install in 5 minutes, brand and configure in an afternoon, pilot in 2–4 weeks | Weeks, but adoption stalls: employees must download and sign up |
+      | **Upfront cost** | $100,000–$200,000+ for a credible v1 | No setup fee; free 30-day trial | Low or free, paid for in participation |
+      | **Ongoing cost** | 1–2 FTE for maintenance, mobile updates, hosting, support | Per-seat subscription, maintenance included | Per-seat or per-site subscription |
+      | **Brand ownership** | Full — it is your app | Your program name, logo and colours inside Microsoft Teams | The vendor's brand, sometimes with a logo upload |
+      | **GDPR & hosting** | Your responsibility end to end | Runs in your own Microsoft 365 tenant under your policies; GDPR compliant, privacy by design | Vendor cloud, vendor DPA, data outside your tenant |
+      | **Employee directory integration** | To be built (SSO, provisioning, offboarding) | Native: Entra ID is the roster, no accounts to create or close | Manual invitations or CSV imports |
+      | **Scope 3 reporting** | To be built after launch | Category 7 export out of the box (trips, km, CO₂) | Varies; often a PDF, rarely audit-ready |
+
+      The build column is not wrong for everyone: a national mobility operator or a consumer marketplace should own its code. For an employer, a campus or a business park, the question is simply how fast people start sharing rides under your name — and what it costs to keep that running in year two.
+    button:
+      enable: false
+
+  - enable: true
+    anchor: "what-you-get"
+    subtitle: "Scope of the Deployment"
+    title: "What you get with a white-label deployment"
     image: "images/microsoft-teams.png"
     content_position: "left"
-    content: "A white-label carpooling platform should feel like part of your internal toolset, not a third-party app your employees are sent off to. TeamWheels deploys inside your own Microsoft 365 environment:
+    content: "A white-label carpooling platform should feel like part of your internal toolset, not a third-party app your employees are sent off to. A TeamWheels white-label deployment includes:
 
-    * **Your branding** — Your program name, logo, and colors in the experience employees see every day
+    * **Your brand and your domain** — Your program name, logo and colours in every screen employees see, and your own domain on the sign-in and notification flows
 
-    * **Your tenant, your data** — The platform runs under your Microsoft 365 tenant, governed by your IT policies and data-residency rules
+    * **Deployment in your own Microsoft 365 tenant** — Installed from AppSource by your Teams administrator, governed by your IT and data-residency policies
 
-    * **No separate app** — Employees carpool through Microsoft Teams, which they already have open — the #1 reason participation reaches 40%+ instead of stalling under 18%
+    * **Your data stays with you** — Trip, site and participation data live in your tenant; nothing is shared with other customers or resold
 
-    * **Enterprise-grade by default** — Microsoft-validated on AppSource, GDPR compliant, privacy by design
+    * **The Teams bot under your name** — Employees declare their commute, offer or request a seat and get departure reminders through a conversational bot carrying your brand
+
+    * **An administration dashboard** — Sites, matching rules, active carpoolers, trips shared and programme health in one view for HR, mobility and facilities teams
+
+    * **Scope 3 Category 7 export** — Kilometres pooled and CO₂ avoided, exportable for GHG Protocol, CSRD and internal ESG reporting
+
+    * **Enterprise-grade by default** — Microsoft-validated on AppSource, GDPR compliant, privacy by design, and no separate app to download — the #1 reason participation reaches 40%+ instead of stalling under 18%
 
     [See exactly how it works →](/en/how-it-works/)
     "
@@ -61,19 +90,63 @@ image_and_content_blocks:
   - enable: true
     anchor: "hr-integration"
     subtitle: "HR & Identity Integration"
-    title: "A Carpool Platform That Plugs Into Your HR Systems"
-    image: "images/why_use_teamWheels.png"
-    content_position: "right"
-    content: "The real payoff of a white-label carpool app integrated with HR and identity systems: employees join with the work account they already have, and HR, payroll, and ESG teams get clean data without manual exports.
+    title: "How it integrates with your HR and employee systems"
+    content_position: "left"
+    content: |
+      Because TeamWheels runs inside your Microsoft 365 tenant, it does not need a separate user directory. Employees are already there. Entra ID handles authentication, group membership drives who can see which ride pools, and site or department attributes let you scope matching to a single location — which is what makes commute matching work at a 300-person industrial site where a generic consumer app would not reach critical mass.
 
-    * **SSO via Azure AD / Entra ID** — Your employee directory *is* the carpool roster. No invites to send, no accounts to provision or offboard
+      That is the real payoff of a white-label carpool app integrated with HR and identity systems: employees join with the work account they already have, and HR, payroll and ESG teams get clean data without manual exports. Here is how each piece fits.
 
-    * **Payroll & commuter-benefit ready** — Trip records feed pre-tax and reimbursement workflows: IRS Section 132(f) in the US, UK schemes, France's Forfait Mobilité Durable
+      ### Single sign-on and provisioning
 
-    * **ESG reporting on autopilot** — Participation and CO₂ data export straight into Scope 3 Category 7, CSRD, and GHG Protocol reporting
+      Authentication runs through Azure AD / Entra ID SSO. There is no invitation to send, no password to set and no account to provision: anyone in the directory can open the bot in Teams and is recognised immediately. Offboarding is just as automatic — when an employee leaves the tenant, they leave the carpool roster the same day, so the programme never accumulates stale profiles or orphaned accounts. If you use Entra ID groups to manage access to other line-of-business apps, the same groups control who can see and join TeamWheels.
 
-    * **Always accurate** — Identity, HR, and carpooling share one source of truth, so the program stays correct as headcount changes
-    "
+      ### Mapping sites and departments
+
+      Commute matching only works when it is local. During setup you declare your sites (an address and a radius each) and map them to the attributes your directory already carries — office location, department, cost centre or a dedicated group. Matching is then scoped so that a night-shift technician at the northern plant is paired with colleagues on the same site and the same hours, not with someone at head office 80 km away. Multi-site organisations, campuses and business parks that host several employers can run one programme with separate pools per site or entity, and report on each.
+
+      ### What data leaves your tenant
+
+      Short answer: nothing that is not necessary to match rides and produce your reports. Trip declarations, site assignments and participation records stay in your Microsoft 365 environment; the platform processes the minimum needed for matching (site, usual hours, departure area) and does not sell, share or resell employee data. Payroll and commuter-benefit records — pre-tax programmes under IRS Section 132(f) in the US, UK schemes, France's forfait mobilités durables — are generated from those trip records and exported by your administrators, on your schedule. Our team walks through the exact data flows, retention periods and the data-processing agreement during the demo, so your IT and privacy officers can sign off before anyone carpools.
+    button:
+      enable: false
+
+  - enable: true
+    anchor: "launch-timeline"
+    subtitle: "From Decision to First Shared Rides"
+    title: "How quickly can you launch?"
+    content_position: "left"
+    content: |
+      Days, not weeks — and in four phases you can put on a calendar. This is the timeline we run with new customers, consistent with what the rest of this site promises: live in days.
+
+      | Phase | What happens | Who is involved | Duration |
+      |---|---|---|---|
+      | **1. Tenant validation** | Your Teams administrator installs TeamWheels from Microsoft AppSource and grants Entra ID consent; we confirm the tenant, the sign-in flow and the data-processing agreement | IT administrator, privacy officer | Day 1 (about 5 minutes of installation, the rest is paperwork) |
+      | **2. Branding** | Program name, logo, colours and domain are applied; bot messages and notifications are reviewed in your tone of voice, in English and/or French | Communications or HR, our onboarding team | Day 1–2 (one afternoon) |
+      | **3. Pilot scope** | Sites are declared and mapped to directory attributes, matching rules and commuter-benefit settings are configured, and 30–50 early adopters from high-commute departments are invited | HR or mobility manager, 2–3 ambassadors | Day 3–5, then 2–4 weeks of pilot |
+      | **4. General rollout** | Company-wide announcement in Teams, all sites activated, the dashboard opened to HR and ESG teams, Scope 3 export scheduled | Leadership sponsor, HR, ESG | Day 20–30 |
+
+      The technical part is measured in minutes. What sets the pace is your own pilot: most organisations keep it to two to four weeks so they can announce the general rollout with real numbers — trips shared, cars off the car park, CO₂ avoided — rather than a promise.
+    button:
+      enable: false
+
+  - enable: true
+    anchor: "pricing"
+    subtitle: "Pricing & Procurement"
+    title: "Pricing and how to buy"
+    content_position: "left"
+    content: |
+      When you buy white label carpool software from TeamWheels, you buy a subscription, not a development project. The pricing model is per seat, and the public grid is the same one every customer starts from:
+
+      * **Free 30-day trial** — the complete platform for up to 50 employees, no credit card, no commitment. Most white-label customers run their pilot on the trial.
+      * **TeamWheels, €5 per employee per month** — unlimited employees, the Teams bot and matching engine, the administration dashboard, real-time CO₂ tracking, commuter-benefit and FMD records, Entra ID SSO, advanced statistics and priority support. Monthly or annual billing, cancel any time.
+      * **Enterprise, on quotation** — everything above plus the white-label package: your branding and domain, multi-site and multi-entity programmes, HR and payroll integrations through the API, a guaranteed SLA, a dedicated account manager, personalised onboarding and custom ESG reports.
+
+      **What triggers a quote rather than the flat rate:** volume (typically from several hundred seats or several sites), hosting or data-residency requirements beyond the standard Microsoft 365 tenant deployment, custom integrations with an HRIS or payroll system, and multi-employer programmes run by a campus or a business park. A quote is usually turned around within a week of the demo, and the trial keeps running in the meantime.
+
+      **How to buy:** book a demo, run the free trial with your pilot group, then sign either online for the flat per-seat plan or an annual Enterprise agreement for the white-label package. Purchase orders and bank transfer are accepted for annual contracts; the platform is also listed on Microsoft AppSource, which some procurement teams prefer.
+
+      Ready to see it with your own branding? [Watch the 60-second demo](/en/demo/) or [book a personalised demo →](/en/contact/) and we will size the white-label package for your organisation. The standard grid is detailed on the [pricing page](/en/pricing/).
     button:
       enable: false
 
@@ -98,38 +171,22 @@ image_and_content_blocks:
     button:
       enable: false
 
-  - enable: true
-    anchor: "faq"
-    subtitle: "Common Questions"
-    title: "White-Label Carpool Platform FAQ"
-    image: "images/photos/colleagues-carpooling.jpg"
-    content_position: "right"
-    content: "**Can you white-label TeamWheels?** Yes — your branding, inside your own Microsoft 365 tenant, under your IT policies.
-
-    **Do we need developers?** No. A Teams administrator installs it from AppSource in about 5 minutes; branding and configuration take an afternoon.
-
-    **What does it cost compared to building an app?** Custom builds run $20,000–$200,000+ over 14–16 weeks. TeamWheels is per-seat SaaS with a free 30-day trial. [See pricing →](/en/pricing/)
-
-    **Do employees download anything?** No — the platform lives inside Microsoft Teams, which they already use.
-
-    **Can it integrate with our HR systems?** Yes — SSO via Azure AD / Entra ID, plus trip data for payroll, commuter benefits, and ESG reporting.
-    "
-    button:
-      enable: false
-
+faq_title: "Frequently asked questions"
 faq:
-  - question: "What is a white-label carpool platform?"
-    answer: "A white-label carpool platform is ready-made carpooling software an organization deploys under its own brand instead of building an app from scratch. TeamWheels is a white-label corporate carpool platform: it installs into your own Microsoft 365 tenant from AppSource, carries your program name and branding, and matches employees for shared commutes inside Microsoft Teams — no development project and no separate app to download."
-  - question: "Can you white-label a corporate carpool app?"
-    answer: "Yes. TeamWheels deploys as a white-label carpool app inside your own Microsoft 365 tenant, under your branding and IT policies. Employees authenticate with their existing work account via Azure AD / Entra ID SSO, so there are no separate accounts to provision and the experience feels like part of your internal toolset rather than a third-party app."
+  - question: "What are the benefits of choosing a white-label carpool app platform that integrates with HR or employee systems?"
+    answer: "Employees join with the work account they already have, so there is no invitation, sign-up or separate password — participation on TeamWheels reaches 40%+ against under 18% for standalone apps. Entra ID becomes the carpool roster and keeps it current as people join and leave. Site and department attributes scope matching to the right location. And HR, payroll and ESG teams get clean data with no manual exports: commuter-benefit records (IRS Section 132(f), UK schemes, France's forfait mobilités durables) and Scope 3 Category 7 reporting are generated from the same trip records."
+  - question: "How can I quickly launch a customizable carpool platform for my company?"
+    answer: "Adopt a white-label, ready-made platform instead of building one. With TeamWheels the sequence is: your Teams administrator installs the app from Microsoft AppSource (about 5 minutes), you apply your program name, logo and colours (one afternoon), you declare your sites and invite 30–50 early adopters for a two-to-four-week pilot, then you announce the general rollout with real numbers. Most organisations go from decision to first shared rides in days and to company-wide rollout within a month."
+  - question: "Who owns the data in a white-label deployment?"
+    answer: "You do. TeamWheels runs inside your own Microsoft 365 tenant: trip declarations, site assignments and participation records stay in your environment under your IT and data-residency policies. The platform processes only what is needed to match rides and produce your reports, never sells or shares employee data, and the data-processing agreement is reviewed with your privacy officer before launch."
+  - question: "How far can we customise the branding?"
+    answer: "Program name, logo, colours and domain, plus the wording of the bot messages and notifications in English and French. Employees see your brand in Teams, on sign-in and in every reminder. What stays standard is the matching engine and the dashboard, which is what keeps deployment to days rather than months."
+  - question: "What happens at the end of the contract?"
+    answer: "The platform is a subscription, so nothing is locked in. On the flat per-seat plan you can cancel at any time without notice; annual Enterprise agreements end at their term unless renewed. Your administrators can export trips, participation and CO₂ data beforehand, and employee data is deleted from the platform in line with GDPR once the account is closed — the directory itself is yours and is never touched."
+  - question: "Is the platform available outside Microsoft 365?"
+    answer: "TeamWheels is built for organisations on Microsoft 365: the Teams bot, Entra ID single sign-on and the tenant-based data model are what make deployment take minutes and adoption exceed 40%. If part of your workforce is not on Microsoft 365 — for example a multi-employer business park — the Enterprise package can cover them through the API and web access; ask during the demo and we will tell you honestly what fits."
   - question: "How much does a white-label carpool app cost compared to building one?"
-    answer: "Building a carpool app from scratch with a development agency typically takes 14–16 weeks and costs $20,000–$200,000+, plus ongoing maintenance. A white-label SaaS platform like TeamWheels is priced per seat (from 5€ per seat per month) with a free 30-day trial, and deploys in about 5 minutes from Microsoft AppSource — most organizations reach positive ROI within the first quarter through parking savings alone."
-  - question: "How fast can you launch a white-label carpool platform?"
-    answer: "About 5 minutes to install, an afternoon to brand and configure. A Teams administrator installs TeamWheels from Microsoft AppSource into your existing Microsoft 365 tenant — no IT project, no infrastructure. Most organizations pilot with 30–50 employees for 2–4 weeks, then scale company-wide."
-  - question: "What are the benefits of a white-label carpool app integrated with HR systems?"
-    answer: "Integrating a white-label carpool app with your HR and identity systems means employees join automatically with their work account, and HR, payroll, and sustainability teams get clean data with no manual exports. Key benefits: single sign-on via Entra ID (the directory becomes the carpool roster), pre-tax and reimbursement workflows fed directly from trip records (IRS Section 132f, UK schemes, France's Forfait Mobilité Durable), and Scope 3 / CSRD ESG reporting generated automatically."
-  - question: "What is the difference between a white-label carpool platform and a carpool app clone script?"
-    answer: "A clone script or app-development kit gives you source code you must host, maintain, publish to app stores, and get employees to download — built mostly for consumer rideshare startups. A white-label corporate carpool platform like TeamWheels is managed SaaS built for employee commutes: it runs inside your Microsoft 365 tenant under your brand, needs no developers, and employees use it through Microsoft Teams with no download."
+    answer: "Building a carpool app from scratch with a development agency typically takes 14–16 weeks and costs $20,000–$200,000+, plus ongoing maintenance. TeamWheels is priced per seat (from €5 per employee per month) with a free 30-day trial; the white-label package is quoted on volume, sites and integrations, and deploys from Microsoft AppSource in about 5 minutes — most organisations reach positive ROI within the first quarter through parking savings alone."
   - question: "Do employees need to download a separate app?"
     answer: "No. TeamWheels lives inside Microsoft Teams, which your employees already use every day. That is the main reason white-label programs on TeamWheels reach 40%+ participation, versus under 18% for standalone carpool apps that require a download and a new account."
 
@@ -143,16 +200,16 @@ howto:
   step:
     - name: "Install from Microsoft AppSource"
       text: "A Teams administrator installs TeamWheels into your existing Microsoft 365 tenant — about 5 minutes, no IT project."
-      url: "#deploy-dont-build"
+      url: "#launch-timeline"
     - name: "Brand and configure"
       text: "Apply your program name, logo, and colors; define office sites and matching rules; connect Azure AD / Entra ID SSO — typically one afternoon."
-      url: "#your-brand-your-tenant"
+      url: "#what-you-get"
     - name: "Pilot with 30–50 employees"
       text: "Run a 2–4 week pilot with high-commute departments, then use participation and CO₂ data to make the case company-wide."
       url: "#hr-integration"
     - name: "Scale and report"
       text: "Roll out to all sites, feed trip records into commuter-benefit and payroll workflows, and export Scope 3 / CSRD reporting automatically."
-      url: "#who-its-for"
+      url: "#pricing"
 
 call_to_action:
   enable: true
