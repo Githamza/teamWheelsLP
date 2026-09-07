@@ -605,6 +605,13 @@
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
           body: JSON.stringify(payload)
+        }).then(function (resp) {
+          // GA4 key event, sent only once Web3Forms has accepted the lead. The
+          // calculator is a JS form with no thank-you redirect, so GA4's
+          // enhanced-measurement `form_submit` never fires here.
+          if (resp && resp.ok) {
+            track('generate_lead', { lead_source: 'savings_calculator', method: 'web3forms', language: lang, country: st.country });
+          }
         }).catch(function () {});
       } catch (e) {}
     }
