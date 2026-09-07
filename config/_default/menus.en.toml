@@ -61,7 +61,7 @@ weight = 4
 [[main]]
 parent = "resources"
 name = "Savings Calculator"
-url = "tools/savings-calculator/"
+url = "blog/carpooling-savings-calculator-corporate-co2-roi-2026/"
 weight = 1
 
 [[main]]
@@ -120,7 +120,7 @@ weight = 4
 
 [[footer_menu_4]]
 name = "Savings Calculator"
-url = "tools/savings-calculator/"
+url = "blog/carpooling-savings-calculator-corporate-co2-roi-2026/"
 weight = 5
 
 [[footer_menu_4]]

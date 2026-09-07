@@ -5,19 +5,29 @@ translationKey: "carpooling-savings-calculator"
 description: "Calculateur gratuit d'économies covoiturage : CO₂ évité, carburant et places de parking libérées. Facteurs ADEME, rapport PDF instantané."
 keywords: "calculateur covoiturage entreprise, calculateur économies covoiturage, calculateur CO2 covoiturage, bilan carbone mobilité domicile-travail, Scope 3 déplacements salariés, score RSE mobilité, facteurs ADEME, calculateur forfait mobilité durable, FMD calculateur, ROI covoiturage entreprise"
 date: 2026-04-20
-lastmod: 2026-04-20
+lastmod: 2026-09-07
 draft: false
 image: "images/blog/savings-calculator.jpg"
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
 reading_time: 9 min
+# L'outil interactif (ex-/fr/tools/savings-calculator/) est monté en haut de cet
+# article via le shortcode savings-calculator ; les anciennes URL redirigent ici.
+aliases:
+  - /tools/savings-calculator/
+  - /tools/
+calculator_title: "Calculateur d'économies covoiturage"
+intro_subtitle: "Outil gratuit TeamWheels"
+intro_lede: "Combien votre entreprise peut-elle économiser avec le covoiturage ? Répondez à quelques questions et obtenez votre rapport personnalisé en PDF."
 ---
+
+{{< savings-calculator >}}
 
 # Calculateur d'économies covoiturage 2026 : mesurez CO₂ et ROI en 2 minutes
 
 Combien votre entreprise peut-elle économiser en convertissant ses autosolistes en covoitureurs ? Jusqu'ici, répondre à cette question demandait un tableur, un cabinet de conseil et plusieurs semaines d'échanges. Ce n'est plus le cas.
 
-Le nouveau **[calculateur d'économies covoiturage TeamWheels](/fr/tools/savings-calculator/)** permet aux équipes RH, RSE et mobilité d'obtenir en moins de deux minutes une estimation fiable du **CO₂ évité, des euros économisés, des places de parking libérées et du score RSE** d'un programme de covoiturage d'entreprise — avec un rapport PDF personnalisé gratuit à la clé.
+Le **calculateur d'économies covoiturage TeamWheels** ci-dessus permet aux équipes RH, RSE et mobilité d'obtenir en moins de deux minutes une estimation fiable du **CO₂ évité, des euros économisés, des places de parking libérées et du score RSE** d'un programme de covoiturage d'entreprise — avec un rapport PDF personnalisé gratuit à la clé.
 
 Ce guide explique **ce que l'outil mesure, comment il fonctionne et comment transformer les résultats en business case** validé par votre direction financière et votre comité RSE.
 
@@ -182,7 +192,7 @@ Le calculateur quantifie l'**opportunité**. Une démo montre comment TeamWheels
 
 Arrêtez d'estimer. Commencez à mesurer.
 
-[**Lancer le calculateur d'économies covoiturage gratuit →**](/fr/tools/savings-calculator/)
+[**Lancer le calculateur d'économies covoiturage gratuit ↑**](#calculateur)
 
 *Deux minutes, sans carte bancaire, rapport PDF personnalisé.*
 

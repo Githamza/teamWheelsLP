@@ -1,17 +1,28 @@
-{{ define "main" }}
-  {{ partial "essentials/header.html" . }}
+{{- /*
+  Savings calculator — interactive tool (assets/js/savings-calculator.js).
 
+  Until September 2026 this markup was the standalone /tools/savings-calculator/
+  page (layouts/_default/savings-calculator.html). That page had ~90 words of
+  indexable text and competed with the explanatory article for the same
+  query, so the tool now renders at the top of the article through the
+  `savings-calculator` shortcode and the old URLs 301 to the article
+  (static/.htaccess + `aliases` in the article front matter).
+
+  Context: the page (needs .Params.intro_subtitle / .Params.intro_lede /
+  .Params.calculator_title, all optional). The <h2> keeps the page's own
+  <h1> unique.
+*/ -}}
   {{ $lang := site.Language.Lang }}
   {{ $calcJS := resources.Get "js/savings-calculator.js" }}
   {{ if hugo.IsProduction }}
     {{ $calcJS = $calcJS | fingerprint "sha512" }}
   {{ end }}
 
-  <section class="savings-calculator" data-lang="{{ $lang }}" data-currency="{{ if eq $lang `fr` }}EUR{{ else }}GBP{{ end }}">
+  <section id="{{ if eq $lang `fr` }}calculateur{{ else }}calculator{{ end }}" class="savings-calculator" data-lang="{{ $lang }}" data-currency="{{ if eq $lang `fr` }}EUR{{ else }}GBP{{ end }}">
     <div class="container container-delta">
       <div class="sc-head text-center">
-        <p class="subtitle">{{ .Params.intro_subtitle | default "Free tool" }}</p>
-        <h1 class="title text-xl mb-3">{{ .Title }}</h1>
+        <p class="subtitle">{{ .Params.intro_subtitle | default (i18n "sc_intro_subtitle") }}</p>
+        <h2 class="title mb-3">{{ .Params.calculator_title | default .Title }}</h2>
         <p class="sc-lede">{{ .Params.intro_lede | default .Description }}</p>
       </div>
 
@@ -195,4 +206,3 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js" defer></script>
   <script src="{{ $calcJS.RelPermalink }}" defer></script>
-{{ end }}

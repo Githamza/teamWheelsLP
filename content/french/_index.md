@@ -18,7 +18,7 @@ banner:
     enable: true
     label: "Calculez vos économies"
     icon: "fas fa-calculator"
-    link: "tools/savings-calculator/"
+    link: "blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/"
 
   image: "images/teamwheels_demo_image.svg"
 
@@ -60,10 +60,10 @@ fun_facts:
   title: "Le covoiturage domicile-travail en chiffres"
   fact_item:
   - icon: "fas fa-euro-sign"
-    counter: "800"
+    counter: "900"
     counter_suffix: "€"
     counter_prefix: ""
-    content: "par an et par salarié avec le Forfait Mobilité Durable"
+    content: "par an et par salarié avec le forfait mobilités durables (cumul abonnement transport)"
 
   - icon: "fas fa-clock"
     counter: "5"
@@ -95,9 +95,9 @@ image_and_content_blocks:
     title: "Le covoiturage directement dans Microsoft Teams"
     image: "images/why_use_teamWheels.png"
     content_position: "right"
-    content: "TeamWheels est un logiciel de covoiturage entreprise qui s'intègre nativement à Microsoft Teams — zéro app supplémentaire, adoption immédiate. Un admin, quelques clics, et votre programme covoiturage est en ligne en 5 minutes avec 40%+ de participation.
+    content: "TeamWheels est un [logiciel de covoiturage entreprise](/fr/corporate-carpooling-software/) qui s'intègre nativement à Microsoft Teams — zéro app supplémentaire, adoption immédiate. Un admin, quelques clics, et votre programme covoiturage est en ligne en 5 minutes avec 40%+ de participation.
 
-    [Découvrir le logiciel de covoiturage entreprise →](/fr/corporate-carpooling-software/) · [En savoir plus →](benefits/#integration-teams)
+    [En savoir plus →](benefits/#integration-teams)
     "
     button:
       enable: false
@@ -116,14 +116,14 @@ image_and_content_blocks:
 
   - enable: true
     subtitle: "Coup de pouce du gouvernement"
-    title: "Forfait Mobilité Durable : jusqu'à 800€/an par salarié"
+    title: "Forfait mobilités durables : jusqu'à 900 €/an par salarié"
     image: "images/photos/commute-reporting-dashboard.jpg"
     content_position: "right"
-    content: "Versez jusqu'à 800€/an par salarié, exonérés de charges et d'impôt. TeamWheels génère automatiquement les justificatifs FMD et vous permet de rejoindre la charte ADEME.
+    content: "Versez jusqu'à 600 € par an et par salarié — 900 € en cumul avec l'abonnement transport — exonérés de charges et d'impôt grâce au [forfait mobilités durables](/fr/forfait-mobilites-durables-covoiturage/). TeamWheels génère automatiquement les justificatifs FMD et vous permet de rejoindre la charte ADEME.
 
     [En savoir plus →](benefits/#fmd)
 
-    [Guide complet : covoiturage domicile-travail en entreprise →](/fr/blog/covoiturage-entreprise-guide-2026/)
+    [Guide complet : covoiturage en entreprise →](/fr/blog/covoiturage-entreprise-guide-2026/)
     "
     button:
       enable: false
@@ -133,7 +133,7 @@ image_and_content_blocks:
     title: "Une solution certifiée et sécurisée"
     image: "images/why_use_teamWheels.png"
     content_position: "left"
-    content: "Certifié Microsoft Partner, SSO via Azure AD, données hébergées en France et RGPD compliant — une solution enterprise sécurisée, sans identifiants supplémentaires.
+    content: "Certifié Microsoft Partner, SSO via Azure AD, données hébergées en France et RGPD compliant — une solution enterprise sécurisée, sans identifiants supplémentaires. Les grands comptes, campus et zones d'activité peuvent la déployer sous leur propre nom avec la [plateforme de covoiturage en marque blanche](/fr/white-label-carpool-platform/).
 
     [En savoir plus →](benefits/#securite)
     "

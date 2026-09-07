@@ -240,7 +240,7 @@ You do not need to choose between the two layers, and you should not sequence th
 
 **Week 3 — Add the seat layer.** Install TeamWheels from AppSource into your existing tenant, configure your sites, and let matching begin against both pool cars and personal vehicles. Employees need no onboarding because the bot lives in Teams.
 
-**Week 4 — Report.** Compare occupancy per vehicle against your Week 2 baseline. Use the [savings calculator](/en/tools/savings-calculator/) to convert the change into fleet, fuel, parking and CO₂ figures your finance and sustainability teams can file.
+**Week 4 — Report.** Compare occupancy per vehicle against your Week 2 baseline. Use the [savings calculator](/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/) to convert the change into fleet, fuel, parking and CO₂ figures your finance and sustainability teams can file.
 
 ---
 
@@ -258,7 +258,7 @@ Register the cars in Microsoft 365. Fill them with TeamWheels.
 
 TeamWheels installs into your existing Microsoft 365 tenant from AppSource in about five minutes — same accounts, same tenant, same Teams your fleet bookings already run through.
 
-**[Book a free demo](/en/contact/)** · **[Explore the carpooling software](/en/corporate-carpooling-software/)** · **[Calculate your savings](/en/tools/savings-calculator/)**
+**[Book a free demo](/en/contact/)** · **[Explore the carpooling software](/en/corporate-carpooling-software/)** · **[Calculate your savings](/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/)**
 
 ---
 

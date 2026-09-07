@@ -1,8 +1,9 @@
 ---
 title: "Plateforme de Covoiturage en Marque Blanche | TeamWheels"
-description: "Lancez une app de covoiturage à votre marque sans projet de développement : covoiturage entreprise dans votre tenant Microsoft 365, en quelques jours."
-keywords: "covoiturage marque blanche, application covoiturage marque blanche, plateforme covoiturage marque blanche, plateforme covoiturage personnalisable, app covoiturage personnalisée entreprise, covoiturage intégration RH"
+description: "Achetez une plateforme de covoiturage en marque blanche au lieu de la développer : votre marque, votre tenant Microsoft 365, intégration RH, opérationnelle en quelques jours. Comparatif, tarifs, achat."
+keywords: "covoiturage marque blanche, application covoiturage marque blanche, plateforme covoiturage marque blanche, plateforme de covoiturage entreprise, plateforme covoiturage personnalisable, app covoiturage personnalisée entreprise, covoiturage intégration RH, acheter logiciel covoiturage marque blanche"
 layout: "benefits"
+lastmod: 2026-09-07
 
 banner:
   subtitle: "Pour les employeurs, campus & zones d'activité"
@@ -38,20 +39,48 @@ image_and_content_blocks:
       enable: false
 
   - enable: true
-    anchor: "votre-marque-votre-tenant"
-    subtitle: "Votre marque, votre tenant"
-    title: "Marque Blanche : Votre Nom Devant, Vos Règles Derrière"
+    anchor: "comparatif"
+    subtitle: "Développer ou déployer"
+    title: "Marque blanche ou développement sur mesure : le comparatif honnête"
+    content_position: "left"
+    content: |
+      La plupart des organisations qui nous interrogent sur une plateforme de covoiturage en marque blanche ont déjà chiffré un développement interne. Le devis revient en général à six chiffres et neuf mois — non pas parce que l'appariement de trajets est difficile, mais parce que tout ce qui l'entoure l'est : identité, confidentialité, applications mobiles, infrastructure de notifications, et la couche de reporting que votre équipe RSE réclamera six mois après le lancement. Voici le comparatif que nous voudrions voir si nous étions à votre place.
+
+      | | Développement interne | TeamWheels en marque blanche | App de covoiturage générique |
+      |---|---|---|---|
+      | **Délai de mise en production** | 6 à 9 mois (cahier des charges, développement, audit sécurité, publication) | Quelques jours : installation en 5 minutes, personnalisation en une après-midi, pilote de 2 à 4 semaines | Quelques semaines, mais l'adoption cale : les salariés doivent télécharger et s'inscrire |
+      | **Coût de départ** | 100 000 à 200 000 €+ pour une v1 crédible | Aucun frais d'installation ; essai gratuit de 30 jours | Faible ou nul, payé en participation |
+      | **Coût de maintenance** | 1 à 2 ETP pour la maintenance, les mises à jour mobiles, l'hébergement, le support | Abonnement par collaborateur, maintenance incluse | Abonnement par collaborateur ou par site |
+      | **Propriété de la marque** | Totale — c'est votre app | Le nom, le logo et les couleurs de votre programme dans Microsoft Teams | La marque de l'éditeur, parfois avec un logo à télécharger |
+      | **RGPD & hébergement** | Sous votre responsabilité de bout en bout | Dans votre propre tenant Microsoft 365, sous vos politiques ; données hébergées en France, RGPD, privacy by design | Cloud de l'éditeur, données hors de votre tenant |
+      | **Intégration à l'annuaire** | À construire (SSO, provisioning, départs) | Native : Entra ID est la liste des covoitureurs, aucun compte à créer ni à fermer | Invitations manuelles ou imports CSV |
+      | **Reporting Scope 3** | À construire après le lancement | Export poste 7 inclus (trajets, km, CO₂) pour le bilan GES et la CSRD | Variable ; souvent un PDF, rarement auditable |
+
+      La colonne « développement » n'est pas fausse pour tout le monde : un opérateur de mobilité national ou une place de marché grand public doit posséder son code. Pour un employeur, un campus ou une zone d'activité, la question est simplement : en combien de temps vos équipes covoiturent-elles sous votre nom, et combien cela coûte-t-il de le faire vivre en année deux ?
+    button:
+      enable: false
+
+  - enable: true
+    anchor: "ce-que-vous-obtenez"
+    subtitle: "Périmètre du déploiement"
+    title: "Ce que comprend un déploiement en marque blanche"
     image: "images/microsoft-teams.png"
     content_position: "left"
-    content: "Une plateforme de covoiturage en marque blanche doit ressembler à un outil interne, pas à une app tierce vers laquelle on renvoie les salariés. TeamWheels se déploie dans votre propre environnement Microsoft 365 :
+    content: "Une plateforme de covoiturage en marque blanche doit ressembler à un outil interne, pas à une app tierce vers laquelle on renvoie les salariés. Un déploiement TeamWheels en marque blanche comprend :
 
-    * **Votre image de marque** — Le nom de votre programme, votre logo et vos couleurs dans l'expérience quotidienne des salariés
+    * **Votre marque et votre domaine** — Le nom de votre programme, votre logo et vos couleurs dans chaque écran, et votre propre domaine sur les parcours de connexion et de notification
 
-    * **Votre tenant, vos données** — La plateforme tourne dans votre tenant Microsoft 365, régie par vos politiques IT et vos règles de résidence des données
+    * **Le déploiement dans votre propre tenant Microsoft 365** — Installé depuis AppSource par votre administrateur Teams, régi par vos politiques IT et vos règles de résidence des données
 
-    * **Aucune app séparée** — Le covoiturage se passe dans Microsoft Teams, déjà ouvert sur chaque poste — la raison n°1 d'une participation à plus de 40 % au lieu de moins de 18 %
+    * **Vos données restent chez vous** — Trajets, sites et participation vivent dans votre tenant ; rien n'est partagé avec d'autres clients ni revendu
 
-    * **Niveau entreprise par défaut** — Application validée par Microsoft sur AppSource, conforme RGPD, privacy by design
+    * **Le bot Teams sous votre nom** — Les salariés déclarent leur trajet, proposent ou demandent une place et reçoivent les rappels de départ via un bot conversationnel à votre marque
+
+    * **Un tableau de bord d'administration** — Sites, règles d'appariement, covoitureurs actifs, trajets partagés et santé du programme en une vue pour les RH, la mobilité et les services généraux
+
+    * **L'export Scope 3 catégorie 7** — Kilomètres partagés et CO₂ évité, exportables pour le bilan GES, la CSRD et votre reporting RSE interne
+
+    * **Le niveau entreprise par défaut** — Application validée par Microsoft sur AppSource, conforme RGPD, privacy by design, et aucune app séparée à télécharger — la raison n°1 d'une participation à plus de 40 % au lieu de moins de 18 %
 
     [Découvrez comment ça marche →](/fr/how-it-works/)
     "
@@ -61,19 +90,63 @@ image_and_content_blocks:
   - enable: true
     anchor: "integration-rh"
     subtitle: "Intégration RH & identité"
-    title: "Une Plateforme de Covoiturage Connectée à Vos Systèmes RH"
-    image: "images/why_use_teamWheels.png"
-    content_position: "right"
-    content: "Le vrai bénéfice d'une app de covoiturage en marque blanche intégrée aux systèmes RH et d'identité : les salariés rejoignent le programme avec leur compte professionnel existant, et les équipes RH, paie et RSE disposent de données propres sans export manuel.
+    title: "Comment la plateforme s'intègre à vos systèmes RH et à votre annuaire"
+    content_position: "left"
+    content: |
+      Parce que TeamWheels tourne dans votre tenant Microsoft 365, il n'a pas besoin d'un annuaire d'utilisateurs séparé. Vos salariés y sont déjà. Entra ID gère l'authentification, l'appartenance aux groupes détermine qui voit quels groupes de covoiturage, et les attributs de site ou de service permettent de restreindre l'appariement à un seul lieu — c'est ce qui fait fonctionner le covoiturage domicile-travail sur un site industriel de 300 personnes, là où une app grand public n'atteindrait jamais la masse critique.
 
-    * **SSO Azure AD / Entra ID** — Votre annuaire salariés *est* la liste des covoitureurs. Pas d'invitations, pas de comptes à créer ni à désactiver
+      C'est le vrai bénéfice d'une app de covoiturage en marque blanche intégrée aux systèmes RH et d'identité : les salariés rejoignent le programme avec leur compte professionnel existant, et les équipes RH, paie et RSE disposent de données propres sans export manuel. Voici comment chaque pièce s'emboîte.
 
-    * **Prêt pour la paie & le FMD** — Les justificatifs de trajets alimentent le versement du Forfait Mobilité Durable (jusqu'à 900 € par an et par salarié) et les remboursements, sans tableur
+      ### Authentification unique et provisioning
 
-    * **Reporting RSE automatisé** — Participation et CO₂ s'exportent directement dans le reporting Scope 3 (poste 7), CSRD et bilan GES
+      L'authentification passe par le SSO Azure AD / Entra ID. Aucune invitation à envoyer, aucun mot de passe à créer, aucun compte à provisionner : toute personne présente dans l'annuaire ouvre le bot dans Teams et est reconnue immédiatement. Le départ d'un salarié est tout aussi automatique — lorsqu'il quitte le tenant, il quitte la liste des covoitureurs le jour même, et le programme n'accumule jamais de profils obsolètes ni de comptes orphelins. Si vous gérez déjà l'accès à vos applications métier avec des groupes Entra ID, les mêmes groupes contrôlent qui peut voir et rejoindre TeamWheels.
 
-    * **Toujours juste** — Identité, RH et covoiturage partagent une seule source de vérité : le programme reste exact au fil des évolutions d'effectif
-    "
+      ### Cartographier les sites et les services
+
+      L'appariement ne fonctionne que s'il est local. Lors de la configuration, vous déclarez vos sites (une adresse et un rayon chacun) et vous les associez aux attributs que votre annuaire porte déjà — lieu de travail, service, centre de coûts ou groupe dédié. L'appariement est alors restreint : un technicien de nuit de l'usine nord est mis en relation avec des collègues du même site et des mêmes horaires, pas avec quelqu'un du siège à 80 km. Les organisations multi-sites, les campus et les zones d'activité qui accueillent plusieurs employeurs peuvent faire tourner un seul programme avec des groupes distincts par site ou par entité, et reporter sur chacun.
+
+      ### Quelles données sortent de votre tenant
+
+      Réponse courte : rien qui ne soit nécessaire pour apparier les trajets et produire vos rapports. Déclarations de trajets, affectations de site et relevés de participation restent dans votre environnement Microsoft 365 ; la plateforme traite le minimum requis pour l'appariement (site, horaires habituels, secteur de départ) et ne vend, ne partage ni ne revend aucune donnée salarié. Les relevés pour la paie et le forfait mobilités durables sont générés à partir de ces trajets et exportés par vos administrateurs, au rythme que vous choisissez. Notre équipe détaille les flux de données exacts, les durées de conservation et l'accord de traitement des données pendant la démo, pour que votre DSI et votre DPO valident avant le premier trajet.
+    button:
+      enable: false
+
+  - enable: true
+    anchor: "calendrier"
+    subtitle: "De la décision aux premiers trajets"
+    title: "En combien de temps peut-on lancer ?"
+    content_position: "left"
+    content: |
+      Quelques jours, pas des semaines — en quatre phases que vous pouvez poser sur un calendrier. C'est le déroulé que nous suivons avec chaque nouveau client, cohérent avec la promesse du site : opérationnel en quelques jours.
+
+      | Phase | Ce qui se passe | Qui est impliqué | Durée |
+      |---|---|---|---|
+      | **1. Validation du tenant** | Votre administrateur Teams installe TeamWheels depuis Microsoft AppSource et accorde le consentement Entra ID ; nous validons le tenant, le parcours de connexion et l'accord de traitement des données | Administrateur IT, DPO | Jour 1 (5 minutes d'installation, le reste est administratif) |
+      | **2. Personnalisation de marque** | Nom du programme, logo, couleurs et domaine sont appliqués ; les messages du bot et les notifications sont relus dans votre ton, en français et/ou en anglais | Communication ou RH, notre équipe onboarding | Jours 1 à 2 (une après-midi) |
+      | **3. Périmètre pilote** | Les sites sont déclarés et associés aux attributs de l'annuaire, les règles d'appariement et les paramètres FMD sont configurés, 30 à 50 ambassadeurs des services aux plus longs trajets sont invités | Responsable RH ou mobilité, 2 à 3 ambassadeurs | Jours 3 à 5, puis 2 à 4 semaines de pilote |
+      | **4. Déploiement général** | Annonce à toute l'entreprise dans Teams, activation de tous les sites, ouverture du tableau de bord aux équipes RH et RSE, export Scope 3 planifié | Sponsor de direction, RH, RSE | Jours 20 à 30 |
+
+      La partie technique se mesure en minutes. Ce qui donne le rythme, c'est votre pilote : la plupart des organisations le limitent à deux à quatre semaines pour annoncer la généralisation avec de vrais chiffres — trajets partagés, voitures en moins sur le parking, CO₂ évité — plutôt qu'une promesse.
+    button:
+      enable: false
+
+  - enable: true
+    anchor: "tarifs"
+    subtitle: "Tarifs & achat"
+    title: "Tarifs et modalités d'achat"
+    content_position: "left"
+    content: |
+      Acheter un logiciel de covoiturage en marque blanche chez TeamWheels, c'est souscrire un abonnement, pas financer un projet de développement. Le modèle est par collaborateur, et la grille publique est celle dont part chaque client :
+
+      * **Essai gratuit de 30 jours** — la plateforme complète jusqu'à 50 collaborateurs, sans carte bancaire ni engagement. La plupart des clients en marque blanche mènent leur pilote sur l'essai.
+      * **TeamWheels, 5 € par collaborateur et par mois** — collaborateurs illimités, bot Teams et moteur d'appariement, tableau de bord d'administration, suivi CO₂ en temps réel, justificatifs FMD, SSO Entra ID, statistiques avancées et support prioritaire. Facturation mensuelle ou annuelle, résiliable à tout moment.
+      * **Entreprise, sur devis** — tout ce qui précède plus le pack marque blanche : votre marque et votre domaine, programmes multi-sites et multi-entités, intégrations RH et paie via l'API, SLA garanti, account manager dédié, onboarding personnalisé et rapports RSE sur mesure.
+
+      **Ce qui déclenche un devis plutôt que le tarif unique :** le volume (typiquement à partir de plusieurs centaines de collaborateurs ou de plusieurs sites), des exigences d'hébergement ou de résidence des données au-delà du déploiement standard dans le tenant Microsoft 365, des intégrations sur mesure avec un SIRH ou un logiciel de paie, et les programmes multi-employeurs portés par un campus ou une zone d'activité. Un devis est en général remis dans la semaine qui suit la démo, et l'essai continue entre-temps.
+
+      **Comment acheter :** demandez une démo, menez l'essai gratuit avec votre groupe pilote, puis signez soit en ligne pour l'offre par collaborateur, soit un contrat annuel Entreprise pour le pack marque blanche. Bons de commande et virement sont acceptés pour les contrats annuels ; la plateforme est aussi référencée sur Microsoft AppSource, que certains services achats préfèrent.
+
+      Envie de la voir à vos couleurs ? [Regardez la démo de 60 secondes](/fr/demo/) ou [demandez une démo personnalisée →](/fr/contact/) et nous dimensionnerons le pack marque blanche pour votre organisation. La grille standard est détaillée sur la page [tarifs](/fr/pricing/).
     button:
       enable: false
 
@@ -98,38 +171,22 @@ image_and_content_blocks:
     button:
       enable: false
 
-  - enable: true
-    anchor: "faq"
-    subtitle: "Questions fréquentes"
-    title: "FAQ — Covoiturage en Marque Blanche"
-    image: "images/photos/colleagues-carpooling.jpg"
-    content_position: "right"
-    content: "**Peut-on déployer TeamWheels en marque blanche ?** Oui — votre marque, dans votre propre tenant Microsoft 365, selon vos politiques IT.
-
-    **Faut-il des développeurs ?** Non. Un administrateur Teams l'installe depuis AppSource en 5 minutes environ ; la personnalisation prend une après-midi.
-
-    **Combien ça coûte par rapport à un développement sur mesure ?** Un développement sur mesure coûte 20 000 à 200 000 €+ sur 14 à 16 semaines. TeamWheels est un SaaS par utilisateur avec essai gratuit de 30 jours. [Voir les tarifs →](/fr/pricing/)
-
-    **Les salariés doivent-ils télécharger quelque chose ?** Non — la plateforme vit dans Microsoft Teams, qu'ils utilisent déjà.
-
-    **S'intègre-t-elle à nos systèmes RH ?** Oui — SSO Azure AD / Entra ID, plus les données de trajets pour la paie, le FMD et le reporting RSE.
-    "
-    button:
-      enable: false
-
+faq_title: "Questions fréquentes sur le covoiturage en marque blanche"
 faq:
-  - question: "Qu'est-ce qu'une plateforme de covoiturage en marque blanche ?"
-    answer: "Une plateforme de covoiturage en marque blanche est un logiciel de covoiturage prêt à l'emploi qu'une organisation déploie sous sa propre marque, au lieu de développer une app sur mesure. TeamWheels est une plateforme de covoiturage entreprise en marque blanche : elle s'installe dans votre propre tenant Microsoft 365 depuis AppSource, porte le nom et l'image de votre programme, et met en relation les salariés pour leurs trajets domicile-travail dans Microsoft Teams — sans projet de développement ni app à télécharger."
-  - question: "Peut-on déployer une app de covoiturage entreprise en marque blanche ?"
-    answer: "Oui. TeamWheels se déploie en marque blanche dans votre propre tenant Microsoft 365, à votre marque et selon vos politiques IT. Les salariés s'authentifient avec leur compte professionnel existant via le SSO Azure AD / Entra ID : aucun compte séparé à provisionner, et l'expérience s'intègre à vos outils internes plutôt qu'à une app tierce."
-  - question: "Combien coûte une app de covoiturage en marque blanche par rapport à un développement sur mesure ?"
-    answer: "Développer une app de covoiturage avec une agence prend en général 14 à 16 semaines et coûte 20 000 à 200 000 €+, maintenance en sus. Une plateforme SaaS en marque blanche comme TeamWheels se facture par utilisateur (à partir de 5 € par utilisateur et par mois) avec un essai gratuit de 30 jours, et s'installe en 5 minutes environ depuis Microsoft AppSource — la plupart des organisations atteignent un ROI positif dès le premier trimestre grâce aux seules économies de parking."
-  - question: "En combien de temps peut-on lancer une plateforme de covoiturage en marque blanche ?"
-    answer: "Environ 5 minutes pour l'installation, une après-midi pour la personnalisation. Un administrateur Teams installe TeamWheels depuis Microsoft AppSource dans votre tenant Microsoft 365 existant — pas de projet IT, pas d'infrastructure. La plupart des organisations pilotent avec 30 à 50 salariés pendant 2 à 4 semaines, puis généralisent."
   - question: "Quels sont les avantages d'une app de covoiturage en marque blanche intégrée aux systèmes RH ?"
-    answer: "Intégrer une app de covoiturage en marque blanche à vos systèmes RH et d'identité permet aux salariés de rejoindre automatiquement le programme avec leur compte professionnel, et aux équipes RH, paie et RSE d'obtenir des données propres sans export manuel. Avantages clés : SSO via Entra ID (l'annuaire devient la liste des covoitureurs), versement du Forfait Mobilité Durable et remboursements alimentés directement par les justificatifs de trajets, et reporting RSE Scope 3 / CSRD généré automatiquement."
-  - question: "Quelle différence entre une plateforme en marque blanche et un script d'app de covoiturage cloné ?"
-    answer: "Un script cloné ou un kit de développement vous livre du code source à héberger, maintenir, publier sur les app stores et faire télécharger — pensé surtout pour les startups du covoiturage grand public. Une plateforme de covoiturage entreprise en marque blanche comme TeamWheels est un SaaS géré, conçu pour le domicile-travail : elle tourne dans votre tenant Microsoft 365 sous votre marque, sans développeurs, et les salariés l'utilisent dans Microsoft Teams sans rien télécharger."
+    answer: "Les salariés rejoignent le programme avec leur compte professionnel existant : aucune invitation, aucune inscription, aucun mot de passe séparé — la participation dépasse 40 % sur TeamWheels contre moins de 18 % pour les apps autonomes. Entra ID devient la liste des covoitureurs et la maintient à jour au fil des arrivées et des départs. Les attributs de site et de service restreignent l'appariement au bon lieu. Et les équipes RH, paie et RSE obtiennent des données propres sans export manuel : justificatifs FMD et reporting Scope 3 poste 7 sont générés à partir des mêmes relevés de trajets."
+  - question: "Comment lancer rapidement une plateforme de covoiturage personnalisable pour son entreprise ?"
+    answer: "En adoptant une plateforme prête à l'emploi en marque blanche plutôt qu'en la développant. Avec TeamWheels, la séquence est : votre administrateur Teams installe l'app depuis Microsoft AppSource (5 minutes environ), vous appliquez le nom, le logo et les couleurs de votre programme (une après-midi), vous déclarez vos sites et invitez 30 à 50 ambassadeurs pour un pilote de deux à quatre semaines, puis vous annoncez la généralisation avec de vrais chiffres. La plupart des organisations passent de la décision aux premiers trajets partagés en quelques jours et au déploiement général en un mois."
+  - question: "À qui appartiennent les données dans un déploiement en marque blanche ?"
+    answer: "À vous. TeamWheels tourne dans votre propre tenant Microsoft 365 : déclarations de trajets, affectations de site et relevés de participation restent dans votre environnement, sous vos politiques IT et de résidence des données. La plateforme ne traite que ce qui est nécessaire à l'appariement et à vos rapports, ne vend ni ne partage aucune donnée salarié, et l'accord de traitement des données est relu avec votre DPO avant le lancement."
+  - question: "Jusqu'où peut-on personnaliser la marque ?"
+    answer: "Nom du programme, logo, couleurs et domaine, ainsi que la formulation des messages du bot et des notifications, en français et en anglais. Les salariés voient votre marque dans Teams, à la connexion et dans chaque rappel. Ce qui reste standard, c'est le moteur d'appariement et le tableau de bord — c'est ce qui permet un déploiement en jours plutôt qu'en mois."
+  - question: "Que se passe-t-il à la fin du contrat ?"
+    answer: "La plateforme est un abonnement, rien n'est verrouillé. Sur l'offre par collaborateur, vous résiliez à tout moment sans préavis ; les contrats annuels Entreprise s'arrêtent à leur terme sauf renouvellement. Vos administrateurs exportent au préalable les trajets, la participation et les données CO₂, et les données salariés sont supprimées de la plateforme conformément au RGPD à la clôture du compte — votre annuaire, lui, n'est jamais modifié."
+  - question: "La plateforme est-elle disponible en dehors de Microsoft 365 ?"
+    answer: "TeamWheels est conçu pour les organisations sur Microsoft 365 : le bot Teams, le SSO Entra ID et le modèle de données par tenant sont ce qui ramène le déploiement à quelques minutes et l'adoption au-delà de 40 %. Si une partie de vos effectifs n'est pas sur Microsoft 365 — par exemple dans une zone d'activité multi-employeurs — le pack Entreprise peut la couvrir via l'API et un accès web ; posez la question pendant la démo et nous vous dirons honnêtement ce qui convient."
+  - question: "Combien coûte une app de covoiturage en marque blanche par rapport à un développement sur mesure ?"
+    answer: "Développer une app de covoiturage avec une agence prend en général 14 à 16 semaines et coûte 20 000 à 200 000 €+, maintenance en sus. TeamWheels se facture par collaborateur (à partir de 5 € par collaborateur et par mois) avec un essai gratuit de 30 jours ; le pack marque blanche est chiffré sur le volume, les sites et les intégrations, et s'installe en 5 minutes environ depuis Microsoft AppSource — la plupart des organisations atteignent un ROI positif dès le premier trimestre grâce aux seules économies de parking."
   - question: "Les salariés doivent-ils télécharger une app séparée ?"
     answer: "Non. TeamWheels vit dans Microsoft Teams, que vos salariés utilisent déjà tous les jours. C'est la principale raison pour laquelle les programmes en marque blanche sur TeamWheels dépassent 40 % de participation, contre moins de 18 % pour les apps de covoiturage autonomes qui exigent un téléchargement et un nouveau compte."
 
@@ -143,16 +200,16 @@ howto:
   step:
     - name: "Installer depuis Microsoft AppSource"
       text: "Un administrateur Teams installe TeamWheels dans votre tenant Microsoft 365 existant — 5 minutes environ, sans projet IT."
-      url: "#deployer-pas-developper"
+      url: "#calendrier"
     - name: "Personnaliser à votre marque"
       text: "Appliquez le nom, le logo et les couleurs de votre programme ; définissez les sites et les règles de matching ; connectez le SSO Azure AD / Entra ID — une après-midi en général."
-      url: "#votre-marque-votre-tenant"
+      url: "#ce-que-vous-obtenez"
     - name: "Piloter avec 30 à 50 salariés"
       text: "Menez un pilote de 2 à 4 semaines avec les services aux plus longs trajets, puis appuyez-vous sur les données de participation et de CO₂ pour généraliser."
       url: "#integration-rh"
     - name: "Généraliser et reporter"
       text: "Déployez sur tous les sites, alimentez le versement du FMD et la paie avec les justificatifs de trajets, et exportez le reporting Scope 3 / CSRD automatiquement."
-      url: "#pour-qui"
+      url: "#tarifs"
 
 call_to_action:
   enable: true

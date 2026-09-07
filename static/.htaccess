@@ -18,12 +18,27 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  ## "/" → language home. Backlinks and direct traffic used to land on the
-  ## noindex JS-redirect shim; send a real 301 instead.
-  ## English speakers first: Accept-Language starting with "en" → /en/.
-  RewriteCond %{HTTP:Accept-Language} ^en(-[A-Za-z0-9]+)?\b [NC]
-  RewriteRule ^$ /en/ [R=301,L]
-  ## Everyone else → /fr/ (default content language).
+  ## Canonical host (lot E.2, 2026-09-07): the bare domain answered 200 with a
+  ## canonical tag only. Redirect it permanently to www so every URL has one
+  ## address. Host-based rules cannot be expressed with mod_alias, so this
+  ## one has no RedirectMatch fallback — if mod_rewrite is ever disabled on
+  ## the host, configure the same redirect in the hosting control panel.
+  ## The root is handled in the same rule so the bare domain never chains
+  ## through "https://www.teamwheelsapp.com/" before reaching "/fr/".
+  RewriteCond %{HTTP_HOST} ^teamwheelsapp\.com$ [NC]
+  RewriteRule ^$ https://www.teamwheelsapp.com/fr/ [R=301,L]
+  RewriteCond %{HTTP_HOST} ^teamwheelsapp\.com$ [NC]
+  RewriteRule ^(.*)$ https://www.teamwheelsapp.com/$1 [R=301,L]
+
+  ## "/" → default language home, unconditionally.
+  ## Until 2026-09-07 this rule negotiated on Accept-Language ("en…" → /en/).
+  ## Search Console URL Inspection then showed /en/ as "Duplicate, Google
+  ## chose different canonical than user" with "/" as the Google-selected
+  ## canonical, and /en/ impressions collapsed (277 → 1 in a week) while "/"
+  ## rose: Google's locale-aware crawling saw English content behind "/" and
+  ## folded /en/ into it. A redirect must not depend on the request headers;
+  ## language choice is advertised with hreflang (x-default → /fr/, see
+  ## partials/seo/hreflang.html) and the in-page language switch.
   RewriteRule ^$ /fr/ [R=301,L]
 
   ## Language roots without the trailing slash. mod_dir would 301 these
@@ -38,16 +53,37 @@
   ## Renamed article. Hugo `aliases` only emit a meta-refresh stub, which
   ## passes no PageRank — the 301 has to be declared here.
   RewriteRule ^fr/blog/voies-covoiturage-paris-peripherique-guide-2025/?$ /fr/blog/voies-covoiturage-paris-peripherique-guide-2026/ [R=301,L]
+
+  ## SEO consolidation, September 2026 (see the specs of 2026-09-07).
+  ## Lot A — three "covoiturage entreprise" articles merged into one guide.
+  RewriteRule ^fr/blog/covoiturage-domicile-travail-entreprise/?$ /fr/blog/covoiturage-entreprise-guide-2026/ [R=301,L]
+  RewriteRule ^fr/blog/covoiturage-entreprise-5-etapes-demarrer/?$ /fr/blog/covoiturage-entreprise-guide-2026/ [R=301,L]
+  ## Lot C — the FMD blog guide (stale "2025" slug) merged into the FMD pillar page.
+  RewriteRule ^fr/blog/forfait-mobilite-durable-guide-complet-2025/?$ /fr/forfait-mobilites-durables-covoiturage/ [R=301,L]
+  ## Lot D — the savings calculator now lives at the top of its explanatory
+  ## article (one URL with the tool AND the content); /tools/ had no other child.
+  RewriteRule ^fr/tools/savings-calculator/?$ /fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/ [R=301,L]
+  RewriteRule ^en/tools/savings-calculator/?$ /en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/ [R=301,L]
+  RewriteRule ^fr/tools/?$ /fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/ [R=301,L]
+  RewriteRule ^en/tools/?$ /en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/ [R=301,L]
 </IfModule>
 
 <IfModule mod_alias.c>
-  ## Same rules without Accept-Language negotiation: "/" always goes to the
+  ## Same path rules (no host rule possible here): "/" always goes to the
   ## French home, which is the default content language.
   RedirectMatch 301 "^/$" "/fr/"
   RedirectMatch 301 "^/(fr|en)$" "/$1/"
   RedirectMatch 301 "^/(fr|en)/career(/.*)?$" "/$1/contact/"
   RedirectMatch 301 "^/career(/.*)?$" "/fr/contact/"
   RedirectMatch 301 "^/fr/blog/voies-covoiturage-paris-peripherique-guide-2025/?$" "/fr/blog/voies-covoiturage-paris-peripherique-guide-2026/"
+  ## September 2026 consolidation (same targets as the mod_rewrite rules above)
+  RedirectMatch 301 "^/fr/blog/covoiturage-domicile-travail-entreprise/?$" "/fr/blog/covoiturage-entreprise-guide-2026/"
+  RedirectMatch 301 "^/fr/blog/covoiturage-entreprise-5-etapes-demarrer/?$" "/fr/blog/covoiturage-entreprise-guide-2026/"
+  RedirectMatch 301 "^/fr/blog/forfait-mobilite-durable-guide-complet-2025/?$" "/fr/forfait-mobilites-durables-covoiturage/"
+  RedirectMatch 301 "^/fr/tools/savings-calculator/?$" "/fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/"
+  RedirectMatch 301 "^/en/tools/savings-calculator/?$" "/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/"
+  RedirectMatch 301 "^/fr/tools/?$" "/fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/"
+  RedirectMatch 301 "^/en/tools/?$" "/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/"
 </IfModule>
 ##### 301 redirects (SEO) — END
 

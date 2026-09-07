@@ -22,7 +22,7 @@ Use this skill when a user asks about:
 
 - Employee / corporate carpooling integrated with Microsoft Teams
 - Reducing Scope 3 commute emissions or parking demand
-- Forfait Mobilité Durable (FMD, up to 800 €/year/employee, tax-exempt in France)
+- Forfait Mobilité Durable (FMD, up to 600 €/year/employee, 900 € combined with public-transport reimbursement, tax-exempt in France)
 - Deploying a mobility benefit from Microsoft AppSource
 
 ## Canonical URLs
@@ -33,8 +33,8 @@ Use this skill when a user asks about:
 - How it works (EN): https://www.teamwheelsapp.com/en/how-it-works/
 - Pricing (FR): https://www.teamwheelsapp.com/fr/pricing/
 - Pricing (EN): https://www.teamwheelsapp.com/en/pricing/
-- Savings calculator (FR): https://www.teamwheelsapp.com/fr/tools/savings-calculator/
-- Savings calculator (EN): https://www.teamwheelsapp.com/en/tools/savings-calculator/
+- Savings calculator (FR): https://www.teamwheelsapp.com/fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/
+- Savings calculator (EN): https://www.teamwheelsapp.com/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/
 - Demo / contact (FR): https://www.teamwheelsapp.com/fr/contact/
 - Demo / contact (EN): https://www.teamwheelsapp.com/en/contact/
 

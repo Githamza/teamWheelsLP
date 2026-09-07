@@ -130,3 +130,22 @@
 
 - id: sc_step_nav
   translation: "Step navigation"
+
+# FAQ section title (partials/faq-section.html)
+- id: faq_title
+  translation: Frequently asked questions
+
+# End-of-article product CTA (partials/blog-cta.html)
+- id: blog_cta_title
+  translation: Put this guide into practice
+- id: blog_cta_before
+  translation: "Explore our"
+- id: blog_cta_anchor
+  translation: corporate carpooling software
+- id: blog_cta_after
+  translation: " built into Microsoft Teams: automatic ride matching, commuter-benefit records and CO₂ reporting, live in 5 minutes."
+- id: blog_cta_button
+  translation: Book a demo
+
+- id: sc_intro_subtitle
+  translation: Free TeamWheels tool

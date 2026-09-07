@@ -1,0 +1,17 @@
+{{- /*
+  End-of-article product CTA (blog posts only).
+
+  Every article links back to the product page with the exact anchor that
+  page targets — "logiciel de covoiturage entreprise" (FR) / "corporate
+  carpooling software" (EN) — so internal links point Google at the product
+  page for that query instead of at the homepage. Texts live in i18n/*.yaml.
+*/ -}}
+{{- with site.GetPage "corporate-carpooling-software" -}}
+<aside class="blog-product-cta rounded-lg p-4 p-md-5 mt-5 bg-primary-soft">
+  <p class="h4 mb-2">{{ i18n "blog_cta_title" }}</p>
+  <p class="mb-3">
+    {{ i18n "blog_cta_before" }} <a href="{{ .RelPermalink }}">{{ i18n "blog_cta_anchor" }}</a>{{ i18n "blog_cta_after" }}
+  </p>
+  <a class="btn btn-primary" href="{{ "contact/" | relLangURL }}">{{ i18n "blog_cta_button" }} <i class="arrow-right fas fa-arrow-right"></i></a>
+</aside>
+{{- end -}}

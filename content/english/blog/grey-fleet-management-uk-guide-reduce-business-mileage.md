@@ -247,7 +247,7 @@ Deployment is a Teams admin consent, measured in minutes rather than an IT proje
 
 Then repeat the duplication analysis quarterly. It is the single most useful grey fleet metric almost nobody tracks.
 
-**[Estimate your own savings →](/en/tools/savings-calculator/)**
+**[Estimate your own savings →](/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/)**
 
 ---
 
@@ -265,7 +265,7 @@ Check the drivers you have. Then get to work on having fewer of them on the road
 
 TeamWheels matches colleagues travelling the same route inside Microsoft Teams, so duplicate journeys stop happening — and every shared trip is recorded for passenger payments and ESG reporting.
 
-**[Book a free demo](/en/contact/)** · **[Explore the carpooling software](/en/corporate-carpooling-software/)** · **[Calculate your savings](/en/tools/savings-calculator/)**
+**[Book a free demo](/en/contact/)** · **[Explore the carpooling software](/en/corporate-carpooling-software/)** · **[Calculate your savings](/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/)**
 
 *This guide is general information, not legal, tax or insurance advice. Mileage rates and compliance obligations change — confirm current figures with HMRC and your own advisers before acting.*
 
