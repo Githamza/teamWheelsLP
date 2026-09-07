@@ -25,18 +25,59 @@
     </div>
   </section>
 
-  {{/* Google Ads conversion — fires once, only on the post-submit redirect
+  {{/* Conversion tracking — fires once, only on the post-submit redirect
        (Web3Forms `redirect` lands the visitor here). gtag() is defined globally
-       in partials/essentials/head.html. This replaces the old form `onsubmit`
-       handler, which fired before the submission actually succeeded and often
-       never flushed the beacon before the page navigated away. */}}
-  {{ with site.Params.google_ads_id }}
-    <script>
-      if (typeof gtag === "function") {
-        gtag("event", "conversion", {
-          send_to: "{{ . }}/s8otCKrN2aYcEIe2rsIp",
-        });
-      }
-    </script>
-  {{ end }}
+       in partials/essentials/head.html.
+
+       GA4: the enhanced-measurement `form_submit` event never reached GA4 for
+       this form (the contact form is a plain POST to api.web3forms.com, so the
+       page navigates away before the beacon is flushed), leaving zero key
+       events despite real inbound leads. We now send the recommended
+       `generate_lead` event explicitly from this page — mark it as a key event
+       in GA4 Admin → Events. It is also mirrored to the dataLayer for GTM.
+
+       Google Ads: same trigger, replaces the old form `onsubmit` handler.
+
+       A sessionStorage flag prevents a page reload / back-forward from counting
+       the same submission twice. */}}
+  <script>
+    (function () {
+      var FLAG = "tw_lead_tracked";
+      try {
+        if (window.sessionStorage && sessionStorage.getItem(FLAG)) return;
+      } catch (e) {}
+
+      var params = {
+        lead_source: "contact_form",
+        method: "web3forms",
+        language: "{{ site.Language.Lang }}",
+      };
+      try {
+        if (typeof gtag === "function") gtag("event", "generate_lead", params);
+      } catch (e) {}
+      try {
+        if (window.dataLayer) {
+          var payload = { event: "generate_lead" };
+          for (var k in params) {
+            if (params.hasOwnProperty(k)) payload[k] = params[k];
+          }
+          window.dataLayer.push(payload);
+        }
+      } catch (e) {}
+
+      {{ with site.Params.google_ads_id }}
+      try {
+        if (typeof gtag === "function") {
+          gtag("event", "conversion", {
+            send_to: "{{ . }}/s8otCKrN2aYcEIe2rsIp",
+          });
+        }
+      } catch (e) {}
+      {{ end }}
+
+      try {
+        if (window.sessionStorage) sessionStorage.setItem(FLAG, "1");
+      } catch (e) {}
+    })();
+  </script>
 {{ end }}
