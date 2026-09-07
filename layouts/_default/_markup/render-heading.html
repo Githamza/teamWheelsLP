@@ -1,0 +1,26 @@
+{{- /*
+  Heading render hook — one <h1> per page.
+
+  Every layout already renders the page title as the <h1> (single.html for
+  blog posts, benefits.html / demo.html / page-header.html elsewhere), but a
+  large share of the Markdown bodies open with a `# Title` line of their own,
+  so the rendered pages shipped two <h1> elements (18 of 50 pages in the
+  2026-09-07 crawl). This hook fixes it at template level for every current
+  and future article:
+
+    - a body-level `#` heading that repeats the page title is dropped
+      (it would only duplicate the layout's <h1>);
+    - any other body-level `#` heading is demoted to <h2> — it was acting as
+      an editorial sub-headline, not as a document title.
+
+  Levels 2–6 render exactly like Hugo's default (id + text).
+*/ -}}
+{{- if eq .Level 1 -}}
+  {{- $own := .PlainText | strings.TrimSpace | lower -}}
+  {{- $title := .Page.Title | plainify | strings.TrimSpace | lower -}}
+  {{- if ne $own $title -}}
+<h2 id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }}</h2>
+  {{- end -}}
+{{- else -}}
+<h{{ .Level }} id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }}</h{{ .Level }}>
+{{- end -}}
