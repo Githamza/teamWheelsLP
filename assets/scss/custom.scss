@@ -395,10 +395,17 @@ $gutters: (
 @media (min-width: 1200px) {
   .navbar .nav-item.dropdown > .dropdown-menu {
     height: auto !important;              // undo the theme's height:0
+    // The theme pins the panel to `width: 220px`; with the longer product
+    // labels ("Plateforme de covoiturage en marque blanche") the nowrap
+    // items spilled past the white box, over the hero image. Let the panel
+    // shrink-to-fit its widest item instead (it stays centred under the
+    // trigger thanks to the theme's translateX(-50%)).
+    width: auto !important;
+    min-width: 13rem;
+    max-width: 28rem;
     background-color: #fff !important;    // solid, opaque panel
     border-radius: 0.5rem;
     padding: 0.4rem;
-    min-width: 13rem;
     box-shadow: 0 0.9rem 2rem rgba(11, 19, 43, 0.14);
 
     // Kill the animated white pseudo-background that was clipping items.
@@ -419,6 +426,9 @@ $gutters: (
     padding: 0.5rem 0.85rem;
     font-weight: 500;
     white-space: nowrap;
+    // Safety net: a label longer than the panel's max-width wraps instead
+    // of overflowing.
+    overflow-wrap: anywhere;
   }
 }
 
