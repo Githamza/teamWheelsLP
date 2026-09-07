@@ -1,0 +1,38 @@
+{{- /*
+  Visible FAQ section rendered from front matter:
+
+    faq_title: "Questions fréquentes"   # optional, defaults to i18n faq_title
+    faq:
+      - question: "…?"
+        answer: "…"
+
+  This is the same list partials/seo/schema.html turns into the FAQPage
+  JSON-LD, so the structured data and the on-screen questions/answers stay
+  strictly aligned (a Google requirement for FAQ rich results). Used by the
+  benefits layout, the demo page and the contact page.
+*/ -}}
+{{- with .Params.faq -}}
+  {{- if reflect.IsSlice . -}}
+    <section class="section pt-0 faq-section" id="faq">
+      <div class="container container-delta">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="section-title text-center">
+              <h2 class="title">{{ $.Params.faq_title | default (i18n "faq_title") }}</h2>
+            </div>
+            <div class="content faq-list">
+              {{- range . }}
+                {{- $q := or (index . "question") (index . "title") -}}
+                {{- $a := or (index . "answer") (index . "content") -}}
+                {{- if and $q $a }}
+              <h3 class="h5 mt-4 mb-2">{{ $q | markdownify }}</h3>
+              <p>{{ $a | markdownify }}</p>
+                {{- end }}
+              {{- end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {{- end -}}
+{{- end -}}

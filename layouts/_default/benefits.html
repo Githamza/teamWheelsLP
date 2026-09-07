@@ -53,6 +53,7 @@
       {{ if .enable }}
         <section class="section"{{ with .anchor }} id="{{ . }}"{{ end }}>
           <div class="container container-delta">
+            {{ if .image }}
             <div class="row gx-4 gx-xl-5 align-items-center">
               <div
                 class="col-lg-6 order-1 {{ with .content_position }}
@@ -104,11 +105,40 @@
                 </div>
               </div>
             </div>
+            {{ else }}
+            {{/* Text-only block (no `image:`): a single, wider column. Used for
+                 the long-form sections (comparison tables, pricing, FAQ-style
+                 copy) that would be cramped next to an illustration. */}}
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+                <div class="section-title">
+                  {{ with .subtitle }}
+                    <p class="subtitle">{{ . | markdownify }}</p>
+                  {{ end }}
+                  <h2 class="title">{{ .title | markdownify }}</h2>
+                </div>
+                {{ with .content }}
+                  <div class="content">{{ . | markdownify }}</div>
+                {{ end }}
+                {{ with .button }}
+                  {{ if .enable }}
+                    <a href="{{ .link | relLangURL }}" class="btn btn-primary m-1">
+                      {{ .label }} <i class="arrow-right {{ .icon }}"></i>
+                    </a>
+                  {{ end }}
+                {{ end }}
+              </div>
+            </div>
+            {{ end }}
           </div>
         </section>
       {{ end }}
     {{ end }}
   {{ end }}
+
+  {{/* Visible FAQ rendered from the same `faq:` list that feeds the FAQPage
+       JSON-LD (partials/seo/schema.html), so markup and page stay aligned. */}}
+  {{ partial "faq-section.html" . }}
 
   {{ if .Params.call_to_action.enable }}
     {{ partial "call-to-action-2.html" . }}

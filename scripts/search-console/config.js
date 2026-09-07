@@ -47,11 +47,13 @@ module.exports = {
     'https://www.teamwheelsapp.com/en/how-it-works/',
     'https://www.teamwheelsapp.com/en/pricing/',
     'https://www.teamwheelsapp.com/fr/pricing/',
-    'https://www.teamwheelsapp.com/fr/blog/voies-covoiturage-paris-peripherique-guide-2025/',
+    'https://www.teamwheelsapp.com/fr/blog/voies-covoiturage-paris-peripherique-guide-2026/',
     'https://www.teamwheelsapp.com/en/blog/scope-3-employee-commuting-corporate-carpooling-usa-compliance-guide/',
     'https://www.teamwheelsapp.com/en/blog/enterprise-carpooling-2025-sustainable-commute-revolution/',
-    'https://www.teamwheelsapp.com/fr/blog/forfait-mobilite-durable-guide-complet-2025/',
-    'https://www.teamwheelsapp.com/fr/blog/covoiturage-entreprise-5-etapes-demarrer/',
+    'https://www.teamwheelsapp.com/fr/forfait-mobilites-durables-covoiturage/',
+    'https://www.teamwheelsapp.com/fr/blog/covoiturage-entreprise-guide-2026/',
+    'https://www.teamwheelsapp.com/fr/corporate-carpooling-software/',
+    'https://www.teamwheelsapp.com/en/white-label-carpool-platform/',
   ],
 
   // Countries to fetch per-country query breakdowns for
