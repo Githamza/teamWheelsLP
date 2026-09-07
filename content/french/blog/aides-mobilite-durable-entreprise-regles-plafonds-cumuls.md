@@ -183,7 +183,7 @@ L'employeur doit pouvoir prouver la réalité des déplacements. Pour le covoitu
 
 ---
 
-> **Pour aller plus loin :** cet article est une vue d'ensemble comparative. Pour tout savoir sur la mise en place du seul Forfait Mobilités Durables — DUE, accord d'entreprise, calcul kilométrique, cas de la fonction publique, erreurs à éviter — consultez notre [guide complet du Forfait Mobilité Durable 2026](/fr/blog/forfait-mobilite-durable-guide-complet-2025/).
+> **Pour aller plus loin :** cet article est une vue d'ensemble comparative. Pour tout savoir sur la mise en place du seul Forfait Mobilités Durables — DUE, accord d'entreprise, calcul kilométrique, cas de la fonction publique, erreurs à éviter — consultez notre [guide complet du Forfait Mobilité Durable 2026](/fr/blog/forfait-mobilite-durable-guide-complet-2025/). Et pour arbitrer, salarié par salarié, entre FMD, indemnité kilométrique et voiture de fonction électrique, notre [comparatif des coûts employeur 2026](/fr/blog/mobilite-salaries-isoles-fmd-ik-voiture-electrique-2026/) chiffre chaque option.
 
 ## Passez à l'action
 
