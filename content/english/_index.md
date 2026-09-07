@@ -18,7 +18,7 @@ banner:
     enable: true
     label: "Calculate your savings"
     icon: "fas fa-calculator"
-    link: "tools/savings-calculator/"
+    link: "blog/carpooling-savings-calculator-corporate-co2-roi-2026/"
 
   image: "images/teamwheels_demo_image.svg"
 

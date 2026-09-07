@@ -18,7 +18,7 @@
 {{- $fallbackContact := "/fr/contact/" -}}
 {{- $fallbackPricing := "/fr/pricing/" -}}
 {{- $fallbackHow      := "/fr/how-it-works/" -}}
-{{- $fallbackCalc     := "/fr/tools/savings-calculator/" -}}
+{{- $fallbackCalc     := "/fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/" -}}
 <script>
 (function () {
   if (!('modelContext' in navigator) || typeof navigator.modelContext.provideContext !== 'function') {
@@ -57,7 +57,7 @@
           name: 'open_savings_calculator',
           description: 'Open the TeamWheels savings calculator that estimates CO₂ avoided, parking demand reduced, and annual € savings for a given employee count.',
           inputSchema: emptyObj,
-          execute: function () { return go('/tools/savings-calculator/'); }
+          execute: function () { return go(lang === 'en' ? '/blog/carpooling-savings-calculator-corporate-co2-roi-2026/' : '/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/'); }
         },
         {
           name: 'switch_language',

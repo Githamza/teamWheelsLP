@@ -5,19 +5,29 @@ translationKey: "carpooling-savings-calculator"
 description: "Free carpooling savings calculator: estimate CO₂ reductions, fuel savings, parking gains and ESG score. ADEME and EPA factors, instant PDF."
 keywords: "carpooling savings calculator, corporate carpooling ROI calculator, employee commute CO2 calculator, Scope 3 commuting calculator, ESG mobility score, ADEME emission factors, EPA emission factors, fuel savings calculator company, FMD forfait mobilité durable calculator"
 date: 2026-04-20
-lastmod: 2026-04-20
+lastmod: 2026-09-07
 draft: false
 image: "images/blog/savings-calculator.jpg"
 author: TeamWheels
 author_image: images/avatar/teamwheels.jpg
 reading_time: 9 min
+# The interactive tool (formerly /en/tools/savings-calculator/) is mounted at the
+# top of this article through the savings-calculator shortcode; old URLs 301 here.
+aliases:
+  - /tools/savings-calculator/
+  - /tools/
+calculator_title: "Carpooling Savings Calculator"
+intro_subtitle: "Free TeamWheels tool"
+intro_lede: "How much could your company save with carpooling? Answer a few questions and get your personalised PDF report."
 ---
+
+{{< savings-calculator >}}
 
 # Carpooling Savings Calculator 2026: Measure Corporate CO₂ and ROI in 2 Minutes
 
 How much could your company save by moving employees from solo driving to carpooling? Until now, answering that question required a spreadsheet, a sustainability consultant, and several weeks of back-and-forth. Not anymore.
 
-The new **[TeamWheels Carpooling Savings Calculator](/en/tools/savings-calculator/)** gives HR, sustainability, and mobility leaders an instant, evidence-based estimate of the CO₂, euros, parking spots and ESG score a corporate carpooling program can unlock — in under two minutes, and with a free personalised PDF report at the end.
+The **TeamWheels Carpooling Savings Calculator** above gives HR, sustainability, and mobility leaders an instant, evidence-based estimate of the CO₂, euros, parking spots and ESG score a corporate carpooling program can unlock — in under two minutes, and with a free personalised PDF report at the end.
 
 This guide walks through **what the calculator measures, how it works, and how to turn the numbers into a business case** your CFO and sustainability committee will actually approve.
 
@@ -182,7 +192,7 @@ The calculator quantifies the **opportunity**. A demo shows how TeamWheels — i
 
 Stop estimating. Start measuring.
 
-[**Launch the free Carpooling Savings Calculator →**](/en/tools/savings-calculator/)
+[**Launch the free Carpooling Savings Calculator ↑**](#calculator)
 
 *Two minutes, no credit card, personalised PDF report.*
 
