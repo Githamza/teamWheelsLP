@@ -1,7 +1,7 @@
 ---
 title: "Barème kilométrique 2026 : le calcul exact pour les trajets domicile-travail en voiture"
 seoTitle: "Barème kilométrique 2026 : calcul et montants exacts"
-date: 2026-09-06
+date: 2026-09-07
 draft: false
 description: "Barème kilométrique 2026 (reconduit à l'identique) : tableau complet par CV, calcul pas à pas et majoration électrique de 20 % pour les trajets domicile-travail."
 image: "images/blog/corporate-carpooling.jpg"
