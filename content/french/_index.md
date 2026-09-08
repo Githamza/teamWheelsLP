@@ -140,6 +140,18 @@ image_and_content_blocks:
     button:
       enable: false
 
+  - enable: true
+    subtitle: "En accès anticipé"
+    title: "Gestion de flotte automobile dans Microsoft Teams"
+    image: "images/parking.png"
+    content_position: "right"
+    content: "Pour les PME et collectivités de 5 à 30 véhicules de service encore gérés sur Excel : réservation d'un véhicule depuis le chat Teams, relevé kilométrique au retour, alertes d'échéances et coût par véhicule. Sans boîtier, sans application supplémentaire.
+
+    [Découvrir la gestion de flotte →](/fr/logiciel-gestion-de-flotte-automobile/)
+    "
+    button:
+      enable: false
+
 
 # testimonials
 testimonials:

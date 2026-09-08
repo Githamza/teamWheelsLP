@@ -154,4 +154,33 @@
 
   {{ partial "call-to-action-2.html" . }}
 
+  {{/* Lead-source attribution. CTAs on other pages link here with
+       `?src=<slug>` (e.g. /fr/contact/?src=gestion-flotte from the fleet
+       management pillar page). The slug is copied into a hidden `source`
+       field (shown in the Web3Forms notification), appended to the mail
+       subject, and forwarded on the thank-you redirect so thanks.html can
+       report it as `lead_source` on the GA4 `generate_lead` event. Only
+       plain slugs are accepted; nothing is read from the URL otherwise. */}}
+  <script>
+    (function () {
+      try {
+        var src = new URLSearchParams(window.location.search).get("src");
+        if (!src || !/^[a-z0-9-]{1,40}$/.test(src)) return;
+        var form = document.querySelector('form[action*="web3forms"]');
+        if (!form) return;
+        var hidden = document.createElement("input");
+        hidden.type = "hidden";
+        hidden.name = "source";
+        hidden.value = src;
+        form.appendChild(hidden);
+        var redirect = form.querySelector('input[name="redirect"]');
+        if (redirect) {
+          redirect.value += (redirect.value.indexOf("?") === -1 ? "?" : "&") + "src=" + encodeURIComponent(src);
+        }
+        var subject = form.querySelector('input[name="subject"]');
+        if (subject) subject.value += " [" + src + "]";
+      } catch (e) {}
+    })();
+  </script>
+
 {{ end }}
