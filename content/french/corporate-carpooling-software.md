@@ -77,6 +77,8 @@ image_and_content_blocks:
     * **Reporting & analytics** — Exportez les indicateurs de participation et l'impact CO₂ pour les équipes RSE et finance
 
     * **Sécurité entreprise** — SSO Azure AD / Entra ID, conforme RGPD, privacy by design — sans identifiants ni infrastructure supplémentaires
+
+    Vos équipes se déplacent aussi avec des véhicules de service ? Le même agent Teams s'étend à la [gestion de flotte automobile dans Teams](/fr/logiciel-gestion-de-flotte-automobile/) : réservation, kilométrage et échéances des véhicules partagés, en accès anticipé.
     "
     button:
       enable: false

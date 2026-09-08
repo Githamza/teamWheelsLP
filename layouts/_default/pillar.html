@@ -1,0 +1,26 @@
+{{ define "main" }}
+  {{/* Long-form pillar page written entirely in Markdown (first use: the FR
+       « logiciel de gestion de flotte automobile » page). The <h1> is the
+       front-matter `title` — the heading render hook drops a body-level `#`
+       that repeats it — while `seoTitle` feeds the <title>. The FAQ is
+       rendered from the same `faq:` list that seo/schema.html turns into
+       FAQPage JSON-LD, so the visible answers and the structured data match.
+       No site-wide call_to_action block: these pages carry their own CTAs in
+       the body. */}}
+  {{ partial "essentials/header.html" . }}
+
+  <section class="section-sm pillar-page">
+    <div class="container container-delta">
+      <div class="row">
+        <div class="col-lg-9 mx-auto">
+          <article class="content pillar-content">
+            <h1>{{ .Title | markdownify }}</h1>
+            {{ .Content }}
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ partial "faq-section.html" . }}
+{{ end }}

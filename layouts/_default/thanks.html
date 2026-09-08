@@ -47,8 +47,19 @@
         if (window.sessionStorage && sessionStorage.getItem(FLAG)) return;
       } catch (e) {}
 
+      /* `lead_source` defaults to the generic contact form. When the visitor
+         came from a page CTA carrying `?src=<slug>` (forwarded by
+         _default/contact.html on the redirect), the slug is reported instead,
+         with dashes turned into underscores — e.g. `gestion-flotte` →
+         `gestion_flotte` for the fleet management pillar page. */
+      var leadSource = "contact_form";
+      try {
+        var src = new URLSearchParams(window.location.search).get("src");
+        if (src && /^[a-z0-9-]{1,40}$/.test(src)) leadSource = src.replace(/-/g, "_");
+      } catch (e) {}
+
       var params = {
-        lead_source: "contact_form",
+        lead_source: leadSource,
         method: "web3forms",
         language: "{{ site.Language.Lang }}",
       };
