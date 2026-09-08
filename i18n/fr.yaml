@@ -97,6 +97,15 @@
 - id: video_player_title
   translation: Lecteur vidéo TeamWheels
 
+- id: video_not_supported
+  translation: Votre navigateur ne prend pas en charge la lecture vidéo.
+
+- id: video_play_label
+  translation: Lire la vidéo de démo
+
+- id: video_watch_page_link
+  translation: Voir la page démo complète
+
 
 - id: sc_step1_title
   translation: "Votre entreprise"

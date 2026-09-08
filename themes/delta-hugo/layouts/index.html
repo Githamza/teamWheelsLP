@@ -4,11 +4,13 @@
   {{ $vdWebm := "" }}
   {{ $vdMp4 := "" }}
   {{ $vdPoster := "" }}
+  {{ $vdPosterW := 0 }}
+  {{ $vdPosterH := 0 }}
   {{ $vdOn := false }}
   {{ if and $vd $vd.enable }}
     {{ with $vd.webm }}{{ with resources.Get . }}{{ $vdWebm = .RelPermalink }}{{ end }}{{ end }}
     {{ with $vd.mp4 }}{{ with resources.Get . }}{{ $vdMp4 = .RelPermalink }}{{ end }}{{ end }}
-    {{ with $vd.poster }}{{ with resources.Get . }}{{ $vdPoster = (.Resize "1100x webp").RelPermalink }}{{ end }}{{ end }}
+    {{ with $vd.poster }}{{ with resources.Get . }}{{ $p := .Resize "1100x webp" }}{{ $vdPoster = $p.RelPermalink }}{{ $vdPosterW = $p.Width }}{{ $vdPosterH = $p.Height }}{{ end }}{{ end }}
     {{ $vdOn = (or $vdWebm $vdMp4) }}
   {{ end }}
   {{ $vdLabel := "" }}
@@ -164,10 +166,15 @@
     </div>
   </section>
 
-  {{/* ── Inline demo video, directly under the hero ──
-       Uses the same resolved sources as the hero buttons + modal.
-       Real `src` (crawlable) + preload="none" so the bytes only load
-       when the visitor hits play — no cost to LCP. */}}
+  {{/* ── Inline demo teaser, directly under the hero ──
+       The homepage is NOT the video's watch page (that is /demo/, see
+       `video_demo.watch_page`): Google only indexes a video whose page is
+       built around it, and reports "Video isn't on a watch page" for every
+       other URL where it finds one. So the HTML here carries no <video>
+       element and no VideoObject — just a click-to-play poster (a "facade":
+       also the cheapest thing for LCP) that swaps in a real <video> on the
+       first click, plus a crawlable link to the watch page. The sources
+       live in data-* attributes and are read by the script below. */}}
   {{ if $vdOn }}
     <section class="section hero-demo-video" id="demo">
       <div class="container container-delta">
@@ -181,15 +188,35 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-9">
-            <video
-              class="hero-demo-video__player"
-              controls
-              playsinline
-              preload="none"
-              {{ with $vdPoster }}poster="{{ . }}"{{ end }}>
-              {{ with $vdWebm }}<source src="{{ . }}" type="video/webm">{{ end }}
-              {{ with $vdMp4 }}<source src="{{ . }}" type="video/mp4">{{ end }}
-            </video>
+            <div
+              class="hero-demo-video__frame"
+              data-demo-video
+              data-mp4="{{ $vdMp4 }}"
+              data-webm="{{ $vdWebm }}"
+              data-poster="{{ $vdPoster }}">
+              <button
+                type="button"
+                class="hero-demo-video__facade"
+                data-play-demo
+                aria-label="{{ i18n "video_play_label" | default "Play the demo video" }}">
+                {{ with $vdPoster }}
+                  <img
+                    class="hero-demo-video__poster"
+                    src="{{ . }}"
+                    width="{{ $vdPosterW }}"
+                    height="{{ $vdPosterH }}"
+                    loading="lazy"
+                    decoding="async"
+                    alt="{{ with $vd }}{{ .title }}{{ end }}" />
+                {{ end }}
+                <span class="hero-demo-video__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" focusable="false"><path d="M8 5v14l11-7z"/></svg></span>
+              </button>
+            </div>
+            {{ with $vd.watch_page }}
+              <p class="text-center mt-3 mb-0">
+                <a class="hero-demo-video__link" href="{{ . | relLangURL }}">{{ i18n "video_watch_page_link" | default "Open the full demo page" }} <i class="fas fa-arrow-right"></i></a>
+              </p>
+            {{ end }}
           </div>
         </div>
       </div>
@@ -197,7 +224,14 @@
     <style>
       .hero-demo-video{padding-top:2.5rem;padding-bottom:1rem}
       .hero-demo-video__lede{max-width:42rem;margin-left:auto;margin-right:auto}
-      .hero-demo-video__player{width:100%;display:block;border-radius:.75rem;background:#0b132b;box-shadow:0 1.25rem 60px rgba(11,19,43,.28);aspect-ratio:16/9;object-fit:contain}
+      .hero-demo-video__frame{position:relative;width:100%;aspect-ratio:16/9;border-radius:.75rem;overflow:hidden;background:#0b132b;box-shadow:0 1.25rem 60px rgba(11,19,43,.28)}
+      .hero-demo-video__facade{position:relative;display:block;width:100%;height:100%;padding:0;border:0;background:transparent;cursor:pointer}
+      .hero-demo-video__poster{width:100%;height:100%;display:block;object-fit:contain}
+      .hero-demo-video__play{position:absolute;inset:0;margin:auto;width:5rem;height:5rem;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(91,95,199,.95);color:#fff;font-size:1.75rem;box-shadow:0 .5rem 24px rgba(0,0,0,.35);transition:transform .2s ease}
+      .hero-demo-video__play svg{margin-left:.2rem}
+      .hero-demo-video__facade:hover .hero-demo-video__play,.hero-demo-video__facade:focus-visible .hero-demo-video__play{transform:scale(1.08)}
+      .hero-demo-video__player{width:100%;height:100%;display:block;background:#0b132b;object-fit:contain}
+      .hero-demo-video__link{font-weight:500}
     </style>
   {{ end }}
 
@@ -284,7 +318,10 @@
     {{ end }}
   {{ end }}
 
-  {{/* ── Video demo pop-in (modal). Hidden until a hero "See it in action" button is clicked. ── */}}
+  {{/* ── Video demo pop-in (modal). Hidden until a hero "See it in action"
+       button is clicked. Like the inline teaser, the markup holds no <video>
+       element: the player is created on first open from the data-* sources
+       (the homepage is not the watch page — see the note above). ── */}}
   {{ if $vdOn }}
     <div class="demo-modal" id="demoModal" hidden>
       <div class="demo-modal__backdrop" data-close-demo></div>
@@ -300,17 +337,13 @@
           aria-label="Close demo">
           &times;
         </button>
-        <video
-          class="demo-modal__player"
-          id="demoModalVideo"
-          controls loop playsinline muted preload="none"
-          {{ with $vdPoster }}poster="{{ . }}"{{ end }}>
-          {{/* Real `src` (not data-src) so Googlebot can discover the video file.
-               `preload="none"` on the <video> keeps the bytes from downloading
-               until the visitor actually plays — zero cost to initial page load. */}}
-          {{ with $vdWebm }}<source src="{{ . }}" type="video/webm">{{ end }}
-          {{ with $vdMp4 }}<source src="{{ . }}" type="video/mp4">{{ end }}
-        </video>
+        <div
+          class="demo-modal__stage"
+          id="demoModalStage"
+          data-demo-video
+          data-mp4="{{ $vdMp4 }}"
+          data-webm="{{ $vdWebm }}"
+          data-poster="{{ $vdPoster }}"></div>
       </div>
     </div>
     <style>
@@ -318,7 +351,8 @@
       .demo-modal[hidden]{display:none}
       .demo-modal__backdrop{position:absolute;inset:0;background:rgba(11,19,43,.82);backdrop-filter:blur(2px)}
       .demo-modal__dialog{position:relative;width:min(960px,100%);max-height:90vh}
-      .demo-modal__player{width:100%;max-height:90vh;display:block;border-radius:.75rem;background:#0b132b;box-shadow:0 1.25rem 60px rgba(0,0,0,.45);aspect-ratio:16/9;object-fit:contain}
+      .demo-modal__stage{width:100%;aspect-ratio:16/9;max-height:90vh;border-radius:.75rem;overflow:hidden;background:#0b132b;box-shadow:0 1.25rem 60px rgba(0,0,0,.45)}
+      .demo-modal__player{width:100%;height:100%;display:block;background:#0b132b;object-fit:contain}
       .demo-modal__close{position:absolute;top:-.5rem;left:-.5rem;transform:translate(-40%,-40%);width:2.5rem;height:2.5rem;border:0;border-radius:50%;background:#fff;color:#0b132b;font-size:1.5rem;line-height:1;cursor:pointer;box-shadow:0 .25rem 12px rgba(0,0,0,.3)}
       @media(max-width:575px){.demo-modal__close{transform:none;top:.25rem;left:.25rem}}
       body.demo-open{overflow:hidden}
@@ -334,23 +368,58 @@
     </style>
     <script>
       (function () {
+        // Build a <video> from a data-* holder. Called only after a user
+        // gesture, so play() (with sound, for the inline player) is allowed.
+        function buildVideo(holder, className, opts) {
+          var v = document.createElement('video');
+          v.className = className;
+          v.controls = true;
+          v.setAttribute('playsinline', '');
+          v.preload = 'auto';
+          if (opts && opts.muted) { v.muted = true; v.loop = true; }
+          if (holder.dataset.poster) v.poster = holder.dataset.poster;
+          [['mp4', 'video/mp4'], ['webm', 'video/webm']].forEach(function (pair) {
+            var src = holder.dataset[pair[0]];
+            if (!src) return;
+            var s = document.createElement('source');
+            s.src = src;
+            s.type = pair[1];
+            v.appendChild(s);
+          });
+          return v;
+        }
+        function tryPlay(v) {
+          var p = v.play();
+          if (p && p.catch) p.catch(function () {});
+        }
+
+        // Inline teaser: poster + play button → real player on first click.
+        document.querySelectorAll('.hero-demo-video__frame[data-demo-video]').forEach(function (frame) {
+          var facade = frame.querySelector('[data-play-demo]');
+          if (!facade) return;
+          facade.addEventListener('click', function () {
+            var v = buildVideo(frame, 'hero-demo-video__player');
+            frame.replaceChild(v, facade);
+            tryPlay(v);
+          });
+        });
+
+        // Pop-in: player created on first open, paused on close.
         var modal = document.getElementById('demoModal');
-        var video = document.getElementById('demoModalVideo');
-        if (!modal || !video) return;
-        var loaded = false;
+        var stage = document.getElementById('demoModalStage');
+        if (!modal || !stage) return;
+        var video = null;
         function open() {
-          if (!loaded) {
-            loaded = true;
-            // Sources carry a real `src`; kick off the load on first open.
-            video.load();
+          if (!video) {
+            video = buildVideo(stage, 'demo-modal__player', { muted: true });
+            stage.appendChild(video);
           }
           modal.hidden = false;
           document.body.classList.add('demo-open');
-          var p = video.play();
-          if (p && p.catch) p.catch(function () {});
+          tryPlay(video);
         }
         function close() {
-          video.pause();
+          if (video) video.pause();
           modal.hidden = true;
           document.body.classList.remove('demo-open');
         }

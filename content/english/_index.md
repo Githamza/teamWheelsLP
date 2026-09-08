@@ -38,19 +38,22 @@ features:
   enable: true
   section: "features"
 
-# video demo — "See it in action" pop-in (modal). Video loads only when the button is clicked.
+# video demo — "See it in action". The homepage is NOT the video's watch page:
+# it shows a click-to-play poster (the <video> element is only created on
+# click, so Google finds no video here) and links to `watch_page`, the
+# /demo/ page that carries the player, the VideoObject JSON-LD and the
+# video sitemap entry. Keep this block in sync with content/english/demo.md.
 video_demo:
   enable: true
   button_label: "See it in action"
   title: "See TeamWheels in action"
-  # description / uploadDate / duration feed the VideoObject structured data
-  # (layouts/partials/seo/schema.html) that makes the clip eligible as a
-  # Google video result. uploadDate is ISO 8601; duration is ISO 8601 (PT#M#S).
+  # description is shown under the poster; uploadDate / duration are kept
+  # here for parity with demo.md (structured data is emitted on /demo/ only).
   description: "A 60-second walkthrough of TeamWheels — the employee carpooling and commute-management app that runs natively inside Microsoft Teams. See ride matching, the conversational bot, and the Scope 3 emissions dashboard in action."
   uploadDate: "2026-07-13"
   duration: "PT1M1S"        # ISO 8601, for VideoObject JSON-LD
   duration_seconds: 61      # plain seconds, for the video sitemap
-  watch_page: "/demo/"                            # dedicated watch page for this video
+  watch_page: "/demo/"                            # the video's watch page (link target)
   poster: "videos/teamwheels-demo-poster.jpg"   # still frame shown before the clip loads / video thumbnail
   webm: "videos/teamwheels-demo.webm"
   mp4: "videos/teamwheels-demo.mp4"

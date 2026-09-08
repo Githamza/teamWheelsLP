@@ -97,6 +97,15 @@
 - id: video_player_title
   translation: TeamWheels video player
 
+- id: video_not_supported
+  translation: Your browser does not support the video tag.
+
+- id: video_play_label
+  translation: Play the demo video
+
+- id: video_watch_page_link
+  translation: Open the full demo page
+
 
 - id: sc_step1_title
   translation: "Your company"

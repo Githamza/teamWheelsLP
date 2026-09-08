@@ -5,7 +5,7 @@ description: "Démo TeamWheels en 60 secondes : covoiturage domicile-travail, bo
 layout: "demo"
 subtitle: "Démo du produit"
 keywords: "démo TeamWheels, démo covoiturage entreprise, application covoiturage Microsoft Teams, gestion des trajets, tableau de bord Scope 3"
-lastmod: 2026-09-07
+lastmod: 2026-09-08
 
 video_demo:
   enable: true
