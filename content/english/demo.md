@@ -4,7 +4,7 @@ seoTitle: "TeamWheels demo: carpooling in Microsoft Teams"
 description: "Watch the TeamWheels demo: a 60-second walkthrough of employee carpooling, the ride-matching bot and the Scope 3 dashboard inside Teams. What the live demo covers, who it is for, what to prepare."
 layout: "demo"
 keywords: "TeamWheels demo, employee carpooling demo, Microsoft Teams carpool app video, commute management demo, Scope 3 dashboard demo"
-lastmod: 2026-09-07
+lastmod: 2026-09-08
 
 # This front-matter `video_demo:` block is what schema.html turns into
 # VideoObject structured data for this dedicated watch page.

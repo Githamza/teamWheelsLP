@@ -38,13 +38,17 @@ features:
   enable: true
   section: "features"
 
-# démo vidéo — pop-in "Voir en action". La vidéo se charge uniquement au clic.
+# démo vidéo — "Voir en action". L'accueil n'est PAS la watch page de la
+# vidéo : il affiche un poster « clic pour lire » (le <video> n'est créé
+# qu'au clic, Google n'y trouve donc aucune vidéo) et renvoie vers
+# `watch_page`, la page /demo/ qui porte le lecteur, le VideoObject JSON-LD
+# et l'entrée du sitemap vidéo. Garder ce bloc aligné sur content/french/demo.md.
 video_demo:
   enable: true
   button_label: "Voir en action"
   title: "Découvrez TeamWheels en action"
-  # description / uploadDate / duration alimentent les données structurées
-  # VideoObject (layouts/partials/seo/schema.html) et le sitemap vidéo.
+  # description est affichée sous le poster ; uploadDate / duration restent
+  # ici par parité avec demo.md (données structurées émises sur /demo/ seulement).
   description: "Démonstration de 60 secondes de TeamWheels — l'application de covoiturage et de gestion des trajets domicile-travail intégrée nativement à Microsoft Teams. Découvrez le matching de trajets, le bot conversationnel et le tableau de bord des émissions Scope 3."
   uploadDate: "2026-07-13"
   duration: "PT1M1S"
