@@ -1,7 +1,13 @@
 {{ define "main" }}
   {{ partial "essentials/header.html" . }}
 
-  {{/* ── Resolve the demo video sources (mirrors the homepage resolver) ── */}}
+  {{/* ── Resolve the demo video sources ──
+       This layout renders the *watch page* for the demo clip: the page whose
+       main content IS the video (Google only indexes videos found on such a
+       page — "Video isn't on a watch page" otherwise). Keep the player the
+       first thing after the H1, full-width, above the fold on mobile, and
+       never hidden behind a click. The VideoObject JSON-LD and the video
+       sitemap entry (layouts/partials/seo/) are emitted for this page only. */}}
   {{ $vd := .Params.video_demo }}
   {{ $vdWebm := "" }}
   {{ $vdMp4 := "" }}
@@ -17,29 +23,45 @@
       <div class="row justify-content-center text-center">
         <div class="col-lg-9">
           <p class="subtitle">{{ .Params.subtitle | default "Product demo" }}</p>
+          {{/* The H1 is the video title so it matches the VideoObject `name`. */}}
           <h1 class="title text-xl mb-3">{{ with $vd }}{{ .title }}{{ else }}{{ .Title }}{{ end }}</h1>
-          {{ with $vd }}<p class="mb-4 demo-watch__lede">{{ .description }}</p>{{ end }}
         </div>
       </div>
 
       {{ if or $vdWebm $vdMp4 }}
         <div class="row justify-content-center">
           <div class="col-lg-10">
-            {{/* Prominent, non-hidden player. `preload="metadata"` gives Google
-                 a lightweight signal while keeping the page fast; the poster is
-                 shown immediately as the video thumbnail. */}}
+            {{/* Prominent, non-hidden player, directly under the H1 so it sits
+                 in the initial viewport on phones (Googlebot crawls mobile).
+                 `preload="metadata"` gives Google a lightweight signal while
+                 keeping the page fast; the poster is the video thumbnail.
+                 MP4 (H.264) first: it is the smaller encode and the format
+                 every browser and Googlebot can play. */}}
             <video
               class="demo-watch__player"
+              width="1280"
+              height="720"
               controls
               playsinline
               preload="metadata"
+              title="{{ with $vd }}{{ .title }}{{ else }}{{ .Title }}{{ end }}"
               {{ with $vdPoster }}poster="{{ . }}"{{ end }}>
-              {{ with $vdWebm }}<source src="{{ . }}" type="video/webm">{{ end }}
               {{ with $vdMp4 }}<source src="{{ . }}" type="video/mp4">{{ end }}
+              {{ with $vdWebm }}<source src="{{ . }}" type="video/webm">{{ end }}
               {{ i18n "video_not_supported" | default "Your browser does not support the video tag." }}
             </video>
           </div>
         </div>
+      {{ end }}
+
+      {{ with $vd }}
+        {{ with .description }}
+          <div class="row justify-content-center text-center mt-4">
+            <div class="col-lg-9">
+              <p class="mb-0 demo-watch__lede">{{ . }}</p>
+            </div>
+          </div>
+        {{ end }}
       {{ end }}
 
       {{ with .Params.cta }}
@@ -58,9 +80,11 @@
     </div>
   </section>
 
+  {{ partial "faq-section.html" . }}
+
   <style>
     .demo-watch{padding-top:2.5rem}
     .demo-watch__lede{max-width:42rem;margin-left:auto;margin-right:auto}
-    .demo-watch__player{width:100%;display:block;border-radius:.75rem;background:#0b132b;box-shadow:0 1.25rem 60px rgba(0,0,0,.35);aspect-ratio:16/9;object-fit:contain}
+    .demo-watch__player{width:100%;height:auto;display:block;border-radius:.75rem;background:#0b132b;box-shadow:0 1.25rem 60px rgba(0,0,0,.35);aspect-ratio:16/9;object-fit:contain}
   </style>
 {{ end }}

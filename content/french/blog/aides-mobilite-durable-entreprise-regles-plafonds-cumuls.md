@@ -29,6 +29,8 @@ faq:
 
 *En 2026, un employeur peut financer les trajets domicile-travail de ses salariés avec de l'argent quasi net d'impôt et de charges — à condition de connaître les bons dispositifs, leurs plafonds et surtout leurs règles de cumul. Voici la vue d'ensemble comparative, côté RH et DAF, pour arbitrer sans se tromper.*
 
+> **Vous cherchez le détail d'un seul dispositif ?** Montants 2026, règles URSSAF, cumuls, mise en place en 4 étapes et justificatifs du covoiturage sont dans notre guide employeur du [forfait mobilités durables](/fr/forfait-mobilites-durables-covoiturage/). Cet article, lui, compare tous les leviers entre eux.
+
 La mobilité domicile-travail est devenue un sujet stratégique : coût du carburant, saturation des parkings, attentes des candidats, obligations de reporting RSE et bilan GES. La bonne nouvelle, c'est que l'État a construit un arsenal de dispositifs qui permettent à l'entreprise de **prendre en charge ces trajets avec des exonérations sociales et fiscales**. La mauvaise, c'est que ces aides s'empilent selon des règles de cumul et des plafonds distincts, souvent mal maîtrisés.
 
 Cet article est la **référence transversale** : il compare tous les dispositifs, donne les seuils, les plafonds d'exonération et les cumuls possibles en 2026. Pour l'approfondissement du seul Forfait Mobilités Durables (mise en place, DUE, calcul kilométrique, cas fonction publique), renvoi est fait au guide dédié en fin d'article.
@@ -159,7 +161,7 @@ Conservez ces preuves **au moins trois ans**. En cas de contrôle, l'absence de 
 5. **Formalisez** (accord d'entreprise ou DUE après consultation du CSE) et **conservez les preuves**.
 6. **Mesurez et publiez** : les données de trajets alimentent votre bilan GES et votre reporting CSRD.
 
-Le covoiturage coche toutes les cases — à condition de disposer d'un outil qui **automatise la preuve**. Estimez le potentiel avec notre [calculateur d'économies covoiturage](/fr/tools/savings-calculator/).
+Le covoiturage coche toutes les cases — à condition de disposer d'un outil qui **automatise la preuve**. Estimez le potentiel avec notre [calculateur d'économies covoiturage](/fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/).
 
 ## Foire aux questions
 
@@ -183,7 +185,7 @@ L'employeur doit pouvoir prouver la réalité des déplacements. Pour le covoitu
 
 ---
 
-> **Pour aller plus loin :** cet article est une vue d'ensemble comparative. Pour tout savoir sur la mise en place du seul Forfait Mobilités Durables — DUE, accord d'entreprise, calcul kilométrique, cas de la fonction publique, erreurs à éviter — consultez notre [guide complet du Forfait Mobilité Durable 2026](/fr/blog/forfait-mobilite-durable-guide-complet-2025/).
+> **Pour aller plus loin :** cet article est une vue d'ensemble comparative. Pour tout savoir sur la mise en place du seul Forfait Mobilités Durables — DUE, accord d'entreprise, calcul kilométrique, cas de la fonction publique, erreurs à éviter — consultez notre [guide complet du Forfait Mobilité Durable 2026](/fr/forfait-mobilites-durables-covoiturage/). Et pour arbitrer, salarié par salarié, entre FMD, indemnité kilométrique et voiture de fonction électrique, notre [comparatif des coûts employeur 2026](/fr/blog/mobilite-salaries-isoles-fmd-ik-voiture-electrique-2026/) chiffre chaque option.
 
 ## Passez à l'action
 

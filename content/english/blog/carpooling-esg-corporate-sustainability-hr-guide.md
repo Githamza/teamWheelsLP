@@ -137,7 +137,7 @@ A credible ESG strategy is steered by numbers. Here are the **essential KPIs** o
 | Commuter incentive paid | Social / Governance | Benefits, ESG disclosure |
 | Savings delivered per employee | Social | Wellbeing, purchasing power |
 
-> **Reporting tip** — These indicators should be **collected automatically**, not reconstructed by hand at year-end. A real-time dashboard turns ESG reporting from an annual scramble into continuous monitoring. [Estimate your savings and CO₂ avoided →](/en/tools/savings-calculator/)
+> **Reporting tip** — These indicators should be **collected automatically**, not reconstructed by hand at year-end. A real-time dashboard turns ESG reporting from an annual scramble into continuous monitoring. [Estimate your savings and CO₂ avoided →](/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/)
 
 ---
 
@@ -181,7 +181,7 @@ Corporate carpooling is not another green gadget. It is one of the few measures 
 
 **TeamWheels** brings these three benefits together in a solution built into Microsoft 365: automatic matching, audit-ready commuter tracking, and a **real-time ESG dashboard** (miles shared, CO₂ avoided, adoption). Free up to 30 employees, installed in under an hour, no commitment.
 
-**[Request a free demo](/en/contact/)** · **[Estimate my CO₂ impact and savings](/en/tools/savings-calculator/)**
+**[Request a free demo](/en/contact/)** · **[Estimate my CO₂ impact and savings](/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/)**
 
 ---
 

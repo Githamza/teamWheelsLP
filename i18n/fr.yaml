@@ -97,6 +97,15 @@
 - id: video_player_title
   translation: Lecteur vidéo TeamWheels
 
+- id: video_not_supported
+  translation: Votre navigateur ne prend pas en charge la lecture vidéo.
+
+- id: video_play_label
+  translation: Lire la vidéo de démo
+
+- id: video_watch_page_link
+  translation: Voir la page démo complète
+
 
 - id: sc_step1_title
   translation: "Votre entreprise"
@@ -130,3 +139,22 @@
 
 - id: sc_step_nav
   translation: "Navigation entre les étapes"
+
+# FAQ section title (partials/faq-section.html)
+- id: faq_title
+  translation: Questions fréquentes
+
+# End-of-article product CTA (partials/blog-cta.html)
+- id: blog_cta_title
+  translation: Passez du guide à la pratique
+- id: blog_cta_before
+  translation: "Découvrez notre"
+- id: blog_cta_anchor
+  translation: logiciel de covoiturage entreprise
+- id: blog_cta_after
+  translation: " intégré à Microsoft Teams : mise en relation automatique des trajets, justificatifs FMD et reporting CO₂, déployé en 5 minutes."
+- id: blog_cta_button
+  translation: Demander une démo
+
+- id: sc_intro_subtitle
+  translation: Outil gratuit TeamWheels

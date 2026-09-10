@@ -94,7 +94,7 @@ image_and_content_blocks:
 
     * **Save employees $2,000+/year** — Shared commuting costs directly improve financial well-being and retention
 
-    Trusted by forward-thinking companies across the USA, UK, and Canada. Want the numbers for your team? [Calculate your savings →](/en/tools/savings-calculator/) or read the [complete corporate carpooling guide →](/en/blog/corporate-carpooling-guide-2026/).
+    Trusted by forward-thinking companies across the USA, UK, and Canada. Want the numbers for your team? [Calculate your savings →](/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/) or read the [complete corporate carpooling guide →](/en/blog/corporate-carpooling-guide-2026/).
     "
     button:
       enable: false
@@ -143,25 +143,7 @@ image_and_content_blocks:
     button:
       enable: false
 
-  - enable: true
-    anchor: "faq"
-    subtitle: "Common Questions"
-    title: "Corporate Carpooling Software FAQ"
-    image: "images/photos/colleagues-carpooling.jpg"
-    content_position: "right"
-    content: "**Is it really just a Microsoft Teams app?** Yes. TeamWheels installs inside your existing Microsoft 365 tenant from AppSource — there's no separate app for employees to download.
-
-    **How fast can we deploy it?** A Teams administrator can have it live in about 5 minutes. No IT project, no infrastructure changes.
-
-    **How is employee data secured?** Authentication runs through Azure AD / Entra ID SSO, and the platform is GDPR compliant with privacy by design.
-
-    **What does it cost?** There's a free 30-day trial, then transparent per-seat pricing. [See pricing →](/en/pricing/)
-
-    **Which countries do you support?** Companies across the USA, UK, and Canada run TeamWheels today.
-    "
-    button:
-      enable: false
-
+faq_title: "Corporate carpooling software FAQ"
 faq:
   - question: "Is there a Microsoft Teams app for carpooling?"
     answer: "Yes. TeamWheels is a Microsoft-validated carpooling app that installs inside Microsoft Teams from AppSource. Employees find and offer rides through a conversational bot in Teams — there is no separate app to download, which is why participation reaches 40%+ versus under 18% for standalone carpooling apps."

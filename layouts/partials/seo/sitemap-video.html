@@ -1,18 +1,28 @@
-{{- /* Google video sitemap extension — emits a <video:video> block for any
-       page carrying an enabled `video_demo:` front-matter block (homepage
-       modal + the /demo/ watch pages). Shared by layouts/sitemap.xml
-       (per-language urlsets) and layouts/sitemapindex.xml (root flat
-       urlset — the one robots.txt advertises and GSC crawls, so it MUST
-       carry the same video data or Google never sees it).
+{{- /* Google video sitemap extension — emits a <video:video> block ONLY for
+       the video's watch page (the /demo/ page in each language), i.e. the
+       page whose `video_demo.watch_page` resolves to itself (or that declares
+       none). The homepage embeds the same clip as supporting content and must
+       NOT be advertised: Google only indexes a video from a watch page and
+       reports "Video isn't on a watch page" for every other URL it is told
+       about. Shared by layouts/sitemap.xml (per-language urlsets) and
+       layouts/sitemapindex.xml (root flat urlset — the one robots.txt
+       advertises and GSC crawls, so it MUST carry the same video data or
+       Google never sees it).
        Context: the Page. Requires xmlns:video on the enclosing <urlset>. */ -}}
 {{- $page := . -}}
 {{- with .Params.video_demo }}
 {{- if .enable }}
+  {{- $isWatchPage := true }}
+  {{- /* Resolve against the PAGE's language, not the template's (the root
+         sitemap is rendered from the default site over every language). */ -}}
+  {{- with .watch_page }}{{ $isWatchPage = eq $page.RelPermalink (printf "%s%s" (strings.TrimSuffix "/" $page.Site.Home.RelPermalink) .) }}{{ end }}
+  {{- if $isWatchPage }}
   {{- $vWebm := "" }}{{ $vMp4 := "" }}{{ $vPoster := "" }}
   {{- with .webm }}{{ with resources.Get . }}{{ $vWebm = .Permalink }}{{ end }}{{ end }}
   {{- with .mp4 }}{{ with resources.Get . }}{{ $vMp4 = .Permalink }}{{ end }}{{ end }}
   {{- with .poster }}{{ with resources.Get . }}{{ $vPoster = .Permalink }}{{ end }}{{ end }}
-  {{- $vContent := or $vWebm $vMp4 }}
+  {{- /* MP4 first — same file the VideoObject contentUrl points at. */ -}}
+  {{- $vContent := or $vMp4 $vWebm }}
   {{- if and $vContent $vPoster }}
     <video:video>
       <video:thumbnail_loc>{{ $vPoster }}</video:thumbnail_loc>
@@ -26,6 +36,7 @@
       <video:publication_date>{{ . }}T00:00:00+00:00</video:publication_date>
       {{- end }}
     </video:video>
+  {{- end }}
   {{- end }}
 {{- end }}
 {{- end }}

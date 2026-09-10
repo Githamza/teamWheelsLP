@@ -1,5 +1,6 @@
 ---
 title: "Carpooling to Work: How to Set It Up for Your Team (2026 Guide)"
+seoTitle: "Carpooling to Work: The 2026 Guide for Employers"
 translationKey: "carpooling-to-work"
 date: 2026-05-12
 draft: false

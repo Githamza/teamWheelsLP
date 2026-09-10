@@ -246,22 +246,33 @@
 </script>
 {{- end -}}
 
-{{- /* VideoObject Schema — emits on ANY page that declares an enabled
-       `video_demo:` block in front matter (homepage modal + the /demo/
-       watch page). This is what makes the demo clip eligible to be indexed
-       and served as a Google video result. Google requires, at minimum:
-       name, description, thumbnailUrl, uploadDate, and a resolvable video
-       (contentUrl). Resources are re-resolved here so the absolute file
-       URLs match what the <video> element actually serves. */ -}}
+{{- /* VideoObject Schema — emitted ONLY on the video's watch page (the
+       page whose main content is the video: /demo/ in each language).
+       The homepage embeds the same clip as supporting content, and Google
+       reports "Video isn't on a watch page" for every URL that advertises a
+       video it will not index — so non-watch pages must not carry VideoObject
+       (nor a video sitemap entry). A page is the watch page when its
+       `video_demo.watch_page` resolves to itself, or when it declares none.
+       Google requires, at minimum: name, description, thumbnailUrl,
+       uploadDate, and a resolvable contentUrl. Resources are re-resolved
+       here so the absolute file URLs match what the <video> element serves. */ -}}
 {{- with .Params.video_demo -}}
 {{- if .enable -}}
+  {{- $isWatchPage := true -}}
+  {{- /* Resolve watch_page against the PAGE's language (not the template's:
+         the root sitemap is rendered from the default site and ranges over
+         every language), so "/demo/" → "/fr/demo/" or "/en/demo/". */ -}}
+  {{- with .watch_page }}{{ $isWatchPage = eq $page.RelPermalink (printf "%s%s" (strings.TrimSuffix "/" $page.Site.Home.RelPermalink) .) }}{{ end -}}
+  {{- if $isWatchPage -}}
   {{- $vWebm := "" -}}
   {{- $vMp4 := "" -}}
   {{- $vPoster := "" -}}
   {{- with .webm }}{{ with resources.Get . }}{{ $vWebm = .Permalink }}{{ end }}{{ end -}}
   {{- with .mp4 }}{{ with resources.Get . }}{{ $vMp4 = .Permalink }}{{ end }}{{ end -}}
   {{- with .poster }}{{ with resources.Get . }}{{ $vPoster = .Permalink }}{{ end }}{{ end -}}
-  {{- $vContent := or $vWebm $vMp4 -}}
+  {{- /* MP4 (H.264) first — the smaller encode and the format Google
+         processes most reliably; matches the <source> order in the player. */ -}}
+  {{- $vContent := or $vMp4 $vWebm -}}
   {{- if $vContent -}}
 <script type="application/ld+json">
 {
@@ -283,9 +294,15 @@
   "duration": {{ . | jsonify | safeJS }},
   {{- end }}
   "contentUrl": {{ $vContent | jsonify | safeJS }},
-  {{- with .watch_page }}
-  "embedUrl": {{ . | absLangURL | jsonify | safeJS }},
-  {{- end }}
+  {{- /* No `embedUrl`: Google expects it to point at a player, never at a
+         web page. The watch page is expressed as the page this VideoObject
+         is the main entity of. */ -}}
+  "url": {{ $page.Permalink | jsonify | safeJS }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ $page.Permalink | jsonify | safeJS }}
+  },
+  "inLanguage": {{ $page.Language.Lang | jsonify | safeJS }},
   "publisher": {
     "@type": "Organization",
     "@id": "https://www.teamwheelsapp.com/#organization",
@@ -297,6 +314,7 @@
   }
 }
 </script>
+  {{- end -}}
   {{- end -}}
 {{- end -}}
 {{- end -}}
