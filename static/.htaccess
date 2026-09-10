@@ -58,6 +58,9 @@
   ## Partner Center listing). Used to be a static JS-redirect shim, which
   ## left validators and link checkers with an empty noindex page.
   RewriteRule ^terms(-and-conditions)?/?$ /en/terms-and-conditions/ [R=301,L]
+  ## Public support page (the URL given in the Teams app manifest and the
+  ## in-app help card). English is the manifest's default language.
+  RewriteRule ^support/?$ /en/support/ [R=301,L]
   ## SEO consolidation, September 2026 (see the specs of 2026-09-07).
   ## Lot A — three "covoiturage entreprise" articles merged into one guide.
   RewriteRule ^fr/blog/covoiturage-domicile-travail-entreprise/?$ /fr/blog/covoiturage-entreprise-guide-2026/ [R=301,L]
@@ -81,6 +84,7 @@
   RedirectMatch 301 "^/career(/.*)?$" "/fr/contact/"
   RedirectMatch 301 "^/fr/blog/voies-covoiturage-paris-peripherique-guide-2025/?$" "/fr/blog/voies-covoiturage-paris-peripherique-guide-2026/"
   RedirectMatch 301 "^/terms(-and-conditions)?/?$" "/en/terms-and-conditions/"
+  RedirectMatch 301 "^/support/?$" "/en/support/"
   ## September 2026 consolidation (same targets as the mod_rewrite rules above)
   RedirectMatch 301 "^/fr/blog/covoiturage-domicile-travail-entreprise/?$" "/fr/blog/covoiturage-entreprise-guide-2026/"
   RedirectMatch 301 "^/fr/blog/covoiturage-entreprise-5-etapes-demarrer/?$" "/fr/blog/covoiturage-entreprise-guide-2026/"

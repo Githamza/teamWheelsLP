@@ -87,14 +87,19 @@ url = "contact/"
 weight = 1
 
 [[footer_menu_3]]
+name = "Support"
+url = "support/"
+weight = 2
+
+[[footer_menu_3]]
 name = "Privacy Policy"
 url = "privacy-policy/"
-weight = 2
+weight = 3
 
 [[footer_menu_3]]
 name = "Terms & Conditions"
 url = "terms-and-conditions/"
-weight = 3
+weight = 4
 
 
 # footer_menu_4
