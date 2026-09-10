@@ -38,6 +38,11 @@
   ## Renamed article. Hugo `aliases` only emit a meta-refresh stub, which
   ## passes no PageRank — the 301 has to be declared here.
   RewriteRule ^fr/blog/voies-covoiturage-paris-peripherique-guide-2025/?$ /fr/blog/voies-covoiturage-paris-peripherique-guide-2026/ [R=301,L]
+
+  ## Shortcut URLs for the terms & conditions (the URL given in the Microsoft
+  ## Partner Center listing). Used to be a static JS-redirect shim, which
+  ## left validators and link checkers with an empty noindex page.
+  RewriteRule ^terms(-and-conditions)?/?$ /en/terms-and-conditions/ [R=301,L]
 </IfModule>
 
 <IfModule mod_alias.c>
@@ -48,6 +53,7 @@
   RedirectMatch 301 "^/(fr|en)/career(/.*)?$" "/$1/contact/"
   RedirectMatch 301 "^/career(/.*)?$" "/fr/contact/"
   RedirectMatch 301 "^/fr/blog/voies-covoiturage-paris-peripherique-guide-2025/?$" "/fr/blog/voies-covoiturage-paris-peripherique-guide-2026/"
+  RedirectMatch 301 "^/terms(-and-conditions)?/?$" "/en/terms-and-conditions/"
 </IfModule>
 ##### 301 redirects (SEO) — END
 
