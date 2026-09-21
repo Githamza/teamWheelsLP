@@ -1,7 +1,7 @@
 ---
 title: "FMD, indemnités kilométriques ou voiture de fonction électrique : ce que coûte vraiment chaque option en 2026"
 seoTitle: "FMD, IK ou voiture de fonction : le comparatif coût 2026"
-date: 2026-09-13
+date: 2026-09-06
 draft: false
 description: "FMD, indemnités kilométriques ou voiture électrique de fonction : comparatif chiffré du coût employeur 2026, et la méthode pour choisir selon vos salariés isolés."
 image: "images/blog/savings-calculator.jpg"
