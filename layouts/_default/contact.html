@@ -183,4 +183,63 @@
     })();
   </script>
 
+  {{/* Submit in place, then navigate to the thank-you page ourselves.
+
+       The plain POST round-trips through api.web3forms.com, which then 302s
+       the browser back to /thank-you/. GA4 sees that return as a new visit
+       referred by web3forms.com: in September 2026 one of the three
+       `generate_lead` key events had "/en/thank-you" as its landing page, so
+       the lead was attributed to a referral session instead of the organic
+       search session that actually produced it. The enhanced-measurement
+       `form_submit` event is also at the mercy of the navigation that
+       follows the submit, which is why it fires only sometimes.
+
+       Posting with fetch() keeps the visitor on this origin: the session
+       survives, `form_submit` has time to flush, and thanks.html fires
+       `generate_lead` in the same session with the right attribution. The
+       hidden `redirect` field stays in the form so the no-JS / fetch-failure
+       path still works exactly as before (native POST + Web3Forms redirect). */}}
+  <script>
+    (function () {
+      var form = document.querySelector('form[action*="web3forms"]');
+      if (!form || !window.fetch || !window.FormData) return;
+      form.addEventListener("submit", function (event) {
+        if (form.dataset.twNativeSubmit === "1") return;
+        event.preventDefault();
+        var button = form.querySelector('button[type="submit"]');
+        var redirect = form.querySelector('input[name="redirect"]');
+        var target = redirect ? redirect.value : "{{ absLangURL "thank-you/" }}";
+        var fallback = function () {
+          // Let the browser do the classic POST + Web3Forms redirect.
+          form.dataset.twNativeSubmit = "1";
+          if (button) button.disabled = false;
+          if (typeof form.requestSubmit === "function") form.requestSubmit();
+          else form.submit();
+        };
+        if (button) button.disabled = true;
+        var payload = {};
+        new FormData(form).forEach(function (value, key) {
+          if (key === "redirect") return;
+          payload[key] = value;
+        });
+        payload.botcheck = form.querySelector('input[name="botcheck"]:checked') ? true : false;
+        fetch(form.action, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify(payload),
+        })
+          .then(function (response) {
+            return response.json().then(function (data) {
+              if (response.ok && data && data.success) {
+                window.location.assign(target);
+              } else {
+                fallback();
+              }
+            });
+          })
+          .catch(fallback);
+      });
+    })();
+  </script>
+
 {{ end }}

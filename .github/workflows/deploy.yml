@@ -58,6 +58,22 @@ jobs:
       - name: Install npm dependencies
         run: npm ci
 
+      # Hugo silently drops any page whose `date` is still in the future at
+      # build time (no --buildFuture here, on purpose). A post committed with
+      # a date a few days ahead is then absent from the deploy — and since a
+      # deploy only runs on push, it stays a 404 until the next unrelated
+      # merge. That happened to the FR FMD/IK pillar post in September 2026
+      # (dated 09-13, deployed 09-10, 404 for two weeks). Fail loudly instead.
+      - name: Refuse future-dated content
+        run: |
+          FUTURE="$(hugo list future | tail -n +2)"
+          if [ -n "$FUTURE" ]; then
+            echo "::error::Future-dated content would be silently skipped by Hugo. Set its date to today or earlier:"
+            echo "$FUTURE" | cut -d, -f1,4,8
+            exit 1
+          fi
+          echo "No future-dated content."
+
       - name: Build Hugo site
         run: hugo --gc --minify
 
