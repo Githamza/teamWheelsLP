@@ -66,7 +66,10 @@ jobs:
       # (dated 09-13, deployed 09-10, 404 for two weeks). Fail loudly instead.
       - name: Refuse future-dated content
         run: |
-          FUTURE="$(hugo list future | tail -n +2)"
+          # `hugo list` prints a CSV with a `path,...` header, and on a cold
+          # module cache Hugo prepends "hugo: collected modules in …" to it,
+          # so keep only the content rows rather than skipping a line count.
+          FUTURE="$(hugo list future | grep '^content/' || true)"
           if [ -n "$FUTURE" ]; then
             echo "::error::Future-dated content would be silently skipped by Hugo. Set its date to today or earlier:"
             echo "$FUTURE" | cut -d, -f1,4,8
