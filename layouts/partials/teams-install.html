@@ -25,21 +25,28 @@
     <img src="{{ "images/microsoft-teams-icon.svg" | relURL }}" alt="" width="22" height="22" class="btn-teams-install__icon" aria-hidden="true">{{ i18n "teams_install_button" }}
   </a>
   {{- if $.trust }}
-  <p class="teams-install__trust small mt-2 mb-1">{{ i18n "teams_install_trust" }}</p>
-  <p class="teams-install__badges small mb-1">
-    <a href="{{ $market }}" target="_blank" rel="noopener" data-track="teams_marketplace_click" data-placement="{{ $p }}">
-      <i class="fas fa-store" aria-hidden="true"></i> {{ i18n "teams_store_badge" }}</a>
-    <span aria-hidden="true">·</span>
-    <a href="{{ $attest }}" target="_blank" rel="noopener" data-track="ms_attestation_click" data-placement="{{ $p }}">
-      <i class="fas fa-shield-alt" aria-hidden="true"></i> {{ i18n "ms_attestation_badge" }}</a>
-  </p>
+  <ul class="teams-install__perks list-unstyled small">
+    {{- range split (i18n "teams_install_trust") " · " }}
+    <li><i class="fas fa-check-circle" aria-hidden="true"></i>{{ . }}</li>
+    {{- end }}
+  </ul>
+  <div class="teams-install__badges">
+    <a class="teams-install__badge" href="{{ $market }}" target="_blank" rel="noopener" data-track="teams_marketplace_click" data-placement="{{ $p }}">
+      <img src="{{ "images/microsoft-teams-icon.svg" | relURL }}" alt="" width="26" height="26" aria-hidden="true">
+      <span><small>{{ i18n "teams_store_badge_top" }}</small><strong>{{ i18n "teams_store_badge_bottom" }}</strong></span>
+    </a>
+    <a class="teams-install__badge" href="{{ $attest }}" target="_blank" rel="noopener" data-track="ms_attestation_click" data-placement="{{ $p }}">
+      <i class="fas fa-shield-alt" aria-hidden="true"></i>
+      <span><small>{{ i18n "ms_attestation_badge_top" }}</small><strong>{{ i18n "ms_attestation_badge_bottom" }}</strong></span>
+    </a>
+  </div>
   {{- end }}
   {{- if $.admin }}
   {{- $body := i18n "teams_admin_mail_body" (dict "Install" $install "Marketplace" $market "Attestation" $attest) -}}
   {{- $mailto := printf "mailto:?subject=%s&body=%s" (replace (urlquery (i18n "teams_admin_mail_subject")) "+" "%20") (replace (urlquery $body) "+" "%20") -}}
   <p class="teams-install__admin small mb-0">
-    <a href="{{ $mailto | safeURL }}" data-track="teams_admin_request_click" data-placement="{{ $p }}">
-      <i class="fas fa-envelope" aria-hidden="true"></i> {{ i18n "teams_admin_link" }}</a>
+    {{ i18n "teams_admin_question" }}
+    <a href="{{ $mailto | safeURL }}" data-track="teams_admin_request_click" data-placement="{{ $p }}">{{ i18n "teams_admin_link" }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
   </p>
   {{- end }}
 </div>

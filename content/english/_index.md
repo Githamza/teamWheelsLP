@@ -38,6 +38,14 @@ features:
   enable: true
   section: "features"
 
+# "How it works" infographic — shown under the hero (it is `banner.image`
+# above); the demo video now fills the hero's right-hand column.
+infographic:
+  enable: true
+  subtitle: "How it works"
+  title: "One ride offered, one colleague matched"
+  description: "An employee offers a ride in Teams, a colleague looks for the same route: TeamWheels matches them automatically, sends the reminders and counts the CO₂ avoided."
+
 # video demo — "See it in action". The homepage is NOT the video's watch page:
 # it shows a click-to-play poster (the <video> element is only created on
 # click, so Google finds no video here) and links to `watch_page`, the
@@ -47,7 +55,7 @@ video_demo:
   enable: true
   button_label: "See it in action"
   title: "See TeamWheels in action"
-  # description is shown under the poster; uploadDate / duration are kept
+  # description is no longer shown on the homepage (video sits in the hero); uploadDate / duration are kept
   # here for parity with demo.md (structured data is emitted on /demo/ only).
   description: "A 60-second walkthrough of TeamWheels — the employee carpooling and commute-management app that runs natively inside Microsoft Teams. See ride matching, the conversational bot, and the Scope 3 emissions dashboard in action."
   uploadDate: "2026-07-13"

@@ -77,28 +77,63 @@
                 {{ end }}
               {{ end }}
 
-              {{/* Demo button — mobile only (under the hero title) */}}
-              {{ if $vdOn }}
-                <button
-                  type="button"
-                  class="btn btn-primary m-1 d-lg-none demo-ripple"
-                  data-open-demo>
-                  <i class="fas fa-play-circle"></i> {{ $vdLabel }}
-                </button>
-              {{ end }}
             </div>
           </div>
           <div class="col-lg-6 mt-5 mt-lg-0">
+            {{/* Demo video, click-to-play. The homepage is NOT the video's
+                 watch page (that is /demo/, see `video_demo.watch_page`):
+                 Google only indexes a video whose page is built around it and
+                 reports "Video isn't on a watch page" otherwise. So there is
+                 no <video> element and no VideoObject here — just a poster
+                 "facade" that swaps in the real player on the first click
+                 (script at the end of the hero block). Falls back to the
+                 banner image when no video is configured. */}}
+            {{ if $vdOn }}
+              <div class="hero-video" id="demo">
+                <div
+                  class="hero-demo-video__frame"
+                  data-demo-video
+                  data-mp4="{{ $vdMp4 }}"
+                  data-webm="{{ $vdWebm }}"
+                  data-poster="{{ $vdPoster }}">
+                  <button
+                    type="button"
+                    class="hero-demo-video__facade"
+                    data-play-demo
+                    data-track="demo_video_play"
+                    data-placement="hero"
+                    aria-label="{{ i18n "video_play_label" | default "Play the demo video" }}">
+                    {{ with $vdPoster }}
+                      <img
+                        class="hero-demo-video__poster"
+                        src="{{ . }}"
+                        width="{{ $vdPosterW }}"
+                        height="{{ $vdPosterH }}"
+                        loading="eager"
+                        fetchpriority="high"
+                        decoding="async"
+                        alt="{{ with $vd }}{{ .title }}{{ end }}" />
+                    {{ end }}
+                    <span class="hero-demo-video__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" focusable="false"><path d="M8 5v14l11-7z"/></svg></span>
+                    <span class="hero-demo-video__label" aria-hidden="true"><i class="fas fa-play-circle"></i> {{ $vdLabel }}{{ with $vd.duration_seconds }} · {{ . }} s{{ end }}</span>
+                  </button>
+                </div>
+                {{ with $vd.watch_page }}
+                  <p class="text-center mt-3 mb-0 small">
+                    <a class="hero-demo-video__link" href="{{ . | relLangURL }}">{{ i18n "video_watch_page_link" | default "Open the full demo page" }} <i class="fas fa-arrow-right"></i></a>
+                  </p>
+                {{ end }}
+              </div>
+            {{ else }}
             {{ with .image }}
               <div>
                 {{ $imgOrig:= resources.Get . }}
                 {{ if eq $imgOrig.MediaType.SubType "svg" }}
                   {{/* Animated SVG banner: serve directly so CSS float animations run (Hugo can't resize SVG) */}}
                   <img
-                    loading="eager"
+                    loading="lazy"
                     decoding="async"
-                    fetchpriority="high"
-                    class="img-fluid"
+                                        class="img-fluid"
                     width="1223"
                     height="1194"
                     src="{{ $imgOrig.RelPermalink }}"
@@ -114,10 +149,9 @@
                     <source srcset="{{ $imgLG.RelPermalink }}" media="(max-width: 991px)" type="image/webp">
                     <source srcset="{{ $imgXL.RelPermalink }}" type="image/webp">
                     <img
-                      loading="eager"
-                      decoding="sync"
-                      fetchpriority="high"
-                      class="img-fluid"
+                      loading="lazy"
+                      decoding="async"
+                                            class="img-fluid"
                       width="{{ $imgLG.Width }}"
                       height="{{ $imgLG.Height }}"
                       src="{{ $imgLG.RelPermalink }}"
@@ -126,17 +160,6 @@
                 {{ end }}
               </div>
             {{ end }}
-
-            {{/* Demo button — desktop only (under the SVG) */}}
-            {{ if $vdOn }}
-              <div class="text-center mt-4 d-none d-lg-block">
-                <button
-                  type="button"
-                  class="btn btn-primary demo-ripple"
-                  data-open-demo>
-                  <i class="fas fa-play-circle"></i> {{ $vdLabel }}
-                </button>
-              </div>
             {{ end }}
           </div>
         </div>
@@ -173,73 +196,109 @@
     </div>
   </section>
 
-  {{/* ── Inline demo teaser, directly under the hero ──
-       The homepage is NOT the video's watch page (that is /demo/, see
-       `video_demo.watch_page`): Google only indexes a video whose page is
-       built around it, and reports "Video isn't on a watch page" for every
-       other URL where it finds one. So the HTML here carries no <video>
-       element and no VideoObject — just a click-to-play poster (a "facade":
-       also the cheapest thing for LCP) that swaps in a real <video> on the
-       first click, plus a crawlable link to the watch page. The sources
-       live in data-* attributes and are read by the script below. */}}
-  {{ if $vdOn }}
-    <section class="section hero-demo-video" id="demo">
-      <div class="container container-delta">
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-8">
-            {{ with $vd }}
-              <h2 class="h1 title mb-3">{{ .title }}</h2>
-              {{ with .description }}<p class="mb-4 hero-demo-video__lede">{{ . }}</p>{{ end }}
-            {{ end }}
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <div
-              class="hero-demo-video__frame"
-              data-demo-video
-              data-mp4="{{ $vdMp4 }}"
-              data-webm="{{ $vdWebm }}"
-              data-poster="{{ $vdPoster }}">
-              <button
-                type="button"
-                class="hero-demo-video__facade"
-                data-play-demo
-                aria-label="{{ i18n "video_play_label" | default "Play the demo video" }}">
-                {{ with $vdPoster }}
-                  <img
-                    class="hero-demo-video__poster"
-                    src="{{ . }}"
-                    width="{{ $vdPosterW }}"
-                    height="{{ $vdPosterH }}"
-                    loading="lazy"
-                    decoding="async"
-                    alt="{{ with $vd }}{{ .title }}{{ end }}" />
-                {{ end }}
-                <span class="hero-demo-video__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" focusable="false"><path d="M8 5v14l11-7z"/></svg></span>
-              </button>
+  {{/* ── Infographic (how matching works), directly under the hero.
+       It used to be the hero image; the demo video took its place. ── */}}
+  {{ $ig := .Params.infographic }}
+  {{ if and $vdOn $ig $ig.enable }}
+    {{ with .Params.banner }}
+      <section class="section hero-infographic">
+        <div class="container container-delta">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+              {{ with $ig.subtitle }}<p class="subtitle">{{ . | markdownify }}</p>{{ end }}
+              <h2 class="h1 title mb-3">{{ $ig.title | markdownify }}</h2>
+              {{ with $ig.description }}<p class="mb-4 hero-infographic__lede">{{ . | markdownify }}</p>{{ end }}
             </div>
-            {{ with $vd.watch_page }}
-              <p class="text-center mt-3 mb-0">
-                <a class="hero-demo-video__link" href="{{ . | relLangURL }}">{{ i18n "video_watch_page_link" | default "Open the full demo page" }} <i class="fas fa-arrow-right"></i></a>
-              </p>
-            {{ end }}
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-xl-5 col-lg-6 col-md-8">
+              {{ with .image }}
+                <div>
+                  {{ $imgOrig:= resources.Get . }}
+                  {{ if eq $imgOrig.MediaType.SubType "svg" }}
+                    {{/* Animated SVG banner: serve directly so CSS float animations run (Hugo can't resize SVG) */}}
+                    <img
+                      loading="lazy"
+                      decoding="async"
+                                          class="img-fluid"
+                      width="1223"
+                      height="1194"
+                      src="{{ $imgOrig.RelPermalink }}"
+                      alt="{{ $ig.title | plainify }}" />
+                  {{ else }}
+                    {{ $imgXL:= $imgOrig.Resize "1000x webp" }}
+                    {{ $imgLG:= $imgOrig.Resize "700x webp" }}
+                    {{ $imgMD:= $imgOrig.Resize "500x webp" }}
+                    {{ $imgSM:= $imgOrig.Resize "400x webp" }}
+                    <picture>
+                      <source srcset="{{ $imgSM.RelPermalink }}" media="(max-width: 575px)" type="image/webp">
+                      <source srcset="{{ $imgMD.RelPermalink }}" media="(max-width: 767px)" type="image/webp">
+                      <source srcset="{{ $imgLG.RelPermalink }}" media="(max-width: 991px)" type="image/webp">
+                      <source srcset="{{ $imgXL.RelPermalink }}" type="image/webp">
+                      <img
+                        loading="lazy"
+                        decoding="async"
+                                              class="img-fluid"
+                        width="{{ $imgLG.Width }}"
+                        height="{{ $imgLG.Height }}"
+                        src="{{ $imgLG.RelPermalink }}"
+                        alt="{{ $ig.title | plainify }}" />
+                    </picture>
+                  {{ end }}
+                </div>
+              {{ end }}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    {{ end }}
+  {{ end }}
+
+  {{ if $vdOn }}
     <style>
-      .hero-demo-video{padding-top:2.5rem;padding-bottom:1rem}
-      .hero-demo-video__lede{max-width:42rem;margin-left:auto;margin-right:auto}
+      .hero-video{position:relative}
       .hero-demo-video__frame{position:relative;width:100%;aspect-ratio:16/9;border-radius:.75rem;overflow:hidden;background:#0b132b;box-shadow:0 1.25rem 60px rgba(11,19,43,.28)}
       .hero-demo-video__facade{position:relative;display:block;width:100%;height:100%;padding:0;border:0;background:transparent;cursor:pointer}
       .hero-demo-video__poster{width:100%;height:100%;display:block;object-fit:contain}
-      .hero-demo-video__play{position:absolute;inset:0;margin:auto;width:5rem;height:5rem;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(91,95,199,.95);color:#fff;font-size:1.75rem;box-shadow:0 .5rem 24px rgba(0,0,0,.35);transition:transform .2s ease}
+      .hero-demo-video__play{position:absolute;inset:0;margin:auto;width:5rem;height:5rem;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(91,95,199,.95);color:#fff;box-shadow:0 .5rem 24px rgba(0,0,0,.35);transition:transform .2s ease;animation:demoPulse 2.4s cubic-bezier(.4,0,.2,1) infinite}
       .hero-demo-video__play svg{margin-left:.2rem}
-      .hero-demo-video__facade:hover .hero-demo-video__play,.hero-demo-video__facade:focus-visible .hero-demo-video__play{transform:scale(1.08)}
+      .hero-demo-video__facade:hover .hero-demo-video__play,.hero-demo-video__facade:focus-visible .hero-demo-video__play{transform:scale(1.08);animation-play-state:paused}
+      .hero-demo-video__label{position:absolute;left:.75rem;bottom:.75rem;padding:.3rem .7rem;border-radius:999px;background:rgba(11,19,43,.72);color:#fff;font-size:.8rem;font-weight:600;line-height:1.2}
       .hero-demo-video__player{width:100%;height:100%;display:block;background:#0b132b;object-fit:contain}
       .hero-demo-video__link{font-weight:500}
+      .hero-infographic__lede{max-width:42rem;margin-left:auto;margin-right:auto}
+      @keyframes demoPulse{0%{box-shadow:0 0 0 0 rgba(123,130,216,.55)}70%{box-shadow:0 0 0 18px rgba(123,130,216,0)}100%{box-shadow:0 0 0 0 rgba(123,130,216,0)}}
+      @media(prefers-reduced-motion:reduce){.hero-demo-video__play{animation:none}}
     </style>
+    <script>
+      (function () {
+        // Poster facade → real <video> on the first click (a user gesture,
+        // so play() with sound is allowed).
+        document.querySelectorAll('.hero-demo-video__frame[data-demo-video]').forEach(function (frame) {
+          var facade = frame.querySelector('[data-play-demo]');
+          if (!facade) return;
+          facade.addEventListener('click', function () {
+            var v = document.createElement('video');
+            v.className = 'hero-demo-video__player';
+            v.controls = true;
+            v.setAttribute('playsinline', '');
+            v.preload = 'auto';
+            if (frame.dataset.poster) v.poster = frame.dataset.poster;
+            [['mp4', 'video/mp4'], ['webm', 'video/webm']].forEach(function (pair) {
+              var src = frame.dataset[pair[0]];
+              if (!src) return;
+              var s = document.createElement('source');
+              s.src = src;
+              s.type = pair[1];
+              v.appendChild(s);
+            });
+            frame.replaceChild(v, facade);
+            var p = v.play();
+            if (p && p.catch) p.catch(function () {});
+          });
+        });
+      })();
+    </script>
   {{ end }}
 
   {{ if .Params.brands.enable }}
@@ -325,123 +384,6 @@
     {{ end }}
   {{ end }}
 
-  {{/* ── Video demo pop-in (modal). Hidden until a hero "See it in action"
-       button is clicked. Like the inline teaser, the markup holds no <video>
-       element: the player is created on first open from the data-* sources
-       (the homepage is not the watch page — see the note above). ── */}}
-  {{ if $vdOn }}
-    <div class="demo-modal" id="demoModal" hidden>
-      <div class="demo-modal__backdrop" data-close-demo></div>
-      <div
-        class="demo-modal__dialog"
-        role="dialog"
-        aria-modal="true"
-        aria-label="{{ with $vd }}{{ .title }}{{ end }}">
-        <button
-          type="button"
-          class="demo-modal__close"
-          data-close-demo
-          aria-label="Close demo">
-          &times;
-        </button>
-        <div
-          class="demo-modal__stage"
-          id="demoModalStage"
-          data-demo-video
-          data-mp4="{{ $vdMp4 }}"
-          data-webm="{{ $vdWebm }}"
-          data-poster="{{ $vdPoster }}"></div>
-      </div>
-    </div>
-    <style>
-      .demo-modal{position:fixed;inset:0;z-index:1080;display:flex;align-items:center;justify-content:center;padding:1rem}
-      .demo-modal[hidden]{display:none}
-      .demo-modal__backdrop{position:absolute;inset:0;background:rgba(11,19,43,.82);backdrop-filter:blur(2px)}
-      .demo-modal__dialog{position:relative;width:min(960px,100%);max-height:90vh}
-      .demo-modal__stage{width:100%;aspect-ratio:16/9;max-height:90vh;border-radius:.75rem;overflow:hidden;background:#0b132b;box-shadow:0 1.25rem 60px rgba(0,0,0,.45)}
-      .demo-modal__player{width:100%;height:100%;display:block;background:#0b132b;object-fit:contain}
-      .demo-modal__close{position:absolute;top:-.5rem;left:-.5rem;transform:translate(-40%,-40%);width:2.5rem;height:2.5rem;border:0;border-radius:50%;background:#fff;color:#0b132b;font-size:1.5rem;line-height:1;cursor:pointer;box-shadow:0 .25rem 12px rgba(0,0,0,.3)}
-      @media(max-width:575px){.demo-modal__close{transform:none;top:.25rem;left:.25rem}}
-      body.demo-open{overflow:hidden}
-      /* Light ripple pulse to draw attention to the demo CTA */
-      .demo-ripple{animation:demoRipple 2.4s cubic-bezier(.4,0,.2,1) infinite}
-      @keyframes demoRipple{
-        0%{box-shadow:0 0 0 0 rgba(123,130,216,.45)}
-        70%{box-shadow:0 0 0 14px rgba(123,130,216,0)}
-        100%{box-shadow:0 0 0 0 rgba(123,130,216,0)}
-      }
-      .demo-ripple:hover{animation-play-state:paused}
-      @media(prefers-reduced-motion:reduce){.demo-ripple{animation:none}}
-    </style>
-    <script>
-      (function () {
-        // Build a <video> from a data-* holder. Called only after a user
-        // gesture, so play() (with sound, for the inline player) is allowed.
-        function buildVideo(holder, className, opts) {
-          var v = document.createElement('video');
-          v.className = className;
-          v.controls = true;
-          v.setAttribute('playsinline', '');
-          v.preload = 'auto';
-          if (opts && opts.muted) { v.muted = true; v.loop = true; }
-          if (holder.dataset.poster) v.poster = holder.dataset.poster;
-          [['mp4', 'video/mp4'], ['webm', 'video/webm']].forEach(function (pair) {
-            var src = holder.dataset[pair[0]];
-            if (!src) return;
-            var s = document.createElement('source');
-            s.src = src;
-            s.type = pair[1];
-            v.appendChild(s);
-          });
-          return v;
-        }
-        function tryPlay(v) {
-          var p = v.play();
-          if (p && p.catch) p.catch(function () {});
-        }
-
-        // Inline teaser: poster + play button → real player on first click.
-        document.querySelectorAll('.hero-demo-video__frame[data-demo-video]').forEach(function (frame) {
-          var facade = frame.querySelector('[data-play-demo]');
-          if (!facade) return;
-          facade.addEventListener('click', function () {
-            var v = buildVideo(frame, 'hero-demo-video__player');
-            frame.replaceChild(v, facade);
-            tryPlay(v);
-          });
-        });
-
-        // Pop-in: player created on first open, paused on close.
-        var modal = document.getElementById('demoModal');
-        var stage = document.getElementById('demoModalStage');
-        if (!modal || !stage) return;
-        var video = null;
-        function open() {
-          if (!video) {
-            video = buildVideo(stage, 'demo-modal__player', { muted: true });
-            stage.appendChild(video);
-          }
-          modal.hidden = false;
-          document.body.classList.add('demo-open');
-          tryPlay(video);
-        }
-        function close() {
-          if (video) video.pause();
-          modal.hidden = true;
-          document.body.classList.remove('demo-open');
-        }
-        document.querySelectorAll('[data-open-demo]').forEach(function (btn) {
-          btn.addEventListener('click', open);
-        });
-        document.querySelectorAll('[data-close-demo]').forEach(function (el) {
-          el.addEventListener('click', close);
-        });
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape' && !modal.hidden) close();
-        });
-      })();
-    </script>
-  {{ end }}
 
   {{ with .Params.fun_facts }}
     {{ if .enable }}

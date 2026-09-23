@@ -20,7 +20,7 @@ banner:
     icon: "fas fa-calculator"
     link: "blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/"
 
-  image: "images/teamwheels_demo_image.svg"
+  image: "images/teamwheels_demo_image_fr.svg"   # version FR (textes des bulles traduits)
 
 # brands
 brands:
@@ -38,6 +38,14 @@ features:
   enable: true
   section: "features"
 
+# infographie « comment ça marche » — affichée sous le hero (l'image
+# `banner.image` ci-dessus), la vidéo de démo occupant la colonne droite du hero.
+infographic:
+  enable: true
+  subtitle: "Comment ça marche"
+  title: "Un trajet proposé, un collègue trouvé"
+  description: "Un salarié propose son trajet dans Teams, un collègue cherche le même : TeamWheels les met en relation automatiquement, envoie les rappels et comptabilise le CO₂ évité."
+
 # démo vidéo — "Voir en action". L'accueil n'est PAS la watch page de la
 # vidéo : il affiche un poster « clic pour lire » (le <video> n'est créé
 # qu'au clic, Google n'y trouve donc aucune vidéo) et renvoie vers
@@ -47,7 +55,7 @@ video_demo:
   enable: true
   button_label: "Voir en action"
   title: "Découvrez TeamWheels en action"
-  # description est affichée sous le poster ; uploadDate / duration restent
+  # description n'est plus affichée sur l'accueil (vidéo dans le hero) ; uploadDate / duration restent
   # ici par parité avec demo.md (données structurées émises sur /demo/ seulement).
   description: "Démonstration de 60 secondes de TeamWheels — l'application de covoiturage et de gestion des trajets domicile-travail intégrée nativement à Microsoft Teams. Découvrez le matching de trajets, le bot conversationnel et le tableau de bord des émissions Scope 3."
   uploadDate: "2026-07-13"
