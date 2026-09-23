@@ -25,6 +25,8 @@
     <img src="{{ "images/microsoft-teams-icon.svg" | relURL }}" alt="" width="22" height="22" class="btn-teams-install__icon" aria-hidden="true">{{ i18n "teams_install_button" }}
   </a>
   {{- if $.trust }}
+  {{/* perks + badges share one box, so the badges sit centred under the perks line */}}
+  <div class="teams-install__proof">
   <ul class="teams-install__perks list-unstyled small">
     {{- range split (i18n "teams_install_trust") " · " }}
     <li><i class="fas fa-check-circle" aria-hidden="true"></i>{{ . }}</li>
@@ -39,6 +41,7 @@
       <i class="fas fa-shield-alt" aria-hidden="true"></i>
       <span><small>{{ i18n "ms_attestation_badge_top" }}</small><strong>{{ i18n "ms_attestation_badge_bottom" }}</strong></span>
     </a>
+  </div>
   </div>
   {{- end }}
   {{- if $.admin }}
