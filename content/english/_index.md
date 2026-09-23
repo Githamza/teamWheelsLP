@@ -11,11 +11,11 @@ banner:
   description: "Reduce Scope 3 emissions, cut parking demand by 30%, and save employees $2,000/year — zero extra apps, deployed in 5 minutes."
   button:
     enable: true
-    button_label: "Start free 30-day trial"
+    button_label: "Get a demo"
     icon: "fas fa-arrow-right"
     link: "contact/"
   secondary_button:
-    enable: true
+    enable: false   # replaced by the "Add to Microsoft Teams" CTA
     label: "Calculate your savings"
     icon: "fas fa-calculator"
     link: "blog/carpooling-savings-calculator-corporate-co2-roi-2026/"
@@ -25,7 +25,7 @@ banner:
 # brands
 brands:
   enable: false
-  title: "Certified & Compliant"
+  title: "Secure & Compliant"
   images:
   - "images/clients/01.png"
   - "images/clients/02.png"
@@ -134,10 +134,10 @@ image_and_content_blocks:
 
   - enable: true
     subtitle: "Enterprise Security & Compliance"
-    title: "A Certified, Secure Employee Mobility Solution"
+    title: "A Secure, IT-Approved Employee Mobility Solution"
     image: "images/why_use_teamWheels.png"
     content_position: "left"
-    content: "Microsoft Partner Certified, Azure AD SSO, GDPR compliant — TeamWheels meets enterprise security standards with zero extra credentials or infrastructure changes.
+    content: "Published on the Microsoft Teams Store with a [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/en-us/microsoft-365-app-certification/teams/hmz-digital-teamwheels), Microsoft Entra ID SSO, GDPR compliant — TeamWheels meets enterprise security standards with zero extra credentials or infrastructure changes.
 
     [Read more →](benefits/#security)
     "
@@ -168,7 +168,7 @@ call_to_action:
   enable: true
   title: "Launch an Employee Carpooling Program in Your Organization"
   subtitle: "Join companies across the USA, UK, and Canada reducing Scope 3 emissions and improving employee well-being. <br><strong>Free 30-day trial</strong> + guided deployment included. <em>No credit card required.</em>"
-  button_label : "Start my free trial →"
+  button_label : "Get a guided demo →"
   button_link : "contact/"
   image : "images/cta.png"
 

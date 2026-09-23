@@ -44,7 +44,7 @@
   translation: Email Address
 
 - id: hero_email_label
-  translation: Enter your work email to get started
+  translation: Prefer a guided demo? Leave your work email
 
 - id: hero_email_placeholder
   translation: name@company.com
@@ -158,3 +158,38 @@
 
 - id: sc_intro_subtitle
   translation: Free TeamWheels tool
+
+# Microsoft Teams app install CTA (partials/teams-install.html)
+- id: ms_locale
+  translation: en-us
+- id: teams_install_button
+  translation: Add to Microsoft Teams
+- id: teams_install_button_short
+  translation: Try it in Teams
+- id: teams_install_trust
+  translation: Free for 30 days · No credit card · Live in 5 minutes
+- id: teams_admin_link
+  translation: Not a Teams admin? Send the request to your IT team
+- id: teams_store_badge
+  translation: Available on the Microsoft Teams Store
+- id: ms_attestation_badge
+  translation: Microsoft 365 Publisher Attestation
+- id: teams_admin_mail_subject
+  translation: "Request: install the TeamWheels app in Microsoft Teams"
+- id: teams_admin_mail_body
+  translation: |
+    Hi,
+
+    I'd like to trial TeamWheels, an employee carpooling app built into Microsoft Teams (free for 30 days, no credit card).
+
+    Could you allow it for our organization?
+
+    - Install in Teams: {{ .Install }}
+    - Microsoft Marketplace listing: {{ .Marketplace }}
+    - Microsoft 365 Publisher Attestation (security, data handling, compliance): {{ .Attestation }}
+
+    Key points: sign-in through Microsoft Entra ID (your Conditional Access policies apply), data hosted in France on Azure and encrypted at rest, no data shared with third parties, GDPR compliant.
+
+    In the Teams admin center: Teams apps > Manage apps > search "TeamWheels" > Allow.
+
+    Thanks!

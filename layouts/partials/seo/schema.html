@@ -170,11 +170,14 @@
   },
   "sameAs": [
     "https://www.linkedin.com/company/teamwheels/"
+    {{- with site.Params.teams_app }}{{ if .enable }}
+    , {{ printf .marketplace_url "en-us" | jsonify | safeJS }}
+    , {{ printf .attestation_url "en-us" | jsonify | safeJS }}
+    {{- end }}{{ end }}
     {{/* Add the following once each profile is live. Wikidata is the
          highest-priority entry — it's the canonical entity disambiguation
          source for ChatGPT, Gemini and Perplexity.
     , "https://www.wikidata.org/wiki/Q__________"
-    , "https://appsource.microsoft.com/en-us/product/web-apps/<publisher>.<offer>"
     , "https://www.crunchbase.com/organization/teamwheels"
     , "https://twitter.com/teamwheelsapp"
     , "https://www.youtube.com/@teamwheels"
@@ -205,6 +208,11 @@
   "description": "Enterprise employee carpooling platform integrated into Microsoft Teams. Reduce Scope 3 commute emissions, cut parking costs by 30%, and boost employee retention.",
   "url": "https://www.teamwheelsapp.com",
   "screenshot": "https://www.teamwheelsapp.com/images/homeBannerimg2.png",
+  {{- with site.Params.teams_app }}{{ if .enable }}
+  "installUrl": {{ .install_url | jsonify | safeJS }},
+  "downloadUrl": {{ printf .marketplace_url (i18n "ms_locale") | jsonify | safeJS }},
+  "sameAs": [{{ printf .marketplace_url (i18n "ms_locale") | jsonify | safeJS }}, {{ printf .attestation_url (i18n "ms_locale") | jsonify | safeJS }}],
+  {{- end }}{{ end }}
   "featureList": [
     "Microsoft Teams native integration",
     "Conversational carpooling bot",

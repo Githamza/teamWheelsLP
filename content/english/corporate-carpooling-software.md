@@ -52,7 +52,7 @@ image_and_content_blocks:
 
     * **5-minute deployment** — One Teams admin, a few clicks, and your employee carpool program is live
 
-    * **Microsoft Partner Certified** — Validated application on Microsoft AppSource, trusted by enterprise IT teams
+    * **Published on the Microsoft Teams Store** — Validated by Microsoft before publication, with a public [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/en-us/microsoft-365-app-certification/teams/hmz-digital-teamwheels) your IT team can review
 
     [See exactly how it works →](/en/how-it-works/)
     "

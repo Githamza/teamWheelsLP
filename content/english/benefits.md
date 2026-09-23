@@ -75,12 +75,12 @@ image_and_content_blocks:
   - enable: true
     anchor: "security"
     subtitle: "Enterprise Security & Compliance"
-    title: "A Certified, Secure Employee Mobility Solution"
+    title: "A Secure, IT-Approved Employee Mobility Solution"
     image: "images/why_use_teamWheels.png"
     content_position: "left"
     content: "TeamWheels meets the strictest enterprise security requirements to protect your organization and your employees' privacy.
 
-    * **Microsoft Partner Certified** — Validated application on Microsoft AppSource, trusted by enterprise IT teams
+    * **Published on the Microsoft Teams Store** — Validated by Microsoft before publication, with a public [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/en-us/microsoft-365-app-certification/teams/hmz-digital-teamwheels) documenting for your IT team: Azure hosting in France, encryption at rest, no data shared with third parties
 
     * **Enterprise SSO** — Secure authentication via Azure AD / Entra ID — no separate credentials needed
 
@@ -107,7 +107,7 @@ call_to_action:
   enable: true
   title: "Launch an Employee Carpooling Program in Your Organization"
   subtitle: "Join forward-thinking companies across the USA, UK, and Canada that are reducing commute costs, cutting Scope 3 emissions, and improving employee well-being with TeamWheels. <br><br> <strong>Get started:</strong> Free 30-day trial + guided deployment for your HR and sustainability teams. <br> <em>Limited spots for personalized onboarding.</em>"
-  button_label: "Start my free trial →"
+  button_label: "Get a guided demo →"
   button_link: "contact/"
   image: "images/cta.png"
 

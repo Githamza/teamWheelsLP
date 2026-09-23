@@ -279,7 +279,9 @@ date: {{ .Format "2006-01-02" }}
 
 {{ end -}}
 {{ with .button_label }}**{{ . | plainify | strings.TrimRight "→ " }}**{{ with $.Params.call_to_action.button_link }} → {{ . | absLangURL }}{{ end }}
-
+{{ with site.Params.teams_app }}{{ if .enable }}
+**{{ i18n "teams_install_button" }}** ({{ i18n "teams_install_trust" }}) → {{ .install_url }}
+{{ end }}{{ end }}
 {{ end -}}
 {{- end -}}
 {{- end -}}

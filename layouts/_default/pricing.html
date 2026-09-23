@@ -28,7 +28,9 @@
           {{if .buy_now_btn_link}}
           <a class="btn btn-primary d-block" href="{{.buy_now_btn_link | absLangURL}}/">{{.buy_now_btn_label}}</a>
           {{end}}
-          {{if .free_trial_btn_link}}
+          {{if and .teams_install site.Params.teams_app.enable}}
+          {{ partial "teams-install.html" (dict "placement" "pricing" "admin" true "center" true) }}
+          {{else if .free_trial_btn_link}}
           <a class="btn btn-link d-block mt-1" href="{{.free_trial_btn_link | absLangURL}}/">{{.free_trial_btn_label}} &nbsp;<i class="fas fa-arrow-right small"></i></a>
           {{end}}
 

@@ -73,7 +73,7 @@ Voici pourquoi TeamWheels est la solution idéale pour surmonter le scepticisme 
 
 **Fidélisation et attractivité employeur renforcées :** Proposer un avantage de mobilité sécurisé et innovant prouve que vous vous souciez du bien-être financier de votre équipe et de la planète. 73 % des employés accordent de la valeur aux avantages liés au développement durable, ce qui vous donne un atout dans le recrutement.
 
-**Déploiement en 5 minutes :** Votre équipe informatique va adorer. TeamWheels est certifié partenaire Microsoft, totalement sécurisé et peut être déployé par un administrateur Teams en seulement cinq minutes, sans aucune conduite du changement requise.
+**Déploiement en 5 minutes :** Votre équipe informatique va adorer. TeamWheels est publié sur le Microsoft Teams Store avec une [Publisher Attestation Microsoft 365](https://learn.microsoft.com/fr-fr/microsoft-365-app-certification/teams/hmz-digital-teamwheels) consultable par votre DSI, et peut être déployé par un administrateur Teams en seulement cinq minutes, sans aucune conduite du changement requise.
 
 ## En conclusion
 

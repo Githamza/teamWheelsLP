@@ -44,7 +44,7 @@
   translation: Adresse e-mail
 
 - id: hero_email_label
-  translation: Entrez votre email professionnel pour démarrer
+  translation: Vous préférez une démo guidée ? Laissez votre email
 
 - id: hero_email_placeholder
   translation: nom@entreprise.com
@@ -158,3 +158,38 @@
 
 - id: sc_intro_subtitle
   translation: Outil gratuit TeamWheels
+
+# Microsoft Teams app install CTA (partials/teams-install.html)
+- id: ms_locale
+  translation: fr-fr
+- id: teams_install_button
+  translation: Installer dans Microsoft Teams
+- id: teams_install_button_short
+  translation: Essayer dans Teams
+- id: teams_install_trust
+  translation: Gratuit 30 jours · Sans carte bancaire · Prêt en 5 min
+- id: teams_admin_link
+  translation: Pas admin Teams ? Envoyez la demande à votre service IT
+- id: teams_store_badge
+  translation: Disponible sur le Microsoft Teams Store
+- id: ms_attestation_badge
+  translation: Attestation Microsoft 365 publiée
+- id: teams_admin_mail_subject
+  translation: Demande d'installation de l'application Teams « TeamWheels »
+- id: teams_admin_mail_body
+  translation: |
+    Bonjour,
+
+    Je souhaiterais tester TeamWheels, une application de covoiturage domicile-travail intégrée à Microsoft Teams (essai gratuit 30 jours, sans carte bancaire).
+
+    Pourriez-vous l'autoriser pour notre organisation ?
+
+    - Installer dans Teams : {{ .Install }}
+    - Fiche Microsoft Marketplace : {{ .Marketplace }}
+    - Attestation Microsoft 365 (sécurité, données, conformité) : {{ .Attestation }}
+
+    Points clés : connexion via Microsoft Entra ID (les politiques d'accès conditionnel s'appliquent), données hébergées en France sur Azure et chiffrées au repos, aucune donnée transmise à des tiers, conformité RGPD.
+
+    Dans le centre d'administration Teams : Applications Teams > Gérer les applications > rechercher « TeamWheels » > Autoriser.
+
+    Merci !

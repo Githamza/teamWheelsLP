@@ -123,7 +123,7 @@ call_to_action:
   enable: true
   title: "🚀 Prêt à transformer vos trajets domicile-travail ?"
   subtitle: "Rejoignez les entreprises qui facilitent le covoiturage de leurs équipes et réduisent leur empreinte carbone. <br><br> <strong>Offre de lancement :</strong> Essai gratuit 30 jours + déploiement accompagné."
-  button_label : "Commencer mon essai gratuit →"
+  button_label : "Recevoir une démo guidée →"
   button_link : "contact/"
   image : "images/cta.png"
 

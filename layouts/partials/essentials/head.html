@@ -102,6 +102,17 @@ function gtag_report_conversion(url){
   gtag('event','conversion',{'send_to':'{{ site.Params.google_ads_id }}/s8otCKrN2aYcEIe2rsIp','event_callback':callback});
   return false;
 }
+/* Outbound CTA tracking: any element with data-track="<event>" sends that GA4
+   event (+ a Bing UET event) with its data-placement. Used by the Teams install
+   CTAs (partials/teams-install.html). The links open in a new tab, so the hit
+   is never cut off by navigation. */
+document.addEventListener('click',function(e){
+  var el=e.target&&e.target.closest?e.target.closest('[data-track]'):null;
+  if(!el)return;
+  var ev=el.getAttribute('data-track'),pl=el.getAttribute('data-placement')||'';
+  gtag('event',ev,{placement:pl,link_url:el.href||'',language:document.documentElement.lang||''});
+  window.uetq=window.uetq||[];window.uetq.push('event',ev,{event_label:pl});
+});
 </script>
 
 <!-- Deferred third-party scripts (GA/gtag stays above so verification tools detect it) -->

@@ -30,6 +30,13 @@
               <h1 class="title text-xl mb-3">{{ .title | markdownify }}</h1>
               <p class="mb-4">{{ .description | markdownify }}</p>
 
+              {{/* Primary CTA: install from the Teams Store (trial starts on
+                   install). The email form below stays as the guided-demo
+                   path and keeps the Google Ads lead conversion. */}}
+              <div class="mb-4">
+                {{ partial "teams-install.html" (dict "placement" "hero" "admin" true "trust" true) }}
+              </div>
+
               {{ with .button }}
                 {{ if .enable }}
                   <form action="{{ site.Params.contact_info.contact_form_action }}" method="POST" class="hero-cta-form">

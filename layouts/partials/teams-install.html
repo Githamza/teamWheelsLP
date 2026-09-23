@@ -1,0 +1,47 @@
+{{- /*
+  "Add to Microsoft Teams" CTA — the app is on the Teams Store and the trial
+  starts as soon as it is installed, so this is the primary conversion path.
+
+  Call: {{ partial "teams-install.html" (dict "placement" "hero" "admin" true "trust" true "center" false) }}
+    placement  GA4 `placement` param — which CTA was clicked (hero, cta, pricing, blog…)
+    admin      show the "Not a Teams admin?" mailto for the IT team (HR buyers
+               often cannot install apps in their tenant)
+    trust      show the "free 30 days / no card" line + store & attestation badges
+    center     center-align the block
+
+  Clicks are reported to GA4 by the delegated [data-track] listener in
+  essentials/head.html.
+*/ -}}
+{{- with site.Params.teams_app -}}
+{{- if .enable -}}
+{{- $loc := i18n "ms_locale" -}}
+{{- $install := .install_url -}}
+{{- $market := printf .marketplace_url $loc -}}
+{{- $attest := printf .attestation_url $loc -}}
+{{- $p := $.placement | default "unknown" -}}
+<div class="teams-install{{ if $.center }} text-center{{ end }}">
+  <a class="btn btn-primary btn-teams-install" href="{{ $install }}" target="_blank" rel="noopener"
+     data-track="teams_install_click" data-placement="{{ $p }}">
+    <img src="{{ "images/microsoft-teams-icon.svg" | relURL }}" alt="" width="22" height="22" class="btn-teams-install__icon" aria-hidden="true">{{ i18n "teams_install_button" }}
+  </a>
+  {{- if $.trust }}
+  <p class="teams-install__trust small mt-2 mb-1">{{ i18n "teams_install_trust" }}</p>
+  <p class="teams-install__badges small mb-1">
+    <a href="{{ $market }}" target="_blank" rel="noopener" data-track="teams_marketplace_click" data-placement="{{ $p }}">
+      <i class="fas fa-store" aria-hidden="true"></i> {{ i18n "teams_store_badge" }}</a>
+    <span aria-hidden="true">·</span>
+    <a href="{{ $attest }}" target="_blank" rel="noopener" data-track="ms_attestation_click" data-placement="{{ $p }}">
+      <i class="fas fa-shield-alt" aria-hidden="true"></i> {{ i18n "ms_attestation_badge" }}</a>
+  </p>
+  {{- end }}
+  {{- if $.admin }}
+  {{- $body := i18n "teams_admin_mail_body" (dict "Install" $install "Marketplace" $market "Attestation" $attest) -}}
+  {{- $mailto := printf "mailto:?subject=%s&body=%s" (replace (urlquery (i18n "teams_admin_mail_subject")) "+" "%20") (replace (urlquery $body) "+" "%20") -}}
+  <p class="teams-install__admin small mb-0">
+    <a href="{{ $mailto | safeURL }}" data-track="teams_admin_request_click" data-placement="{{ $p }}">
+      <i class="fas fa-envelope" aria-hidden="true"></i> {{ i18n "teams_admin_link" }}</a>
+  </p>
+  {{- end }}
+</div>
+{{- end -}}
+{{- end -}}

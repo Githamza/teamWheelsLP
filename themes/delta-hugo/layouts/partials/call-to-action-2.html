@@ -13,7 +13,11 @@
                   <p class="mb-4">
                     {{ .Params.call_to_action.subtitle | markdownify }}
                   </p>
+                  <div class="mb-4">
+                    {{ partial "teams-install.html" (dict "placement" "cta" "admin" true "trust" true) }}
+                  </div>
                   {{ if .Params.call_to_action.button_label }}
+                    {{ if site.Params.teams_app.enable }}<p class="small mb-2">{{ i18n "hero_email_label" }}</p>{{ end }}
                     <form
                       action="{{ site.Params.contact_info.contact_form_action }}"
                       method="POST">
