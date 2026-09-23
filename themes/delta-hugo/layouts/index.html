@@ -84,7 +84,7 @@
                         decoding="async"
                         alt="{{ with $vd }}{{ .title }}{{ end }}" />
                     {{ end }}
-                    <span class="hero-demo-video__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" focusable="false"><path d="M8 5v14l11-7z"/></svg></span>
+                    <span class="hero-demo-video__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor" focusable="false"><path d="M8 5.6v12.8a1.2 1.2 0 0 0 1.84 1.02l10.2-6.4a1.2 1.2 0 0 0 0-2.04L9.84 4.58A1.2 1.2 0 0 0 8 5.6z"/></svg></span>
                     <span class="hero-demo-video__label" aria-hidden="true"><i class="fas fa-play-circle"></i> {{ $vdLabel }}{{ with $vd.duration_seconds }} · {{ . }} s{{ end }}</span>
                   </button>
                 </div>
@@ -265,15 +265,18 @@
       .hero-demo-video__frame{position:relative;width:100%;aspect-ratio:16/9;border-radius:.75rem;overflow:hidden;background:#0b132b;box-shadow:0 1.25rem 60px rgba(11,19,43,.28)}
       .hero-demo-video__facade{position:relative;display:block;width:100%;height:100%;padding:0;border:0;background:transparent;cursor:pointer}
       .hero-demo-video__poster{width:100%;height:100%;display:block;object-fit:contain}
-      .hero-demo-video__play{position:absolute;inset:0;margin:auto;width:5rem;height:5rem;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(91,95,199,.95);color:#fff;box-shadow:0 .5rem 24px rgba(0,0,0,.35);transition:transform .2s ease;animation:demoPulse 2.4s cubic-bezier(.4,0,.2,1) infinite}
-      .hero-demo-video__play svg{margin-left:.2rem}
-      .hero-demo-video__facade:hover .hero-demo-video__play,.hero-demo-video__facade:focus-visible .hero-demo-video__play{transform:scale(1.08);animation-play-state:paused}
+      /* Play button: gradient disc with a large rounded triangle, a frosted
+         halo ring around it and a soft pulse; grows slightly on hover. */
+      .hero-demo-video__play{position:absolute;inset:0;margin:auto;width:5.5rem;height:5.5rem;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#7b82d8 0%,#4d51a9 100%);color:#fff;box-shadow:0 0 0 .6rem rgba(255,255,255,.55),0 .75rem 30px rgba(11,19,43,.35);transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s ease}
+      .hero-demo-video__play::after{content:"";position:absolute;inset:-.6rem;border-radius:50%;border:2px solid rgba(123,130,216,.6);animation:demoPulse 2.4s cubic-bezier(.4,0,.2,1) infinite;pointer-events:none}
+      .hero-demo-video__play svg{width:2.6rem;height:2.6rem;margin-left:.3rem;filter:drop-shadow(0 2px 4px rgba(11,19,43,.25))}
+      .hero-demo-video__facade:hover .hero-demo-video__play,.hero-demo-video__facade:focus-visible .hero-demo-video__play{transform:scale(1.08);box-shadow:0 0 0 .75rem rgba(255,255,255,.7),0 1rem 36px rgba(11,19,43,.4)}
       .hero-demo-video__label{position:absolute;left:.75rem;bottom:.75rem;padding:.3rem .7rem;border-radius:999px;background:rgba(11,19,43,.72);color:#fff;font-size:.8rem;font-weight:600;line-height:1.2}
       .hero-demo-video__player{width:100%;height:100%;display:block;background:#0b132b;object-fit:contain}
       .hero-demo-video__link{font-weight:500}
       .hero-infographic__lede{max-width:42rem;margin-left:auto;margin-right:auto}
-      @keyframes demoPulse{0%{box-shadow:0 0 0 0 rgba(123,130,216,.55)}70%{box-shadow:0 0 0 18px rgba(123,130,216,0)}100%{box-shadow:0 0 0 0 rgba(123,130,216,0)}}
-      @media(prefers-reduced-motion:reduce){.hero-demo-video__play{animation:none}}
+      @keyframes demoPulse{0%{transform:scale(1);opacity:.9}100%{transform:scale(1.35);opacity:0}}
+      @media(prefers-reduced-motion:reduce){.hero-demo-video__play::after{animation:none;display:none}}
     </style>
     <script>
       (function () {
