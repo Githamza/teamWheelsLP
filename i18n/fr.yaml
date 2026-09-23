@@ -168,12 +168,18 @@
   translation: Essayer dans Teams
 - id: teams_install_trust
   translation: Gratuit 30 jours · Sans carte bancaire · Prêt en 5 min
+- id: teams_admin_question
+  translation: "Pas admin Teams ?"
 - id: teams_admin_link
-  translation: Pas admin Teams ? Envoyez la demande à votre service IT
-- id: teams_store_badge
-  translation: Disponible sur le Microsoft Teams Store
-- id: ms_attestation_badge
-  translation: Attestation Microsoft 365 publiée
+  translation: "Envoyez la demande à votre IT"
+- id: teams_store_badge_top
+  translation: "Disponible sur le"
+- id: teams_store_badge_bottom
+  translation: "Microsoft Teams Store"
+- id: ms_attestation_badge_top
+  translation: "Attestation publiée"
+- id: ms_attestation_badge_bottom
+  translation: "Microsoft 365"
 - id: teams_admin_mail_subject
   translation: Demande d'installation de l'application Teams « TeamWheels »
 - id: teams_admin_mail_body

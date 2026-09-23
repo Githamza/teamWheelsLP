@@ -168,12 +168,18 @@
   translation: Try it in Teams
 - id: teams_install_trust
   translation: Free for 30 days · No credit card · Live in 5 minutes
+- id: teams_admin_question
+  translation: "Not a Teams admin?"
 - id: teams_admin_link
-  translation: Not a Teams admin? Send the request to your IT team
-- id: teams_store_badge
-  translation: Available on the Microsoft Teams Store
-- id: ms_attestation_badge
-  translation: Microsoft 365 Publisher Attestation
+  translation: "Send the request to your IT team"
+- id: teams_store_badge_top
+  translation: "Available on the"
+- id: teams_store_badge_bottom
+  translation: "Microsoft Teams Store"
+- id: ms_attestation_badge_top
+  translation: "Publisher Attestation"
+- id: ms_attestation_badge_bottom
+  translation: "Microsoft 365"
 - id: teams_admin_mail_subject
   translation: "Request: install the TeamWheels app in Microsoft Teams"
 - id: teams_admin_mail_body

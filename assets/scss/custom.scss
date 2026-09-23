@@ -602,21 +602,90 @@ $gutters: (
 }
 
 .teams-install {
-  &__trust {
+  &__perks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35rem 1.1rem;
+    margin: .9rem 0 1rem;
     font-weight: 600;
+
+    li {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+    }
+
+    i {
+      color: #1aa260;
+    }
   }
 
-  &__badges,
-  &__admin {
-    a {
+  &__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6rem;
+    margin-bottom: .9rem;
+  }
+
+  &__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    padding: .45rem .9rem .45rem .6rem;
+    border: 1px solid rgba(91, 95, 199, .25);
+    border-radius: .6rem;
+    background: rgba(255, 255, 255, .75);
+    color: inherit;
+    line-height: 1.15;
+    text-decoration: none;
+    transition: border-color .2s ease, box-shadow .2s ease;
+
+    &:hover,
+    &:focus-visible {
       color: inherit;
-      text-decoration: underline;
-      text-underline-offset: 2px;
+      border-color: #5b5fc7;
+      box-shadow: 0 .25rem 14px rgba(91, 95, 199, .18);
+    }
+
+    img {
+      flex-shrink: 0;
+    }
+
+    i {
+      font-size: 1.35rem;
+      color: #5b5fc7;
+      width: 26px;
+      text-align: center;
     }
 
     span {
-      margin: 0 .35rem;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
     }
+
+    small {
+      font-size: .7rem;
+      opacity: .75;
+    }
+
+    strong {
+      font-size: .85rem;
+    }
+  }
+
+  &__admin {
+    opacity: .85;
+
+    a {
+      font-weight: 600;
+      white-space: nowrap;
+    }
+  }
+
+  &.text-center &__perks,
+  &.text-center &__badges {
+    justify-content: center;
   }
 
   @media (max-width: 575px) {
@@ -624,6 +693,15 @@ $gutters: (
       white-space: normal;
       justify-content: center;
       width: 100%;
+    }
+
+    &__perks,
+    &__badges {
+      justify-content: center;
+    }
+
+    &__admin {
+      text-align: center;
     }
   }
 }
