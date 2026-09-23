@@ -75,7 +75,7 @@ fun_facts:
     counter: "900"
     counter_suffix: "€"
     counter_prefix: ""
-    content: "par an et par salarié avec le forfait mobilités durables (cumul abonnement transport)"
+    content: "par salarié et par an (FMD + abonnement transport)"
 
   - icon: "fas fa-clock"
     counter: "5"
