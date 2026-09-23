@@ -126,7 +126,7 @@ Le trajet domicile-travail est l'une des premières sources de stress des salari
 | Klaxit / Karos | Covoiturage courte distance | ✅ Oui | ❌ | ❌ | ⚡ Partiel | ⚡ Limité |
 | **TeamWheels** | **Covoiturage corporate + flotte** | **✅ Natif** | **✅ Complet** | **✅ Natif Teams** | **✅ 100 % conforme** | **✅ Temps réel** |
 
-La différence fondamentale tient à deux points : l'intégration native dans **Microsoft Teams** et la couverture complète du cycle de mobilité — du trajet domicile-bureau aux déplacements inter-sites avec la flotte d'entreprise.
+La différence fondamentale tient à deux points : l'intégration native dans **Microsoft Teams** et la couverture complète du cycle de mobilité — du trajet domicile-bureau aux déplacements inter-sites avec la flotte d'entreprise. Le paysage a d'ailleurs bougé en 2026 : BlaBlaCar cède sa branche domicile-travail à Karos, et nous détaillons [ce que ce rachat change pour les employeurs](/fr/blog/blablacar-daily-rachat-karos-alternatives-entreprise/).
 
 > **Le covoiturage d'entreprise n'est plus un avantage optionnel : c'est une obligation de reporting et un levier de compétitivité RH.**
 

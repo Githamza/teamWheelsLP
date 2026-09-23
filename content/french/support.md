@@ -1,6 +1,7 @@
 ---
 title: "Support"
-description: "Obtenez de l'aide sur TeamWheels, l'application de covoiturage entreprise pour Microsoft Teams : aide dans l'application, support par e-mail, délais de réponse et questions fréquentes. Sans compte."
+seoTitle: "Support TeamWheels : aide et contact pour l'application"
+description: "Aide sur TeamWheels, l'application de covoiturage entreprise pour Microsoft Teams : aide en ligne, support par e-mail, délais de réponse et questions fréquentes."
 draft: false
 layout: "legal"
 last_updated: "10 septembre 2026"

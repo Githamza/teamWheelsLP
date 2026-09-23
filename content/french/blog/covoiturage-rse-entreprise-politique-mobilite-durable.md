@@ -143,7 +143,7 @@ Une politique RSE crédible se pilote par les chiffres. Voici les **KPI essentie
 
 ## 6. Du Plan de Mobilité Employeur à l'action concrète {#pdm}
 
-Depuis la loi LOM, les entreprises de plus de 50 salariés sur un même site doivent intégrer un volet mobilité dans leurs négociations annuelles obligatoires — le **Plan de Mobilité Employeur (PDM)**. Trop souvent, ce plan reste un document formel sans traduction opérationnelle.
+Depuis la loi LOM, les entreprises de plus de 50 salariés sur un même site doivent intégrer un volet mobilité dans leurs négociations annuelles obligatoires — le **Plan de Mobilité Employeur (PDM)**. Trop souvent, ce plan reste un document formel sans traduction opérationnelle. Notre guide du [plan de mobilité employeur en 4 étapes](/fr/blog/plan-de-mobilite-employeur-4-etapes-modele-2026/) fournit la méthode et un modèle prêt à remplir.
 
 Le covoiturage est le moyen le plus direct de **donner corps au PDM** :
 
