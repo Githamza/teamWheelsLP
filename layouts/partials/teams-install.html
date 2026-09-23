@@ -8,6 +8,7 @@
                often cannot install apps in their tenant)
     trust      show the "free 30 days / no card" line + store & attestation badges
     center     center-align the block
+    block      full-width install button (hero)
 
   Clicks are reported to GA4 by the delegated [data-track] listener in
   essentials/head.html.
@@ -20,7 +21,7 @@
 {{- $attest := printf .attestation_url $loc -}}
 {{- $p := $.placement | default "unknown" -}}
 <div class="teams-install{{ if $.center }} text-center{{ end }}">
-  <a class="btn btn-primary btn-teams-install" href="{{ $install }}" target="_blank" rel="noopener"
+  <a class="btn btn-primary btn-teams-install{{ if $.block }} btn-teams-install--block{{ end }}" href="{{ $install }}" target="_blank" rel="noopener"
      data-track="teams_install_click" data-placement="{{ $p }}">
     <img src="{{ "images/microsoft-teams-icon.svg" | relURL }}" alt="" width="22" height="22" class="btn-teams-install__icon" aria-hidden="true">{{ i18n "teams_install_button" }}
   </a>

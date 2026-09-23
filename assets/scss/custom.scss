@@ -595,6 +595,12 @@ $gutters: (
     padding: 2px;
   }
 
+  &--block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
   &.btn-sm .btn-teams-install__icon {
     width: 18px;
     height: 18px;
