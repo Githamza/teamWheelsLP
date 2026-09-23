@@ -383,56 +383,6 @@ $gutters: (
 }
 
 // ─────────────────────────────────────────────────────────────
-// Grouped navigation dropdowns (desktop / ≥xl).
-// The theme (_navigation.scss) draws the panel background with a
-// `::after` pseudo whose height is *animated* from 0 → 100% while the
-// menu itself is forced to height:0. With more than a couple of items
-// that animation leaves the lower entries (Benefits, Watch Demo)
-// sitting outside the white box, on top of the page. Replace that
-// fragile mechanism with a plain solid panel that always fits its
-// content, keeping the hover-to-open behaviour.
-// ─────────────────────────────────────────────────────────────
-@media (min-width: 1200px) {
-  .navbar .nav-item.dropdown > .dropdown-menu {
-    height: auto !important;              // undo the theme's height:0
-    // The theme pins the panel to `width: 220px`; with the longer product
-    // labels ("Plateforme de covoiturage en marque blanche") the nowrap
-    // items spilled past the white box, over the hero image. Let the panel
-    // shrink-to-fit its widest item instead (it stays centred under the
-    // trigger thanks to the theme's translateX(-50%)).
-    width: auto !important;
-    min-width: 13rem;
-    max-width: 28rem;
-    background-color: #fff !important;    // solid, opaque panel
-    border-radius: 0.5rem;
-    padding: 0.4rem;
-    box-shadow: 0 0.9rem 2rem rgba(11, 19, 43, 0.14);
-
-    // Kill the animated white pseudo-background that was clipping items.
-    &::after {
-      display: none !important;
-    }
-
-    // The theme staggers items in with opacity:0 + translateX; ensure
-    // they're fully visible once the panel is open.
-    li {
-      opacity: 1 !important;
-      transform: none !important;
-    }
-  }
-
-  .navbar .nav-item.dropdown .dropdown-item {
-    border-radius: 0.375rem;
-    padding: 0.5rem 0.85rem;
-    font-weight: 500;
-    white-space: nowrap;
-    // Safety net: a label longer than the panel's max-width wraps instead
-    // of overflowing.
-    overflow-wrap: anywhere;
-  }
-}
-
-// ─────────────────────────────────────────────────────────────
 // Flag-based language switcher (replaces the old <select>).
 // Shows FR / EN with an inline SVG flag so the active + available
 // languages read at a glance.
@@ -455,7 +405,7 @@ $gutters: (
     color: $text-dark;
     text-decoration: none;
     opacity: 0.55;
-    transition: opacity 0.15s ease, background-color 0.15s ease;
+    transition: opacity .25s ease, background-color .25s ease, color .25s ease;
 
     &:hover,
     &:focus-visible {

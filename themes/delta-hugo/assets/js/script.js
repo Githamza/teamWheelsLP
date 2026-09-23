@@ -29,24 +29,9 @@ $(window).on('load', function () {
 $(document).ready(function () {
 	'use strict';
 
-	// dropdown height fix
-	function dropdownHeightFix() {
-		var width = $(window).width();
-		if (width > 1200) {
-			$('.navbar-nav').find('.dropdown-menu').each(function (idx, item) {
-				$(this).height($(this).height());
-			});
-		}
-		if (width < 1200) {
-			$('.navbar-nav').find('.dropdown-menu').each(function (idx, item) {
-				$(this).css('height', 'auto');
-			});
-		}
-	}
-	dropdownHeightFix();
-	$(window).resize(function() {
-		dropdownHeightFix();
-	});
+	// (The old "dropdown height fix" froze each submenu's height at load for
+	// the theme's height animation; the CSS panel animation in
+	// _navigation.scss doesn't need it, and the frozen height clipped menus.)
 
 	// menuHumBurger icon toggle Init
 	function menuHumBurgerIcon() {
