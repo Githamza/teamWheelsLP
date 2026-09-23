@@ -20,7 +20,7 @@ banner:
     icon: "fas fa-calculator"
     link: "blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/"
 
-  image: "images/teamwheels_demo_image.svg"
+  image: "images/teamwheels_demo_image_fr.svg"   # version FR (textes des bulles traduits)
 
 # brands
 brands:

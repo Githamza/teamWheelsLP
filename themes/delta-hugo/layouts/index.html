@@ -224,7 +224,7 @@
                       width="1223"
                       height="1194"
                       src="{{ $imgOrig.RelPermalink }}"
-                      alt="TeamWheels - Covoiturage intégré à Microsoft Teams" />
+                      alt="{{ $ig.title | plainify }}" />
                   {{ else }}
                     {{ $imgXL:= $imgOrig.Resize "1000x webp" }}
                     {{ $imgLG:= $imgOrig.Resize "700x webp" }}
@@ -242,7 +242,7 @@
                         width="{{ $imgLG.Width }}"
                         height="{{ $imgLG.Height }}"
                         src="{{ $imgLG.RelPermalink }}"
-                        alt="TeamWheels - Covoiturage intégré à Microsoft Teams" />
+                        alt="{{ $ig.title | plainify }}" />
                     </picture>
                   {{ end }}
                 </div>

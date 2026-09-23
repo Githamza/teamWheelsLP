@@ -34,7 +34,15 @@
     </script>
 
     <!-- preload hero image for LCP on homepage (must match <picture> breakpoints exactly) -->
-    {{ if .IsHome }}
+    {{ $heroPoster := "" }}
+    {{ if .IsHome }}{{ with .Params.video_demo }}{{ if and .enable (or .mp4 .webm) }}{{ with .poster }}{{ with resources.Get . }}
+      {{ $heroPoster = (.Resize "1100x webp").RelPermalink }}
+    {{ end }}{{ end }}{{ end }}{{ end }}{{ end }}
+    {{ if and .IsHome $heroPoster }}
+      {{/* The demo video's poster is the hero's LCP image (the infographic
+           sits below the fold now) — same 1100x webp as index.html. */}}
+      <link rel="preload" as="image" type="image/webp" href="{{ $heroPoster }}" fetchpriority="high">
+    {{ else if .IsHome }}
       {{ with .Params.banner.image }}
         {{ $imgOrig := resources.Get . }}
         {{ if $imgOrig }}
