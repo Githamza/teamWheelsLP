@@ -578,3 +578,52 @@ $gutters: (
     }
   }
 }
+
+// "Add to Microsoft Teams" CTA (partials/teams-install.html + header)
+.btn-teams-install {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  white-space: nowrap;
+
+  &__icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    background: #fff;
+    border-radius: 4px;
+    padding: 2px;
+  }
+
+  &.btn-sm .btn-teams-install__icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.teams-install {
+  &__trust {
+    font-weight: 600;
+  }
+
+  &__badges,
+  &__admin {
+    a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    span {
+      margin: 0 .35rem;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .btn-teams-install {
+      white-space: normal;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+}

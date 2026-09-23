@@ -12,6 +12,11 @@
   <p class="mb-3">
     {{ i18n "blog_cta_before" }} <a href="{{ .RelPermalink }}">{{ i18n "blog_cta_anchor" }}</a>{{ i18n "blog_cta_after" }}
   </p>
+  {{- if site.Params.teams_app.enable }}
+  {{ partial "teams-install.html" (dict "placement" "blog" "trust" true) }}
+  <p class="small mt-2 mb-0"><a href="{{ "contact/" | relLangURL }}">{{ i18n "blog_cta_button" }} <i class="arrow-right fas fa-arrow-right"></i></a></p>
+  {{- else }}
   <a class="btn btn-primary" href="{{ "contact/" | relLangURL }}">{{ i18n "blog_cta_button" }} <i class="arrow-right fas fa-arrow-right"></i></a>
+  {{- end }}
 </aside>
 {{- end -}}

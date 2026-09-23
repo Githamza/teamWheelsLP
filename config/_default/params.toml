@@ -48,7 +48,23 @@ contact_form_action = "https://api.web3forms.com/submit"
 # Web3Forms public access key (safe to expose client-side; tied to the destination email)
 web3forms_access_key = "a39ddfc6-490f-4161-8857-2e9ec0086121"
 
+# Microsoft Teams app — published on the Teams Store / Microsoft Marketplace.
+# Used by partials/teams-install.html (hero, header, CTAs, pricing, blog) and
+# by the SoftwareApplication schema. Button texts live in i18n/*.yaml.
+# `install_url` is the Teams deep link: it opens the app's install dialog
+# straight in Teams (web or desktop), one click shorter than the store page.
+# `marketplace_url` / `attestation_url` take the page locale via printf.
+[teams_app]
+enable = true
+app_id = "1e3c893b-b545-49ed-a249-1c7a25b0fa46"
+offer_id = "WA200012036"
+install_url = "https://teams.microsoft.com/l/app/1e3c893b-b545-49ed-a249-1c7a25b0fa46"
+marketplace_url = "https://marketplace.microsoft.com/%s/product/WA200012036"
+attestation_url = "https://learn.microsoft.com/%s/microsoft-365-app-certification/teams/hmz-digital-teamwheels"
+
 # Navigation buttons
+# When teams_app.enable is true the header shows the "Try it in Teams" CTA
+# instead (essentials/header.html); these theme buttons stay off.
 [navigation_button]
 enable = false
 label = "Log In"

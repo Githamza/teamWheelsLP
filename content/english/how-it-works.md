@@ -116,7 +116,7 @@ call_to_action:
   enable: true
   title: "Ready to Launch Employee Carpooling in Your Organization?"
   subtitle: "Join companies across the USA, UK, and Canada that are solving commute challenges, reducing Scope 3 emissions, and boosting employee satisfaction with TeamWheels. <br><br> <strong>Get started:</strong> Free 30-day trial + guided deployment for your team."
-  button_label : "Start my free trial →"
+  button_label : "Get a guided demo →"
   button_link : "contact/"
   image : "images/cta.png"
 

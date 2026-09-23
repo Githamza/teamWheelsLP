@@ -21,6 +21,7 @@ pricing_card:
     buy_now_btn_label: ""
     free_trial_btn_link: "contact"
     free_trial_btn_label: "Start free trial"
+    teams_install: true   # "Add to Microsoft Teams" button (params teams_app) replaces the trial link
     features: |
       * Full Microsoft Teams application
       * Conversational carpool matching bot
@@ -79,7 +80,7 @@ faq:
     icon: "fas fa-arrow-right"
   faq_list:
     - title: "How does the free trial work?"
-      content: "You get 30 days of full access to TeamWheels for up to 50 employees — no credit card required, no commitment. Deploy the carpool program in Microsoft Teams and measure adoption and CO₂ impact before deciding to continue."
+      content: "Install TeamWheels from the [Microsoft Teams Store](https://teams.microsoft.com/l/app/1e3c893b-b545-49ed-a249-1c7a25b0fa46) — the trial starts right away, no sales call needed. You get 30 days of full access to TeamWheels for up to 50 employees — no credit card required, no commitment. Deploy the carpool program in Microsoft Teams and measure adoption and CO₂ impact before deciding to continue."
 
     - title: "Is there a minimum number of employees?"
       content: "No. TeamWheels adapts to organizations of all sizes — from 10 to 10,000+ employees. The price stays consistent at 5€/seat/month. Companies in the USA, UK, and Canada all benefit from the same flat rate."
@@ -88,7 +89,7 @@ faq:
       content: "Yes. Cancel your subscription at any time with no fees or notice period. Your employee data is deleted in compliance with GDPR. We believe in earning your business through results, not lock-in contracts."
 
     - title: "How fast is deployment?"
-      content: "5 minutes. A Teams administrator installs the app from Microsoft AppSource, configures basic settings, and your employee carpool program is live. We also provide free guided onboarding support during the trial."
+      content: "5 minutes. A Teams administrator installs the app from the [Microsoft Teams Store](https://marketplace.microsoft.com/en-us/product/WA200012036), configures basic settings, and your employee carpool program is live. We also provide free guided onboarding support during the trial."
 
     - title: "Does TeamWheels work for organizations outside France?"
       content: "Absolutely. TeamWheels is designed for organizations in the USA, UK, Canada, and across Europe. The platform supports English and French, and our commute tracking and Scope 3 reporting align with international ESG frameworks (GRI, CDP, CSRD, SEC climate disclosures)."
@@ -101,7 +102,7 @@ call_to_action:
   enable: true
   title: "Ready to Launch Employee Carpooling?"
   subtitle: "30-day free trial. No credit card. No commitment. <br> See measurable commute and sustainability results in weeks."
-  button_label: "Start free trial"
+  button_label: "Get a guided demo"
   button_link: "/contact/"
   image: "images/cta.png"
 ---

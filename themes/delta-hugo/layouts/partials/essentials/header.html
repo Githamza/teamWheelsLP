@@ -125,6 +125,17 @@
               </a>
             {{ end }}
           {{ end }}
+
+          {{/* Site-wide install CTA (Teams Store deep link) */}}
+          {{ with site.Params.teams_app }}
+            {{ if .enable }}
+              <a href="{{ .install_url }}" target="_blank" rel="noopener"
+                 class="btn btn-primary btn-sm btn-teams-install"
+                 data-track="teams_install_click" data-placement="header">
+                <img src="{{ "images/microsoft-teams-icon.svg" | relURL }}" alt="" width="22" height="22" class="btn-teams-install__icon" aria-hidden="true">{{ i18n "teams_install_button_short" }}
+              </a>
+            {{ end }}
+          {{ end }}
         </div>
       </div>
     </nav>

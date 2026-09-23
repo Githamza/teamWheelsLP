@@ -11,11 +11,11 @@ banner:
   description: "Réduisez votre Scope 3, libérez du parking et versez le Forfait Mobilité Durable — zéro app supplémentaire, déployé en 5 minutes."
   button:
     enable: true
-    button_label: "Essai gratuit 30 jours"
+    button_label: "Recevoir une démo"
     icon: "fas fa-arrow-right"
     link: "contact/"
   secondary_button:
-    enable: true
+    enable: false   # remplacé par le CTA « Installer dans Microsoft Teams »
     label: "Calculez vos économies"
     icon: "fas fa-calculator"
     link: "blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/"
@@ -25,7 +25,7 @@ banner:
 # brands
 brands:
   enable: false
-  title: "Certifié et conforme"
+  title: "Sécurisé et conforme"
   images:
   - "images/clients/01.png"
   - "images/clients/02.png"
@@ -134,10 +134,10 @@ image_and_content_blocks:
 
   - enable: true
     subtitle: "Sécurité & Conformité"
-    title: "Une solution certifiée et sécurisée"
+    title: "Une solution sécurisée, pensée pour votre DSI"
     image: "images/why_use_teamWheels.png"
     content_position: "left"
-    content: "Certifié Microsoft Partner, SSO via Azure AD, données hébergées en France et RGPD compliant — une solution enterprise sécurisée, sans identifiants supplémentaires. Les grands comptes, campus et zones d'activité peuvent la déployer sous leur propre nom avec la [plateforme de covoiturage en marque blanche](/fr/white-label-carpool-platform/).
+    content: "Publiée sur le Microsoft Teams Store avec une [Publisher Attestation Microsoft 365](https://learn.microsoft.com/fr-fr/microsoft-365-app-certification/teams/hmz-digital-teamwheels), SSO via Microsoft Entra ID, données hébergées en France et RGPD compliant — une solution enterprise sécurisée, sans identifiants supplémentaires. Les grands comptes, campus et zones d'activité peuvent la déployer sous leur propre nom avec la [plateforme de covoiturage en marque blanche](/fr/white-label-carpool-platform/).
 
     [En savoir plus →](benefits/#securite)
     "
@@ -204,7 +204,7 @@ call_to_action:
   enable: true
   title: "Lancez le covoiturage dans votre entreprise"
   subtitle: "Rejoignez les entreprises qui réduisent leur Scope 3 et améliorent le bien-être de leurs équipes. <br><strong>Essai gratuit 30 jours</strong> + déploiement accompagné inclus. <em>Sans engagement.</em>"
-  button_label : "Commencer mon essai gratuit →"
+  button_label : "Recevoir une démo guidée →"
   button_link : "contact/"
   image : "images/cta.png"
 

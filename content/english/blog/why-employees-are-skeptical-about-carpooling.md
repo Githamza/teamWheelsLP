@@ -72,7 +72,7 @@ Here is why TeamWheels is the perfect solution to overcome employee skepticism, 
 
 **Boost Retention & Employer Brand:** Offering a secure, tech-forward commuter benefit proves you care about your team's financial well-being and the planet. 73% of employees value sustainability benefits, giving you an edge in recruitment.
 
-**5-Minute Deployment:** Your IT team will love it. It's Microsoft Partner Certified, completely secure, and can be deployed by a Teams admin in just five minutes with zero change management required.
+**5-Minute Deployment:** Your IT team will love it. It's published on the Microsoft Teams Store with a public [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/en-us/microsoft-365-app-certification/teams/hmz-digital-teamwheels) your security team can review, and can be deployed by a Teams admin in just five minutes with zero change management required.
 
 ## The Bottom Line
 

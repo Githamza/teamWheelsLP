@@ -21,6 +21,7 @@ pricing_card:
     buy_now_btn_label: ""
     free_trial_btn_link: "contact"
     free_trial_btn_label: "Démarrer l'essai"
+    teams_install: true   # "Add to Microsoft Teams" button (params teams_app) replaces the trial link
     features: |
       * Application Teams complète
       * Bot conversationnel
@@ -79,7 +80,7 @@ faq:
     icon: "fas fa-arrow-right"
   faq_list:
     - title: "Comment fonctionne l'essai gratuit ?"
-      content: "Vous bénéficiez de 30 jours d'accès complet à TeamWheels, sans carte bancaire et sans engagement. À la fin de l'essai, vous décidez librement si vous souhaitez continuer."
+      content: "Installez TeamWheels depuis le [Microsoft Teams Store](https://teams.microsoft.com/l/app/1e3c893b-b545-49ed-a249-1c7a25b0fa46) : l'essai démarre immédiatement, sans appel commercial. Vous bénéficiez de 30 jours d'accès complet, sans carte bancaire et sans engagement. À la fin de l'essai, vous décidez librement si vous souhaitez continuer."
 
     - title: "Y a-t-il un nombre minimum de collaborateurs ?"
       content: "Non, TeamWheels s'adapte à toutes les tailles d'entreprise. Que vous soyez 10 ou 10 000, le prix reste le même : 5€/collaborateur/mois."
@@ -91,7 +92,7 @@ faq:
       content: "Le Forfait Mobilité Durable est versé aux salariés pour leurs déplacements. TeamWheels vous aide à mettre en place et justifier le FMD. Les économies réalisées (parking, RSE, marque employeur) dépassent largement le coût de la solution."
 
     - title: "Comment se passe le déploiement ?"
-      content: "En 5 minutes : un administrateur Teams installe l'application depuis AppSource, configure les paramètres de base, et c'est parti. Nous proposons aussi un accompagnement gratuit pendant l'essai."
+      content: "En 5 minutes : un administrateur Teams installe l'application depuis le [Microsoft Teams Store](https://marketplace.microsoft.com/fr-fr/product/WA200012036), configure les paramètres de base, et c'est parti. Nous proposons aussi un accompagnement gratuit pendant l'essai."
 
     - title: "Quels moyens de paiement acceptez-vous ?"
       content: "Nous acceptons les cartes bancaires (Visa, Mastercard) et le virement bancaire pour les contrats annuels. Facturation mensuelle ou annuelle au choix."
@@ -101,7 +102,7 @@ call_to_action:
   enable: true
   title: "Prêt à lancer le covoiturage ?"
   subtitle: "Essai gratuit 30 jours. Sans carte bancaire. Sans engagement."
-  button_label: "Démarrer l'essai gratuit"
+  button_label: "Recevoir une démo guidée"
   button_link: "/contact/"
   image: "images/cta.png"
 ---

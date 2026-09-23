@@ -75,12 +75,12 @@ image_and_content_blocks:
   - enable: true
     anchor: "securite"
     subtitle: "Sécurité & Conformité"
-    title: "Une solution certifiée et sécurisée"
+    title: "Une solution sécurisée, pensée pour votre DSI"
     image: "images/why_use_teamWheels.png"
     content_position: "left"
     content: "TeamWheels répond aux exigences de sécurité les plus strictes pour protéger vos données et celles de vos collaborateurs.
 
-    * **Certifié Microsoft Partner** — Application validée sur Microsoft AppSource, de confiance pour les DSI enterprise
+    * **Publiée sur le Microsoft Teams Store** — Application validée par Microsoft avant publication, avec une [Publisher Attestation Microsoft 365](https://learn.microsoft.com/fr-fr/microsoft-365-app-certification/teams/hmz-digital-teamwheels) publique qui documente pour votre DSI l'hébergement Azure en France, le chiffrement au repos et l'absence de transfert de données à des tiers
 
     * **SSO Entreprise** — Authentification sécurisée via Azure AD / Entra ID — aucun identifiant supplémentaire nécessaire
 
@@ -107,7 +107,7 @@ call_to_action:
   enable: true
   title: "Lancez le covoiturage dans votre entreprise"
   subtitle: "Rejoignez les entreprises qui facilitent les trajets de leurs équipes et réduisent leur empreinte carbone. <br><br> <strong>Offre de lancement :</strong> Essai gratuit 30 jours + déploiement accompagné. <br> <em>Places limitées pour l'accompagnement personnalisé.</em>"
-  button_label: "Commencer mon essai gratuit →"
+  button_label: "Recevoir une démo guidée →"
   button_link: "contact/"
   image: "images/cta.png"
 
