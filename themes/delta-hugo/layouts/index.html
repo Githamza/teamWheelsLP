@@ -64,20 +64,53 @@
             </div>
           </div>
           <div class="col-lg-6 mt-5 mt-lg-0">
-            {{/* Hero: the launch video, click-to-play, with the animated
-                 banner SVG (how matching works) as its thumbnail. The
-                 homepage is NOT a watch page: no <video> element and no
-                 VideoObject here — the clip is indexed from
-                 `launch_video.watch_page` (Google reports "Video isn't on a
-                 watch page" otherwise). Falls back to the plain banner image
-                 when no launch video is configured. */}}
+            {{/* Hero carousel: slide 1 = the animated banner SVG (how
+                 matching works); after 3 s it slides to slide 2 = the launch
+                 video, which autoplays muted (native controls to unmute).
+                 When the clip ends it returns to the image and loops; any
+                 interaction (dot click, unmute, pause) stops the rotation.
+                 The <video> element is created by the script when slide 2
+                 first shows: the homepage is NOT the clip's watch page, so
+                 no <video> / VideoObject ships in the HTML — the clip is
+                 indexed from `launch_video.watch_page`. No auto-rotation
+                 with prefers-reduced-motion or Save-Data. Falls back to the
+                 plain banner image when no launch video is configured. */}}
             {{ if $lvOn }}
-              {{ partial "video-facade.html" (dict
-                "mp4" $lvMp4 "webm" "" "poster" $lvPoster
-                "thumb" $lvThumb "thumbW" 1067 "thumbH" 1078 "fit" true "eager" true
-                "alt" $lv.title "label" (or $lv.button_label "Watch the video") "duration" $lv.duration_seconds
-                "placement" "hero_launch" "watchPage" $lv.watch_page
-                "linkLabel" (or $lv.watch_page_label (i18n "video_watch_page_link"))) }}
+              <div
+                class="hero-carousel"
+                data-hero-carousel
+                data-mp4="{{ $lvMp4 }}"
+                data-poster="{{ $lvPoster }}"
+                data-delay="3000"
+                role="region"
+                aria-roledescription="carousel"
+                aria-label="{{ $lv.title }}">
+                <div class="hero-carousel__viewport">
+                  <div class="hero-carousel__slide is-active" data-slide="0" role="group" aria-roledescription="slide" aria-label="1 / 2">
+                    <img
+                      class="img-fluid hero-carousel__image"
+                      src="{{ $lvThumb }}"
+                      width="1067"
+                      height="1078"
+                      loading="eager"
+                      fetchpriority="high"
+                      decoding="async"
+                      alt="TeamWheels — {{ i18n "hero_carousel_image" | default "How TeamWheels matches colleagues" }}" />
+                  </div>
+                  <div class="hero-carousel__slide" data-slide="1" role="group" aria-roledescription="slide" aria-label="2 / 2" aria-hidden="true">
+                    <div class="hero-carousel__video" data-video-slot></div>
+                  </div>
+                </div>
+                <div class="hero-carousel__dots">
+                  <button type="button" class="hero-carousel__dot is-active" data-go="0" aria-current="true" data-track="hero_carousel_dot" data-placement="image" aria-label="{{ i18n "hero_carousel_image" | default "How TeamWheels matches colleagues" }}"><span></span></button>
+                  <button type="button" class="hero-carousel__dot" data-go="1" data-track="hero_carousel_dot" data-placement="video" aria-label="{{ $lv.button_label | default "Watch the launch video" }}"><span></span></button>
+                </div>
+                {{ with $lv.watch_page }}
+                  <p class="text-center mt-2 mb-0 small">
+                    <a class="hero-demo-video__link" href="{{ . | relLangURL }}">{{ or $lv.watch_page_label (i18n "video_watch_page_link") }} <i class="fas fa-arrow-right"></i></a>
+                  </p>
+                {{ end }}
+              </div>
             {{ else }}
             {{ with .image }}
               <div>
@@ -211,8 +244,114 @@
     </section>
   {{ end }}
 
-  {{ if or $vdOn $lvOn }}
+  {{ if $vdOn }}
     {{ partial "video-facade-assets.html" . }}
+  {{ end }}
+
+  {{ if $lvOn }}
+    <style>
+      .hero-carousel__viewport{display:grid;overflow:hidden}
+      .hero-carousel__slide{grid-area:1/1;display:flex;align-items:center;justify-content:center;min-width:0;transform:translateX(100%);opacity:0;visibility:hidden;transition:transform .8s cubic-bezier(.65,0,.35,1),opacity .8s ease,visibility 0s linear .8s}
+      .hero-carousel__slide.is-active{transform:none;opacity:1;visibility:visible;transition:transform .8s cubic-bezier(.65,0,.35,1),opacity .8s ease,visibility 0s}
+      .hero-carousel__slide.is-leaving{transform:translateX(-100%)}
+      .hero-carousel__slide.no-anim{transition:none!important}
+      .hero-carousel__video{width:100%;aspect-ratio:16/9;border-radius:.75rem;overflow:hidden;background:#0b132b}
+      .hero-carousel__video video{width:100%;height:100%;display:block;object-fit:contain;background:#0b132b}
+      .hero-carousel__dots{display:flex;justify-content:center;gap:.25rem;margin-top:.5rem}
+      .hero-carousel__dot{padding:.6rem .35rem;border:0;background:transparent;cursor:pointer;line-height:0}
+      .hero-carousel__dot span{display:block;width:.6rem;height:.6rem;border-radius:999px;background:rgba(77,81,169,.3);transition:width .3s ease,background-color .3s ease}
+      .hero-carousel__dot.is-active span{width:1.75rem;background:#4d51a9}
+      .hero-carousel__dot:focus-visible{outline:2px solid #4d51a9;outline-offset:2px;border-radius:999px}
+      .hero-demo-video__link{font-weight:500}
+      @media(prefers-reduced-motion:reduce){.hero-carousel__slide,.hero-carousel__slide.is-active{transition:none}}
+    </style>
+    <script>
+      (function () {
+        var root = document.querySelector('[data-hero-carousel]');
+        if (!root) return;
+        var slides = root.querySelectorAll('.hero-carousel__slide');
+        var dots = root.querySelectorAll('.hero-carousel__dot');
+        var slot = root.querySelector('[data-video-slot]');
+        var delay = +root.dataset.delay || 3000;
+        var current = 0, timer = null, video = null;
+        var conn = navigator.connection;
+        var auto = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) && !(conn && conn.saveData);
+
+        function stopAuto() { auto = false; clearTimeout(timer); }
+        function schedule() { clearTimeout(timer); if (auto) timer = setTimeout(function () { go(1); }, delay); }
+
+        function getVideo() {
+          if (video) return video;
+          video = document.createElement('video');
+          video.muted = true;
+          video.defaultMuted = true;
+          video.controls = true;
+          video.playsInline = true;
+          video.setAttribute('playsinline', '');
+          video.preload = 'auto';
+          if (root.dataset.poster) video.poster = root.dataset.poster;
+          var src = document.createElement('source');
+          src.src = root.dataset.mp4;
+          src.type = 'video/mp4';
+          video.appendChild(src);
+          video.addEventListener('ended', function () { if (auto) go(0); });
+          // The visitor took over (unmuted, or paused mid-clip): stop rotating.
+          video.addEventListener('volumechange', function () { if (!video.muted) stopAuto(); });
+          video.addEventListener('pause', function () { if (!video.ended && current === 1 && !root.dataset.switching) stopAuto(); });
+          slot.appendChild(video);
+          return video;
+        }
+
+        function go(i) {
+          if (i === current) return;
+          var from = slides[current], to = slides[i];
+          // Park the incoming slide on the right without animating, then slide.
+          to.classList.add('no-anim');
+          to.classList.remove('is-leaving');
+          void to.offsetWidth;
+          to.classList.remove('no-anim');
+          from.classList.remove('is-active');
+          from.classList.add('is-leaving');
+          to.classList.add('is-active');
+          from.setAttribute('aria-hidden', 'true');
+          to.removeAttribute('aria-hidden');
+          dots.forEach(function (d, k) {
+            d.classList.toggle('is-active', k === i);
+            if (k === i) d.setAttribute('aria-current', 'true'); else d.removeAttribute('aria-current');
+          });
+          current = i;
+          if (i === 1) {
+            clearTimeout(timer);
+            var v = getVideo();
+            try { v.currentTime = 0; } catch (e) {}
+            var p = v.play();
+            if (p && p.catch) p.catch(function () {});
+          } else {
+            if (video) { root.dataset.switching = '1'; video.pause(); delete root.dataset.switching; }
+            schedule();
+          }
+        }
+
+        slides.forEach(function (s) {
+          s.addEventListener('transitionend', function (e) {
+            if (e.propertyName !== 'transform' || !s.classList.contains('is-leaving')) return;
+            s.classList.add('no-anim');
+            s.classList.remove('is-leaving');
+            void s.offsetWidth;
+            s.classList.remove('no-anim');
+          });
+        });
+        dots.forEach(function (d) {
+          d.addEventListener('click', function () {
+            stopAuto();
+            var i = +d.dataset.go;
+            if (i === current && i === 1 && video) { video.play(); return; }
+            go(i);
+          });
+        });
+        schedule();
+      })();
+    </script>
   {{ end }}
 
   {{ if .Params.brands.enable }}

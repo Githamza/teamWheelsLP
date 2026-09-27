@@ -4,7 +4,7 @@ Two clips, each with its own watch page:
 
 | Clip | Files | Homepage placement | Watch page |
 |---|---|---|---|
-| Launch video (20 s, EN + FR) | `teamwheels-launch-{en,fr}.mp4` + `-poster.jpg` | hero (`launch_video:` block) — thumbnail is the animated `banner.image` SVG with a play button | `/{en,fr}/launch-video/` (`content/*/launch-video.md`) |
+| Launch video (20 s, EN + FR) | `teamwheels-launch-{en,fr}.mp4` + `-poster.jpg` | hero carousel (`launch_video:` block) — slide 1 is the animated `banner.image` SVG, slide 2 the clip (muted autoplay after 3 s, created by JS) | `/{en,fr}/launch-video/` (`content/*/launch-video.md`) |
 | Full demo (60 s) | `teamwheels-demo.*` | section under the hero (`video_demo:` block) | `/{en,fr}/demo/` |
 
 The launch `-poster.jpg` files are a 1280×720 raster render of the banner SVG (Google does
