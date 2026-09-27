@@ -44,6 +44,12 @@ La vidéo ci-dessus condense en une minute le parcours d'un salarié et d'un adm
 
 {{< image src="images/how-it-works/bot.jpg" alt="Le bot TeamWheels dans Microsoft Teams : un salarié déclare son trajet domicile-travail et reçoit une proposition de covoiturage" class="img-fluid rounded-lg" >}}
 
+## Pas le temps ? Regardez la vidéo de lancement de 20 secondes
+
+La [vidéo de lancement de TeamWheels](/fr/launch-video/) résume l'idée en 20 secondes : un salarié demande un trajet à l'agent IA de covoiturage dans Microsoft Teams et rejoint un collègue en un clic.
+
+{{< launch-video placement="demo_launch" >}}
+
 ## À qui s'adresse cette démo
 
 - **Ressources humaines et avantages salariés** — pour évaluer l'adoption réelle, le versement du FMD et l'effet sur la rétention.

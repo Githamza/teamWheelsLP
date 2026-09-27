@@ -53,6 +53,10 @@ Si vous souhaitez voir vos taux d'adoption du covoiturage monter en flèche (jus
 
 TeamWheels est la plateforme de covoiturage d'entreprise n°1, intégrée directement dans Microsoft Teams. Elle transforme l'outil de communication que votre entreprise utilise déjà en une puissante solution de gestion des trajets.
 
+À voir en 20 secondes : la [vidéo de lancement de TeamWheels](/fr/launch-video/) montre un salarié demander un trajet dans Microsoft Teams et rejoindre un collègue en un clic.
+
+{{< launch-video placement="blog_launch" >}}
+
 Voici pourquoi TeamWheels est la solution idéale pour surmonter le scepticisme des employés, tout en offrant un retour sur investissement massif à votre organisation :
 
 ### Les avantages pour les employés

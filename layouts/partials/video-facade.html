@@ -1,0 +1,51 @@
+{{- /* Click-to-play video facade (homepage). Renders a thumbnail + play
+       button; the <video> element is only created on the first click (script
+       in themes/delta-hugo/layouts/index.html), so the page ships no video
+       bytes and Google finds no video here — each clip is indexed from its
+       own watch page (`watch_page`), which carries the player, the
+       VideoObject JSON-LD and the video sitemap entry.
+
+       Params (dict):
+         mp4, webm   resolved RelPermalinks (either may be "")
+         poster      raster still used as the <video> poster after the click
+         thumb       image shown in the facade (raster or animated SVG)
+         thumbW/H    intrinsic size of `thumb`
+         fit         true → the facade takes the thumbnail's own aspect ratio
+                     on a transparent background (for the animated SVG);
+                     false → a 16:9 dark frame
+         eager       true for the hero (LCP image)
+         alt, label, duration, placement, watchPage */ -}}
+<div class="hero-video">
+  <div
+    class="hero-demo-video__frame{{ if .fit }} hero-demo-video__frame--fit{{ end }}"
+    data-demo-video
+    data-mp4="{{ .mp4 }}"
+    data-webm="{{ .webm }}"
+    data-poster="{{ .poster }}">
+    <button
+      type="button"
+      class="hero-demo-video__facade"
+      data-play-demo
+      data-track="demo_video_play"
+      data-placement="{{ .placement }}"
+      aria-label="{{ .alt }}: {{ i18n "video_play_label" | default "Play the video" }}">
+      {{ with .thumb }}
+        <img
+          class="hero-demo-video__poster"
+          src="{{ . }}"
+          {{ with $.thumbW }}width="{{ . }}"{{ end }}
+          {{ with $.thumbH }}height="{{ . }}"{{ end }}
+          {{ if $.eager }}loading="eager" fetchpriority="high"{{ else }}loading="lazy"{{ end }}
+          decoding="async"
+          alt="{{ $.alt }}" />
+      {{ end }}
+      <span class="hero-demo-video__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor" focusable="false"><path d="M8 5.6v12.8a1.2 1.2 0 0 0 1.84 1.02l10.2-6.4a1.2 1.2 0 0 0 0-2.04L9.84 4.58A1.2 1.2 0 0 0 8 5.6z"/></svg></span>
+      <span class="hero-demo-video__label" aria-hidden="true"><i class="fas fa-play-circle"></i> {{ .label }}{{ with .duration }} · {{ . }} s{{ end }}</span>
+    </button>
+  </div>
+  {{ with .watchPage }}
+    <p class="text-center mt-3 mb-0 small">
+      <a class="hero-demo-video__link" href="{{ . | relLangURL }}">{{ $.linkLabel }} <i class="fas fa-arrow-right"></i></a>
+    </p>
+  {{ end }}
+</div>

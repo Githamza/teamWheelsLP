@@ -46,6 +46,12 @@ The video above compresses an employee's and an administrator's journey into one
 
 {{< image src="images/how-it-works/bot.jpg" alt="The TeamWheels bot in Microsoft Teams: an employee declares a commute and receives a carpool match" class="img-fluid rounded-lg" >}}
 
+## Short on time? Watch the 20-second launch video
+
+The [TeamWheels launch video](/en/launch-video/) sums up the idea in 20 seconds: an employee asks the AI carpooling agent for a ride in Microsoft Teams and joins a matched colleague in one click.
+
+{{< launch-video placement="demo_launch" >}}
+
 ## Who the demo is for
 
 - **HR and benefits teams** — to assess real adoption, commuter-benefit administration and the effect on retention.

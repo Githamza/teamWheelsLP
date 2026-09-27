@@ -1,5 +1,16 @@
 # Demo video assets
 
+Two clips, each with its own watch page:
+
+| Clip | Files | Homepage placement | Watch page |
+|---|---|---|---|
+| Launch video (20 s, EN + FR) | `teamwheels-launch-{en,fr}.mp4` + `-poster.jpg` | hero (`launch_video:` block) — thumbnail is the animated `banner.image` SVG with a play button | `/{en,fr}/launch-video/` (`content/*/launch-video.md`) |
+| Full demo (60 s) | `teamwheels-demo.*` | section under the hero (`video_demo:` block) | `/{en,fr}/demo/` |
+
+The launch `-poster.jpg` files are a 1280×720 raster render of the banner SVG (Google does
+not accept SVG thumbnails); regenerate them if the SVG changes. The launch MP4s were only
+remuxed with `-movflags +faststart` (audio kept).
+
 The demo clip is declared through a `video_demo:` front-matter block on four pages
 (`content/{english,french}/_index.md` and `content/{english,french}/demo.md`), which all
 look for the files below. Drop your encoded demo here with these exact names, or change
@@ -56,3 +67,12 @@ Notes:
   if larger. (The current WebM is ~2.5× the size of the MP4, hence MP4 first.)
 - On the homepage the video bytes are fetched **only when a visitor clicks play** — zero
   impact on initial page load. The watch page uses `preload="metadata"`.
+
+## Embedding the launch video elsewhere (internal links)
+
+Use the `launch-video` shortcode in any page's Markdown (optional `placement="…"` for the
+GA4 `placement` param). It renders the same click-to-play facade as the hero plus a link to
+`/launch-video/`, reading its settings from the homepage `launch_video:` block of the page's
+language. Currently used on `/demo/` and in 10 product-related blog posts (5 EN, 5 FR), each
+preceded by a sentence with a text link to the watch page. The shortcode is stripped from
+the Markdown-for-agents output (`layouts/partials/agent/page.md`).

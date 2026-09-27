@@ -100,6 +100,10 @@ La plateforme que vous choisirez déterminera la rapidité de votre lancement. R
 - **Confidentialité et sécurité** — Respecte-t-elle les standards de protection des données de votre organisation ?
 - **L'évolutivité** — Peut-elle passer d'un pilote de 50 utilisateurs à un déploiement de plusieurs milliers ?
 
+Pour voir concrètement à quoi ressemble un outil de covoiturage intégré à Microsoft Teams, regardez la [vidéo de lancement de TeamWheels](/fr/launch-video/) (20 secondes) :
+
+{{< launch-video placement="blog_launch" >}}
+
 Les solutions qui s'intègrent directement dans les outils que vos salariés utilisent déjà — comme Microsoft Teams — ont un avantage décisif : elles éliminent le besoin de télécharger et d'apprendre une application séparée.
 
 ### Étape 3 : Configurer et personnaliser votre plateforme

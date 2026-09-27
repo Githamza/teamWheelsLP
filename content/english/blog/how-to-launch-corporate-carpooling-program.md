@@ -62,6 +62,10 @@ Select a carpooling solution that:
 - Provides analytics and reporting
 - Can run under your own brand — see what a [white-label carpool platform](/en/white-label-carpool-platform/) looks like in practice
 
+To see what a carpooling tool that lives inside Microsoft Teams looks like in practice, watch the 20-second [TeamWheels launch video](/en/launch-video/):
+
+{{< launch-video placement="blog_launch" >}}
+
 ## Week 2: Preparation (Days 8-14)
 
 ### Day 8-9: Set Up the Technology

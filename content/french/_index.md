@@ -38,25 +38,34 @@ features:
   enable: true
   section: "features"
 
-# infographie « comment ça marche » — affichée sous le hero (l'image
-# `banner.image` ci-dessus), la vidéo de démo occupant la colonne droite du hero.
-infographic:
+# vidéo de lancement — colonne droite du hero. Sa miniature est le SVG animé
+# `banner.image` (comment ça marche) avec un bouton lecture ; le <video>
+# n'est créé qu'au clic. Indexée depuis `watch_page` (/launch-video/ :
+# lecteur, VideoObject JSON-LD, entrée du sitemap vidéo). Garder ce bloc
+# aligné sur content/french/launch-video.md.
+launch_video:
   enable: true
-  subtitle: "Comment ça marche"
-  title: "Un trajet proposé, un collègue trouvé"
-  description: "Un salarié propose son trajet dans Teams, un collègue cherche le même : TeamWheels les met en relation automatiquement, envoie les rappels et comptabilise le CO₂ évité."
+  title: "TeamWheels — l'agent IA de covoiturage intégré à Microsoft Teams"
+  button_label: "Voir la vidéo de lancement"
+  watch_page: "/launch-video/"
+  watch_page_label: "Voir la page de la vidéo de lancement"
+  duration_seconds: 21
+  poster: "videos/teamwheels-launch-fr-poster.jpg"   # image fixe du SVG, affichée dans le lecteur après le clic
+  mp4: "videos/teamwheels-launch-fr.mp4"
 
-# démo vidéo — "Voir en action". L'accueil n'est PAS la watch page de la
-# vidéo : il affiche un poster « clic pour lire » (le <video> n'est créé
-# qu'au clic, Google n'y trouve donc aucune vidéo) et renvoie vers
-# `watch_page`, la page /demo/ qui porte le lecteur, le VideoObject JSON-LD
-# et l'entrée du sitemap vidéo. Garder ce bloc aligné sur content/french/demo.md.
+# démo vidéo — la démo complète, dans sa propre section sous le hero. Même
+# poster « clic pour lire » (le <video> n'est créé qu'au clic, Google n'y
+# trouve donc aucune vidéo) ; renvoie vers `watch_page`, la page /demo/ qui
+# porte le lecteur, le VideoObject JSON-LD et l'entrée du sitemap vidéo.
+# Garder ce bloc aligné sur content/french/demo.md.
 video_demo:
   enable: true
   button_label: "Voir en action"
+  subtitle: "Démo du produit"
   title: "Découvrez TeamWheels en action"
-  # description n'est plus affichée sur l'accueil (vidéo dans le hero) ; uploadDate / duration restent
-  # ici par parité avec demo.md (données structurées émises sur /demo/ seulement).
+  lede: "Le matching de trajets, le bot conversationnel et le tableau de bord Scope 3, en une minute."
+  # uploadDate / duration restent ici par parité avec demo.md (données
+  # structurées émises sur /demo/ seulement).
   description: "Démonstration de 60 secondes de TeamWheels — l'application de covoiturage et de gestion des trajets domicile-travail intégrée nativement à Microsoft Teams. Découvrez le matching de trajets, le bot conversationnel et le tableau de bord des émissions Scope 3."
   uploadDate: "2026-07-13"
   duration: "PT1M1S"

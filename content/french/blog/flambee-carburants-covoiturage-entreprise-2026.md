@@ -54,6 +54,10 @@ Des groupes WhatsApp qui meurent au bout de deux semaines. Des tableurs que pers
 
 TeamWheels s'intègre **directement dans Microsoft Teams** — l'outil que vos équipes ouvrent déjà chaque matin. L'application met automatiquement en relation les collègues selon leurs trajets, leurs horaires et leurs jours sur site. Aucune app à télécharger. Aucun coût administratif. Aucune conversation gênante autour de l'argent.
 
+À voir en 20 secondes : la [vidéo de lancement de TeamWheels](/fr/launch-video/) montre un salarié demander un trajet dans Microsoft Teams et rejoindre un collègue en un clic.
+
+{{< launch-video placement="blog_launch" >}}
+
 Juste un rappel discret, chaque jour, que le siège passager n'a pas à rester vide — et que votre portefeuille, votre équipe et la planète vont tous mieux quand il ne l'est pas.
 
 ---
