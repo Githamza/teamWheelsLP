@@ -38,25 +38,34 @@ features:
   enable: true
   section: "features"
 
-# "How it works" infographic — shown under the hero (it is `banner.image`
-# above); the demo video now fills the hero's right-hand column.
-infographic:
+# launch video — the hero's right-hand column. Its thumbnail is the animated
+# `banner.image` SVG (how matching works) with a play button; the <video> is
+# only created on click. Indexed from `watch_page` (/launch-video/: player,
+# VideoObject JSON-LD, video sitemap entry). Keep in sync with
+# content/english/launch-video.md.
+launch_video:
   enable: true
-  subtitle: "How it works"
-  title: "One ride offered, one colleague matched"
-  description: "An employee offers a ride in Teams, a colleague looks for the same route: TeamWheels matches them automatically, sends the reminders and counts the CO₂ avoided."
+  title: "TeamWheels — the AI carpooling agent inside Microsoft Teams"
+  button_label: "Watch the launch video"
+  watch_page: "/launch-video/"
+  watch_page_label: "Open the launch video page"
+  duration_seconds: 21
+  poster: "videos/teamwheels-launch-en-poster.jpg"   # raster still of the SVG, shown in the player after the click
+  mp4: "videos/teamwheels-launch-en.mp4"
 
-# video demo — "See it in action". The homepage is NOT the video's watch page:
-# it shows a click-to-play poster (the <video> element is only created on
-# click, so Google finds no video here) and links to `watch_page`, the
-# /demo/ page that carries the player, the VideoObject JSON-LD and the
-# video sitemap entry. Keep this block in sync with content/english/demo.md.
+# video demo — the full demo, in its own section directly under the hero.
+# Same click-to-play poster (the <video> element is only created on click,
+# so Google finds no video here); links to `watch_page`, the /demo/ page
+# that carries the player, the VideoObject JSON-LD and the video sitemap
+# entry. Keep this block in sync with content/english/demo.md.
 video_demo:
   enable: true
   button_label: "See it in action"
+  subtitle: "Product demo"
   title: "See TeamWheels in action"
-  # description is no longer shown on the homepage (video sits in the hero); uploadDate / duration are kept
-  # here for parity with demo.md (structured data is emitted on /demo/ only).
+  lede: "Ride matching, the conversational bot and the Scope 3 emissions dashboard, in one minute."
+  # uploadDate / duration are kept here for parity with demo.md (structured
+  # data is emitted on /demo/ only).
   description: "A 60-second walkthrough of TeamWheels — the employee carpooling and commute-management app that runs natively inside Microsoft Teams. See ride matching, the conversational bot, and the Scope 3 emissions dashboard in action."
   uploadDate: "2026-07-13"
   duration: "PT1M1S"        # ISO 8601, for VideoObject JSON-LD

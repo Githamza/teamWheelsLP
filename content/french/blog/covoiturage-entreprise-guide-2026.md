@@ -258,6 +258,10 @@ Annoncez le programme à l'ensemble des salariés — mail de la direction, sess
 
 L'obstacle numéro un à l'adoption d'un programme de covoiturage est la **friction d'usage**. Avec TeamWheels, qui vit dans Microsoft Teams, le taux d'inscription dépasse systématiquement **60 % dès la première semaine**.
 
+À voir en 20 secondes : la [vidéo de lancement de TeamWheels](/fr/launch-video/) montre un salarié demander un trajet dans Microsoft Teams et rejoindre un collègue en un clic.
+
+{{< launch-video placement="blog_launch" >}}
+
 - ✅ **Zéro friction d'adoption** — aucune nouvelle app, aucun nouveau mot de passe. L'outil s'installe en quelques minutes par l'administrateur Teams.
 - ✅ **Matching automatique** — l'algorithme apparie conducteurs et passagers selon le domicile, le site et les horaires habituels.
 - ✅ **Gestion FMD automatisée** — calcul des km partagés, génération du justificatif employeur, suivi des plafonds par salarié. Tout est audit-ready pour l'URSSAF.

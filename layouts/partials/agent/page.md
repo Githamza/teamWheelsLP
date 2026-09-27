@@ -264,6 +264,9 @@ date: {{ .Format "2006-01-02" }}
        leading H1 from the body when it duplicates that title. */ -}}
 {{- $body := . -}}
 {{- $body = replaceRE "^\\s*#\\s+[^\\n]+\\n+" "" $body -}}
+{{- /* The launch-video embed is a player, not text: drop it (the sentence
+       before it already links to the watch page). */ -}}
+{{- $body = replaceRE "\\{\\{<\\s*launch-video[^>]*>\\}\\}\\n*" "" $body -}}
 {{ $body }}
 
 {{ end -}}

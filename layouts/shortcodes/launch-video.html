@@ -1,0 +1,32 @@
+{{- /* Embeds the launch video (click-to-play, animated banner SVG as the
+       thumbnail) inside page content, with a link to its watch page — an
+       internal link to /launch-video/ from articles and the demo page.
+       Settings come from the homepage of the current language
+       (`launch_video:` + `banner.image` in each language's _index.md), so there is
+       one source of truth. Like the homepage, no <video> element ships in
+       the HTML: the clip is indexed from its watch page only.
+       Usage in content: the `launch-video` shortcode, with an optional
+       placement="…" param (GA4 `placement`, default content_launch). */ -}}
+{{- $home := site.Home -}}
+{{- $lv := $home.Params.launch_video -}}
+{{- if and $lv $lv.enable -}}
+  {{- $mp4 := "" -}}{{- $poster := "" -}}{{- $thumb := "" -}}
+  {{- with $lv.mp4 }}{{ with resources.Get . }}{{ $mp4 = .RelPermalink }}{{ end }}{{ end -}}
+  {{- with $lv.poster }}{{ with resources.Get . }}{{ $poster = (.Resize "1280x webp").RelPermalink }}{{ end }}{{ end -}}
+  {{- with $home.Params.banner.image }}{{ with resources.Get . }}{{ $thumb = .RelPermalink }}{{ end }}{{ end -}}
+  {{- if and $mp4 $thumb -}}
+<figure class="launch-video-embed">
+  {{ partial "video-facade.html" (dict
+    "mp4" $mp4 "webm" "" "poster" $poster
+    "thumb" $thumb "thumbW" 1067 "thumbH" 1078 "fit" true "eager" false
+    "alt" $lv.title "label" (or $lv.button_label "Watch the video") "duration" $lv.duration_seconds
+    "placement" (.Get "placement" | default "content_launch") "watchPage" $lv.watch_page
+    "linkLabel" (or $lv.watch_page_label (i18n "video_watch_page_link"))) }}
+</figure>
+    {{- /* Assets are emitted with each embed (one per page in practice);
+           the script skips frames it has already bound. A Page.Store "once"
+           flag is not reset on `hugo server` rebuilds, so it is not used. */ -}}
+    {{ partial "video-facade-assets.html" . }}
+<style>.content figure.launch-video-embed,figure.launch-video-embed{display:block;max-width:28rem;margin:2rem auto}.content figure.launch-video-embed:has(.is-playing),figure.launch-video-embed:has(.is-playing){max-width:none}.launch-video-embed .hero-demo-video__poster{margin:0;border-radius:0;box-shadow:none}</style>
+  {{- end -}}
+{{- end -}}

@@ -35,7 +35,11 @@
 
     <!-- preload hero image for LCP on homepage (must match <picture> breakpoints exactly) -->
     {{ $heroPoster := "" }}
-    {{ if .IsHome }}{{ with .Params.video_demo }}{{ if and .enable (or .mp4 .webm) }}{{ with .poster }}{{ with resources.Get . }}
+    {{/* With a launch video, the hero shows the banner SVG as its thumbnail
+         (the demo video's poster moves below the fold) → the SVG preload in
+         the else branch below is the right one. */}}
+    {{ $launchOn := false }}{{ with .Params.launch_video }}{{ $launchOn = .enable }}{{ end }}
+    {{ if and .IsHome (not $launchOn) }}{{ with .Params.video_demo }}{{ if and .enable (or .mp4 .webm) }}{{ with .poster }}{{ with resources.Get . }}
       {{ $heroPoster = (.Resize "1100x webp").RelPermalink }}
     {{ end }}{{ end }}{{ end }}{{ end }}{{ end }}
     {{ if and .IsHome $heroPoster }}
@@ -48,7 +52,7 @@
         {{ if $imgOrig }}
           {{ if eq $imgOrig.MediaType.SubType "svg" }}
             {{/* SVG banner: single preload, no webp variants (SVG can't be resized) */}}
-            <link rel="preload" as="image" type="image/svg+xml" href="{{ $imgOrig.RelPermalink }}">
+            <link rel="preload" as="image" type="image/svg+xml" href="{{ $imgOrig.RelPermalink }}" fetchpriority="high">
           {{ else }}
             {{ $imgSM := $imgOrig.Resize "400x webp" }}
             {{ $imgMD := $imgOrig.Resize "500x webp" }}

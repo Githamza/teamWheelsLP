@@ -167,6 +167,10 @@ Cartographie des corridors domicile-travail (données RH anonymisées ou questio
 
 L'outil s'installe en moins d'une demi-journée. Avec une solution comme **TeamWheels, intégrée à Microsoft Teams**, aucune nouvelle application ni nouveau mot de passe : les salariés covoiturent depuis un outil qu'ils utilisent déjà. Découvrez le [logiciel de covoiturage entreprise intégré à Teams](/fr/corporate-carpooling-software/).
 
+À voir en 20 secondes : la [vidéo de lancement de TeamWheels](/fr/launch-video/) montre un salarié demander un trajet dans Microsoft Teams et rejoindre un collègue en un clic.
+
+{{< launch-video placement="blog_launch" >}}
+
 ### Semaine 3 — Communication & engagement
 
 Annonce dans les canaux Teams, webinaire court, mise en avant du double bénéfice : **économies pour le salarié, impact pour la planète**. C'est ce double message qui déclenche l'adoption.
