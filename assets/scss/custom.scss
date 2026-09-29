@@ -669,19 +669,112 @@ $gutters: (
   }
 }
 
-// Pricing promo: struck-through previous price + badge above the current one
-.pricing-card {
+// Pricing promo: premium card (gradient border + glow), shimmering gold badge,
+// struck-through previous price and an oversized gradient amount.
+$promo-gold: #d4a64a;
+$promo-gold-light: #f6dc9b;
+$promo-indigo: #5b5fc7;
+$promo-indigo-dark: #2b2d7c;
+
+@keyframes promo-border-spin {
+  to { --promo-angle: 360deg; }
+}
+@keyframes promo-shimmer {
+  0% { background-position: -150% 0; }
+  60%, 100% { background-position: 250% 0; }
+}
+@property --promo-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.pricing-card.promo {
+  --promo-angle: 0deg;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(180deg, #fbfaff 0%, #fff 55%) padding-box,
+    conic-gradient(from var(--promo-angle), $promo-indigo, $promo-gold, $promo-gold-light, $promo-gold, $promo-indigo) border-box;
+  box-shadow:
+    0 18px 45px -12px rgba($promo-indigo, 0.45),
+    0 0 0 6px rgba($promo-gold, 0.08);
+  animation: promo-border-spin 6s linear infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  @media (min-width: 992px) {
+    transform: scale(1.04);
+    z-index: 1;
+  }
+  &:hover {
+    box-shadow:
+      0 24px 55px -12px rgba($promo-indigo, 0.55),
+      0 0 0 6px rgba($promo-gold, 0.14);
+  }
+
+  // "Most popular" pill recoloured to match the premium palette
+  &.popular::before {
+    background: linear-gradient(90deg, $promo-indigo-dark, $promo-indigo);
+    border: 1px solid rgba($promo-gold, 0.6);
+    letter-spacing: 0.02em;
+  }
+
   .pricing-promo-badge {
     display: inline-block;
-    background-color: #e63946;
-    color: #fff;
-    font-weight: 600;
-    font-size: 0.8rem;
-    padding: 2px 0.75rem;
+    padding: 4px 1rem;
     border-radius: 25px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #3a2a05;
+    background:
+      linear-gradient(110deg, transparent 35%, rgba(255, 255, 255, 0.75) 50%, transparent 65%) 0 0 / 200% 100% no-repeat,
+      linear-gradient(135deg, $promo-gold-light, $promo-gold);
+    box-shadow: 0 4px 14px -4px rgba($promo-gold, 0.7);
+    animation: promo-shimmer 3.2s ease-in-out infinite;
+    span { color: #7a5a12; margin: 0 0.15rem; }
   }
+
   .pricing-old-price {
-    color: #8a8a8a;
+    color: #9a9aad;
     font-size: 0.95rem;
+    s { text-decoration-color: rgba(#e63946, 0.75); text-decoration-thickness: 2px; }
   }
+
+  .pricing-promo-price {
+    line-height: 1;
+    .pricing-promo-amount {
+      display: inline-block;
+      font-size: 3.25rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, $promo-indigo-dark, $promo-indigo 45%, $promo-gold);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .pricing-promo-unit {
+      display: block;
+      margin-top: 0.35rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #6b6b80;
+    }
+  }
+
+  .pricing-promo-note {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: darken($promo-gold, 12%);
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, $promo-indigo-dark, $promo-indigo);
+    border-color: transparent;
+    box-shadow: 0 8px 20px -8px rgba($promo-indigo, 0.8);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pricing-card.promo,
+  .pricing-card.promo .pricing-promo-badge { animation: none; }
 }

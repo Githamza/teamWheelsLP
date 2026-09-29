@@ -19,12 +19,23 @@
     <div class="row gy-3">
       {{range .Params.pricing_card}}
       <div class="col-lg-4 col-md-6">
-        <div class="pricing-card text-center rounded-md shadow-md pt-5 px-4 {{if .populer}}popular{{end}}" {{if .populer}}data-text="{{i18n `most_popular`}}"{{end}}>
+        <div class="pricing-card text-center rounded-md shadow-md pt-5 px-4 {{if .populer}}popular{{end}} {{if .old_price}}promo{{end}}" {{if .populer}}data-text="{{i18n `most_popular`}}"{{end}}>
           <h3 class="h4">{{.name}}</h3>
 
-          {{with .promo_label}}<p class="pricing-promo-badge mb-2">{{.}}</p>{{end}}
-          {{with .old_price}}<p class="pricing-old-price mb-0"><s>{{.}}</s></p>{{end}}
+          {{if .old_price}}
+          {{/* Promo card: badge, struck-through old price, then the new price
+               split into a large amount ("3€") and its unit ("/seat /month"). */}}
+          {{with .promo_label}}<p class="pricing-promo-badge mb-3"><span aria-hidden="true">✦</span> {{.}} <span aria-hidden="true">✦</span></p>{{end}}
+          <p class="pricing-old-price mb-1"><s>{{.old_price}}</s></p>
+          {{$parts := split .price " "}}
+          <p class="pricing-promo-price font-secondary mb-2">
+            <span class="pricing-promo-amount">{{.currency}}{{index $parts 0}}</span>
+            <span class="pricing-promo-unit">{{delimit (after 1 $parts) " "}}</span>
+          </p>
+          {{with .promo_note}}<p class="pricing-promo-note mb-3">{{.}}</p>{{end}}
+          {{else}}
           <p class="h5 font-secondary fw-bold">{{.currency}}{{.price}}</p>
+          {{end}}
 
           <p class="small">{{.content | markdownify}}</p>
           {{if .buy_now_btn_link}}

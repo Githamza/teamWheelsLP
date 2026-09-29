@@ -35,6 +35,7 @@ pricing_card:
     old_price: "5€ /collaborateur /mois"
     price: "3€ /collaborateur /mois"
     promo_label: "Offre promo : -40 %"
+    promo_note: "Offre exclusive à durée limitée"
     populer: true
     content: "Le covoiturage professionnel, simple et efficace"
     buy_now_btn_link: "contact"

@@ -35,6 +35,7 @@ pricing_card:
     old_price: "5€ /seat /month"
     price: "3€ /seat /month"
     promo_label: "Promo: 40% off"
+    promo_note: "Exclusive limited-time offer"
     populer: true
     content: "Complete employee carpooling & commute management"
     buy_now_btn_link: "contact"
