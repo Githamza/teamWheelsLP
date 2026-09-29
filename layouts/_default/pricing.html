@@ -22,8 +22,10 @@
         <div class="pricing-card text-center rounded-md shadow-md pt-5 px-4 {{if .populer}}popular{{end}}" {{if .populer}}data-text="{{i18n `most_popular`}}"{{end}}>
           <h3 class="h4">{{.name}}</h3>
 
+          {{with .promo_label}}<p class="pricing-promo-badge mb-2">{{.}}</p>{{end}}
+          {{with .old_price}}<p class="pricing-old-price mb-0"><s>{{.}}</s></p>{{end}}
           <p class="h5 font-secondary fw-bold">{{.currency}}{{.price}}</p>
-          
+
           <p class="small">{{.content | markdownify}}</p>
           {{if .buy_now_btn_link}}
           <a class="btn btn-primary d-block" href="{{.buy_now_btn_link | absLangURL}}/">{{.buy_now_btn_label}}</a>

@@ -1,7 +1,7 @@
 ---
 title: "Logiciel de Covoiturage Entreprise pour Microsoft Teams | TeamWheels"
 seoTitle: "Logiciel de covoiturage entreprise | TeamWheels"
-description: "Logiciel de covoiturage entreprise intégré à Microsoft Teams : mise en relation des trajets, justificatifs FMD, reporting CO₂, 5 €/collaborateur/mois, déployé en 5 minutes."
+description: "Logiciel de covoiturage entreprise intégré à Microsoft Teams : mise en relation des trajets, justificatifs FMD, reporting CO₂, 3 €/collaborateur/mois (promo), déployé en 5 minutes."
 keywords: "logiciel covoiturage entreprise, outil covoiturage entreprise, application covoiturage entreprise, covoiturage entreprise, plateforme covoiturage entreprise, covoiturage domicile-travail, logiciel covoiturage salariés, Forfait Mobilité Durable, covoiturage Microsoft Teams"
 layout: "benefits"
 lastmod: 2026-09-07
@@ -113,10 +113,10 @@ image_and_content_blocks:
       | Offre | Prix | Ce qui est inclus |
       |---|---|---|
       | **Essai gratuit** | 0 € pendant 30 jours | Application Teams complète, bot conversationnel, tableau de bord administrateur, jusqu'à 50 collaborateurs, sans carte bancaire |
-      | **TeamWheels** | **5 € par collaborateur et par mois** | Collaborateurs illimités, suivi CO₂ en temps réel, justificatifs FMD automatiques, SSO Entra ID, statistiques avancées, support prioritaire, données hébergées en France |
+      | **TeamWheels** | **3 € par collaborateur et par mois** (promo, au lieu de 5 €) | Collaborateurs illimités, suivi CO₂ en temps réel, justificatifs FMD automatiques, SSO Entra ID, statistiques avancées, support prioritaire, données hébergées en France |
       | **Entreprise** | Sur devis | Multi-sites et multi-entités, API et intégrations RH, SLA garanti, account manager dédié, onboarding personnalisé, rapports RSE sur mesure |
 
-      Le prix est le même que vous soyez 10 ou 10 000 : 5 € par collaborateur et par mois, facturés mensuellement ou annuellement, résiliables à tout moment sans préavis. Pour situer l'ordre de grandeur : une place de parking en zone urbaine coûte entre 100 et 300 € par mois ; un programme qui retire 20 voitures d'un site de 200 salariés rembourse la solution dès le premier trimestre, avant même de compter le FMD et le CO₂ évité.
+      Le prix est le même que vous soyez 10 ou 10 000 : 3 € (tarif promo, au lieu de 5 €) par collaborateur et par mois, facturés mensuellement ou annuellement, résiliables à tout moment sans préavis. Pour situer l'ordre de grandeur : une place de parking en zone urbaine coûte entre 100 et 300 € par mois ; un programme qui retire 20 voitures d'un site de 200 salariés rembourse la solution dès le premier trimestre, avant même de compter le FMD et le CO₂ évité.
 
       Le détail des offres, les moyens de paiement et les questions sur la facturation sont sur la page [tarifs →](/fr/pricing/)
     button:
@@ -170,7 +170,7 @@ faq:
   - question: "Combien de temps prend le déploiement ?"
     answer: "Environ 5 minutes pour l'installation : un administrateur Teams ajoute TeamWheels depuis Microsoft AppSource dans votre tenant Microsoft 365, accorde le consentement Entra ID et déclare vos sites. Pas de projet IT, pas d'infrastructure, pas d'app à faire télécharger. Comptez ensuite deux à quatre semaines de pilote avec 20 à 50 volontaires avant la généralisation."
   - question: "Combien coûte un logiciel de covoiturage entreprise ?"
-    answer: "TeamWheels propose un essai gratuit de 30 jours jusqu'à 50 collaborateurs, puis un tarif unique de 5 € par collaborateur et par mois, tout inclus (bot, appariement, justificatifs FMD, reporting CO₂, SSO, support prioritaire). Les grandes organisations multi-sites disposent d'une offre Entreprise sur devis. La plupart des clients atteignent un ROI positif dès le premier trimestre grâce aux seules économies de parking."
+    answer: "TeamWheels propose un essai gratuit de 30 jours jusqu'à 50 collaborateurs, puis un tarif unique de 3 € par collaborateur et par mois (promo, au lieu de 5 €), tout inclus (bot, appariement, justificatifs FMD, reporting CO₂, SSO, support prioritaire). Les grandes organisations multi-sites disposent d'une offre Entreprise sur devis. La plupart des clients atteignent un ROI positif dès le premier trimestre grâce aux seules économies de parking."
   - question: "Peut-on déployer une plateforme de covoiturage entreprise en marque blanche ?"
     answer: "Oui. TeamWheels se déploie en marque blanche dans votre propre tenant Microsoft 365, à votre marque et selon vos politiques IT. Les salariés s'authentifient avec leur compte professionnel existant via le SSO Azure AD / Entra ID : aucun compte séparé à provisionner, et l'expérience s'intègre à vos outils internes plutôt qu'à une app tierce."
   - question: "Comment les données des salariés sont-elles sécurisées ?"

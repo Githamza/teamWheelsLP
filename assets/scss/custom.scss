@@ -668,3 +668,20 @@ $gutters: (
     }
   }
 }
+
+// Pricing promo: struck-through previous price + badge above the current one
+.pricing-card {
+  .pricing-promo-badge {
+    display: inline-block;
+    background-color: #e63946;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 2px 0.75rem;
+    border-radius: 25px;
+  }
+  .pricing-old-price {
+    color: #8a8a8a;
+    font-size: 0.95rem;
+  }
+}

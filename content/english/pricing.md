@@ -1,6 +1,6 @@
 ---
 title: "Employee Carpooling Pricing | TeamWheels"
-description: "Transparent pricing for your employee rideshare & commute program. Free 30-day trial, then 5€/seat/month inside the Microsoft Teams app — all features."
+description: "Transparent pricing for your employee rideshare & commute program. Free 30-day trial, then 3€/seat/month (promo, down from 5€) inside the Microsoft Teams app — all features."
 draft: false
 layout: "pricing"
 keywords: "employee rideshare pricing, corporate ridesharing cost, BlaBlaCar for business pricing, Uber for employees cost, Microsoft Teams app pricing, commute management platform pricing, ridesharing software cost, carpool program price, vanpool alternative cost, corporate carpooling pricing, daily commute platform pricing"
@@ -32,7 +32,9 @@ pricing_card:
 
   - name: "TeamWheels"
     currency: ""
-    price: "5€ /seat /month"
+    old_price: "5€ /seat /month"
+    price: "3€ /seat /month"
+    promo_label: "Promo: 40% off"
     populer: true
     content: "Complete employee carpooling & commute management"
     buy_now_btn_link: "contact"
@@ -83,7 +85,7 @@ faq:
       content: "Install TeamWheels from the [Microsoft Teams Store](https://teams.microsoft.com/l/app/1e3c893b-b545-49ed-a249-1c7a25b0fa46) — the trial starts right away, no sales call needed. You get 30 days of full access to TeamWheels for up to 50 employees — no credit card required, no commitment. Deploy the carpool program in Microsoft Teams and measure adoption and CO₂ impact before deciding to continue."
 
     - title: "Is there a minimum number of employees?"
-      content: "No. TeamWheels adapts to organizations of all sizes — from 10 to 10,000+ employees. The price stays consistent at 5€/seat/month. Companies in the USA, UK, and Canada all benefit from the same flat rate."
+      content: "No. TeamWheels adapts to organizations of all sizes — from 10 to 10,000+ employees. The price stays consistent at 3€/seat/month (promo price, down from 5€). Companies in the USA, UK, and Canada all benefit from the same flat rate."
 
     - title: "Can I cancel anytime?"
       content: "Yes. Cancel your subscription at any time with no fees or notice period. Your employee data is deleted in compliance with GDPR. We believe in earning your business through results, not lock-in contracts."
