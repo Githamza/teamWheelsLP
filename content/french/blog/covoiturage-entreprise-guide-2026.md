@@ -222,6 +222,8 @@ Un dernier critère, souvent oublié : le coût total. Entre une application aut
 
 Un programme de covoiturage d'entreprise n'a pas besoin de mois de préparation : de la décision aux premiers trajets partagés, comptez 30 jours. Voici la feuille de route que nous recommandons.
 
+Si votre entreprise compte au moins 50 salariés sur un même site, ce programme est aussi le volet covoiturage de votre plan de mobilité employeur : voir notre [modèle de plan de mobilité employeur à télécharger](/fr/blog/plan-de-mobilite-employeur-modele-covoiturage/).
+
 ### Étape 1 — Diagnostiquer le potentiel (jours 1 à 7) {#etape-1}
 
 Commencez par fixer vos objectifs : réduire la pression sur le parking, atteindre vos cibles RSE, faire économiser vos salariés, améliorer la rétention ? Choisissez les deux ou trois indicateurs que vous suivrez (taux de participation, trajets partagés par semaine, CO₂ évité, places libérées). Puis sondez les salariés : modes de transport actuels, distance, intérêt pour le covoiturage, freins perçus, canaux de communication préférés. Une petite incentive (bon café, don à une association) augmente sensiblement le taux de réponse. Inventoriez enfin les véhicules de flotte et les trajets inter-sites récurrents, et fixez le montant de FMD que l'entreprise est prête à verser.
