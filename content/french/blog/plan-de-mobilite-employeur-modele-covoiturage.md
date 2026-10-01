@@ -8,11 +8,11 @@ description: "Obligation LOM, contenu légal et modèle de plan de mobilité emp
 image: "images/blog/sustainable-mobility.jpg"
 author: "TeamWheels Editorial"
 reading_time: "11 min"
-keywords: "plan de mobilité employeur, plan de mobilité employeur modèle, modèle plan de mobilité employeur word, plan de mobilité employeur obligation, PDME covoiturage, plan de mobilité employeur exemple, LOM plan de mobilité, forfait mobilités durables covoiturage, TeamWheels"
+keywords: "plan de mobilité employeur, PDME, plan de mobilité entreprise, plan de déplacement entreprise, plan de mobilité employeur modèle, modèle plan de mobilité employeur word, plan de mobilité employeur obligation, PDME covoiturage, plan de mobilité employeur exemple, LOM plan de mobilité, forfait mobilités durables covoiturage, TeamWheels"
 canonical: "https://www.teamwheelsapp.com/fr/blog/plan-de-mobilite-employeur-modele-covoiturage/"
 faq:
   - question: "Le plan de mobilité employeur est-il obligatoire ?"
-    answer: "Il l'est dans un cas précis : si votre entreprise emploie au moins cinquante salariés sur un même site et qu'aucun accord n'a été trouvé lors de la négociation sur la mobilité domicile-travail (article L2242-17 du Code du travail), elle doit élaborer un plan de mobilité employeur (article L1214-8-2 du Code des transports, issu de la loi LOM du 24 décembre 2019). Si un accord a été conclu, le plan n'est pas exigé. En dehors de ce cadre, la démarche reste volontaire."
+    answer: "Il l'est à partir de cinquante salariés sur un même site, dans deux cas : si le site est situé dans une agglomération de plus de 100 000 habitants (critère de la fiche service-public), ou si aucun accord n'a été trouvé lors de la négociation sur la mobilité domicile-travail (articles L2242-17 du Code du travail et L1214-8-2 du Code des transports, issus de la loi LOM du 24 décembre 2019). En dehors de ce cadre, la démarche reste volontaire."
   - question: "Qui doit recevoir le plan de mobilité employeur ?"
     answer: "Le plan doit être transmis à l'autorité organisatrice de la mobilité compétente sur le territoire du site (région, intercommunalité ou, en Île-de-France, Île-de-France Mobilités). Certaines autorités ont mis en place une plateforme de dépôt dédiée."
   - question: "Que doit contenir un plan de mobilité employeur ?"
@@ -27,10 +27,10 @@ faq:
 
 # Plan de mobilité employeur : modèle à télécharger (Word/PDF) et volet covoiturage
 
-*Vous savez déjà ce qu'est un plan de mobilité employeur : c'est la fiche de service-public qui vous le dit. Ce que l'on cherche vraiment, c'est de savoir si on y est tenu, quoi mettre dedans, et surtout comment rédiger la partie covoiturage sans écrire « encourager le covoiturage » en conclusion. Voici la réponse courte, un modèle prêt à remplir, et la méthode pour un volet covoiturage qui tient devant un CSE comme devant une autorité organisatrice.*
+*Vous savez déjà ce qu'est un plan de mobilité employeur (PDME) : c'est la fiche de service-public qui vous le dit. Ce que l'on cherche vraiment, c'est de savoir si on y est tenu, quoi mettre dedans, et surtout comment rédiger la partie covoiturage sans écrire « encourager le covoiturage » en conclusion. Voici la réponse courte, un modèle prêt à remplir, et la méthode pour un volet covoiturage qui tient devant un CSE comme devant une autorité organisatrice.*
 
 > **L'essentiel en 30 secondes**
-> - **Obligation** : entreprise d'au moins **50 salariés sur un même site** et **pas d'accord** à la négociation sur la mobilité domicile-travail → plan de mobilité employeur obligatoire, à transmettre à l'autorité organisatrice (art. L1214-8-2 Code des transports, loi LOM 2019).
+> - **Obligation** : au moins **50 salariés sur un même site**, avec deux portes d'entrée. Selon service-public, le plan s'impose aux employeurs situés dans une **agglomération de plus de 100 000 habitants** ; et, quel que soit le lieu, il devient obligatoire à **défaut d'accord** sur la mobilité domicile-travail (art. L1214-8-2 Code des transports, loi LOM 2019). Dans les deux cas, il est transmis à l'autorité organisatrice.
 > - **Contenu légal** : offre de transport, analyse des déplacements, programme d'actions, plan de financement, calendrier, suivi.
 > - **Le volet covoiturage qui marche** : diagnostic des flux → mesures → indicateurs → financement via le forfait mobilités durables.
 > - **Modèle** : [télécharger en Word](/downloads/modele-plan-de-mobilite-employeur-teamwheels.docx) · [télécharger en PDF](/downloads/modele-plan-de-mobilite-employeur-teamwheels.pdf).
@@ -40,12 +40,14 @@ faq:
 Le raisonnement tient en trois questions, dans cet ordre.
 
 1. **Avez-vous au moins 50 salariés sur un même site ?** Si non, il n'y a pas d'obligation. Vous pouvez néanmoins établir un plan volontairement, pour structurer vos actions ou candidater à des aides.
-2. **Avez-vous négocié la mobilité ?** L'article L2242-17 du Code du travail prévoit, pour les entreprises concernées, une négociation sur les mesures visant à améliorer la mobilité des salariés entre leur résidence habituelle et leur lieu de travail : réduction du coût de la mobilité, incitation aux modes de transport vertueux, prise en charge de certains frais.
-3. **Un accord a-t-il été conclu ?** Si oui, le plan n'est pas exigé. Si non, l'article L1214-8-2 (II bis) impose d'élaborer un plan de mobilité employeur.
+2. **Êtes-vous dans une agglomération de plus de 100 000 habitants ?** C'est le critère que retient la fiche service-public sur le plan de mobilité employeur (dernière vérification indiquée : 18 juillet 2025, avec renvoi à l'arrêté du 22 décembre 2021 listant les communes concernées). Si oui, le plan est exigé, et il doit couvrir l'ensemble de vos sites, y compris ceux de moins de 50 salariés. L'autorité organisatrice de votre territoire peut vous confirmer si votre commune est concernée.
+3. **Avez-vous négocié la mobilité ?** L'article L2242-17 du Code du travail prévoit, pour les entreprises concernées, une négociation sur les mesures visant à améliorer la mobilité des salariés entre leur résidence habituelle et leur lieu de travail : réduction du coût de la mobilité, incitation aux modes de transport vertueux, prise en charge de certains frais.
+4. **Un accord a-t-il été conclu ?** Si oui, la voie « défaut d'accord » ne s'applique pas. Si non, l'article L1214-8-2 (II bis) impose d'élaborer un plan de mobilité employeur, y compris hors grande agglomération.
 
-Deux précisions utiles :
+Trois précisions utiles :
 
 - Plusieurs entreprises d'un même site peuvent établir **un plan commun** (zone d'activité, parc d'entreprises, campus). C'est souvent le moyen le plus efficace de rendre le covoiturage possible : plus de collègues, plus de trajets compatibles.
+- La négociation sur la mobilité (NAO) concerne le secteur privé ; pour les employeurs publics, le cadre diffère : vérifiez auprès de votre autorité organisatrice.
 - Le texte ne prévoit **pas de sanction spécifique**. Cela ne rend pas le sujet facultatif : la négociation, elle, est obligatoire, et le plan est ce qui vous permet de répondre à la fois au CSE, à l'autorité organisatrice et, de plus en plus, aux questions de bilan carbone sur les déplacements domicile-travail.
 
 *Vérifiez toujours la version en vigueur des articles sur [Légifrance](https://www.legifrance.gouv.fr/) et, en cas de doute sur votre situation, auprès de votre conseil juridique.*
@@ -142,7 +144,7 @@ Pour un essai sur un site pilote : 30 jours gratuits jusqu'à 50 collaborateurs,
 ## Foire aux questions
 
 **Le plan de mobilité employeur est-il obligatoire ?**
-Il l'est dans un cas précis : si votre entreprise emploie au moins cinquante salariés sur un même site et qu'aucun accord n'a été trouvé lors de la négociation sur la mobilité domicile-travail (article L2242-17 du Code du travail), elle doit élaborer un plan de mobilité employeur (article L1214-8-2 du Code des transports, issu de la loi LOM du 24 décembre 2019). Si un accord a été conclu, le plan n'est pas exigé. En dehors de ce cadre, la démarche reste volontaire.
+Il l'est à partir de cinquante salariés sur un même site, dans deux cas : si le site est situé dans une agglomération de plus de 100 000 habitants (critère de la fiche service-public), ou si aucun accord n'a été trouvé lors de la négociation sur la mobilité domicile-travail (articles L2242-17 du Code du travail et L1214-8-2 du Code des transports, issus de la loi LOM du 24 décembre 2019). En dehors de ce cadre, la démarche reste volontaire.
 
 **Qui doit recevoir le plan de mobilité employeur ?**
 Le plan doit être transmis à l'autorité organisatrice de la mobilité compétente sur le territoire du site (région, intercommunalité ou, en Île-de-France, Île-de-France Mobilités). Certaines autorités ont mis en place une plateforme de dépôt dédiée.
