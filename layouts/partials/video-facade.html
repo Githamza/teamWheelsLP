@@ -27,8 +27,7 @@
       class="hero-demo-video__facade"
       data-play-demo
       data-track="demo_video_play"
-      data-placement="{{ .placement }}"
-      aria-label="{{ .alt }}: {{ i18n "video_play_label" | default "Play the video" }}">
+      data-placement="{{ .placement }}">
       {{ with .thumb }}
         <img
           class="hero-demo-video__poster"
@@ -40,7 +39,7 @@
           alt="{{ $.alt }}" />
       {{ end }}
       <span class="hero-demo-video__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor" focusable="false"><path d="M8 5.6v12.8a1.2 1.2 0 0 0 1.84 1.02l10.2-6.4a1.2 1.2 0 0 0 0-2.04L9.84 4.58A1.2 1.2 0 0 0 8 5.6z"/></svg></span>
-      <span class="hero-demo-video__label" aria-hidden="true"><i class="fas fa-play-circle"></i> {{ .label }}{{ with .duration }} · {{ . }} s{{ end }}</span>
+      <span class="hero-demo-video__label"><i class="fas fa-play-circle"></i> {{ .label }}{{ with .duration }} · {{ . }} s{{ end }}</span>
     </button>
   </div>
   {{ with .watchPage }}
