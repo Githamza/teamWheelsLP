@@ -778,3 +778,18 @@ $promo-indigo-dark: #2b2d7c;
   .pricing-card.promo,
   .pricing-card.promo .pricing-promo-badge { animation: none; }
 }
+
+// Accessibility: inline links must be distinguishable from surrounding text
+// without relying on colour alone (Lighthouse "link-in-text-block"), and
+// nav dropdown links need a 24px minimum target (WCAG 2.5.8 "target-size").
+.content > a,
+.content p a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  min-height: 24px;
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+}
