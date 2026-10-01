@@ -9,8 +9,8 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
     /^swiper-/,
     /collapsing/,
     /show/,
-    /[aria-expanded=true]/,
-    /[aria-expanded=false]/,
+    /\[aria-expanded=true\]/,
+    /\[aria-expanded=false\]/,
     /^lb-/,
     /^gl/,
     /^go/,
@@ -24,6 +24,12 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
     /loaded/,
     /visible/,
     /current/,
+    // classes toggled at runtime by JS (not visible to hugo_stats.json)
+    /^is-/,
+    /^no-anim/,
+    /player/,
+    /^fa/,
+    /^d-/,
     /active/,
   ],
 });
