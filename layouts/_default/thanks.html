@@ -26,11 +26,11 @@
   </section>
 
   {{/* Conversion tracking — fires once, only on the post-submit redirect
-       (Web3Forms `redirect` lands the visitor here). gtag() is defined globally
+       (un-static `redirect` lands the visitor here). gtag() is defined globally
        in partials/essentials/head.html.
 
        GA4: the enhanced-measurement `form_submit` event never reached GA4 for
-       this form (the contact form is a plain POST to api.web3forms.com, so the
+       this form (the contact form is a plain POST to forms.un-static.com, so the
        page navigates away before the beacon is flushed), leaving zero key
        events despite real inbound leads. We now send the recommended
        `generate_lead` event explicitly from this page — mark it as a key event
@@ -60,7 +60,7 @@
 
       var params = {
         lead_source: leadSource,
-        method: "web3forms",
+        method: "un-static",
         language: "{{ site.Language.Lang }}",
       };
       try {

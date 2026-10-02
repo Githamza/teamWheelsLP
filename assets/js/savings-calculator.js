@@ -576,12 +576,13 @@
         var cd2 = getCurrencyDefaults(st.currency);
         var sym = cd2.currencySymbol;
         var payload = {
-          access_key: 'a39ddfc6-490f-4161-8857-2e9ec0086121',
+          message: 'Savings calculator lead — ' + (userInfo.company || '') + ' (' + st.employees + ' employees)',
           subject: '[Savings Calculator] ' + (userInfo.company || '') + ' - ' + (userInfo.firstName || ''),
           source: 'savings-calculator',
           language: lang,
           currency: st.currency,
           country: st.country,
+          name: userInfo.firstName,
           firstName: userInfo.firstName,
           email: userInfo.email,
           company: userInfo.company,
@@ -601,16 +602,16 @@
           submittedAt: new Date().toISOString(),
           pageUrl: window.location.href
         };
-        fetch('https://api.web3forms.com/submit', {
+        fetch('https://forms.un-static.com/forms/4b29dd3164199c7636d96d7fa7d38490131fe647', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
           body: JSON.stringify(payload)
         }).then(function (resp) {
-          // GA4 key event, sent only once Web3Forms has accepted the lead. The
+          // GA4 key event, sent only once un-static has accepted the lead. The
           // calculator is a JS form with no thank-you redirect, so GA4's
           // enhanced-measurement `form_submit` never fires here.
           if (resp && resp.ok) {
-            track('generate_lead', { lead_source: 'savings_calculator', method: 'web3forms', language: lang, country: st.country });
+            track('generate_lead', { lead_source: 'savings_calculator', method: 'un-static', language: lang, country: st.country });
           }
         }).catch(function () {});
       } catch (e) {}

@@ -43,10 +43,8 @@ preloader = "images/logo.png" # use jpg, png, svg or gif format.
 address = ""
 mobile = ""
 email = "contact@teamwheels.fr"
-# contact form action (Web3Forms — https://web3forms.com)
-contact_form_action = "https://api.web3forms.com/submit"
-# Web3Forms public access key (safe to expose client-side; tied to the destination email)
-web3forms_access_key = "a39ddfc6-490f-4161-8857-2e9ec0086121"
+# contact form action (un-static forms — webhook-enabled, replies are validated before sending)
+contact_form_action = "https://forms.un-static.com/forms/4b29dd3164199c7636d96d7fa7d38490131fe647"
 
 # Microsoft Teams app — published on the Teams Store / Microsoft Marketplace.
 # Used by partials/teams-install.html (hero, header, CTAs, pricing, blog) and

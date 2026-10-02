@@ -21,9 +21,8 @@
                     <form
                       action="{{ site.Params.contact_info.contact_form_action }}"
                       method="POST">
-                      {{/* Web3Forms redirect on success → fires the Google Ads
+                      {{/* un-static redirect on success → fires the Google Ads
                            conversion from the thank-you page. */}}
-                      <input type="hidden" name="access_key" value="{{ site.Params.contact_info.web3forms_access_key }}" />
                       <input type="hidden" name="redirect" value="{{ absLangURL "thank-you/" }}" />
                       <input type="hidden" name="subject" value="{{ i18n `contact_form_subject` }}" />
                       <div class="input-group mb-3">

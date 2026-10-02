@@ -1,0 +1,50 @@
+{{/* Submits every un-static lead form (hero, contact, CTA, how-it-works) in
+     place with fetch(), then navigates to the thank-you page ourselves so
+     the GA4 session survives and thanks.html fires `generate_lead`. If the
+     request fails, the form falls back to a native POST. The `hp_check`
+     honeypot is checked client-side: bots that fill it are silently sent to
+     the thank-you page without posting. Only `redirect` is stripped from the
+     payload; every other field reaches the un-static webhook. */}}
+<script>
+  (function () {
+    var forms = document.querySelectorAll('form[action*="un-static"]');
+    if (!forms.length || !window.fetch || !window.FormData) return;
+    forms.forEach(function (form) {
+      form.addEventListener("submit", function (event) {
+        if (form.dataset.twNativeSubmit === "1") return;
+        event.preventDefault();
+        var button = form.querySelector('button[type="submit"]');
+        var redirect = form.querySelector('input[name="redirect"]');
+        var target = redirect ? redirect.value : "{{ absLangURL "thank-you/" }}";
+        if (form.querySelector('input[name="hp_check"]:checked')) {
+          window.location.assign(target);
+          return;
+        }
+        var fallback = function () {
+          form.dataset.twNativeSubmit = "1";
+          if (button) button.disabled = false;
+          if (typeof form.requestSubmit === "function") form.requestSubmit();
+          else form.submit();
+        };
+        if (button) button.disabled = true;
+        var body = new URLSearchParams();
+        new FormData(form).forEach(function (value, key) {
+          if (key === "redirect" || key === "hp_check") return;
+          body.append(key, value);
+        });
+        body.append("page_url", window.location.href);
+        body.append("language", "{{ site.Language.Lang }}");
+        fetch(form.action, {
+          method: "POST",
+          headers: { Accept: "application/json" },
+          body: body,
+        })
+          .then(function (response) {
+            if (response.ok) window.location.assign(target);
+            else fallback();
+          })
+          .catch(fallback);
+      });
+    });
+  })();
+</script>

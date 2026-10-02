@@ -149,7 +149,7 @@ Nous ne vendons aucune donnée personnelle. Nous les partageons uniquement avec 
   l'application (hébergement, Azure Table Storage, Azure OpenAI, Azure Maps),
   comme décrit à la section 3.
 * **Les prestataires du site web** agissant sur nos instructions — traitement
-  des formulaires (Web3Forms), envoi d'e-mails, prestataires de mesure et de
+  des formulaires (un-static forms), envoi d'e-mails, prestataires de mesure et de
   publicité listés ci-dessus, et notre CRM.
 * **Votre employeur**, pour les données de l'application, en sa qualité de
   responsable de traitement.

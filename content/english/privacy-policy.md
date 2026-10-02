@@ -138,7 +138,7 @@ We do not sell personal data. We share it only with:
 * **Microsoft Azure**, the sole set of services processing app data (hosting,
   Azure Table Storage, Azure OpenAI, Azure Maps), as described in section 3.
 * **Website service providers** acting on our instructions — form handling
-  (Web3Forms), email delivery, the analytics and advertising providers listed
+  (un-static forms), email delivery, the analytics and advertising providers listed
   above, and our CRM.
 * **Your employer**, for app data, as the controller of that data.
 * **Professional advisers, auditors, or authorities**, where we are legally
