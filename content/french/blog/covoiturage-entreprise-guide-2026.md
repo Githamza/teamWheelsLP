@@ -128,7 +128,7 @@ Le trajet domicile-travail est l'une des premières sources de stress des salari
 
 La différence fondamentale tient à deux points : l'intégration native dans **Microsoft Teams** et la couverture complète du cycle de mobilité — du trajet domicile-bureau aux déplacements inter-sites avec la flotte d'entreprise.
 
-> **Actualité :** Karos est en négociations exclusives pour reprendre BlaBlaCar Daily (qui avait absorbé Klaxit en 2023). Contrat, données salariés, justificatifs FMD : voir [ce que le rachat de BlaBlaCar Daily par Karos change pour votre covoiturage d'entreprise](/fr/blog/rachat-blablacar-daily-karos-covoiturage-entreprise/).
+> **Actualité :** Karos est en négociations exclusives pour reprendre BlaBlaCar Daily (qui avait absorbé Klaxit en 2023). Contrat, données salariés, justificatifs FMD : voir [ce que le rachat de BlaBlaCar Daily par Karos change pour votre covoiturage d'entreprise](/fr/blog/rachat-blablacar-daily-karos-covoiturage-entreprise/), et [l'alternative à BlaBlaCar Daily et Karos pour les entreprises](/fr/alternative-blablacar-daily-karos-entreprises/).
 
 > **Le covoiturage d'entreprise n'est plus un avantage optionnel : c'est une obligation de reporting et un levier de compétitivité RH.**
 
