@@ -18,7 +18,8 @@
         }
 
         function pickLang() {
-          if (preferred && (preferred === "en" || preferred === "fr")) return preferred;
+          var supported = ["fr", "en", "de", "es"];
+          if (preferred && supported.indexOf(preferred) >= 0) return preferred;
 
           var candidates = [];
           if (Array.isArray(navigator.languages)) candidates = candidates.concat(navigator.languages);
@@ -26,7 +27,8 @@
           if (navigator.userLanguage) candidates.push(navigator.userLanguage);
 
           for (var i = 0; i < candidates.length; i++) {
-            if (normalizePrimary(candidates[i]) === "fr") return "fr";
+            var primary = normalizePrimary(candidates[i]);
+            if (supported.indexOf(primary) >= 0) return primary;
           }
           return "en";
         }

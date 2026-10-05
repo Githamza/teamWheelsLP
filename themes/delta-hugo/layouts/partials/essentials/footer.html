@@ -23,7 +23,7 @@
           <h4 class="footer-menu-title text-white">{{i18n `footer_menu_1_title`}}</h4>
           <ul class="list-unstyled mb-0">
             {{range .}}
-            <li><a href="{{.URL | relLangURL}}">{{.Name}}</a></li>
+            <li><a href="{{ partial "lang-url.html" .URL }}">{{.Name}}</a></li>
             {{end}}
           </ul>
         </div>
@@ -33,7 +33,7 @@
           <h4 class="footer-menu-title text-white">{{i18n `footer_menu_2_title`}}</h4>
           <ul class="list-unstyled mb-0">
             {{range .}}
-            <li><a href="{{.URL | relLangURL}}">{{.Name}}</a></li>
+            <li><a href="{{ partial "lang-url.html" .URL }}">{{.Name}}</a></li>
             {{end}}
           </ul>
         </div>
@@ -43,7 +43,7 @@
           <h4 class="footer-menu-title text-white">{{i18n `footer_menu_3_title`}}</h4>
           <ul class="list-unstyled mb-0">
             {{range .}}
-            <li><a href="{{.URL | relLangURL}}">{{.Name}}</a></li>
+            <li><a href="{{ partial "lang-url.html" .URL }}">{{.Name}}</a></li>
             {{end}}
           </ul>
         </div>
@@ -53,7 +53,7 @@
           <h4 class="footer-menu-title text-white">{{i18n `footer_menu_4_title`}}</h4>
           <ul class="list-unstyled mb-0">
             {{range .}}
-            <li><a href="{{.URL | relLangURL}}">{{.Name}}</a></li>
+            <li><a href="{{ partial "lang-url.html" .URL }}">{{.Name}}</a></li>
             {{end}}
           </ul>
         </div>
@@ -63,7 +63,7 @@
           <h4 class="footer-menu-title text-white">{{i18n `footer_menu_5_title`}}</h4>
           <ul class="list-unstyled mb-0">
             {{range .}}
-            <li><a href="{{.URL | relLangURL}}">{{.Name}}</a></li>
+            <li><a href="{{ partial "lang-url.html" .URL }}">{{.Name}}</a></li>
             {{end}}
           </ul>
         </div>

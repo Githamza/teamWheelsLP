@@ -1,0 +1,136 @@
+############# German navigation ##############
+# In logische Dropdowns gruppiert, um die obere Leiste kurz zu halten:
+#   Startseite · Produkt ▾ · Preise · Ressourcen ▾ · Kontakt
+# Dropdowns öffnen sich beim Hovern (Desktop) — siehe .navbar-Hover-CSS in
+# assets/scss/custom.scss.
+# Hinweis: Der Blog ist nicht übersetzt; Blog-Links verweisen absolut auf die
+# englische Version.
+
+# main menu
+[[main]]
+weight = 1
+name = "Startseite"
+url = ""
+
+# ── Produkt ▾ (was TeamWheels ist + wie es funktioniert + Demo) ──
+[[main]]
+identifier = "product"
+name = "Produkt"
+weight = 2
+
+[[main]]
+parent = "product"
+name = "Fahrgemeinschafts-Software"
+url = "corporate-carpooling-software/"
+weight = 1
+
+[[main]]
+parent = "product"
+name = "White-Label-Plattform"
+url = "white-label-carpool-platform/"
+weight = 2
+
+[[main]]
+parent = "product"
+name = "So funktioniert's"
+url = "how-it-works/"
+weight = 3
+
+[[main]]
+parent = "product"
+name = "Vorteile"
+url = "benefits/"
+weight = 4
+
+[[main]]
+parent = "product"
+name = "Demo ansehen"
+url = "demo/"
+weight = 5
+
+# ── Preise (eigenständig) ──
+[[main]]
+name = "Preise"
+url = "pricing/"
+weight = 3
+
+# ── Ressourcen ▾ (Self-Service-Tools + Artikel) ──
+[[main]]
+identifier = "resources"
+name = "Ressourcen"
+weight = 4
+
+[[main]]
+parent = "resources"
+name = "Ersparnisrechner"
+url = "https://www.teamwheelsapp.com/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/"
+weight = 1
+
+[[main]]
+parent = "resources"
+name = "Blog (Englisch)"
+url = "https://www.teamwheelsapp.com/en/blog/"
+weight = 2
+
+# ── Kontakt (eigenständig) ──
+[[main]]
+name = "Kontakt"
+url = "contact/"
+weight = 5
+
+
+
+### footer menus
+
+# footer_menu_3
+[[footer_menu_3]]
+name = "Kontakt"
+url = "contact/"
+weight = 1
+
+[[footer_menu_3]]
+name = "Support"
+url = "support/"
+weight = 2
+
+[[footer_menu_3]]
+name = "Datenschutz"
+url = "privacy-policy/"
+weight = 3
+
+[[footer_menu_3]]
+name = "AGB"
+url = "terms-and-conditions/"
+weight = 4
+
+
+# footer_menu_4
+[[footer_menu_4]]
+name = "Fahrgemeinschafts-Software"
+url = "corporate-carpooling-software/"
+weight = 1
+
+[[footer_menu_4]]
+name = "White-Label-Plattform"
+url = "white-label-carpool-platform/"
+weight = 2
+
+[[footer_menu_4]]
+name = "So funktioniert's"
+url = "how-it-works/"
+weight = 3
+
+[[footer_menu_4]]
+name = "Preise"
+url = "pricing/"
+weight = 4
+
+[[footer_menu_4]]
+name = "Ersparnisrechner"
+url = "https://www.teamwheelsapp.com/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/"
+weight = 5
+
+[[footer_menu_4]]
+name = "Blog (Englisch)"
+url = "https://www.teamwheelsapp.com/en/blog/"
+weight = 6

@@ -60,7 +60,7 @@
                     <li>
                       <a
                         class="dropdown-item {{ if $active }}active{{ end }}"
-                        {{ if findRE `^http` .URL }}
+                        {{ if and (findRE `^http` .URL) (not (hasPrefix .URL site.BaseURL)) }}
                           target="_blank" rel="noopener"
                         {{ end }}
                         href="{{ if findRE `^#` .URL }}
@@ -70,7 +70,7 @@
                         {{ else if eq .URL (`/` | relURL) }}
                           {{ .URL }}{{ site.Language }}/
                         {{ else }}
-                          {{ .URL | relLangURL }}
+                          {{ partial "lang-url.html" .URL }}
                         {{ end }}"
                         >{{ .Name }}</a
                       >
@@ -82,7 +82,7 @@
               <li class="nav-item {{ if $active }}active{{ end }}">
                 <a
                   class="nav-link"
-                  {{ if findRE `^http` .URL }}
+                  {{ if and (findRE `^http` .URL) (not (hasPrefix .URL site.BaseURL)) }}
                     target="_blank" rel="noopener"
                   {{ end }}
                   href="{{ if findRE `^#` .URL }}
@@ -92,7 +92,7 @@
                   {{ else if eq .URL (`/` | relURL) }}
                     {{ .URL }}{{ site.Language }}/
                   {{ else }}
-                    {{ .URL | relLangURL }}
+                    {{ partial "lang-url.html" .URL }}
                   {{ end }}"
                   >{{ .Name }}</a
                 >
@@ -109,7 +109,7 @@
           {{ with site.Params.navigation_button }}
             {{ if .enable }}
               <!-- login btn -->
-              <a href="{{ .link | relLangURL }}" class="btn btn-link">
+              <a href="{{ partial "lang-url.html" .link }}" class="btn btn-link">
                 {{ with .icon }}<i class="icon {{ . }} me-1"></i>{{ end }}
                 {{ .label }}
               </a>
@@ -119,7 +119,7 @@
           {{ with site.Params.navigation_button_two }}
             {{ if .enable }}
               <!-- signup btn -->
-              <a href="{{ .link | relLangURL }}" class="btn btn-primary">
+              <a href="{{ partial "lang-url.html" .link }}" class="btn btn-primary">
                 {{ .label }}
                 {{ with .icon }}<i class="icon {{ . }}"></i>{{ end }}
               </a>

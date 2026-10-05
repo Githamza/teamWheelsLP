@@ -1,0 +1,204 @@
+- id: by
+  translation: por
+
+- id: admin
+  translation: Admin
+
+- id: most_popular
+  translation: más popular
+
+- id: recent_posts_of
+  translation: Publicaciones recientes de
+
+- id: related_posts
+  translation: Artículos relacionados
+
+- id: min_read
+  translation: min de lectura
+
+- id: view_all_positions
+  translation: Ver todas las ofertas
+
+- id: apply_now
+  translation: Enviar candidatura
+
+- id: share_this_job
+  translation: "Compartir esta oferta:"
+
+- id: other_jobs
+  translation: Otras ofertas
+
+- id: all_jobs
+  translation: Todas las ofertas
+
+- id: fname
+  translation: Nombre
+
+- id: full_name
+  translation: Nombre y apellidos
+
+- id: lname
+  translation: Apellidos
+
+- id: email
+  translation: Correo electrónico
+
+- id: hero_email_label
+  translation: ¿Prefiere una demo guiada? Déjenos su correo profesional
+
+- id: hero_email_placeholder
+  translation: nombre@empresa.com
+
+- id: website
+  translation: Sitio web
+
+- id: optional
+  translation: opcional
+
+- id: contact_form_subject
+  translation: Nuevo mensaje desde el formulario de contacto de TeamWheels
+
+- id: message
+  translation: Mensaje
+
+- id: submit_now
+  translation: Enviar
+
+- id: cv_note
+  translation: solo se admiten archivos doc o pdf &amp; el tamaño del archivo debe ser inferior a 2 MB
+
+- id: upload_cv
+  translation: Subir CV
+
+- id: footer_menu_1_title
+  translation: Productos
+
+- id: footer_menu_2_title
+  translation: Servicios
+
+- id: footer_menu_3_title
+  translation: Soporte
+
+- id: footer_menu_4_title
+  translation: Recursos
+
+- id: footer_menu_5_title
+  translation: Otras páginas
+
+- id: nav_main
+  translation: Navegación principal
+
+- id: nav_pagination
+  translation: Paginación de artículos
+
+- id: select_language
+  translation: Seleccionar idioma
+
+- id: video_player_title
+  translation: Reproductor de vídeo de TeamWheels
+
+- id: video_not_supported
+  translation: Su navegador no admite la reproducción de vídeo.
+
+- id: video_play_label
+  translation: Reproducir el vídeo de demostración
+
+- id: hero_carousel_image
+  translation: Cómo TeamWheels pone en contacto a compañeros en Microsoft Teams
+
+- id: video_watch_page_link
+  translation: Ver la página completa de la demo
+
+
+- id: sc_step1_title
+  translation: "Su empresa"
+
+- id: sc_step2_title
+  translation: "Movilidad actual"
+
+- id: sc_step3_title
+  translation: "Su ahorro potencial"
+
+- id: sc_step4_title
+  translation: "Su informe personalizado"
+
+- id: sc_chart_bar_title
+  translation: "Emisiones de CO₂: antes y después"
+
+- id: sc_chart_rse_title
+  translation: "Puntuación ESG de movilidad"
+
+- id: sc_cta_download
+  translation: "Descargar mi informe en PDF"
+
+- id: sc_nav_prev
+  translation: "← Atrás"
+
+- id: sc_nav_next
+  translation: "Siguiente →"
+
+- id: sc_progress
+  translation: "Progreso de la calculadora"
+
+- id: sc_step_nav
+  translation: "Navegación entre pasos"
+
+# FAQ section title (partials/faq-section.html)
+- id: faq_title
+  translation: Preguntas frecuentes
+
+# End-of-article product CTA (partials/blog-cta.html)
+- id: blog_cta_title
+  translation: Ponga en práctica esta guía
+- id: blog_cta_before
+  translation: "Descubra nuestro"
+- id: blog_cta_anchor
+  translation: software de carpooling corporativo
+- id: blog_cta_after
+  translation: " integrado en Microsoft Teams: emparejamiento automático de trayectos, registros para beneficios de movilidad y reporting de CO₂, operativo en 5 minutos."
+- id: blog_cta_button
+  translation: Solicitar una demo
+
+- id: sc_intro_subtitle
+  translation: Herramienta gratuita de TeamWheels
+
+# Microsoft Teams app install CTA (partials/teams-install.html)
+- id: ms_locale
+  translation: es-es
+- id: teams_install_button
+  translation: Añadir a Microsoft Teams
+- id: teams_install_button_short
+  translation: Pruébelo en Teams
+- id: teams_install_trust
+  translation: Gratis 30 días · Sin tarjeta de crédito · Operativo en 5 minutos
+- id: teams_admin_question
+  translation: "¿No es administrador de Teams?"
+- id: teams_admin_link
+  translation: "Envíe la solicitud a su equipo de TI"
+- id: teams_store_badge_top
+  translation: "Disponible en"
+- id: teams_store_badge_bottom
+  translation: "Microsoft Teams Store"
+- id: ms_attestation_badge_top
+  translation: "Publisher Attestation"
+- id: ms_attestation_badge_bottom
+  translation: "Microsoft 365"
+- id: teams_admin_mail_subject
+  translation: "Solicitud: instalar la aplicación TeamWheels en Microsoft Teams"
+- id: teams_admin_mail_body
+  translation: |
+    Hola:
+
+    Me gustaría probar TeamWheels, una aplicación de coche compartido para empleados integrada en Microsoft Teams (gratis durante 30 días, sin tarjeta de crédito).
+
+    ¿Podrías habilitarla para nuestra organización?
+
+    - Instalar en Teams: {{ .Install }}
+    - Ficha en Microsoft Marketplace: {{ .Marketplace }}
+    - Microsoft 365 Publisher Attestation (seguridad, tratamiento de datos, cumplimiento): {{ .Attestation }}
+
+    Puntos clave: inicio de sesión mediante Microsoft Entra ID (se aplican vuestras directivas de acceso condicional), datos alojados en Francia en Azure y cifrados en reposo, ningún dato compartido con terceros, conforme con el RGPD.
+
+    En el Centro de administración de Teams: Aplicaciones de Teams > Administrar aplicaciones > buscar «TeamWheels» > Permitir.
+
+    ¡Gracias!

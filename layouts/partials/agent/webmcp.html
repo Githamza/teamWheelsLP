@@ -25,9 +25,13 @@
     return;
   }
   var lang = (document.documentElement.getAttribute('lang') || 'fr').toLowerCase().slice(0, 2);
-  var base = lang === 'en' ? '/en' : '/fr';
+  var langs = ['fr', 'en', 'de', 'es'];
+  if (langs.indexOf(lang) < 0) lang = 'fr';
+  var base = '/' + lang;
   function go(path) {
-    var url = base + path;
+    // The blog (and the calculator it hosts) only exists in fr and en;
+    // de / es pages link to the English one.
+    var url = (path.indexOf('/blog/') === 0 && lang !== 'fr' && lang !== 'en' ? '/en' : base) + path;
     window.location.assign(url);
     return { ok: true, url: url };
   }
@@ -57,21 +61,21 @@
           name: 'open_savings_calculator',
           description: 'Open the TeamWheels savings calculator that estimates CO₂ avoided, parking demand reduced, and annual € savings for a given employee count.',
           inputSchema: emptyObj,
-          execute: function () { return go(lang === 'en' ? '/blog/carpooling-savings-calculator-corporate-co2-roi-2026/' : '/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/'); }
+          execute: function () { return go(lang !== 'fr' ? '/blog/carpooling-savings-calculator-corporate-co2-roi-2026/' : '/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/'); }
         },
         {
           name: 'switch_language',
-          description: 'Switch the site to French (fr) or English (en) and navigate to the equivalent page.',
+          description: 'Switch the site to French (fr), English (en), German (de) or Spanish (es) and navigate to that language home page.',
           inputSchema: {
             type: 'object',
             properties: {
-              lang: { type: 'string', enum: ['fr', 'en'], description: 'Target language code.' }
+              lang: { type: 'string', enum: ['fr', 'en', 'de', 'es'], description: 'Target language code.' }
             },
             required: ['lang'],
             additionalProperties: false
           },
           execute: function (args) {
-            var target = (args && args.lang === 'en') ? '/en/' : '/fr/';
+            var target = '/' + (args && langs.indexOf(args.lang) >= 0 ? args.lang : 'fr') + '/';
             window.location.assign(target);
             return { ok: true, url: target };
           }

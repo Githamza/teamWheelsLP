@@ -2,7 +2,7 @@
 
 > TeamWheels turns Microsoft Teams into a corporate carpooling platform: no extra app to install, a conversational matching bot, an admin dashboard for HR, Facilities and Sustainability teams, and Scope 3 / Forfait Mobilité Durable reporting out of the box.
 
-TeamWheels is bilingual (English and French) and serves organisations in the USA, UK, Canada and France. Microsoft Partner certified, Azure AD / Entra ID SSO, GDPR compliant, deployed in 5 minutes from Microsoft AppSource.
+The TeamWheels website is available in English, French, German and Spanish (the blog is published in English and French only) and serves organisations in the USA, UK, Canada and France. Microsoft Partner certified, Azure AD / Entra ID SSO, GDPR compliant, deployed in 5 minutes from Microsoft AppSource.
 
 This file follows the [llms.txt convention](https://llmstxt.org/). Agents that ingest this index should follow the language-specific full-corpus dumps below for complete content.
 
@@ -10,6 +10,8 @@ This file follows the [llms.txt convention](https://llmstxt.org/). Agents that i
 
 - [English full corpus](https://www.teamwheelsapp.com/en/llms-full.txt): Every primary page and blog post in English, concatenated as Markdown for retrieval.
 - [French full corpus](https://www.teamwheelsapp.com/fr/llms-full.txt): Every primary page and blog post in French, concatenated as Markdown for retrieval.
+- [German full corpus](https://www.teamwheelsapp.com/de/llms-full.txt): Every primary page in German, concatenated as Markdown for retrieval.
+- [Spanish full corpus](https://www.teamwheelsapp.com/es/llms-full.txt): Every primary page in Spanish, concatenated as Markdown for retrieval.
 
 ## Primary pages — English
 

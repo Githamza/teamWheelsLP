@@ -43,11 +43,15 @@
 
   ## Language roots without the trailing slash. mod_dir would 301 these
   ## anyway, but only after a directory probe — make it explicit.
-  RewriteRule ^(fr|en)$ /$1/ [R=301,L]
+  RewriteRule ^(fr|en|de|es)$ /$1/ [R=301,L]
 
   ## /career/ was untouched delta-hugo demo content (lorem ipsum, a broken
   ## /career/about link). The pages are deleted; send their equity to contact.
-  RewriteRule ^(fr|en)/career(/.*)?$ /$1/contact/ [R=301,L]
+  RewriteRule ^(fr|en|de|es)/career(/.*)?$ /$1/contact/ [R=301,L]
+
+  ## The blog is only published in fr and en; de / es readers get the English
+  ## posts (menus already link there — this catches typed / guessed URLs).
+  RewriteRule ^(de|es)/blog(/.*)?$ /en/blog$2 [R=301,L]
   RewriteRule ^career(/.*)?$ /fr/contact/ [R=301,L]
 
   ## Renamed article. Hugo `aliases` only emit a meta-refresh stub, which
@@ -79,9 +83,10 @@
   ## Same path rules (no host rule possible here): "/" always goes to the
   ## French home, which is the default content language.
   RedirectMatch 301 "^/$" "/fr/"
-  RedirectMatch 301 "^/(fr|en)$" "/$1/"
-  RedirectMatch 301 "^/(fr|en)/career(/.*)?$" "/$1/contact/"
+  RedirectMatch 301 "^/(fr|en|de|es)$" "/$1/"
+  RedirectMatch 301 "^/(fr|en|de|es)/career(/.*)?$" "/$1/contact/"
   RedirectMatch 301 "^/career(/.*)?$" "/fr/contact/"
+  RedirectMatch 301 "^/(de|es)/blog(/.*)?$" "/en/blog$2"
   RedirectMatch 301 "^/fr/blog/voies-covoiturage-paris-peripherique-guide-2025/?$" "/fr/blog/voies-covoiturage-paris-peripherique-guide-2026/"
   RedirectMatch 301 "^/terms(-and-conditions)?/?$" "/en/terms-and-conditions/"
   RedirectMatch 301 "^/support/?$" "/en/support/"
@@ -179,6 +184,8 @@
   Header always append Link "</sitemap.xml>; rel=\"sitemap http://www.sitemaps.org/schemas/sitemap/0.9\"; type=\"application/xml\""
   Header always append Link "</fr/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"fr\""
   Header always append Link "</en/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"en\""
+  Header always append Link "</de/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"de\""
+  Header always append Link "</es/how-it-works/>; rel=\"service-doc\"; type=\"text/html\"; hreflang=\"es\""
   Header always append Link "</status.json>; rel=\"status\"; type=\"application/json\""
 
   ## Serve the api-catalog with the correct RFC 9264 link-set media type

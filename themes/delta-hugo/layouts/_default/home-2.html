@@ -145,7 +145,7 @@
             {{ with .button }}
               {{ if .enable }}
                 <div class="text-center mt-5 pt-2">
-                  <a href="{{ .link | relLangURL }}" class="btn btn-primary">
+                  <a href="{{ partial "lang-url.html" .link }}" class="btn btn-primary">
                     {{ .label }} <i class="arrow-right {{ .icon }}"></i>
                   </a>
                 </div>
@@ -258,7 +258,7 @@
                 {{ with .button }}
                   {{ if .enable }}
                     <a
-                      href="{{ .link | relLangURL }}"
+                      href="{{ partial "lang-url.html" .link }}"
                       class="btn btn-primary m-1">
                       {{ .label }} <i class="arrow-right {{ .icon }}"></i>
                     </a>
@@ -544,7 +544,7 @@
               {{ if .enable }}
                 <div class="col-12 text-center">
                   <a
-                    href="{{ .link | relLangURL }}"
+                    href="{{ partial "lang-url.html" .link }}"
                     class="btn btn-primary m-1">
                     {{ .label }} <i class="arrow-right {{ .icon }}"></i>
                   </a>

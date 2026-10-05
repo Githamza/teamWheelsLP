@@ -10,7 +10,7 @@
                 <h3 class="text-white text-capitalize mb-2">{{site.Params.call_to_action.title | markdownify}}</h3>
                 <p class="text-white mb-4">{{site.Params.call_to_action.subtitle | markdownify}}</p>
                 {{if site.Params.call_to_action.button_label}}
-                <a href="{{site.Params.call_to_action.button_link | relLangURL}}" class="btn btn-secondary">{{site.Params.call_to_action.button_label}} <i class="arrow-right fas fa-arrow-right"></i></a>
+                <a href="{{ partial "lang-url.html" site.Params.call_to_action.button_link }}" class="btn btn-secondary">{{site.Params.call_to_action.button_label}} <i class="arrow-right fas fa-arrow-right"></i></a>
                 {{end}}
               </div>
             </div>
