@@ -51,6 +51,8 @@ Pour un contrat employeur en cours, cela signifie une seule chose : **les condit
 
 Le tableau repose sur les informations publiques des éditeurs et de la presse au 30 septembre 2026. Quand une information n'est pas vérifiable publiquement, nous écrivons « non communiqué » plutôt que de la déduire. Vérifiez les conditions en vigueur auprès de chaque fournisseur.
 
+<div class="table-scroll">
+
 | | **Karos** | **BlaBlaCar Daily** (historique) | **TeamWheels** |
 |---|---|---|---|
 | **Modèle** | Application grand public, réseau ouvert, avec une offre dédiée aux entreprises | Application grand public, réseau ouvert (reprise par Karos en négociation) | Outil employeur : covoiturage entre collègues de l'organisation |
@@ -59,6 +61,8 @@ Le tableau repose sur les informations publiques des éditeurs et de la presse a
 | **Données et reporting FMD** | Non communiqué | Preuves de trajets via l'opérateur, détail non communiqué | Relevés mensuels prêts pour la paie, données hébergées en France |
 | **Marque blanche** | Non communiqué | Non communiqué | Oui, sur devis |
 | **Sites isolés** | Non communiqué | Non communiqué | Adapté si assez de salariés partent du même bassin |
+
+</div>
 
 <p class="pillar-cta">
   <a class="btn btn-primary" href="/fr/contact/?src=alternative-blablacar-karos">Comparer sur votre site : demander une démo</a>
