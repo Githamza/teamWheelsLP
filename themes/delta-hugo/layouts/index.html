@@ -55,7 +55,7 @@
                 {{ if .enable }}
                   <a
                     class="btn btn-outline-primary m-1"
-                    href="{{ .link | relLangURL }}">
+                    href="{{ partial "lang-url.html" .link }}">
                     {{ with .icon }}<i class="{{ . }}"></i> {{ end }}{{ .label }}
                   </a>
                 {{ end }}
@@ -395,7 +395,7 @@
             {{ with .button }}
               {{ if .enable }}
                 <div class="text-center mt-5 pt-2">
-                  <a href="{{ .link | relLangURL }}" class="btn btn-primary">
+                  <a href="{{ partial "lang-url.html" .link }}" class="btn btn-primary">
                     {{ .label }} <i class="arrow-right {{ .icon }}"></i>
                   </a>
                 </div>
@@ -772,7 +772,7 @@
               {{ if .enable }}
                 <div class="col-12 text-center">
                   <a
-                    href="{{ .link | relLangURL }}"
+                    href="{{ partial "lang-url.html" .link }}"
                     class="btn btn-primary m-1">
                     {{ .label }} <i class="arrow-right {{ .icon }}"></i>
                   </a>
@@ -814,7 +814,7 @@
   {{ with .Params.next_step_button }}
     {{ if .enable }}
       <div class="text-center mt-5 pt-2">
-        <a href="{{ .link | relLangURL }}" class="btn btn-dark">
+        <a href="{{ partial "lang-url.html" .link }}" class="btn btn-dark">
           {{ .label }} <i class="arrow-right {{ .icon }}"></i>
         </a>
       </div>

@@ -1,0 +1,11 @@
+{{- /* relLangURL that leaves absolute URLs alone. Hugo's relLangURL strips
+       our own host from an absolute URL and re-prefixes the current
+       language, so "https://www.teamwheelsapp.com/en/blog/" on a German page
+       would become "/de/en/blog/". The de / es menus and front matter point
+       at the English blog with absolute URLs, so menus and buttons go
+       through this partial. */ -}}
+{{- $out := . -}}
+{{- if not (hasPrefix . "http") -}}
+  {{- $out = relLangURL . -}}
+{{- end -}}
+{{- return $out -}}

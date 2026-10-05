@@ -852,3 +852,25 @@ $promo-indigo-dark: #2b2d7c;
     }
   }
 }
+
+// ============================================================
+// German / Spanish typography
+// ------------------------------------------------------------
+// The theme title-cases headings, subtitles, buttons and links
+// (text-transform: capitalize). That suits English, but German
+// and Spanish don't title-case ("Für Mitarbeitende – Direkt In"
+// reads as a mistake), so keep the copy's own casing there.
+// German compounds ("Fahrgemeinschaften") are wider than the
+// hero column on phones: let the browser hyphenate them, which
+// relies on <html lang> (see _default/baseof.html).
+// ============================================================
+// `!important` because .title / .subtitle extend Bootstrap's
+// .text-capitalize, which is itself !important.
+:is(:lang(de), :lang(es)) :is(.title, .subtitle, .btn, .accordion-button, h1, h2, h3, h4, a) {
+  text-transform: none !important;
+}
+
+:lang(de) :is(h1, h2, h3, .title) {
+  hyphens: auto;
+  overflow-wrap: break-word;
+}

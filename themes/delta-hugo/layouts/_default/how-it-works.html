@@ -164,7 +164,7 @@
                 {{ with .button }}
                   {{ if .enable }}
                     <a
-                      href="{{ .link | relLangURL }}"
+                      href="{{ partial "lang-url.html" .link }}"
                       class="btn btn-primary m-1">
                       {{ .label }} <i class="arrow-right {{ .icon }}"></i>
                     </a>
