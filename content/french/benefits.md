@@ -1,13 +1,13 @@
 ---
-title: "Avantages TeamWheels | Pourquoi choisir le covoiturage entreprise Microsoft Teams"
-seoTitle: "Avantages du covoiturage entreprise | TeamWheels"
-description: "Application rideshare TeamWheels : réduisez Scope 3, parking et coûts trajet domicile-travail. Versez le Forfait Mobilité Durable depuis Microsoft Teams."
+title: "Avantages du covoiturage pour vos salariés | Ce que TeamWheels change pour vos équipes"
+seoTitle: "Avantages du covoiturage pour vos salariés | TeamWheels"
+description: "Avantages du covoiturage pour vos salariés : économies de trajet, moins de parking, Scope 3 réduit. Versez le Forfait Mobilité Durable depuis Teams."
 keywords: "avantages covoiturage entreprise, ROI covoiturage entreprise, BlaBlaCar entreprise avantages, Uber pour salariés, application Microsoft Teams, ridesharing entreprise avantages, Scope 3 trajets domicile-travail, Forfait Mobilité Durable, économies trajet salarié, mobilité durable entreprise, autopartage entreprise, bien-être salarié mobilité, gestion commute salariés"
 layout: "benefits"
 
 banner:
   subtitle: "Pourquoi choisir TeamWheels ?"
-  title: "Tous les avantages du covoiturage entreprise — en une seule plateforme"
+  title: "Ce que le covoiturage change pour vos équipes — tous les avantages, au même endroit"
   description: "Zéro friction, résultats mesurables, conformité simplifiée : voici tout ce que TeamWheels apporte à votre organisation."
   image: "images/photos/colleagues-carpooling.jpg"
 
@@ -18,7 +18,7 @@ image_and_content_blocks:
     title: "Le covoiturage directement dans Microsoft Teams"
     image: "images/why_use_teamWheels.png"
     content_position: "right"
-    content: "Pourquoi obliger vos équipes à installer une app de plus ? TeamWheels s'intègre nativement à Teams, l'outil qu'elles utilisent déjà au quotidien.
+    content: "Pourquoi obliger vos équipes à installer une app de plus ? TeamWheels, le [logiciel de covoiturage entreprise](/fr/corporate-carpooling-software/) conçu pour Microsoft Teams, s'intègre nativement à l'outil qu'elles utilisent déjà au quotidien.
 
     * **Zéro friction** — Pas de nouvelle app à installer, pas de nouveau compte. Le covoiturage démarre en un clic
 
@@ -28,7 +28,7 @@ image_and_content_blocks:
 
     * **Déploiement en 5 min** — Un admin Teams, quelques clics, et votre programme covoiturage est en ligne
 
-    Contrairement aux apps de covoiturage classiques aux taux d'adoption faibles, TeamWheels vit là où vos équipes travaillent déjà. C'est pourquoi nos clients atteignent 40%+ de participation.
+    Contrairement aux applications autonomes aux taux d'adoption faibles, TeamWheels vit là où vos équipes travaillent déjà. C'est pourquoi nos clients atteignent 40%+ de participation.
     "
     button:
       enable: false
@@ -93,7 +93,7 @@ image_and_content_blocks:
 
 faq:
   - question: "Existe-t-il une application Microsoft Teams pour le covoiturage des salariés ?"
-    answer: "Oui. TeamWheels est une application de covoiturage validée par Microsoft qui fonctionne dans Microsoft Teams. Les salariés proposent et trouvent des trajets via un bot conversationnel dans Teams, sans app séparée à télécharger — ce qui explique un taux de participation supérieur à 40 %, contre moins de 18 % pour les apps autonomes."
+    answer: "Oui. TeamWheels est une application validée par Microsoft qui fonctionne dans Microsoft Teams et permet aux salariés de covoiturer. Les salariés proposent et trouvent des trajets via un bot conversationnel dans Teams, sans app séparée à télécharger — ce qui explique un taux de participation supérieur à 40 %, contre moins de 18 % pour les apps autonomes."
   - question: "Quel est le taux de participation moyen d'un programme de covoiturage entreprise ?"
     answer: "Les applications de covoiturage autonomes dépassent rarement 18 % de participation, faute d'adoption. Les programmes intégrés à un outil déjà utilisé au quotidien — comme TeamWheels dans Microsoft Teams — atteignent généralement plus de 40 %."
   - question: "Comment le covoiturage réduit-il les émissions Scope 3 ?"
