@@ -1,5 +1,6 @@
 ---
 title: "Support"
+seoTitle: "TeamWheels Support — help and contact"
 description: "Get help with TeamWheels, the employee carpooling app for Microsoft Teams: in-app help, email support, response times, and answers to common questions. No account needed."
 draft: false
 layout: "legal"

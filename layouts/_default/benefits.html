@@ -132,6 +132,10 @@
             {{ end }}
           </div>
         </section>
+        {{/* Optional mid-page demo CTA right after this block (see partials/cta-demo.html). */}}
+        {{ with .cta_demo }}
+          <div class="container container-delta">{{ partial "cta-demo.html" . }}</div>
+        {{ end }}
       {{ end }}
     {{ end }}
   {{ end }}

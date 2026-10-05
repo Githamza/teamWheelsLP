@@ -58,6 +58,8 @@ Si votre entreprise a signé un partenariat avec BlaBlaCar Daily (ou avec Klaxit
 - **Les conditions tiennent-elles ?** Tarifs, niveau de service, animation, reporting : rien ne garantit qu'ils seront maintenus à l'identique après l'intégration. Les modalités concrètes ne sont pas encore connues.
 - **Qui est votre interlocuteur ?** Pendant une intégration, les équipes changent. Identifiez dès maintenant un contact nommé et demandez un engagement écrit sur la continuité de service jusqu'à la fin de votre période contractuelle.
 
+Pour comparer les options à votre disposition (migrer, internaliser, changer de prestataire), voir notre page sur [que faire de votre contrat BlaBlaCar Daily Entreprises](/fr/alternative-blablacar-daily-karos-entreprises/).
+
 ### 2. Les données de vos salariés : qui en est responsable ?
 
 C'est le point le plus sous-estimé. Avec une application grand public, **chaque salarié crée un compte personnel chez l'opérateur** : nom, adresse de domicile, horaires, trajets géolocalisés. Dans ce modèle, c'est l'opérateur — et non l'employeur — qui est responsable du traitement de ces données.
@@ -97,6 +99,8 @@ Pour être honnête avec vos équipes, distinguez les faits des spéculations :
 - **On ne sait pas** : la date de finalisation, le sort de l'application BlaBlaCar Daily (maintien, fusion, fermeture), les tarifs et conditions pour les entreprises, les modalités de migration des comptes et des historiques.
 
 Autrement dit : **aucune urgence à paniquer, mais aucune raison d'attendre** pour sécuriser ce qui dépend de vous.
+
+{{< cta-demo title="Votre contrat BlaBlaCar Daily Entreprises est-il concerné ?" text="Trois options pour un employeur, un comparatif honnête et les cas où TeamWheels n'est pas le bon choix." src="rachat-karos" href="/fr/alternative-blablacar-daily-karos-entreprises/" label="Comparer les options" >}}
 
 ## Checklist de bascule : quoi faire, et quand
 
