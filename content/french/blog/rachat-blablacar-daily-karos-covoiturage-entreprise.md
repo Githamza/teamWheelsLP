@@ -100,6 +100,8 @@ Pour être honnête avec vos équipes, distinguez les faits des spéculations :
 
 Autrement dit : **aucune urgence à paniquer, mais aucune raison d'attendre** pour sécuriser ce qui dépend de vous.
 
+{{< cta-demo title="Votre contrat BlaBlaCar Daily Entreprises est-il concerné ?" text="Trois options pour un employeur, un comparatif honnête et les cas où TeamWheels n'est pas le bon choix." src="rachat-karos" href="/fr/alternative-blablacar-daily-karos-entreprises/" label="Comparer les options" >}}
+
 ## Checklist de bascule : quoi faire, et quand
 
 **Cette semaine**

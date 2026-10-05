@@ -74,6 +74,8 @@ Voici ce qui manque à la plupart des articles sur le barème kilométrique : le
 
 Avant de reconduire une indemnité kilométrique d'une année sur l'autre, la question à se poser est simple : **ce salarié a-t-il vraiment été vérifié comme isolé**, ou personne n'a-t-il simplement pris le temps de cartographier qui habite où ? C'est le rôle d'un outil comme [TeamWheels](/fr/corporate-carpooling-software/), qui rapproche automatiquement les domiciles et les horaires des équipes directement dans Microsoft Teams : pour les salariés réellement covoiturables, le Forfait Mobilités Durables (jusqu'à 600 €/an, totalement exonéré) remplace avantageusement une indemnité kilométrique qui, elle, reste imposable au-delà des plafonds d'exonération applicables aux frais professionnels. Pour les autres — les vrais isolés — le barème ci-dessus reste la bonne réponse.
 
+{{< cta-demo title="Chaque kilomètre indemnisé est un coût qui se reconduit" text="Quand deux salariés font le même trajet, un covoiturage coûte moins cher à l'employeur que deux indemnités. TeamWheels repère ces collègues dans Teams." src="bareme-km-2026" >}}
+
 ## Foire aux questions
 
 **Le barème kilométrique 2026 a-t-il été revalorisé par rapport à 2025 ?**

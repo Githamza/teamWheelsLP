@@ -793,3 +793,43 @@ $promo-indigo-dark: #2b2d7c;
   padding-top: 0.45rem;
   padding-bottom: 0.45rem;
 }
+
+// ============================================================
+// Mid-article demo CTA (layouts/partials/cta-demo.html)
+// ------------------------------------------------------------
+// Static block in the flow of the article: no overlay, no sticky
+// positioning, no JS — so it cannot shift the layout after load or
+// count as an intrusive interstitial on mobile.
+// ============================================================
+.cta-demo {
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+  border: 1px solid $color-primary;
+  border-left-width: 4px;
+  border-radius: 0.5rem;
+  background: rgba($color-primary, 0.06);
+
+  &__title {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: $text-dark;
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    margin: 0;
+  }
+
+  @media (max-width: 575.98px) {
+    padding: 1.25rem 1rem;
+
+    .btn {
+      display: block;
+      text-align: center;
+    }
+  }
+}

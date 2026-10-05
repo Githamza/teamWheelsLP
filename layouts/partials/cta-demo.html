@@ -1,0 +1,33 @@
+{{- /*
+  Mid-article demo CTA — a single, non-intrusive block (no popup, no sticky bar,
+  no interstitial) placed after the section that answers the reader's main
+  question. Used through the `cta-demo` shortcode in Markdown articles, and from
+  layouts/_default/benefits.html for pages whose body lives in front matter
+  (`cta_demo:` key on an image_and_content_blocks entry).
+
+  Params (dict): title, text, src (required), href (optional), label (optional).
+
+  Attribution: by default the button goes to the contact form with
+  `?src=<src>`. That is the existing mechanism — _default/contact.html copies it
+  into the form and the redirect, and _default/thanks.html reports it as
+  `lead_source` on the GA4 `generate_lead` event, the same key event the
+  homepage forms produce, so conversions stay comparable. The click itself is
+  also reported by the delegated [data-track] listener in essentials/head.html
+  (event `cta_demo_click`, placement = src); it is NOT named generate_lead, so it
+  cannot be mistaken for, or double-count, a real lead.
+  When `href` is given (e.g. to send decision-makers to a comparison page), it
+  is used as is and no `?src=` is appended.
+  `src` must match ^[a-z0-9-]{1,40}$ or contact.html ignores it.
+*/ -}}
+{{- $src := .src -}}
+{{- $href := .href -}}
+{{- if not $href -}}
+  {{- $href = printf "%s?src=%s" ("contact/" | relLangURL) $src -}}
+{{- end -}}
+<aside class="cta-demo">
+  <p class="cta-demo__title">{{ .title }}</p>
+  {{- with .text }}
+  <p class="cta-demo__text">{{ . }}</p>
+  {{- end }}
+  <a class="btn btn-primary" href="{{ $href }}" data-track="cta_demo_click" data-placement="{{ $src }}">{{ .label | default (i18n "blog_cta_button") }}</a>
+</aside>

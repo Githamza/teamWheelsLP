@@ -178,6 +178,10 @@ image_and_content_blocks:
     button:
       enable: false
 
+    cta_demo:
+      title: "Justifier le FMD suppose de tracer chaque trajet partagé"
+      text: "TeamWheels enregistre les trajets covoiturés dans Teams et produit les relevés mensuels prêts pour la paie, sans collecte d'attestations."
+      src: "fmd-covoiturage"
 
   - enable: true
     anchor: "pourquoi"

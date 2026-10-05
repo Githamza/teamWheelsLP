@@ -80,6 +80,8 @@ Lorsque le **losange blanc lumineux** est allumé sur les panneaux de signalisat
 
 Les **poids lourds de plus de 3,5 tonnes** transportant des marchandises sont interdits sur ces voies lorsqu'elles sont activées.
 
+{{< cta-demo title="Vous êtes employeur ?" text="Le covoiturage entre collègues se pilote : trajets, justificatifs FMD et reporting dans Microsoft Teams." src="voies-covoiturage-paris" >}}
+
 ## Le bilan après un an : les chiffres clés
 
 L'**Atelier parisien de l'urbanisme (APUR)**, en partenariat avec **Airparif** et **Bruitparif**, a publié plusieurs bilans intermédiaires (septembre 2025, décembre 2025, mars 2026). Les résultats confirment la tendance positive observée dès les premiers mois.
