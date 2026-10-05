@@ -40,7 +40,7 @@ faq:
 | Date | Événement | Ce que ça signifie |
 |---|---|---|
 | **2017** | BlaBlaCar lance **BlaBlaLines**, qui deviendra BlaBlaCar Daily | Le leader du covoiturage longue distance s'attaque au domicile-travail |
-| **1er janvier 2023** | Lancement de la **prime covoiturage** de 100 € pour les nouveaux conducteurs, financée par les certificats d'économies d'énergie (CEE) | Le modèle des applis grand public s'appuie de plus en plus sur des financements publics et des incitations |
+| **1er janvier 2023** | Lancement de la **prime covoiturage** de 100 € pour les nouveaux conducteurs, financée par les certificats d'économies d'énergie (CEE) ; supprimée fin janvier 2025 | Le modèle des applis grand public s'appuie de plus en plus sur des financements publics et des incitations |
 | **2023** | BlaBlaCar **rachète Klaxit**, spécialiste du covoiturage d'entreprise, et l'intègre à BlaBlaCar Daily | Les clients Klaxit changent une première fois d'opérateur |
 | **20 juillet 2026** | Karos et BlaBlaCar annoncent des **négociations exclusives** pour la reprise de BlaBlaCar Daily | BlaBlaCar se recentre sur le longue distance ; Karos cherche la « masse critique » |
 | **Été 2026** | Consultation des instances représentatives du personnel ; une dizaine de postes BlaBlaCar Daily concernés selon la presse | Étape préalable obligatoire avant toute signature |
@@ -83,10 +83,10 @@ Pour le détail des plafonds et des règles de cumul, voir notre [guide des aide
 
 ### 4. La dépendance à un acteur B2C unique
 
-C'est le sujet de fond. Les applications grand public de covoiturage du quotidien reposent sur un modèle hybride : un réseau ouvert d'utilisateurs, financé en bonne partie par les collectivités (subventions par trajet), les certificats d'économies d'énergie (prime covoiturage) et les partenariats entreprises. Ce modèle a des atouts — un grand réseau, des trajets gratuits ou très peu chers pour les passagers — mais aussi trois fragilités du point de vue de l'employeur :
+C'est le sujet de fond. Les applications grand public de covoiturage du quotidien reposent sur un modèle hybride : un réseau ouvert d'utilisateurs, financé en bonne partie par les collectivités (subventions par trajet), et les partenariats entreprises (la prime covoiturage nationale, financée par les certificats d'économies d'énergie, a pris fin en janvier 2025). Ce modèle a des atouts — un grand réseau, des trajets gratuits ou très peu chers pour les passagers — mais aussi trois fragilités du point de vue de l'employeur :
 
 - **Plus d'alternative équivalente.** Si l'opération aboutit, il ne restera plus de concurrent grand public de taille comparable vers qui se tourner en cas de désaccord sur les conditions.
-- **Une économie sensible aux subventions.** Si les financements publics ou les CEE évoluent, les incitations pour vos salariés évoluent avec — sans que vous ayez votre mot à dire.
+- **Une économie sensible aux subventions.** Si les financements publics évoluent, les incitations pour vos salariés évoluent avec — sans que vous ayez votre mot à dire.
 - **Un produit conçu pour le grand public.** Votre programme est une communauté parmi 1 500 entreprises partenaires ; ses priorités (animation, reporting, intégrations RH) passent après celles de la plateforme.
 
 Rien de tout cela ne rend le modèle mauvais. Mais c'est le bon moment pour se demander si votre programme de covoiturage doit reposer sur un acteur externe unique — ou sur un outil que vous maîtrisez.
@@ -132,7 +132,7 @@ Autrement dit : **aucune urgence à paniquer, mais aucune raison d'attendre** po
 | **Données salariés** | Opérateur responsable du traitement | Selon contrat | Selon contrat | Dans votre tenant Microsoft 365, hébergement en France |
 | **Justificatifs FMD** | Preuves de trajets via l'opérateur | Selon offre | Inscrit au registre de preuve de covoiturage | Relevés mensuels prêts pour la paie |
 | **Nouvelle app à installer** | Oui | Oui (web / mobile) | Oui (web / mobile) | Non — dans Teams |
-| **Incitations au trajet** | Subventions collectivités + prime CEE, selon territoire | Selon politique employeur (FMD) | Selon politique employeur (FMD) | Selon politique employeur (FMD) |
+| **Incitations au trajet** | Subventions des collectivités, selon territoire (prime nationale supprimée en janvier 2025) | Selon politique employeur (FMD) | Selon politique employeur (FMD) | Selon politique employeur (FMD) |
 | **Dépendance aux subventions publiques** | Forte | Faible | Faible | Nulle |
 | **Idéal pour** | Trajets longs, zones peu denses, salariés sans collègue proche | Grandes organisations multi-sites | Organisations publiques et privées cherchant un progiciel éprouvé | Entreprises sous Microsoft 365 qui veulent de l'adoption sans conduite du changement |
 
