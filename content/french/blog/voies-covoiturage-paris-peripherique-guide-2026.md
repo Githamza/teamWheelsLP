@@ -1,6 +1,6 @@
 ---
 title: "Voies de covoiturage Paris : horaires, périphérique, A1 & A13 — Guide 2026"
-seoTitle: "Voies de covoiturage Paris : horaires A1, A13, périph"
+seoTitle: "Horaires des voies de covoiturage Paris : périph, A1, A13"
 date: 2026-04-07
 draft: false
 description: "Horaires des voies de covoiturage à Paris (périphérique, A1, A13), application Covoit IDFM, amendes et bilan après un an. Guide complet 2026."
@@ -14,6 +14,17 @@ aliases:
   - /blog/voies-covoiturage-paris-peripherique-guide-2025/
 reading_time: 12 min
 ---
+
+> **Horaires 2026 des voies de covoiturage en Île-de-France** (du lundi au vendredi)
+>
+> | Axe | Sens | Horaires |
+> |---|---|---|
+> | Périphérique (quai d'Issy – porte de Bercy) | Les deux sens | 7h00 à 10h30 et 16h00 à 20h00 |
+> | A1 (Roissy – Saint-Denis) | Province → Paris | 6h30 à 10h00 |
+> | A1 (Saint-Denis – A86) | Paris → province | 17h00 à 18h30 |
+> | A13 (Roquencourt – tunnel de Saint-Cloud) | Province → Paris | 7h00 à 10h00 |
+>
+> Hors de ces créneaux, la voie est ouverte à tous. Elle n'est réservée que lorsque le losange blanc lumineux est allumé. [Détail des sections et des règles ci-dessous](#où-sont-les-voies-de-covoiturage-et-comment-fonctionnent-elles).
 
 Le 3 mars 2025, Paris lançait une expérimentation inédite : des voies de covoiturage sur le périphérique et les autoroutes A1 et A13. Un an plus tard, les résultats sont là. Moins de bouchons, moins d'accidents, moins de bruit — et une nouvelle application, **Covoit IDFM**, qui centralise le covoiturage pour toute l'Île-de-France.
 

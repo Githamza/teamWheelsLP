@@ -26,11 +26,9 @@ faq:
 
 *Chaque mois, la même note de frais atterrit sur le bureau du service paie : un salarié qui vit trop loin, ou trop mal desservi, pour faire autrement que prendre sa voiture. Voici le barème 2026 exact — tableau complet, calcul détaillé, majoration électrique — et la question qu'on oublie trop souvent de se poser avant de signer le chèque.*
 
-Le barème kilométrique ne bouge pas d'un centime en 2026. Pour la troisième année consécutive, l'administration fiscale reconduit les mêmes montants qu'en 2023 — la dernière revalorisation remonte à cette date, avec une hausse de 5,4 %. Ce qui simplifie une chose : vous pouvez appliquer directement les chiffres ci-dessous sans attendre une quelconque publication au *Journal officiel*.
+## Tarif au kilomètre 2026 : le tableau complet par puissance fiscale
 
-Le barème sert à deux usages bien distincts, et c'est souvent là que naît la confusion. D'un côté, un salarié qui opte pour les « frais réels » dans sa déclaration de revenus l'utilise pour déduire ses frais de trajet domicile-travail. De l'autre, un employeur s'en sert pour calculer une **indemnité kilométrique** : le remboursement qu'il verse à un salarié contraint d'utiliser son véhicule personnel pour un déplacement professionnel — y compris, sous conditions, pour se rendre au travail. C'est cette seconde utilisation qui nous intéresse ici.
-
-## Le tableau complet par puissance fiscale
+Le tarif au kilomètre 2026 va de **0,529 € à 0,697 € par kilomètre** jusqu'à 5 000 km par an, selon la puissance fiscale du véhicule. Voici le barème complet.
 
 Le montant dépend de deux paramètres : la puissance fiscale du véhicule (exprimée en CV, indiquée sur la carte grise) et la distance parcourue à titre professionnel dans l'année. Trois tranches de distance s'appliquent, chacune avec sa propre formule.
 
@@ -45,6 +43,10 @@ Le montant dépend de deux paramètres : la puissance fiscale du véhicule (expr
 *d = distance parcourue en kilomètres sur l'année. Barème 2026, identique à 2025 et 2024.*
 
 Deux logiques de calcul cohabitent dans ce tableau, et confondre les deux est l'erreur la plus fréquente. Sous les 5 000 km et au-delà de 20 000 km, on multiplie simplement la distance par un taux fixe. Entre les deux, la formule combine un taux dégressif et un montant fixe — ce qui explique pourquoi l'indemnité totale progresse plus lentement que la distance parcourue une fois passé le premier seuil : le barème est construit pour amortir les frais fixes du véhicule (assurance, entretien) sur un plus grand nombre de kilomètres.
+
+Le barème kilométrique ne bouge pas d'un centime en 2026. Pour la troisième année consécutive, l'administration fiscale reconduit les mêmes montants qu'en 2023 — la dernière revalorisation remonte à cette date, avec une hausse de 5,4 %. Ce qui simplifie une chose : vous pouvez appliquer directement les chiffres ci-dessous sans attendre une quelconque publication au *Journal officiel*.
+
+Le barème sert à deux usages bien distincts, et c'est souvent là que naît la confusion. D'un côté, un salarié qui opte pour les « frais réels » dans sa déclaration de revenus l'utilise pour déduire ses frais de trajet domicile-travail. De l'autre, un employeur s'en sert pour calculer une **indemnité kilométrique** : le remboursement qu'il verse à un salarié contraint d'utiliser son véhicule personnel pour un déplacement professionnel — y compris, sous conditions, pour se rendre au travail. C'est cette seconde utilisation qui nous intéresse ici.
 
 ## Le calcul, étape par étape
 
