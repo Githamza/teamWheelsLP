@@ -60,7 +60,7 @@
                     <li>
                       <a
                         class="dropdown-item {{ if $active }}active{{ end }}"
-                        {{ if findRE `^http` .URL }}
+                        {{ if and (findRE `^http` .URL) (not (hasPrefix .URL site.BaseURL)) }}
                           target="_blank" rel="noopener"
                         {{ end }}
                         href="{{ if findRE `^#` .URL }}
@@ -82,7 +82,7 @@
               <li class="nav-item {{ if $active }}active{{ end }}">
                 <a
                   class="nav-link"
-                  {{ if findRE `^http` .URL }}
+                  {{ if and (findRE `^http` .URL) (not (hasPrefix .URL site.BaseURL)) }}
                     target="_blank" rel="noopener"
                   {{ end }}
                   href="{{ if findRE `^#` .URL }}

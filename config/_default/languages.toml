@@ -28,3 +28,34 @@ copyright = "Copyright © 2024 TeamWheels. All rights reserved."
 # meta
 title = "TeamWheels - Covoiturage Entreprise intégré à Microsoft Teams"
 description = "Transformez Microsoft Teams en plateforme de covoiturage entreprise. Déploiement en 5 minutes, adoption instantanée. Économisez 2000€/an par employé."
+
+################################### German language #####################################
+# Static pages only: the blog is not translated, so the German menus and the
+# home page "latest posts" block point at the English blog (/en/blog/).
+[de]
+label = "De"
+locale = "de-de"
+contentDir = "content/german"
+weight = 3
+
+[de.params]
+home = "Startseite"
+copyright = "Copyright © 2024 TeamWheels. Alle Rechte vorbehalten."
+# meta
+title = "TeamWheels - Fahrgemeinschafts-Plattform für Mitarbeiter in Microsoft Teams"
+description = "TeamWheels macht Microsoft Teams zur Fahrgemeinschafts-Plattform für Ihr Unternehmen: weniger Scope-3-Emissionen, weniger Parkplatzbedarf, in 5 Minuten eingerichtet. 30 Tage kostenlos testen."
+
+################################### Spanish language #####################################
+# Static pages only: the blog stays in English (see German note above).
+[es]
+label = "Es"
+locale = "es-es"
+contentDir = "content/spanish"
+weight = 4
+
+[es.params]
+home = "Inicio"
+copyright = "Copyright © 2024 TeamWheels. Todos los derechos reservados."
+# meta
+title = "TeamWheels - Plataforma de coche compartido para empresas en Microsoft Teams"
+description = "TeamWheels convierte Microsoft Teams en una plataforma de carpooling corporativo: menos emisiones de Scope 3, menos demanda de aparcamiento y despliegue en 5 minutos. Prueba gratuita de 30 días."

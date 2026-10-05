@@ -430,6 +430,25 @@ $gutters: (
     box-shadow: 0 0 0 1px rgba(11, 19, 43, 0.12);
     flex-shrink: 0;
   }
+
+  // Four languages (FR / EN / DE / ES) next to the logo and the burger
+  // don't fit a phone header with their codes — show flags only there.
+  @media (max-width: 575.98px) {
+    gap: 0;
+
+    &__item {
+      padding: 0.3rem 0.3rem;
+    }
+
+    &__label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+  }
 }
 
 // ============================================================
