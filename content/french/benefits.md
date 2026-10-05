@@ -57,12 +57,12 @@ image_and_content_blocks:
   - enable: true
     anchor: "fmd"
     subtitle: "Coup de pouce du gouvernement"
-    title: "Forfait Mobilité Durable : jusqu'à 800€/an par salarié"
+    title: "Forfait Mobilité Durable : jusqu'à 600 €/an par salarié"
     image: "images/photos/commute-reporting-dashboard.jpg"
     content_position: "right"
     content: "Valorisez l'engagement de vos collaborateurs avec le dispositif gouvernemental.
 
-    **Forfait Mobilité Durable (FMD)** : Vous pouvez verser jusqu'à 800€/an par salarié, exonérés de charges sociales et d'impôt. Un avantage attractif pour vos équipes, et une économie réelle pour votre entreprise !
+    **Forfait Mobilité Durable (FMD)** : Vous pouvez verser jusqu'à 600 €/an par salarié (900 € en cumul avec l'abonnement transport), exonérés de charges sociales et d'impôt. Un avantage attractif pour vos équipes, et une économie réelle pour votre entreprise !
 
     **Charte ADEME** : Rejoignez les 16 grands employeurs (1M de salariés) signataires de la <a style='color: #007bff;' href='https://employeursprocovoiturage.ademe.fr/' target='_blank'>charte d'engagement covoiturage</a>.
 
@@ -99,7 +99,7 @@ faq:
   - question: "Comment le covoiturage réduit-il les émissions Scope 3 ?"
     answer: "Les trajets domicile-travail relèvent du poste 7 (Scope 3) du GHG Protocol. Le covoiturage réduit le nombre de voitures en solo et donc les émissions. TeamWheels comptabilise les trajets partagés et exporte les données pour le reporting Scope 3, CSRD et bilan GES — chaque trajet partagé évite environ 6 kg de CO₂."
   - question: "Combien un salarié peut-il économiser en covoiturant ?"
-    answer: "Un salarié qui covoiture économise généralement plus de 2 000 € par an en partageant carburant, péages et stationnement. Avec le Forfait Mobilité Durable (jusqu'à 900 €/an, exonérés de charges), l'employeur peut en plus subventionner ces trajets sans charges sociales."
+    answer: "Un salarié qui covoiture économise généralement plus de 2 000 € par an en partageant carburant, péages et stationnement. Avec le Forfait Mobilité Durable (jusqu'à 600 €/an, 900 € en cumul avec l'abonnement transport, exonérés de charges), l'employeur peut en plus subventionner ces trajets sans charges sociales."
   - question: "Les salariés doivent-ils installer quelque chose pour utiliser TeamWheels ?"
     answer: "Non. TeamWheels s'installe une fois dans votre tenant Microsoft 365 depuis AppSource. Les salariés l'utilisent dans Microsoft Teams avec leur compte professionnel existant — sans nouvelle app, sans identifiant séparé, sans onboarding."
 
