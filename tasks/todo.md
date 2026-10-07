@@ -1,0 +1,30 @@
+# Todo: PR 2 `feat/nl-i18n`
+
+- [ ] T1: Check script `scripts/check-i18n.sh`
+  - Acceptance: builds `main` (baseline) and the branch in production mode; fails on any WARN/ERROR, any FR/EN/DE/ES HTML/XML diff outside an allowlist, any `/nl-be/` or `/nl/` URL in production output; with `-D`, asserts nl-BE and nl-NL hreflang + x-default on the Dutch homes and sitemap alternates
+  - Verify: script runs and FAILS on the current branch (no Dutch locales yet)
+  - Files: scripts/check-i18n.sh
+- [ ] T2: Locales + hreflang params (depends T1)
+  - Acceptance: `[nl-be]`, `[nl]` in languages.toml; i18n/nl-be.yaml, i18n/nl.yaml (full key set); draft `_index.md` in content/dutch-be, content/dutch-nl; hreflang.html, sitemap.xml, sitemapindex.xml, schema.html inLanguage, baseof `<html lang>` use params.hreflang; production output identical to baseline
+  - Verify: check script phases "no leak" + "hreflang" pass
+  - Files: config/_default/languages.toml, i18n/nl-be.yaml, i18n/nl.yaml, content/dutch-*/_index.md, layouts/partials/seo/hreflang.html, layouts/sitemap*.xml, layouts/partials/seo/schema.html, layouts/_default/baseof.html
+- [ ] T3: Switcher (depends T2)
+  - Acceptance: non-live Dutch locales hidden; live ones show `NL` + BE/NL flag, full label in title/aria-label; FR/EN/DE/ES markup unchanged
+  - Verify: check script; `-D` build header grep
+  - Files: layouts/partials/essentials/lang-switch.html, layouts/partials/essentials/flag.html
+- [ ] T4: Menus (depends T2)
+  - Acceptance: menus.nl-be.toml, menus.nl.toml mirror DE structure; Dutch home linked; untranslated pages → absolute EN URLs; no blog link
+  - Verify: `-D` build, no 404 internal links from nl homes
+  - Files: config/_default/menus.nl-be.toml, config/_default/menus.nl.toml
+- [ ] T5: Alias + WebMCP (depends T2)
+  - Acceptance: alias.html picks `nl-be` for nl-BE browsers and `nl` for other nl only when live; WebMCP uses per-locale URLs (Dutch slugs) with EN fallback, lists only live locales
+  - Verify: check script; grep of rendered script in `-D` build
+  - Files: layouts/alias.html, layouts/partials/agent/webmcp.html
+- [ ] T6: Home alt text (depends T2)
+  - Acceptance: `themes/delta-hugo/layouts/index.html` alt via i18n key in all 6 i18n files; allowed diff only on the 4 home pages
+  - Verify: check script with allowlist
+  - Files: themes/delta-hugo/layouts/index.html, i18n/*.yaml
+- [ ] T7: Calculator (depends T2)
+  - Acceptance: `nl` translation set (formal u); nl-be/nl map to it; EUR default; nl-BE/nl-NL number format; FR/EN behaviour unchanged
+  - Verify: check script; `node` unit check of t('nl-be', …) via a small harness; manual `hugo server -D` check deferred to PR 3 (no Dutch calculator page yet)
+  - Files: assets/js/savings-calculator.js, layouts/partials/savings-calculator.html
