@@ -16,7 +16,7 @@
   - Acceptance: menus.nl-be.toml, menus.nl.toml mirror DE structure; Dutch home linked; untranslated pages → absolute EN URLs; no blog link
   - Verify: `-D` build, no 404 internal links from nl homes
   - Files: config/_default/menus.nl-be.toml, config/_default/menus.nl.toml
-- [ ] T5: Alias + WebMCP (depends T2)
+- [x] T5: Alias + WebMCP (depends T2)
   - Acceptance: alias.html picks `nl-be` for nl-BE browsers and `nl` for other nl only when live; WebMCP uses per-locale URLs (Dutch slugs) with EN fallback, lists only live locales
   - Verify: check script; grep of rendered script in `-D` build
   - Files: layouts/alias.html, layouts/partials/agent/webmcp.html
