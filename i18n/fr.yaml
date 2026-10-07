@@ -109,6 +109,10 @@
 - id: video_watch_page_link
   translation: Voir la page démo complète
 
+# Home page hero image (themes/delta-hugo/layouts/index.html)
+- id: home_image_alt
+  translation: TeamWheels - Covoiturage intégré à Microsoft Teams
+
 
 - id: sc_step1_title
   translation: "Votre entreprise"

@@ -109,6 +109,10 @@
 - id: video_watch_page_link
   translation: Vollständige Demo-Seite öffnen
 
+# Home page hero image (themes/delta-hugo/layouts/index.html)
+- id: home_image_alt
+  translation: TeamWheels - Fahrgemeinschaften direkt in Microsoft Teams
+
 
 - id: sc_step1_title
   translation: "Ihr Unternehmen"

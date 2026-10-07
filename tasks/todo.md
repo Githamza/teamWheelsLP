@@ -20,7 +20,7 @@
   - Acceptance: alias.html picks `nl-be` for nl-BE browsers and `nl` for other nl only when live; WebMCP uses per-locale URLs (Dutch slugs) with EN fallback, lists only live locales
   - Verify: check script; grep of rendered script in `-D` build
   - Files: layouts/alias.html, layouts/partials/agent/webmcp.html
-- [ ] T6: Home alt text (depends T2)
+- [x] T6: Home alt text (depends T2)
   - Acceptance: `themes/delta-hugo/layouts/index.html` alt via i18n key in all 6 i18n files; allowed diff only on the 4 home pages
   - Verify: check script with allowlist
   - Files: themes/delta-hugo/layouts/index.html, i18n/*.yaml

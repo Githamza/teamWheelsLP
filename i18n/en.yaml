@@ -109,6 +109,10 @@
 - id: video_watch_page_link
   translation: Open the full demo page
 
+# Home page hero image (themes/delta-hugo/layouts/index.html)
+- id: home_image_alt
+  translation: TeamWheels - Carpooling built into Microsoft Teams
+
 
 - id: sc_step1_title
   translation: "Your company"
