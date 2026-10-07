@@ -12,7 +12,7 @@
   - Acceptance: non-live Dutch locales hidden; live ones show `NL` + BE/NL flag, full label in title/aria-label; FR/EN/DE/ES markup unchanged
   - Verify: check script; `-D` build header grep
   - Files: layouts/partials/essentials/lang-switch.html, layouts/partials/essentials/flag.html
-- [ ] T4: Menus (depends T2)
+- [x] T4: Menus (depends T2)
   - Acceptance: menus.nl-be.toml, menus.nl.toml mirror DE structure; Dutch home linked; untranslated pages → absolute EN URLs; no blog link
   - Verify: `-D` build, no 404 internal links from nl homes
   - Files: config/_default/menus.nl-be.toml, config/_default/menus.nl.toml
