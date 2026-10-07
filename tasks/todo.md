@@ -1,6 +1,6 @@
 # Todo: PR 2 `feat/nl-i18n`
 
-- [ ] T1: Check script `scripts/check-i18n.sh`
+- [x] T1: Check script `scripts/check-i18n.sh`
   - Acceptance: builds `main` (baseline) and the branch in production mode; fails on any WARN/ERROR, any FR/EN/DE/ES HTML/XML diff outside an allowlist, any `/nl-be/` or `/nl/` URL in production output; with `-D`, asserts nl-BE and nl-NL hreflang + x-default on the Dutch homes and sitemap alternates
   - Verify: script runs and FAILS on the current branch (no Dutch locales yet)
   - Files: scripts/check-i18n.sh
