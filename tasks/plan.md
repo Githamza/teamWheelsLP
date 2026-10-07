@@ -25,7 +25,7 @@ Add the `nl-be` and `nl` locales to Hugo with correct hreflang, sitemap alternat
 
 ### Phase 3: Strings
 - [x] T6: Home image alt text → i18n (all languages)
-- [ ] T7: Calculator: Dutch labels, EUR default, nl number format
+- [x] T7: Calculator: Dutch labels, EUR default, nl number format
 
 ### Checkpoint C: full check script green, open PR 2, stop for review
 

@@ -24,7 +24,7 @@
   - Acceptance: `themes/delta-hugo/layouts/index.html` alt via i18n key in all 6 i18n files; allowed diff only on the 4 home pages
   - Verify: check script with allowlist
   - Files: themes/delta-hugo/layouts/index.html, i18n/*.yaml
-- [ ] T7: Calculator (depends T2)
+- [x] T7: Calculator (depends T2)
   - Acceptance: `nl` translation set (formal u); nl-be/nl map to it; EUR default; nl-BE/nl-NL number format; FR/EN behaviour unchanged
   - Verify: check script; `node` unit check of t('nl-be', …) via a small harness; manual `hugo server -D` check deferred to PR 3 (no Dutch calculator page yet)
   - Files: assets/js/savings-calculator.js, layouts/partials/savings-calculator.html
