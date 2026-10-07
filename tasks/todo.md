@@ -4,7 +4,7 @@
   - Acceptance: builds `main` (baseline) and the branch in production mode; fails on any WARN/ERROR, any FR/EN/DE/ES HTML/XML diff outside an allowlist, any `/nl-be/` or `/nl/` URL in production output; with `-D`, asserts nl-BE and nl-NL hreflang + x-default on the Dutch homes and sitemap alternates
   - Verify: script runs and FAILS on the current branch (no Dutch locales yet)
   - Files: scripts/check-i18n.sh
-- [ ] T2: Locales + hreflang params (depends T1)
+- [x] T2: Locales + hreflang params (depends T1)
   - Acceptance: `[nl-be]`, `[nl]` in languages.toml; i18n/nl-be.yaml, i18n/nl.yaml (full key set); draft `_index.md` in content/dutch-be, content/dutch-nl; hreflang.html, sitemap.xml, sitemapindex.xml, schema.html inLanguage, baseof `<html lang>` use params.hreflang; production output identical to baseline
   - Verify: check script phases "no leak" + "hreflang" pass
   - Files: config/_default/languages.toml, i18n/nl-be.yaml, i18n/nl.yaml, content/dutch-*/_index.md, layouts/partials/seo/hreflang.html, layouts/sitemap*.xml, layouts/partials/seo/schema.html, layouts/_default/baseof.html

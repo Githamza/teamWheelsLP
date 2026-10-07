@@ -1,6 +1,8 @@
+{{- /* A non-live locale (draft home) renders no page at all, e.g. its 404 page. */ -}}
+{{- if partialCached "lang-live.html" site site.Language.Lang -}}
 <!DOCTYPE html>
 <html
-  lang="{{ site.Language.Lang }}"
+  lang="{{ partial "seo/lang-tag.html" . }}"
   data-hugo-lang-code="{{ site.Language.Locale | default `en-US` }}"
   itemscope
   itemtype="http://schema.org/WebPage">
@@ -113,3 +115,4 @@
     {{ partial "agent/webmcp.html" . }}
   </body>
 </html>
+{{- end -}}

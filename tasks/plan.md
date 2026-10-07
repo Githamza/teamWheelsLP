@@ -12,7 +12,7 @@ Add the `nl-be` and `nl` locales to Hugo with correct hreflang, sitemap alternat
 
 ### Phase 1: Foundation
 - [x] T1: Check script (RED): baseline vs branch, no-leak, hreflang assertions
-- [ ] T2: Languages, i18n files, draft homes, hreflang/sitemap/schema/lang params; no production leak
+- [x] T2: Languages, i18n files, draft homes, hreflang/sitemap/schema/lang params; no production leak
 
 ### Checkpoint A: production output identical to main; draft build emits nl-BE / nl-NL hreflang
 
