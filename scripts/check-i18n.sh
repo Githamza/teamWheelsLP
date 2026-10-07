@@ -63,7 +63,8 @@ diffs="$(diff -rq -x .DS_Store -x .done "$base_out" "$head_out" 2>&1 \
   | sed -E 's/^Files ([^ ]+) and [^ ]+ differ$/\1/; s/^Only in ([^:]*): (.*)$/\1\/\2 (only one side)/; s#^/##')"
 # Blog posts list 3 related posts through `shuffle` (layouts/_default/single.html),
 # so two builds of the same commit differ there. Ignore a file whose only
-# difference is the order of those cards.
+# difference is the order of those cards, or the fingerprint of a CSS/JS
+# bundle (a changed bundle is still reported, as a file present on one side).
 same_but_shuffled() { # same_but_shuffled <relative path>
   python3 -I - "$base_out/$1" "$head_out/$1" <<'PY'
 import re, sys
@@ -72,6 +73,8 @@ run = re.compile('(?:%s)+' % card, re.S)
 def norm(path):
     try: html = open(path, encoding='utf-8').read()
     except OSError: return None
+    html = re.sub(r'\.[0-9a-f]{32,128}\.(css|js)', r'.FINGERPRINT.\1', html)
+    html = re.sub(r'integrity="?sha(256|384|512)-[^" >]+"?', 'integrity=SRI', html)
     return run.sub(lambda m: ''.join(sorted(re.findall(card, m.group(0), re.S))), html)
 a, b = norm(sys.argv[1]), norm(sys.argv[2])
 sys.exit(0 if a is not None and a == b else 1)
