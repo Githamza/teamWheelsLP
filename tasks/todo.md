@@ -8,7 +8,7 @@
   - Acceptance: `[nl-be]`, `[nl]` in languages.toml; i18n/nl-be.yaml, i18n/nl.yaml (full key set); draft `_index.md` in content/dutch-be, content/dutch-nl; hreflang.html, sitemap.xml, sitemapindex.xml, schema.html inLanguage, baseof `<html lang>` use params.hreflang; production output identical to baseline
   - Verify: check script phases "no leak" + "hreflang" pass
   - Files: config/_default/languages.toml, i18n/nl-be.yaml, i18n/nl.yaml, content/dutch-*/_index.md, layouts/partials/seo/hreflang.html, layouts/sitemap*.xml, layouts/partials/seo/schema.html, layouts/_default/baseof.html
-- [ ] T3: Switcher (depends T2)
+- [x] T3: Switcher (depends T2)
   - Acceptance: non-live Dutch locales hidden; live ones show `NL` + BE/NL flag, full label in title/aria-label; FR/EN/DE/ES markup unchanged
   - Verify: check script; `-D` build header grep
   - Files: layouts/partials/essentials/lang-switch.html, layouts/partials/essentials/flag.html

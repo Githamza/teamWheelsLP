@@ -17,7 +17,7 @@ Add the `nl-be` and `nl` locales to Hugo with correct hreflang, sitemap alternat
 ### Checkpoint A: production output identical to main; draft build emits nl-BE / nl-NL hreflang
 
 ### Phase 2: Navigation
-- [ ] T3: Language switcher guard, BE + NL flags, label
+- [x] T3: Language switcher guard, BE + NL flags, label
 - [ ] T4: Menus for nl-be and nl (D8)
 - [ ] T5: Alias redirect + WebMCP: live-locale lists, region-aware, per-locale URLs
 
