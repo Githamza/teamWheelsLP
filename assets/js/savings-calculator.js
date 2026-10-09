@@ -120,9 +120,9 @@
     },
     // Dutch (Belgium and the Netherlands), formal "u". nl-be and nl both use it.
     nl: {
-      currencies: { EUR: 'Euro (€)', GBP: 'Britse pond (£)', USD: 'Amerikaanse dollar ($)' },
+      currencies: { EUR: 'Euro (€)', GBP: 'Brits pond (£)', USD: 'Amerikaanse dollar ($)' },
       step1: { title: 'Uw organisatie', subtitle: 'Enkele gegevens over uw organisatie.' },
-      step2: { title: 'Huidige mobiliteit', subtitle: 'Hoe uw medewerkers vandaag naar het werk reizen.' },
+      step2: { title: 'Huidige mobiliteit', subtitle: 'Hoe uw medewerkers nu naar het werk reizen.' },
       step3: { title: 'Uw mogelijke besparing', subtitle: 'Geschatte resultaten met TeamWheels.' },
       step4: { title: 'Uw persoonlijke rapport', subtitle: 'Download uw volledige analyse.' },
       fields: {
@@ -130,7 +130,7 @@
         employees: 'Aantal medewerkers',
         distance: 'Woon-werkafstand (heen en terug)',
         workDays: 'Werkdagen per jaar',
-        soloPercent: '% medewerkers dat alleen met de auto rijdt',
+        soloPercent: '% medewerkers die in hun eentje met de auto rijden',
         targetPercent: 'Doelstelling carpoolen',
         fuelPrice: 'Brandstofprijs',
         consumption: 'Gemiddeld verbruik van de auto'
@@ -138,11 +138,11 @@
       results: {
         co2: { label: 'Vermeden CO₂', unit: 't/jaar' },
         savings: { label: 'Besparing per carpooler', unit: '/jaar' },
-        fmd: { labelFR: 'Werkgeversvoordeel (FMD)', labelINT: 'Geschat werkgeversvoordeel', unit: '/jaar' },
+        fmd: { labelFR: 'Werkgeversvoordeel (FMD, Frankrijk)', labelINT: 'Geschat werkgeversvoordeel', unit: '/jaar' },
         parking: { label: 'Vrijgekomen parkeerplaatsen', unit: 'plaatsen' },
-        rse: { label: 'Mobiliteitsscore duurzaamheid', unit: '/ 100' },
+        rse: { label: 'ESG-score mobiliteit', unit: '/ 100' },
         chartBarTitle: 'CO₂-uitstoot: voor en na',
-        chartRseTitle: 'Mobiliteitsscore duurzaamheid',
+        chartRseTitle: 'ESG-score mobiliteit',
         co2DescEq: 'Gelijk aan {x} vluchten Parijs–New York',
         chartBarBefore: 'Voor',
         chartBarAfter: 'Na'
@@ -152,14 +152,14 @@
         email: 'Zakelijk e-mailadres',
         company: 'Organisatie',
         country: 'Land',
-        countryPlaceholder: 'Begin een land te typen…',
+        countryPlaceholder: 'Typ een land…',
         countryInvalid: 'Kies een land uit de lijst.',
-        optin: 'Ik ga akkoord met het ontvangen van informatie van TeamWheels.'
+        optin: 'Ik wil graag nieuws en updates van TeamWheels ontvangen.'
       },
       cta: {
         download: 'Mijn pdf-rapport downloaden',
         demo: 'Een demo van TeamWheels bekijken',
-        shareLabel: 'Of deel:'
+        shareLabel: 'Of delen:'
       },
       nav: { prev: '← Vorige', next: 'Volgende →', finish: 'Resultaten bekijken →' },
       disclaimer: 'Indicatieve schattingen op basis van emissiefactoren van ADEME (Frankrijk) / EPA (internationaal). De werkelijke resultaten hangen af van de situatie van uw organisatie.',
@@ -168,11 +168,11 @@
         cover: 'Impactrapport carpoolen',
         preparedFor: 'Opgesteld voor',
         date: 'Datum',
-        summary: 'Samenvatting',
+        summary: 'Managementsamenvatting',
         assumptions: 'Aannames',
         methodology: 'Methode: ADEME-factoren (gemiddelde auto 0,193 kgCO₂/km) voor Frankrijk, EPA-factoren voor het Verenigd Koninkrijk en de Verenigde Staten.',
         nextSteps: 'Volgende stappen',
-        nextStepsBody: 'TeamWheels maakt van Microsoft Teams een carpoolplatform. In 5 minuten ingericht, meteen in gebruik, met ingebouwde Scope 3-opvolging.',
+        nextStepsBody: 'TeamWheels maakt van Microsoft Teams een carpoolplatform. In 5 minuten ingericht, meteen in gebruik, met ingebouwde Scope 3-rapportage.',
         contact: 'Contact: contact@teamwheelsapp.com',
         footer: 'teamwheelsapp.com — Carpoolen voor bedrijven'
       }

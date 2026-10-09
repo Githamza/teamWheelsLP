@@ -78,7 +78,7 @@ home = "Home"
 copyright = "Copyright © 2024 TeamWheels. Alle rechten voorbehouden."
 # meta
 title = "TeamWheels - Carpoolen voor bedrijven in Microsoft Teams"
-description = "TeamWheels maakt van Microsoft Teams een carpoolplatform voor uw organisatie: minder woon-werkverkeer met de auto, minder parkeerdruk, in 5 minuten live. 30 dagen gratis."
+description = "Carpoolen voor bedrijven in Microsoft Teams: TeamWheels zorgt voor minder solo-autoritten naar het werk en minder parkeerdruk. 30 dagen gratis."
 
 [nl]
 label = "Nederlands (Nederland)"
@@ -92,4 +92,4 @@ home = "Home"
 copyright = "Copyright © 2024 TeamWheels. Alle rechten voorbehouden."
 # meta
 title = "TeamWheels - Carpoolen voor bedrijven in Microsoft Teams"
-description = "TeamWheels maakt van Microsoft Teams een carpoolplatform voor uw organisatie: minder woon-werkverkeer met de auto, minder parkeerdruk, in 5 minuten live. 30 dagen gratis."
+description = "TeamWheels: carpoolen voor bedrijven in Microsoft Teams. Minder woon-werkverkeer met de auto, minder parkeerdruk. In 5 minuten live, 30 dagen gratis."

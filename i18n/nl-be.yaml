@@ -16,7 +16,7 @@
   translation: Gerelateerde artikelen
 
 - id: min_read
-  translation: min. leestijd
+  translation: min leestijd
 
 - id: view_all_positions
   translation: Alle vacatures bekijken
@@ -46,7 +46,7 @@
   translation: E-mailadres
 
 - id: hero_email_label
-  translation: Liever een begeleide demo? Laat uw zakelijke e-mailadres achter
+  translation: Liever een persoonlijke demo? Laat uw zakelijke e-mailadres achter
 
 - id: hero_email_placeholder
   translation: naam@bedrijf.be
@@ -67,7 +67,7 @@
   translation: Verzenden
 
 - id: cv_note
-  translation: alleen doc- of pdf-bestanden &amp; maximaal 2 MB
+  translation: alleen doc- of pdf-bestanden, maximaal 2 MB
 
 - id: upload_cv
   translation: Cv uploaden
@@ -85,7 +85,7 @@
   translation: Resources
 
 - id: footer_menu_5_title
-  translation: Overige pagina's
+  translation: Andere pagina's
 
 - id: nav_main
   translation: Hoofdnavigatie
@@ -131,7 +131,7 @@
   translation: "CO₂-uitstoot: voor en na"
 
 - id: sc_chart_rse_title
-  translation: "Mobiliteitsscore duurzaamheid"
+  translation: "ESG-score mobiliteit"
 
 - id: sc_cta_download
   translation: "Mijn pdf-rapport downloaden"
@@ -154,7 +154,7 @@
 
 # End-of-article product CTA (partials/blog-cta.html)
 - id: blog_cta_title
-  translation: Zet deze gids in de praktijk
+  translation: Breng deze gids in de praktijk
 - id: blog_cta_before
   translation: "Ontdek onze"
 - id: blog_cta_anchor
@@ -176,7 +176,7 @@
 - id: teams_install_button_short
   translation: Probeer het in Teams
 - id: teams_install_trust
-  translation: 30 dagen gratis · Geen creditcard · In 5 minuten live
+  translation: 30 dagen gratis · Geen kredietkaart nodig · In 5 minuten live
 - id: teams_admin_question
   translation: "Geen Teams-beheerder?"
 - id: teams_admin_link
@@ -195,16 +195,16 @@
   translation: |
     Hallo,
 
-    Ik wil graag TeamWheels uitproberen, een carpoolapp voor medewerkers die in Microsoft Teams is ingebouwd (30 dagen gratis, geen creditcard).
+    Ik wil graag TeamWheels uitproberen, een carpoolapp voor medewerkers, ingebouwd in Microsoft Teams (30 dagen gratis, geen kredietkaart nodig).
 
     Kunt u de app toestaan voor onze organisatie?
 
     - Installeren in Teams: {{ .Install }}
-    - Vermelding in Microsoft Marketplace: {{ .Marketplace }}
+    - Productpagina in Microsoft Marketplace: {{ .Marketplace }}
     - Microsoft 365 Publisher Attestation (beveiliging, gegevensverwerking, compliance): {{ .Attestation }}
 
     Belangrijkste punten: aanmelden via Microsoft Entra ID (uw Conditional Access-beleid blijft gelden), gegevens gehost in Frankrijk op Azure en versleuteld opgeslagen, geen gegevens gedeeld met derden, GDPR-conform.
 
     In het Teams-beheercentrum: Teams-apps > Apps beheren > zoek "TeamWheels" > Toestaan.
 
-    Bedankt!
+    Alvast bedankt!
