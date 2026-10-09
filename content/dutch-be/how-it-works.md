@@ -1,7 +1,7 @@
 ---
 title: "Zo werkt carpoolen voor bedrijven met TeamWheels"
 seoTitle: "Carpoolen in Microsoft Teams: zo werkt het"
-description: "Zo maakt TeamWheels van Microsoft Teams een carpoolplatform voor uw bedrijf: chatbot, ritmatching, in 5 minuten live en opvolging van uw Scope 3-uitstoot."
+description: "Zo werkt carpoolen voor bedrijven met TeamWheels in Microsoft Teams: chatbot, ritmatching, in 5 minuten live en opvolging van uw Scope 3-uitstoot."
 slug: "hoe-het-werkt"
 layout: "how-it-works"
 keywords: "hoe werkt carpoolen, carpoolen organiseren, carpoolen voor bedrijven, carpool app bedrijf, Microsoft Teams app, carpoolbot, woon-werkverkeer organiseren, carpoolprogramma opzetten, carpoolen werkgever"
@@ -114,7 +114,7 @@ image_and_content_blocks:
 faq:
   - question: "Hoe werkt carpoolen in Microsoft Teams?"
     answer: "Een Teams-beheerder installeert TeamWheels in ongeveer 5 minuten vanuit de Microsoft Teams Store. Daarna bieden medewerkers ritten aan of zoeken ze er een via een chatbot in Teams: de bot koppelt collega's op basis van traject en uren, coördineert de dagelijkse ritten en stuurt herinneringen, zonder dat iemand Teams moet verlaten of een aparte app moet installeren."
-  - question: "Hoelang duurt het om TeamWheels in te voeren?"
+  - question: "Hoelang duurt het om TeamWheels uit te rollen?"
     answer: "Ongeveer 5 minuten. De app is gevalideerd door Microsoft en beschikbaar in de Microsoft Teams Store: een Teams-beheerder installeert ze in uw bestaande Microsoft 365-omgeving, zonder IT-project, zonder infrastructuur en zonder veranderingstraject."
   - question: "Hebben medewerkers een apart account of een aparte app nodig?"
     answer: "Nee. Medewerkers gebruiken TeamWheels in Microsoft Teams met hun bestaande werkaccount, via single sign-on met Microsoft Entra ID. Niets te downloaden, geen nieuw wachtwoord om te onthouden."
@@ -124,7 +124,7 @@ faq:
 call_to_action:
   enable: true
   title: "🚀 Klaar om het woon-werkverkeer anders aan te pakken?"
-  subtitle: "Doe zoals de bedrijven die carpoolen voor hun teams eenvoudig maken en hun CO₂-uitstoot verlagen. <br><br> <strong>Lanceringsaanbod:</strong> 30 dagen gratis + begeleide installatie."
+  subtitle: "Sluit aan bij de bedrijven die carpoolen voor hun teams eenvoudig maken en hun CO₂-uitstoot verlagen. <br><br> <strong>Lanceringsaanbod:</strong> 30 dagen gratis + begeleide installatie."
   button_label : "Persoonlijke demo aanvragen →"
   button_link : "contact/"
   image : "images/cta.png"

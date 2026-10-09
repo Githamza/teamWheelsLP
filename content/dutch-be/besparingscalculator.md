@@ -1,7 +1,7 @@
 ---
 title: "Besparingscalculator carpoolen: CO₂ en kosten in 2 minuten"
 seoTitle: "Besparingscalculator carpoolen voor bedrijven"
-description: "Gratis besparingscalculator voor carpoolen: bereken vermeden CO₂, brandstofbesparing en vrijgekomen parkeerplaatsen voor uw organisatie, met pdf-rapport."
+description: "Gratis besparingscalculator carpoolen: bereken vermeden CO₂, brandstofbesparing en vrijgekomen parkeerplaatsen voor uw organisatie, met pdf-rapport."
 slug: "besparingscalculator"
 # Pairs with the FR / EN calculator articles (SPEC.md D2).
 translationKey: "carpooling-savings-calculator"
@@ -36,7 +36,7 @@ Het woon-werkverkeer weegt op drie budgetten tegelijk: de **parkeerruimte** op u
 
 Werkgevers combineren carpoolen vaak met andere elementen van hun mobiliteitsbeleid, zoals een vergoeding voor het woon-werkverkeer, de fietsvergoeding of het mobiliteitsbudget. Hoe die regelingen precies werken, hangt af van uw sector en uw situatie [[VERIFY: korte, correcte uitleg van kilometervergoeding, fietsvergoeding en mobiliteitsbudget voor werkgevers, met links naar FOD Financiën en mobiliteitsbudget.be]]. De calculator rekent die vergoedingen niet uit: hij brengt het effect van carpoolen zelf in kaart.
 
-## Wat de calculator berekent
+## Wat de besparingscalculator voor carpoolen berekent
 
 De tool werkt in vier stappen.
 
@@ -61,7 +61,7 @@ Begin met voorzichtige aannames: in het eerste jaar is een doelstelling van 20 t
 - **HR- en verloningsverantwoordelijken** die het mobiliteitsaanbod voor medewerkers uittekenen.
 - **Mobiliteits- en facilitymanagers** die de parkeerdruk op een site willen verlagen.
 - **Duurzaamheidsverantwoordelijken** die de Scope 3-uitstoot van het woon-werkverkeer moeten ramen.
-- **Financiële directies** die de terugverdientijd van een carpoolprogramma willen inschatten.
+- **Financieel directeurs en CFO's** die de terugverdientijd van een carpoolprogramma willen inschatten.
 
 ## Van raming naar carpoolprogramma
 
@@ -81,7 +81,7 @@ De calculator beantwoordt de vraag *"hoeveel kunnen we besparen?"*. De volgende 
 
 *Twee minuten, geen kredietkaart nodig, persoonlijk pdf-rapport.*
 
-Liever meteen zien hoe het werkt? [Vraag een demo aan](/nl-be/contact/) en we bekijken samen hoe u de resultaten van de calculator omzet in een carpoolprogramma in Microsoft Teams. De [prijzen](/nl-be/prijzen/) vindt u hier.
+Liever meteen zien hoe het werkt? [Vraag een demo aan](/nl-be/contact/) en we bekijken samen hoe u de resultaten van de calculator omzet in een carpoolprogramma in Microsoft Teams. Bekijk ook onze [prijzen](/nl-be/prijzen/).
 
 ---
 

@@ -72,7 +72,7 @@ video_demo:
 # fun facts
 fun_facts:
   enable: true
-  title: "Carpoolen voor het werk in cijfers"
+  title: "Carpoolen in het woon-werkverkeer: de cijfers"
   fact_item:
   - icon: "fas fa-clock"
     counter: "5"
@@ -110,7 +110,7 @@ image_and_content_blocks:
     title: "Carpoolen waar uw medewerkers al werken"
     image: "images/why_use_teamWheels.png"
     content_position: "right"
-    content: "TeamWheels is carpoolsoftware voor bedrijven die rechtstreeks in Microsoft Teams werkt: geen extra app, geen nieuwe gewoonte om aan te leren. Een Teams-beheerder, enkele klikken, en uw carpoolprogramma staat in 5 minuten online, met een deelname van meer dan 40 %.
+    content: "TeamWheels is een carpoolapp voor bedrijven die rechtstreeks in Microsoft Teams werkt: geen extra app, geen nieuwe gewoonte om aan te leren. Een Teams-beheerder, enkele klikken, en uw carpoolprogramma staat in 5 minuten online, met een deelname van meer dan 40 %.
 
     [Zo werkt het →](hoe-het-werkt/)
     "
@@ -122,7 +122,7 @@ image_and_content_blocks:
     title: "Minder solo-autoritten, minder parkeerdruk, meer welzijn"
     image: "images/photos/office-parking-lot.jpg"
     content_position: "left"
-    content: "Minder medewerkers die alleen met de auto naar het werk rijden betekent meetbaar minder CO₂-uitstoot, tot 30 % minder vraag naar parkeerplaatsen en lagere verplaatsingskosten, terwijl u het welzijn van uw medewerkers en uw werkgeversimago versterkt.
+    content: "Als minder medewerkers alleen met de auto naar het werk rijden, betekent dat meetbaar minder CO₂-uitstoot, tot 30 % minder vraag naar parkeerplaatsen en lagere verplaatsingskosten, terwijl u het welzijn van uw medewerkers en uw werkgeversimago versterkt.
 
     [Bereken uw besparing →](besparingscalculator/)
     "
@@ -131,7 +131,7 @@ image_and_content_blocks:
 
   - enable: true
     subtitle: "Past in uw mobiliteitsbeleid"
-    title: "Carpoolen als onderdeel van uw woon-werkbeleid"
+    title: "Carpoolen in uw beleid voor woon-werkverkeer"
     image: "images/photos/commute-reporting-dashboard.jpg"
     content_position: "right"
     content: "TeamWheels houdt bij welke ritten uw medewerkers delen. Zo hebt u de gegevens in handen om carpoolen op te nemen in uw mobiliteitsbeleid, bijvoorbeeld naast een kilometervergoeding of binnen het mobiliteitsbudget [[VERIFY: valt carpoolen onder pijler 2 van het mobiliteitsbudget, en onder welke voorwaarden? FOD Financiën / mobiliteitsbudget.be]], en om de Scope 3-uitstoot van het woon-werkverkeer te rapporteren.
@@ -143,7 +143,7 @@ image_and_content_blocks:
 
   - enable: true
     subtitle: "Veiligheid en compliance"
-    title: "Een veilige oplossing, goedgekeurd door uw IT-afdeling"
+    title: "Een veilige oplossing, ontworpen voor uw IT-afdeling"
     image: "images/why_use_teamWheels.png"
     content_position: "left"
     content: "Gepubliceerd in de Microsoft Teams Store met een [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/nl-nl/microsoft-365-app-certification/teams/hmz-digital-teamwheels), aanmelden via Microsoft Entra ID, gegevens gehost in Frankrijk en GDPR-conform: een veilige oplossing voor bedrijven, zonder extra wachtwoorden. Grote organisaties, campussen en bedrijventerreinen kunnen TeamWheels ook onder hun eigen naam inzetten met het [white-labelplatform](https://www.teamwheelsapp.com/en/white-label-carpool-platform/) (Engelstalig).
