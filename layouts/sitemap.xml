@@ -1,3 +1,4 @@
+{{- if partialCached "lang-live.html" site site.Language.Lang -}}
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 {{/*
   Custom sitemap — excludes pages that are noindexed in
@@ -22,7 +23,7 @@
     {{ if ge .Sitemap.Priority 0.0 }}<priority>{{ .Sitemap.Priority }}</priority>{{ end }}
     {{ if .IsTranslated }}
     {{ range .AllTranslations }}
-    <xhtml:link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}"/>
+    <xhtml:link rel="alternate" hreflang="{{ partial "seo/lang-tag.html" . }}" href="{{ .Permalink }}"/>
     {{ end }}
     {{ end }}
     {{- /* Google video sitemap extension: advertise the demo clip on any
@@ -32,3 +33,5 @@
     {{- end }}
   {{ end }}
 </urlset>
+
+{{- end -}}

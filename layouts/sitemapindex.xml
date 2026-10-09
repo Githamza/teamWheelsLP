@@ -34,7 +34,7 @@
     {{- end }}
     {{- if .IsTranslated }}
     {{- range .AllTranslations }}
-    <xhtml:link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}"/>
+    <xhtml:link rel="alternate" hreflang="{{ partial "seo/lang-tag.html" . }}" href="{{ .Permalink }}"/>
     {{- end }}
     {{- end }}
     {{- partial "seo/sitemap-video.html" . -}}

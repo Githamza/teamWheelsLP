@@ -15,7 +15,11 @@
 {{- if ne .RelPermalink "/" -}}
   {{- if .IsTranslated -}}
     {{- range .AllTranslations }}
-<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+      {{- /* Skip locales that are not live (draft home): Hugo still creates
+             their 404 page, which would otherwise be listed here. */ -}}
+      {{- if partialCached "lang-live.html" .Site .Language.Lang }}
+<link rel="alternate" hreflang="{{ partial "seo/lang-tag.html" . }}" href="{{ .Permalink }}" />
+      {{- end }}
     {{- end }}
     {{- $fr := where .AllTranslations "Language.Lang" "fr" -}}
     {{- with $fr }}
@@ -24,7 +28,7 @@
 <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
     {{- end }}
   {{- else }}
-<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+<link rel="alternate" hreflang="{{ partial "seo/lang-tag.html" . }}" href="{{ .Permalink }}" />
 <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
   {{- end }}
 {{- end -}}

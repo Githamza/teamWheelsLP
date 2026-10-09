@@ -1,12 +1,17 @@
-{{- /* Flag-based language switcher. Renders every site language as a
+{{- /* Flag-based language switcher. Renders every live site language as a
        flag + code link so the current/available languages are obvious at a
        glance. Links to the translated page when it exists, otherwise to the
-       target language home. Pass the current page as context. */ -}}
+       target language home. Pass the current page as context.
+       A locale whose home page is still a draft is skipped (partials/lang-live.html).
+       Regional locales (nl-be, nl) show the bare language code with their
+       country flag; the full label goes in title and aria-label. */ -}}
 {{- $page := . -}}
 {{- $cur := .Lang -}}
 <div class="lang-switch" role="group" aria-label="{{ i18n `select_language` | default `Select language` }}">
   {{- range hugo.Sites -}}
+    {{- if partialCached "lang-live.html" . .Language.Lang -}}
     {{- $l := .Language -}}
+    {{- $tag := .Params.hreflang -}}
     {{- $url := "" -}}
     {{- range $page.AllTranslations -}}
       {{- if eq .Lang $l.Lang -}}{{- $url = .Permalink -}}{{- end -}}
@@ -16,11 +21,12 @@
     <a
       href="{{ $url }}"
       class="lang-switch__item{{ if $active }} is-active{{ end }}"
-      hreflang="{{ $l.Lang }}"
+      hreflang="{{ $tag | default $l.Lang }}"
       {{ if $active }}aria-current="true"{{ end }}
-      title="{{ $l.Label | default ($l.Lang | upper) }}">
+      title="{{ $l.Label | default ($l.Lang | upper) }}"{{ with $tag }} aria-label="{{ $l.Label }}"{{ end }}>
       {{ partial "essentials/flag.html" $l.Lang }}
-      <span class="lang-switch__label">{{ $l.Lang | upper }}</span>
+      <span class="lang-switch__label">{{ index (split $l.Lang "-") 0 | upper }}</span>
     </a>
+    {{- end -}}
   {{- end -}}
 </div>

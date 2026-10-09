@@ -310,7 +310,7 @@
     "@type": "WebPage",
     "@id": {{ $page.Permalink | jsonify | safeJS }}
   },
-  "inLanguage": {{ $page.Language.Lang | jsonify | safeJS }},
+  "inLanguage": {{ partial "seo/lang-tag.html" $page | jsonify | safeJS }},
   "publisher": {
     "@type": "Organization",
     "@id": "https://www.teamwheelsapp.com/#organization",

@@ -1,0 +1,209 @@
+# Dutch (Netherlands). Formal "u" on product strings (SPEC.md, Code style).
+# i18n/nl-be.yaml holds the Belgian variant: keep both key sets identical.
+- id: by
+  translation: door
+
+- id: admin
+  translation: Beheerder
+
+- id: most_popular
+  translation: meest populair
+
+- id: recent_posts_of
+  translation: Recente artikelen van
+
+- id: related_posts
+  translation: Gerelateerde artikelen
+
+- id: min_read
+  translation: min leestijd
+
+- id: view_all_positions
+  translation: Alle vacatures bekijken
+
+- id: apply_now
+  translation: Nu solliciteren
+
+- id: share_this_job
+  translation: "Deel deze vacature:"
+
+- id: other_jobs
+  translation: Andere vacatures
+
+- id: all_jobs
+  translation: Alle vacatures
+
+- id: fname
+  translation: Voornaam
+
+- id: full_name
+  translation: Volledige naam
+
+- id: lname
+  translation: Achternaam
+
+- id: email
+  translation: E-mailadres
+
+- id: hero_email_label
+  translation: Liever een persoonlijke demo? Laat uw zakelijke e-mailadres achter
+
+- id: hero_email_placeholder
+  translation: naam@bedrijf.nl
+
+- id: website
+  translation: Website
+
+- id: optional
+  translation: optioneel
+
+- id: contact_form_subject
+  translation: Nieuw bericht via het TeamWheels-contactformulier
+
+- id: message
+  translation: Bericht
+
+- id: submit_now
+  translation: Verzenden
+
+- id: cv_note
+  translation: alleen doc- of pdf-bestanden, maximaal 2 MB
+
+- id: upload_cv
+  translation: Cv uploaden
+
+- id: footer_menu_1_title
+  translation: Producten
+
+- id: footer_menu_2_title
+  translation: Diensten
+
+- id: footer_menu_3_title
+  translation: Support
+
+- id: footer_menu_4_title
+  translation: Resources
+
+- id: footer_menu_5_title
+  translation: Overige pagina's
+
+- id: nav_main
+  translation: Hoofdnavigatie
+
+- id: nav_pagination
+  translation: Paginering van artikelen
+
+- id: select_language
+  translation: Taal kiezen
+
+- id: video_player_title
+  translation: TeamWheels-videospeler
+
+- id: video_not_supported
+  translation: Uw browser ondersteunt deze video niet.
+
+- id: video_play_label
+  translation: Demovideo afspelen
+
+- id: hero_carousel_image
+  translation: Zo koppelt TeamWheels in Microsoft Teams collega's aan elkaar
+
+- id: video_watch_page_link
+  translation: Volledige demopagina openen
+
+# Home page hero image (themes/delta-hugo/layouts/index.html)
+- id: home_image_alt
+  translation: TeamWheels - carpoolen voor bedrijven in Microsoft Teams
+
+- id: sc_step1_title
+  translation: "Uw organisatie"
+
+- id: sc_step2_title
+  translation: "Huidige mobiliteit"
+
+- id: sc_step3_title
+  translation: "Uw mogelijke besparing"
+
+- id: sc_step4_title
+  translation: "Uw persoonlijke rapport"
+
+- id: sc_chart_bar_title
+  translation: "CO₂-uitstoot: voor en na"
+
+- id: sc_chart_rse_title
+  translation: "ESG-score mobiliteit"
+
+- id: sc_cta_download
+  translation: "Mijn pdf-rapport downloaden"
+
+- id: sc_nav_prev
+  translation: "← Vorige"
+
+- id: sc_nav_next
+  translation: "Volgende →"
+
+- id: sc_progress
+  translation: "Voortgang van de calculator"
+
+- id: sc_step_nav
+  translation: "Navigatie tussen stappen"
+
+# FAQ section title (partials/faq-section.html)
+- id: faq_title
+  translation: Veelgestelde vragen
+
+# End-of-article product CTA (partials/blog-cta.html)
+- id: blog_cta_title
+  translation: Breng deze gids in de praktijk
+- id: blog_cta_before
+  translation: "Ontdek onze"
+- id: blog_cta_anchor
+  translation: carpoolsoftware voor bedrijven
+- id: blog_cta_after
+  translation: " in Microsoft Teams: automatische ritmatching, registratie van woon-werkritten en CO₂-rapportage, in 5 minuten live."
+- id: blog_cta_button
+  translation: Demo aanvragen
+
+- id: sc_intro_subtitle
+  translation: Gratis tool van TeamWheels
+
+# Microsoft Teams app install CTA (partials/teams-install.html)
+- id: ms_locale
+  translation: nl-nl
+- id: teams_install_button
+  translation: Toevoegen aan Microsoft Teams
+- id: teams_install_button_short
+  translation: Probeer het in Teams
+- id: teams_install_trust
+  translation: 30 dagen gratis · Geen creditcard nodig · In 5 minuten live
+- id: teams_admin_question
+  translation: "Geen Teams-beheerder?"
+- id: teams_admin_link
+  translation: "Stuur het verzoek naar uw IT-team"
+- id: teams_store_badge_top
+  translation: "Beschikbaar in de"
+- id: teams_store_badge_bottom
+  translation: "Microsoft Teams Store"
+- id: ms_attestation_badge_top
+  translation: "Publisher Attestation"
+- id: ms_attestation_badge_bottom
+  translation: "Microsoft 365"
+- id: teams_admin_mail_subject
+  translation: "Verzoek: de TeamWheels-app installeren in Microsoft Teams"
+- id: teams_admin_mail_body
+  translation: |
+    Hallo,
+
+    Ik wil graag TeamWheels uitproberen, een in Microsoft Teams ingebouwde carpoolapp voor medewerkers (30 dagen gratis, geen creditcard).
+
+    Kunt u de app toestaan voor onze organisatie?
+
+    - Installeren in Teams: {{ .Install }}
+    - Productpagina in Microsoft Marketplace: {{ .Marketplace }}
+    - Microsoft 365 Publisher Attestation (beveiliging, gegevensverwerking, compliance): {{ .Attestation }}
+
+    Belangrijkste punten: aanmelden via Microsoft Entra ID (het bestaande Conditional Access-beleid blijft van toepassing), gegevens gehost in Frankrijk op Azure en versleuteld opgeslagen, geen gegevens gedeeld met derden, AVG-conform.
+
+    In het Teams-beheercentrum: Teams-apps > Apps beheren > zoek "TeamWheels" > Toestaan.
+
+    Bedankt!
