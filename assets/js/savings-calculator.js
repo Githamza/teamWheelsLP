@@ -117,6 +117,65 @@
         contact: 'Contact: contact@teamwheelsapp.com',
         footer: 'teamwheelsapp.com \u2014 Corporate carpooling'
       }
+    },
+    // Dutch (Belgium and the Netherlands), formal "u". nl-be and nl both use it.
+    nl: {
+      currencies: { EUR: 'Euro (€)', GBP: 'Brits pond (£)', USD: 'Amerikaanse dollar ($)' },
+      step1: { title: 'Uw organisatie', subtitle: 'Enkele gegevens over uw organisatie.' },
+      step2: { title: 'Huidige mobiliteit', subtitle: 'Hoe uw medewerkers nu naar het werk reizen.' },
+      step3: { title: 'Uw mogelijke besparing', subtitle: 'Geschatte resultaten met TeamWheels.' },
+      step4: { title: 'Uw persoonlijke rapport', subtitle: 'Download uw volledige analyse.' },
+      fields: {
+        currency: 'Valuta',
+        employees: 'Aantal medewerkers',
+        distance: 'Woon-werkafstand (heen en terug)',
+        workDays: 'Werkdagen per jaar',
+        soloPercent: '% medewerkers die in hun eentje met de auto rijden',
+        targetPercent: 'Doelstelling carpoolen',
+        fuelPrice: 'Brandstofprijs',
+        consumption: 'Gemiddeld verbruik van de auto'
+      },
+      results: {
+        co2: { label: 'Vermeden CO₂', unit: 't/jaar' },
+        savings: { label: 'Besparing per carpooler', unit: '/jaar' },
+        fmd: { labelFR: 'Werkgeversvoordeel (FMD, Frankrijk)', labelINT: 'Geschat werkgeversvoordeel', unit: '/jaar' },
+        parking: { label: 'Vrijgekomen parkeerplaatsen', unit: 'plaatsen' },
+        rse: { label: 'ESG-score mobiliteit', unit: '/ 100' },
+        chartBarTitle: 'CO₂-uitstoot: voor en na',
+        chartRseTitle: 'ESG-score mobiliteit',
+        co2DescEq: 'Gelijk aan {x} vluchten Parijs–New York',
+        chartBarBefore: 'Voor',
+        chartBarAfter: 'Na'
+      },
+      leadForm: {
+        firstName: 'Voornaam',
+        email: 'Zakelijk e-mailadres',
+        company: 'Organisatie',
+        country: 'Land',
+        countryPlaceholder: 'Typ een land…',
+        countryInvalid: 'Kies een land uit de lijst.',
+        optin: 'Ik wil graag nieuws en updates van TeamWheels ontvangen.'
+      },
+      cta: {
+        download: 'Mijn pdf-rapport downloaden',
+        demo: 'Een demo van TeamWheels bekijken',
+        shareLabel: 'Of delen:'
+      },
+      nav: { prev: '← Vorige', next: 'Volgende →', finish: 'Resultaten bekijken →' },
+      disclaimer: 'Indicatieve schattingen op basis van emissiefactoren van ADEME (Frankrijk) / EPA (internationaal). De werkelijke resultaten hangen af van de situatie van uw organisatie.',
+      share: 'Ontdek hoeveel uw organisatie kan besparen met carpoolen via TeamWheels.',
+      pdf: {
+        cover: 'Impactrapport carpoolen',
+        preparedFor: 'Opgesteld voor',
+        date: 'Datum',
+        summary: 'Managementsamenvatting',
+        assumptions: 'Aannames',
+        methodology: 'Methode: ADEME-factoren (gemiddelde auto 0,193 kg CO₂/km) voor Frankrijk, EPA-factoren voor het Verenigd Koninkrijk en de Verenigde Staten.',
+        nextSteps: 'Volgende stappen',
+        nextStepsBody: 'TeamWheels maakt van Microsoft Teams een carpoolplatform. In 5 minuten ingericht, meteen in gebruik, met ingebouwde Scope 3-rapportage.',
+        contact: 'Contact: contact@teamwheelsapp.com',
+        footer: 'teamwheelsapp.com — Carpoolen voor bedrijven'
+      }
     }
   };
 
@@ -150,9 +209,10 @@
   var LITERS_PER_GALLON = 3.78541;
   var PARIS_NYC_FLIGHT_TONS = 1.8;
 
+  // Regional keys (nl-be) fall back to their base language (nl), then en.
   function t(lang, path) {
     var parts = path.split('.');
-    var node = TRANSLATIONS[lang] || TRANSLATIONS.en;
+    var node = TRANSLATIONS[lang] || TRANSLATIONS[String(lang).split('-')[0]] || TRANSLATIONS.en;
     for (var i = 0; i < parts.length; i++) {
       if (node == null) return '';
       node = node[parts[i]];
@@ -229,8 +289,16 @@
     };
   }
 
+  // Locale for numbers and dates, and for country names in the lead form.
+  var UI_LOCALES = { fr: 'fr-FR', 'nl-be': 'nl-BE', nl: 'nl-NL' };
+  function uiLocale(lang) { return UI_LOCALES[lang] || 'en-GB'; }
+  function displayLocale(lang) {
+    var base = String(lang).split('-')[0];
+    return base === 'fr' || base === 'nl' ? base : 'en';
+  }
+
   function formatNumber(n, decimals, lang) {
-    var locale = lang === 'fr' ? 'fr-FR' : 'en-GB';
+    var locale = uiLocale(lang);
     var value = isFinite(n) ? n : 0;
     try {
       return value.toLocaleString(locale, {
@@ -272,11 +340,11 @@
 
     input.placeholder = t(lang, 'leadForm.countryPlaceholder');
 
-    var displayLocale = lang === 'fr' ? 'fr' : 'en';
+    var listLocale = displayLocale(lang);
     var displayNames = null;
     try {
       if (typeof Intl !== 'undefined' && Intl.DisplayNames) {
-        displayNames = new Intl.DisplayNames([displayLocale], { type: 'region' });
+        displayNames = new Intl.DisplayNames([listLocale], { type: 'region' });
       }
     } catch (e) {}
 
@@ -290,7 +358,7 @@
       }
       return { code: code, name: name };
     });
-    var collator = (typeof Intl !== 'undefined' && Intl.Collator) ? new Intl.Collator(displayLocale) : null;
+    var collator = (typeof Intl !== 'undefined' && Intl.Collator) ? new Intl.Collator(listLocale) : null;
     items.sort(function (a, b) {
       return collator ? collator.compare(a.name, b.name) : (a.name < b.name ? -1 : a.name > b.name ? 1 : 0);
     });
@@ -316,7 +384,7 @@
     if (!root) return;
 
     var lang = (root.getAttribute('data-lang') || 'fr').toLowerCase();
-    if (!TRANSLATIONS[lang]) lang = 'en';
+    if (!TRANSLATIONS[lang] && !TRANSLATIONS[lang.split('-')[0]]) lang = 'en';
 
     var initialCurrency = root.getAttribute('data-currency') || 'EUR';
     if (!DEFAULTS[initialCurrency]) initialCurrency = 'EUR';
@@ -652,7 +720,7 @@
       doc.setFont('helvetica', 'normal');
       doc.text(pdfSafe(t(lang, 'pdf.cover')), margin, 92);
       doc.setFontSize(11);
-      doc.text(pdfSafe((userInfo.company || '') + '  -  ' + new Date().toLocaleDateString(lang === 'fr' ? 'fr-FR' : 'en-GB')), margin, 115);
+      doc.text(pdfSafe((userInfo.company || '') + '  -  ' + new Date().toLocaleDateString(uiLocale(lang))), margin, 115);
 
       doc.setTextColor(15, 23, 42);
       y = 180;
