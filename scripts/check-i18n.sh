@@ -39,7 +39,8 @@ build() { # build <src dir> <dest dir> <log> [extra hugo flags]
 
 echo "== Baseline: production build of $BASE_REF"
 base_sha="$(git -C "$ROOT" rev-parse --short "$BASE_REF")"
-base_out="$CHECK_DIR/base-$base_sha"
+# Keyed by day too: llms-full.txt stamps the build date ("Generated: …").
+base_out="$CHECK_DIR/base-$base_sha-$(date +%F)"
 if [ ! -f "$base_out/.done" ]; then
   wt="$CHECK_DIR/worktree-$base_sha"
   git -C "$ROOT" worktree remove --force "$wt" >/dev/null 2>&1
