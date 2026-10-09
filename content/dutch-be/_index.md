@@ -134,7 +134,7 @@ image_and_content_blocks:
     title: "Carpoolen in uw beleid voor woon-werkverkeer"
     image: "images/photos/commute-reporting-dashboard.jpg"
     content_position: "right"
-    content: "TeamWheels houdt bij welke ritten uw medewerkers delen. Zo hebt u de gegevens in handen om carpoolen op te nemen in uw mobiliteitsbeleid, bijvoorbeeld naast een kilometervergoeding of binnen [pijler 2 van het mobiliteitsbudget](https://mobiliteitsbudget.be/nl/5-waar-kan-je-het-mobiliteitsbudget-aan-besteden), waar carpooling onder de deeloplossingen valt (sinds 1 januari 2026 alleen met voertuigen zonder CO₂-uitstoot), en om de Scope 3-uitstoot van het woon-werkverkeer te rapporteren.
+    content: "TeamWheels houdt bij welke ritten uw medewerkers delen. Zo hebt u de gegevens in handen om carpoolen op te nemen in uw mobiliteitsbeleid, bijvoorbeeld naast een kilometervergoeding of binnen [pijler 2 van het mobiliteitsbudget](https://mobiliteitsbudget.be/nl/5-waar-kan-je-het-mobiliteitsbudget-aan-besteden), en om de Scope 3-uitstoot van het woon-werkverkeer te rapporteren. In pijler 2 valt carpoolen onder de deeloplossingen, sinds 1 januari 2026 alleen met voertuigen zonder CO₂-uitstoot.
 
     [Bekijk de prijzen →](prijzen/)
     "
