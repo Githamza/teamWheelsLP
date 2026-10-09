@@ -1,6 +1,6 @@
 ---
 title: "Tarifs covoiturage entreprise | TeamWheels"
-description: "Tarification simple pour votre application rideshare & commute dans Microsoft Teams : essai gratuit 30 jours, puis 3€/collaborateur/mois au lieu de 5€ (offre promo), tout inclus."
+description: "Tarification simple pour votre application rideshare & commute dans Microsoft Teams : essai gratuit 30 jours, puis 3 € HT/collaborateur/mois au lieu de 5 € HT (offre promo), tout inclus."
 draft: false
 layout: "pricing"
 keywords: "tarifs covoiturage entreprise, prix BlaBlaCar entreprise, coût Uber pour salariés, prix application Microsoft Teams covoiturage, tarif ridesharing entreprise, coût programme commute, abonnement covoiturage entreprise, prix plateforme covoiturage, forfait mobilité durable covoiturage, tarif autopartage entreprise"
@@ -32,8 +32,8 @@ pricing_card:
 
   - name: "TeamWheels"
     currency: ""
-    old_price: "5€ /collaborateur /mois"
-    price: "3€ /collaborateur /mois"
+    old_price: "5€ HT /collaborateur /mois"
+    price: "3€ HT /collaborateur /mois"
     promo_label: "Offre promo : -40 %"
     promo_note: "Offre exclusive à durée limitée"
     populer: true
@@ -86,7 +86,7 @@ faq:
       content: "Installez TeamWheels depuis le [Microsoft Teams Store](https://teams.microsoft.com/l/app/1e3c893b-b545-49ed-a249-1c7a25b0fa46) : l'essai démarre immédiatement, sans appel commercial. Vous bénéficiez de 30 jours d'accès complet, sans carte bancaire et sans engagement. À la fin de l'essai, vous décidez librement si vous souhaitez continuer."
 
     - title: "Y a-t-il un nombre minimum de collaborateurs ?"
-      content: "Non, TeamWheels s'adapte à toutes les tailles d'entreprise. Que vous soyez 10 ou 10 000, le prix reste le même : 3€/collaborateur/mois (tarif promo, au lieu de 5€)."
+      content: "Non, TeamWheels s'adapte à toutes les tailles d'entreprise. Que vous soyez 10 ou 10 000, le prix reste le même : 3 € HT/collaborateur/mois (tarif promo, au lieu de 5 € HT)."
 
     - title: "Puis-je annuler à tout moment ?"
       content: "Oui, vous pouvez annuler votre abonnement à tout moment, sans frais ni préavis. Vos données sont supprimées conformément au RGPD."

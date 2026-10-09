@@ -139,7 +139,7 @@ Si votre outil de covoiturage produit des relevés mensuels, le justificatif est
 
 La plupart des plans de mobilité échouent sur un détail pratique : les salariés n'installent pas une application de plus. TeamWheels est un [logiciel de covoiturage entreprise](/fr/corporate-carpooling-software/) qui fonctionne **directement dans Microsoft Teams** : les collègues publient et trouvent un trajet là où ils travaillent déjà, l'appariement se fait par trajet, horaires et jours sur site, et l'employeur obtient chaque mois les relevés utiles pour le FMD. Les indicateurs d'adoption et de trajets de la section 6 du modèle en sont directement issus.
 
-Pour un essai sur un site pilote : 30 jours gratuits jusqu'à 50 collaborateurs, puis 3 € par collaborateur et par mois (tarif promotionnel) — voir les [tarifs](/fr/pricing/). Pour la méthode de déploiement complète, voir notre [guide du covoiturage en entreprise 2026](/fr/blog/covoiturage-entreprise-guide-2026/).
+Pour un essai sur un site pilote : 30 jours gratuits jusqu'à 50 collaborateurs, puis 3 € HT par collaborateur et par mois (tarif promotionnel) — voir les [tarifs](/fr/pricing/). Pour la méthode de déploiement complète, voir notre [guide du covoiturage en entreprise 2026](/fr/blog/covoiturage-entreprise-guide-2026/).
 
 ## Foire aux questions
 

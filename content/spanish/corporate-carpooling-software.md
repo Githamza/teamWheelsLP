@@ -158,7 +158,7 @@ faq:
   - question: "¿Cómo se protegen los datos de los empleados?"
     answer: "La autenticación se realiza mediante SSO con Azure AD / Entra ID, y la plataforma es conforme al RGPD, con privacidad desde el diseño."
   - question: "¿Cuánto cuesta un software de carpooling corporativo?"
-    answer: "TeamWheels ofrece una prueba gratuita de 30 días y, después, un precio transparente por usuario desde 3 € por usuario/mes (precio promocional, antes 5 €). La mayoría de las organizaciones obtienen un ROI positivo en el primer trimestre solo con el ahorro en aparcamiento."
+    answer: "TeamWheels ofrece una prueba gratuita de 30 días y, después, un precio transparente por usuario desde 3 € por usuario/mes + IVA (precio promocional, antes 5 €). La mayoría de las organizaciones obtienen un ROI positivo en el primer trimestre solo con el ahorro en aparcamiento."
   - question: "¿En qué países está disponible TeamWheels?"
     answer: "Empresas de Estados Unidos, Reino Unido y Canadá ya utilizan TeamWheels, con soporte completo para Francia, incluido el Forfait Mobilité Durable."
   - question: "¿Cómo elegir el mejor software de gestión del coche compartido?"

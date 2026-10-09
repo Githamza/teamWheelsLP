@@ -18,7 +18,7 @@ This file follows the [llms.txt convention](https://llmstxt.org/). Agents that i
 - [Home (EN)](https://www.teamwheelsapp.com/en/): Employee carpooling built into Microsoft Teams — overview, key figures, features.
 - [How it works](https://www.teamwheelsapp.com/en/how-it-works/): Five-minute deployment, conversational bot, admin dashboard, Scope 3 reporting.
 - [Benefits](https://www.teamwheelsapp.com/en/benefits/): HR, Sustainability and Facilities benefits — retention, parking demand, ESG, commuter benefits.
-- [Pricing](https://www.teamwheelsapp.com/en/pricing/): Flat €3 / seat / month (promo, down from €5), free 30-day trial up to 50 employees, FAQ.
+- [Pricing](https://www.teamwheelsapp.com/en/pricing/): Flat €3 / seat / month excl. VAT (promo, down from €5), free 30-day trial up to 50 employees, FAQ.
 - [Contact](https://www.teamwheelsapp.com/en/contact/): Demo request form, sales contact, deployment support.
 - [White-label carpool platform](https://www.teamwheelsapp.com/en/white-label-carpool-platform/): Branded deployment in your own Microsoft 365 tenant — build vs. white-label comparison, HR integration, launch timeline, pricing and how to buy.
 - [Savings calculator](https://www.teamwheelsapp.com/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/): Interactive calculator (CO₂ avoided, parking saved, commuter savings) plus the ROI methodology behind it.
@@ -28,7 +28,7 @@ This file follows the [llms.txt convention](https://llmstxt.org/). Agents that i
 - [Accueil (FR)](https://www.teamwheelsapp.com/fr/): Covoiturage entreprise intégré à Microsoft Teams — vue d'ensemble, chiffres clés, fonctionnalités.
 - [Comment ça marche](https://www.teamwheelsapp.com/fr/how-it-works/): Déploiement en 5 minutes, bot conversationnel, tableau de bord administrateur, reporting RSE.
 - [Avantages](https://www.teamwheelsapp.com/fr/benefits/): Avantages RH, RSE et services généraux — rétention, stationnement, ESG, Forfait Mobilité Durable.
-- [Tarifs](https://www.teamwheelsapp.com/fr/pricing/): 3 € / siège / mois (promo, au lieu de 5 €), essai gratuit 30 jours jusqu'à 50 salariés, FAQ.
+- [Tarifs](https://www.teamwheelsapp.com/fr/pricing/): 3 € HT / siège / mois (promo, au lieu de 5 € HT), essai gratuit 30 jours jusqu'à 50 salariés, FAQ.
 - [Contact](https://www.teamwheelsapp.com/fr/contact/): Demande de démo, contact commercial, accompagnement au déploiement.
 - [Calculateur d'économies](https://www.teamwheelsapp.com/fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/): Calculateur interactif (CO₂ évité, stationnement libéré, économies salariés) et méthodologie ADEME.
 - [Logiciel de covoiturage entreprise](https://www.teamwheelsapp.com/fr/corporate-carpooling-software/): Page produit — fonctionnement dans Teams, tarifs, comparatif marque blanche, FAQ.

@@ -154,7 +154,7 @@ Pour une entreprise qui sort de BlaBlaCar Daily ou de Klaxit, trois différences
 
 - **Aucun compte à recréer** : connexion avec le compte Microsoft 365 existant (SSO Entra ID), données dans votre tenant, hébergées en France.
 - **Aucune dépendance aux subventions** : le dispositif repose sur votre politique mobilité, pas sur une prime dont les règles peuvent changer.
-- **Une bascule rapide** : installation en quelques minutes, essai gratuit de 30 jours jusqu'à 50 collaborateurs, puis 3 € par collaborateur et par mois (tarif promotionnel, au lieu de 5 €) — voir les [tarifs](/fr/pricing/).
+- **Une bascule rapide** : installation en quelques minutes, essai gratuit de 30 jours jusqu'à 50 collaborateurs, puis 3 € HT par collaborateur et par mois (tarif promotionnel, au lieu de 5 € HT) — voir les [tarifs](/fr/pricing/).
 
 À voir en 20 secondes : un salarié demande un trajet dans Microsoft Teams et rejoint un collègue en un clic.
 
