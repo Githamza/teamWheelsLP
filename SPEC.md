@@ -12,7 +12,7 @@ Add two Dutch-language locales to teamwheelsapp.com, one per country, so Belgian
 - **nl-NL** (Netherlands): reiskostenvergoeding, werkkostenregeling, WPM.
 - Readers are employers. The blog never addresses individual commuters.
 
-Deliverables: the i18n setup, 4 core pages per locale (8), 8 blog posts (5 BE, 3 NL). Every page ships as `draft: true`; Hamza reviews, flips drafts and merges.
+Deliverables: the i18n setup, 5 core pages per locale (10: the brief's 4 plus `contact`, D10), 8 blog posts (5 BE, 3 NL). Every page ships as `draft: true`; Hamza reviews, flips drafts and merges.
 
 Out of scope: design changes, pricing changes, new features, calculator formulas, any edit to FR/EN/DE/ES content beyond what the i18n plumbing requires.
 
@@ -27,7 +27,9 @@ Out of scope: design changes, pricing changes, new features, calculator formulas
 | D5 | Content dirs `content/dutch-be/` and `content/dutch-nl/`. |
 | D6 | Pricing on both locales reads "€ 3 per medewerker per maand, excl. btw". *Default, not yet confirmed.* |
 | D7 | Switcher shows `NL` + the BE or NL flag; the full label ("Nederlands (België)", "Nederlands (Nederland)") goes in `title` and `aria-label`. *Default, not yet confirmed.* |
-| D8 | NL menus link the 4 localized pages, and EN for everything else via absolute URLs (the DE/ES pattern). No blog link until the first post in that locale is published. *Default, not yet confirmed.* |
+| D8 | NL menus link the localized pages, and EN for everything else via absolute URLs (the DE/ES pattern). No blog link until the first post in that locale is published. *Default, not yet confirmed.* |
+| D10 | `contact` is localized in Phase 2 on both locales (approved 2026-10-10): every CTA points there. |
+| D11 | Calculator formulas are fixed separately in issue #121 (approved 2026-10-10). This rollout only translates labels. |
 | D9 | Core pages pair by file name: a Dutch page reuses the shared file name (`how-it-works.md`) and sets `slug:` for the Dutch URL. Blog posts pair by `translationKey`, only when a FR/EN twin exists. |
 
 ## Tech stack
@@ -35,7 +37,7 @@ Out of scope: design changes, pricing changes, new features, calculator formulas
 - Hugo v0.163.3 extended (pinned in `.github/workflows/deploy.yml`), theme `delta-hugo` (vendored in `themes/`, project overrides in `layouts/`).
 - Tailwind/PostCSS via npm (`npm ci`), Go modules from `config/_default/module.toml`.
 - Apache hosting (`static/.htaccess`). Every push to `main` builds and deploys to production.
-- OpenSEO MCP (self-hosted on localhost:3001) for keyword and SERP research before each blog post.
+- OpenSEO, hosted (app.openseo.so), project "Default" `321a5570-a75b-440d-a4de-ec7738572429` (teamwheelsapp.com, default market FR). Research before each blog post; pass the Belgium / Netherlands location and language `nl` on every call. The self-hosted instance (localhost:3001) is not used.
 
 ## Commands
 
@@ -57,7 +59,7 @@ config/_default/menus.nl-be.toml    → nl-BE menus (D8)
 config/_default/menus.nl.toml       → nl-NL menus (D8)
 i18n/nl-be.yaml, i18n/nl.yaml       → UI strings, same key set as i18n/fr.yaml
 content/dutch-be/                   → nl-BE pages (D5)
-  _index.md, how-it-works.md, pricing.md, besparingscalculator.md
+  _index.md, how-it-works.md, pricing.md, besparingscalculator.md, contact.md
   blog/_index.md, blog/<slug>.md
 content/dutch-nl/                   → nl-NL pages, same layout
 layouts/partials/seo/hreflang.html  → hreflang value from params (D1)
@@ -165,7 +167,7 @@ There is no test suite. Each PR proves its change with build output and greps, p
 
 1. Production build is clean, and the live site is unchanged until Hamza publishes an nl home page.
 2. With drafts built, every translated page emits reciprocal hreflang (`fr`, `en`, `de`, `es`, `nl-BE`, `nl-NL` where twins exist, `x-default` → FR), and both sitemaps list nl URLs with alternates.
-3. 4 core pages per locale exist as drafts, in local vocabulary, with the same product claims as FR.
+3. 5 core pages per locale exist as drafts, in local vocabulary, with the same product claims as FR.
 4. 8 blog posts exist as drafts, each passing the brief's SEO checklist, with every legal figure either sourced or marked `[[VERIFY]]`.
 5. BE-2, NL-1 and NL-2 are ready for review by Nov 23, so they can be live by Dec 7 (before the January search peak).
 6. After launch (Hamza's step): nl-BE and nl-NL URLs indexed in Search Console, all `[[VERIFY]]` markers resolved.
@@ -176,14 +178,14 @@ There is no test suite. Each PR proves its change with build output and greps, p
 | --- | --- | --- | --- |
 | 1 | `feat/nl-audit` | Repo map + this spec (#119) | Hamza approves |
 | 2 | `feat/nl-i18n` | Languages, menus, i18n files, hreflang/sitemap/schema params, switcher guard + flags, alias/webmcp lists, home alt text, calculator nl labels + EUR, draft `_index.md` per locale | Builds clean, other locales unchanged, hreflang checked on `-D` build |
-| 3 | `feat/nl-be-core` | nl-BE: home, hoe-het-werkt, prijzen, besparingscalculator | Native Dutch review |
-| 4 | `feat/nl-nl-core` | nl-NL: same four pages | Native Dutch review |
+| 3 | `feat/nl-be-core` | nl-BE: home, hoe-het-werkt, prijzen, besparingscalculator, contact | Native Dutch review |
+| 4 | `feat/nl-nl-core` | nl-NL: same five pages | Native Dutch review |
 | 5-12 | `content/nl-be-<slug>`, `content/nl-nl-<slug>` | One post each; seasonal posts first (BE-2, NL-1, NL-2) | Native review, then `[[VERIFY]]` resolved by Hamza |
 
 ## Open questions
 
-1. Confirm D6 ("excl. btw", which the FR pricing page does not say), D7 (switcher label) and D8 (menus).
-2. Should `contact` be localized in Phase 2? Every CTA points there, and an EN contact page breaks the Dutch flow.
+1. Confirm D6: are the prices (3 € / 5 € per employee per month) quoted before VAT? If yes, Dutch pages say "excl. btw". Also D7 (switcher label) and D8 (menus).
+2. ~~Localize `contact`?~~ Yes (D10).
 3. Who is the native Dutch reviewer, for both Flemish and Netherlands usage?
-4. The OpenSEO MCP is unreachable from this session (ECONNREFUSED). It must be running before the first blog post.
-5. Calculator: non-French countries get a flat 12 % "employer benefit" estimate, and the FR cap (700 €) does not match the published FMD amounts. Out of scope here; open a separate ticket?
+4. ~~OpenSEO unreachable~~ Use the hosted instance (see Tech stack).
+5. ~~Calculator formula~~ Separate fix, issue #121 (D11).
