@@ -158,7 +158,7 @@ faq:
   - question: "How is employee data secured?"
     answer: "Authentication runs through Azure AD / Entra ID SSO, and the platform is GDPR compliant with privacy by design."
   - question: "What does corporate carpooling software cost?"
-    answer: "TeamWheels offers a free 30-day trial, then transparent per-seat pricing from 3€ per seat per month (promo price, down from 5€). Most organizations reach positive ROI within the first quarter through parking-cost savings alone."
+    answer: "TeamWheels offers a free 30-day trial, then transparent per-seat pricing from 3€ per seat per month excl. VAT (promo price, down from 5€). Most organizations reach positive ROI within the first quarter through parking-cost savings alone."
   - question: "Which countries does TeamWheels support?"
     answer: "Companies across the USA, UK, and Canada run TeamWheels today, with full support for France including the Forfait Mobilité Durable."
   - question: "How do I choose the best carpool management software?"

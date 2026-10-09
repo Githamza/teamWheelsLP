@@ -1,6 +1,6 @@
 ---
 title: "Precios del coche compartido para empresas | TeamWheels"
-description: "Precios transparentes para su programa de coche compartido: prueba gratis de 30 días y después 3 € por usuario/mes (promoción, antes 5 €) en Microsoft Teams."
+description: "Precios transparentes para su programa de coche compartido: prueba gratis de 30 días y después 3 € por usuario/mes + IVA (promoción, antes 5 €) en Microsoft Teams."
 draft: false
 layout: "pricing"
 keywords: "precio coche compartido para empresas, coste del carpooling corporativo, precio BlaBlaCar para empresas, coste Uber para empleados, precio app de Microsoft Teams, precio plataforma de gestión de desplazamientos, coste software de carpooling, precio programa de coche compartido, precio carpooling corporativo, plan de movilidad, movilidad sostenible"
@@ -32,8 +32,8 @@ pricing_card:
 
   - name: "TeamWheels"
     currency: ""
-    old_price: "5€ /usuario /mes"
-    price: "3€ /usuario /mes"
+    old_price: "5€ /usuario /mes + IVA"
+    price: "3€ /usuario /mes + IVA"
     promo_label: "Promoción: 40 % de descuento"
     promo_note: "Oferta exclusiva por tiempo limitado"
     populer: true
@@ -86,7 +86,7 @@ faq:
       content: "Instale TeamWheels desde la [Microsoft Teams Store](https://teams.microsoft.com/l/app/1e3c893b-b545-49ed-a249-1c7a25b0fa46): la prueba empieza de inmediato, sin necesidad de llamada comercial. Dispone de 30 días de acceso completo a TeamWheels para hasta 50 empleados, sin tarjeta de crédito ni compromiso. Despliegue el programa de coche compartido en Microsoft Teams y mida la adopción y el impacto en CO₂ antes de decidir si continúa."
 
     - title: "¿Hay un número mínimo de empleados?"
-      content: "No. TeamWheels se adapta a organizaciones de cualquier tamaño, de 10 a más de 10.000 empleados. El precio se mantiene en 3 € por usuario/mes (precio promocional, antes 5 €). Las empresas de toda Europa y Norteamérica disfrutan de la misma tarifa plana."
+      content: "No. TeamWheels se adapta a organizaciones de cualquier tamaño, de 10 a más de 10.000 empleados. El precio se mantiene en 3 € por usuario/mes + IVA (precio promocional, antes 5 €). Las empresas de toda Europa y Norteamérica disfrutan de la misma tarifa plana."
 
     - title: "¿Puedo cancelar en cualquier momento?"
       content: "Sí. Puede cancelar su suscripción en cualquier momento, sin penalizaciones ni preaviso. Los datos de sus empleados se eliminan conforme al RGPD. Preferimos ganarnos su confianza con resultados, no con contratos de permanencia."

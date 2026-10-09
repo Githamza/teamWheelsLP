@@ -158,7 +158,7 @@ faq:
   - question: "Wie werden die Daten der Mitarbeitenden geschützt?"
     answer: "Die Authentifizierung erfolgt per SSO über Azure AD / Entra ID, und die Plattform ist DSGVO-konform und nach dem Prinzip Privacy by Design entwickelt."
   - question: "Was kostet eine Fahrgemeinschafts-Software für Unternehmen?"
-    answer: "TeamWheels bietet einen kostenlosen 30-Tage-Test und danach transparente Preise ab 3 € pro Nutzer/Monat (Aktionspreis statt 5 €). Die meisten Organisationen erreichen allein durch eingesparte Parkkosten bereits im ersten Quartal einen positiven ROI."
+    answer: "TeamWheels bietet einen kostenlosen 30-Tage-Test und danach transparente Preise ab 3 € pro Nutzer/Monat zzgl. MwSt. (Aktionspreis statt 5 €). Die meisten Organisationen erreichen allein durch eingesparte Parkkosten bereits im ersten Quartal einen positiven ROI."
   - question: "Welche Länder unterstützt TeamWheels?"
     answer: "Unternehmen in den USA, Großbritannien und Kanada setzen TeamWheels bereits ein, und Frankreich wird vollständig unterstützt – einschließlich des Forfait Mobilité Durable."
   - question: "Wie wähle ich die beste Software für Fahrgemeinschaften aus?"

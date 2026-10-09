@@ -1,6 +1,6 @@
 ---
 title: "Preise für Fahrgemeinschaften im Unternehmen | TeamWheels"
-description: "Transparente Preise für Ihr Fahrgemeinschaftsprogramm in Microsoft Teams: 30 Tage kostenlos, danach 3 € pro Nutzer/Monat (Aktion statt 5 €) – alle Funktionen."
+description: "Transparente Preise für Ihr Fahrgemeinschaftsprogramm in Microsoft Teams: 30 Tage kostenlos, danach 3 € pro Nutzer/Monat zzgl. MwSt. (Aktion statt 5 €) – alle Funktionen."
 draft: false
 layout: "pricing"
 keywords: "Fahrgemeinschafts-App Preise, Kosten Fahrgemeinschaft Software, Mitfahrgelegenheit für Mitarbeiter Kosten, BlaBlaCar für Unternehmen Preise, Microsoft Teams App Preise, betriebliches Mobilitätsmanagement Kosten, Pendlermanagement Software Preis, Fahrgemeinschaftsprogramm Kosten, Corporate Carpooling Preise, Pendler-App Preise"
@@ -32,8 +32,8 @@ pricing_card:
 
   - name: "TeamWheels"
     currency: ""
-    old_price: "5 € pro Nutzer/Monat"
-    price: "3 € pro Nutzer/Monat"
+    old_price: "5 € pro Nutzer/Monat zzgl. MwSt."
+    price: "3 € pro Nutzer/Monat zzgl. MwSt."
     promo_label: "Aktion: 40 % Rabatt"
     promo_note: "Exklusives, zeitlich begrenztes Angebot"
     populer: true
@@ -86,7 +86,7 @@ faq:
       content: "Installieren Sie TeamWheels aus dem [Microsoft Teams Store](https://teams.microsoft.com/l/app/1e3c893b-b545-49ed-a249-1c7a25b0fa46) – der Test startet sofort, ganz ohne Vertriebsgespräch. Sie erhalten 30 Tage lang vollen Zugriff auf TeamWheels für bis zu 50 Mitarbeitende – ohne Kreditkarte, ohne Verpflichtung. Führen Sie das Fahrgemeinschaftsprogramm in Microsoft Teams ein und messen Sie Akzeptanz und CO₂-Wirkung, bevor Sie sich entscheiden."
 
     - title: "Gibt es eine Mindestanzahl an Mitarbeitenden?"
-      content: "Nein. TeamWheels passt sich Organisationen jeder Größe an – von 10 bis über 10.000 Mitarbeitenden. Der Preis bleibt konstant bei 3 € pro Nutzer/Monat (Aktionspreis statt 5 €). Unternehmen in Europa und Nordamerika profitieren alle vom selben Pauschalpreis."
+      content: "Nein. TeamWheels passt sich Organisationen jeder Größe an – von 10 bis über 10.000 Mitarbeitenden. Der Preis bleibt konstant bei 3 € pro Nutzer/Monat zzgl. MwSt. (Aktionspreis statt 5 €). Unternehmen in Europa und Nordamerika profitieren alle vom selben Pauschalpreis."
 
     - title: "Kann ich jederzeit kündigen?"
       content: "Ja. Sie können Ihr Abonnement jederzeit ohne Gebühren oder Kündigungsfrist beenden. Die Daten Ihrer Mitarbeitenden werden DSGVO-konform gelöscht. Wir möchten Sie durch Ergebnisse überzeugen, nicht durch Knebelverträge."
