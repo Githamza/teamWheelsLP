@@ -170,7 +170,7 @@
         date: 'Datum',
         summary: 'Managementsamenvatting',
         assumptions: 'Aannames',
-        methodology: 'Methode: ADEME-factoren (gemiddelde auto 0,193 kgCO₂/km) voor Frankrijk, EPA-factoren voor het Verenigd Koninkrijk en de Verenigde Staten.',
+        methodology: 'Methode: ADEME-factoren (gemiddelde auto 0,193 kg CO₂/km) voor Frankrijk, EPA-factoren voor het Verenigd Koninkrijk en de Verenigde Staten.',
         nextSteps: 'Volgende stappen',
         nextStepsBody: 'TeamWheels maakt van Microsoft Teams een carpoolplatform. In 5 minuten ingericht, meteen in gebruik, met ingebouwde Scope 3-rapportage.',
         contact: 'Contact: contact@teamwheelsapp.com',
