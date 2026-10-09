@@ -25,10 +25,11 @@ Out of scope: design changes, pricing changes, new features, calculator formulas
 | D3 | A locale appears in the language switcher, alias redirects and agent language lists only once its home page is built (published). Merging the i18n PR changes nothing visible in production. |
 | D4 | No preview environment. Each PR carries evidence from a local draft-inclusive build (`hugo -D`) plus a production-mode build (`hugo --gc --minify`). |
 | D5 | Content dirs `content/dutch-be/` and `content/dutch-nl/`. |
-| D6 | Pricing on both locales reads "€ 3 per medewerker per maand, excl. btw". *Default, not yet confirmed.* |
+| D6 | Prices are quoted before VAT (confirmed 2026-10-10). Dutch pages say "excl. btw"; the other languages get the same mention ("HT", "excl. VAT", "zzgl. MwSt.", "+ IVA") in a separate PR. |
 | D7 | Switcher shows `NL` + the BE or NL flag; the full label ("Nederlands (België)", "Nederlands (Nederland)") goes in `title` and `aria-label`. *Default, not yet confirmed.* |
 | D8 | NL menus link the localized pages, and EN for everything else via absolute URLs (the DE/ES pattern). No blog link until the first post in that locale is published. *Default, not yet confirmed.* |
 | D10 | `contact` is localized in Phase 2 on both locales (approved 2026-10-10): every CTA points there. |
+| D12 | The language review gate is two project agents (approved 2026-10-10): `dutch-reviewer-be` (Flemish) and `dutch-reviewer-nl` (Netherlands), in `.claude/agents/`. After each Dutch PR is written, the matching agent reviews it and returns edits; the main agent applies every `must` and `should` edit, re-runs the agent until it approves, and lists the review in the PR. They are AI reviewers, not people. |
 | D11 | Calculator formulas are fixed separately in issue #121 (approved 2026-10-10). This rollout only translates labels. |
 | D9 | Core pages pair by file name: a Dutch page reuses the shared file name (`how-it-works.md`) and sets `slug:` for the Dutch URL. Blog posts pair by `translationKey`, only when a FR/EN twin exists. |
 
@@ -178,14 +179,14 @@ There is no test suite. Each PR proves its change with build output and greps, p
 | --- | --- | --- | --- |
 | 1 | `feat/nl-audit` | Repo map + this spec (#119) | Hamza approves |
 | 2 | `feat/nl-i18n` | Languages, menus, i18n files, hreflang/sitemap/schema params, switcher guard + flags, alias/webmcp lists, home alt text, calculator nl labels + EUR, draft `_index.md` per locale | Builds clean, other locales unchanged, hreflang checked on `-D` build |
-| 3 | `feat/nl-be-core` | nl-BE: home, hoe-het-werkt, prijzen, besparingscalculator, contact | Native Dutch review |
-| 4 | `feat/nl-nl-core` | nl-NL: same five pages | Native Dutch review |
-| 5-12 | `content/nl-be-<slug>`, `content/nl-nl-<slug>` | One post each; seasonal posts first (BE-2, NL-1, NL-2) | Native review, then `[[VERIFY]]` resolved by Hamza |
+| 3 | `feat/nl-be-core` | nl-BE: home, hoe-het-werkt, prijzen, besparingscalculator, contact | `dutch-reviewer-be` approves (D12), then Hamza |
+| 4 | `feat/nl-nl-core` | nl-NL: same five pages | `dutch-reviewer-nl` approves (D12), then Hamza |
+| 5-12 | `content/nl-be-<slug>`, `content/nl-nl-<slug>` | One post each; seasonal posts first (BE-2, NL-1, NL-2) | Reviewer agent approves (D12), then `[[VERIFY]]` resolved by Hamza |
 
 ## Open questions
 
-1. Confirm D6: are the prices (3 € / 5 € per employee per month) quoted before VAT? If yes, Dutch pages say "excl. btw". Also D7 (switcher label) and D8 (menus).
+1. ~~D6~~ Confirmed: prices are excl. VAT. Still open: D7 (switcher label) and D8 (menus).
 2. ~~Localize `contact`?~~ Yes (D10).
-3. Who is the native Dutch reviewer, for both Flemish and Netherlands usage?
+3. ~~Native reviewer?~~ The two reviewer agents (D12).
 4. ~~OpenSEO unreachable~~ Use the hosted instance (see Tech stack).
 5. ~~Calculator formula~~ Separate fix, issue #121 (D11).
