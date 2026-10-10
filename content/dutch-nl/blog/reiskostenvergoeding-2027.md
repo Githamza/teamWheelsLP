@@ -26,7 +26,7 @@ faq:
     answer: "Ja, als de werknemers de carpool zelf regelen: dan mag elke werknemer, ook de passagier, € 0,25 per kilometer onbelast ontvangen (2026), maar niet over de kilometers die de chauffeur omrijdt. Organiseert de werkgever het carpoolen, dan mag hij € 0,25 per kilometer aan de chauffeur vergoeden, inclusief omrijkilometers, en is een vergoeding aan de passagiers loon."
 ---
 
-De **reiskostenvergoeding 2027** is voor werkgevers in Nederland naar verwachting € 0,25 per kilometer onbelast, hetzelfde bedrag dat sinds 1 januari 2026 geldt; het kabinet wil dit vastleggen in het Belastingplan 2027 [[VERIFY: onbelast maximum per km 2027, rijksoverheid.nl / Staatsblad, verwacht december 2026]]. Wat je daarbovenop vergoedt, is loon of gaat ten koste van de vrije ruimte van de werkkostenregeling.
+De **reiskostenvergoeding 2027** is voor werkgevers in Nederland naar verwachting € 0,25 per kilometer onbelast, hetzelfde bedrag dat sinds 1 januari 2026 geldt; het kabinet wil dit vastleggen in het Belastingplan 2027 [[VERIFY: onbelast maximum per km 2027, rijksoverheid.nl / Staatsblad, verwacht december 2026]]. Wat je daarbovenop vergoedt, is loon, tenzij je het als eindheffingsloon aanwijst in de vrije ruimte van de werkkostenregeling.
 
 In deze gids lees je wat het onbelaste maximum precies inhoudt, wanneer je een vaste of juist een werkelijke vergoeding kiest, hoe het zit met thuiswerkdagen, wat een reiskostenvergoeding per werknemer kost en waarom carpoolen die rekening anders kan maken. Alle bedragen zijn de bedragen voor 2026, tenzij anders vermeld.
 
@@ -83,7 +83,7 @@ Vergoed je meer dan € 0,25 per kilometer, bijvoorbeeld omdat je cao dat voorsc
 
 ## Besparen met carpoolen
 
-Carpoolen maakt de rekensom anders, maar niet altijd op de manier die je verwacht. De regels hangen af van wie de carpool regelt ([Rijksoverheid](https://www.rijksoverheid.nl/vraag-en-antwoord/inkomstenbelasting/wat-is-de-maximale-kilometervergoeding-die-ik-van-mijn-werkgever-kan-ontvangen)):
+Carpoolen verandert de rekensom, maar het hangt af van wie de carpool regelt. De regels hangen af van wie de carpool regelt ([Rijksoverheid](https://www.rijksoverheid.nl/vraag-en-antwoord/inkomstenbelasting/wat-is-de-maximale-kilometervergoeding-die-ik-van-mijn-werkgever-kan-ontvangen)):
 
 - **Werknemers regelen het zelf.** Dan mag je elke werknemer, ook de passagier, € 0,25 per kilometer onbelast vergoeden. De kilometers die de chauffeur moet omrijden om collega's op te halen, vallen daar buiten.
 - **De werkgever organiseert het.** "Als uw werkgever het carpoolen organiseert, mag hij € 0,25 per kilometer aan de chauffeur vergoeden", inclusief de omrijkilometers. Passagiers mogen dan geen onbelaste vergoeding krijgen: wat je hun betaalt, is loon ([Handboek Loonheffingen 2026, § 23.9](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf)).
