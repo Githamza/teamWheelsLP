@@ -92,7 +92,7 @@ image_and_content_blocks:
 
     **Voor HR, mobiliteit en facility**
 
-    * **Inzicht in deelname** – Volg het aantal actieve carpoolers en hoe het programma loopt per vestiging
+    * **Inzicht in deelname** – Volg per vestiging het aantal actieve carpoolers en hoe het programma loopt
 
     * **Rapportering voor duurzaamheid** – Exporteer deelname en CO₂-impact voor uw duurzaamheidsrapport en uw Scope 3-uitstoot (woon-werkverkeer)
 
@@ -167,7 +167,7 @@ image_and_content_blocks:
 faq_title: "Veelgestelde vragen over carpoolen voor bedrijven"
 faq:
   - question: "Welke carpool app kiest u voor uw bedrijf?"
-    answer: "Het doorslaggevende criterium is het gebruik. Een carpool app die medewerkers apart moeten downloaden en openen, raakt snel in de vergetelheid; een tool in Microsoft Teams, dat uw teams de hele dag al openhebben, verlaagt die drempel. Controleer daarnaast de automatische matching op route, uren en vestiging, het overzicht van de gedeelde ritten, de CO₂-rapportering en de beveiliging (single sign-on met Microsoft Entra ID, GDPR, gegevens in uw tenant)."
+    answer: "Het doorslaggevende criterium is het gebruik. Een carpool app die medewerkers apart moeten downloaden en openen, raakt snel in de vergetelheid; een tool in Microsoft Teams, dat uw medewerkers de hele dag al openhebben, verlaagt die drempel. Controleer daarnaast de automatische matching op route, uren en vestiging, het overzicht van de gedeelde ritten, de CO₂-rapportering en de beveiliging (single sign-on met Microsoft Entra ID, GDPR, gegevens in uw tenant)."
   - question: "Wat is het verschil met een publieke carpooldatabank?"
     answer: "Een publieke carpooldatabank brengt u in contact met andere carpoolers uit de regio, ook buiten uw bedrijf. TeamWheels werkt binnen uw eigen Microsoft 365-omgeving: medewerkers rijden samen met collega's van dezelfde vestiging, en u krijgt als werkgever een dashboard met deelname, gedeelde ritten en vermeden CO₂."
   - question: "Kan carpoolen in het mobiliteitsbudget?"
