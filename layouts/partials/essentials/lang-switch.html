@@ -1,32 +1,72 @@
-{{- /* Flag-based language switcher. Renders every live site language as a
-       flag + code link so the current/available languages are obvious at a
-       glance. Links to the translated page when it exists, otherwise to the
-       target language home. Pass the current page as context.
-       A locale whose home page is still a draft is skipped (partials/lang-live.html).
-       Regional locales (nl-be, nl) show the bare language code with their
-       country flag; the full label goes in title and aria-label. */ -}}
+{{- /* Language switcher: a compact dropdown (flag + code) that opens a list
+       of the live languages with their full names. Built on <details> so it
+       works without JavaScript; a small script closes it on an outside click
+       or Escape. Links go to the translated page when it exists, otherwise to
+       the target language home. A locale whose home page is still a draft is
+       skipped (partials/lang-live.html). Pass the current page as context. */ -}}
 {{- $page := . -}}
 {{- $cur := .Lang -}}
-<div class="lang-switch" role="group" aria-label="{{ i18n `select_language` | default `Select language` }}">
-  {{- range hugo.Sites -}}
-    {{- if partialCached "lang-live.html" . .Language.Lang -}}
+{{- $names := dict "fr" "Français" "en" "English" "de" "Deutsch" "es" "Español" -}}
+{{- $items := slice -}}
+{{- $current := dict -}}
+{{- range hugo.Sites -}}
+  {{- if partialCached "lang-live.html" . .Language.Lang -}}
     {{- $l := .Language -}}
-    {{- $tag := .Params.hreflang -}}
     {{- $url := "" -}}
     {{- range $page.AllTranslations -}}
       {{- if eq .Lang $l.Lang -}}{{- $url = .Permalink -}}{{- end -}}
     {{- end -}}
     {{- if not $url -}}{{- $url = printf "/%s/" $l.Lang | relURL -}}{{- end -}}
-    {{- $active := eq $l.Lang $cur -}}
-    <a
-      href="{{ $url }}"
-      class="lang-switch__item{{ if $active }} is-active{{ end }}"
-      hreflang="{{ $tag | default $l.Lang }}"
-      {{ if $active }}aria-current="true"{{ end }}
-      title="{{ $l.Label | default ($l.Lang | upper) }}"{{ with $tag }} aria-label="{{ $l.Label }}"{{ end }}>
-      {{ partial "essentials/flag.html" $l.Lang }}
-      <span class="lang-switch__label">{{ index (split $l.Lang "-") 0 | upper }}</span>
-    </a>
-    {{- end -}}
+    {{- $item := dict
+          "lang" $l.Lang
+          "tag" (.Params.hreflang | default $l.Lang)
+          "code" (index (split $l.Lang "-") 0 | upper)
+          "name" (index $names $l.Lang | default $l.Label)
+          "url" $url
+          "active" (eq $l.Lang $cur) -}}
+    {{- $items = $items | append $item -}}
+    {{- if eq $l.Lang $cur -}}{{- $current = $item -}}{{- end -}}
   {{- end -}}
-</div>
+{{- end -}}
+<details class="lang-switch" translate="no">
+  <summary class="lang-switch__current" aria-label="{{ i18n `select_language` | default `Select language` }}: {{ $current.name }}">
+    {{ partial "essentials/flag.html" $current.lang }}
+    <span class="lang-switch__label">{{ $current.code }}</span>
+    <svg class="lang-switch__caret" viewBox="0 0 10 6" width="10" height="6" aria-hidden="true" focusable="false"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </summary>
+  <ul class="lang-switch__menu">
+    {{- range $items }}
+    <li>
+      <a
+        href="{{ .url }}"
+        class="lang-switch__item{{ if .active }} is-active{{ end }}"
+        hreflang="{{ .tag }}"
+        lang="{{ .tag }}"
+        {{ if .active }}aria-current="true"{{ end }}>
+        {{ partial "essentials/flag.html" .lang }}
+        <span class="lang-switch__name">{{ .name }}</span>
+      </a>
+    </li>
+    {{- end }}
+  </ul>
+</details>
+{{- /* Close any open switcher on an outside click or Escape. Rendered once
+       per page even though the header includes the switcher twice. */ -}}
+{{- if not ($page.Store.Get "langSwitchScript") }}
+{{- $page.Store.Set "langSwitchScript" true }}
+<script>
+(function () {
+  function closeAll(except) {
+    document.querySelectorAll('details.lang-switch[open]').forEach(function (d) {
+      if (d !== except) d.removeAttribute('open');
+    });
+  }
+  document.addEventListener('click', function (e) {
+    closeAll(e.target.closest ? e.target.closest('details.lang-switch') : null);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeAll(null);
+  });
+})();
+</script>
+{{- end }}
