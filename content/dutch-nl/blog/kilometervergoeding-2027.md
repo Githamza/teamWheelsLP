@@ -13,7 +13,7 @@ keywords: "kilometervergoeding 2027, kilometervergoeding 2026, onbelaste kilomet
 verify: ["Bedrag kilometervergoeding 2027 na stemming Belastingplan 2027 (rijksoverheid.nl / belastingdienst.nl, verwacht december 2026)"]
 faq:
   - question: "Hoe hoog is de onbelaste kilometervergoeding in 2027?"
-    answer: "Een apart bedrag voor 2027 is nog niet gepubliceerd; reken voorlopig met € 0,25 per kilometer, het maximum voor 2026 (met terugwerkende kracht vanaf 1 januari 2026). Die verhoging staat in het Belastingplan 2027, waarover de Tweede en Eerste Kamer in november en december 2026 stemmen. controleer het na de stemming op belastingdienst.nl."
+    answer: "Een apart bedrag voor 2027 is nog niet gepubliceerd; reken voorlopig met € 0,25 per kilometer, het maximum voor 2026 (met terugwerkende kracht vanaf 1 januari 2026). Dat bedrag staat in het Belastingplan 2027, waarover de Tweede en Eerste Kamer in november en december 2026 stemmen. Controleer het na de stemming op belastingdienst.nl."
   - question: "Mag een werkgever meer dan € 0,25 per kilometer vergoeden?"
     answer: "Ja, maar het deel boven € 0,25 per kilometer is loon. Je houdt er loonheffingen op in, of je wijst het aan als eindheffingsloon in de vrije ruimte van de werkkostenregeling. Boven de vrije ruimte betaal je 80% eindheffing."
   - question: "Krijgen de chauffeur en de meerijder allebei een kilometervergoeding?"
@@ -71,7 +71,7 @@ Sanne woont 20 km van kantoor en rijdt 200 dagen per jaar heen en terug: 40 km �
 8.000 km × € 0,30 = € 2.400. Daarvan is € 2.000 onbelast en € 400 loon. Op die € 400 houd je loonheffingen in bij Sanne, of je wijst het bedrag aan als eindheffingsloon in de vrije ruimte.
 
 **Stap 3: twee collega's met dezelfde route.**
-Sanne en een collega rijden allebei 8.000 km alleen. Samen kost dat € 4.000 aan onbelaste kilometervergoeding. Laat je ze carpoolen via een regeling van jouw organisatie, dan vergoed je alleen de chauffeur onbelast; de meerijder krijgt dan geen onbelaste kilometervergoeding ([Handboek Loonheffingen 2026, § 23.9](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf)). Rijdt die 2 km per dag om (400 km per jaar), dan is dat 8.400 km × € 0,25 = **€ 2.100**. Dat scheelt **€ 1.900 per jaar** voor één duo, met één auto minder op de parkeerplaats en minder CO₂-uitstoot.
+Sanne en een collega rijden allebei 8.000 km alleen. Samen kost dat € 4.000 aan onbelaste kilometervergoeding. Laat je ze carpoolen via een regeling van jouw organisatie, dan vergoed je alleen de chauffeur onbelast; de meerijder krijgt dan geen onbelaste kilometervergoeding ([Handboek Loonheffingen 2026, § 23.9](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf)). Rijdt de chauffeur 2 km per dag om (400 km per jaar), dan is dat 8.400 km × € 0,25 = **€ 2.100**. Dat scheelt **€ 1.900 per jaar** voor één duo, met één auto minder op de parkeerplaats en minder CO₂-uitstoot.
 
 Let op: regelen de collega's de carpool zelf, dan mogen ze allebei € 0,25 per kilometer onbelast krijgen. Wil je als werkgever op reiskosten besparen, dan organiseer je het carpoolen dus zelf.
 
@@ -85,7 +85,7 @@ Meer weten over vaste reiskostenvergoedingen, de thuiswerkvergoeding en de total
 
 ### Hoe hoog is de onbelaste kilometervergoeding in 2027?
 
-Een apart bedrag voor 2027 is nog niet gepubliceerd; reken voorlopig met € 0,25 per kilometer, het maximum voor 2026 (met terugwerkende kracht vanaf 1 januari 2026). Die verhoging staat in het Belastingplan 2027, waarover de Tweede en Eerste Kamer in november en december 2026 stemmen. controleer het na de stemming op belastingdienst.nl.
+Een apart bedrag voor 2027 is nog niet gepubliceerd; reken voorlopig met € 0,25 per kilometer, het maximum voor 2026 (met terugwerkende kracht vanaf 1 januari 2026). Dat bedrag staat in het Belastingplan 2027, waarover de Tweede en Eerste Kamer in november en december 2026 stemmen. Controleer het na de stemming op belastingdienst.nl.
 
 ### Mag een werkgever meer dan € 0,25 per kilometer vergoeden?
 
