@@ -134,7 +134,7 @@ image_and_content_blocks:
     title: "Carpoolen in uw beleid voor woon-werkverkeer"
     image: "images/photos/commute-reporting-dashboard.jpg"
     content_position: "right"
-    content: "TeamWheels houdt bij welke ritten uw medewerkers delen. Zo heeft u de gegevens in handen om carpoolen op te nemen in uw mobiliteitsbeleid, naast de reiskostenvergoeding, en om de uitstoot van het woon-werkverkeer te rapporteren, bijvoorbeeld voor de rapportage werkgebonden personenmobiliteit (WPM) [[VERIFY: welke werkgevers moeten WPM-gegevens rapporteren (drempel aantal werknemers), welke gegevens over woon-werkverkeer, en vanaf welk jaar; RVO / Rijksoverheid]].
+    content: "TeamWheels houdt bij welke ritten uw medewerkers delen. Zo heeft u de gegevens in handen om carpoolen op te nemen in uw mobiliteitsbeleid, naast de reiskostenvergoeding, en om het woon-werkverkeer in kaart te brengen voor de [rapportage werkgebonden personenmobiliteit (WPM)](https://www.rvo.nl/onderwerpen/rapportage-wpm). Organisaties met 100 of meer werknemers geven daarin sinds 2024 jaarlijks vóór 1 juli het aantal kilometers woon-werkverkeer en zakelijk verkeer van hun werknemers door, per vervoermiddel en brandstof; het kabinet is van plan die grens met terugwerkende kracht tot 1 januari 2026 te verhogen naar 250 werknemers [[VERIFY: wijziging drempel naar 250 werknemers gepubliceerd in het Staatsblad?]].
 
     [Bekijk de prijzen →](prijzen/)
     "

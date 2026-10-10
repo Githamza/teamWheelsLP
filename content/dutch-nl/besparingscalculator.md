@@ -9,6 +9,7 @@ keywords: "besparingscalculator carpoolen, carpool kosten berekenen, CO2 woon-we
 date: 2026-10-10
 lastmod: 2026-10-10
 draft: true
+verify: ["onbelaste km-vergoeding 2027 (Belastingplan 2027)", "WPM-drempel 250 werknemers gepubliceerd in Staatsblad?"]
 author: TeamWheels
 calculator_title: "Besparingscalculator carpoolen"
 intro_subtitle: "Gratis tool van TeamWheels"
@@ -34,9 +35,11 @@ Hoeveel bespaart uw organisatie als een deel van de medewerkers die alleen met d
 
 Het woon-werkverkeer drukt op drie posten tegelijk: de **parkeerruimte** op uw locatie, de **reiskosten** die u als werkgever vergoedt, en de **CO₂-uitstoot** die u rapporteert in uw duurzaamheidsverslag. Carpoolen raakt aan alle drie: elke medewerker die meerijdt in plaats van alleen te rijden, betekent een auto minder op het parkeerterrein en minder uitstoot per kilometer.
 
-Veel werkgevers vergoeden het woon-werkverkeer met een reiskostenvergoeding, die tot een bepaald bedrag per kilometer onbelast kan blijven [[VERIFY: onbelaste reiskostenvergoeding per km in 2026, en of die ook geldt voor wie meerijdt met een collega; Belastingdienst]]. Daarnaast vallen sommige mobiliteitsvoorzieningen onder de werkkostenregeling [[VERIFY: of en hoe kosten voor een carpoolvoorziening onder de werkkostenregeling vallen; Belastingdienst]].
+Veel werkgevers vergoeden het woon-werkverkeer met een reiskostenvergoeding. In 2026 mag u maximaal [€ 0,25 per kilometer onbelast vergoeden](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/verhoging-onbelaste-kilometervergoeding-hoe-verwerkt-u-dit-in-de-loonaangifte), met terugwerkende kracht tot 1 januari 2026 (voorheen € 0,23) [[VERIFY: bedrag 2027, na aanneming Belastingplan 2027, Belastingdienst / Staatsblad, verwacht rond december 2026]]. Die onbelaste vergoeding is een [gerichte vrijstelling binnen de werkkostenregeling](https://www.belastingdienst.nl/wps/wcm/connect/nl/personeel-en-loon/content/werkkostenregeling): ze gaat niet ten koste van uw vrije ruimte.
 
-Grotere werkgevers moeten bovendien jaarlijks rapporteren over de CO₂-uitstoot van zakelijke reizen en woon-werkverkeer, de rapportage werkgebonden personenmobiliteit (WPM) [[VERIFY: drempel (aantal werknemers), welke gegevens, vanaf welk rapportagejaar en de eventuele norm; RVO / Rijksoverheid]]. Gegevens over gedeelde ritten helpen u om die rapportage te onderbouwen. De calculator rekent de vergoedingen niet uit: hij brengt het effect van carpoolen zelf in kaart.
+Voor carpoolen maakt het uit wie het regelt. Regelen uw medewerkers het carpoolen zelf, dan kan ook de collega die meerijdt de onbelaste vergoeding krijgen, maar niet voor de omrijkilometers van de chauffeur. Organiseert u als werkgever het carpoolen, dan mag u de chauffeur ook voor de omrijkilometers onbelast vergoeden, maar de meerijders niet: een vergoeding aan hen is loon, die u onder voorwaarden (de gebruikelijkheidseis) kunt aanwijzen als eindheffingsloon in de vrije ruimte ([Handboek Loonheffingen 2026, §23.8 en §23.9](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf)).
+
+Organisaties met 100 of meer werknemers moeten bovendien jaarlijks vóór 1 juli rapporteren over het zakelijk verkeer en woon-werkverkeer van hun werknemers: de [rapportage werkgebonden personenmobiliteit (WPM)](https://www.rvo.nl/onderwerpen/rapportage-wpm). Zij geven het totaal aantal gereden kilometers door per combinatie van vervoermiddel en brandstof; de verplichting geldt sinds 1 juli 2024, voor het eerst over het jaar 2024. Een CO₂-norm per werkgever geldt nog niet; die kan er komen als de uitstoot niet genoeg daalt. Het kabinet is van plan de grens met terugwerkende kracht tot 1 januari 2026 te verhogen naar 250 werknemers [[VERIFY: wijziging drempel naar 250 werknemers gepubliceerd in het Staatsblad?]]. Gegevens over gedeelde ritten helpen u om die rapportage te onderbouwen. De calculator rekent de vergoedingen niet uit: hij brengt het effect van carpoolen zelf in kaart.
 
 ## Wat de besparingscalculator voor carpoolen berekent
 
@@ -89,6 +92,9 @@ Liever direct zien hoe het werkt? [Vraag een demo aan](/nl/contact/) en we bekij
 
 **Bronnen**
 
+* [RVO: rapportage WPM](https://www.rvo.nl/onderwerpen/rapportage-wpm)
 * [RVO: carpoolen en vanpoolen (werkgebonden personenmobiliteit)](https://www.rvo.nl/onderwerpen/start-met-verduurzamen-werkgebonden-personenmobiliteit/carpoolen)
+* [Belastingdienst: verhoging onbelaste kilometervergoeding](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/verhoging-onbelaste-kilometervergoeding-hoe-verwerkt-u-dit-in-de-loonaangifte)
+* [Belastingdienst: werkkostenregeling](https://www.belastingdienst.nl/wps/wcm/connect/nl/personeel-en-loon/content/werkkostenregeling)
 * [GHG Protocol: Corporate Value Chain (Scope 3) Standard](https://ghgprotocol.org/corporate-value-chain-scope-3-standard)
 * [ADEME Base Empreinte: emissiefactoren](https://base-empreinte.ademe.fr/)
