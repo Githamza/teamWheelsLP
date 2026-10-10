@@ -10,7 +10,7 @@ image: "images/blog/scope-3-emissions.jpg"
 author: "TeamWheels"
 reading_time: "5 min"
 keywords: "WPM rapportage, werkgebonden personenmobiliteit, rapportageverplichting werkgebonden personenmobiliteit, WPM, CO2-reductie werkgebonden personenmobiliteit"
-verify: ["wijziging drempel naar 250 werknemers gepubliceerd in Staatsblad? (Bal art. 18.11, wetten.overheid.nl / RVO)", "emissiefactoren rapportagejaar 2026 (RVO-handreiking, verwacht rond december 2026)"]
+verify: ["publicatie wijzigingsbesluit Bal art. 18.11 in het Staatsblad, WGK028577", "emissiefactoren rapportagejaar 2026 (RVO-handreiking, verwacht rond december 2026)"]
 faq:
   - question: "Wie moet de WPM-rapportage indienen?"
     answer: "Organisaties in het Handelsregister van de KVK met op 1 januari van het rapportagejaar 100 of meer werknemers (contract van 20 of meer betaalde uren per maand). Het kabinet wil de grens met terugwerkende kracht tot 1 januari 2026 verhogen naar 250 werknemers; over 2025 moest iedereen vanaf 100 werknemers nog rapporteren."
@@ -32,7 +32,7 @@ De rapportageverplichting werkgebonden personenmobiliteit staat in afdeling 18.1
 - op 1 januari van het rapportagejaar 100 of meer werknemers in dienst had.
 
 Een werknemer is volgens [RVO](https://www.rvo.nl/onderwerpen/rapportage-wpm/veelgestelde-vragen) iemand met "een contract dat 20 of meer uren betaald werk per maand garandeert". Uitzendkrachten, gedetacheerden en zzp'ers tellen niet mee.
-**Let op, de drempel gaat waarschijnlijk omhoog.** Het ministerie van Infrastructuur en Waterstaat wil het besluit zo aanpassen dat organisaties met minder dan 250 werknemers niet meer hoeven te rapporteren, met terugwerkende kracht tot 1 januari 2026. Op de [RVO-pagina over de WPM-rapportage](https://www.rvo.nl/onderwerpen/rapportage-wpm) (gecontroleerd op 1 juli 2026) is dit nog een voornemen, en de wettekst op wetten.overheid.nl noemt op 10 oktober 2026 nog 100 werknemers. [[VERIFY: wijziging drempel naar 250 werknemers gepubliceerd in Staatsblad?]] RVO adviseert organisaties met 100 tot 250 werknemers om gegevens over 2026 te blijven verzamelen tot er een definitief besluit is.
+**Let op, de drempel gaat waarschijnlijk omhoog.** Het ministerie van Infrastructuur en Waterstaat wil het besluit zo aanpassen dat organisaties met minder dan 250 werknemers niet meer hoeven te rapporteren, met terugwerkende kracht tot 1 januari 2026. Op de [RVO-pagina over de WPM-rapportage](https://www.rvo.nl/onderwerpen/rapportage-wpm) (gecontroleerd op 1 juli 2026) is dit nog een voornemen, en de wettekst op wetten.overheid.nl noemt op 10 oktober 2026 nog 100 werknemers. Het ontwerpbesluit lag van 24 april tot 1 juli 2026 voor bij de Tweede Kamer en de Eerste Kamer, en de Raad van State bracht op 10 september 2026 advies uit ([wetgevingskalender](https://wetgevingskalender.overheid.nl/Regeling/WGK028577)). In het Staatsblad is het nog niet gepubliceerd; het besluit treedt pas in werking na publicatie en werkt dan terug tot 1 januari 2026. [[VERIFY: publicatie wijzigingsbesluit Bal art. 18.11 in het Staatsblad, WGK028577]] RVO adviseert organisaties met 100 tot 250 werknemers om gegevens over 2026 te blijven verzamelen tot er een definitief besluit is.
 
 De deadline is elk jaar 30 juni, over het voorgaande kalenderjaar. De rapportage over 2026 moet dus uiterlijk op 30 juni 2027 binnen zijn, via het online formulier op Mijn RVO (inloggen met eHerkenning, minimaal niveau eH2+). De omgevingsdienst van de regio waar je hoofdvestiging zit, controleert of je hebt gerapporteerd.
 
