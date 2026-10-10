@@ -5,7 +5,7 @@ description: "Kilometervergoeding 2027 voor werkgevers: het onbelaste bedrag per
 slug: "kilometervergoeding-2027"
 date: 2026-10-10
 lastmod: 2026-10-10
-draft: true
+draft: false
 image: "images/blog/fuel-prices.jpg"
 author: "TeamWheels"
 reading_time: "6 min"

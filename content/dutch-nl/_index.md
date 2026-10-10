@@ -5,7 +5,7 @@ description: "Carpoolen voor bedrijven, direct in Microsoft Teams: minder woon-w
 keywords: "carpoolen, carpoolen voor bedrijven, carpool app, carpoolapp voor werkgevers, woon-werkverkeer, carpoolen woon-werkverkeer, werkgebonden personenmobiliteit, WPM, mobiliteitsbeleid, Microsoft Teams app, Scope 3 woon-werkverkeer, parkeerdruk"
 # Draft until Hamza publishes the nl-NL locale (SPEC.md D3): while this home
 # is a draft, nothing under /nl/ is built in production.
-draft: true
+draft: false
 
 # banner
 banner:

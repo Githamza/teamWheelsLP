@@ -5,7 +5,7 @@ description: "Mobiliteitsbudget in 2026: de 3 pijlers, waar carpoolen past, wat 
 slug: "mobiliteitsbudget-carpoolen"
 date: 2026-10-10
 lastmod: 2026-10-10
-draft: true
+draft: false
 image: "images/blog/corporate-carpooling.jpg"
 author: "TeamWheels"
 reading_time: "8 min"

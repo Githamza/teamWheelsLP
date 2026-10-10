@@ -8,7 +8,7 @@ translationKey: "carpooling-savings-calculator"
 keywords: "besparingscalculator carpoolen, carpool kosten berekenen, CO2 woon-werkverkeer berekenen, WPM rapportage, werkgebonden personenmobiliteit, reiskostenvergoeding, Scope 3 woon-werkverkeer, parkeerplaatsen besparen"
 date: 2026-10-10
 lastmod: 2026-10-10
-draft: true
+draft: false
 verify: ["onbelaste km-vergoeding 2027 (Belastingplan 2027)", "publicatie wijzigingsbesluit WPM-drempel 250 werknemers in Staatsblad (WGK028577)"]
 author: TeamWheels
 calculator_title: "Besparingscalculator carpoolen"

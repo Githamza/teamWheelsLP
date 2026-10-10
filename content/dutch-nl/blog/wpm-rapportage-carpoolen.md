@@ -5,7 +5,7 @@ description: "WPM-rapportage over werkgebonden personenmobiliteit: wie moet rapp
 slug: "wpm-rapportage-carpoolen"
 date: 2026-10-10
 lastmod: 2026-10-10
-draft: true
+draft: false
 image: "images/blog/scope-3-emissions.jpg"
 author: "TeamWheels"
 reading_time: "5 min"

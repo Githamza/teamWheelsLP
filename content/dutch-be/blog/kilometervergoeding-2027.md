@@ -5,7 +5,7 @@ description: "Kilometervergoeding 2027 in België: de officiële bedragen per km
 slug: "kilometervergoeding-2027"
 date: 2026-10-10
 lastmod: 2026-10-10
-draft: true
+draft: false
 image: "images/blog/carpooling-to-work.jpg"
 author: "TeamWheels"
 reading_time: "6 min"

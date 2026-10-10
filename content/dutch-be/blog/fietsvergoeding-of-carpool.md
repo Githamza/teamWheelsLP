@@ -5,7 +5,7 @@ description: "Fietsvergoeding 2027: wat de cao nr. 164 oplegt, wanneer fietsen n
 slug: "fietsvergoeding-of-carpool"
 date: 2026-10-10
 lastmod: 2026-10-10
-draft: true
+draft: false
 image: "images/blog/sustainable-mobility.jpg"
 author: "TeamWheels"
 reading_time: "6 min"

@@ -5,7 +5,7 @@ description: "Wat kost een bedrijfswagen je als werkgever echt? Voordeel alle aa
 slug: "bedrijfswagen-vs-carpool"
 date: 2026-10-10
 lastmod: 2026-10-10
-draft: true
+draft: false
 image: "images/blog/corporate-carpooling.jpg"
 author: "TeamWheels"
 reading_time: "6 min"

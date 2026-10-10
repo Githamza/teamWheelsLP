@@ -8,7 +8,7 @@ translationKey: "carpooling-savings-calculator"
 keywords: "besparingscalculator carpoolen, carpool kosten berekenen, CO2 woon-werkverkeer berekenen, carpoolen besparing, Scope 3 woon-werkverkeer, parkeerplaatsen besparen, carpoolen werkgever"
 date: 2026-10-10
 lastmod: 2026-10-10
-draft: true
+draft: false
 author: TeamWheels
 calculator_title: "Besparingscalculator carpoolen"
 intro_subtitle: "Gratis tool van TeamWheels"

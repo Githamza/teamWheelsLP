@@ -2,7 +2,7 @@
 title: "Prijzen carpoolsoftware voor bedrijven | TeamWheels"
 description: "Eenvoudige prijzen voor carpoolen in Microsoft Teams: 30 dagen gratis, daarna € 3 per medewerker per maand excl. btw (in plaats van € 5), alles inbegrepen."
 slug: "prijzen"
-draft: true
+draft: false
 layout: "pricing"
 keywords: "prijs carpool app, carpoolsoftware prijzen, kosten carpoolen bedrijf, carpool app voor bedrijven prijs, Microsoft Teams app prijs, carpoolprogramma kosten, abonnement carpoolplatform"
 
