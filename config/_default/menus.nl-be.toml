@@ -22,7 +22,7 @@ weight = 2
 [[main]]
 parent = "product"
 name = "Carpoolsoftware"
-url = "https://www.teamwheelsapp.com/en/corporate-carpooling-software/"
+url = "carpoolen-voor-bedrijven/"
 weight = 1
 
 [[main]]
@@ -102,7 +102,7 @@ weight = 4
 # footer_menu_4
 [[footer_menu_4]]
 name = "Carpoolsoftware"
-url = "https://www.teamwheelsapp.com/en/corporate-carpooling-software/"
+url = "carpoolen-voor-bedrijven/"
 weight = 1
 
 [[footer_menu_4]]
