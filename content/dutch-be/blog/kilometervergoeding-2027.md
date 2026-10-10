@@ -42,9 +42,9 @@ Er bestaan twee officiële bedragen naast elkaar, berekend met twee verschillend
 |---|---|---|---|
 | Kwartaalbedrag | 1 juli 2026 t.e.m. 30 september 2026 | 0,4440 euro | [RSZ](https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/salary/particularcases/expensesreimbursement.html) |
 | Kwartaalbedrag | 1 oktober 2026 t.e.m. 31 december 2026 | 0,4452 euro | omzendbrief nr. 771, FOD BOSA |
-| Kwartaalbedrag | vanaf 1 januari 2027 | nog niet gepubliceerd | [[VERIFY: kwartaalbedrag vanaf 1 januari 2027, FOD BOSA / Belgisch Staatsblad, verwacht rond eind december 2026]] |
+| Kwartaalbedrag | vanaf 1 januari 2027 | nog niet gepubliceerd | verwacht eind december 2026 |
 | Jaarbedrag | 1 juli 2026 t.e.m. 30 juni 2027 | 0,4761 euro | omzendbrief nr. 767, RSZ |
-| Jaarbedrag | vanaf 1 juli 2027 | nog niet gepubliceerd | [[VERIFY: jaarbedrag vanaf 1 juli 2027, FOD BOSA / Belgisch Staatsblad, verwacht rond juni 2027]] |
+| Jaarbedrag | vanaf 1 juli 2027 | nog niet gepubliceerd | verwacht rond juni 2027 |
 
 De FOD BOSA meldt dat het bedrag "tussen 1 oktober en 31 december 2026" op 0,4452 euro ligt en dat een volgende aanpassing "verwacht wordt op 1 januari 2027" ([FOD BOSA](https://bosa.belgium.be/nl/news/het-staatsblad-kilometervergoeding-tussen-1-oktober-en-31-december-2026)). Het jaarbedrag van 0,4761 euro staat in [omzendbrief nr. 767](https://www.ejustice.just.fgov.be/cgi/article.pl?language=nl&sum_date=2026-06-16&lg_txt=n&caller=sum&numac_search=2026004336), gepubliceerd in het Belgisch Staatsblad van 16 juni 2026.
 
@@ -58,7 +58,7 @@ Dat hangt af van het vervoermiddel.
 - **Eigen wagen:** er is geen algemene nationale verplichting. Cao nr. 19/9 verwijst alleen naar bestaande sector- of ondernemingscao's "die voorzien in een werkgeversbijdrage in het privévervoer". Of je moet betalen, en hoeveel, staat dus in de cao van je paritair comité of in een cao of afspraak binnen je onderneming.
 - **Dienstverplaatsingen:** gebruikt een werknemer zijn eigen wagen voor een verplaatsing in opdracht van het bedrijf, dan aanvaardt [de RSZ](https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/salary/particularcases/expensesreimbursement.html) het federale bedrag per km als maximale vergoeding vrij van bijdragen.
 
-Fiscaal ligt het anders. De vergoeding voor woon-werkverkeer met de auto is voor de werknemer maar vrijgesteld tot een jaarlijks plafond (500 euro voor inkomstenjaar 2026, volgens het [indexeringsbericht van de FOD Financiën](https://eservices.minfin.fgov.be/myminfin-web/pages/fisconet/document/e3a471be-e270-4962-9fbf-67ce0d7571f0), en alleen als de werknemer de forfaitaire beroepskosten kiest) [[VERIFY: bedrag 2027, gepubliceerd door FOD Financiën (bericht automatische indexering aanslagjaar 2028) rond de eerste helft van 2027]]. Wat je daarboven betaalt, is voor de werknemer gewoon belastbaar loon. Voor de bedrijfsvoorheffing mag je in 2026 maximaal 41,70 euro per maand vrijstellen, volgens [bijlage III bij het KB/WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/fisconet/document/b14d7617-e298-4210-ab8f-dbb3bced2922).
+Fiscaal ligt het anders. De vergoeding voor woon-werkverkeer met de auto is voor de werknemer maar vrijgesteld tot een jaarlijks plafond (500 euro voor inkomstenjaar 2026, volgens het [indexeringsbericht van de FOD Financiën](https://eservices.minfin.fgov.be/myminfin-web/pages/fisconet/document/e3a471be-e270-4962-9fbf-67ce0d7571f0), en alleen als de werknemer de forfaitaire beroepskosten kiest) (het bedrag voor 2027 volgt in 2027). Wat je daarboven betaalt, is voor de werknemer gewoon belastbaar loon. Voor de bedrijfsvoorheffing mag je in 2026 maximaal 41,70 euro per maand vrijstellen, volgens [bijlage III bij het KB/WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/fisconet/document/b14d7617-e298-4210-ab8f-dbb3bced2922).
 
 ## Rekenvoorbeeld voor 50 werknemers
 
@@ -76,7 +76,7 @@ Dat geeft **30 x 40 km x 200 dagen = 240.000 km** per jaar.
 - Aan het kwartaalbedrag van het vierde kwartaal 2026 (0,4452 euro): 240.000 x 0,4452 = **106.848 euro** per jaar.
 
 **Scenario B: je volgt de tussenkomst van je sectorcao.**
-Dan wordt het 240.000 km x [[VERIFY: tussenkomst privévervoer per km volgens je sectorcao]]. Sommige sectorcao's verwijzen naar een tabel met forfaitaire bedragen per afstand in plaats van een bedrag per km. Reken dan met de tabel van je eigen paritair comité.
+Dan wordt het 240.000 km x het bedrag per km uit je sectorcao. Sommige sectorcao's verwijzen naar een tabel met forfaitaire bedragen per afstand in plaats van een bedrag per km. Reken dan met de tabel van je eigen paritair comité.
 
 Daarbovenop komen de verplichte tussenkomst voor wie met het openbaar vervoer komt, en de parkeerplaatsen voor 30 wagens. Wil je dit met je eigen cijfers berekenen? Gebruik de [besparingscalculator](/nl-be/besparingscalculator/).
 

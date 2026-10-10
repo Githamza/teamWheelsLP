@@ -32,7 +32,7 @@ Kilometervergoeding en reiskostenvergoeding worden vaak door elkaar gebruikt, ma
 |---|---|---|
 | 2024 en 2025 | € 0,23 | Vastgesteld |
 | 2026 (vanaf 1 januari, met terugwerkende kracht) | € 0,25 | Goedgekeurd via beleidsbesluit; opgenomen in het Belastingplan 2027 |
-| 2027 | Nog niet gepubliceerd | [[VERIFY: bedrag 2027 na stemming Belastingplan 2027, rijksoverheid.nl / belastingdienst.nl, verwacht rond december 2026]] |
+| 2027 | Nog niet gepubliceerd | Wordt na de stemming over het Belastingplan 2027 bekend (verwacht december 2026) |
 
 De verhoging van € 0,23 naar € 0,25 is een reactie op de gestegen brandstofprijzen. De staatssecretaris van Financiën keurde die vooraf goed in het [Beleidsbesluit fiscale maatregelen naar aanleiding van de energieschok](https://zoek.officielebekendmakingen.nl/stcrt-2026-18302.html) (Staatscourant, 21 mei 2026). Dat besluit geldt tot en met 31 december 2026; daarna moet de regel in de wet staan. Volgens [Rijksoverheid](https://www.rijksoverheid.nl/themas/belastingen-uitkeringen-en-toeslagen/belastingplan/plannen-kabinet-voor-belasting-op-brandstof-vliegbelasting-en-reiskostenvergoeding) stemmen de Tweede en Eerste Kamer in november en december 2026 over het Belastingplan 2027.
 
@@ -61,7 +61,7 @@ Beide regels staan op de [Rijksoverheid-pagina over de maximale reiskostenvergoe
 
 ## Rekenvoorbeeld: kilometervergoeding berekenen
 
-We rekenen met het bedrag van **2026 (€ 0,25 per km)**, omdat het bedrag voor 2027 nog niet is gepubliceerd [[VERIFY: bedrag 2027 na stemming Belastingplan 2027, rijksoverheid.nl / belastingdienst.nl, verwacht rond december 2026]]. De aannames (afstand, aantal werkdagen) zijn voorbeelden, geen fiscale normen.
+We rekenen met het bedrag van **2026 (€ 0,25 per km)**, omdat het bedrag voor 2027 nog niet is gepubliceerd Wordt na de stemming over het Belastingplan 2027 bekend (verwacht december 2026). De aannames (afstand, aantal werkdagen) zijn voorbeelden, geen fiscale normen.
 
 **Stap 1: één werknemer, alleen in de auto.**
 Sanne woont 20 km van kantoor en rijdt 200 dagen per jaar heen en terug: 40 km × 200 = 8.000 km.

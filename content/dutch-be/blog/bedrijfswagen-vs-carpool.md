@@ -44,7 +44,7 @@ Mag je werknemer de bedrijfswagen ook privé gebruiken, dan is dat een voordeel 
 
 Het VAA hangt af van vier elementen: de cataloguswaarde van de wagen, de leeftijd, de brandstof en de CO₂-uitstoot. Die uitstoot wordt vergeleken met een referentie-uitstoot die elk jaar opnieuw wordt vastgelegd. Voor voordelen toegekend vanaf 1 januari 2026 is dat volgens het [koninklijk besluit van 17 december 2025](https://www.ejustice.just.fgov.be/cgi/article.pl?language=nl&sum_date=2025-12-24&lg_txt=n&caller=sum&numac_search=2025009788) (Belgisch Staatsblad van 24 december 2025) **70 g/km** voor wagens met een benzine-, LPG- of aardgasmotor en **58 g/km** voor wagens met een dieselmotor.
 
-De formule staat in [artikel 36, § 2, WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/fisconet/document/e92fb53d-9277-4a22-aa62-640a237c4eb2). Je neemt zes zevende van de cataloguswaarde en vermenigvuldigt die met een leeftijdspercentage (van 100 % tot 70 %) en met een CO₂-percentage. Dat CO₂-percentage bedraagt 5,5 % bij de referentie-uitstoot en stijgt of daalt met 0,1 % per gram erboven of eronder, met een minimum van 4 % en een maximum van 18 %. Het voordeel bedraagt voor 2026 minstens 1.690 euro per jaar, volgens het [indexeringsbericht van de FOD Financiën](https://eservices.minfin.fgov.be/myminfin-web/pages/fisconet/document/e3a471be-e270-4962-9fbf-67ce0d7571f0). Voor 2027 worden de referentiewaarden opnieuw bij koninklijk besluit vastgelegd [[VERIFY: referentie-CO2-uitstoot en minimum VAA 2027, KB in Belgisch Staatsblad rond december 2026]]. Laat de berekening voor je eigen wagenpark nakijken door je sociaal secretariaat.
+De formule staat in [artikel 36, § 2, WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/fisconet/document/e92fb53d-9277-4a22-aa62-640a237c4eb2). Je neemt zes zevende van de cataloguswaarde en vermenigvuldigt die met een leeftijdspercentage (van 100 % tot 70 %) en met een CO₂-percentage. Dat CO₂-percentage bedraagt 5,5 % bij de referentie-uitstoot en stijgt of daalt met 0,1 % per gram erboven of eronder, met een minimum van 4 % en een maximum van 18 %. Het voordeel bedraagt voor 2026 minstens 1.690 euro per jaar, volgens het [indexeringsbericht van de FOD Financiën](https://eservices.minfin.fgov.be/myminfin-web/pages/fisconet/document/e3a471be-e270-4962-9fbf-67ce0d7571f0). Voor 2027 worden de referentiewaarden opnieuw bij koninklijk besluit vastgelegd (verwacht rond december 2026). Laat de berekening voor je eigen wagenpark nakijken door je sociaal secretariaat.
 
 Voor jou als werkgever telt vooral dit: samen met de strengere aftrek voor fossiele wagens zet het VAA de car policy onder druk, en roept het de vraag op of elke functie wel een eigen wagen nodig heeft.
 
@@ -62,7 +62,7 @@ Rationaliseren betekent niet dat je zomaar bedrijfswagens schrapt. Het betekent 
 | --- | --- | --- |
 | Bedrijfswagens voor woon-werkverkeer | 12 | 0 |
 | Poolwagens | 0 | 4 |
-| TCO per wagen per jaar | € 10.000 [[VERIFY: voorbeeldbedrag TCO per bedrijfswagen]] | € 8.000 [[VERIFY: voorbeeldbedrag TCO per poolwagen]] |
+| TCO per wagen per jaar | € 10.000 | € 8.000 |
 | Jaarlijkse wagenkost | 12 × € 10.000 = € 120.000 | 4 × € 8.000 = € 32.000 |
 
 In dit voorbeeld daalt de wagenkost van die groep met € 88.000 per jaar, zonder de besparing op de vrijgekomen parkeerplaatsen mee te tellen. Dat is een brutobedrag: trek er af wat je in de plaats aanbiedt (bijvoorbeeld een mobiliteitsbudget). De bedragen zijn fictief, dus vervang ze door de cijfers uit je eigen car policy.
