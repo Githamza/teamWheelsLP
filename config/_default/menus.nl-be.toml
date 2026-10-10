@@ -3,8 +3,8 @@
 #   Home · Product ▾ · Prijzen · Resources ▾ · Contact
 # Home, hoe-het-werkt, prijzen, besparingscalculator and contact exist in
 # Dutch; the other entries point at the English page with an absolute URL
-# (layouts/partials/lang-url.html keeps it as is). No blog link until a
-# Dutch post is published (SPEC.md D8).
+# (layouts/partials/lang-url.html keeps it as is). The Blog entries go live
+# together with the first published Dutch post (SPEC.md D8).
 
 # main menu
 [[main]]
@@ -66,6 +66,12 @@ name = "Besparingscalculator"
 url = "besparingscalculator/"
 weight = 1
 
+[[main]]
+parent = "resources"
+name = "Blog"
+url = "blog/"
+weight = 2
+
 # ── Contact ──
 [[main]]
 name = "Contact"
@@ -123,3 +129,8 @@ weight = 4
 name = "Besparingscalculator"
 url = "besparingscalculator/"
 weight = 5
+
+[[footer_menu_4]]
+name = "Blog"
+url = "blog/"
+weight = 6

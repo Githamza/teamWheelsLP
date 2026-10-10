@@ -39,9 +39,9 @@ De belangrijkste spelregels van de cao nr. 164:
 - **Welke fiets?** Een gewone fiets, een elektrische fiets of een elektrisch aangedreven speed pedelec.
 - **Verklaring op erewoord.** De werknemer geeft het aantal kilometers en dagen op; jij bepaalt hoe vaak dat gebeurt en hoe je het controleert.
 
-**Bedragen.** Voor 2025 legde de cao nr. 164 een vergoeding van 0,29 euro per kilometer op (na indexering), aldus de FOD Werkgelegenheid. Het bedrag wordt jaarlijks geïndexeerd. Sinds 1 januari 2026 bedraagt het 0,30 euro per kilometer, volgens de [tabel met cao-bedragen van de Nationale Arbeidsraad](https://cnt-nar.be/sites/default/files/documents/fr/Tableau-Tabel-Montants%20CCT-CAO%20Bedragen-2026-07-01.pdf) [[VERIFY: bedrag cao nr. 164 voor 2027, werk.belgie.be of cnt-nar.be, verwacht rond januari 2027]].
+**Bedragen.** Voor 2025 legde de cao nr. 164 een vergoeding van 0,29 euro per kilometer op (na indexering), aldus de FOD Werkgelegenheid. Het bedrag wordt jaarlijks geïndexeerd. Sinds 1 januari 2026 bedraagt het 0,30 euro per kilometer, volgens de [tabel met cao-bedragen van de Nationale Arbeidsraad](https://cnt-nar.be/sites/default/files/documents/fr/Tableau-Tabel-Montants%20CCT-CAO%20Bedragen-2026-07-01.pdf); het bedrag voor 2027 volgt rond januari 2027.
 
-Daarnaast is er een fiscaal plafond. Volgens [Vlaanderen.be](https://www.vlaanderen.be/fietsvergoeding) is een fietsvergoeding tot 0,36 euro per kilometer en maximaal 3.610 euro per jaar (inkomstenjaar 2025) "vrijgesteld van inkomstenbelasting en sociale zekerheidsbijdragen". Je mag dus meer geven dan de cao oplegt; tot dat plafond blijft de vergoeding vrijgesteld. Voor inkomstenjaar 2026 ligt dat plafond op 0,37 euro per kilometer en 3.700 euro per jaar, volgens het [indexeringsbericht van de FOD Financiën](https://eservices.minfin.fgov.be/myminfin-web/pages/fisconet/document/e3a471be-e270-4962-9fbf-67ce0d7571f0) [[VERIFY: vrijgesteld bedrag per km en jaarplafond 2027, FOD Financiën, verwacht rond december 2026-januari 2027]].
+Daarnaast is er een fiscaal plafond. Volgens [Vlaanderen.be](https://www.vlaanderen.be/fietsvergoeding) is een fietsvergoeding tot 0,36 euro per kilometer en maximaal 3.610 euro per jaar (inkomstenjaar 2025) "vrijgesteld van inkomstenbelasting en sociale zekerheidsbijdragen". Je mag dus meer geven dan de cao oplegt; tot dat plafond blijft de vergoeding vrijgesteld. Voor inkomstenjaar 2026 ligt dat plafond op 0,37 euro per kilometer en 3.700 euro per jaar, volgens het [indexeringsbericht van de FOD Financiën](https://eservices.minfin.fgov.be/myminfin-web/pages/fisconet/document/e3a471be-e270-4962-9fbf-67ce0d7571f0); de bedragen voor 2027 worden rond de jaarwisseling gepubliceerd.
 
 ### Rekenvoorbeeld
 
@@ -49,7 +49,7 @@ Stel: 10 werknemers fietsen elk 8 km enkele rit, 4 dagen per week, 46 werkweken 
 
 **10 × 16 km × 184 dagen = 29.440 km × 0,30 euro = 8.832 euro per jaar**
 
-Vervang 0,30 euro door het bedrag van je sector voor 2027 [[VERIFY: bedrag per km 2027, sectorale cao of cao nr. 164]].
+Vervang 0,30 euro door het bedrag van je sector voor 2027.
 
 ## Wanneer fietsen niet werkt (afstand, regio)
 
@@ -84,7 +84,7 @@ Het lastige deel van carpoolen is niet de regeling, maar de match: wie woont waa
 Een eenvoudig beleid voor woon-werkverkeer dat fiets en carpool combineert, kan er zo uitzien. Stem de bedragen af op je sectorale cao.
 
 **1. Fietsvergoeding**
-- Elke werknemer die regelmatig fietst, krijgt de fietsvergoeding van de sectorale cao of de cao nr. 164 [[VERIFY: bedrag per km 2027, sectorale cao of cao nr. 164]].
+- Elke werknemer die regelmatig fietst, krijgt de fietsvergoeding van de sectorale cao of de cao nr. 164.
 - Aangifte: maandelijks, via een verklaring op erewoord met kilometers en dagen.
 - Optioneel: een hoger bedrag per km (binnen het fiscale plafond) of een vergoeding voor de kilometers boven 20 km enkel.
 

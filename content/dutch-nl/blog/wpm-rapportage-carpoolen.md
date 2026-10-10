@@ -32,7 +32,7 @@ De rapportageverplichting werkgebonden personenmobiliteit staat in afdeling 18.1
 - op 1 januari van het rapportagejaar 100 of meer werknemers in dienst had.
 
 Een werknemer is volgens [RVO](https://www.rvo.nl/onderwerpen/rapportage-wpm/veelgestelde-vragen) iemand met "een contract dat 20 of meer uren betaald werk per maand garandeert". Uitzendkrachten, gedetacheerden en zzp'ers tellen niet mee.
-**Let op, de drempel gaat waarschijnlijk omhoog.** Het ministerie van Infrastructuur en Waterstaat wil het besluit zo aanpassen dat organisaties met minder dan 250 werknemers niet meer hoeven te rapporteren, met terugwerkende kracht tot 1 januari 2026. Op de [RVO-pagina over de WPM-rapportage](https://www.rvo.nl/onderwerpen/rapportage-wpm) (gecontroleerd op 1 juli 2026) is dit nog een voornemen, en de wettekst op wetten.overheid.nl noemt op 10 oktober 2026 nog 100 werknemers. Het ontwerpbesluit lag van 24 april tot 1 juli 2026 voor bij de Tweede Kamer en de Eerste Kamer, en de Raad van State bracht op 10 september 2026 advies uit ([wetgevingskalender](https://wetgevingskalender.overheid.nl/Regeling/WGK028577)). In het Staatsblad is het nog niet gepubliceerd; het besluit treedt pas in werking na publicatie en werkt dan terug tot 1 januari 2026. [[VERIFY: publicatie wijzigingsbesluit Bal art. 18.11 in het Staatsblad, WGK028577]] RVO adviseert organisaties met 100 tot 250 werknemers om gegevens over 2026 te blijven verzamelen tot er een definitief besluit is.
+**Let op, de drempel gaat waarschijnlijk omhoog.** Het ministerie van Infrastructuur en Waterstaat wil het besluit zo aanpassen dat organisaties met minder dan 250 werknemers niet meer hoeven te rapporteren, met terugwerkende kracht tot 1 januari 2026. Op de [RVO-pagina over de WPM-rapportage](https://www.rvo.nl/onderwerpen/rapportage-wpm) (gecontroleerd op 1 juli 2026) is dit nog een voornemen, en de wettekst op wetten.overheid.nl noemt op 10 oktober 2026 nog 100 werknemers. Het ontwerpbesluit lag van 24 april tot 1 juli 2026 voor bij de Tweede Kamer en de Eerste Kamer, en de Raad van State bracht op 10 september 2026 advies uit ([wetgevingskalender](https://wetgevingskalender.overheid.nl/Regeling/WGK028577)). In het Staatsblad is het nog niet gepubliceerd; het besluit treedt pas in werking na publicatie en werkt dan terug tot 1 januari 2026. RVO adviseert organisaties met 100 tot 250 werknemers om gegevens over 2026 te blijven verzamelen tot er een definitief besluit is.
 
 De deadline is elk jaar 30 juni, over het voorgaande kalenderjaar. De rapportage over 2026 moet dus uiterlijk op 30 juni 2027 binnen zijn, via het online formulier op Mijn RVO (inloggen met eHerkenning, minimaal niveau eH2+). De omgevingsdienst van de regio waar je hoofdvestiging zit, controleert of je hebt gerapporteerd.
 
@@ -63,7 +63,7 @@ Het RVO-formulier vermenigvuldigt je kilometers met vaste kengetallen die CE Del
 | Openbaar vervoer | 11 |
 | Lopen en fietsen | 0 |
 
-[[VERIFY: emissiefactoren rapportagejaar 2026, RVO-handreiking, verwacht rond december 2026]]
+De emissiefactoren voor rapportagejaar 2026 publiceert RVO naar verwachting rond december 2026 in een nieuwe handreiking.
 
 Er geldt nog geen CO₂-norm per werkgever. Het doel volgens de handreiking: werkgevers verminderen samen de uitstoot van werkgebonden personenmobiliteit in 2030 met minimaal 1,5 megaton. Blijkt uit de rapportages dat de uitstoot onvoldoende daalt, dan komt er alsnog een maximum per reizigerskilometer. Volgens de handreiking krijgt elke werkgever dan vier jaar om daaraan te voldoen.
 
