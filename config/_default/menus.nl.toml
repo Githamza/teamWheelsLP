@@ -1,11 +1,10 @@
 ############# Dutch navigation (Nederland, nl) ##############
 # Same structure as the other languages:
 #   Home · Product ▾ · Prijzen · Resources ▾ · Contact
-# Only the home page exists in Dutch so far: every other entry points at the
-# English page with an absolute URL (layouts/partials/lang-url.html keeps it
-# as is). The core-pages PR switches hoe-het-werkt, prijzen and
-# besparingscalculator to the Dutch pages. No blog link until a Dutch post
-# is published (SPEC.md D8).
+# Home, hoe-het-werkt, prijzen, besparingscalculator and contact exist in
+# Dutch; the other entries point at the English page with an absolute URL
+# (layouts/partials/lang-url.html keeps it as is). No blog link until a
+# Dutch post is published (SPEC.md D8).
 
 # main menu
 [[main]]
@@ -34,7 +33,7 @@ weight = 2
 [[main]]
 parent = "product"
 name = "Zo werkt het"
-url = "https://www.teamwheelsapp.com/en/how-it-works/"
+url = "hoe-het-werkt/"
 weight = 3
 
 [[main]]
@@ -52,7 +51,7 @@ weight = 5
 # ── Prijzen ──
 [[main]]
 name = "Prijzen"
-url = "https://www.teamwheelsapp.com/en/pricing/"
+url = "prijzen/"
 weight = 3
 
 # ── Resources ▾ ──
@@ -64,13 +63,13 @@ weight = 4
 [[main]]
 parent = "resources"
 name = "Besparingscalculator"
-url = "https://www.teamwheelsapp.com/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/"
+url = "besparingscalculator/"
 weight = 1
 
 # ── Contact ──
 [[main]]
 name = "Contact"
-url = "https://www.teamwheelsapp.com/en/contact/"
+url = "contact/"
 weight = 5
 
 
@@ -80,7 +79,7 @@ weight = 5
 # footer_menu_3
 [[footer_menu_3]]
 name = "Contact"
-url = "https://www.teamwheelsapp.com/en/contact/"
+url = "contact/"
 weight = 1
 
 [[footer_menu_3]]
@@ -112,15 +111,15 @@ weight = 2
 
 [[footer_menu_4]]
 name = "Zo werkt het"
-url = "https://www.teamwheelsapp.com/en/how-it-works/"
+url = "hoe-het-werkt/"
 weight = 3
 
 [[footer_menu_4]]
 name = "Prijzen"
-url = "https://www.teamwheelsapp.com/en/pricing/"
+url = "prijzen/"
 weight = 4
 
 [[footer_menu_4]]
 name = "Besparingscalculator"
-url = "https://www.teamwheelsapp.com/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/"
+url = "besparingscalculator/"
 weight = 5

@@ -44,7 +44,7 @@
   </div>
   {{ with .watchPage }}
     <p class="text-center mt-3 mb-0 small">
-      <a class="hero-demo-video__link" href="{{ . | relLangURL }}">{{ $.linkLabel }} <i class="fas fa-arrow-right"></i></a>
+      <a class="hero-demo-video__link" href="{{ partial "lang-url.html" . }}">{{ $.linkLabel }} <i class="fas fa-arrow-right"></i></a>
     </p>
   {{ end }}
 </div>
