@@ -10,7 +10,7 @@ image: "images/blog/carpooling-to-work.jpg"
 author: "TeamWheels"
 reading_time: "6 min"
 keywords: "kilometervergoeding 2027, kilometervergoeding 2026, vergoeding woon-werkverkeer, vrijstelling woon-werkverkeer 2026, woon-werkverkeer vergoeding auto, kilometervergoeding woon-werkverkeer"
-verify: ["belastbaarheid boven de vrijstelling (FOD Financiën)", "kwartaalbedrag kilometervergoeding vanaf 1 januari 2027 (FOD BOSA, eind december 2026)", "jaarbedrag kilometervergoeding vanaf 1 juli 2027 (FOD BOSA / Belgisch Staatsblad, juni 2027)", "fiscale vrijstelling woon-werkverkeer met andere vervoermiddelen, inkomstenjaren 2026 en 2027 (FOD Financiën)", "tussenkomst privévervoer per km volgens de sectorcao (rekenvoorbeeld)"]
+verify: ["belastbaarheid boven de vrijstelling (FOD Financiën)", "kwartaalbedrag kilometervergoeding vanaf 1 januari 2027 (FOD BOSA, eind december 2026)", "jaarbedrag kilometervergoeding vanaf 1 juli 2027 (FOD BOSA / Belgisch Staatsblad, juni 2027)", "fiscale vrijstelling woon-werkverkeer met andere vervoermiddelen, inkomstenjaren 2026 en 2027, plus bronlink voor de FAQ (FOD Financiën)", "tussenkomst privévervoer per km volgens de sectorcao (rekenvoorbeeld)"]
 faq:
   - question: "Hoeveel bedraagt de kilometervergoeding in 2027?"
     answer: "Het jaarbedrag van 0,4761 euro per km geldt van 1 juli 2026 tot en met 30 juni 2027 (omzendbrief nr. 767). Het kwartaalbedrag ligt op 0,4452 euro per km tot 31 december 2026 (omzendbrief nr. 771). Het kwartaalbedrag vanaf 1 januari 2027 en het jaarbedrag vanaf 1 juli 2027 zijn nog niet gepubliceerd."
@@ -92,7 +92,7 @@ Het moeilijke deel is niet de rekensom, maar weten wie dezelfde route rijdt. [Te
 
 ## Bereken je eigen kosten
 
-Afstanden, sectorcao en het aandeel chauffeurs verschillen per bedrijf. Vul je eigen cijfers in de [besparingscalculator](/nl-be/besparingscalculator/) in. We werken dit artikel bij zodra de FOD BOSA het kwartaalbedrag voor 2027 publiceert.
+Afstanden, sectorcao en het aandeel bestuurders verschillen per bedrijf. Vul je eigen cijfers in de [besparingscalculator](/nl-be/besparingscalculator/) in. We werken dit artikel bij zodra de FOD BOSA het kwartaalbedrag voor 2027 publiceert.
 
 {{< cta-demo title="Minder wagens, lagere kosten voor woon-werkverkeer" text="Zie in een korte demo hoe TeamWheels in Microsoft Teams collega's met dezelfde route samenbrengt." src="km-2027-end" >}}
 
