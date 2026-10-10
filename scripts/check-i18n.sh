@@ -89,11 +89,15 @@ else
   bad "output differs from $BASE_REF:"; printf '%s\n' "$unexpected" | head -30 | sed 's/^/          /'
 fi
 
-echo "== 2. No Dutch URL in production"
+echo "== 2. No Dutch URL in production (only while the Dutch homes are drafts)"
+if ! grep -qx "draft: true" "$ROOT/content/dutch-be/_index.md" "$ROOT/content/dutch-nl/_index.md" 2>/dev/null; then
+  pass "skipped: a Dutch home is published (launched 2026-10-10)"
+else
 if [ -e "$head_out/nl-be" ] || [ -e "$head_out/nl" ]; then bad "public/nl-be or public/nl exists"; else pass "no /nl-be/ or /nl/ directory"; fi
 leaks="$(grep -rlE '(teamwheelsapp\.com/|href="?/)(nl-be|nl)/' "$head_out" 2>/dev/null | head -5)"
 if [ -z "$leaks" ]; then pass "no link to /nl-be/ or /nl/"; else bad "Dutch links in: $leaks"; fi
 if grep -rqiE 'hreflang="?nl' "$head_out" 2>/dev/null; then bad "nl hreflang in production output"; else pass "no nl hreflang"; fi
+fi
 
 echo "== 3. Draft build (-D): Dutch locales"
 draft_out="$CHECK_DIR/draft"
