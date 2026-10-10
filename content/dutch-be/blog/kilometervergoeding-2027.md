@@ -10,7 +10,7 @@ image: "images/blog/carpooling-to-work.jpg"
 author: "TeamWheels"
 reading_time: "6 min"
 keywords: "kilometervergoeding 2027, kilometervergoeding 2026, vergoeding woon-werkverkeer, vrijstelling woon-werkverkeer 2026, woon-werkverkeer vergoeding auto, kilometervergoeding woon-werkverkeer"
-verify: ["belastbaarheid boven de vrijstelling (FOD Financiën)", "kwartaalbedrag kilometervergoeding vanaf 1 januari 2027 (FOD BOSA, eind december 2026)", "jaarbedrag kilometervergoeding vanaf 1 juli 2027 (FOD BOSA / Belgisch Staatsblad, juni 2027)", "fiscale vrijstelling woon-werkverkeer met andere vervoermiddelen, inkomstenjaren 2026 en 2027, plus bronlink voor de FAQ (FOD Financiën)", "tussenkomst privévervoer per km volgens de sectorcao (rekenvoorbeeld)"]
+verify: ["kwartaalbedrag vanaf 1 januari 2027, FOD BOSA / Belgisch Staatsblad, verwacht rond eind december 2026", "jaarbedrag vanaf 1 juli 2027, FOD BOSA / Belgisch Staatsblad, verwacht rond juni 2027", "bedrag 2027, gepubliceerd door FOD Financiën (bericht automatische indexering aanslagjaar 2028) rond de eerste helft van 2027", "tussenkomst privévervoer per km volgens je sectorcao"]
 faq:
   - question: "Hoeveel bedraagt de kilometervergoeding in 2027?"
     answer: "Het jaarbedrag van 0,4761 euro per km geldt van 1 juli 2026 tot en met 30 juni 2027 (omzendbrief nr. 767). Het kwartaalbedrag ligt op 0,4452 euro per km tot 31 december 2026 (omzendbrief nr. 771). Het kwartaalbedrag vanaf 1 januari 2027 en het jaarbedrag vanaf 1 juli 2027 zijn nog niet gepubliceerd."
@@ -21,7 +21,7 @@ faq:
   - question: "Hoe bereken je de kilometervergoeding voor woon-werkverkeer?"
     answer: "Vermenigvuldig de afstand heen en terug met het aantal gewerkte dagen en met het bedrag per km dat je beleid of je sectorcao toepast. Voor 20 km enkele reis en 200 werkdagen is dat 8.000 km per werknemer, of 3.808,80 euro aan het jaarbedrag van 0,4761 euro per km."
   - question: "Is de vergoeding voor woon-werkverkeer met de auto belastingvrij?"
-    answer: "Voor de RSZ geldt het federale kilometerbedrag als maximum dat vrij van bijdragen aanvaard wordt voor verplaatsingen met een eigen voertuig. Fiscaal is de vergoeding voor woon-werkverkeer met de auto slechts vrijgesteld tot een plafond per jaar. Controleer het bedrag voor het inkomstenjaar op de site van de FOD Financiën [[VERIFY: link FOD Financiën vrijstelling woon-werkverkeer en jaarplafond]]."
+    answer: "Voor de RSZ geldt het federale kilometerbedrag als maximum dat vrij van bijdragen aanvaard wordt voor verplaatsingen met een eigen voertuig. Fiscaal is de vergoeding voor woon-werkverkeer met de auto slechts vrijgesteld tot een plafond per jaar. Controleer het bedrag voor het inkomstenjaar bij de FOD Financiën: voor inkomstenjaar 2026 is dat 500 euro, op voorwaarde dat de werknemer de forfaitaire beroepskosten kiest."
 ---
 
 De kilometervergoeding 2027 hangt af van het systeem dat je als werkgever kiest: het jaarbedrag van **0,4761 euro per km** loopt nog tot en met 30 juni 2027, terwijl het kwartaalbedrag vanaf 1 januari 2027 pas eind december 2026 bekend wordt. Wat woon-werkverkeer je effectief kost, hangt daarnaast af van je sectorcao en van het aantal kilometers dat je werknemers in hun eentje met de wagen afleggen.
@@ -58,7 +58,7 @@ Dat hangt af van het vervoermiddel.
 - **Eigen wagen:** er is geen algemene nationale verplichting. Cao nr. 19/9 verwijst alleen naar bestaande sector- of ondernemingscao's "die voorzien in een werkgeversbijdrage in het privévervoer". Of je moet betalen, en hoeveel, staat dus in de cao van je paritair comité of in een cao of afspraak binnen je onderneming.
 - **Dienstverplaatsingen:** gebruikt een werknemer zijn eigen wagen voor een verplaatsing in opdracht van het bedrijf, dan aanvaardt [de RSZ](https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/salary/particularcases/expensesreimbursement.html) het federale bedrag per km als maximale vergoeding vrij van bijdragen.
 
-Fiscaal ligt het anders. De vergoeding voor woon-werkverkeer met de auto is voor de werknemer maar vrijgesteld tot een jaarlijks plafond [[VERIFY: bedrag fiscale vrijstelling woon-werkverkeer met andere vervoermiddelen, inkomstenjaren 2026 en 2027, FOD Financiën]]. Wat je daarboven betaalt, is belastbaar voor de werknemer [[VERIFY: belastbaarheid vergoeding woon-werkverkeer boven de vrijstelling, FOD Financiën]].
+Fiscaal ligt het anders. De vergoeding voor woon-werkverkeer met de auto is voor de werknemer maar vrijgesteld tot een jaarlijks plafond (500 euro voor inkomstenjaar 2026, volgens het [indexeringsbericht van de FOD Financiën](https://eservices.minfin.fgov.be/myminfin-web/pages/fisconet/document/e3a471be-e270-4962-9fbf-67ce0d7571f0), en alleen als de werknemer de forfaitaire beroepskosten kiest) [[VERIFY: bedrag 2027, gepubliceerd door FOD Financiën (bericht automatische indexering aanslagjaar 2028) rond de eerste helft van 2027]]. Wat je daarboven betaalt, is belastbaar voor de werknemer (het deel boven het plafond is gewoon belastbaar loon; voor de bedrijfsvoorheffing mag je in 2026 maximaal 41,70 euro per maand vrijstellen, volgens [bijlage III bij het KB/WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/fisconet/document/b14d7617-e298-4210-ab8f-dbb3bced2922)).
 
 ## Rekenvoorbeeld voor 50 werknemers
 
@@ -116,4 +116,4 @@ Vermenigvuldig de afstand heen en terug met het aantal gewerkte dagen en met het
 
 ### Is de vergoeding voor woon-werkverkeer met de auto belastingvrij?
 
-Voor de RSZ geldt het federale kilometerbedrag als maximum dat vrij van bijdragen aanvaard wordt voor verplaatsingen met een eigen voertuig. Fiscaal is de vergoeding voor woon-werkverkeer met de auto slechts vrijgesteld tot een plafond per jaar. Controleer het bedrag voor het inkomstenjaar op de site van de FOD Financiën [[VERIFY: link FOD Financiën vrijstelling woon-werkverkeer en jaarplafond]].
+Voor de RSZ geldt het federale kilometerbedrag als maximum dat vrij van bijdragen aanvaard wordt voor verplaatsingen met een eigen voertuig. Fiscaal is de vergoeding voor woon-werkverkeer met de auto slechts vrijgesteld tot een plafond per jaar. Voor inkomstenjaar 2026 is dat plafond 500 euro, op voorwaarde dat de werknemer de forfaitaire beroepskosten kiest, volgens het [indexeringsbericht van de FOD Financiën](https://eservices.minfin.fgov.be/myminfin-web/pages/fisconet/document/e3a471be-e270-4962-9fbf-67ce0d7571f0).
