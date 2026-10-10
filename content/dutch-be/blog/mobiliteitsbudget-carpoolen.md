@@ -24,7 +24,7 @@ faq:
 
 Het mobiliteitsbudget laat een werknemer zijn bedrijfswagen, of zijn recht op een bedrijfswagen, inruilen voor een budget dat hij verdeelt over drie pijlers: een uitstootvrije bedrijfswagen, duurzame vervoermiddelen en huisvesting, en een saldo in cash. Carpoolen hoort officieel thuis in pijler 2, de pijler die volledig vrijgesteld is van sociale bijdragen en belastingen, maar sinds 1 januari 2026 alleen met een auto zonder CO₂-uitstoot.
 
-Voor een HR- of mobiliteitsmanager is dat een kans en een valkuil tegelijk. In deze gids lees je hoe de drie pijlers werken, waar carpoolen past, wat het mobiliteitsbudget de werkgever kost en hoe je het stap voor stap in je mobiliteitsbeleid opneemt. Alle bedragen en regels komen van [mobiliteitsbudget.be](https://mobiliteitsbudget.be/nl), de officiële site van de FOD Werkgelegenheid, FOD Sociale Zekerheid, FOD Financiën en de RSZ.
+In deze gids lees je hoe de drie pijlers werken, waar carpoolen past, wat het mobiliteitsbudget de werkgever kost en hoe je het stap voor stap in je mobiliteitsbeleid opneemt. Alle bedragen en regels komen van [mobiliteitsbudget.be](https://mobiliteitsbudget.be/nl), de officiële site van de FOD Werkgelegenheid, FOD Sociale Zekerheid, FOD Financiën en de RSZ.
 
 ## Wat is het mobiliteitsbudget (de 3 pijlers)
 
@@ -63,7 +63,7 @@ Toch zijn er kosten en aandachtspunten die vaak vergeten worden:
 - **Vergoedingen die wegvallen.** Wie een mobiliteitsbudget krijgt, kan in principe niet meer genieten van onder meer de vrijgestelde fietsvergoeding en de vrijgestelde tussenkomst in het openbaar vervoer. Wie die al minstens 3 maanden combineerde met (het recht op) een bedrijfswagen, mag ze wel behouden ([mobiliteitsbudget.be, vraag 4](https://mobiliteitsbudget.be/nl/4-procedure-voor-de-invoering-en-de-toekenning-van-het-mobiliteitsbudget)).
 - **Een carpoolplatform.** Of een door de werkgever betaald abonnement op een carpoolplatform op pijler 2 mag worden aangerekend, staat niet uitdrukkelijk in de FAQ: [[VERIFY: abonnement carpoolplatform aanrekenbaar op pijler 2, mobiliteitsbudget.be / FOD Financiën]].
 
-**Rekenvoorbeeld.** Neem een fictieve werknemer met een bedrijfswagen die je 9.000 euro per jaar kost (TCO, fictief bedrag: vul je eigen cijfer in). Dat bedrag ligt binnen de grenzen van 2026, dus het mobiliteitsbudget bedraagt 9.000 euro, op voorwaarde dat het niet hoger is dan een vijfde van zijn brutoloon. Hij kiest geen wagen in pijler 1. In pijler 2 besteedt hij 3.000 euro aan een elektrische fiets en carpoolritten in een elektrische auto van een collega [[VERIFY: ritvergoeding aan collega-bestuurder aanrekenbaar op pijler 2, mobiliteitsbudget.be]]. Het saldo van 6.000 euro gaat naar pijler 3: na de bijzondere bijdrage van 38,07% (2.284,20 euro) ontvangt hij 3.715,80 euro. Jouw kost blijft 9.000 euro. Het verschil voor jou zit in een parkeerplaats minder en een lagere uitstoot van je wagenpark.
+**Rekenvoorbeeld.** Neem een werknemer met een bedrijfswagen die je 9.000 euro per jaar kost (TCO, fictief bedrag: vul je eigen cijfer in). Dat bedrag ligt binnen de grenzen van 2026, dus het mobiliteitsbudget bedraagt 9.000 euro, op voorwaarde dat het niet hoger is dan een vijfde van zijn brutoloon. Hij kiest geen wagen in pijler 1. In pijler 2 besteedt hij 3.000 euro aan een elektrische fiets en carpoolritten in een elektrische auto van een collega [[VERIFY: ritvergoeding aan collega-bestuurder aanrekenbaar op pijler 2, mobiliteitsbudget.be]]. Het saldo van 6.000 euro gaat naar pijler 3: na de bijzondere bijdrage van 38,07% (2.284,20 euro) ontvangt hij 3.715,80 euro. Jouw kost blijft 9.000 euro.
 
 Wil je weten wat carpoolen oplevert voor je hele personeel, niet alleen voor wie een bedrijfswagen heeft? Reken het uit met je eigen cijfers in de [besparingscalculator](/nl-be/besparingscalculator/).
 
@@ -77,13 +77,13 @@ Wil je weten wat carpoolen oplevert voor je hele personeel, niet alleen voor wie
 4. **Stel het aanbod per pijler samen.** In pijler 2 moet je minstens één duurzaam vervoermiddel aanbieden, maar niet alle. Neem carpooling expliciet op, met de voorwaarde van nul uitstoot, en communiceer eventuele voorwaarden vooraf aan alle werknemers.
 5. **Leg het vast.** Via een cao, een individuele overeenkomst, een policy of een gebruik. De aanvraag van de werknemer en jouw beslissing vormen een schriftelijke overeenkomst die vóór de eerste toekenning gesloten moet zijn. Ze vermeldt het initiële bedrag en de vrijstellingen die wegvallen. Een addendum bij de arbeidsovereenkomst volstaat ([mobiliteitsbudget.be, vraag 4](https://mobiliteitsbudget.be/nl/4-procedure-voor-de-invoering-en-de-toekenning-van-het-mobiliteitsbudget)).
 6. **Organiseer de besteding.** Kies of je pijler-2-kosten rechtstreeks betaalt, terugbetaalt op basis van bewijsstukken, of beide, en bepaal welke bewijsstukken je vraagt.
-7. **Rol carpoolen breder uit.** Open het carpoolprogramma voor het hele personeel, niet alleen voor wie een mobiliteitsbudget heeft. Zo haal je het meeste uit dezelfde inspanning.
+7. **Rol carpoolen breder uit.** Open het carpoolprogramma voor het hele personeel, niet alleen voor wie een mobiliteitsbudget heeft.
 
 Een fout in de overeenkomst is duur: dan vervalt de gunstige behandeling en wordt het budget belast als gewoon loon, met een mogelijke sanctie van niveau 2 per betrokken werknemer ([mobiliteitsbudget.be, vraag 4](https://mobiliteitsbudget.be/nl/4-procedure-voor-de-invoering-en-de-toekenning-van-het-mobiliteitsbudget)).
 
 ## Gebruik meten en rapporteren
 
-Een mobiliteitsbudget en een carpoolprogramma zijn pas zinvol als je weet wat ze opleveren. Volg minstens deze cijfers op:
+Volg minstens deze cijfers op:
 
 - **Deelname:** hoeveel werknemers met een bedrijfswagen kiezen voor het mobiliteitsbudget, en welke pijlers ze gebruiken.
 - **Bestedingen in pijler 2,** per categorie, met de bewijsstukken die je bij een controle nodig hebt.
