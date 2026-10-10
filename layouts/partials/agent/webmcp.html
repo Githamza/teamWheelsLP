@@ -19,16 +19,54 @@
 {{- $fallbackPricing := "/fr/pricing/" -}}
 {{- $fallbackHow      := "/fr/how-it-works/" -}}
 {{- $fallbackCalc     := "/fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/" -}}
+{{- /* Live languages (partials/lang-live.html), and the regional locales among
+       them: <html lang> carries nl-BE / nl-NL there, not the language key. */ -}}
+{{- $keys := slice -}}
+{{- $regional := dict -}}
+{{- range hugo.Sites -}}
+  {{- if partialCached "lang-live.html" . .Language.Lang -}}
+    {{- $key := .Language.Lang -}}
+    {{- $keys = $keys | append $key -}}
+    {{- with .Params.hreflang -}}{{- $regional = merge $regional (dict (lower .) $key) -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- /* On a regional (Dutch) page, tool paths go to the localized page when it
+       exists (Dutch slugs differ), otherwise to the English one. Not emitted
+       on other languages, whose script is unchanged. */ -}}
+{{- $paths := dict -}}
+{{- if site.Params.hreflang -}}
+  {{- $en := index (where hugo.Sites "Language.Lang" "en") 0 -}}
+  {{- $calc := "/blog/carpooling-savings-calculator-corporate-co2-roi-2026/" -}}
+  {{- range slice (slice "/contact/" "/contact") (slice "/pricing/" "/pricing") (slice "/how-it-works/" "/how-it-works") (slice $calc "/besparingscalculator") -}}
+    {{- $tool := index . 0 -}}
+    {{- $url := "" -}}
+    {{- with site.GetPage (index . 1) -}}
+      {{- $url = .RelPermalink -}}
+    {{- else -}}
+      {{- with $en.GetPage (strings.TrimSuffix "/" $tool) -}}{{- $url = .RelPermalink -}}{{- end -}}
+    {{- end -}}
+    {{- with $url -}}{{- $paths = merge $paths (dict $tool .) -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
 <script>
 (function () {
   if (!('modelContext' in navigator) || typeof navigator.modelContext.provideContext !== 'function') {
     return;
   }
   var lang = (document.documentElement.getAttribute('lang') || 'fr').toLowerCase().slice(0, 2);
-  var langs = ['fr', 'en', 'de', 'es'];
+  {{- with $regional }}
+  var fullTag = (document.documentElement.getAttribute('lang') || '').toLowerCase();
+  var tagToLang = {{ . | jsonify | safeJS }};
+  if (tagToLang[fullTag]) lang = tagToLang[fullTag];
+  {{- end }}
+  var langs = [{{ range $i, $k := $keys }}{{ if $i }}, {{ end }}'{{ $k }}'{{ end }}];
   if (langs.indexOf(lang) < 0) lang = 'fr';
   var base = '/' + lang;
   function go(path) {
+    {{- with $paths }}
+    var localized = {{ . | jsonify | safeJS }}[path];
+    if (localized) { window.location.assign(localized); return { ok: true, url: localized }; }
+    {{- end }}
     // The blog (and the calculator it hosts) only exists in fr and en;
     // de / es pages link to the English one.
     var url = (path.indexOf('/blog/') === 0 && lang !== 'fr' && lang !== 'en' ? '/en' : base) + path;
@@ -65,11 +103,11 @@
         },
         {
           name: 'switch_language',
-          description: 'Switch the site to French (fr), English (en), German (de) or Spanish (es) and navigate to that language home page.',
+          description: 'Switch the site to French (fr), English (en), German (de){{ if $regional }}, Spanish (es){{ range $tag, $key := $regional }}, Dutch {{ if eq $tag "nl-be" }}for Belgium{{ else }}for the Netherlands{{ end }} ({{ $key }}){{ end }}{{ else }} or Spanish (es){{ end }} and navigate to that language home page.',
           inputSchema: {
             type: 'object',
             properties: {
-              lang: { type: 'string', enum: ['fr', 'en', 'de', 'es'], description: 'Target language code.' }
+              lang: { type: 'string', enum: [{{ range $i, $k := $keys }}{{ if $i }}, {{ end }}'{{ $k }}'{{ end }}], description: 'Target language code.' }
             },
             required: ['lang'],
             additionalProperties: false

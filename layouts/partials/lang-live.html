@@ -1,0 +1,7 @@
+{{- /* Whether a language site is live: its home page is part of the build.
+       A draft home is left out of production builds (no -D), so a locale
+       whose home is still a draft (the Dutch ones, SPEC.md D3) is hidden
+       from the switcher, alias redirects, WebMCP and sitemaps, and renders
+       no 404 page. `hugo -D` / `hugo server -D` builds it for review.
+       Context: a site (e.g. site, or one of hugo.Sites). Returns a bool. */ -}}
+{{- return (gt (len (where .Pages "Kind" "home")) 0) -}}

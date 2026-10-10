@@ -1,0 +1,5 @@
+{{- /* BCP 47 tag for a page's language, for hreflang, sitemaps, <html lang>
+       and schema inLanguage. Defaults to the language key (fr, en, de, es);
+       the Dutch locales set params.hreflang (nl-BE, nl-NL) because their
+       keys (nl-be, nl) are URL prefixes, not region tags. Context: a page. */ -}}
+{{- return (.Site.Params.hreflang | default .Language.Lang) -}}

@@ -1,4 +1,4 @@
-{{- /* Inline SVG flag for a language code (string arg: "fr" | "en" | "de" | "es").
+{{- /* Inline SVG flag for a language code (string arg: "fr" | "en" | "de" | "es" | "nl-be" | "nl").
        Inlined (not emoji) so it renders identically on every OS — regional
        -indicator flag emoji don't display on Windows. */ -}}
 {{- $lang := . -}}
@@ -19,6 +19,18 @@
   <svg class="lang-flag" viewBox="0 0 3 2" width="22" height="15" role="img" aria-hidden="true" focusable="false">
     <rect width="3" height="2" fill="#AA151B"/>
     <rect width="3" height="1" y="0.5" fill="#F1BF00"/>
+  </svg>
+{{- else if eq $lang "nl-be" -}}
+  <svg class="lang-flag" viewBox="0 0 3 2" width="22" height="15" role="img" aria-hidden="true" focusable="false">
+    <rect width="1" height="2" x="0" fill="#000"/>
+    <rect width="1" height="2" x="1" fill="#FDDA24"/>
+    <rect width="1" height="2" x="2" fill="#EF3340"/>
+  </svg>
+{{- else if eq $lang "nl" -}}
+  <svg class="lang-flag" viewBox="0 0 9 6" width="22" height="15" role="img" aria-hidden="true" focusable="false">
+    <rect width="9" height="2" y="0" fill="#AE1C28"/>
+    <rect width="9" height="2" y="2" fill="#fff"/>
+    <rect width="9" height="2" y="4" fill="#21468B"/>
   </svg>
 {{- else -}}
   {{- /* English → United Kingdom flag (Union Jack) */ -}}

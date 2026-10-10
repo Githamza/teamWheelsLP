@@ -6,6 +6,19 @@
   <meta name="robots" content="noindex" />
   <meta charset="utf-8" />
   {{/* Smart language detection for root redirect */}}
+  {{- /* Live languages only (partials/lang-live.html). Regional locales
+         (nl-be → nl-BE, nl → nl-NL) are matched on the full browser tag
+         first; the regional block is only emitted once one is live, so the
+         output is unchanged until then. */ -}}
+  {{- $keys := slice -}}
+  {{- $regional := dict -}}
+  {{- range hugo.Sites -}}
+    {{- if partialCached "lang-live.html" . .Language.Lang -}}
+      {{- $key := .Language.Lang -}}
+      {{- $keys = $keys | append $key -}}
+      {{- with .Params.hreflang -}}{{- $regional = merge $regional (dict (lower .) $key) -}}{{- end -}}
+    {{- end -}}
+  {{- end }}
   <script>
     (function () {
       try {
@@ -18,7 +31,7 @@
         }
 
         function pickLang() {
-          var supported = ["fr", "en", "de", "es"];
+          var supported = [{{ range $i, $k := $keys }}{{ if $i }}, {{ end }}"{{ $k }}"{{ end }}];
           if (preferred && supported.indexOf(preferred) >= 0) return preferred;
 
           var candidates = [];
@@ -27,6 +40,10 @@
           if (navigator.userLanguage) candidates.push(navigator.userLanguage);
 
           for (var i = 0; i < candidates.length; i++) {
+          {{- with $regional }}
+            var full = String(candidates[i] || "").toLowerCase();
+            if ({{ . | jsonify | safeJS }}[full]) return {{ . | jsonify | safeJS }}[full];
+          {{- end }}
             var primary = normalizePrimary(candidates[i]);
             if (supported.indexOf(primary) >= 0) return primary;
           }

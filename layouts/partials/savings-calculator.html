@@ -18,7 +18,7 @@
     {{ $calcJS = $calcJS | fingerprint "sha512" }}
   {{ end }}
 
-  <section id="{{ if eq $lang `fr` }}calculateur{{ else }}calculator{{ end }}" class="savings-calculator" data-lang="{{ $lang }}" data-currency="{{ if eq $lang `fr` }}EUR{{ else }}GBP{{ end }}">
+  <section id="{{ if eq $lang `fr` }}calculateur{{ else }}calculator{{ end }}" class="savings-calculator" data-lang="{{ $lang }}" data-currency="{{ if in (slice `fr` `nl-be` `nl`) $lang }}EUR{{ else }}GBP{{ end }}">
     <div class="container container-delta">
       <div class="sc-head text-center">
         <p class="subtitle">{{ .Params.intro_subtitle | default (i18n "sc_intro_subtitle") }}</p>
