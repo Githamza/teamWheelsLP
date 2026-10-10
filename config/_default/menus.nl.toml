@@ -57,7 +57,7 @@ weight = 3
 # ── Resources ▾ ──
 [[main]]
 identifier = "resources"
-name = "Resources"
+name = "Kennisbank"
 weight = 4
 
 [[main]]

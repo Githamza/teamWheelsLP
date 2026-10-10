@@ -37,15 +37,15 @@ work_process:
       image_alt: "Een carpoolrit voor het woon-werkverkeer zoeken in de TeamWheels-bot"
       content: "Gebruik de bot om uw rit aan te bieden of om beschikbare carpoolritten in de buurt te zoeken."
 
-    - title: "Vraag aan en bevestig"
+    - title: "Aanvragen en bevestigen"
       image: "images/how-it-works/03.png"
       image_alt: "De bestuurder bevestigt een carpoolaanvraag in Teams"
       content: "Vraag om mee te rijden. De bestuurder bevestigt, en u kunt samen vertrekken."
 
-    - title: "Volg uw impact op"
+    - title: "Volg uw impact"
       image: "images/how-it-works/dashboard.png"
       image_alt: "Beheerdersdashboard van TeamWheels: gedeelde ritten en vermeden CO₂"
-      content: "Volg de vermeden CO₂-uitstoot en de carpoolstatistieken op in het beheerdersdashboard."
+      content: "Houd de vermeden CO₂-uitstoot en de carpoolstatistieken bij in het beheerdersdashboard."
 
 
 # image_and_content_block
@@ -55,7 +55,7 @@ image_and_content_blocks:
     title: "TeamWheels werkt in Microsoft Teams"
     image: "images/how-it-works/01.jpg"
     content_position: "left"
-    content: "Onze app is gevalideerd door Microsoft en beschikbaar in de Microsoft Teams Store. Ze is eenvoudig te installeren en te gebruiken voor al uw medewerkers.
+    content: "Onze app is gevalideerd door Microsoft en beschikbaar in de Microsoft Teams Store. De app is eenvoudig te installeren en te gebruiken voor al uw medewerkers.
     "
 
   - enable: true
@@ -115,7 +115,7 @@ faq:
   - question: "Hoe werkt carpoolen in Microsoft Teams?"
     answer: "Een Teams-beheerder installeert TeamWheels in ongeveer 5 minuten vanuit de Microsoft Teams Store. Daarna bieden medewerkers ritten aan of zoeken ze er een via een chatbot in Teams: de bot koppelt collega's op basis van route en tijden, coördineert de dagelijkse ritten en stuurt herinneringen, zonder dat iemand Teams moet verlaten of een aparte app moet installeren."
   - question: "Hoelang duurt het om TeamWheels uit te rollen?"
-    answer: "Ongeveer 5 minuten. De app is gevalideerd door Microsoft en beschikbaar in de Microsoft Teams Store: een Teams-beheerder installeert ze in uw bestaande Microsoft 365-omgeving, zonder IT-project, zonder infrastructuur en zonder veranderingstraject."
+    answer: "Ongeveer 5 minuten. De app is gevalideerd door Microsoft en beschikbaar in de Microsoft Teams Store: een Teams-beheerder installeert de app in uw bestaande Microsoft 365-omgeving, zonder IT-project, zonder infrastructuur en zonder veranderingstraject."
   - question: "Hebben medewerkers een apart account of een aparte app nodig?"
     answer: "Nee. Medewerkers gebruiken TeamWheels in Microsoft Teams met hun bestaande werkaccount, via single sign-on met Microsoft Entra ID. Niets te downloaden, geen nieuw wachtwoord om te onthouden."
   - question: "Hoe worden carpoolers aan elkaar gekoppeld?"
@@ -124,7 +124,7 @@ faq:
 call_to_action:
   enable: true
   title: "🚀 Klaar om het woon-werkverkeer anders aan te pakken?"
-  subtitle: "Sluit aan bij de bedrijven die carpoolen voor hun teams eenvoudig maken en hun CO₂-uitstoot verlagen. <br><br> <strong>Lanceringsaanbod:</strong> 30 dagen gratis + begeleide installatie."
+  subtitle: "Sluit u aan bij de bedrijven die carpoolen voor hun teams eenvoudig maken en hun CO₂-uitstoot verlagen. <br><br> <strong>Introductieaanbod:</strong> 30 dagen gratis + begeleide installatie."
   button_label : "Persoonlijke demo aanvragen →"
   button_link : "contact/"
   image : "images/cta.png"

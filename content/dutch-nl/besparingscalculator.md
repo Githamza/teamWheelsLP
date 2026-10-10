@@ -44,7 +44,7 @@ De tool werkt in vier stappen.
 
 1. **Uw organisatie:** land, valuta, aantal medewerkers, woon-werkafstand (heen en terug) en aantal werkdagen per jaar.
 2. **Huidige mobiliteit:** het aandeel medewerkers dat nu alleen met de auto rijdt, uw doelstelling voor carpoolen, het gemiddelde verbruik en de brandstofprijs.
-3. **Resultaten:** vermeden CO₂ per jaar, besparing per carpooler, vrijgekomen parkeerplaatsen, een indicatief werkgeversvoordeel en een duurzaamheidsscore op 100.
+3. **Resultaten:** vermeden CO₂ per jaar, besparing per carpooler, vrijgekomen parkeerplaatsen, een indicatief werkgeversvoordeel en een duurzaamheidsscore van 0 tot 100.
 4. **Rapport:** u ontvangt een pdf met uw aannames en resultaten, klaar voor de directie of een overleg over mobiliteit.
 
 Alle resultaten passen zich direct aan wanneer u een aanname wijzigt. Zo kunt u tijdens een overleg met HR, finance en duurzaamheid verschillende scenario's naast elkaar zetten.

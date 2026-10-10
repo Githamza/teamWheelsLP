@@ -9,7 +9,7 @@ keywords: "demo carpoolen bedrijf, carpool app demo, gratis proefperiode carpool
 contact:
   subtitle: "30 dagen gratis"
   title: "Start uw gratis proefperiode"
-  description: "Vul dit formulier in en een lid van ons team neemt binnen 24 uur contact met u op om uw TeamWheels-omgeving in te richten. <br><br> ✅ 30 dagen gratis &nbsp;&nbsp; ✅ Begeleide installatie &nbsp;&nbsp; ✅ Zonder verplichtingen"
+  description: "Vul dit formulier in en een lid van ons team neemt binnen 24 uur contact met u op om uw TeamWheels-omgeving in te richten. <br><br> ✅ 30 dagen gratis &nbsp;&nbsp; ✅ Begeleide installatie &nbsp;&nbsp; ✅ Vrijblijvend"
 
 # contact info
 contact_info:
@@ -27,7 +27,7 @@ services:
     - "Tot 30% minder vraag naar parkeerplaatsen"
     - "Automatisch overzicht van de gedeelde ritten en Scope 3-rapportage"
 
-faq_title: "Veelgestelde vragen voor u contact opneemt"
+faq_title: "Veelgestelde vragen voordat u contact opneemt"
 faq:
   - question: "Wat gebeurt er nadat ik het formulier verstuur?"
     answer: "Een medewerker van TeamWheels reageert binnen 24 uur op werkdagen om een demo van 30 minuten in te plannen. Wilt u liever meteen de gratis proefperiode starten? Dan sturen we u de installatielink voor de Microsoft Teams Store en een configuratiegids voor uw Teams-beheerder."

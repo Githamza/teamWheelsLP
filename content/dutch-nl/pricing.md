@@ -35,8 +35,8 @@ pricing_card:
     currency: ""
     old_price: "€5 /medewerker /maand excl. btw"
     price: "€3 /medewerker /maand excl. btw"
-    promo_label: "Promotie: -40 %"
-    promo_note: "Exclusief aanbod, beperkt in de tijd"
+    promo_label: "Actie: -40%"
+    promo_note: "Exclusieve actie, voor beperkte tijd"
     populer: true
     content: "Carpoolen voor bedrijven, eenvoudig en efficiënt"
     buy_now_btn_link: "contact"
@@ -46,11 +46,11 @@ pricing_card:
     features: |
       * **Alles uit de proefperiode, plus:**
       * Onbeperkt aantal medewerkers
-      * Realtime opvolging van de CO₂-impact
+      * CO₂-impact realtime volgen
       * Automatisch overzicht van de gedeelde ritten
       * Single sign-on met Microsoft Entra ID
       * Uitgebreide statistieken
-      * Prioritaire support
+      * Support met voorrang
       * Gegevens gehost in Frankrijk
 
   - name: "Enterprise"
@@ -87,19 +87,19 @@ faq:
       content: "Installeer TeamWheels vanuit de [Microsoft Teams Store](https://teams.microsoft.com/l/app/1e3c893b-b545-49ed-a249-1c7a25b0fa46): de proefperiode start meteen, zonder verkoopgesprek. U krijgt 30 dagen volledige toegang, zonder creditcard en geheel vrijblijvend. Na de proefperiode beslist u zelf of u verdergaat."
 
     - title: "Is er een minimumaantal medewerkers?"
-      content: "Nee, TeamWheels past zich aan organisaties van elke grootte aan. Of u nu met 10 of met 10.000 bent, de prijs blijft dezelfde: € 3 per medewerker per maand excl. btw (promotieprijs, in plaats van € 5 excl. btw)."
+      content: "Nee, TeamWheels past zich aan organisaties van elke grootte aan. Of u nu 10 of 10.000 medewerkers heeft, de prijs blijft gelijk: € 3 per medewerker per maand excl. btw (actieprijs, in plaats van € 5 excl. btw)."
 
     - title: "Kan ik op elk moment opzeggen?"
       content: "Ja, u kunt uw abonnement op elk moment opzeggen, zonder kosten en zonder opzegtermijn. Uw gegevens worden verwijderd conform de AVG."
 
     - title: "Kan TeamWheels onderdeel zijn van ons mobiliteitsbeleid?"
-      content: "Ja. TeamWheels houdt bij welke ritten uw medewerkers delen, zodat u carpoolen kunt opnemen in uw mobiliteitsbeleid, naast de reiskostenvergoeding, en inzicht heeft in het woon-werkverkeer van uw organisatie. De besparingen (parkeerplaatsen, duurzaamheid, werkgeversimago) zijn doorgaans ruim hoger dan de kosten van de oplossing. Met de [besparingscalculator](/nl/besparingscalculator/) maakt u een eerste raming."
+      content: "Ja. TeamWheels houdt bij welke ritten uw medewerkers delen, zodat u carpoolen kunt opnemen in uw mobiliteitsbeleid, naast de reiskostenvergoeding, en inzicht heeft in het woon-werkverkeer van uw organisatie. De besparingen (parkeerplaatsen, duurzaamheid, werkgeversimago) zijn doorgaans ruim hoger dan de kosten van de oplossing. Met de [besparingscalculator](/nl/besparingscalculator/) maakt u een eerste schatting."
 
     - title: "Hoe verloopt de installatie?"
       content: "In 5 minuten: een Teams-beheerder installeert de app vanuit de [Microsoft Teams Store](https://marketplace.microsoft.com/nl-nl/product/WA200012036), stelt de basisinstellingen in en u kunt starten. Tijdens de proefperiode begeleiden we u bovendien gratis."
 
     - title: "Welke betaalmethoden accepteert u?"
-      content: "We accepteren creditcards (Visa, Mastercard) en bankoverschrijvingen voor jaarcontracten. Facturatie per maand of per jaar, naar keuze."
+      content: "We accepteren creditcards (Visa, Mastercard) en betaling via bankoverboeking voor jaarcontracten. U kiest zelf of u per maand of per jaar gefactureerd wordt."
 
 # CTA
 call_to_action:

@@ -1,7 +1,7 @@
 ---
 title: "TeamWheels | Carpoolen voor bedrijven in Microsoft Teams"
 seoTitle: "Carpoolen voor bedrijven in Microsoft Teams | TeamWheels"
-description: "Carpoolen voor bedrijven, direct in Microsoft Teams: minder woon-werkverkeer met de auto, minder parkeerdruk en inzicht in uw CO₂. Binnen 5 minuten live."
+description: "Carpoolen voor bedrijven, direct in Microsoft Teams: minder woon-werkverkeer met de auto, minder parkeerdruk en inzicht in uw CO₂-uitstoot."
 keywords: "carpoolen, carpoolen voor bedrijven, carpool app, carpoolapp voor werkgevers, woon-werkverkeer, carpoolen woon-werkverkeer, werkgebonden personenmobiliteit, WPM, mobiliteitsbeleid, Microsoft Teams app, Scope 3 woon-werkverkeer, parkeerdruk"
 # Draft until Hamza publishes the nl-NL locale (SPEC.md D3): while this home
 # is a draft, nothing under /nl/ is built in production.
@@ -143,7 +143,7 @@ image_and_content_blocks:
 
   - enable: true
     subtitle: "Veiligheid en compliance"
-    title: "Een veilige oplossing, ontworpen met uw IT-afdeling in gedachten"
+    title: "Een veilige oplossing, ontworpen met het oog op uw IT-afdeling"
     image: "images/why_use_teamWheels.png"
     content_position: "left"
     content: "Gepubliceerd in de Microsoft Teams Store met een [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/nl-nl/microsoft-365-app-certification/teams/hmz-digital-teamwheels), inloggen via Microsoft Entra ID, gegevens gehost in Frankrijk en AVG-proof: een veilige oplossing voor bedrijven, zonder extra wachtwoorden. Grote organisaties, campussen en bedrijventerreinen kunnen TeamWheels ook onder hun eigen naam inzetten met het [white-labelplatform](https://www.teamwheelsapp.com/en/white-label-carpool-platform/) (Engelstalig).
