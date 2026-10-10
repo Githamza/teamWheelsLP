@@ -13,8 +13,7 @@ keywords: "reiskostenvergoeding 2027, reiskostenvergoeding 2026, onbelaste reisk
 verify:
   - "Onbelast maximum per km in 2027 (€ 0,25 structureel via Belastingplan 2027): definitieve wet, rijksoverheid.nl / Staatsblad, verwacht december 2026"
   - "Onbelaste thuiswerkvergoeding per dag in 2027: belastingdienst.nl (tarieven loonheffingen 2027), verwacht december 2026"
-  - "Reiskosten- en thuiswerkvergoeding op dezelfde dag vanaf 2027: Belastingplan 2027 / rijksoverheid.nl, verwacht december 2026"
-  - "Geen wettelijke plicht tot reiskostenvergoeding (volgt uit cao of arbeidsovereenkomst): officiële bron op rijksoverheid.nl"
+  - "Samenloop reiskosten- en thuiswerkvergoeding ongewijzigd na aanneming Belastingplan 2027 (Staatsblad, december 2026)"
 faq:
   - question: "Wat is de onbelaste reiskostenvergoeding in 2027?"
     answer: "In 2027 is de onbelaste reiskostenvergoeding naar verwachting € 0,25 per kilometer, hetzelfde maximum dat je als werkgever met terugwerkende kracht vanaf 1 januari 2026 mag toepassen (Staatscourant 2026, 18302). Het kabinet wil dit bedrag via het Belastingplan 2027 in de wet vastleggen; de Tweede en Eerste Kamer stemmen daarover in november en december 2026. Controleer het definitieve bedrag voor 2027 op rijksoverheid.nl zodra de wet is aangenomen."
@@ -60,7 +59,7 @@ Sinds 2022 bestaat er naast de reiskostenvergoeding een onbelaste thuiswerkvergo
 
 De hoofdregel: je mag niet voor dezelfde dag beide vrijstellingen toepassen. De wetgever schreef het zo op: "Voor eenzelfde werkdag kan niet tegelijkertijd de vrijstelling voor een thuiswerkkostenvergoeding als de vrijstelling voor een reiskostenvergoeding woon-werkverkeer van toepassing zijn" ([Memorie van toelichting Belastingplan 2022](https://zoek.officielebekendmakingen.nl/kst-35927-3.html)). Werkt iemand een dag deels thuis en maakt hij daarna een zakelijke reis die geen woon-werkverkeer is, dan kun je beide vrijstellingen wel toepassen.
 
-Bij een hybride werknemer werkt het dus per dag: kantoordagen krijgen een reiskostenvergoeding, thuiswerkdagen een thuiswerkvergoeding. Na de evaluatie van de werkkostenregeling ligt [het toestaan van beide vergoedingen op dezelfde dag](https://www.rijksoverheid.nl/actueel/nieuws/2026/06/12/werkkostenregeling-eenvoudiger-met-aanpassing-belastingvrije-personeelskorting) op tafel. Of dat vanaf 2027 verandert, staat nog niet vast [[VERIFY: samenloop reiskosten- en thuiswerkvergoeding op dezelfde dag vanaf 2027, Belastingplan 2027 op rijksoverheid.nl, verwacht december 2026]].
+Bij een hybride werknemer werkt het dus per dag: kantoordagen krijgen een reiskostenvergoeding, thuiswerkdagen een thuiswerkvergoeding. Na de evaluatie van de werkkostenregeling ligt [het toestaan van beide vergoedingen op dezelfde dag](https://www.rijksoverheid.nl/actueel/nieuws/2026/06/12/werkkostenregeling-eenvoudiger-met-aanpassing-belastingvrije-personeelskorting) op tafel. Het [Belastingplan 2027](https://www.tweedekamer.nl/kamerstukken/wetsvoorstellen/detail?cfg=wetsvoorsteldetails&qry=wetsvoorstel%3A37022), dat het kabinet op 15 september 2026 indiende, bevat die wijziging niet. Tenzij de Kamer het wetsvoorstel nog aanpast, mag je ook in 2027 per dag óf een onbelaste reiskostenvergoeding voor woon-werkverkeer óf een thuiswerkvergoeding geven, niet allebei [[VERIFY: samenloop ongewijzigd na aanneming Belastingplan 2027, Staatsblad december 2026]].
 
 ## Kosten per werknemer: een rekenvoorbeeld
 
@@ -106,7 +105,7 @@ In 2027 is de onbelaste reiskostenvergoeding naar verwachting € 0,25 per kilom
 
 ### Is een reiskostenvergoeding verplicht voor de werkgever?
 
-De fiscale regels bepalen hoeveel je onbelast mag vergoeden, niet of je moet vergoeden. Of een werknemer recht heeft op een reiskostenvergoeding, volgt uit de cao of de arbeidsovereenkomst [[VERIFY: geen wettelijke plicht tot reiskostenvergoeding, rijksoverheid.nl]]. Een hogere vergoeding dan het onbelaste maximum mag ook, maar het meerdere is loon, tenzij je het als eindheffingsloon aanwijst in de vrije ruimte van de werkkostenregeling.
+De fiscale regels bepalen hoeveel je onbelast mag vergoeden, niet of je moet vergoeden. Of een werknemer recht heeft op een reiskostenvergoeding, volgt uit de cao of de arbeidsovereenkomst. Een wettelijke plicht is er niet: werkgevers zijn "evenals onder het huidige recht, niet verplicht tot het verstrekken van een (hogere) reiskostenvergoeding" ([memorie van toelichting Belastingplan 2027](https://www.tweedekamer.nl/downloads/document?id=2026D43301)). Volgens [RVO](https://www.rvo.nl/onderwerpen/start-met-verduurzamen-werkgebonden-personenmobiliteit/reiskostenvergoeding) is een deel van de werkgevers wel verplicht "omdat de CAO dit voorschrijft". Een hogere vergoeding dan het onbelaste maximum mag ook, maar het meerdere is loon, tenzij je het als eindheffingsloon aanwijst in de vrije ruimte van de werkkostenregeling.
 
 ### Hoe bereken je een vaste reiskostenvergoeding?
 
