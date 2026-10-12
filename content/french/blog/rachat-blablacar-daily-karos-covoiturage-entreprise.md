@@ -2,7 +2,7 @@
 title: "Rachat de BlaBlaCar Daily par Karos : que faire pour votre covoiturage d'entreprise (ex-Klaxit, BBD) ?"
 seoTitle: "Karos rachète BlaBlaCar Daily : que faire en entreprise ?"
 date: 2026-09-30
-lastmod: 2026-09-30
+lastmod: 2026-10-12
 draft: false
 description: "Karos reprend BlaBlaCar Daily (ex-Klaxit) : contrat, données salariés, justificatifs FMD, dépendance à un acteur unique. Checklist de bascule et alternatives pour l'employeur."
 image: "images/blog/enterprise-carpooling.jpg"
@@ -26,6 +26,8 @@ faq:
 ---
 
 # Rachat de BlaBlaCar Daily par Karos : que faire pour votre covoiturage d'entreprise (ex-Klaxit, BBD) ?
+
+{{< cta-demo title="Votre entreprise utilisait BlaBlaCar Daily ?" text="Contrat employeur, données des salariés, justificatifs FMD : ce que change le rachat pour vous, les trois options possibles et un plan de migration en 2 semaines." src="rachat-karos-top" href="/fr/alternative-blablacar-daily-karos-entreprises/" label="Voir l'alternative pour les entreprises" >}}
 
 *Le 20 juillet 2026, BlaBlaCar a annoncé vouloir céder BlaBlaCar Daily — son application de covoiturage domicile-travail, qui avait déjà absorbé Klaxit en 2023 — à son principal concurrent, Karos. Si l'opération aboutit, les trois grands noms du covoiturage du quotidien en France ne formeront plus qu'un seul acteur. Pour les salariés, l'application changera peut-être de logo. Pour les RH et responsables mobilité, les questions sont plus concrètes : que devient notre contrat, où vont les données de nos salariés, nos justificatifs de Forfait Mobilités Durables tiennent-ils, et avons-nous encore envie de dépendre d'un seul opérateur ? Voici ce que l'on sait, ce que l'on ne sait pas encore, et la checklist pour décider maintenant.*
 

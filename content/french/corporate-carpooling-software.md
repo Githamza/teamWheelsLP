@@ -1,14 +1,18 @@
 ---
-title: "Logiciel de Covoiturage Entreprise pour Microsoft Teams | TeamWheels"
-seoTitle: "Logiciel de covoiturage entreprise | TeamWheels"
+title: "Logiciel de covoiturage entreprise intégré à Microsoft Teams | TeamWheels"
+seoTitle: "Logiciel de covoiturage entreprise intégré à Microsoft Teams"
 description: "Logiciel de covoiturage entreprise intégré à Microsoft Teams : mise en relation des trajets, justificatifs FMD, reporting CO₂, 3 € HT/collaborateur/mois (promo), déployé en 5 minutes."
 keywords: "logiciel covoiturage entreprise, outil covoiturage entreprise, application covoiturage entreprise, covoiturage entreprise, plateforme covoiturage entreprise, covoiturage domicile-travail, logiciel covoiturage salariés, Forfait Mobilité Durable, covoiturage Microsoft Teams"
 layout: "benefits"
-lastmod: 2026-09-07
+lastmod: 2026-10-12
+# 12/10/2026 (rapport SEO hebdo) : page cible unique de « logiciel covoiturage entreprise »
+# (la page marque blanche rankait à sa place). La page marque blanche renvoie ici ;
+# ne pas re-cibler ce mot-clé ailleurs. Bloc comparatif Comovee : uniquement des faits
+# publics, sinon « non communiqué », aucun prix concurrent.
 
 banner:
   subtitle: "Pour les équipes RH, Mobilité & RSE"
-  title: "Logiciel de Covoiturage Entreprise, Intégré à Microsoft Teams"
+  title: "Logiciel de Covoiturage Entreprise Intégré à Microsoft Teams"
   description: "Lancez un programme de covoiturage domicile-travail que vos salariés utilisent vraiment — sans nouvelle app, sans conduite du changement. Mise en relation des trajets, baisse du besoin en parking et reporting RSE, directement dans Microsoft Teams. Opérationnel en 5 minutes."
   button:
     enable: true
@@ -120,6 +124,32 @@ image_and_content_blocks:
 
     Adopté par des entreprises en France et au Canada. Vous voulez vos chiffres ? [Simulez vos économies →](/fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/) ou lisez le [guide complet du covoiturage entreprise →](/fr/blog/covoiturage-entreprise-guide-2026/).
     "
+    button:
+      enable: false
+
+  - enable: true
+    anchor: "comparatif-comovee"
+    subtitle: "Comparatif"
+    title: "TeamWheels ou Comovee : quel logiciel de covoiturage entreprise choisir ?"
+    content_position: "left"
+    content: |
+      Comovee et TeamWheels sont deux logiciels de covoiturage dédiés à l'employeur : dans les deux cas, vos salariés covoiturent entre collègues, pas avec un réseau grand public. Ils diffèrent surtout par l'endroit où le programme vit au quotidien. Le tableau ci-dessous s'appuie sur les informations publiques des éditeurs au 12 octobre 2026 ; quand une information n'est pas vérifiable publiquement, nous écrivons « non communiqué ».
+
+      | | **TeamWheels** | **Comovee** |
+      |---|---|---|
+      | **Où les salariés covoiturent** | Dans Microsoft Teams : application Teams validée par Microsoft, bot conversationnel | Application de covoiturage dédiée, séparée des outils de travail |
+      | **Intégration Microsoft Teams** | Native, installée depuis AppSource dans votre tenant | Non communiqué |
+      | **Comptes salariés** | Compte Microsoft 365 existant (SSO Entra ID), aucun compte à créer | Compte sur la plateforme ; SSO non communiqué |
+      | **Parking économisé** | Jusqu'à 30 % de besoin en parking en moins ; trajets partagés et covoitureurs actifs suivis par site dans le tableau de bord | Non communiqué |
+      | **Données géographiques (SIG)** | Appariement par secteur de départ, itinéraire, site et horaires ; pas de module de cartographie SIG, mais des exports de trajets, kilomètres évités et CO₂ pour votre plan de mobilité | Non communiqué |
+      | **Justificatifs FMD** | Relevés mensuels nominatifs prêts pour la paie | Non communiqué |
+      | **Reporting CO₂ / CSRD** | Export poste 7 du bilan GES (trajets, km, CO₂) | Non communiqué |
+      | **Hébergement des données** | Dans votre tenant Microsoft 365, données hébergées en France | Non communiqué |
+      | **Tarif public** | 3 € HT par collaborateur et par mois (promo, au lieu de 5 € HT), essai gratuit de 30 jours | Voir l'éditeur |
+
+      **Comovee peut mieux vous convenir** si vos salariés n'utilisent pas Microsoft Teams au quotidien : TeamWheels vit dans Teams, et un outil autonome sera alors plus adapté. **TeamWheels a l'avantage** si vous êtes sous Microsoft 365 et que votre enjeu est l'adoption : le covoiturage se passe dans l'outil que vos équipes ont déjà ouvert toute la journée, sans application à installer ni compte à créer.
+
+      *Les marques citées appartiennent à leurs propriétaires respectifs. Vérifiez toujours les conditions en vigueur auprès de chaque éditeur.*
     button:
       enable: false
 

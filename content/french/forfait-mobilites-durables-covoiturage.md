@@ -1,10 +1,10 @@
 ---
-title: "Forfait Mobilités Durables 2026 : le guide employeur | TeamWheels"
-seoTitle: "Forfait mobilités durables 2026 : guide employeur"
-description: "Prime covoiturage 2026 et forfait mobilités durables : montants, plafonds URSSAF, cumuls, mise en 4 étapes et justificatifs pour l'employeur."
-keywords: "forfait mobilités durables, forfait mobilité durable 2026, forfait mobilité durable urssaf, montant forfait mobilité durable 2026, plafond FMD 2026, forfait mobilités durables covoiturage, fmd covoiturage, prime covoiturage 2026, prime covoiturage employeur, justificatif covoiturage fmd, attestation covoiturage employeur, preuve de covoiturage"
+title: "Forfait mobilités durables & covoiturage 2026 : montant, cumul, justificatifs automatiques | TeamWheels"
+seoTitle: "Forfait mobilités durables & covoiturage 2026 : montant, cumul, justificatifs automatiques"
+description: "FMD covoiturage 2026 : montant, plafonds URSSAF et cumuls, attestation sur l'honneur ou preuve de trajet, et justificatifs automatiques prêts pour la paie."
+keywords: "forfait mobilités durables, forfait mobilité durable 2026, forfait mobilité durable urssaf, montant forfait mobilité durable 2026, plafond FMD 2026, forfait mobilités durables covoiturage, fmd covoiturage, prime covoiturage 2026, prime covoiturage employeur, justificatif covoiturage fmd, attestation covoiturage employeur, attestation sur l'honneur covoiturage, modèle attestation covoiturage fmd, preuve de covoiturage, preuve de trajet covoiturage"
 layout: "benefits"
-lastmod: 2026-09-07
+lastmod: 2026-10-12
 # L'article de blog « Forfait Mobilité Durable : le guide complet » (slug 2025)
 # a été fusionné dans cette page pilier en septembre 2026. L'alias est relatif à
 # la racine de langue ; la 301 serveur est déclarée dans static/.htaccess.
@@ -13,8 +13,8 @@ aliases:
 
 banner:
   subtitle: "Pour les RH, DAF & responsables mobilité"
-  title: "Forfait Mobilités Durables & Covoiturage : le Guide de l'Employeur 2026"
-  description: "Le forfait mobilités durables (FMD) permet de financer le covoiturage domicile-travail de vos salariés jusqu'à 600 € par an exonérés de cotisations — 900 € en cumul avec l'abonnement transport. Ce guide couvre les montants 2026, les règles URSSAF, les cumuls, la mise en place en 4 étapes et le point qui bloque : la preuve des trajets."
+  title: "Forfait Mobilités Durables & Covoiturage 2026 : Montant, Cumul, Justificatifs Automatiques"
+  description: "Le forfait mobilités durables (FMD) permet de financer le covoiturage domicile-travail de vos salariés jusqu'à 600 € par an exonérés de cotisations — 900 € en cumul avec l'abonnement transport. Ce guide couvre les montants 2026, les règles URSSAF, les cumuls, la mise en place en 4 étapes et le point qui bloque : prouver le covoiturage (attestation sur l'honneur ou preuve de trajet), et comment automatiser ces justificatifs."
   button:
     enable: true
     button_label: "Demander une démo"
@@ -158,9 +158,38 @@ image_and_content_blocks:
       enable: false
 
   - enable: true
+    anchor: "prouver-covoiturage"
+    subtitle: "Attestation & preuve de trajet"
+    title: "Comment prouver le covoiturage pour le FMD (attestation, preuve de trajet)"
+    content_position: "left"
+    content: |
+      Le Code du travail (article R. 3261-13-2) demande à l'employeur de recueillir, pour chaque bénéficiaire du FMD, **une attestation sur l'honneur ou un justificatif d'utilisation** du covoiturage. Les deux sont recevables ; ils ne se valent pas en cas de contrôle URSSAF.
+
+      | Mode de preuve | Ce que c'est | Solidité en contrôle | Charge pour les RH |
+      |---|---|---|---|
+      | **Attestation sur l'honneur** | Document signé par le salarié qui déclare covoiturer pour ses trajets domicile-travail | Recevable mais déclarative : l'inspecteur peut demander des éléments de cohérence | Une collecte par salarié et par an, relances comprises |
+      | **Preuve de trajet du registre de preuve de covoiturage** | Trajets certifiés par les opérateurs inscrits sur [covoiturage.beta.gouv.fr](https://covoiturage.beta.gouv.fr/), classes A, B ou C | Forte : trajets datés, identifiés, géolocalisés selon la classe | Faible, si votre opérateur est inscrit |
+      | **Relevé de trajets d'une plateforme de covoiturage** | Relevé nominatif et daté des trajets organisés dans l'outil de l'employeur | Forte : chaque trajet a une trace, le montant suit l'usage réel | Nulle : le relevé est produit automatiquement chaque mois |
+
+      **Que doit contenir une attestation sur l'honneur de covoiturage ?** Aucun modèle officiel n'est imposé. Pour qu'elle soit exploitable, elle mentionne au minimum :
+
+      * l'identité du salarié et de l'employeur ;
+      * l'année ou la période couverte ;
+      * le trajet concerné (commune de départ, site de travail) et le rôle du salarié (conducteur, passager ou les deux) ;
+      * le nombre approximatif de jours covoiturés, cohérent avec le montant versé si votre FMD est calculé au jour ou au kilomètre ;
+      * l'engagement du salarié à signaler tout changement de situation ;
+      * la date et la signature.
+
+      *Exemple de formulation :* « Je soussigné(e) [Nom Prénom], salarié(e) de [Entreprise] sur le site de [site], atteste sur l'honneur avoir utilisé le covoiturage, en tant que [conducteur / passager], pour mes trajets entre mon domicile à [commune] et mon lieu de travail, environ [nombre] jours au cours de l'année [année]. Je m'engage à informer mon employeur de tout changement. Fait à [lieu], le [date]. Signature. »
+
+      **Le bon réflexe :** gardez l'attestation sur l'honneur comme filet de sécurité pour les trajets organisés hors de tout outil (covoiturage entre voisins, application grand public non reliée à l'employeur), et appuyez le reste sur des preuves de trajet automatiques. Dans les deux cas, conservez les pièces **au moins trois ans**, durée de prescription d'un contrôle URSSAF.
+    button:
+      enable: false
+
+  - enable: true
     anchor: "preuve-des-trajets"
     subtitle: "Le vrai sujet"
-    title: "Justifier les Trajets de Covoiturage"
+    title: "Justificatifs FMD Automatiques : Zéro Attestation à Collecter"
     image: "images/microsoft-teams.png"
     content_position: "left"
     content: "Pour que l'exonération tienne en cas de contrôle URSSAF, l'employeur doit pouvoir **prouver la réalité des trajets covoiturés**. C'est le point qui bloque le plus souvent — et celui qui décide de la charge administrative des RH. Trois options, du plus fragile au plus robuste :
@@ -233,6 +262,8 @@ faq:
     answer: "Quatre conditions : un dispositif formalisé (accord d'entreprise, accord de branche ou décision unilatérale après consultation du CSE), un justificatif par salarié et par an (attestation sur l'honneur ou justificatif d'utilisation du mode de transport), le respect des plafonds d'exonération, et la conservation des preuves pendant au moins trois ans. Tout montant versé au-delà des plafonds est réintégré dans l'assiette des cotisations."
   - question: "Quels justificatifs demander pour le covoiturage dans le cadre du FMD ?"
     answer: "L'employeur doit pouvoir prouver la réalité des trajets covoiturés. Trois options : l'attestation sur l'honneur du salarié (acceptée mais fragile en cas de contrôle URSSAF), les preuves certifiées du registre de preuve de covoiturage (classes A, B ou C selon la fiabilité), ou les relevés automatiques d'une plateforme de covoiturage — la solution la plus robuste et la moins chronophage. Les justificatifs se conservent au moins trois ans."
+  - question: "Faut-il une attestation sur l'honneur pour le covoiturage dans le cadre du FMD ?"
+    answer: "L'employeur doit recueillir, pour chaque bénéficiaire, une attestation sur l'honneur ou un justificatif d'utilisation du covoiturage (article R. 3261-13-2 du Code du travail). L'attestation sur l'honneur suffit légalement, mais elle est déclarative. Un relevé de trajets d'une plateforme de covoiturage ou une preuve du registre de preuve de covoiturage la remplace avantageusement : il est nominatif, daté et proportionnel aux trajets réellement effectués. Aucun modèle officiel d'attestation n'est imposé."
   - question: "Le FMD est-il obligatoire pour l'employeur ?"
     answer: "Non. Dans le secteur privé, le forfait mobilités durables est facultatif. En revanche, s'il est mis en place, il doit l'être à conditions égales pour tous les salariés éligibles, et la prise en charge de 50 % de l'abonnement aux transports en commun reste, elle, obligatoire."
   - question: "Peut-on cumuler le FMD avec l'abonnement transport ou une aide au covoiturage ?"
