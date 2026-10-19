@@ -18,7 +18,7 @@ image_and_content_blocks:
     title: "Le covoiturage directement dans Microsoft Teams"
     image: "images/why_use_teamWheels.png"
     content_position: "right"
-    content: "Pourquoi obliger vos équipes à installer une app de plus ? TeamWheels, le [logiciel de covoiturage entreprise](/fr/corporate-carpooling-software/) conçu pour Microsoft Teams, s'intègre nativement à l'outil qu'elles utilisent déjà au quotidien.
+    content: "Pourquoi obliger vos équipes à installer une app de plus ? TeamWheels, l'[outil de covoiturage entreprise](/fr/corporate-carpooling-software/) conçu pour Microsoft Teams, s'intègre nativement à l'outil qu'elles utilisent déjà au quotidien.
 
     * **Zéro friction** — Pas de nouvelle app à installer, pas de nouveau compte. Le covoiturage démarre en un clic
 

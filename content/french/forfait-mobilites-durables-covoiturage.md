@@ -4,7 +4,7 @@ seoTitle: "Forfait mobilités durables 2026 : guide employeur"
 description: "Prime covoiturage 2026 et forfait mobilités durables : montants, plafonds URSSAF, cumuls, mise en 4 étapes et justificatifs pour l'employeur."
 keywords: "forfait mobilités durables, forfait mobilité durable 2026, forfait mobilité durable urssaf, montant forfait mobilité durable 2026, plafond FMD 2026, forfait mobilités durables covoiturage, fmd covoiturage, prime covoiturage 2026, prime covoiturage employeur, justificatif covoiturage fmd, attestation covoiturage employeur, preuve de covoiturage"
 layout: "benefits"
-lastmod: 2026-09-07
+lastmod: 2026-10-19
 # L'article de blog « Forfait Mobilité Durable : le guide complet » (slug 2025)
 # a été fusionné dans cette page pilier en septembre 2026. L'alias est relatif à
 # la racine de langue ; la 301 serveur est déclarée dans static/.htaccess.
@@ -23,6 +23,25 @@ banner:
   image: "images/photos/commute-reporting-dashboard.jpg"
 
 image_and_content_blocks:
+  # Bloc réponse placé en tête du corps (brief SEO du 19/10/2026) : la requête
+  # « prime covoiturage 2026 » demande un montant, pas un guide de mise en place.
+  - enable: true
+    anchor: "montant-prime-covoiturage-2026"
+    title: "Montant de la prime covoiturage 2026"
+    content_position: "left"
+    content: |
+      En 2026, la prime covoiturage versée par l'employeur, le forfait mobilités durables, est exonérée jusqu'à **600 € par an et par salarié**, et jusqu'à **900 €** en cumul avec la prise en charge de l'abonnement transport.
+
+      | Situation (employeur privé, 2026) | Plafond exonéré par salarié et par an |
+      |---|---|
+      | Forfait mobilités durables pour le covoiturage, versé seul | **600 €** |
+      | FMD cumulé avec la prise en charge de l'abonnement transports en commun | **900 €** au total, part employeur de l'abonnement comprise |
+      | Plafond global d'exonération FMD + prime de transport (carburant, recharge) | **600 €** au total |
+
+      Source : [URSSAF, frais professionnels — forfait mobilités durables](https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/frais-professionnels.html#ancre-FMD) et [service-public.gouv.fr](https://entreprendre.service-public.gouv.fr/vosdroits/F33808). La prime nationale de 100 € pour les nouveaux conducteurs a été supprimée fin janvier 2025 ; le détail des montants et des cumuls est donné [plus bas](#montants).
+    button:
+      enable: false
+
   - enable: true
     anchor: "definition"
     subtitle: "La réponse courte"
@@ -225,18 +244,20 @@ image_and_content_blocks:
 
 faq_title: "Questions fréquentes sur le forfait mobilités durables"
 faq:
-  - question: "Quel est le montant du forfait mobilités durables en 2026 ?"
-    answer: "Le plafond d'exonération est de 600 € par an et par salarié lorsque le forfait mobilités durables est versé seul (dont 300 € maximum au titre de la prime carburant), et de 900 € par an en cas de cumul avec la prise en charge de l'abonnement aux transports en commun. Ces plafonds sont fixés par la loi de finances et peuvent évoluer : vérifiez-les chaque année sur service-public.gouv.fr ou urssaf.fr."
+  - question: "Quel est le montant de la prime covoiturage en 2026 ?"
+    answer: "La prime covoiturage que verse l'employeur en 2026, c'est le forfait mobilités durables : il est exonéré de cotisations et d'impôt jusqu'à 600 € par an et par salarié lorsqu'il est versé seul, et jusqu'à 900 € par an en cas de cumul avec la prise en charge de l'abonnement aux transports en commun. Ces plafonds sont fixés par la loi de finances et peuvent évoluer : vérifiez-les chaque année sur service-public.gouv.fr ou urssaf.fr."
   - question: "Le covoiturage est-il éligible au forfait mobilités durables ?"
     answer: "Oui. Depuis la loi d'orientation des mobilités (LOM), le covoiturage domicile-travail est un mode éligible au forfait mobilités durables, que le salarié soit conducteur ou passager. L'employeur peut le financer jusqu'à 600 € par an et par salarié exonérés de cotisations sociales et d'impôt sur le revenu — 900 € par an en cas de cumul avec la prise en charge de l'abonnement aux transports en commun."
   - question: "Que demande l'URSSAF pour exonérer le forfait mobilités durables ?"
     answer: "Quatre conditions : un dispositif formalisé (accord d'entreprise, accord de branche ou décision unilatérale après consultation du CSE), un justificatif par salarié et par an (attestation sur l'honneur ou justificatif d'utilisation du mode de transport), le respect des plafonds d'exonération, et la conservation des preuves pendant au moins trois ans. Tout montant versé au-delà des plafonds est réintégré dans l'assiette des cotisations."
   - question: "Quels justificatifs demander pour le covoiturage dans le cadre du FMD ?"
     answer: "L'employeur doit pouvoir prouver la réalité des trajets covoiturés. Trois options : l'attestation sur l'honneur du salarié (acceptée mais fragile en cas de contrôle URSSAF), les preuves certifiées du registre de preuve de covoiturage (classes A, B ou C selon la fiabilité), ou les relevés automatiques d'une plateforme de covoiturage — la solution la plus robuste et la moins chronophage. Les justificatifs se conservent au moins trois ans."
-  - question: "Le FMD est-il obligatoire pour l'employeur ?"
-    answer: "Non. Dans le secteur privé, le forfait mobilités durables est facultatif. En revanche, s'il est mis en place, il doit l'être à conditions égales pour tous les salariés éligibles, et la prise en charge de 50 % de l'abonnement aux transports en commun reste, elle, obligatoire."
-  - question: "Peut-on cumuler le FMD avec l'abonnement transport ou une aide au covoiturage ?"
+  - question: "La prime covoiturage est-elle obligatoire pour l'employeur ?"
+    answer: "Non. Dans le secteur privé, la prime covoiturage (le forfait mobilités durables) est facultative. En revanche, s'il est mis en place, il doit l'être à conditions égales pour tous les salariés éligibles, et la prise en charge de 50 % de l'abonnement aux transports en commun reste, elle, obligatoire."
+  - question: "Peut-on cumuler le forfait mobilités durables et l'abonnement transport ?"
     answer: "Le FMD se cumule avec la prise en charge obligatoire de l'abonnement aux transports en commun, dans une limite globale de 900 € par an. Il peut aussi se cumuler avec les aides locales versées par certaines collectivités via des plateformes partenaires, qui sont des dispositifs indépendants. La prime covoiturage nationale de 100 € a, elle, pris fin en janvier 2025. Le cumul avec la prime de transport carburant reste plafonné à 600 € par an au total."
+  - question: "Quel tarif de covoiturage au kilomètre en 2026 ?"
+    answer: "Il n'existe pas de tarif officiel. Le Code des transports autorise seulement le partage des frais : la participation demandée aux passagers ne doit pas dépasser le coût du trajet, que l'on peut estimer avec le barème kilométrique 2026 (0,636 €/km pour une 5 CV jusqu'à 5 000 km), réparti entre tous les occupants, conducteur compris. Côté employeur, un FMD calculé au kilomètre se situe en pratique entre 0,10 et 0,25 € par kilomètre covoituré."
   - question: "Conducteur et passager ont-ils tous les deux droit au FMD ?"
     answer: "Oui. Le forfait mobilités durables couvre le covoiturage domicile-travail pour le conducteur comme pour le passager. Un salarié qui alterne les deux rôles reste éligible ; ce qui compte, c'est la réalité des trajets covoiturés, que l'employeur doit pouvoir justifier."
   - question: "Comment TeamWheels automatise-t-il les justificatifs FMD ?"

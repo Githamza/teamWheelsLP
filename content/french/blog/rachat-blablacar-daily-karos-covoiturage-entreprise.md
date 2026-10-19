@@ -35,6 +35,8 @@ faq:
 > - Application, tarifs et fusion des comptes **ne seront précisés qu'une fois l'opération finalisée**.
 > - Pour l'employeur, quatre sujets : **contrat**, **données salariés**, **justificatifs FMD**, **dépendance à un acteur B2C unique**. Les trois premiers se sécurisent en quelques jours ; le quatrième est une décision de fond.
 
+{{< cta-demo title="Vous êtes client BlaBlaCar Daily ou Karos ?" text="Karos, BlaBlaCar Daily, Comovee, TeamWheels : le comparatif côté employeur (données, FMD, Microsoft Teams, sites isolés, reporting CSRD) pour décider avant la fin de l'intégration." src="rachat-karos-top" href="/fr/alternative-blablacar-daily-karos-entreprises/?src=rachat-karos-top" label="Voir le comparatif des alternatives" >}}
+
 ## Chronologie : de Klaxit à Karos en trois étapes
 
 | Date | Événement | Ce que ça signifie |
@@ -148,7 +150,7 @@ Autrement dit : **aucune urgence à paniquer, mais aucune raison d'attendre** po
 
 ## Pourquoi TeamWheels vit dans Teams
 
-La plupart des programmes de covoiturage d'entreprise échouent pour une raison simple : les salariés n'installent pas une application de plus. TeamWheels est un [logiciel de covoiturage entreprise](/fr/corporate-carpooling-software/) qui fonctionne **directement dans Microsoft Teams** : les collègues publient et trouvent un trajet là où ils travaillent déjà, l'appariement se fait par trajet, horaires et jours sur site, et l'employeur récupère chaque mois des relevés prêts pour le versement du FMD en paie.
+La plupart des programmes de covoiturage d'entreprise échouent pour une raison simple : les salariés n'installent pas une application de plus. TeamWheels est une [application de covoiturage entreprise](/fr/corporate-carpooling-software/) qui fonctionne **directement dans Microsoft Teams** : les collègues publient et trouvent un trajet là où ils travaillent déjà, l'appariement se fait par trajet, horaires et jours sur site, et l'employeur récupère chaque mois des relevés prêts pour le versement du FMD en paie.
 
 Pour une entreprise qui sort de BlaBlaCar Daily ou de Klaxit, trois différences comptent :
 

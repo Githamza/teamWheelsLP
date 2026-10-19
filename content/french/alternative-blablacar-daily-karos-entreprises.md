@@ -1,13 +1,13 @@
 ---
-title: "Votre contrat BlaBlaCar Daily Entreprises après le rachat par Karos : que faire ?"
-seoTitle: "Alternative à BlaBlaCar Daily après le rachat par Karos"
+title: "Alternative à BlaBlaCar Daily et Karos pour les entreprises (2026)"
+seoTitle: "Alternative à BlaBlaCar Daily et Karos pour les entreprises (2026)"
 description: "Alternative à BlaBlaCar Daily après le rachat par Karos : les options d'un employeur et un comparatif honnête pour votre covoiturage entreprise."
 slug: "alternative-blablacar-daily-karos-entreprises"
 date: 2026-10-05
-lastmod: 2026-10-05
+lastmod: 2026-10-19
 draft: false
 layout: "pillar"
-keywords: ["alternative karos", "blablacar daily alternative", "karos ou blablacar daily", "alternative blablacar daily entreprise", "covoiturage entreprise"]
+keywords: ["alternative karos", "alternative blablacar daily", "blablacar daily alternative", "karos ou blablacar daily", "alternative blablacar daily entreprise", "covoiturage entreprise"]
 
 # Page « décision » du lot 2 de la spec SEO du 06/10/2026. L'article d'actualité
 # /fr/blog/rachat-blablacar-daily-karos-covoiturage-entreprise/ traite l'événement ;
@@ -47,20 +47,21 @@ Pour un contrat employeur en cours, cela signifie une seule chose : **les condit
 
 **3. Changer de prestataire.** Passer sur un outil dédié à l'employeur, intégré à vos outils de travail. *Avantage* : vous maîtrisez les données et produisez vous-même les justificatifs. *Limites* : le covoiturage se fait entre collègues de votre organisation, pas avec un bassin ouvert de covoitureurs, et une migration demande quelques semaines de pilote.
 
-## Comparatif : Karos, BlaBlaCar Daily et TeamWheels
+## Comparatif : Karos, BlaBlaCar Daily, Comovee et TeamWheels
 
-Le tableau repose sur les informations publiques des éditeurs et de la presse au 30 septembre 2026. Quand une information n'est pas vérifiable publiquement, nous écrivons « non communiqué » plutôt que de la déduire. Vérifiez les conditions en vigueur auprès de chaque fournisseur.
+Le tableau repose sur les informations publiques des éditeurs et de la presse au 19 octobre 2026. Quand une information n'est pas vérifiable publiquement, nous écrivons « non communiqué » plutôt que de la déduire. Nous ne publions aucun prix concurrent. Vérifiez les conditions en vigueur auprès de chaque fournisseur.
 
 <div class="table-scroll">
 
-| | **Karos** | **BlaBlaCar Daily** (historique) | **TeamWheels** |
-|---|---|---|---|
-| **Modèle** | Application grand public, réseau ouvert, avec une offre dédiée aux entreprises | Application grand public, réseau ouvert (reprise par Karos en négociation) | Outil employeur : covoiturage entre collègues de l'organisation |
-| **Intégration SI RH** | Non communiqué | Non communiqué | SSO Entra ID ; API et intégrations RH sur l'offre Entreprise |
-| **Microsoft Teams** | Non communiqué | Non communiqué | Application Teams validée par Microsoft |
-| **Données et reporting FMD** | Non communiqué | Preuves de trajets via l'opérateur, détail non communiqué | Relevés mensuels prêts pour la paie, données hébergées en France |
-| **Marque blanche** | Non communiqué | Non communiqué | Oui, sur devis |
-| **Sites isolés** | Non communiqué | Non communiqué | Adapté si assez de salariés partent du même bassin |
+| | **Karos** | **BlaBlaCar Daily** | **Comovee** | **TeamWheels** |
+|---|---|---|---|---|
+| **Modèle** | B2C : application grand public en réseau ouvert, avec des offres employeurs et collectivités | B2C : application grand public en réseau ouvert, trajets subventionnés par employeurs et collectivités (reprise par Karos) | B2B : plateforme employeur, covoiturage entre collègues | B2B : outil employeur, covoiturage entre collègues de l'organisation |
+| **Intégration SI RH** | Non communiqué | Non communiqué | Non communiqué (inscription par adresse e-mail professionnelle) | SSO Entra ID ; API et intégrations RH sur l'offre Entreprise |
+| **Microsoft Teams** | Non communiqué | Non communiqué | Non communiqué | Application Teams validée par Microsoft |
+| **Marque blanche** | Pour les autorités de transport (ex. Île-de-France Mobilités) ; employeurs : non communiqué | Non communiqué | Non communiqué | Oui, sur devis |
+| **Sites isolés hors centre-ville** | Mis en avant pour le périurbain, le rural et les zones d'activité | Mis en avant du périurbain au rural et pour les zones d'activité | Non communiqué | Adapté si assez de salariés partent du même bassin |
+| **Reporting CSRD / scope 3** | Tableau de bord employeur (covoiturages, CO₂ évité) ; CSRD / scope 3 : non communiqué | Tableau de bord employeur avec CO₂ évité ; CSRD / scope 3 : non communiqué | Estimation CO₂ ; CSRD / scope 3 : non communiqué | Export scope 3 poste 7 (trajets, km, CO₂) pour le bilan GES et la CSRD |
+| **Tarification** | Pas de grille employeur publique ; offres d'essai sur certains territoires | Pas de grille employeur publique | Sur devis | Publique : essai gratuit 30 jours, puis 3 € HT par collaborateur et par mois (tarif promo) |
 
 </div>
 
