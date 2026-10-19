@@ -169,6 +169,17 @@
   </FilesMatch>
 </IfModule>
 
+##### noindex on downloadable PDFs (/downloads/*.pdf)
+## "plan de mobilité employeur modèle" ranked through the bare PDF (no CTA, no
+## navigation) instead of the article that offers it. Keep the file downloadable
+## but out of the index so the article carries the query. The only PDFs on the
+## site live in /downloads/, so matching the extension is enough.
+<IfModule mod_headers.c>
+  <FilesMatch "\.pdf$">
+    Header set X-Robots-Tag "noindex"
+  </FilesMatch>
+</IfModule>
+
 ##### Agent-discovery Link headers (RFC 8288 / RFC 9727)
 ## Advertise machine-readable resources so AI agents and automated
 ## clients can find the API catalog, agent-skills index, sitemap,

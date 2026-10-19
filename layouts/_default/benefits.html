@@ -10,6 +10,9 @@
             <div class="pe-0 pe-lg-5">
               <p class="subtitle">{{ .subtitle | markdownify }}</p>
               <h1 class="title text-xl mb-3">{{ .title | markdownify }}</h1>
+              {{/* Optional one-line pointer to a sibling page, e.g. the white-label
+                   page sending employers to the corporate carpooling page. */}}
+              {{ with .notice }}<p class="banner-notice mb-3">{{ . | markdownify }}</p>{{ end }}
               <p class="mb-4">{{ .description | markdownify }}</p>
               {{ with .button }}
                 {{ if .enable }}

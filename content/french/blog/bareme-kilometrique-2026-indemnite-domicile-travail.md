@@ -48,6 +48,18 @@ Le barème kilométrique ne bouge pas d'un centime en 2026. Pour la troisième a
 
 Le barème sert à deux usages bien distincts, et c'est souvent là que naît la confusion. D'un côté, un salarié qui opte pour les « frais réels » dans sa déclaration de revenus l'utilise pour déduire ses frais de trajet domicile-travail. De l'autre, un employeur s'en sert pour calculer une **indemnité kilométrique** : le remboursement qu'il verse à un salarié contraint d'utiliser son véhicule personnel pour un déplacement professionnel — y compris, sous conditions, pour se rendre au travail. C'est cette seconde utilisation qui nous intéresse ici.
 
+## Tarif du covoiturage au km en 2026
+
+Le tarif du covoiturage n'est pas le barème fiscal. **En 2026, aucun tarif officiel au kilomètre n'existe pour le covoiturage : le conducteur peut seulement partager ses frais**, sans réaliser de bénéfice (article L. 3132-1 du Code des transports). Le plafond se calcule à partir du barème ci-dessus, divisé entre tous les occupants, conducteur compris :
+
+| Véhicule 5 CV, trajets jusqu'à 5 000 km/an | Participation maximale par passager |
+|---|---|
+| Conducteur + 1 passager | **0,318 €/km** (0,636 € ÷ 2) |
+| Conducteur + 2 passagers | **0,212 €/km** (0,636 € ÷ 3) |
+| Conducteur + 3 passagers | **0,159 €/km** (0,636 € ÷ 4) |
+
+Ces montants sont des plafonds, pas des prix conseillés. Entre collègues, l'employeur peut aussi financer le trajet lui-même via le [forfait mobilités durables](/fr/forfait-mobilites-durables-covoiturage/) (jusqu'à 600 € par an exonérés), souvent calculé entre 0,10 et 0,25 € par kilomètre covoituré.
+
 ## Le calcul, étape par étape
 
 Prenons un cas concret : un salarié qui parcourt **9 000 km par an** avec un véhicule de **5 CV** pour se rendre au travail — un aller-retour quotidien d'environ 18 km, sur 250 jours ouvrés.

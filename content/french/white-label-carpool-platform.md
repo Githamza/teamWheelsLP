@@ -1,7 +1,7 @@
 ---
 title: "Plateforme de Covoiturage en Marque Blanche | TeamWheels"
-description: "Achetez une plateforme de covoiturage en marque blanche au lieu de la développer : votre marque, votre tenant Microsoft 365, intégration RH, opérationnelle en quelques jours. Comparatif, tarifs, achat."
-keywords: "covoiturage marque blanche, application covoiturage marque blanche, plateforme covoiturage marque blanche, plateforme de covoiturage entreprise, plateforme covoiturage personnalisable, app covoiturage personnalisée entreprise, covoiturage intégration RH, acheter logiciel covoiturage marque blanche"
+description: "Plateforme de covoiturage en marque blanche (white label) : votre marque, votre tenant Microsoft 365, intégration RH, en ligne en quelques jours."
+keywords: "covoiturage marque blanche, plateforme covoiturage marque blanche, application covoiturage marque blanche, covoiturage white label, white label carpooling, plateforme covoiturage personnalisable, covoiturage à votre marque, covoiturage marque blanche intégration RH"
 layout: "benefits"
 lastmod: 2026-09-07
 
@@ -15,6 +15,7 @@ banner:
     icon: "fas fa-arrow-right"
     link: "contact/"
   image: "images/photos/colleagues-carpooling.jpg"
+  notice: "Vous cherchez un logiciel de covoiturage pour vos propres salariés ? → [Logiciel de covoiturage entreprise](/fr/corporate-carpooling-software/)"
 
 image_and_content_blocks:
   - enable: true
@@ -191,7 +192,7 @@ faq:
     answer: "Non. TeamWheels vit dans Microsoft Teams, que vos salariés utilisent déjà tous les jours. C'est la principale raison pour laquelle les programmes en marque blanche sur TeamWheels dépassent 40 % de participation, contre moins de 18 % pour les apps de covoiturage autonomes qui exigent un téléchargement et un nouveau compte."
 
 howto:
-  name: "Lancer une plateforme de covoiturage entreprise en marque blanche"
+  name: "Lancer une plateforme de covoiturage en marque blanche"
   description: "Comment déployer en quelques jours une plateforme de covoiturage salariés à votre marque, intégrée RH, avec un SaaS en marque blanche plutôt qu'un développement sur mesure."
   totalTime: "P14D"
   tool:
