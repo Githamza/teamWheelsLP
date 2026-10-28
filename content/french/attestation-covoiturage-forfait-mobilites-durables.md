@@ -16,6 +16,10 @@ keywords: ["attestation covoiturage", "attestation sur l'honneur covoiturage", "
 # 21/02/2026) ; sources détaillées dans la PR.
 # Le modèle téléchargeable vit dans static/downloads/ (PDF en noindex via
 # .htaccess, comme le modèle de plan de mobilité).
+# Les deux fichiers sont déclarés au sitemap (demande du 28/10/2026).
+sitemap_files:
+  - "/downloads/modele-attestation-covoiturage-fmd-teamwheels.pdf"
+  - "/downloads/modele-attestation-covoiturage-fmd-teamwheels.docx"
 faq_title: "Questions fréquentes sur l'attestation de covoiturage"
 faq:
   - question: "Faut-il une attestation pour chaque trajet de covoiturage ?"
