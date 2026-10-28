@@ -2,7 +2,7 @@
 title: "Covoiturage en entreprise : le guide complet 2026"
 translationKey: "corporate-carpooling-guide-2026"
 date: 2026-04-29
-lastmod: 2026-09-07
+lastmod: 2026-10-28
 draft: false
 description: "Covoiturage domicile-travail en entreprise : FMD, loi LOM, choix de l'outil de covoiturage, organisation des trajets et lancement en 5 étapes. Le guide 2026 pour RH et DAF."
 image: "images/blog/corporate-carpooling.jpg"
@@ -87,6 +87,8 @@ Pour une entreprise, la différence est considérable : un salarié qui prend un
 > **Le forfait mobilités durables (FMD) en clair** — [guide employeur FMD & covoiturage →](/fr/forfait-mobilites-durables-covoiturage/)
 >
 > Instauré par la **loi LOM** (loi d'orientation des mobilités, 2019), le forfait mobilités durables permet à tout employeur privé ou public de prendre en charge les frais de covoiturage domicile-travail de ses salariés, conducteurs comme passagers. Le montant versé est exonéré de cotisations sociales et d'impôt sur le revenu dans la limite de **600 € par an et par salarié** — **900 €** en cumul avec la prise en charge de l'abonnement aux transports en commun. Ces plafonds sont fixés par la loi de finances et révisés chaque année.
+>
+> Pour justifier chaque versement, l'employeur recueille au moins une fois par an une [attestation de covoiturage](/fr/attestation-covoiturage-forfait-mobilites-durables/) ou un relevé de trajets pour chaque salarié bénéficiaire.
 
 ---
 
