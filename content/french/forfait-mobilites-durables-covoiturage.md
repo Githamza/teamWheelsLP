@@ -4,7 +4,7 @@ seoTitle: "Forfait mobilités durables 2026 : guide employeur"
 description: "Prime covoiturage 2026 et forfait mobilités durables : montants, plafonds URSSAF, cumuls, mise en 4 étapes et justificatifs pour l'employeur."
 keywords: "forfait mobilités durables, forfait mobilité durable 2026, forfait mobilité durable urssaf, montant forfait mobilité durable 2026, plafond FMD 2026, forfait mobilités durables covoiturage, fmd covoiturage, prime covoiturage 2026, prime covoiturage employeur, justificatif covoiturage fmd, attestation covoiturage employeur, preuve de covoiturage"
 layout: "benefits"
-lastmod: 2026-10-19
+lastmod: 2026-10-28
 # L'article de blog « Forfait Mobilité Durable : le guide complet » (slug 2025)
 # a été fusionné dans cette page pilier en septembre 2026. L'alias est relatif à
 # la racine de langue ; la 301 serveur est déclarée dans static/.htaccess.
@@ -122,7 +122,7 @@ image_and_content_blocks:
 
       **2. Un justificatif par salarié et par an.** L'employeur doit recueillir, pour chaque bénéficiaire, **une attestation sur l'honneur ou un justificatif de l'utilisation du mode de transport** (article R. 3261-13-2 du Code du travail). Pour le covoiturage, l'URSSAF admet :
 
-      * l'attestation sur l'honneur du salarié — recevable, mais purement déclarative, donc fragile en cas de contrôle ;
+      * l'attestation sur l'honneur du salarié — recevable, mais purement déclarative, donc fragile en cas de contrôle (modèle d'[attestation de covoiturage](/fr/attestation-covoiturage-forfait-mobilites-durables/) à télécharger) ;
       * l'attestation ou le relevé de trajets d'une plateforme de covoiturage — nominatif, daté, la solution recommandée ;
       * les preuves certifiées du registre de preuve de covoiturage (classes A, B ou C selon la fiabilité de l'identification et de la géolocalisation).
 
@@ -144,7 +144,7 @@ image_and_content_blocks:
 
     * **FMD + abonnement transports en commun** — Cumul possible, plafond global porté à **900 €/an** après déduction de votre prise en charge obligatoire de 50 % de l'abonnement
 
-    * **FMD + prime de transport (carburant, recharge)** — Plafond global maintenu à 600 €/an, dont 300 € maximum pour le carburant
+    * **FMD + prime de transport (carburant, recharge)** — Plafond global maintenu à 600 €/an, dont 300 € maximum pour le carburant (règles et conditions de la [prime transport côté employeur](/fr/prime-transport-employeur/))
 
     * **FMD + aides locales au covoiturage** — Cumulables : certaines collectivités rémunèrent les trajets via des plateformes partenaires, indépendamment du FMD versé par l'employeur. La prime covoiturage nationale de 100 € (financée par les certificats d'économies d'énergie) a pris fin en janvier 2025 et ne fait plus partie des dispositifs à cumuler
 
