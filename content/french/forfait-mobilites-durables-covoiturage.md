@@ -144,7 +144,7 @@ image_and_content_blocks:
 
     * **FMD + abonnement transports en commun** — Cumul possible, plafond global porté à **900 €/an** après déduction de votre prise en charge obligatoire de 50 % de l'abonnement
 
-    * **FMD + prime de transport (carburant, recharge)** — Plafond global maintenu à 600 €/an, dont 300 € maximum pour le carburant
+    * **FMD + prime de transport (carburant, recharge)** — Plafond global maintenu à 600 €/an, dont 300 € maximum pour le carburant (règles et conditions de la [prime transport côté employeur](/fr/prime-transport-employeur/))
 
     * **FMD + aides locales au covoiturage** — Cumulables : certaines collectivités rémunèrent les trajets via des plateformes partenaires, indépendamment du FMD versé par l'employeur. La prime covoiturage nationale de 100 € (financée par les certificats d'économies d'énergie) a pris fin en janvier 2025 et ne fait plus partie des dispositifs à cumuler
 
