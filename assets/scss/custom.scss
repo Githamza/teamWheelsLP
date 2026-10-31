@@ -961,3 +961,157 @@ $promo-indigo-dark: #2b2d7c;
 
   a { font-weight: 600; text-decoration: underline; }
 }
+
+// ============================================================
+// Homepage proof strip (layouts/partials/home-proof.html)
+// ------------------------------------------------------------
+// Key numbers + steps + security line right under the hero, so
+// visitors who never scroll far (76% on /en/, Clarity Oct 2026)
+// still see the proof. Static text, no JS: nothing shifts.
+// ============================================================
+.home-proof {
+  padding: 2.5rem 0 1rem;
+
+  &__title {
+    margin: 0 0 1.25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: $text-dark;
+  }
+
+  &__facts {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 0 0 1.5rem;
+  }
+
+  &__fact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 1rem 0.75rem;
+    border-radius: 0.75rem;
+    background: rgba($color-primary, 0.06);
+    text-align: center;
+  }
+
+  &__value {
+    font-family: "Catamaran", "Catamaran Fallback", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.1;
+    color: $color-primary;
+  }
+
+  &__label {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #444;
+
+    p { margin: 0; }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem 1.5rem;
+  }
+
+  &__steps {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
+  }
+
+  &__steps-title {
+    margin: 0;
+    font-weight: 700;
+
+    a { color: $text-dark; }
+    a:hover { color: $color-primary; }
+    i { font-size: 0.75em; margin-left: 0.2rem; }
+  }
+
+  &__step-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.35rem 0.8rem 0.35rem 0.35rem;
+      border: 1px solid rgba(11, 19, 43, 0.12);
+      border-radius: 50px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: $text-dark;
+      background: #fff;
+
+      &:hover,
+      &:focus-visible {
+        border-color: rgba($color-primary, 0.45);
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #fff;
+    background: $color-primary;
+  }
+
+  &__security {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+
+    a { color: $text-dark; }
+    a:hover { color: $color-primary; }
+    i { color: $color-primary; margin-right: 0.4rem; }
+  }
+
+  @media (max-width: 991.98px) {
+    &__facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    &__bottom { justify-content: center; }
+    &__steps { justify-content: center; }
+  }
+
+  @media (max-width: 575.98px) {
+    padding-top: 1.75rem;
+
+    &__value { font-size: 1.6rem; }
+    &__step-list { justify-content: center; }
+  }
+}
+
+// Headings and subtitles that visitors clicked although they were plain
+// text (Clarity, Oct 2026) now link; keep their look, hint on hover.
+.subtitle-link,
+.title-link {
+  color: inherit;
+
+  &:hover,
+  &:focus-visible {
+    color: $color-primary;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+}

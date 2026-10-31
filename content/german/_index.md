@@ -7,6 +7,7 @@ keywords: "Fahrgemeinschafts-App für Unternehmen, Mitfahrgelegenheit für Mitar
 # banner
 banner:
   subtitle: "Das Vertrauen von HR- und Nachhaltigkeitsteams in Europa und Nordamerika"
+  subtitle_link: "#proof"   # the hero line links to the proof strip under the hero
   title: 'Fahrgemein­schaften für Mitarbeitende – direkt in <span class="teams-brand">Microsoft Teams</span>'
   description: "Senken Sie Scope-3-Emissionen, reduzieren Sie den Parkplatzbedarf um 30 % und sparen Sie Ihren Mitarbeitenden 2.000 €/Jahr – ohne zusätzliche App, in 5 Minuten eingerichtet."
   button:
@@ -81,14 +82,14 @@ fun_facts:
   title: "Betriebliche Fahrgemeinschaften in Zahlen"
   fact_item:
   - icon: "fas fa-dollar-sign"
-    counter: "2000"
-    counter_suffix: "€"
+    counter: "2.000"
+    counter_suffix: " €"
     counter_prefix: ""
     content: "jährliche Ersparnis pro Mitarbeitendem durch gemeinsame Fahrten"
 
   - icon: "fas fa-parking"
     counter: "30"
-    counter_suffix: "%"
+    counter_suffix: " %"
     counter_prefix: ""
     content: "weniger Parkplatzbedarf an Unternehmensstandorten"
 
@@ -99,8 +100,8 @@ fun_facts:
     content: "CO₂ weniger pro gemeinsamer Pendelfahrt – messbare Scope-3-Wirkung"
 
   - icon: "fas fa-chart-line"
-    counter: "10.6"
-    counter_suffix: "%"
+    counter: "10,6"
+    counter_suffix: " %"
     counter_prefix: "+"
     content: "jährliches Wachstum betrieblicher Fahrgemeinschaften weltweit"
 
@@ -113,6 +114,7 @@ work_process:
 image_and_content_blocks:
   - enable: true
     subtitle: "Warum sich HR- und Nachhaltigkeitsverantwortliche für TeamWheels entscheiden"
+    subtitle_link: "benefits/"
     title: "Fahrgemeinschaften dort, wo Ihre Teams bereits arbeiten"
     image: "images/why_use_teamWheels.png"
     content_position: "right"
@@ -150,6 +152,7 @@ image_and_content_blocks:
       enable: false
 
   - enable: true
+    anchor: "security"   # target of the proof strip security link
     subtitle: "Sicherheit & Compliance auf Enterprise-Niveau"
     title: "Eine sichere, von der IT freigegebene Mobilitätslösung für Mitarbeitende"
     image: "images/why_use_teamWheels.png"

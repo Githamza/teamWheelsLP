@@ -1,0 +1,57 @@
+{{- /*
+  Proof strip under the homepage hero (themes/delta-hugo/layouts/index.html).
+
+  Clarity, Oct 2026: 76% of /en/ visitors never scroll past the first quarter
+  of the page, while the numbers, the "how it works" steps and the security
+  section started at 25%, 32% and 62%. This strip pulls a short version of each
+  right under the hero:
+    - the key numbers  → front matter `fun_facts` (same data as the old section)
+    - the steps        → `work_process` of the how-it-works page, each linking
+                         to that page
+    - the security line → the homepage block with `anchor: "security"`
+
+  The numbers are static on purpose: the theme's counter animation resets them
+  to 0 on the first scroll, which near the top of the page would change their
+  width and shift the layout (CLS).
+
+  The hero subtitle links here (`banner.subtitle_link: "#proof"`).
+*/ -}}
+{{- $facts := .Params.fun_facts -}}
+{{- $how := "" -}}
+{{- with .Params.work_process }}{{ if .enable }}{{ $how = site.GetPage (string .section) }}{{ end }}{{ end -}}
+{{- $hasSecurity := false -}}
+{{- range .Params.image_and_content_blocks }}{{ if and .enable (eq .anchor "security") }}{{ $hasSecurity = true }}{{ end }}{{ end -}}
+{{- if or (and $facts $facts.enable) $how -}}
+<section class="home-proof" id="proof" aria-labelledby="home-proof-title">
+  <div class="container container-delta">
+    {{- with $facts }}{{ if .enable }}
+    <h2 class="home-proof__title" id="home-proof-title">{{ .title | markdownify }}</h2>
+    <ul class="home-proof__facts list-unstyled">
+      {{- range .fact_item }}
+      <li class="home-proof__fact">
+        <span class="home-proof__value">{{ .counter_prefix }}{{ .counter }}{{ .counter_suffix }}</span>
+        <span class="home-proof__label">{{ .content | markdownify }}</span>
+      </li>
+      {{- end }}
+    </ul>
+    {{- end }}{{ end }}
+
+    <div class="home-proof__bottom">
+      {{- with $how }}{{ with .Params.work_process }}
+      <div class="home-proof__steps">
+        <p class="home-proof__steps-title"><a href="{{ $how.RelPermalink }}">{{ .title | markdownify }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
+        <ol class="home-proof__step-list list-unstyled">
+          {{- range $i, $step := .process_item }}
+          <li><a href="{{ $how.RelPermalink }}"><span class="home-proof__step-num" aria-hidden="true">{{ add $i 1 }}</span>{{ $step.title | markdownify }}</a></li>
+          {{- end }}
+        </ol>
+      </div>
+      {{- end }}{{ end }}
+
+      {{- if $hasSecurity }}
+      <p class="home-proof__security"><a href="#security"><i class="fas fa-shield-alt" aria-hidden="true"></i>{{ i18n "home_proof_security" }}</a></p>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{- end -}}

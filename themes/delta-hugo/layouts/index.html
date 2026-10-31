@@ -40,7 +40,9 @@
           class="row align-items-center flex-lg-nowrap text-center text-lg-start">
           <div class="col-lg-6">
             <div class="pe-0 pe-lg-5">
-              <p class="subtitle">{{ .subtitle | markdownify }}</p>
+              {{/* `subtitle_link` turns the line into a link — visitors click it
+                   (Clarity, Oct 2026), so it should lead to the proof. */}}
+              <p class="subtitle">{{ with .subtitle_link }}<a class="subtitle-link" href="{{ if hasPrefix . "#" }}{{ . }}{{ else }}{{ partial "lang-url.html" . }}{{ end }}">{{ end }}{{ .subtitle | markdownify }}{{ with .subtitle_link }}</a>{{ end }}</p>
               <h1 class="title text-xl mb-3">{{ .title | markdownify }}</h1>
               <p class="mb-4">{{ .description | markdownify }}</p>
 
@@ -218,6 +220,12 @@
     </div>
   </section>
 
+  {{/* ── Proof strip: the key numbers, the steps and the security line,
+       directly under the hero. Clarity (Oct 2026): 76% of /en/ visitors
+       never scroll past the first quarter of the page, where these used to
+       start. Replaces the full-width "by the numbers" section. ── */}}
+  {{ partial "home-proof.html" . }}
+
   {{/* ── Full demo video, directly under the hero (click-to-play poster).
        Indexed from its own watch page (/demo/), like the launch video. ── */}}
   {{ if $vdOn }}
@@ -226,7 +234,7 @@
         <div class="row justify-content-center text-center">
           <div class="col-lg-8">
             {{ with $vd.subtitle }}<p class="subtitle">{{ . | markdownify }}</p>{{ end }}
-            <h2 class="h1 title mb-3">{{ $vd.title | markdownify }}</h2>
+            <h2 class="h1 title mb-3">{{ with $vd.watch_page }}<a class="title-link" href="{{ partial "lang-url.html" . }}">{{ end }}{{ $vd.title | markdownify }}{{ with $vd.watch_page }}</a>{{ end }}</h2>
             {{ with $vd.lede }}<p class="mb-4 hero-demo-section__lede">{{ . | markdownify }}</p>{{ end }}
           </div>
         </div>
@@ -438,49 +446,8 @@
   {{ end }}
 
 
-  {{ with .Params.fun_facts }}
-    {{ if .enable }}
-      <section class="section">
-        <div class="container container-delta">
-          <div class="row justify-content-center text-center">
-            <div class="col-lg-10">
-              <div class="section-title">
-                {{ with .subtitle }}
-                  <p class="subtitle">{{ . | markdownify }}</p>
-                {{ end }}
-                <h2 class="title">{{ .title | markdownify }}</h2>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="row gy-3">
-                {{ range .fact_item }}
-                  <div class="col-lg-3 col-sm-6 fact-item-alt">
-                    <div class="block">
-                      {{/* Statistic, not a section heading. These were <h3>s
-                           holding "0 €" / "0 min" until JS ran, so crawlers
-                           (and screen readers) saw a page full of headings
-                           that said nothing. Now: a <p> styled like the old
-                           heading, with the real figure rendered server-side.
-                           js/script.js resets it to 0 and counts back up, so
-                           the animation is unchanged and the value survives
-                           with JS disabled. */}}
-                      <p class="title text-xl fact-counter">
-                        {{- .counter_prefix -}}
-                        <span class="counter" data-count="{{ .counter }}"
-                          >{{ .counter }}</span
-                        >{{- .counter_suffix -}}
-                      </p>
-                      <p class="mb-0">{{ .content | markdownify }}</p>
-                    </div>
-                  </div>
-                {{ end }}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
+  {{/* fun_facts are rendered in the proof strip under the hero
+       (partials/home-proof.html). */}}
 
   {{ with .Params.work_process }}
     {{ if .enable }}
@@ -492,7 +459,7 @@
   {{ range .Params.image_and_content_blocks }}
     {{ with . }}
       {{ if .enable }}
-        <section class="section">
+        <section class="section"{{ with .anchor }} id="{{ . }}"{{ end }}>
           <div class="container container-delta">
             <div class="row gx-4 gx-xl-5 align-items-center">
               <div
@@ -506,8 +473,9 @@
                   {{ end }}
                 {{ end }}">
                 <div class="section-title">
+                  {{ $sl := .subtitle_link }}
                   {{ with .subtitle }}
-                    <p class="subtitle">{{ . | markdownify }}</p>
+                    <p class="subtitle">{{ with $sl }}<a class="subtitle-link" href="{{ partial "lang-url.html" . }}">{{ end }}{{ . | markdownify }}{{ with $sl }}</a>{{ end }}</p>
                   {{ end }}
                   <h2 class="title">{{ .title | markdownify }}</h2>
                 </div>

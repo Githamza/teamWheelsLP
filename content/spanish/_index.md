@@ -7,6 +7,7 @@ keywords: "coche compartido para empresas, carpooling corporativo, carpooling em
 # banner
 banner:
   subtitle: "La confianza de equipos de RR. HH. y Sostenibilidad de toda Europa y Norteamérica"
+  subtitle_link: "#proof"   # the hero line links to the proof strip under the hero
   title: 'Coche compartido para empleados, integrado en <span class="teams-brand">Microsoft Teams</span>'
   description: "Reduzca las emisiones Scope 3, disminuya un 30 % la demanda de aparcamiento y ahorre a cada empleado 2.000 €/año — sin apps adicionales, desplegado en 5 minutos."
   button:
@@ -83,13 +84,13 @@ fun_facts:
   fact_item:
   - icon: "fas fa-dollar-sign"
     counter: "2000"
-    counter_suffix: "€"
+    counter_suffix: " €"
     counter_prefix: ""
     content: "de ahorro anual por empleado gracias a los trayectos compartidos"
 
   - icon: "fas fa-parking"
     counter: "30"
-    counter_suffix: "%"
+    counter_suffix: " %"
     counter_prefix: ""
     content: "de reducción de la demanda de aparcamiento en las sedes corporativas"
 
@@ -100,8 +101,8 @@ fun_facts:
     content: "de CO₂ ahorrados por trayecto compartido: impacto Scope 3 medible"
 
   - icon: "fas fa-chart-line"
-    counter: "10.6"
-    counter_suffix: "%"
+    counter: "10,6"
+    counter_suffix: " %"
     counter_prefix: "+"
     content: "de crecimiento anual en la adopción del carpooling corporativo a nivel mundial"
 
@@ -114,6 +115,7 @@ work_process:
 image_and_content_blocks:
   - enable: true
     subtitle: "Por qué los responsables de RR. HH. y Sostenibilidad eligen TeamWheels"
+    subtitle_link: "benefits/"
     title: "Coche compartido para empleados, justo donde sus equipos ya trabajan"
     image: "images/why_use_teamWheels.png"
     content_position: "right"
@@ -151,6 +153,7 @@ image_and_content_blocks:
       enable: false
 
   - enable: true
+    anchor: "security"   # target of the proof strip security link
     subtitle: "Seguridad y cumplimiento de nivel empresarial"
     title: "Una solución de movilidad para empleados segura y aprobada por TI"
     image: "images/why_use_teamWheels.png"

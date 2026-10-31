@@ -7,6 +7,7 @@ keywords: "employee rideshare app, corporate ridesharing software, BlaBlaCar for
 # banner
 banner:
   subtitle: "Trusted by HR & Sustainability teams across the USA, UK & Canada"
+  subtitle_link: "#proof"   # the hero line links to the proof strip under the hero
   title: 'Employee Carpooling Built Into <span class="teams-brand">Microsoft Teams</span>'
   description: "Reduce Scope 3 emissions, cut parking demand by 30%, and save employees $2,000/year — zero extra apps, deployed in 5 minutes."
   button:
@@ -81,9 +82,9 @@ fun_facts:
   title: "Enterprise carpooling by the numbers"
   fact_item:
   - icon: "fas fa-dollar-sign"
-    counter: "2000"
-    counter_suffix: "$"
-    counter_prefix: ""
+    counter: "2,000"
+    counter_suffix: ""
+    counter_prefix: "$"
     content: "annual commuter savings per employee with shared rides"
 
   - icon: "fas fa-parking"
@@ -113,6 +114,7 @@ work_process:
 image_and_content_blocks:
   - enable: true
     subtitle: "Why HR & Sustainability Leaders Choose TeamWheels"
+    subtitle_link: "benefits/"
     title: "Employee Carpooling That Lives Where Your Teams Already Work"
     image: "images/why_use_teamWheels.png"
     content_position: "right"
@@ -150,6 +152,7 @@ image_and_content_blocks:
       enable: false
 
   - enable: true
+    anchor: "security"   # target of the proof strip security link
     subtitle: "Enterprise Security & Compliance"
     title: "A Secure, IT-Approved Employee Mobility Solution"
     image: "images/why_use_teamWheels.png"

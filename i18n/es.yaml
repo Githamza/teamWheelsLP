@@ -206,3 +206,7 @@
     En el Centro de administración de Teams: Aplicaciones de Teams > Administrar aplicaciones > buscar «TeamWheels» > Permitir.
 
     ¡Gracias!
+
+# Homepage proof strip (layouts/partials/home-proof.html)
+- id: home_proof_security
+  translation: "Seguridad y cumplimiento TI"

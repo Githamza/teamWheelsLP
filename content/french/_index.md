@@ -7,6 +7,7 @@ keywords: "covoiturage entreprise, BlaBlaCar entreprise, Uber pour salariés, ap
 # banner
 banner:
   subtitle: "Plébiscité par les équipes RH & développement durable"
+  subtitle_link: "#proof"   # the hero line links to the proof strip under the hero
   title: 'Le covoiturage, directement dans <span class="teams-brand">Microsoft Teams</span>'
   description: "Réduisez votre Scope 3, libérez du parking et versez le Forfait Mobilité Durable — zéro app supplémentaire, déployé en 5 minutes."
   button:
@@ -82,7 +83,7 @@ fun_facts:
   fact_item:
   - icon: "fas fa-euro-sign"
     counter: "900"
-    counter_suffix: "€"
+    counter_suffix: " €"
     counter_prefix: ""
     content: "par salarié et par an (FMD + abonnement transport)"
 
@@ -99,8 +100,8 @@ fun_facts:
     content: "de CO₂ économisés par trajet partagé"
 
   - icon: "fas fa-chart-line"
-    counter: "10.6"
-    counter_suffix: "%"
+    counter: "10,6"
+    counter_suffix: " %"
     counter_prefix: "+"
     content: "de croissance annuelle du marché du covoiturage"
 
@@ -113,6 +114,7 @@ work_process:
 image_and_content_blocks:
   - enable: true
     subtitle: "Pourquoi choisir TeamWheels ?"
+    subtitle_link: "benefits/"
     title: "Le covoiturage directement dans Microsoft Teams"
     image: "images/why_use_teamWheels.png"
     content_position: "right"
@@ -150,6 +152,7 @@ image_and_content_blocks:
       enable: false
 
   - enable: true
+    anchor: "security"   # target of the proof strip security link
     subtitle: "Sécurité & Conformité"
     title: "Une solution sécurisée, pensée pour votre DSI"
     image: "images/why_use_teamWheels.png"
