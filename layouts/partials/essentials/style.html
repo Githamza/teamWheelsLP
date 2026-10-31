@@ -141,18 +141,108 @@ main:empty,.main-block:empty{display:none}
 .form-control{display:block;width:100%;padding:1.25rem;font-size:1rem;font-weight:400;line-height:1.5;color:#222;background-color:#fff;border:1px solid rgba(0,0,0,.1);border-radius:.375rem;transition:.3s ease;height:56px;appearance:none}
 
 /* Hero/CTA email capture — make the email field obvious */
-.hero-email-label{display:block;font-weight:600;font-size:.95rem;color:#222;margin-bottom:.5rem}
-.hero-cta-form .input-group{gap:.5rem}
-.hero-cta-form .input-group>.form-control{min-width:220px;border:1px solid rgba(0,0,0,.28);box-shadow:0 1px 2px rgba(0,0,0,.06)}
-.hero-cta-form .form-control::placeholder{color:#6b7280;opacity:1}
-.hero-cta-form .form-control:focus{border-color:#4d51a9;box-shadow:0 0 0 3px rgba(77,81,169,.18)}
-@media(max-width:767px){.hero-cta-form .input-group{flex-direction:column}.hero-cta-form .input-group>.form-control{flex:0 0 auto;width:100%;min-width:0;border-radius:.375rem!important}.hero-cta-form .btn{width:100%}.hero-cta-form .input-group>.btn{border-radius:50px!important}}
+.hero-email-label{display:block;font-weight:500;font-size:.95rem;color:#2a3150;margin-bottom:.6rem}
+/* One white capsule: mail icon + borderless input + pill button inside it */
+.hero-cta-form .hero-cta-form__field{align-items:center;flex-wrap:nowrap;gap:.25rem;padding:.375rem;background:#fff;border:1px solid rgba(11,19,43,.14);border-radius:999px;box-shadow:0 1px 2px rgba(11,19,43,.04),0 8px 24px -12px rgba(11,19,43,.18);transition:border-color .2s ease,box-shadow .2s ease}
+.hero-cta-form .hero-cta-form__field:focus-within{border-color:#4d51a9;box-shadow:0 0 0 4px rgba(77,81,169,.16),0 8px 24px -12px rgba(11,19,43,.18)}
+.hero-cta-form__icon{flex:0 0 auto;margin-left:.9rem;color:#8a90a6}
+.hero-cta-form__field:focus-within .hero-cta-form__icon{color:#4d51a9}
+.hero-cta-form .hero-cta-form__field>.form-control{height:48px;padding:0 .5rem;border:0;border-radius:0;background:transparent;box-shadow:none;outline:0;min-width:0}
+.hero-cta-form .form-control::placeholder{color:#8a90a6;opacity:1}
+.hero-cta-form .hero-cta-form__field>.btn{flex:0 0 auto;height:48px;padding:0 1.5rem;border-radius:999px!important;text-transform:none!important;white-space:nowrap;font-weight:600}
+.hero-cta-form .hero-cta-form__field>.btn:hover,.hero-cta-form .hero-cta-form__field>.btn:focus{transform:none}
+.call-to-action__form{max-width:34rem;margin-bottom:1rem}
+@media(max-width:575px){.hero-cta-form .hero-cta-form__field{flex-wrap:wrap;border-radius:1.25rem}.hero-cta-form .hero-cta-form__field>.form-control{flex:1 1 0}.hero-cta-form .hero-cta-form__field>.btn{flex:1 0 100%}}
 
 /* === Custom (Teams brand) === */
 .inline-teams-logo{display:inline-block;height:1.6em;width:auto;vertical-align:-.25em;margin-left:.25em}
 .teams-brand{position:relative;display:inline-block;white-space:nowrap}
 .teams-brand::after{content:"";display:inline-block;width:36px;height:36px;margin-left:10px;vertical-align:middle;background-image:url("/images/microsoft-teams-icon.svg");background-size:contain;background-repeat:no-repeat;background-position:center}
 @media(max-width:768px){.teams-brand::after{width:28px;height:28px;margin-left:6px}}
+
+/* === One-column hero (banner.layout: centered) === */
+.hero-centered{max-width:70rem}
+/* Announcement pill above the H1: TAG | icon text → — kept discreet:
+   translucent, no shadow, small type, full contrast only on hover. */
+.hero-pill{display:inline-flex;align-items:center;gap:.5rem;margin-bottom:1.5rem;padding:.35rem .8rem .35rem .95rem;border:1px solid rgba(11,19,43,.08);border-radius:999px;background:rgba(255,255,255,.45);color:#4a5068;font-size:.85rem;line-height:1.2;text-decoration:none;text-transform:none!important;transition:background-color .2s ease,color .2s ease}
+.hero-pill:hover,.hero-pill:focus-visible{background:rgba(255,255,255,.8);color:#1f2433}
+.hero-pill:focus-visible{outline:2px solid #4d51a9;outline-offset:3px}
+.hero-pill__tag{font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#6a6fb8}
+.hero-pill__sep{width:1px;height:.85rem;background:rgba(11,19,43,.12)}
+.hero-pill__icon{width:1rem;height:1rem}
+.hero-pill__text{font-weight:500}
+.hero-pill__arrow{width:.85rem;height:.85rem;color:#9aa0b2;transition:transform .2s ease}
+.hero-pill:hover .hero-pill__arrow{transform:translateX(2px)}
+@media(max-width:575px){.hero-pill{font-size:.8rem}.hero-pill__tag{font-size:.62rem;letter-spacing:.1em}}
+@media(prefers-reduced-motion:reduce){.hero-pill,.hero-pill__arrow{transition:none}}
+.hero-centered .hero-centered__title{text-transform:none!important;font-size:clamp(2.1rem,1.2rem + 3.6vw,4rem);line-height:1.08;letter-spacing:-.025em;margin-bottom:1.5rem;color:#0b132b;text-wrap:balance}
+.hero-centered__accent{display:block;padding-bottom:.08em;background:linear-gradient(90deg,#4d51a9 0%,#6d4fc7 45%,#1f6fc4 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-centered__accent .hero-logo-roll{color:initial}
+.hero-centered__nowrap{white-space:nowrap}
+/* Lede: one quiet line in deep ink under the H1;
+   "TeamWheels" (**bold** in the front matter) in brand violet. */
+.hero-centered__lede{max-width:50rem;margin:0 auto 2.5rem;font-size:clamp(1.1rem,.95rem + .6vw,1.45rem);line-height:1.45;font-weight:400;letter-spacing:-.005em;color:#2a3150;text-wrap:balance}
+.hero-centered__lede strong{font-weight:700;color:#4d51a9}
+/* Logo in the lede. Wordmark scaled so its x-height (55/150 of the crop)
+   equals the text's (~.52em) → 1.42em tall; its baseline (10/150 from the
+   bottom) sits on the text baseline. Icon 1.6em, centred on the x-height. */
+.hero-centered__brand-icon{display:inline-block;height:1.6em;width:auto;margin-right:.3em;vertical-align:-.54em}
+.hero-centered__brand-word{display:inline-block;height:1.42em;width:auto;margin-right:.12em;vertical-align:-.095em}
+.hero-centered__video{max-width:52rem;margin-bottom:2.5rem}
+.hero-centered__video .hero-demo-video__frame{aspect-ratio:16/9;border-radius:1rem;overflow:hidden;background:#0b132b}
+.hero-centered__cta{max-width:44rem}.hero-centered__cta .hero-demo-form{max-width:32rem;margin-left:auto;margin-right:auto}
+/* Rotating logos: a 1-logo window over a vertical strip (logo A, logo B, copy of A).
+   Hold, roll up, hold, roll up; the jump from the copy back to A is invisible. */
+.hero-logo-roll{display:inline-block;width:1.1em;height:1.1em;overflow:hidden;vertical-align:-.18em;margin-left:.2em}
+.hero-logo-roll__track{display:block;animation:hero-logo-roll 6s infinite}
+.hero-logo-roll .hero-logo-roll__item{display:block;width:1.1em;height:1.1em;max-width:none;padding:.06em;object-fit:contain}
+@keyframes hero-logo-roll{
+  0%,40%{transform:translateY(0);animation-timing-function:cubic-bezier(.65,0,.35,1)}
+  50%,90%{transform:translateY(-33.3333%);animation-timing-function:cubic-bezier(.65,0,.35,1)}
+  100%{transform:translateY(-66.6667%)}
+}
+@media(prefers-reduced-motion:reduce){.hero-logo-roll__track{animation:none}}
+
+/* === Hero journey backdrop (partials/hero-journey.html + assets/js/hero-journey.js) ===
+   The isometric city lives *behind* the pill + H1 (.hero-art), full hero
+   width, and melts into the background: canvas masked on all four sides,
+   a soft veil of the hero colour behind the text keeps the H1 crisp.
+   Absolutely positioned → no layout shift; fades in once drawn. */
+.hero-art{position:relative}
+/* the road *is* the swoosh here: hide the banner's own top-right swoosh */
+.wave-block:has(.hero-journey) .has-wave .wave-right{display:none}
+.hero-art>.hero-centered__title{position:relative;z-index:1}
+/* room above the H1 for the road, its loops and the companies */
+.hero-art:has(.hero-journey){padding-top:10rem}
+.hero-pill--below{margin-top:-1rem;margin-bottom:2rem}
+.hero-journey{position:absolute;inset:0;z-index:0;pointer-events:none}
+.hero-journey__stage{position:absolute;top:2rem;bottom:-2.5rem;left:calc(50% - 50vw);right:calc(50% - 50vw)}
+.hero-journey__stage canvas{display:block;width:100%;height:100%;opacity:0;transition:opacity 1.2s ease;
+  -webkit-mask-image:linear-gradient(90deg,transparent 1%,#000 7%,#000 93%,transparent 99%),linear-gradient(180deg,transparent 0,#000 7%,#000 35%,transparent 95%);
+  -webkit-mask-composite:source-in;
+  mask-image:linear-gradient(90deg,transparent 1%,#000 7%,#000 93%,transparent 99%),linear-gradient(180deg,transparent 0,#000 7%,#000 35%,transparent 95%);
+  mask-composite:intersect}
+.hero-journey.is-ready .hero-journey__stage canvas{opacity:.92}
+.hero-journey__veil{position:absolute;inset:0;z-index:1;background:radial-gradient(33% 34% at 50% 67%,rgba(214,222,236,.85) 0,rgba(214,222,236,.6) 55%,rgba(214,222,236,0) 100%)}
+.hero-journey__haze{position:absolute;inset:0;z-index:1;opacity:0;background:radial-gradient(50% 55% at 50% 55%,rgba(140,130,115,.45),rgba(140,130,115,0) 100%);transition:opacity .4s linear}
+/* tiny corner control: which story is playing + pause (WCAG 2.2.2) */
+.hero-journey__ctrl{position:absolute;left:50%;top:-2rem;transform:translateX(-50%);z-index:2;display:inline-flex;align-items:center;gap:.15rem;padding:.15rem;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid rgba(11,19,43,.07);box-shadow:0 4px 14px -8px rgba(77,81,169,.45);pointer-events:auto;opacity:0;transition:opacity .6s ease}
+.hero-journey.is-ready .hero-journey__ctrl{opacity:1}
+.hero-journey__btn,.hero-journey__pause{border:0;background:transparent;color:#6a6f88;font-size:.8rem;font-weight:600;line-height:1.2;cursor:pointer;border-radius:999px;transition:background-color .2s ease,color .2s ease}
+.hero-journey__btn{padding:.3rem .75rem;white-space:nowrap}
+.hero-journey__btn:hover,.hero-journey__pause:hover{color:#1f2433}
+.hero-journey__btn.is-active{background:#7a7f92;color:#fff}
+.hero-journey__btn.is-active[data-mode="with"]{background:linear-gradient(90deg,#4d51a9,#6d4fc7)}
+.hero-journey__btn:focus-visible,.hero-journey__pause:focus-visible{outline:2px solid #4d51a9;outline-offset:2px}
+.hero-journey__pause{display:inline-flex;align-items:center;justify-content:center;width:1.5rem;height:1.5rem}
+.hero-journey__pause[hidden]{display:none}
+.hero-journey__pause .is-play,.hero-journey__pause[aria-pressed="true"] .is-pause{display:none}
+.hero-journey__pause[aria-pressed="true"] .is-play{display:block}
+.hero-journey__sr{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+/* mobile: control on top, then the whole road band (full width), its
+   lower part tucked behind the first lines of the H1 under a soft veil */
+@media(max-width:767px){.hero-art:has(.hero-journey){margin-top:-1.5rem;padding-top:calc(2.2rem + 17vw)}.hero-journey__stage{top:1.9rem;bottom:auto;height:36vw}.hero-journey__veil{background:radial-gradient(70% 45% at 50% 92%,rgba(214,222,236,.85),rgba(214,222,236,0) 100%)}.hero-journey__ctrl{top:0}.hero-journey__btn{font-size:.74rem;padding:.25rem .6rem}}
+@media(prefers-reduced-motion:reduce){.hero-journey__stage canvas,.hero-journey__haze,.hero-journey__ctrl{transition:none}}
 </style>
 
 <!-- plugins + stylesheet (deferred to unblock rendering) -->

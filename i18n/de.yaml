@@ -176,7 +176,7 @@
 - id: teams_install_trust
   translation: 30 Tage kostenlos · Keine Kreditkarte · In 5 Minuten startklar
 - id: teams_admin_question
-  translation: "Kein Teams-Admin?"
+  translation: "Kein Admin?"
 - id: teams_admin_link
   translation: "Anfrage an Ihr IT-Team senden"
 - id: teams_store_badge_top
@@ -210,3 +210,28 @@
 # Homepage proof strip (layouts/partials/home-proof.html)
 - id: home_proof_security
   translation: "Sicherheit & IT-Compliance"
+- id: teams_admin_mail_fallback
+  translation: "Nichts geöffnet? Öffnen Sie sie in"
+- id: teams_admin_mail_copy
+  translation: "Nachricht kopieren"
+- id: teams_admin_mail_copied
+  translation: "Nachricht kopiert ✓"
+
+- id: hero_how_it_works
+  translation: So funktioniert es
+
+# Hero journey animation (layouts/partials/hero-journey.html)
+- id: journey_without
+  translation: "Ohne TeamWheels"
+- id: journey_with
+  translation: "Mit TeamWheels"
+- id: journey_toggle_label
+  translation: "Den Arbeitsweg vergleichen"
+- id: journey_pause
+  translation: "Animation anhalten"
+- id: journey_play
+  translation: "Animation abspielen"
+- id: journey_caption_without
+  translation: "Jeder fährt allein: Stau, Abgase und ein voller Parkplatz … man kreist und ärgert sich."
+- id: journey_caption_with
+  translation: "3 Autos statt 9: Kollegen werden unterwegs abgeholt, man plaudert, parkt sofort – und fährt auch zwischen Standorten gemeinsam."

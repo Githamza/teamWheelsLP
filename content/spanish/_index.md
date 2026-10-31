@@ -6,9 +6,25 @@ keywords: "coche compartido para empresas, carpooling corporativo, carpooling em
 
 # banner
 banner:
+  # one-column hero: title + rotating Teams / Copilot logos + one line (mirrors FR)
+  layout: "centered"
+  announcement:   # pill → Microsoft Store listing (teams_app.marketplace_url)
+    label: "Nueva versión"
+    text: "Ver en Microsoft Store"
+  journey:        # isometric "without / with TeamWheels" animation
+    enable: true
+  title: "El coche compartido en la empresa"
+  title_accent: "integrado en sus herramientas de cada día"   # gradient 2nd line, ends with the logos
+  rotating_logos:   # exactly 2 (CSS animation is tuned for 2 logos)
+  - src: "images/microsoft-teams-icon.svg"
+    alt: "Microsoft Teams"
+  - src: "images/microsoft-copilot-icon.svg"
+    alt: "Microsoft Copilot"
+  lede: "TeamWheels facilita la movilidad sostenible de sus empleados."
+  lede_logo: "images/logo.png"   # "TeamWheels" swapped for the logo
+  # previous two-column texts, not shown in the centered layout
   subtitle: "La confianza de equipos de RR. HH. y Sostenibilidad de toda Europa y Norteamérica"
   subtitle_link: "#proof"   # the hero line links to the proof strip under the hero
-  title: 'Coche compartido para empleados, integrado en <span class="teams-brand">Microsoft Teams</span>'
   description: "Reduzca las emisiones Scope 3, disminuya un 30 % la demanda de aparcamiento y ahorre a cada empleado 2.000 €/año — sin apps adicionales, desplegado en 5 minutos."
   button:
     enable: true
@@ -69,17 +85,55 @@ video_demo:
   # uploadDate / duration se mantienen aquí por paridad con demo.md (los datos
   # estructurados solo se emiten en /demo/).
   description: "Un recorrido de 60 segundos por TeamWheels, la app de coche compartido y gestión de desplazamientos de empleados que funciona de forma nativa dentro de Microsoft Teams. Vea en acción el emparejamiento de trayectos, el bot conversacional y el panel de emisiones Scope 3."
-  uploadDate: "2026-07-13"
-  duration: "PT1M1S"        # ISO 8601, para el JSON-LD VideoObject
-  duration_seconds: 61      # segundos, para el sitemap de vídeo
+  uploadDate: "2026-11-01"
+  duration: "PT1M"        # ISO 8601, para el JSON-LD VideoObject
+  duration_seconds: 60      # segundos, para el sitemap de vídeo
   watch_page: "/demo/"                            # página del vídeo (destino del enlace)
-  poster: "videos/teamwheels-demo-poster.jpg"   # fotograma mostrado antes de cargar el clip / miniatura del vídeo
-  webm: "videos/teamwheels-demo.webm"
-  mp4: "videos/teamwheels-demo.mp4"
+  poster: "videos/teamwheels-demo-es-poster.jpg"   # fotograma mostrado antes de cargar el clip / miniatura del vídeo
+  webm: "videos/teamwheels-demo-es.webm"
+  mp4: "videos/teamwheels-demo-es.mp4"
+
+# why TeamWheels — comparison under the hero (partials/home-why.html),
+# replaces the key figures (fun_facts, disabled below)
+why_teamwheels:
+  enable: true
+  subtitle: "Comparativa"
+  title: "¿Por qué TeamWheels y no una app independiente?"
+  lede: "Una app de coche compartido independiente es una app más que sus empleados olvidan. TeamWheels está donde ya trabajan: Microsoft Teams."
+  topic_label: "Criterio"
+  them_label: "App de coche compartido independiente"
+  us_label: "TeamWheels en Microsoft Teams"
+  rows:
+  - topic: "Acceso"
+    them: "Una app que descargar, una cuenta y una contraseña que crear"
+    us: "Ya está en Teams, inicio de sesión único con Microsoft Entra ID"
+  - topic: "Despliegue"
+    them: "Proyecto de TI, campaña de registro, recordatorios"
+    us: "Un administrador de Teams, unos 5 minutos, sin proyecto de TI"
+  - topic: "Adopción"
+    them: "A las pocas semanas, la app queda olvidada en el móvil"
+    us: "Notificaciones y agente de IA en la herramienta abierta todo el día"
+  - topic: "Comunidad"
+    them: "Cuentas que dar de alta y luego de baja cuando un empleado se va"
+    us: "Su directorio de Entra ID se convierte en la lista de participantes, actualizada automáticamente"
+  - topic: "Datos"
+    them: "Los datos de sus empleados en una plataforma externa"
+    us: "En su tenant de Microsoft 365, datos alojados en la UE, conforme al RGPD"
+  - topic: "Informes ESG"
+    them: "Exportaciones que hay que reelaborar para el Scope 3"
+    us: "Panel de Scope 3 e informes listos para CSRD, generados automáticamente"
+  link:
+    label: "Descubra el software de carpooling corporativo"
+    href: "corporate-carpooling-software/"
+
+# strip under the comparison (steps + security line): hidden, the full
+# "how it works" section follows right below
+proof_strip:
+  enable: false
 
 # fun facts
 fun_facts:
-  enable: true
+  enable: false   # replaced by why_teamwheels
   title: "El coche compartido en la empresa, en cifras"
   fact_item:
   - icon: "fas fa-dollar-sign"

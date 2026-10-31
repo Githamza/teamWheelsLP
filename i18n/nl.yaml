@@ -177,7 +177,7 @@
 - id: teams_install_trust
   translation: 30 dagen gratis · Geen creditcard nodig · In 5 minuten live
 - id: teams_admin_question
-  translation: "Geen Teams-beheerder?"
+  translation: "Bent u geen beheerder?"
 - id: teams_admin_link
   translation: "Stuur het verzoek naar uw IT-team"
 - id: teams_store_badge_top
@@ -211,3 +211,28 @@
 # Homepage proof strip (layouts/partials/home-proof.html)
 - id: home_proof_security
   translation: "Beveiliging en IT-compliance"
+- id: teams_admin_mail_fallback
+  translation: "Opent er niets? Open het in"
+- id: teams_admin_mail_copy
+  translation: "Bericht kopiëren"
+- id: teams_admin_mail_copied
+  translation: "Bericht gekopieerd ✓"
+
+- id: hero_how_it_works
+  translation: Bekijk hoe het werkt
+
+# Hero journey animation (layouts/partials/hero-journey.html)
+- id: journey_without
+  translation: "Zonder TeamWheels"
+- id: journey_with
+  translation: "Met TeamWheels"
+- id: journey_toggle_label
+  translation: "Vergelijk het woon-werkverkeer"
+- id: journey_pause
+  translation: "Animatie pauzeren"
+- id: journey_play
+  translation: "Animatie afspelen"
+- id: journey_caption_without
+  translation: "Iedereen rijdt alleen: files, uitstoot en een volle parkeerplaats… rondjes rijden en ergernis."
+- id: journey_caption_with
+  translation: "3 auto's in plaats van 9: collega's worden onderweg opgehaald, kletsen, parkeren meteen – en carpoolen ook tussen vestigingen."

@@ -29,12 +29,111 @@
     {{ with .Params.banner.image }}{{ with resources.Get . }}{{ $lvThumb = .RelPermalink }}{{ end }}{{ end }}
     {{ $lvOn = and $lvMp4 $lvThumb }}
   {{ end }}
+  {{/* The one-column hero has no media column: no carousel, no carousel CSS/JS. */}}
+  {{ if eq .Params.banner.layout "centered" }}{{ $lvOn = false }}{{ end }}
 
   <section
     class="banner banner-2 bg-primary-soft rounded-lg wave-block overflow-hidden">
     {{ partial "essentials/header.html" . }}
 
     {{ with .Params.banner }}
+    {{ if eq .layout "centered" }}
+      {{/* One-column hero (`banner.layout: centered`):
+             H1 = `title` + an accent line (`title_accent`, gradient text)
+             ending with the rotating product logos (`rotating_logos`,
+             exactly 2 — the CSS roll in essentials/style.html is timed for
+             2; static under prefers-reduced-motion; the <img> alts keep
+             "Microsoft Teams" / "Microsoft Copilot" in the H1 text)
+           → `lede` → the demo video (`video_demo`, click-to-play facade;
+             replaces the demo section under the hero) → the Teams install
+             CTA and the guided-demo form. */}}
+      <div class="container container-delta block">
+        <div class="hero-centered text-center mx-auto">
+          {{/* `.hero-art`: the H1 over the isometric "with / without TeamWheels"
+               backdrop (`banner.journey.enable`, partials/hero-journey.html) */}}
+          <div class="hero-art">
+          {{ with .journey }}{{ if .enable }}{{ partial "hero-journey.html" $ }}{{ end }}{{ end }}
+          <h1 class="title text-xl hero-centered__title">
+            {{ .title | markdownify }}
+            {{ with .title_accent }}
+              {{/* last word + logos share a nowrap span so the logo never
+                   wraps alone onto its own line */}}
+              {{ $words := split . " " }}
+              {{ $last := sub (len $words) 1 }}
+              <span class="hero-centered__accent">{{ delimit (first $last $words) " " }} <span class="hero-centered__nowrap">{{ index $words $last }}
+              {{- with $.Params.banner.rotating_logos }}
+                {{ $first := index . 0 }}
+                <span class="hero-logo-roll">
+                  <span class="hero-logo-roll__track">
+                    {{ range . }}
+                      <img class="hero-logo-roll__item" src="{{ .src | relURL }}" alt="{{ .alt }}" width="64" height="64" fetchpriority="high" />
+                    {{ end }}
+                    {{/* copy of the first logo so the loop restarts seamlessly */}}
+                    <img class="hero-logo-roll__item" src="{{ $first.src | relURL }}" alt="" width="64" height="64" aria-hidden="true" />
+                  </span>
+                </span>
+              {{- end }}</span></span>
+            {{ end }}
+          </h1>
+          </div>
+          {{/* `lede_logo`: the first "TeamWheels" in the lede becomes the
+               logo, split in two crops so each part can be sized against the
+               text: the icon square, then the handwritten wordmark
+               (alt="TeamWheels" on the wordmark, icon decorative). Crops
+               are tuned for images/logo.png (1215x392). */}}
+          {{ with .lede }}
+            {{ $lede := . | markdownify }}
+            {{ with $.Params.banner.lede_logo }}{{ with resources.Get . }}
+              {{ $icon := (.Crop "392x392 Left webp").Resize "96x webp" }}
+              {{/* wordmark: glyphs span x 425–1167, y 123–223 (baseline ≈ 215,
+                   x-height 55 px). Two crops → x 425–1170, y 75–225, so the
+                   baseline sits 10 px above the bottom edge (see style.html). */}}
+              {{ $word := ((.Crop "1170x300 TopLeft webp").Crop "745x150 Right webp").Resize "500x webp" }}
+              {{ $img := printf `<img class="hero-centered__brand-icon" src="%s" alt="" width="%d" height="%d"><img class="hero-centered__brand-word" src="%s" alt="TeamWheels" width="%d" height="%d">` $icon.RelPermalink $icon.Width $icon.Height $word.RelPermalink $word.Width $word.Height }}
+              {{ $lede = replace $lede "TeamWheels" $img 1 }}
+            {{ end }}{{ end }}
+            <p class="hero-centered__lede">{{ $lede | safeHTML }}</p>
+          {{ end }}
+          {{/* Announcement pill under the lede (`banner.announcement`) — moved below
+               so the space above the H1 belongs to the journey backdrop:
+               "NOUVELLE VERSION | [Teams] Voir sur le Microsoft Store →",
+               links to the Teams app's marketplace listing. */}}
+          {{ with .announcement }}
+            {{ with site.Params.teams_app }}{{ if .enable }}
+              <a class="hero-pill hero-pill--below" href="{{ printf .marketplace_url (i18n "ms_locale") }}" target="_blank" rel="noopener"
+                 data-track="teams_marketplace_click" data-placement="hero_pill">
+                <span class="hero-pill__tag">{{ $.Params.banner.announcement.label }}</span>
+                <span class="hero-pill__sep" aria-hidden="true"></span>
+                <img class="hero-pill__icon" src="{{ "images/microsoft-teams-icon.svg" | relURL }}" alt="" width="20" height="20" aria-hidden="true">
+                <span class="hero-pill__text">{{ $.Params.banner.announcement.text }}</span>
+                <svg class="hero-pill__arrow" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3 8h9.5M8.5 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            {{ end }}{{ end }}
+          {{ end }}
+          {{ if $vdOn }}
+            <div class="hero-centered__video mx-auto" id="demo">
+              {{ partial "video-facade.html" (dict
+                "mp4" $vdMp4 "webm" $vdWebm "poster" $vdPoster
+                "thumb" $vdPoster "thumbW" $vdPosterW "thumbH" $vdPosterH "fit" false "eager" true
+                "alt" $vd.title "label" $vdLabel "duration" $vd.duration_seconds
+                "placement" "hero_demo") }}
+            </div>
+          {{ end }}
+          {{/* "see how it works" → the full demo page, on the install button's row
+               (replaces the text link that sat under the video) */}}
+          {{ $how := dict }}
+          {{ with $vd }}{{ with .watch_page }}
+            {{ $how = dict "href" (partial "lang-url.html" .) "label" (i18n "hero_how_it_works") "track" "demo_page_click" }}
+          {{ end }}{{ end }}
+          <div class="hero-centered__cta mx-auto">
+            {{ partial "teams-install.html" (dict "placement" "hero" "admin" true "trust" true "center" true "icon" "images/microsoft-logo.svg" "secondary" $how) }}
+            <div class="hero-demo-form mt-4 text-start">
+              {{ partial "hero-demo-form.html" . }}
+            </div>
+          </div>
+        </div>
+      </div>
+    {{ else }}
       <div class="container container-delta block">
         <div
           class="row align-items-center flex-lg-nowrap text-center text-lg-start">
@@ -155,39 +254,12 @@
                  column to save hero height). Web3Forms → thank-you page →
                  Google Ads lead conversion, unchanged. */}}
             <div class="hero-demo-form mt-4">
-                {{ with .button }}
-                  {{ if .enable }}
-                    <form action="{{ site.Params.contact_info.contact_form_action }}" method="POST" class="hero-cta-form">
-                      {{/* Web3Forms redirect on success → fires the Google Ads
-                           conversion from the thank-you page. */}}
-                      <input type="hidden" name="access_key" value="{{ site.Params.contact_info.web3forms_access_key }}" />
-                      <input type="hidden" name="redirect" value="{{ absLangURL "thank-you/" }}" />
-                      <input type="hidden" name="subject" value="{{ i18n `contact_form_subject` }}" />
-                      {{/* Web3Forms honeypot. `autocomplete` is not valid on a checkbox and
-                           browsers never autofilled it — dropped so the page validates. */}}
-                      <input type="checkbox" name="botcheck" class="d-none" style="display:none" tabindex="-1" />
-                      <label for="hero-email" class="hero-email-label">{{ i18n "hero_email_label" }}</label>
-                      <div class="input-group mb-2">
-                        <input
-                          required
-                          id="hero-email"
-                          type="email"
-                          name="email"
-                          autocomplete="email"
-                          inputmode="email"
-                          class="form-control text-dark"
-                          placeholder="{{ i18n `hero_email_placeholder` }}" />
-                        <button class="btn btn-primary" type="submit">
-                          {{ .button_label }}
-                        </button>
-                      </div>
-                    </form>
-                  {{ end }}
-                {{ end }}
+                {{ partial "hero-demo-form.html" . }}
             </div>
           </div>
         </div>
       </div>
+    {{ end }}
     {{ end }}
 
 
@@ -224,11 +296,14 @@
        directly under the hero. Clarity (Oct 2026): 76% of /en/ visitors
        never scroll past the first quarter of the page, where these used to
        start. Replaces the full-width "by the numbers" section. ── */}}
+  {{/* "Why TeamWheels and not a third-party app" comparison
+       (`why_teamwheels`), above the steps / security strip. */}}
+  {{ partial "home-why.html" . }}
   {{ partial "home-proof.html" . }}
 
   {{/* ── Full demo video, directly under the hero (click-to-play poster).
        Indexed from its own watch page (/demo/), like the launch video. ── */}}
-  {{ if $vdOn }}
+  {{ if and $vdOn (ne .Params.banner.layout "centered") }}
     <section class="section hero-demo-section" id="demo">
       <div class="container container-delta">
         <div class="row justify-content-center text-center">

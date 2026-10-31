@@ -6,9 +6,25 @@ keywords: "Fahrgemeinschafts-App für Unternehmen, Mitfahrgelegenheit für Mitar
 
 # banner
 banner:
+  # one-column hero: title + rotating Teams / Copilot logos + one line (mirrors FR)
+  layout: "centered"
+  announcement:   # pill → Microsoft Store listing (teams_app.marketplace_url)
+    label: "Neue Version"
+    text: "Im Microsoft Store ansehen"
+  journey:        # isometric "without / with TeamWheels" animation
+    enable: true
+  title: "Fahrgemeinschaften im Unternehmen"
+  title_accent: "direkt in Ihren täglichen Tools"   # gradient 2nd line, ends with the logos
+  rotating_logos:   # exactly 2 (CSS animation is tuned for 2 logos)
+  - src: "images/microsoft-teams-icon.svg"
+    alt: "Microsoft Teams"
+  - src: "images/microsoft-copilot-icon.svg"
+    alt: "Microsoft Copilot"
+  lede: "TeamWheels macht nachhaltige Mobilität für Ihre Mitarbeitenden einfach."
+  lede_logo: "images/logo.png"   # "TeamWheels" swapped for the logo
+  # previous two-column texts, not shown in the centered layout
   subtitle: "Das Vertrauen von HR- und Nachhaltigkeitsteams in Europa und Nordamerika"
   subtitle_link: "#proof"   # the hero line links to the proof strip under the hero
-  title: 'Fahrgemein­schaften für Mitarbeitende – direkt in <span class="teams-brand">Microsoft Teams</span>'
   description: "Senken Sie Scope-3-Emissionen, reduzieren Sie den Parkplatzbedarf um 30 % und sparen Sie Ihren Mitarbeitenden 2.000 €/Jahr – ohne zusätzliche App, in 5 Minuten eingerichtet."
   button:
     enable: true
@@ -68,17 +84,55 @@ video_demo:
   # uploadDate / duration are kept here for parity with demo.md (structured
   # data is emitted on /demo/ only).
   description: "Ein 60-sekündiger Rundgang durch TeamWheels – die App für Mitarbeiter-Fahrgemeinschaften und Pendlermanagement, die nativ in Microsoft Teams läuft. Sehen Sie Fahrten-Matching, den Konversations-Bot und das Scope-3-Emissions-Dashboard in Aktion."
-  uploadDate: "2026-07-13"
-  duration: "PT1M1S"        # ISO 8601, for VideoObject JSON-LD
-  duration_seconds: 61      # plain seconds, for the video sitemap
+  uploadDate: "2026-11-01"
+  duration: "PT1M"        # ISO 8601, for VideoObject JSON-LD
+  duration_seconds: 60      # plain seconds, for the video sitemap
   watch_page: "/demo/"                            # the video's watch page (link target)
-  poster: "videos/teamwheels-demo-poster.jpg"   # still frame shown before the clip loads / video thumbnail
-  webm: "videos/teamwheels-demo.webm"
-  mp4: "videos/teamwheels-demo.mp4"
+  poster: "videos/teamwheels-demo-de-poster.jpg"   # still frame shown before the clip loads / video thumbnail
+  webm: "videos/teamwheels-demo-de.webm"
+  mp4: "videos/teamwheels-demo-de.mp4"
+
+# why TeamWheels — comparison under the hero (partials/home-why.html),
+# replaces the key figures (fun_facts, disabled below)
+why_teamwheels:
+  enable: true
+  subtitle: "Vergleich"
+  title: "Warum TeamWheels statt einer separaten App?"
+  lede: "Eine separate Fahrgemeinschafts-App ist eine App mehr, die Ihre Mitarbeitenden vergessen. TeamWheels ist dort, wo sie ohnehin arbeiten: in Microsoft Teams."
+  topic_label: "Kriterium"
+  them_label: "Separate Fahrgemeinschafts-App"
+  us_label: "TeamWheels in Microsoft Teams"
+  rows:
+  - topic: "Zugang"
+    them: "App herunterladen, Konto und Passwort anlegen"
+    us: "Bereits in Teams, Single Sign-on mit Microsoft Entra ID"
+  - topic: "Einführung"
+    them: "IT-Projekt, Registrierungskampagne, Erinnerungen"
+    us: "Ein Teams-Admin, rund 5 Minuten, kein IT-Projekt"
+  - topic: "Akzeptanz"
+    them: "Nach ein paar Wochen gerät die App auf dem Handy in Vergessenheit"
+    us: "Benachrichtigungen und KI-Agent im Tool, das den ganzen Tag geöffnet ist"
+  - topic: "Community"
+    them: "Konten anlegen und beim Austritt von Mitarbeitenden wieder löschen"
+    us: "Ihr Entra-ID-Verzeichnis wird zur Mitfahrerliste, automatisch aktuell"
+  - topic: "Daten"
+    them: "Daten Ihrer Mitarbeitenden auf einer externen Plattform"
+    us: "In Ihrem Microsoft-365-Tenant, Datenhaltung in der EU, DSGVO-konform"
+  - topic: "ESG-Reporting"
+    them: "Exporte, die für Scope 3 erst aufbereitet werden müssen"
+    us: "Scope-3-Dashboard und CSRD-taugliche Berichte, automatisch erstellt"
+  link:
+    label: "Mehr zur Fahrgemeinschafts-Software für Unternehmen"
+    href: "corporate-carpooling-software/"
+
+# strip under the comparison (steps + security line): hidden, the full
+# "how it works" section follows right below
+proof_strip:
+  enable: false
 
 # fun facts
 fun_facts:
-  enable: true
+  enable: false   # replaced by why_teamwheels
   title: "Betriebliche Fahrgemeinschaften in Zahlen"
   fact_item:
   - icon: "fas fa-dollar-sign"

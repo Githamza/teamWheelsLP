@@ -9,9 +9,25 @@ draft: false
 
 # banner
 banner:
+  # one-column hero: title + rotating Teams / Copilot logos + one line (mirrors FR)
+  layout: "centered"
+  announcement:   # pill → Microsoft Store listing (teams_app.marketplace_url)
+    label: "Nieuwe versie"
+    text: "Bekijk in de Microsoft Store"
+  journey:        # isometric "without / with TeamWheels" animation
+    enable: true
+  title: "Carpoolen voor bedrijven"
+  title_accent: "in de tools die u elke dag gebruikt"   # gradient 2nd line, ends with the logos
+  rotating_logos:   # exactly 2 (CSS animation is tuned for 2 logos)
+  - src: "images/microsoft-teams-icon.svg"
+    alt: "Microsoft Teams"
+  - src: "images/microsoft-copilot-icon.svg"
+    alt: "Microsoft Copilot"
+  lede: "TeamWheels maakt duurzaam woon-werkverkeer makkelijk voor uw medewerkers."
+  lede_logo: "images/logo.png"   # "TeamWheels" swapped for the logo
+  # previous two-column texts, not shown in the centered layout
   subtitle: "Voor HR-, mobiliteits- en duurzaamheidsteams"
   subtitle_link: "#proof"   # the hero line links to the proof strip under the hero
-  title: 'Carpoolen voor bedrijven, direct in <span class="teams-brand">Microsoft Teams</span>'
   description: "Minder woon-werkverkeer met de auto, minder parkeerdruk en een lagere Scope 3-uitstoot. Geen extra app, binnen 5 minuten ingericht."
   button:
     enable: true
@@ -62,17 +78,52 @@ video_demo:
   title: "Zie TeamWheels in actie"
   lede: "Ritmatching, de chatbot en het Scope 3-dashboard, in één minuut (Engelstalig)."
   description: "Demo van 60 seconden van TeamWheels, de carpoolapp voor woon-werkverkeer die direct in Microsoft Teams werkt: ritmatching, de chatbot en het dashboard voor Scope 3-uitstoot."
-  uploadDate: "2026-07-13"
-  duration: "PT1M1S"
-  duration_seconds: 61
+  uploadDate: "2026-11-01"
+  duration: "PT1M"
+  duration_seconds: 60
   watch_page: "https://www.teamwheelsapp.com/en/demo/"
-  poster: "videos/teamwheels-demo-poster.jpg"
-  webm: "videos/teamwheels-demo.webm"
-  mp4: "videos/teamwheels-demo.mp4"
+  poster: "videos/teamwheels-demo-nl-poster.jpg"
+  webm: "videos/teamwheels-demo-nl.webm"
+  mp4: "videos/teamwheels-demo-nl.mp4"
+
+# why TeamWheels — comparison under the hero (partials/home-why.html),
+# replaces the key figures (fun_facts, disabled below)
+why_teamwheels:
+  enable: true
+  subtitle: "Vergelijking"
+  title: "Waarom TeamWheels en geen losse carpoolapp?"
+  lede: "Een losse carpoolapp is weer een app die uw medewerkers vergeten. TeamWheels zit waar ze al werken: in Microsoft Teams."
+  topic_label: "Criterium"
+  them_label: "Losse carpoolapp"
+  us_label: "TeamWheels in Microsoft Teams"
+  rows:
+  - topic: "Toegang"
+    them: "Een app downloaden, een account en wachtwoord aanmaken"
+    us: "Al in Teams, inloggen met Microsoft Entra ID (SSO)"
+  - topic: "Uitrol"
+    them: "IT-project, aanmeldcampagne, herinneringen"
+    us: "Eén Teams-beheerder, ongeveer 5 minuten, geen IT-project"
+  - topic: "Gebruik"
+    them: "Na een paar weken raakt de app op de telefoon in de vergetelheid"
+    us: "Meldingen en een AI-agent in de tool die de hele dag openstaat"
+  - topic: "Community"
+    them: "Accounts aanmaken en weer verwijderen als medewerkers vertrekken"
+    us: "Uw Entra ID-directory wordt de lijst met carpoolers, automatisch bijgewerkt"
+  - topic: "Gegevens"
+    them: "Gegevens van uw medewerkers op een extern platform"
+    us: "In uw Microsoft 365-tenant, gegevens opgeslagen in de EU, AVG-conform"
+  - topic: "Rapportage"
+    them: "Exports die u zelf moet bewerken voor Scope 3 en de WPM-rapportage"
+    us: "Scope 3-dashboard en ritgegevens voor de WPM-rapportage, automatisch bijgehouden"
+
+# strip under the comparison (steps + security line): hidden, the full
+# "how it works" section follows right below
+proof_strip:
+  enable: false
 
 # fun facts
 fun_facts:
-  enable: true
+  enable: false   # replaced by why_teamwheels
   title: "Carpoolen in het woon-werkverkeer: de cijfers"
   fact_item:
   - icon: "fas fa-clock"

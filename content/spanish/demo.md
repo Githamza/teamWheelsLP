@@ -12,13 +12,13 @@ video_demo:
   enable: true
   title: "Vea TeamWheels en acción"
   description: "Un recorrido de 60 segundos por TeamWheels, la app de coche compartido y gestión de desplazamientos de empleados que funciona de forma nativa dentro de Microsoft Teams. Vea en acción el emparejamiento de trayectos, el bot conversacional y el panel de emisiones Scope 3."
-  uploadDate: "2026-07-13"
-  duration: "PT1M1S"
-  duration_seconds: 61
+  uploadDate: "2026-11-01"
+  duration: "PT1M"
+  duration_seconds: 60
   watch_page: "/demo/"
-  poster: "videos/teamwheels-demo-poster.jpg"
-  webm: "videos/teamwheels-demo.webm"
-  mp4: "videos/teamwheels-demo.mp4"
+  poster: "videos/teamwheels-demo-es-poster.jpg"
+  webm: "videos/teamwheels-demo-es.webm"
+  mp4: "videos/teamwheels-demo-es.mp4"
 
 # CTA secundario bajo el reproductor
 cta:

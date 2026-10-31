@@ -12,13 +12,13 @@ video_demo:
   enable: true
   title: "See TeamWheels in action"
   description: "A 60-second walkthrough of TeamWheels — the employee carpooling and commute-management app that runs natively inside Microsoft Teams. See ride matching, the conversational bot, and the Scope 3 emissions dashboard in action."
-  uploadDate: "2026-07-13"
-  duration: "PT1M1S"
-  duration_seconds: 61
+  uploadDate: "2026-11-01"
+  duration: "PT1M"
+  duration_seconds: 60
   watch_page: "/demo/"
-  poster: "videos/teamwheels-demo-poster.jpg"
-  webm: "videos/teamwheels-demo.webm"
-  mp4: "videos/teamwheels-demo.mp4"
+  poster: "videos/teamwheels-demo-en-poster.jpg"
+  webm: "videos/teamwheels-demo-en.webm"
+  mp4: "videos/teamwheels-demo-en.mp4"
 
 # Secondary CTA under the player
 cta:
