@@ -40,6 +40,8 @@ Voor je begroting van 2027 is € 0,25 dus het bedrag om mee te rekenen, zolang 
 
 Heb je in 2026 nog met € 0,23 gerekend? De [Belastingdienst](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/verhoging-onbelaste-kilometervergoeding-hoe-verwerkt-u-dit-in-de-loonaangifte) legt uit hoe je de extra € 0,02 per kilometer alsnog onbelast uitbetaalt of eerder belast loon corrigeert in de loonaangifte.
 
+{{< cta-demo title="Minder collega's alleen in de auto naar het werk" text="In Microsoft Teams koppelt TeamWheels collega's die dezelfde route rijden, zodat ze kunnen carpoolen. De gedeelde ritten en de vermeden CO₂ zie je in één dashboard." src="km-2027-top" install="true" >}}
+
 ## Wanneer is de kilometervergoeding onbelast?
 
 De kilometervergoeding is een **gerichte vrijstelling** binnen de [werkkostenregeling](https://www.belastingdienst.nl/wps/wcm/connect/nl/personeel-en-loon/content/werkkostenregeling) (WKR). Zolang je onder het maximum blijft, kost ze je dus geen vrije ruimte. De voorwaarden:

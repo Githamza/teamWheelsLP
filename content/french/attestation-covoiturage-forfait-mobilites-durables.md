@@ -39,11 +39,13 @@ faq:
 **Pour les RH, gestionnaires de paie et responsables mobilité qui versent le forfait mobilités durables (FMD) au titre du covoiturage.** Pour que le FMD reste exonéré de cotisations, l'employeur doit détenir un justificatif pour chaque salarié bénéficiaire. Cette page fournit un modèle d'attestation sur l'honneur de covoiturage, téléchargeable en Word et en PDF, explique ce que l'URSSAF accepte, et montre comment organiser la collecte sans y passer le mois de décembre.
 
 <p class="pillar-cta">
-  <a class="btn btn-primary" href="/downloads/modele-attestation-covoiturage-fmd-teamwheels.docx">Télécharger le modèle (Word)</a>
-  <a class="btn btn-outline-primary" href="/downloads/modele-attestation-covoiturage-fmd-teamwheels.pdf">Version PDF</a>
+  <a class="btn btn-primary" href="/downloads/modele-attestation-covoiturage-fmd-teamwheels.docx" data-track="attestation_download" data-placement="top-docx">Télécharger le modèle (Word)</a>
+  <a class="btn btn-outline-primary" href="/downloads/modele-attestation-covoiturage-fmd-teamwheels.pdf" data-track="attestation_download" data-placement="top-pdf">Version PDF</a>
 </p>
 
 *Modèle indicatif, à adapter à l'accord d'entreprise ou à la décision unilatérale qui encadre votre FMD. Cette page ne constitue pas un conseil juridique.*
+
+{{< cta-demo title="Et si vous n'aviez plus d'attestations à collecter ?" text="TeamWheels enregistre chaque trajet covoituré dans Microsoft Teams et produit chaque mois des relevés nominatifs prêts pour le versement du FMD." src="attestation-top" install="true" >}}
 
 ---
 
@@ -67,8 +69,8 @@ Un point souvent mal compris : l'attestation ne remplace pas le cadre du disposi
 Le modèle TeamWheels reprend les informations dont l'employeur a besoin pour rattacher un versement de FMD à des trajets identifiés. Il existe en deux formats :
 
 <p class="pillar-cta">
-  <a class="btn btn-primary" href="/downloads/modele-attestation-covoiturage-fmd-teamwheels.docx">Modèle d'attestation (Word, .docx)</a>
-  <a class="btn btn-outline-primary" href="/downloads/modele-attestation-covoiturage-fmd-teamwheels.pdf">Modèle d'attestation (PDF)</a>
+  <a class="btn btn-primary" href="/downloads/modele-attestation-covoiturage-fmd-teamwheels.docx" data-track="attestation_download" data-placement="modele-docx">Modèle d'attestation (Word, .docx)</a>
+  <a class="btn btn-outline-primary" href="/downloads/modele-attestation-covoiturage-fmd-teamwheels.pdf" data-track="attestation_download" data-placement="modele-pdf">Modèle d'attestation (PDF)</a>
 </p>
 
 - **Le fichier Word** se complète directement : remplacez les champs entre crochets, imprimez, faites signer.

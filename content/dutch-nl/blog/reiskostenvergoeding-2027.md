@@ -41,6 +41,8 @@ Drie punten zijn voor jou als werkgever belangrijk:
 
 En 2027? Het besluit zelf "vervalt met ingang van 1 januari 2027", omdat de verhoging dan in de wet moet staan. Het kabinet heeft dat opgenomen in het [Belastingplan 2027](https://www.rijksoverheid.nl/themas/belastingen-uitkeringen-en-toeslagen/belastingplan/plannen-kabinet-voor-belasting-op-brandstof-vliegbelasting-en-reiskostenvergoeding); de Tweede en Eerste Kamer stemmen er in november en december 2026 over. Reken voor je begroting 2027 dus met € 0,25, maar controleer het definitieve bedrag na de stemming. Bedragen per situatie en een rekenvoorbeeld vind je in onze gids over de [kilometervergoeding 2027](/nl/blog/kilometervergoeding-2027/).
 
+{{< cta-demo title="Minder collega's alleen in de auto naar het werk" text="In Microsoft Teams koppelt TeamWheels collega's die dezelfde route rijden, zodat ze kunnen carpoolen. De gedeelde ritten en de vermeden CO₂ zie je in één dashboard." src="reiskosten-2027-top" install="true" >}}
+
 ## Vaste of werkelijke reiskostenvergoeding
 
 Je kunt reiskosten op twee manieren vergoeden.
