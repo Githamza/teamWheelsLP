@@ -1,13 +1,14 @@
 ---
 title: "Barème kilométrique 2026 : le calcul exact pour les trajets domicile-travail en voiture"
-seoTitle: "Barème kilométrique 2026 : calcul et montants exacts"
+seoTitle: "Indemnité kilométrique : calcul et barème domicile-travail"
 date: 2026-09-07
+lastmod: 2026-10-29
 draft: false
-description: "Barème kilométrique 2026 (reconduit à l'identique) : tableau complet par CV, calcul pas à pas et majoration électrique de 20 % pour les trajets domicile-travail."
+description: "Calcul de l'indemnité kilométrique pas à pas : puissance fiscale, distance annuelle, formule du barème 2026, majoration électrique et limite des 80 km domicile-travail."
 image: "images/blog/corporate-carpooling.jpg"
 author: "TeamWheels Editorial"
 reading_time: "9 min"
-keywords: "barème kilométrique 2026, indemnité kilométrique 2026, calcul indemnité kilométrique, barème fiscal 2026, majoration électrique 20%, indemnités kilométriques domicile travail, frais kilométriques entreprise, TeamWheels"
+keywords: "indemnité kilométrique, indemnisation kilométrique, calcul indemnité kilométrique, indemnité km, défraiement kilométrique, barème kilométrique 2026, indemnité kilométrique 2026, barème fiscal 2026, majoration électrique 20%, indemnités kilométriques domicile travail, frais kilométriques entreprise, TeamWheels"
 canonical: "https://www.teamwheelsapp.com/fr/blog/bareme-kilometrique-2026-indemnite-domicile-travail/"
 faq:
   - question: "Le barème kilométrique 2026 a-t-il été revalorisé par rapport à 2025 ?"
@@ -19,7 +20,9 @@ faq:
   - question: "Le barème kilométrique s'applique-t-il aux trajets domicile-travail ?"
     answer: "Oui, avec un encadrement : les indemnités kilométriques versées par l'employeur pour des trajets domicile-travail effectués en voiture personnelle sont admises en exonération dans la limite d'un aller-retour de 80 km par jour, sauf circonstances particulières justifiant l'éloignement (absence de transport en commun, horaires atypiques, situation familiale ou de santé). Au-delà, l'exonération peut être remise en cause en cas de contrôle URSSAF."
   - question: "Indemnité kilométrique ou prime de transport : quelle différence pour l'employeur ?"
-    answer: "L'indemnité kilométrique rembourse l'usage du véhicule personnel du salarié selon un barème qui couvre l'ensemble des frais (amortissement, entretien, carburant, assurance). La prime de transport ne couvre que le carburant ou la recharge, dans un plafond annuel forfaitaire (600 € en 2026, mesure exceptionnelle). Les deux sont facultatifs et cumulables avec le Forfait Mobilités Durables selon des règles de plafond distinctes — vérifiez toujours le cumul auprès de l'URSSAF avant de les combiner."
+    answer: "L'indemnité kilométrique rembourse l'usage du véhicule personnel du salarié selon un barème qui couvre l'ensemble des frais (amortissement, entretien, carburant, assurance). La prime de transport ne couvre que le carburant ou la recharge, dans un plafond annuel d'exonération (300 € en régime permanent ; 1 000 € pour les sommes versées entre le 1er octobre et le 31 décembre 2026, mesure exceptionnelle). Les deux sont facultatifs et cumulables avec le Forfait Mobilités Durables selon des règles de plafond distinctes — vérifiez toujours le cumul auprès de l'URSSAF avant de les combiner."
+  - question: "Comment calculer l'indemnité kilométrique domicile-travail ?"
+    answer: "Multipliez la distance aller-retour quotidienne par le nombre de jours réellement travaillés sur site pour obtenir la distance annuelle, identifiez la tranche du barème (jusqu'à 5 000 km, de 5 001 à 20 000 km, au-delà de 20 000 km) sur la ligne de la puissance fiscale du véhicule, puis appliquez la formule de la tranche. Pour un véhicule 100 % électrique, multipliez le résultat par 1,2. Pour une 5 CV à 3 000 km par an : 3 000 × 0,636 = 1 908 €."
 ---
 
 # Barème kilométrique 2026 : le calcul exact pour les trajets domicile-travail en voiture
@@ -60,7 +63,31 @@ Le tarif du covoiturage n'est pas le barème fiscal. **En 2026, aucun tarif offi
 
 Ces montants sont des plafonds, pas des prix conseillés. Entre collègues, l'employeur peut aussi financer le trajet lui-même via le [forfait mobilités durables](/fr/forfait-mobilites-durables-covoiturage/) (jusqu'à 600 € par an exonérés), souvent calculé entre 0,10 et 0,25 € par kilomètre covoituré.
 
-## Le calcul, étape par étape
+## Calculer l'indemnité kilométrique
+
+L'indemnité kilométrique, qu'on appelle aussi indemnisation ou défraiement kilométrique, se calcule toujours de la même façon. Cinq étapes suffisent, dans cet ordre.
+
+**Étape 1 : relever la puissance fiscale du véhicule.** Elle figure sur la carte grise, rubrique P.6, en chevaux fiscaux (CV). C'est elle qui détermine la ligne du barème à utiliser : 3 CV et moins, 4 CV, 5 CV, 6 CV, ou 7 CV et plus.
+
+**Étape 2 : calculer la distance annuelle indemnisable.** Pour un trajet domicile-travail, multipliez la distance aller-retour quotidienne par le nombre de jours réellement travaillés sur site dans l'année. Un salarié qui fait 18 km aller-retour, 250 jours par an, parcourt 4 500 km ; le même salarié en télétravail deux jours par semaine n'en parcourt plus que 2 700. Retirez les congés, les jours de télétravail et les absences : c'est la distance réellement parcourue qui compte, pas une estimation forfaitaire.
+
+**Étape 3 : identifier la tranche de distance.** Jusqu'à 5 000 km, de 5 001 à 20 000 km, ou au-delà de 20 000 km. La tranche se détermine sur le total annuel, pas mois par mois.
+
+**Étape 4 : appliquer la formule de la tranche.** Sous 5 000 km et au-delà de 20 000 km, on multiplie la distance par le taux de la ligne. Entre 5 001 et 20 000 km, on multiplie la distance par le taux, puis on ajoute le montant fixe. Trois exemples avec une 5 CV, à partir du tableau ci-dessus :
+
+| Distance annuelle (5 CV) | Tranche | Calcul | Indemnité kilométrique |
+|---|---|---|---|
+| 3 000 km | Jusqu'à 5 000 km | 3 000 × 0,636 | **1 908 €** |
+| 9 000 km | De 5 001 à 20 000 km | (9 000 × 0,357) + 1 395 | **4 608 €** |
+| 22 000 km | Au-delà de 20 000 km | 22 000 × 0,427 | **9 394 €** |
+
+**Étape 5 : appliquer la majoration électrique, le cas échéant.** Pour un véhicule 100 % électrique, multipliez le résultat par 1,2. La majoration ne s'applique ni aux hybrides rechargeables ni aux thermiques.
+
+Une fois le montant obtenu, deux vérifications avant de verser : la distance domicile-travail respecte-t-elle la limite de 80 km aller-retour par jour (voir plus bas), et l'employeur a-t-il bien en main les justificatifs de la distance et des jours retenus (adresse du salarié, planning, jours de présence) ? Une indemnité km calculée sur une distance non documentée est la première chose qu'un contrôleur URSSAF remet en cause.
+
+Si l'employeur verse l'indemnité chaque mois, il peut appliquer provisoirement le taux de la tranche estimée, puis régulariser en fin d'année une fois la distance annuelle réelle connue : c'est le total annuel qui fixe la tranche.
+
+### Exemple détaillé : 9 000 km avec une 5 CV
 
 Prenons un cas concret : un salarié qui parcourt **9 000 km par an** avec un véhicule de **5 CV** pour se rendre au travail — un aller-retour quotidien d'environ 18 km, sur 250 jours ouvrés.
 
@@ -79,6 +106,26 @@ Sur une année, l'écart entre thermique et électrique dépasse donc 900 € po
 Le barème donne un montant. Il ne dit pas dans quelles conditions vous pouvez l'appliquer sans risque à un trajet domicile-travail — et c'est précisément le point que les calculateurs en ligne, pensés pour les indépendants et les frais réels, ne couvrent jamais.
 
 Pour qu'une indemnité kilométrique domicile-travail reste exonérée de cotisations sociales, l'administration retient en principe un plafond de **80 km aller-retour par jour**, sauf circonstances particulières qui justifient l'éloignement : absence de solution de transport en commun compatible avec les horaires, contrainte familiale ou de santé, mutation professionnelle récente. Au-delà, et en l'absence de justification solide, l'URSSAF peut réintégrer la part excédentaire dans l'assiette des cotisations lors d'un contrôle. Gardez une trace écrite de la situation qui justifie l'éloignement — un mail, un compte rendu d'entretien RH — plutôt qu'une simple mention orale.
+
+## Indemnité kilométrique ou forfait mobilités durables ?
+
+Les deux dispositifs financent le trajet domicile-travail, mais ils ne récompensent pas le même comportement.
+
+**L'indemnité kilométrique** rembourse l'usage du véhicule personnel, seul, selon le barème. Elle couvre l'ensemble des frais du véhicule (amortissement, entretien, carburant, assurance) et son montant croît avec la distance : 4 608 € par an dans l'exemple de la 5 CV à 9 000 km. Elle reste encadrée pour le domicile-travail par la limite des 80 km aller-retour par jour.
+
+**Le [forfait mobilités durables](/fr/forfait-mobilites-durables-covoiturage/)** finance un mode partagé ou actif : covoiturage (conducteur comme passager), vélo, autopartage, engins de déplacement personnels. Il est exonéré de cotisations sociales et d'impôt sur le revenu jusqu'à 600 € par an et par salarié, et jusqu'à 900 € en cumul avec la prise en charge de l'abonnement de transport public. Pour le covoiturage, il est souvent calculé entre 0,10 et 0,25 € par kilomètre covoituré.
+
+| | Indemnité kilométrique | Forfait mobilités durables |
+|---|---|---|
+| Ce qui est financé | Le véhicule personnel, utilisé seul | Covoiturage, vélo, autopartage, engins de déplacement personnels |
+| Mode de calcul | Barème kilométrique selon puissance fiscale et distance | Libre : forfait annuel, forfait par jour, ou au kilomètre |
+| Plafond d'exonération | Montant du barème, dans la limite des 80 km aller-retour par jour sauf circonstances particulières | 600 €/an ; 900 €/an avec l'abonnement transport |
+| Justificatifs | Distance, jours de présence, puissance fiscale | Attestation sur l'honneur ou justificatif d'utilisation |
+| Effet sur le parking et le bilan carbone | Aucun | Moins de voitures, CO₂ évité mesurable |
+
+Les deux ne se cumulent pas sur un même trajet : le FMD couvre le domicile-travail effectué avec un mode durable, l'indemnité kilométrique le trajet effectué seul en voiture. Un même salarié peut en principe relever des deux selon les jours, s'il covoiture certains jours et roule seul les autres, à condition que les jours soient décomptés séparément.
+
+Le choix se fait salarié par salarié : pour le vrai isolé, l'indemnité kilométrique reste la bonne réponse ; pour celui qui a un collègue sur son trajet, le FMD finance un covoiturage qui coûte moins cher à l'employeur que deux indemnités. Pour le justifier, l'employeur recueille une [attestation de covoiturage](/fr/attestation-covoiturage-forfait-mobilites-durables/) ou un relevé de trajets.
 
 ## La question qu'on ne se pose pas assez souvent
 
@@ -102,8 +149,11 @@ Les frais kilométriques calculés avec le barème sont majorés de 20 % pour le
 **Le barème kilométrique s'applique-t-il aux trajets domicile-travail ?**
 Oui, avec un encadrement : les indemnités kilométriques versées par l'employeur pour des trajets domicile-travail effectués en voiture personnelle sont admises en exonération dans la limite d'un aller-retour de 80 km par jour, sauf circonstances particulières justifiant l'éloignement (absence de transport en commun, horaires atypiques, situation familiale ou de santé). Au-delà, l'exonération peut être remise en cause en cas de contrôle URSSAF.
 
+**Comment calculer l'indemnité kilométrique domicile-travail ?**
+Multipliez la distance aller-retour quotidienne par le nombre de jours réellement travaillés sur site pour obtenir la distance annuelle, identifiez la tranche du barème (jusqu'à 5 000 km, de 5 001 à 20 000 km, au-delà de 20 000 km) sur la ligne de la puissance fiscale du véhicule, puis appliquez la formule de la tranche. Pour un véhicule 100 % électrique, multipliez le résultat par 1,2. Pour une 5 CV à 3 000 km par an : 3 000 × 0,636 = 1 908 €.
+
 **Indemnité kilométrique ou prime de transport : quelle différence pour l'employeur ?**
-L'indemnité kilométrique rembourse l'usage du véhicule personnel du salarié selon un barème qui couvre l'ensemble des frais (amortissement, entretien, carburant, assurance). La prime de transport ne couvre que le carburant ou la recharge, dans un plafond annuel forfaitaire (600 € en 2026, mesure exceptionnelle). Les deux sont facultatifs et cumulables avec le Forfait Mobilités Durables selon des règles de plafond distinctes — vérifiez toujours le cumul auprès de l'URSSAF avant de les combiner.
+L'indemnité kilométrique rembourse l'usage du véhicule personnel du salarié selon un barème qui couvre l'ensemble des frais (amortissement, entretien, carburant, assurance). La prime de transport ne couvre que le carburant ou la recharge, dans un plafond annuel d'exonération (300 € en régime permanent ; 1 000 € pour les sommes versées entre le 1er octobre et le 31 décembre 2026, mesure exceptionnelle). Les deux sont facultatifs et cumulables avec le Forfait Mobilités Durables selon des règles de plafond distinctes — vérifiez toujours le cumul auprès de l'URSSAF avant de les combiner. Le détail des règles est sur notre page [prime transport côté employeur](/fr/prime-transport-employeur/).
 
 ---
 
