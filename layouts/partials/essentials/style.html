@@ -174,7 +174,11 @@ main:empty,.main-block:empty{display:none}
   {{ $styles = $styles | resources.PostProcess }}
 {{ end }}
 
-<!-- Defer full stylesheet: load as print, swap to all on load -->
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="print" onload="this.media='all'" />
-<!-- Fallback for no-JS -->
-<noscript><link rel="stylesheet" href="{{ $styles.RelPermalink }}" /></noscript>
+<!-- Full stylesheet, render-blocking on purpose. It used to be deferred
+     (media="print" + onload swap), but the inline critical CSS above only
+     covers the homepage hero, so every other page type (blog posts, pricing,
+     legal) painted half-styled and then jumped when this file arrived. Clarity
+     measured CLS 0.3-0.97 on those pages (Oct 2026). Same-origin and ~72 KB
+     gzipped, so blocking costs little; don't re-defer it without extending
+     the critical CSS to every layout. -->
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
