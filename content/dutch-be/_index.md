@@ -10,6 +10,7 @@ draft: false
 # banner
 banner:
   subtitle: "Voor HR-, mobiliteits- en duurzaamheidsteams"
+  subtitle_link: "#proof"   # the hero line links to the proof strip under the hero
   title: 'Carpoolen voor bedrijven, rechtstreeks in <span class="teams-brand">Microsoft Teams</span>'
   description: "Verminder het woon-werkverkeer met de auto, maak parkeerplaatsen vrij en verlaag uw Scope 3-uitstoot. Geen extra app, in 5 minuten ingericht."
   button:
@@ -93,7 +94,7 @@ fun_facts:
     content: "CO₂ per gedeelde rit: meetbaar effect op uw Scope 3"
 
   - icon: "fas fa-chart-line"
-    counter: "10.6"
+    counter: "10,6"
     counter_suffix: "%"
     counter_prefix: "+"
     content: "jaarlijkse groei van de carpoolmarkt"
@@ -142,6 +143,7 @@ image_and_content_blocks:
       enable: false
 
   - enable: true
+    anchor: "security"   # target of the proof strip security link
     subtitle: "Veiligheid en compliance"
     title: "Een veilige oplossing, ontworpen voor uw IT-afdeling"
     image: "images/why_use_teamWheels.png"

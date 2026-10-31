@@ -1,3 +1,4 @@
+{{ $howUrl := .RelPermalink }}
 {{with .Params.work_process}}
 <section class="section bg-primary-soft rounded-lg wave-block">
   <div class="container container-delta">
@@ -22,7 +23,9 @@
                 <img loading="lazy" decoding="async" class="w-100" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="{{ $item.image_alt | default $item.title }}" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
               </div>
               {{end}}
-              <h3 class="title h4">{{.title | markdownify}}</h3>
+              {{/* Step titles link to the full how-it-works page: visitors click them
+                   (Clarity, Oct 2026). */}}
+              <h3 class="title h4"><a class="title-link" href="{{ $howUrl }}">{{.title | markdownify}}</a></h3>
               <p class="mb-0">{{.content | markdownify}}</p>
             </div>
           </div>

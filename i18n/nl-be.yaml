@@ -208,3 +208,7 @@
     In het Teams-beheercentrum: Teams-apps > Apps beheren > zoek "TeamWheels" > Toestaan.
 
     Alvast bedankt!
+
+# Homepage proof strip (layouts/partials/home-proof.html)
+- id: home_proof_security
+  translation: "Beveiliging en IT-compliance"
