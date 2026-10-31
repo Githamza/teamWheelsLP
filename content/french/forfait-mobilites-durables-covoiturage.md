@@ -92,6 +92,12 @@ image_and_content_blocks:
     button:
       enable: false
 
+    cta_demo:
+      title: "Un forfait au jour ou au kilomètre suppose de compter les trajets"
+      text: "TeamWheels organise le covoiturage dans Microsoft Teams et compte les trajets de chaque salarié : les relevés mensuels servent directement au calcul du forfait."
+      src: "fmd-montants"
+      install: true
+
   - enable: true
     anchor: "prime-covoiturage"
     subtitle: "Ce qui existe encore en 2026"

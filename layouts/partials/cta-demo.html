@@ -18,6 +18,12 @@
   When `href` is given (e.g. to send decision-makers to a comparison page), it
   is used as is and no `?src=` is appended.
   `src` must match ^[a-z0-9-]{1,40}$ or contact.html ignores it.
+
+  install (optional, bool): show the "Add to Microsoft Teams" button (the
+  self-serve 30-day trial, partials/teams-install.html, placement = src) as the
+  main action, with the demo request as a secondary text link. Use it for
+  readers who are ready to try the product now; the install click is tracked
+  as teams_install_click like every other install button.
 */ -}}
 {{- $src := .src -}}
 {{- $href := .href -}}
@@ -29,5 +35,10 @@
   {{- with .text }}
   <p class="cta-demo__text">{{ . }}</p>
   {{- end }}
+  {{- if and .install site.Params.teams_app.enable }}
+  {{ partial "teams-install.html" (dict "placement" $src "trust" true "admin" true) }}
+  <p class="cta-demo__alt small mb-0"><a href="{{ $href }}" data-track="cta_demo_click" data-placement="{{ $src }}">{{ .label | default (i18n "blog_cta_button") }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
+  {{- else }}
   <a class="btn btn-primary" href="{{ $href }}" data-track="cta_demo_click" data-placement="{{ $src }}">{{ .label | default (i18n "blog_cta_button") }}</a>
+  {{- end }}
 </aside>

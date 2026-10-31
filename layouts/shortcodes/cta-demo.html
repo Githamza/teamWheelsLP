@@ -1,8 +1,10 @@
 {{- /* {{< cta-demo title="…" text="…" src="slug-court" >}} — see partials/cta-demo.html.
-       Optional: href="…" (override the contact link), label="…". */ -}}
+       Optional: href="…" (override the contact link), label="…",
+       install="true" (Teams install button as the main action). */ -}}
 {{- partial "cta-demo.html" (dict
   "title" (.Get "title")
   "text" (.Get "text")
   "src" (.Get "src")
   "href" (.Get "href")
-  "label" (.Get "label")) -}}
+  "label" (.Get "label")
+  "install" (eq (.Get "install") "true")) -}}

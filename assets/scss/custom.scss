@@ -887,6 +887,37 @@ $promo-indigo-dark: #2b2d7c;
     margin: 0;
   }
 
+  // Secondary demo link under the Teams install button (install="true").
+  &__alt {
+    margin-top: 0.75rem;
+  }
+
+  // Inside article bodies, `.content` list and icon styles leak in: a bullet
+  // dot (`ul li::before`), list-item spacing, and block icons with a bottom
+  // margin. The perks list already has its own check icons, so reset them.
+  .teams-install__perks li {
+    padding-left: 0;
+    margin-bottom: 0;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  // `.content :not(li) { margin-bottom: 1.75rem }` hits every element of the
+  // install block; zero it, then restore the block's own spacing.
+  .teams-install :not(li) {
+    margin-bottom: 0;
+  }
+
+  .teams-install .teams-install__perks {
+    margin-bottom: 1rem;
+  }
+
+  .teams-install .teams-install__badges {
+    margin-bottom: 0.9rem;
+  }
+
   @media (max-width: 575.98px) {
     padding: 1.25rem 1rem;
 

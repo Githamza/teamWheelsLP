@@ -50,6 +50,8 @@ De FOD BOSA meldt dat het bedrag "tussen 1 oktober en 31 december 2026" op 0,445
 
 Volgens de [RSZ](https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/salary/particularcases/expensesreimbursement.html) geldt het kwartaalbedrag als "maximumbedrag dat aanvaard wordt als onkostenvergoeding vrij van RSZ voor woon-werkverplaatsingen en beroepsverplaatsingen met een eigen voertuig". Het jaarbedrag wordt ook aanvaard, maar wie ervoor kiest, moet het aanhouden voor de volledige periode van 1 juli 2026 tot en met 30 juni 2027. Overstappen naar het kwartaalsysteem kan ten vroegste vanaf 1 juli 2027.
 
+{{< cta-demo title="Minder werknemers alleen met de wagen naar het werk" text="TeamWheels brengt in Microsoft Teams collega's met een gelijkaardig traject samen, zodat ze kunnen carpoolen. In het dashboard zie je de gedeelde ritten en de vermeden CO₂." src="km-2027-top" install="true" >}}
+
 ## Is de vergoeding verplicht?
 
 Dat hangt af van het vervoermiddel.
