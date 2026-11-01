@@ -15,13 +15,16 @@ banner:
     icon: "fas fa-arrow-right"
     link: "contact/"
   image: "images/photos/colleagues-carpooling.jpg"
+  image_alt: "Compañeros de trabajo compartiendo coche en su trayecto diario al trabajo"
 
 image_and_content_blocks:
   - enable: true
     anchor: "why-teamwheels"
     subtitle: "El problema de la adopción, resuelto"
     title: "Por qué la mayoría del software de carpooling corporativo fracasa y TeamWheels no"
-    image: "images/carpooling_kpis.png"
+    image: "images/home-es-adoption-teams-copilot.png"
+    image_fit: true
+    image_alt: "El agente de TeamWheels en Microsoft Teams propone un coche compartido a una empleada y Copilot le reserva plaza con una compañera que hace el mismo trayecto"
     content_position: "right"
     content: "Las apps de carpooling independientes mueren por falta de adopción: los empleados no quieren descargar otra app ni mantener otra cuenta. El programa se estanca y el retorno de la inversión nunca llega.
 
@@ -42,7 +45,9 @@ image_and_content_blocks:
     anchor: "teams-integration"
     subtitle: "La ventaja de Microsoft Teams"
     title: "Coche compartido justo donde sus empleados ya trabajan"
-    image: "images/microsoft-teams.png"
+    image: "images/how-it-works/home-es-step-1.svg"
+    image_fit: true
+    image_alt: "Instalación de la app TeamWheels desde la Microsoft Teams Store, con inicio de sesión SSO y prueba gratuita de 30 días"
     content_position: "left"
     content: "¿Por qué obligar a sus empleados a instalar otra app que acabarán olvidando? TeamWheels se integra de forma nativa en Microsoft Teams, la herramienta que su plantilla ya utiliza a diario. Eso se traduce en una adopción inmediata y cero fricción.
 
@@ -63,7 +68,9 @@ image_and_content_blocks:
     anchor: "features"
     subtitle: "Todo lo que necesitan RR. HH. y los administradores"
     title: "Una plataforma completa de gestión del coche compartido, no solo una app"
-    image: "images/why_use_teamWheels.png"
+    image: "images/how-it-works/home-es-step-3.svg"
+    image_fit: true
+    image_alt: "Panel de administración del software de carpooling corporativo TeamWheels: trayectos compartidos, CO₂ evitado, plazas de aparcamiento liberadas y justificantes"
     content_position: "right"
     content: "TeamWheels ofrece a los administradores el control y la visibilidad que exige un programa de carpooling corporativo, manteniendo una experiencia sencilla para los empleados.
 
@@ -84,7 +91,9 @@ image_and_content_blocks:
     anchor: "roi"
     subtitle: "Impacto de negocio medible"
     title: "Reduzca costes de aparcamiento, cumpla sus objetivos Scope 3 y haga ahorrar a sus empleados"
-    image: "images/photos/commute-reporting-dashboard.jpg"
+    image: "images/home-es-rse.png"
+    image_fit: true
+    image_alt: "Informe ESG de TeamWheels: CO₂ evitado con el coche compartido al trabajo (Scope 3, categoría 7), plazas liberadas y exportación CSRD"
     content_position: "left"
     content: "El software de carpooling corporativo se amortiza en tres partidas del presupuesto y de los informes de su organización.
 
@@ -103,7 +112,9 @@ image_and_content_blocks:
     anchor: "how-to-choose"
     subtitle: "Guía de compra"
     title: "Cómo elegir un software de gestión del coche compartido"
-    image: "images/carpooling_kpis.png"
+    image: "images/home-es-securite.png"
+    image_fit: true
+    image_alt: "Inicio de sesión en TeamWheels con la cuenta profesional de Microsoft (SSO con Entra ID), con los datos en su tenant de Microsoft 365"
     content_position: "right"
     content: "Las comparativas de software de gestión de carpooling y de viajes compartidos para empresas enumeran decenas de proveedores, pero en un programa de movilidad de empleados son cinco los criterios que deciden si la inversión se amortiza:
 
@@ -126,7 +137,9 @@ image_and_content_blocks:
     anchor: "white-label-hr-integration"
     subtitle: "Marca blanca e integración con sistemas de RR. HH."
     title: "Ventajas de una app de coche compartido de marca blanca integrada con sus sistemas de RR. HH."
-    image: "images/why_use_teamWheels.png"
+    image: "images/home-es-benefits.png"
+    image_fit: true
+    image_alt: "Justificantes de trayectos por empleado generados por TeamWheels, listos para exportar a nóminas y sistemas de RR. HH."
     content_position: "left"
     content: "Una app de coche compartido de marca blanca integrada con sus sistemas de RR. HH. y de identidad permite que los empleados se unan con su cuenta de trabajo habitual, mientras que los equipos de RR. HH., nóminas y ESG obtienen datos limpios sin exportaciones manuales. TeamWheels funciona dentro de su propio tenant de Microsoft 365 y con su marca, no como una app de terceros aparte.
 

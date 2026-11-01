@@ -17,13 +17,16 @@ banner:
     icon: "fas fa-arrow-right"
     link: "contact/"
   image: "images/photos/colleagues-carpooling.jpg"
+  image_alt: "Collega's die samen carpoolen op hun woon-werktraject"
 
 image_and_content_blocks:
   - enable: true
     anchor: "waarom-teamwheels"
     subtitle: "Het probleem"
     title: "Waarom een carpool voor uw medewerkers zelden vanzelf start"
-    image: "images/carpooling_kpis.png"
+    image: "images/home-nl-be-adoption-teams-copilot.png"
+    image_fit: true
+    image_alt: "De TeamWheels-assistent in Microsoft Teams stelt een medewerker een carpoolrit voor, en Copilot reserveert een plaats bij een collega met hetzelfde traject"
     content_position: "right"
     content: "De meeste werkgevers willen dat meer medewerkers samen naar het werk rijden: minder wagens op de parking, minder files, minder uitstoot. Toch blijft een carpool vaak steken bij een prikbord, een Excel-lijst of een losse carpool app die na een maand niemand meer opent.
 
@@ -65,7 +68,9 @@ image_and_content_blocks:
     anchor: "zo-werkt-het"
     subtitle: "In Teams, van begin tot eind"
     title: "Zo werkt TeamWheels in Microsoft Teams"
-    image: "images/microsoft-teams.png"
+    image: "images/how-it-works/home-nl-be-step-1.svg"
+    image_fit: true
+    image_alt: "De TeamWheels-app installeren via de Microsoft Teams Store, met aanmelden via SSO en een gratis proefperiode van 30 dagen"
     content_position: "left"
     content: "TeamWheels is geen app naast Teams, maar een Teams-app die u vanuit Microsoft AppSource in uw eigen Microsoft 365-tenant installeert. TeamWheels beschikt over een Microsoft 365 Publisher Attestation. Zo verloopt het voor medewerkers en beheerders.
 
@@ -86,7 +91,9 @@ image_and_content_blocks:
     anchor: "voordelen"
     subtitle: "Voor HR en voor medewerkers"
     title: "Voordelen voor HR en voor uw medewerkers"
-    image: "images/why_use_teamWheels.png"
+    image: "images/how-it-works/home-nl-be-step-3.svg"
+    image_fit: true
+    image_alt: "Beheerdersdashboard van TeamWheels voor carpoolen in uw bedrijf: gedeelde ritten, vermeden CO₂, vrijgekomen parkeerplaatsen en ritoverzichten"
     content_position: "right"
     content: "TeamWheels geeft beheerders de controle en de cijfers die een carpoolprogramma nodig heeft, en houdt het voor medewerkers zo eenvoudig mogelijk.
 
@@ -115,7 +122,9 @@ image_and_content_blocks:
     anchor: "mobiliteitsbeleid"
     subtitle: "Carpoolen in uw beleid"
     title: "Carpoolen opnemen in uw mobiliteitsbeleid"
-    image: "images/photos/commute-reporting-dashboard.jpg"
+    image: "images/home-nl-be-benefits.png"
+    image_fit: true
+    image_alt: "Ritoverzicht per medewerker, automatisch bijgehouden door TeamWheels, met CSV-export voor uw mobiliteitsbeleid"
     content_position: "left"
     content: "Een carpool werkt het best wanneer de werkgever er een duidelijk kader rond zet: wie mag deelnemen, hoe de kosten tussen collega's verdeeld worden, wat er gebeurt bij een gemiste rit, en of u carpoolers extra beloont, bijvoorbeeld met een voorbehouden parkeerplaats of een eigen vergoeding. Voor de fiscale en sociale behandeling van een vergoeding raadpleegt u best uw sociaal secretariaat.
 

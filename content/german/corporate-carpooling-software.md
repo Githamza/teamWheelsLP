@@ -15,13 +15,16 @@ banner:
     icon: "fas fa-arrow-right"
     link: "contact/"
   image: "images/photos/colleagues-carpooling.jpg"
+  image_alt: "Kolleg:innen teilen sich ihren Arbeitsweg in einer Fahrgemeinschaft"
 
 image_and_content_blocks:
   - enable: true
     anchor: "why-teamwheels"
     subtitle: "Das Akzeptanzproblem – gelöst"
     title: "Warum die meisten Fahrgemeinschafts-Lösungen scheitern – und TeamWheels nicht"
-    image: "images/carpooling_kpis.png"
+    image: "images/home-de-adoption-teams-copilot.png"
+    image_fit: true
+    image_alt: "Der TeamWheels-Agent in Microsoft Teams schlägt einer Mitarbeiterin eine Fahrgemeinschaft vor, Copilot reserviert ihr einen Platz bei einer Kollegin mit derselben Strecke"
     content_position: "right"
     content: "Eigenständige Mitfahr-Apps scheitern an mangelnder Nutzung: Mitarbeitende laden keine weitere App herunter und pflegen kein weiteres Konto. Ihr Programm gerät ins Stocken, und der ROI bleibt aus.
 
@@ -42,7 +45,9 @@ image_and_content_blocks:
     anchor: "teams-integration"
     subtitle: "Der Microsoft Teams Vorteil"
     title: "Fahrgemeinschaften dort, wo Ihre Mitarbeitenden bereits arbeiten"
-    image: "images/microsoft-teams.png"
+    image: "images/how-it-works/home-de-step-1.svg"
+    image_fit: true
+    image_alt: "Installation der TeamWheels-App aus dem Microsoft Teams Store, mit SSO-Anmeldung und 30 Tagen kostenlosem Test"
     content_position: "left"
     content: "Warum Mitarbeitende zwingen, eine weitere App zu installieren, die sie ohnehin vergessen? TeamWheels integriert sich nativ in Microsoft Teams – das Tool, das Ihre Belegschaft bereits täglich nutzt. Das bedeutet sofortige Akzeptanz ohne Reibungsverluste.
 
@@ -63,7 +68,9 @@ image_and_content_blocks:
     anchor: "features"
     subtitle: "Alles, was HR und Administratoren brauchen"
     title: "Eine vollständige Plattform für Fahrgemeinschaften – nicht nur eine App"
-    image: "images/why_use_teamWheels.png"
+    image: "images/how-it-works/home-de-step-3.svg"
+    image_fit: true
+    image_alt: "Admin-Dashboard der Fahrgemeinschafts-Software TeamWheels: geteilte Fahrten, vermiedenes CO₂, freie Parkplätze und Fahrtnachweise"
     content_position: "right"
     content: "TeamWheels gibt Administratoren die Steuerungsmöglichkeiten und die Transparenz, die ein betriebliches Fahrgemeinschaftsprogramm erfordert – und hält die Nutzung für Mitarbeitende dennoch mühelos.
 
@@ -84,7 +91,9 @@ image_and_content_blocks:
     anchor: "roi"
     subtitle: "Messbare Wirkung für Ihr Unternehmen"
     title: "Parkkosten senken, Scope-3-Ziele erreichen, Mitarbeitenden Geld sparen"
-    image: "images/photos/commute-reporting-dashboard.jpg"
+    image: "images/home-de-rse.png"
+    image_fit: true
+    image_alt: "ESG-Bericht von TeamWheels: durch Fahrgemeinschaften im Arbeitsweg vermiedenes CO₂ (Scope 3, Kategorie 7), freie Parkplätze und CSRD-Export"
     content_position: "left"
     content: "Fahrgemeinschafts-Software für Unternehmen rechnet sich gleich an drei Stellen in Budget und Reporting Ihres Unternehmens.
 
@@ -103,7 +112,9 @@ image_and_content_blocks:
     anchor: "how-to-choose"
     subtitle: "Leitfaden für Entscheider"
     title: "So wählen Sie die richtige Fahrgemeinschafts-Software"
-    image: "images/carpooling_kpis.png"
+    image: "images/home-de-securite.png"
+    image_fit: true
+    image_alt: "Anmeldung bei TeamWheels mit dem Microsoft-Arbeitskonto (SSO über Entra ID), Daten bleiben in Ihrem Microsoft-365-Tenant"
     content_position: "right"
     content: "Vergleichslisten zu Fahrgemeinschafts- und Ride-Sharing-Software für Unternehmen führen Dutzende Anbieter auf – doch für ein Pendelprogramm entscheiden fünf Kriterien darüber, ob sich die Investition lohnt:
 
@@ -126,7 +137,9 @@ image_and_content_blocks:
     anchor: "white-label-hr-integration"
     subtitle: "White-Label & Integration in HR-Systeme"
     title: "Vorteile einer White-Label-Fahrgemeinschafts-App mit Anbindung an Ihre HR-Systeme"
-    image: "images/why_use_teamWheels.png"
+    image: "images/home-de-benefits.png"
+    image_fit: true
+    image_alt: "Von TeamWheels erstellte Fahrtnachweise pro Mitarbeitendem, bereit für den Export in Lohnabrechnung und HR-Systeme"
     content_position: "left"
     content: "Eine White-Label-Fahrgemeinschafts-App, die an Ihre HR- und Identitätssysteme angebunden ist, bedeutet: Mitarbeitende steigen mit ihrem bestehenden Arbeitskonto ein, während HR-, Lohnbuchhaltungs- und ESG-Teams saubere Daten ohne manuelle Exporte erhalten. TeamWheels läuft in Ihrem eigenen Microsoft-365-Tenant unter Ihrer Marke – nicht als separate Drittanbieter-App.
 

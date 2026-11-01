@@ -4,7 +4,7 @@ seoTitle: "Logiciel de covoiturage entreprise | TeamWheels"
 description: "Logiciel de covoiturage entreprise intégré à Microsoft Teams : mise en relation des trajets, justificatifs FMD, reporting CO₂, 3 € HT/collaborateur/mois (promo), déployé en 5 minutes."
 keywords: "logiciel covoiturage entreprise, outil covoiturage entreprise, application covoiturage entreprise, covoiturage entreprise, plateforme covoiturage entreprise, covoiturage domicile-travail, logiciel covoiturage salariés, Forfait Mobilité Durable, covoiturage Microsoft Teams"
 layout: "benefits"
-lastmod: 2026-09-07
+lastmod: 2026-11-01
 
 banner:
   subtitle: "Pour les équipes RH, Mobilité & RSE"
@@ -16,13 +16,16 @@ banner:
     icon: "fas fa-arrow-right"
     link: "contact/"
   image: "images/photos/colleagues-carpooling.jpg"
+  image_alt: "Collègues partageant leur trajet domicile-travail en covoiturage"
 
 image_and_content_blocks:
   - enable: true
     anchor: "pourquoi-teamwheels"
     subtitle: "Le problème d'adoption, résolu"
     title: "Pourquoi la plupart des logiciels de covoiturage entreprise échouent — et pas TeamWheels"
-    image: "images/carpooling_kpis.png"
+    image: "images/home-fr-adoption-teams-copilot.png"
+    image_fit: true
+    image_alt: "L'agent TeamWheels dans Microsoft Teams propose un covoiturage à une salariée, et Copilot réserve sa place auprès d'une collègue"
     content_position: "right"
     content: "Les applications de covoiturage autonomes échouent par manque d'adoption : vos salariés ne téléchargent pas une app de plus ni ne créent un énième compte. Le programme s'essouffle, et le ROI ne se concrétise jamais.
 
@@ -64,7 +67,9 @@ image_and_content_blocks:
     anchor: "comment-ca-marche"
     subtitle: "Dans Teams, de bout en bout"
     title: "Comment fonctionne TeamWheels dans Microsoft Teams"
-    image: "images/microsoft-teams.png"
+    image: "images/how-it-works/home-fr-step-1.svg"
+    image_fit: true
+    image_alt: "Installation de l'application TeamWheels depuis le Microsoft Teams Store, avec connexion SSO et essai gratuit de 30 jours"
     content_position: "left"
     content: "TeamWheels n'est pas une app à côté de Teams : c'est une application Teams validée par Microsoft, installée depuis AppSource dans votre propre tenant Microsoft 365. Voici ce qui se passe, côté salarié et côté administrateur.
 
@@ -85,7 +90,9 @@ image_and_content_blocks:
     anchor: "fonctionnalites"
     subtitle: "Tout ce dont les RH et admins ont besoin"
     title: "Une véritable plateforme de gestion du covoiturage — pas qu'une app"
-    image: "images/why_use_teamWheels.png"
+    image: "images/how-it-works/home-fr-step-3.svg"
+    image_fit: true
+    image_alt: "Tableau de bord administrateur du logiciel de covoiturage entreprise TeamWheels : trajets partagés, CO₂ évité, places de parking libérées et justificatifs FMD"
     content_position: "right"
     content: "TeamWheels donne aux administrateurs le contrôle et la visibilité qu'exige un programme de covoiturage entreprise, tout en gardant une expérience salarié sans effort.
 
@@ -108,7 +115,9 @@ image_and_content_blocks:
     anchor: "roi"
     subtitle: "Un impact métier mesurable"
     title: "Réduisez le parking, atteignez vos objectifs RSE, versez le FMD"
-    image: "images/photos/commute-reporting-dashboard.jpg"
+    image: "images/home-fr-rse.png"
+    image_fit: true
+    image_alt: "Rapport RSE TeamWheels : CO₂ évité par le covoiturage domicile-travail (Scope 3, catégorie 7), places de parking libérées et export CSRD"
     content_position: "left"
     content: "Un logiciel de covoiturage entreprise se rentabilise sur trois lignes du budget et du reporting de votre organisation.
 
@@ -119,6 +128,27 @@ image_and_content_blocks:
     * **Versez le forfait mobilités durables** — Jusqu'à 600 € par an et par salarié exonérés de charges (900 € en cumul avec l'abonnement transport) pour récompenser le covoiturage domicile-travail — [voir le guide employeur du forfait mobilités durables →](/fr/forfait-mobilites-durables-covoiturage/)
 
     Adopté par des entreprises en France et au Canada. Vous voulez vos chiffres ? [Simulez vos économies →](/fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/) ou lisez le [guide complet du covoiturage entreprise →](/fr/blog/covoiturage-entreprise-guide-2026/).
+    "
+    button:
+      enable: false
+
+  - enable: true
+    anchor: "justificatifs-fmd"
+    subtitle: "Forfait mobilités durables"
+    title: "Des justificatifs FMD prêts pour la paie, sans saisie"
+    image: "images/home-fr-fmd.png"
+    image_fit: true
+    image_alt: "Justificatifs du forfait mobilités durables générés automatiquement par le logiciel de covoiturage TeamWheels pour chaque salarié covoitureur, avec export pour la paie"
+    content_position: "right"
+    content: "Verser le forfait mobilités durables suppose de pouvoir justifier les trajets covoiturés de chaque salarié. Sans outil, c'est une collecte d'attestations et un tableur à tenir chaque mois.
+
+    * **Chaque trajet enregistré** — Les trajets partagés via TeamWheels dans Microsoft Teams sont comptés par salarié, conducteur comme passager
+
+    * **Un justificatif par salarié** — Le relevé mensuel est généré automatiquement, prêt pour le justificatif annuel prévu par le Code du travail
+
+    * **Export pour la paie** — Les RH exportent les justificatifs en un clic, sans ressaisie
+
+    Montants, conditions de mise en place et cumul avec l'abonnement transport : voir le [guide employeur du forfait mobilités durables →](/fr/forfait-mobilites-durables-covoiturage/). Pour les salariés qui covoiturent hors de l'outil, utilisez le [modèle d'attestation de covoiturage →](/fr/attestation-covoiturage-forfait-mobilites-durables/)
     "
     button:
       enable: false
@@ -146,37 +176,16 @@ image_and_content_blocks:
   - enable: true
     anchor: "marque-blanche"
     subtitle: "Deux façons de déployer"
-    title: "TeamWheels ou une plateforme en marque blanche ?"
+    title: "Besoin d'un programme de covoiturage à votre nom ?"
     content_position: "left"
     content: |
       Les deux ne s'opposent pas : il s'agit du même logiciel de covoiturage entreprise, déployé de deux façons.
 
       **TeamWheels en standard** convient à la grande majorité des employeurs : l'application s'installe dans votre tenant Microsoft 365 sous le nom TeamWheels, avec vos sites, vos règles d'appariement et votre politique FMD. Cinq minutes d'installation, un essai gratuit, un prix par collaborateur.
 
-      **La plateforme en marque blanche** s'adresse aux organisations qui veulent faire covoiturer leurs équipes sous leur propre nom — grands comptes, campus, hôpitaux, zones d'activité qui fédèrent plusieurs employeurs. Le programme porte votre marque, votre logo et vos couleurs dans Teams ; il peut être ouvert à plusieurs entités ou sites et s'accompagne d'intégrations RH et d'un reporting sur mesure. La mise en place prend quelques jours au lieu de quelques minutes, et le tarif se construit sur devis.
+      **La version en marque blanche** s'adresse aux grands comptes, campus, hôpitaux et zones d'activité qui veulent faire covoiturer leurs équipes sous leur propre nom. Mise en place en quelques jours, tarif sur devis.
 
       Si vous hésitez, commencez par l'essai standard : la marque blanche s'active ensuite sans réinstallation. Le détail des options, du calendrier de déploiement et des intégrations est sur la page [plateforme de covoiturage en marque blanche →](/fr/white-label-carpool-platform/)
-    button:
-      enable: false
-
-  - enable: true
-    anchor: "marque-blanche-integration-rh"
-    subtitle: "Marque blanche & intégration RH"
-    title: "Les avantages d'une app de covoiturage en marque blanche intégrée à vos systèmes RH"
-    image: "images/why_use_teamWheels.png"
-    content_position: "left"
-    content: "Une app de covoiturage en marque blanche intégrée à vos systèmes RH et d'identité, c'est des salariés qui rejoignent le programme avec leur compte professionnel existant, et des équipes RH, paie et RSE qui disposent de données propres sans export manuel. TeamWheels tourne dans votre propre tenant Microsoft 365, à votre marque — pas une app tierce séparée.
-
-    * **SSO, zéro onboarding** — Le SSO Azure AD / Entra ID fait de votre annuaire salariés la liste des covoitureurs. Pas d'invitations, pas de comptes séparés à créer ou désactiver
-
-    * **Votre marque, votre tenant** — Une expérience en marque blanche dans Microsoft Teams, régie par vos politiques IT et vos règles de résidence des données
-
-    * **Prêt pour la paie & le FMD** — Les justificatifs de trajets alimentent le versement du forfait mobilités durables et les remboursements, sans tableur
-
-    * **Reporting RSE automatisé** — Les données de participation et de CO₂ s'exportent directement dans le reporting Scope 3 (poste 7) et CSRD
-
-    Parce que l'identité, la RH et le covoiturage partagent une seule source de vérité, votre programme reste juste au fil des évolutions d'effectif — pas de listes obsolètes, pas de comptes orphelins.
-    "
     button:
       enable: false
 

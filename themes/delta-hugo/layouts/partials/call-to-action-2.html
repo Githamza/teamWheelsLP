@@ -39,7 +39,9 @@
                     width="{{ $img.Width }}"
                     height="{{ $img.Height }}"
                     src="{{ $imgWebp.RelPermalink }}"
-                    alt="cta Image"
+                    {{/* Decorative illustration by default: empty alt so screen readers
+                         and image search skip it; `call_to_action.image_alt` overrides. */}}
+                    alt="{{ $.Params.call_to_action.image_alt | default "" }}"
                     onerror="this.onerror=null;this.src='{{ $img.RelPermalink }}'" />
                 </div>
               {{ end }}
