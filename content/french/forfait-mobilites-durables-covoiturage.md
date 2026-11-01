@@ -4,7 +4,7 @@ seoTitle: "Forfait mobilités durables 2026 : guide employeur"
 description: "Prime covoiturage 2026 et forfait mobilités durables : montants, plafonds URSSAF, cumuls, mise en 4 étapes et justificatifs pour l'employeur."
 keywords: "forfait mobilités durables, forfait mobilité durable 2026, forfait mobilité durable urssaf, montant forfait mobilité durable 2026, plafond FMD 2026, forfait mobilités durables covoiturage, fmd covoiturage, prime covoiturage 2026, prime covoiturage employeur, justificatif covoiturage fmd, attestation covoiturage employeur, preuve de covoiturage"
 layout: "benefits"
-lastmod: 2026-10-28
+lastmod: 2026-11-01
 # L'article de blog « Forfait Mobilité Durable : le guide complet » (slug 2025)
 # a été fusionné dans cette page pilier en septembre 2026. L'alias est relatif à
 # la racine de langue ; la 301 serveur est déclarée dans static/.htaccess.
@@ -156,7 +156,7 @@ image_and_content_blocks:
 
     * **FMD + indemnités kilométriques** — Le FMD couvre le domicile-travail ; les déplacements professionnels inter-sites relèvent du [barème kilométrique](/fr/blog/bareme-kilometrique-2026-indemnite-domicile-travail/), sans cumul sur un même trajet
 
-    Le détail des règles, plafonds et cumuls de toutes les aides mobilité (titre-mobilité, prise en charge à 75 % de l'abonnement, prime de transport) est dans notre guide dédié : [aides à la mobilité durable en entreprise : règles, plafonds et cumuls →](/fr/blog/aides-mobilite-durable-entreprise-regles-plafonds-cumuls/). Pour arbitrer salarié par salarié entre FMD, indemnité kilométrique et voiture de fonction électrique, lisez notre [comparatif des coûts employeur 2026](/fr/blog/mobilite-salaries-isoles-fmd-ik-voiture-electrique-2026/).
+    Le détail des règles, plafonds et cumuls de toutes les aides mobilité (titre-mobilité, prise en charge à 75 % de l'abonnement, prime de transport) est dans notre guide dédié : [aides à la mobilité durable en entreprise : règles, plafonds et cumuls →](/fr/blog/aides-mobilite-durable-entreprise-regles-plafonds-cumuls/). Pour arbitrer salarié par salarié entre FMD, indemnité kilométrique et voiture de fonction électrique, lisez notre [comparatif des coûts employeur 2026](/fr/blog/mobilite-salaries-isoles-fmd-ik-voiture-electrique-2026/). Les règles URSSAF des autres remboursements (indemnités kilométriques de mission, repas, télétravail) sont sur notre page [frais professionnels URSSAF](/fr/frais-professionnels-urssaf-mobilite/).
     "
     button:
       enable: false

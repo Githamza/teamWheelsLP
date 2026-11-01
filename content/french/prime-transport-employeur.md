@@ -4,7 +4,7 @@ seoTitle: "Prime transport employeur 2026 : règles et montants"
 description: "Prime transport côté employeur : conditions de versement, plafonds d'exonération, cumul avec le forfait mobilités durables et obligations de justificatifs."
 slug: "prime-transport-employeur"
 date: 2026-10-28
-lastmod: 2026-10-28
+lastmod: 2026-11-01
 draft: false
 layout: "pillar"
 keywords: ["prime transport employeur", "prime de transport 2026", "prime transport", "prime de transport employeur", "plafond prime de transport", "prime transport forfait mobilités durables"]
@@ -117,7 +117,7 @@ La prime de transport se met en place comme le FMD :
 - **prime carburant** : les éléments justifiant les sommes versées, recueillis auprès du salarié, par exemple ce qui établit qu'il remplit les conditions d'éligibilité (adresse, horaires, lieux de travail) et utilise son véhicule personnel pour ses trajets domicile-travail ;
 - **forfait mobilités durables** : une attestation sur l'honneur ou un justificatif d'utilisation du mode de transport, pour chaque bénéficiaire. Pour le covoiturage, notre modèle d'[attestation de covoiturage pour le forfait mobilités durables](/fr/attestation-covoiturage-forfait-mobilites-durables/) est téléchargeable en Word et en PDF.
 
-Conservez ces pièces au moins trois ans, durée de la prescription du contrôle URSSAF. Un fichier récapitulatif ne remplace pas les justificatifs eux-mêmes.
+Conservez ces pièces au moins trois ans, durée de la prescription du contrôle URSSAF. Un fichier récapitulatif ne remplace pas les justificatifs eux-mêmes. Les règles communes à tous les remboursements (frais réels, allocations forfaitaires, repas, télétravail) sont détaillées sur notre page [frais professionnels et URSSAF](/fr/frais-professionnels-urssaf-mobilite/).
 
 {{< cta-demo title="Prime carburant, FMD : suivre les trajets réels de chaque salarié" text="TeamWheels enregistre les trajets covoiturés dans Microsoft Teams et produit des relevés par salarié, prêts pour la paie et le suivi des plafonds." src="prime-transport-employeur" >}}
 

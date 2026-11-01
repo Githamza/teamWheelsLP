@@ -2,7 +2,7 @@
 title: "Barème kilométrique 2026 : le calcul exact pour les trajets domicile-travail en voiture"
 seoTitle: "Indemnité kilométrique : calcul et barème domicile-travail"
 date: 2026-09-07
-lastmod: 2026-10-29
+lastmod: 2026-11-01
 draft: false
 description: "Calcul de l'indemnité kilométrique pas à pas : puissance fiscale, distance annuelle, formule du barème 2026, majoration électrique et limite des 80 km domicile-travail."
 image: "images/blog/corporate-carpooling.jpg"
@@ -105,7 +105,7 @@ Sur une année, l'écart entre thermique et électrique dépasse donc 900 € po
 
 Le barème donne un montant. Il ne dit pas dans quelles conditions vous pouvez l'appliquer sans risque à un trajet domicile-travail — et c'est précisément le point que les calculateurs en ligne, pensés pour les indépendants et les frais réels, ne couvrent jamais.
 
-Pour qu'une indemnité kilométrique domicile-travail reste exonérée de cotisations sociales, l'administration retient en principe un plafond de **80 km aller-retour par jour**, sauf circonstances particulières qui justifient l'éloignement : absence de solution de transport en commun compatible avec les horaires, contrainte familiale ou de santé, mutation professionnelle récente. Au-delà, et en l'absence de justification solide, l'URSSAF peut réintégrer la part excédentaire dans l'assiette des cotisations lors d'un contrôle. Gardez une trace écrite de la situation qui justifie l'éloignement — un mail, un compte rendu d'entretien RH — plutôt qu'une simple mention orale.
+Pour qu'une indemnité kilométrique domicile-travail reste exonérée de cotisations sociales, l'administration retient en principe un plafond de **80 km aller-retour par jour**, sauf circonstances particulières qui justifient l'éloignement : absence de solution de transport en commun compatible avec les horaires, contrainte familiale ou de santé, mutation professionnelle récente. Au-delà, et en l'absence de justification solide, l'URSSAF peut réintégrer la part excédentaire dans l'assiette des cotisations lors d'un contrôle. Gardez une trace écrite de la situation qui justifie l'éloignement — un mail, un compte rendu d'entretien RH — plutôt qu'une simple mention orale. Les autres règles URSSAF applicables aux remboursements (repas, justificatifs, frais réels ou forfait) sont rassemblées sur notre page [frais professionnels URSSAF](/fr/frais-professionnels-urssaf-mobilite/).
 
 ## Indemnité kilométrique ou forfait mobilités durables ?
 
