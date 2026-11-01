@@ -1367,3 +1367,38 @@ $promo-indigo-dark: #2b2d7c;
   text-transform: uppercase;
   color: $color-primary;
 }
+
+// ============================================================
+// Inline text links (body copy)
+// ------------------------------------------------------------
+// Links inside running text were dark, thin-underlined and hard to spot.
+// Colour: darken($color-primary, 8%) = #3f44ba, 7.64:1 on white and
+// 5.65:1 on the .bg-primary-soft tint (#d6deec), so WCAG AA (4.5:1) holds.
+// Hover/focus: darken 14% (#383ca3) plus a full-opacity underline.
+// Excluded on purpose: buttons (.btn, .teams-install), title and subtitle
+// links (.title-link, .subtitle-link), nav and footer menus.
+// ============================================================
+.content a:not(.btn):not(.title-link):not(.subtitle-link):not(.teams-install):not(footer a),
+.home-why__lede a:not(.btn) {
+  color: darken($color-primary, 8%);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(darken($color-primary, 8%), .55);
+  transition: color .2s ease, text-decoration-color .2s ease;
+}
+
+.content a:not(.btn):not(.title-link):not(.subtitle-link):not(.teams-install):not(footer a):hover,
+.content a:not(.btn):not(.title-link):not(.subtitle-link):not(.teams-install):not(footer a):focus-visible,
+.home-why__lede a:not(.btn):hover,
+.home-why__lede a:not(.btn):focus-visible {
+  color: darken($color-primary, 14%);
+  text-decoration-color: darken($color-primary, 14%);
+}
+
+.content a:not(.btn):focus-visible,
+.home-why__lede a:not(.btn):focus-visible {
+  outline: 2px solid $color-primary;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
