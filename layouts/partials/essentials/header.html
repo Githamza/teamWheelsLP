@@ -1,0 +1,151 @@
+<!-- navigation -->
+{{- /* Project override of the theme header: the whole bar is one rounded
+       capsule (styles: "Pill navbar" in scss/custom.scss). Desktop: logo |
+       links (a highlight glides to the hovered link, assets/js/nav-glide.js)
+       | language + install CTA. Below xl the capsule holds logo, language
+       and the menu button, and grows into a rounded panel when opened. */ -}}
+<header class="navigation navigation--pill">
+  <div class="container container-delta">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-xl navbar-light navbar-pill" aria-label="{{ i18n `nav_main` }}">
+      <!-- navbar brand/logo -->
+      <a
+        class="navbar-brand"
+        href="{{ site.Home.RelPermalink }}"
+        title="{{ site.Title }}">
+        {{ partial "logo.html" }}
+      </a>
+
+      <div class="navbar-actions">
+        <!-- Language switcher (flags) — mobile / below xl -->
+        <div class="d-inline-flex d-xl-none me-2">
+          {{ partial "essentials/lang-switch.html" . }}
+        </div>
+
+
+        <button
+          aria-label="{{ i18n `nav_main` | default `Menu` }}"
+          aria-controls="navigation"
+          aria-expanded="false"
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navigation">
+          <span class="navbar-pill__burger" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav mx-auto">
+          <li class="navbar-pill__glide" aria-hidden="true"></li>
+          {{ $currentPage := . }}
+          {{ range site.Menus.main }}
+            {{ $menuURL := .URL | absLangURL }}
+            {{ $pageURL:= $currentPage.Permalink | absLangURL }}
+            {{ $active := eq $menuURL $pageURL }}
+            {{ if .HasChildren }}
+              <li
+                class="nav-item dropdown 
+            {{ range .Children }}
+                  {{ $childURL := .URL | absLangURL }}
+                  {{ $active := eq $childURL $pageURL }}
+                  {{ if $active }}active{{ end }}
+                {{ end }}">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false">
+                  {{ .Name }}
+                </a>
+                <ul class="dropdown-menu">
+                  {{ range .Children }}
+                    {{ $childURL := .URL | absLangURL }}
+                    {{ $active := eq $childURL $pageURL }}
+                    <li>
+                      <a
+                        class="dropdown-item {{ if $active }}active{{ end }}"
+                        {{ if and (findRE `^http` .URL) (not (hasPrefix .URL site.BaseURL)) }}
+                          target="_blank" rel="noopener"
+                        {{ end }}
+                        href="{{ if findRE `^#` .URL }}
+                          {{ if not $.IsHome }}
+                            {{ site.Home.RelPermalink }}
+                          {{ end }}{{ .URL }}
+                        {{ else if eq .URL (`/` | relURL) }}
+                          {{ .URL }}{{ site.Language }}/
+                        {{ else }}
+                          {{ partial "lang-url.html" .URL }}
+                        {{ end }}"
+                        >{{ .Name }}</a
+                      >
+                    </li>
+                  {{ end }}
+                </ul>
+              </li>
+            {{ else }}
+              <li class="nav-item {{ if $active }}active{{ end }}">
+                <a
+                  class="nav-link"{{ if $active }} aria-current="page"{{ end }}
+                  {{ if and (findRE `^http` .URL) (not (hasPrefix .URL site.BaseURL)) }}
+                    target="_blank" rel="noopener"
+                  {{ end }}
+                  href="{{ if findRE `^#` .URL }}
+                    {{ if not $.IsHome }}
+                      {{ site.Home.RelPermalink }}
+                    {{ end }}{{ .URL }}
+                  {{ else if eq .URL (`/` | relURL) }}
+                    {{ .URL }}{{ site.Language }}/
+                  {{ else }}
+                    {{ partial "lang-url.html" .URL }}
+                  {{ end }}"
+                  >{{ .Name }}</a
+                >
+              </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+
+        <div class="navbar-right">
+          <!-- Language switcher — desktop / xl and up -->
+          <div class="d-none d-xl-flex">
+            {{ partial "essentials/lang-switch.html" . }}
+          </div>
+          {{ with site.Params.navigation_button }}
+            {{ if .enable }}
+              <!-- login btn -->
+              <a href="{{ partial "lang-url.html" .link }}" class="btn btn-link">
+                {{ with .icon }}<i class="icon {{ . }} me-1"></i>{{ end }}
+                {{ .label }}
+              </a>
+            {{ end }}
+          {{ end }}
+
+          {{ with site.Params.navigation_button_two }}
+            {{ if .enable }}
+              <!-- signup btn -->
+              <a href="{{ partial "lang-url.html" .link }}" class="btn btn-primary">
+                {{ .label }}
+                {{ with .icon }}<i class="icon {{ . }}"></i>{{ end }}
+              </a>
+            {{ end }}
+          {{ end }}
+
+          {{/* Site-wide install CTA (Teams Store deep link) */}}
+          {{ with site.Params.teams_app }}
+            {{ if .enable }}
+              <a href="{{ .install_url }}" target="_blank" rel="noopener"
+                 class="btn btn-primary btn-sm btn-teams-install"
+                 data-track="teams_install_click" data-placement="header">
+                <img src="{{ "images/microsoft-teams-icon.svg" | relURL }}" alt="" width="22" height="22" class="btn-teams-install__icon" aria-hidden="true">{{ i18n "teams_install_button_short" }}
+              </a>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->

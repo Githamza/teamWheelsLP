@@ -12,6 +12,8 @@
 
 <!-- main script -->
 {{ $scripts = $scripts | append (resources.Get "js/script.js") }}
+{{ $scripts = $scripts | append (resources.Get "js/nav-glide.js") }}
+{{ $scripts = $scripts | append (resources.Get "js/nav-sticky.js") }}
 {{ $scripts = $scripts | resources.Concat "js/scripts.js" }}
 {{ if hugo.IsProduction }}
   {{ $scripts = $scripts | fingerprint "sha512" }}
