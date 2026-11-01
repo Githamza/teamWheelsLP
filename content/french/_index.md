@@ -1,8 +1,14 @@
 ---
-title: "TeamWheels | Logiciel de Covoiturage Entreprise pour Microsoft Teams"
-seoTitle: "Covoiturage entreprise dans Microsoft Teams | TeamWheels"
-description: "Application de covoiturage entreprise dans Microsoft Teams. Pilotez Scope 3, parking et Forfait Mobilité Durable — déployé en 5 minutes. Essai 30 jours."
-keywords: "covoiturage entreprise, BlaBlaCar entreprise, Uber pour salariés, application covoiturage Microsoft Teams, application Teams covoiturage, ridesharing entreprise, plateforme mobilité entreprise, trajet domicile-travail, gestion des trajets salariés, forfait mobilité durable, autopartage entreprise, mobilité durable Scope 3, covoiturage salariés, partage de trajets entreprise, application commute entreprise"
+title: "TeamWheels | Solution de covoiturage entreprise pour vos salariés"
+seoTitle: "Covoiturage entreprise : la solution pour vos salariés | TeamWheels"
+description: "Solution de covoiturage entreprise : mise en relation des salariés, justificatifs FMD et suivi Scope 3. Intégrée à Microsoft Teams, essai gratuit 30 jours."
+# accueil = requête tête commerciale « covoiturage entreprise » (solution pour
+# employeurs) ; Teams/Copilot = argument de différenciation, pas l'angle principal.
+# Les autres intentions ont leur page, ne pas les viser ici :
+#   logiciel / outil / application → corporate-carpooling-software
+#   guide, mise en place (informationnel) → blog/covoiturage-entreprise-guide-2026
+#   FMD → forfait-mobilites-durables-covoiturage ; marque blanche → white-label-carpool-platform
+keywords: "covoiturage entreprise, solution covoiturage entreprise, covoiturage salariés, programme de covoiturage entreprise, TeamWheels"
 
 # banner
 banner:
@@ -20,7 +26,7 @@ banner:
     alt: "Microsoft Teams"
   - src: "images/microsoft-copilot-icon.svg"
     alt: "Microsoft Copilot"
-  lede: "TeamWheels facilite la mobilité durable de vos collaborateurs."
+  lede: "TeamWheels met en relation vos salariés qui font le même trajet et pilote votre programme de covoiturage, de l'inscription au forfait mobilités durables."
   lede_logo: "images/logo.png"   # « TeamWheels » remplacé par le logo (icône + typo manuscrite)
   # anciens textes (layout deux colonnes), non affichés en layout centered
   subtitle: "Plébiscité par les équipes RH & développement durable"
@@ -97,11 +103,11 @@ video_demo:
 why_teamwheels:
   enable: true
   subtitle: "Comparatif"
-  title: "Pourquoi TeamWheels et pas une application tierce ?"
-  lede: "Une application de covoiturage à part, c'est une app de plus que vos salariés oublient. TeamWheels vit là où ils travaillent déjà : Microsoft Teams."
+  title: "Pourquoi TeamWheels plutôt qu'une autre solution de covoiturage ?"
+  lede: "Le covoiturage en entreprise échoue quand personne n'ouvre l'app. TeamWheels est intégré nativement à Microsoft Teams et Copilot, les outils que vos salariés utilisent déjà toute la journée : l'adoption suit. Découvrez notre [logiciel de covoiturage entreprise](/fr/corporate-carpooling-software/)."
   topic_label: "Critère"
-  them_label: "Application de covoiturage tierce"
-  us_label: "TeamWheels dans Microsoft Teams"
+  them_label: "Solution de covoiturage classique"
+  us_label: "TeamWheels"
   rows:
   - topic: "Accès"
     them: "Une app à télécharger, un compte et un mot de passe à créer"
@@ -172,7 +178,7 @@ image_and_content_blocks:
     title: "Le covoiturage directement dans Microsoft Teams"
     image: "images/why_use_teamWheels.png"
     content_position: "right"
-    content: "TeamWheels est un [logiciel de covoiturage entreprise](/fr/corporate-carpooling-software/) qui s'intègre nativement à Microsoft Teams — zéro app supplémentaire, adoption immédiate. Un admin, quelques clics, et votre programme covoiturage est en ligne en 5 minutes avec 40%+ de participation.
+    content: "TeamWheels est un [outil de covoiturage entreprise](/fr/corporate-carpooling-software/) qui s'intègre nativement à Microsoft Teams — zéro app supplémentaire, adoption immédiate. Un admin, quelques clics, et votre programme covoiturage est en ligne en 5 minutes avec 40%+ de participation.
 
     [En savoir plus →](benefits/#integration-teams)
     "

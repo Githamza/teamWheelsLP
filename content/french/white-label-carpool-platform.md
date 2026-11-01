@@ -3,7 +3,7 @@ title: "Plateforme de Covoiturage en Marque Blanche | TeamWheels"
 description: "Plateforme de covoiturage en marque blanche (white label) : votre marque, votre tenant Microsoft 365, intégration RH, en ligne en quelques jours."
 keywords: "covoiturage marque blanche, plateforme covoiturage marque blanche, application covoiturage marque blanche, covoiturage white label, white label carpooling, plateforme covoiturage personnalisable, covoiturage à votre marque, covoiturage marque blanche intégration RH"
 layout: "benefits"
-lastmod: 2026-09-07
+lastmod: 2026-11-01
 
 banner:
   subtitle: "Pour les employeurs, campus & zones d'activité"
@@ -26,7 +26,7 @@ image_and_content_blocks:
     content_position: "right"
     content: "Cherchez « application de covoiturage en marque blanche » et vous trouverez surtout des agences de développement et des scripts clonés : 14 à 16 semaines de réalisation, 20 000 à 200 000 €+ de budget, et une app que vos salariés devront quand même télécharger. Cette voie a du sens pour lancer un service de covoiturage grand public. Rarement pour un employeur.
 
-    TeamWheels, c'est l'autre voie — une plateforme de covoiturage entreprise prête à l'emploi, que vous personnalisez au lieu de la construire :
+    TeamWheels, c'est l'autre voie — une plateforme de covoiturage en marque blanche prête à l'emploi, que vous personnalisez au lieu de la construire :
 
     * **Opérationnelle en jours, pas en trimestres** — Installation depuis Microsoft AppSource en 5 minutes environ ; personnalisation en une après-midi
 
