@@ -1356,3 +1356,14 @@ $promo-indigo-dark: #2b2d7c;
     text-underline-offset: 0.2em;
   }
 }
+
+// Homepage "launch your programme" steps (partials/home-steps.html):
+// timing label above each step title ("Jour 1", "Semaine 1", "Mois 1").
+.home-steps__label {
+  margin-bottom: 0.25rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $color-primary;
+}

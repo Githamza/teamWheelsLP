@@ -165,10 +165,31 @@ fun_facts:
     counter_prefix: "+"
     content: "de croissance annuelle du marché du covoiturage"
 
-# work_process
+# work_process — étapes propres à l'accueil, vues par l'employeur (partials/home-steps.html).
+# Sans `process_item`, l'accueil reprendrait les étapes de how-it-works.md.
+# Le titre ne doit pas reprendre celui de /fr/how-it-works/ (« Comment fonctionne… »).
 work_process:
   enable: true
-  section: "how-it-works"
+  section: "how-it-works"   # cible du bouton « Voir le fonctionnement détaillé »
+  subtitle: "Mise en place"
+  title: "Lancez votre programme de covoiturage en moins d'une semaine"
+  link_label: "Voir le fonctionnement détaillé"
+  process_item:
+    - label: "Jour 1"
+      title: "Installez"
+      image: "images/how-it-works/home-fr-step-1.svg"
+      image_alt: "TeamWheels ajouté depuis le Microsoft Teams Store, connexion SSO et essai gratuit activés"
+      content: "Votre admin Microsoft 365 ajoute TeamWheels en 5 minutes. Pas d'app à télécharger : vos salariés se connectent avec leur compte pro. L'essai gratuit démarre à l'installation."
+    - label: "Semaine 1"
+      title: "Lancez"
+      image: "images/how-it-works/home-fr-step-2.svg"
+      image_alt: "L'agent TeamWheels propose à un salarié un covoiturage sur son trajet domicile-travail"
+      content: "Vos salariés déclarent leurs trajets dans Teams ou à l'agent Copilot. TeamWheels propose automatiquement les équipages entre collègues qui font le même trajet."
+    - label: "Mois 1"
+      title: "Pilotez"
+      image: "images/how-it-works/home-fr-step-3.svg"
+      image_alt: "Tableau de bord TeamWheels : trajets partagés, CO₂ évité, places de parking libérées et justificatifs FMD"
+      content: "Suivez les trajets partagés, le CO₂ évité et les places de parking libérées. Les justificatifs du forfait mobilités durables sont prêts à verser."
 
 # image_and_content_block
 image_and_content_blocks:

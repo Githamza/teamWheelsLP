@@ -526,8 +526,14 @@
 
   {{ with .Params.work_process }}
     {{ if .enable }}
+      {{/* inline `process_item` on the homepage → its own steps (home-steps.html);
+           otherwise the steps of the `section` page (how-it-works) */}}
+      {{ if .process_item }}
+        {{ partial "home-steps.html" (dict "data" . "how" (site.GetPage (string .section))) }}
+      {{ else }}
       {{ with site.GetPage (string .section) }}
         {{ partial "work-process.html" . }}
+      {{ end }}
       {{ end }}
     {{ end }}
   {{ end }}
