@@ -5,7 +5,7 @@ Two clips, each with its own watch page:
 | Clip | Files | Homepage placement | Watch page |
 |---|---|---|---|
 | Launch video (20 s, EN + FR) | `teamwheels-launch-{en,fr}.mp4` + `-poster.jpg` | hero carousel (`launch_video:` block) — slide 1 is the animated `banner.image` SVG, slide 2 the clip (muted autoplay after 3 s, created by JS) | `/{en,fr}/launch-video/` (`content/*/launch-video.md`) |
-| Full demo (60 s, one per language) | `teamwheels-demo-{fr,en,de,es,nl,nl-be}.*` | section under the hero (`video_demo:` block) | `/{en,fr}/demo/` |
+| Full demo (65 s, one per language) | `teamwheels-demo-{fr,en,de,es,nl,nl-be}.*` | section under the hero (`video_demo:` block) | `/{en,fr}/demo/` |
 
 The launch `-poster.jpg` files are a 1280×720 raster render of the banner SVG (Google does
 not accept SVG thumbnails); regenerate them if the SVG changes. The launch MP4s were only
@@ -19,7 +19,7 @@ language points at its own files:
 assets/videos/
   teamwheels-demo-<lang>.mp4         # primary (H.264 + AAC, 1080p, +faststart)
   teamwheels-demo-<lang>.webm        # alternative (VP9 + Opus)
-  teamwheels-demo-<lang>-poster.jpg  # frame at 24.6 s = the video thumbnail
+  teamwheels-demo-<lang>-poster.jpg  # frame at 29.4 s = the video thumbnail
 ```
 
 `<lang>` is fr, en, de, es, nl or nl-be. The source is the HyperFrames project in

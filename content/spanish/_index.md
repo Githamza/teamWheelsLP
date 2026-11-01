@@ -1,8 +1,10 @@
 ---
-title: "TeamWheels | Software de coche compartido para empresas en Microsoft Teams"
-seoTitle: "Carpooling corporativo en Microsoft Teams | TeamWheels"
-description: "Coche compartido para empresas en Microsoft Teams. Reduzca emisiones Scope 3, parking y costes de desplazamiento. Activo en 5 minutos. Prueba gratis 30 días."
-keywords: "coche compartido para empresas, carpooling corporativo, carpooling empresarial, app de coche compartido para empleados, BlaBlaCar para empresas, Uber para empleados, app de Microsoft Teams, plataforma de gestión de desplazamientos, desplazamientos de empleados, software de carpooling para empresas, movilidad sostenible, plan de movilidad, informe de emisiones Scope 3, movilidad corporativa, viajes compartidos al trabajo"
+title: "TeamWheels | Coche compartido para empresas y sus empleados"
+seoTitle: "Coche compartido para empresas y empleados | TeamWheels"
+description: "Coche compartido para empresas: emparejamiento de empleados, justificantes de trayectos e informes Scope 3. En Microsoft Teams, prueba gratis 30 días."
+# portada = término comercial principal «coche compartido para empresas» (solución para empleadores);
+# Teams/Copilot = argumento diferenciador, no el titular. Software / app → corporate-carpooling-software
+keywords: "coche compartido para empresas, carpooling empresas, carpooling corporativo, coche compartido empleados, programa de coche compartido, TeamWheels"
 
 # banner
 banner:
@@ -20,7 +22,7 @@ banner:
     alt: "Microsoft Teams"
   - src: "images/microsoft-copilot-icon.svg"
     alt: "Microsoft Copilot"
-  lede: "TeamWheels facilita la movilidad sostenible de sus empleados."
+  lede: "TeamWheels conecta a los empleados que hacen el mismo trayecto y gestiona su programa de coche compartido, desde la inscripción hasta los beneficios de movilidad."
   lede_logo: "images/logo.png"   # "TeamWheels" swapped for the logo
   # previous two-column texts, not shown in the centered layout
   subtitle: "La confianza de equipos de RR. HH. y Sostenibilidad de toda Europa y Norteamérica"
@@ -86,8 +88,8 @@ video_demo:
   # estructurados solo se emiten en /demo/).
   description: "Un recorrido de 60 segundos por TeamWheels, la app de coche compartido y gestión de desplazamientos de empleados que funciona de forma nativa dentro de Microsoft Teams. Vea en acción el emparejamiento de trayectos, el bot conversacional y el panel de emisiones Scope 3."
   uploadDate: "2026-11-01"
-  duration: "PT1M"        # ISO 8601, para el JSON-LD VideoObject
-  duration_seconds: 60      # segundos, para el sitemap de vídeo
+  duration: "PT1M5S"        # ISO 8601, para el JSON-LD VideoObject
+  duration_seconds: 65      # segundos, para el sitemap de vídeo
   watch_page: "/demo/"                            # página del vídeo (destino del enlace)
   poster: "videos/teamwheels-demo-es-poster.jpg"   # fotograma mostrado antes de cargar el clip / miniatura del vídeo
   webm: "videos/teamwheels-demo-es.webm"
@@ -98,11 +100,11 @@ video_demo:
 why_teamwheels:
   enable: true
   subtitle: "Comparativa"
-  title: "¿Por qué TeamWheels y no una app independiente?"
-  lede: "Una app de coche compartido independiente es una app más que sus empleados olvidan. TeamWheels está donde ya trabajan: Microsoft Teams."
+  title: "¿Por qué TeamWheels y no otra solución de coche compartido?"
+  lede: "El coche compartido en la empresa fracasa cuando nadie abre la app. TeamWheels está integrado de forma nativa en Microsoft Teams y Copilot, las herramientas que sus empleados ya usan todo el día: la adopción llega sola. Descubra nuestro [software de carpooling corporativo](/es/corporate-carpooling-software/)."
   topic_label: "Criterio"
-  them_label: "App de coche compartido independiente"
-  us_label: "TeamWheels en Microsoft Teams"
+  them_label: "Solución de coche compartido clásica"
+  us_label: "TeamWheels"
   rows:
   - topic: "Acceso"
     them: "Una app que descargar, una cuenta y una contraseña que crear"
@@ -160,22 +162,44 @@ fun_facts:
     counter_prefix: "+"
     content: "de crecimiento anual en la adopción del carpooling corporativo a nivel mundial"
 
-# work_process
+# work_process — homepage-only steps, from the employer's side (partials/home-steps.html).
+# Sin `process_item`, la portada mostraría los pasos de how-it-works.md; no repetir el título de esa página.
 work_process:
   enable: true
-  section: "how-it-works"
+  section: "how-it-works"   # target of the "Ver el funcionamiento en detalle" button
+  subtitle: "Puesta en marcha"
+  title: "Lance su programa de coche compartido en menos de una semana"
+  link_label: "Ver el funcionamiento en detalle"
+  process_item:
+    - label: "Día 1"
+      title: "Instale"
+      image: "images/how-it-works/home-es-step-1.svg"
+      image_alt: "TeamWheels agregado desde la Microsoft Teams Store, con inicio de sesión SSO y prueba gratuita activada"
+      content: "Su administrador de Microsoft 365 agrega TeamWheels en 5 minutos. Sin app que descargar: sus empleados inician sesión con su cuenta profesional. La prueba gratuita empieza con la instalación."
+    - label: "Semana 1"
+      title: "Lance"
+      image: "images/how-it-works/home-es-step-2.svg"
+      image_alt: "El agente de TeamWheels propone a una empleada un coche compartido en su trayecto al trabajo"
+      content: "Sus empleados indican sus trayectos en Teams o al agente de Copilot. TeamWheels propone automáticamente coches compartidos entre compañeros que hacen el mismo recorrido."
+    - label: "Mes 1"
+      title: "Supervise"
+      image: "images/how-it-works/home-es-step-3.svg"
+      image_alt: "Panel de TeamWheels: trayectos compartidos, CO₂ evitado, plazas de aparcamiento liberadas y justificantes"
+      content: "Siga los trayectos compartidos, el CO₂ evitado y las plazas de aparcamiento liberadas. Los justificantes por empleado están listos para sus beneficios de movilidad."
 
 # image_and_content_block
 image_and_content_blocks:
   - enable: true
     subtitle: "Por qué los responsables de RR. HH. y Sostenibilidad eligen TeamWheels"
     subtitle_link: "benefits/"
-    title: "Coche compartido para empleados, justo donde sus equipos ya trabajan"
-    image: "images/why_use_teamWheels.png"
+    title: "Adoptado por sus empleados gracias a Microsoft Teams y Copilot"
+    image: "images/home-es-adoption-teams-copilot.png"
+    image_fit: true   # product mockup: full-width image, no padding
+    image_alt: "TeamWheels en Microsoft Teams propone un coche compartido a una empleada y Copilot encuentra compañeros con el mismo trayecto"
     content_position: "right"
-    content: "TeamWheels es un software de carpooling corporativo que se integra de forma nativa en Microsoft Teams: sin apps adicionales ni gestión del cambio. Un administrador de Teams, unos pocos clics, y su programa de coche compartido está activo en 5 minutos, con más del 40 % de participación de la plantilla.
+    content: "TeamWheels es una [herramienta de carpooling corporativo](/es/corporate-carpooling-software/) que se integra de forma nativa en Microsoft Teams: sin apps adicionales ni gestión del cambio. Un administrador de Teams, unos pocos clics, y su programa de coche compartido está activo en 5 minutos, con más del 40 % de participación de la plantilla.
 
-    [Descubra el software de carpooling corporativo →](/es/corporate-carpooling-software/) · [Más información →](benefits/#teams-integration)
+    [Más información →](benefits/#teams-integration)
     "
     button:
       enable: false
@@ -183,7 +207,9 @@ image_and_content_blocks:
   - enable: true
     subtitle: "Impacto ESG y de movilidad medible"
     title: "Reduzca las emisiones Scope 3 y los costes de aparcamiento, y retenga el talento"
-    image: "images/photos/office-parking-lot.jpg"
+    image: "images/home-es-rse.png"
+    image_fit: true   # product mockup: full-width image, no padding
+    image_alt: "Informe ESG de TeamWheels: CO₂ evitado con el coche compartido (Scope 3, categoría 7), plazas liberadas y exportación CSRD"
     content_position: "left"
     content: "Menos desplazamientos en solitario significan reducciones de Scope 3 medibles, hasta un 30 % menos de demanda de aparcamiento y más de 2.000 € de ahorro anual por empleado, al tiempo que mejoran la retención y el bienestar en el trabajo.
 
@@ -193,11 +219,13 @@ image_and_content_blocks:
       enable: false
 
   - enable: true
-    subtitle: "Gestión sencilla de los beneficios de movilidad"
-    title: "Programas de movilidad con ventajas fiscales e informes de movilidad sostenible"
-    image: "images/photos/commute-reporting-dashboard.jpg"
+    subtitle: "Beneficios de movilidad"
+    title: "Justificantes de trayectos generados automáticamente"
+    image: "images/home-es-benefits.png"
+    image_fit: true   # product mockup: full-width image, no padding
+    image_alt: "Justificantes de trayectos generados por TeamWheels para cada empleado que comparte coche, con exportación a nóminas"
     content_position: "right"
-    content: "Automatice el seguimiento de los beneficios de transporte con ventajas fiscales (límite del IRS en EE. UU.: 340 $/mes), genere informes Scope 3 listos para CSRD/CDP y cumpla la normativa en Europa y Norteamérica, sin carga administrativa adicional.
+    content: "Cada trayecto compartido en Teams queda registrado: TeamWheels genera los justificantes por empleado para sus beneficios de movilidad y sus informes Scope 3, sin introducir datos a mano.
 
     [Más información →](benefits/#commuter-benefits)
 
@@ -210,11 +238,28 @@ image_and_content_blocks:
     anchor: "security"   # target of the proof strip security link
     subtitle: "Seguridad y cumplimiento de nivel empresarial"
     title: "Una solución de movilidad para empleados segura y aprobada por TI"
-    image: "images/why_use_teamWheels.png"
+    image: "images/home-es-securite.png"
+    image_fit: true   # product mockup: full-width image, no padding
+    image_alt: "Inicio de sesión en TeamWheels con la cuenta profesional de Microsoft (SSO con Entra ID), datos en su tenant, alojados en la UE"
     content_position: "left"
     content: "Publicada en la Microsoft Teams Store con una [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/es-es/microsoft-365-app-certification/teams/hmz-digital-teamwheels), SSO con Microsoft Entra ID y conforme al RGPD: TeamWheels cumple los estándares de seguridad empresariales sin credenciales adicionales ni cambios de infraestructura.
 
     [Más información →](benefits/#security)
+    "
+    button:
+      enable: false
+
+  - enable: true
+    anchor: "fleet"
+    subtitle: "En acceso anticipado"
+    title: "Gestión de flotas en Microsoft Teams"
+    image: "images/home-es-flotte.png"
+    image_fit: true   # product mockup: full-width image, no padding
+    image_alt: "Reserva de un vehículo de empresa en Microsoft Teams con TeamWheels, registro de kilometraje y avisos de vencimientos"
+    content_position: "right"
+    content: "Para pymes y administraciones públicas con 5 a 30 vehículos de empresa que aún se gestionan en Excel: reserva del vehículo desde el chat de Teams, registro del kilometraje a la vuelta, avisos de vencimientos y coste por vehículo. Sin dispositivos de rastreo ni apps adicionales.
+
+    [Unirse al acceso anticipado →](contact/)
     "
     button:
       enable: false

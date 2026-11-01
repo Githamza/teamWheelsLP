@@ -1,15 +1,18 @@
 ---
-title: "Carpoolen voor bedrijven in Microsoft Teams | TeamWheels"
-seoTitle: "Carpool app voor bedrijven in Microsoft Teams | TeamWheels"
-description: "Carpool voor uw medewerkers, rechtstreeks in Microsoft Teams: chatbot, automatische ritmatching en CO₂-dashboard. In 5 minuten live, 30 dagen gratis."
+title: "Carpoolapp en carpoolsoftware voor bedrijven | TeamWheels"
+seoTitle: "Carpoolapp voor bedrijven | TeamWheels"
+description: "Carpoolapp voor bedrijven in Microsoft Teams: automatische ritmatching, chatbot en CO₂-dashboard. Carpoolsoftware, in 5 minuten live, 30 dagen gratis."
+# deze pagina = software-intentie (carpoolapp, carpoolsoftware, carpoolplatform);
+# „carpoolen voor bedrijven” (hoofdterm) is voor de homepage. Slug behouden: bestaande URL.
 slug: "carpoolen-voor-bedrijven"
-keywords: "carpool, carpoolen, carpool app, carpoolen voor bedrijven, carpool platform, carpoolen werk, carpoolsoftware, carpoolen woon-werkverkeer, carpoolen mobiliteitsbudget, carpool Microsoft Teams"
+keywords: "carpoolapp voor bedrijven, carpool app, carpoolsoftware, carpoolplatform, carpoolapp werkgever, carpool Microsoft Teams"
 layout: "benefits"
+lastmod: 2026-11-01
 draft: false
 
 banner:
   subtitle: "Voor HR-, mobiliteits- en duurzaamheidsteams"
-  title: "Carpoolen voor bedrijven, rechtstreeks in Microsoft Teams"
+  title: "Carpoolapp voor bedrijven, rechtstreeks in Microsoft Teams"
   description: "Start een carpool voor het woon-werkverkeer die uw medewerkers echt gebruiken: geen nieuwe app, geen changemanagement. TeamWheels brengt collega's met dezelfde route samen, verlaagt de parkeerdruk en meet de vermeden CO₂-uitstoot, allemaal in Microsoft Teams. In 5 minuten live."
   button:
     enable: true
@@ -17,13 +20,16 @@ banner:
     icon: "fas fa-arrow-right"
     link: "contact/"
   image: "images/photos/colleagues-carpooling.jpg"
+  image_alt: "Collega's die samen carpoolen op hun woon-werktraject"
 
 image_and_content_blocks:
   - enable: true
     anchor: "waarom-teamwheels"
     subtitle: "Het probleem"
     title: "Waarom een carpool voor uw medewerkers zelden vanzelf start"
-    image: "images/carpooling_kpis.png"
+    image: "images/home-nl-be-adoption-teams-copilot.png"
+    image_fit: true
+    image_alt: "De TeamWheels-assistent in Microsoft Teams stelt een medewerker een carpoolrit voor, en Copilot reserveert een plaats bij een collega met hetzelfde traject"
     content_position: "right"
     content: "De meeste werkgevers willen dat meer medewerkers samen naar het werk rijden: minder wagens op de parking, minder files, minder uitstoot. Toch blijft een carpool vaak steken bij een prikbord, een Excel-lijst of een losse carpool app die na een maand niemand meer opent.
 
@@ -65,7 +71,9 @@ image_and_content_blocks:
     anchor: "zo-werkt-het"
     subtitle: "In Teams, van begin tot eind"
     title: "Zo werkt TeamWheels in Microsoft Teams"
-    image: "images/microsoft-teams.png"
+    image: "images/how-it-works/home-nl-be-step-1.svg"
+    image_fit: true
+    image_alt: "De TeamWheels-app installeren via de Microsoft Teams Store, met aanmelden via SSO en een gratis proefperiode van 30 dagen"
     content_position: "left"
     content: "TeamWheels is geen app naast Teams, maar een Teams-app die u vanuit Microsoft AppSource in uw eigen Microsoft 365-tenant installeert. TeamWheels beschikt over een Microsoft 365 Publisher Attestation. Zo verloopt het voor medewerkers en beheerders.
 
@@ -86,7 +94,9 @@ image_and_content_blocks:
     anchor: "voordelen"
     subtitle: "Voor HR en voor medewerkers"
     title: "Voordelen voor HR en voor uw medewerkers"
-    image: "images/why_use_teamWheels.png"
+    image: "images/how-it-works/home-nl-be-step-3.svg"
+    image_fit: true
+    image_alt: "Beheerdersdashboard van TeamWheels voor carpoolen in uw bedrijf: gedeelde ritten, vermeden CO₂, vrijgekomen parkeerplaatsen en ritoverzichten"
     content_position: "right"
     content: "TeamWheels geeft beheerders de controle en de cijfers die een carpoolprogramma nodig heeft, en houdt het voor medewerkers zo eenvoudig mogelijk.
 
@@ -115,7 +125,9 @@ image_and_content_blocks:
     anchor: "mobiliteitsbeleid"
     subtitle: "Carpoolen in uw beleid"
     title: "Carpoolen opnemen in uw mobiliteitsbeleid"
-    image: "images/photos/commute-reporting-dashboard.jpg"
+    image: "images/home-nl-be-benefits.png"
+    image_fit: true
+    image_alt: "Ritoverzicht per medewerker, automatisch bijgehouden door TeamWheels, met CSV-export voor uw mobiliteitsbeleid"
     content_position: "left"
     content: "Een carpool werkt het best wanneer de werkgever er een duidelijk kader rond zet: wie mag deelnemen, hoe de kosten tussen collega's verdeeld worden, wat er gebeurt bij een gemiste rit, en of u carpoolers extra beloont, bijvoorbeeld met een voorbehouden parkeerplaats of een eigen vergoeding. Voor de fiscale en sociale behandeling van een vergoeding raadpleegt u best uw sociaal secretariaat.
 
@@ -151,14 +163,14 @@ image_and_content_blocks:
   - enable: true
     anchor: "white-label"
     subtitle: "Twee manieren om uit te rollen"
-    title: "TeamWheels of een white-labelplatform?"
+    title: "Een carpoolprogramma onder uw eigen naam?"
     content_position: "left"
     content: |
       Het gaat om dezelfde carpoolsoftware, op twee manieren uitgerold.
 
       **TeamWheels standaard** past voor de meeste werkgevers: de app wordt onder de naam TeamWheels in uw Microsoft 365-tenant geïnstalleerd, met uw vestigingen en uw regels voor de matching. Vijf minuten installatie, een gratis proefperiode en een prijs per medewerker.
 
-      **Het white-labelplatform** is bedoeld voor organisaties die hun medewerkers onder hun eigen naam willen laten carpoolen: grote bedrijven, campussen, ziekenhuizen of bedrijventerreinen met meerdere werkgevers. Het programma draagt uw merk, logo en kleuren in Teams, kan voor meerdere entiteiten of vestigingen openstaan en komt met HR-integraties en rapportering op maat. De opstart duurt enkele dagen in plaats van enkele minuten, de prijs is op offerte.
+      **De white-labelversie** is bedoeld voor grote bedrijven, campussen, ziekenhuizen en bedrijventerreinen die hun medewerkers onder hun eigen naam willen laten carpoolen. Opstart in enkele dagen, prijs op offerte.
 
       Twijfelt u? Begin met de standaard proefperiode: white label activeert u later zonder herinstallatie. Meer over de opties leest u op de pagina [white-label carpoolplatform (Engelstalig) →](https://www.teamwheelsapp.com/en/white-label-carpool-platform/)
     button:

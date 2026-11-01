@@ -3,7 +3,7 @@ title: "Plataforma de coche compartido de marca blanca para empresas | TeamWheel
 description: "Compre una plataforma de coche compartido de marca blanca en vez de desarrollarla: su marca, su tenant de Microsoft 365, integración con RR. HH. Activa en días."
 keywords: "app de coche compartido de marca blanca, plataforma de carpooling de marca blanca, software de coche compartido de marca blanca, comprar software de carpooling de marca blanca, plataforma de carpooling corporativo de marca blanca, plataforma de coche compartido personalizable, app de coche compartido con su marca, app de viajes compartidos para empleados, app de carpooling integrada con RR. HH., coche compartido para empresas"
 layout: "benefits"
-lastmod: 2026-09-07
+lastmod: 2026-11-01
 
 banner:
   subtitle: "Para empresas, campus y parques empresariales"
@@ -25,7 +25,7 @@ image_and_content_blocks:
     content_position: "right"
     content: "Si busca una app de coche compartido de marca blanca, encontrará sobre todo agencias de desarrollo y scripts clon: de 14 a 16 semanas de desarrollo, presupuestos de 20.000 a más de 200.000 € y una app que sus empleados siguen teniendo que descargar. Ese camino tiene sentido si lanza un negocio de viajes compartidos para consumidores. Rara vez lo tiene para un empleador.
 
-    TeamWheels es el otro camino: una plataforma de carpooling corporativo lista para usar que usted personaliza y configura en lugar de desarrollar:
+    TeamWheels es el otro camino: una plataforma de coche compartido de marca blanca lista para usar que usted personaliza y configura en lugar de desarrollar:
 
     * **Activa en días, no en trimestres**: instalación desde Microsoft AppSource en unos 5 minutos; personalización y configuración en una tarde
 

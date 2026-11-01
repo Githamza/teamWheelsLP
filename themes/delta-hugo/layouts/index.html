@@ -526,8 +526,14 @@
 
   {{ with .Params.work_process }}
     {{ if .enable }}
+      {{/* inline `process_item` on the homepage → its own steps (home-steps.html);
+           otherwise the steps of the `section` page (how-it-works) */}}
+      {{ if .process_item }}
+        {{ partial "home-steps.html" (dict "data" . "how" (site.GetPage (string .section))) }}
+      {{ else }}
       {{ with site.GetPage (string .section) }}
         {{ partial "work-process.html" . }}
+      {{ end }}
       {{ end }}
     {{ end }}
   {{ end }}
@@ -598,23 +604,33 @@
                     order-lg-1
                   {{ end }}
                 {{ end }}">
+                {{/* `image_fit: true` (product mockups): no padding around the image,
+                     so it fills its column; photos keep the padded box */}}
+                {{ $fit := .image_fit }}
                 <div
-                  class="bg-secondary-soft py-3 py-md-6 px-2 px-md-4 rounded-md">
+                  class="{{ if $fit }}home-block-mockup{{ else }}bg-secondary-soft py-3 py-md-6 px-2 px-md-4 rounded-md{{ end }}">
+                  {{/* alt: `image_alt` of the block, else its title (was a literal "image") */}}
+                  {{ $alt := .image_alt | default (.title | plainify) }}
                   {{ with .image }}
                     {{ $imgOrig:= resources.Get . }}
-                    {{ $imgDesktop:= $imgOrig.Resize "570x webp" }}
+                    {{ $dw := cond $fit 680 570 }}
+                    {{ $imgDesktop:= $imgOrig.Resize (printf "%dx webp" $dw) }}
                     {{ $imgMobile:= $imgOrig.Resize "400x webp" }}
+                    {{/* 2x variants for retina screens, only when the source is large enough */}}
+                    {{ $desk2 := "" }}{{ $mob2 := "" }}
+                    {{ if ge $imgOrig.Width (mul $dw 2) }}{{ $desk2 = printf ", %s 2x" ($imgOrig.Resize (printf "%dx webp" (mul $dw 2))).RelPermalink }}{{ end }}
+                    {{ if ge $imgOrig.Width 800 }}{{ $mob2 = printf ", %s 2x" ($imgOrig.Resize "800x webp").RelPermalink }}{{ end }}
                     <picture>
-                      <source srcset="{{ $imgMobile.RelPermalink }}" media="(max-width: 767px)" type="image/webp">
-                      <source srcset="{{ $imgDesktop.RelPermalink }}" type="image/webp">
+                      <source srcset="{{ $imgMobile.RelPermalink }} 1x{{ $mob2 }}" media="(max-width: 767px)" type="image/webp">
+                      <source srcset="{{ $imgDesktop.RelPermalink }} 1x{{ $desk2 }}" type="image/webp">
                       <img
                         loading="lazy"
                         decoding="async"
-                        class="img-fluid rounded-lg px-0 px-md-3 py-6"
+                        class="img-fluid{{ if $fit }} w-100{{ else }} rounded-lg px-0 px-md-3 py-6{{ end }}"
                         width="{{ $imgDesktop.Width }}"
                         height="{{ $imgDesktop.Height }}"
                         src="{{ $imgDesktop.RelPermalink }}"
-                        alt="image" />
+                        alt="{{ $alt }}" />
                     </picture>
                   {{ end }}
                 </div>

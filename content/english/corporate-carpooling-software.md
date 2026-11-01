@@ -15,13 +15,16 @@ banner:
     icon: "fas fa-arrow-right"
     link: "contact/"
   image: "images/photos/colleagues-carpooling.jpg"
+  image_alt: "Coworkers sharing their daily commute in a carpool"
 
 image_and_content_blocks:
   - enable: true
     anchor: "why-teamwheels"
     subtitle: "The Adoption Problem, Solved"
     title: "Why Most Corporate Carpooling Software Fails — and How TeamWheels Doesn't"
-    image: "images/carpooling_kpis.png"
+    image: "images/home-en-adoption-teams-copilot.png"
+    image_fit: true
+    image_alt: "The TeamWheels agent in Microsoft Teams suggests a carpool to an employee, and Copilot books her a seat with a coworker on the same commute"
     content_position: "right"
     content: "Standalone carpooling apps die from low adoption: employees won't download yet another app or maintain another account. So your program stalls, and the ROI never materializes.
 
@@ -42,7 +45,9 @@ image_and_content_blocks:
     anchor: "teams-integration"
     subtitle: "The Microsoft Teams Advantage"
     title: "Carpooling That Lives Where Your Employees Already Work"
-    image: "images/microsoft-teams.png"
+    image: "images/how-it-works/home-en-step-1.svg"
+    image_fit: true
+    image_alt: "Installing the TeamWheels app from the Microsoft Teams Store, with SSO sign-in and a 30-day free trial"
     content_position: "left"
     content: "Why force employees to install another app they'll forget? TeamWheels integrates natively with Microsoft Teams — the tool your workforce already uses every day. That means instant adoption and zero friction.
 
@@ -63,7 +68,9 @@ image_and_content_blocks:
     anchor: "features"
     subtitle: "Everything HR & Admins Need"
     title: "A Complete Carpool Management Platform — Not Just an App"
-    image: "images/why_use_teamWheels.png"
+    image: "images/how-it-works/home-en-step-3.svg"
+    image_fit: true
+    image_alt: "Admin dashboard of the TeamWheels corporate carpooling software: shared rides, CO₂ avoided, parking spaces freed and commute reports"
     content_position: "right"
     content: "TeamWheels gives administrators the controls and visibility a corporate carpooling program demands, while keeping the employee experience effortless.
 
@@ -84,7 +91,9 @@ image_and_content_blocks:
     anchor: "roi"
     subtitle: "Measurable Business Impact"
     title: "Cut Parking Costs, Hit Scope 3 Targets, Save Employees Money"
-    image: "images/photos/commute-reporting-dashboard.jpg"
+    image: "images/home-en-rse.png"
+    image_fit: true
+    image_alt: "TeamWheels ESG report: commute CO₂ avoided through carpooling (Scope 3, category 7), parking spaces freed and report export"
     content_position: "left"
     content: "Corporate carpooling software pays for itself across three lines of your organization's budget and reporting.
 
@@ -103,7 +112,9 @@ image_and_content_blocks:
     anchor: "how-to-choose"
     subtitle: "Buyer's Guide"
     title: "How to Choose Carpool Management Software"
-    image: "images/carpooling_kpis.png"
+    image: "images/home-en-securite.png"
+    image_fit: true
+    image_alt: "Sign-in to TeamWheels with a Microsoft work account (Entra ID SSO), with data kept in your Microsoft 365 tenant"
     content_position: "right"
     content: "Comparison lists of carpool management and corporate ride sharing software rank dozens of vendors — but for an employee commute program, five criteria decide whether the investment pays off:
 
@@ -123,23 +134,18 @@ image_and_content_blocks:
       enable: false
 
   - enable: true
-    anchor: "white-label-hr-integration"
-    subtitle: "White-Label & HR-System Integration"
-    title: "Benefits of a White-Label Carpool App Integrated With Your HR Systems"
-    image: "images/why_use_teamWheels.png"
+    anchor: "white-label"
+    subtitle: "Two ways to deploy"
+    title: "Need a carpool program under your own name?"
     content_position: "left"
-    content: "A white-label carpool app integrated with your HR and identity systems means employees join with their existing work account, while HR, payroll, and ESG teams get clean data with no manual exports. TeamWheels runs inside your own Microsoft 365 tenant under your branding — not a separate third-party app.
+    content: |
+      The two don't compete: it's the same corporate carpooling software, deployed two ways.
 
-    * **Single sign-on, zero onboarding** — Azure AD / Entra ID SSO makes your employee directory the carpool roster. No invites, no separate accounts to provision or offboard
+      **Standard TeamWheels** suits most employers: the app installs in your Microsoft 365 tenant under the TeamWheels name, with your sites, your matching rules and your commuter-benefit policy. Five minutes to install, a free trial, a per-employee price.
 
-    * **Your brand, your tenant** — A white-label experience inside Microsoft Teams, governed by your own IT policies and data-residency rules
+      **The white-label version** is for large companies, campuses, hospitals and business parks that want their teams to carpool under their own name. Set up in a few days, priced on quote.
 
-    * **Pre-tax & payroll ready** — Trip records feed commuter-benefit and reimbursement workflows (US IRS Section 132f, UK schemes, France's Forfait Mobilité Durable) without spreadsheets
-
-    * **ESG reporting on autopilot** — Participation and CO₂ data export straight into Scope 3 Category 7 and CSRD reporting
-
-    Because identity, HR, and carpooling share one source of truth, your program stays accurate as headcount changes — no stale rosters, no orphaned accounts. Want the full picture? [Explore the white-label carpool platform →](/en/white-label-carpool-platform/)
-    "
+      Not sure? Start with the standard trial: white label switches on later without reinstalling. Options, rollout timeline and integrations are on the [white-label carpool platform →](/en/white-label-carpool-platform/) page.
     button:
       enable: false
 

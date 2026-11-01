@@ -3,7 +3,7 @@ title: "White-Label Carpool Platform for Companies | TeamWheels"
 description: "Buy a white-label carpool platform instead of building one: your brand, your Microsoft 365 tenant, HR integration, live in days. Comparison, pricing and how to buy."
 keywords: "white label carpool app, white label carpool platform, white label carpool software, buy white label carpool software, white label carpooling platform, white label corporate carpool platform, customizable carpool platform, branded carpool app, white label rideshare app for employees, carpool app with HR integration"
 layout: "benefits"
-lastmod: 2026-09-07
+lastmod: 2026-11-01
 
 banner:
   subtitle: "For Employers, Campuses & Business Parks"
@@ -25,7 +25,7 @@ image_and_content_blocks:
     content_position: "right"
     content: "Search for a white-label carpool app and you'll mostly find development agencies and clone scripts: 14–16 weeks of build time, $20,000–$200,000+ budgets, and an app your employees still have to download. That path makes sense if you're launching a consumer rideshare business. It rarely makes sense for an employer.
 
-    TeamWheels is the other path — a ready-to-run corporate carpool platform you brand and configure instead of build:
+    TeamWheels is the other path — a ready-to-run white-label carpool platform you brand and configure instead of build:
 
     * **Live in days, not quarters** — Install from Microsoft AppSource in about 5 minutes; brand and configure in an afternoon
 

@@ -1,8 +1,12 @@
 ---
-title: "TeamWheels | Corporate Carpooling Software for Microsoft Teams"
-seoTitle: "Corporate carpooling in Microsoft Teams | TeamWheels"
-description: "Employee rideshare & commute platform inside Microsoft Teams. Cut Scope 3 emissions, parking demand & commute costs — live in 5 minutes. Free 30-day trial."
-keywords: "employee rideshare app, corporate ridesharing software, BlaBlaCar for business, Uber for employees, Microsoft Teams app, commute management platform, employee commute tracker, daily commute carpool, corporate carpooling software, carpool management software, corporate mobility app, Scope 3 commute reporting, sustainable commute platform, vanpool alternative, shared rides for work"
+title: "TeamWheels | Corporate Carpooling Solution for Your Employees"
+seoTitle: "Corporate carpooling for your employees | TeamWheels"
+description: "Corporate carpooling solution: ride matching for employees, commuter benefit tracking and Scope 3 reporting. Built into Microsoft Teams, free 30-day trial."
+# homepage = commercial head term "corporate carpooling" (a solution for employers);
+# Teams/Copilot is the differentiator, not the headline. Other intents have their page:
+#   software / tool / app → corporate-carpooling-software ; white label → white-label-carpool-platform
+#   guide (informational) → blog/corporate-carpooling-guide-2026
+keywords: "corporate carpooling, employee carpooling, corporate carpool program, carpooling for companies, employee rideshare, TeamWheels"
 
 # banner
 banner:
@@ -20,7 +24,7 @@ banner:
     alt: "Microsoft Teams"
   - src: "images/microsoft-copilot-icon.svg"
     alt: "Microsoft Copilot"
-  lede: "TeamWheels makes sustainable commuting easy for your employees."
+  lede: "TeamWheels matches employees who share the same commute and runs your carpool program, from sign-up to commuter benefits."
   lede_logo: "images/logo.png"   # "TeamWheels" swapped for the logo
   # previous two-column texts, not shown in the centered layout
   subtitle: "Trusted by HR & Sustainability teams across the USA, UK & Canada"
@@ -85,8 +89,8 @@ video_demo:
   # data is emitted on /demo/ only).
   description: "A 60-second walkthrough of TeamWheels — the employee carpooling and commute-management app that runs natively inside Microsoft Teams. See ride matching, the conversational bot, and the Scope 3 emissions dashboard in action."
   uploadDate: "2026-11-01"
-  duration: "PT1M"        # ISO 8601, for VideoObject JSON-LD
-  duration_seconds: 60      # plain seconds, for the video sitemap
+  duration: "PT1M5S"        # ISO 8601, for VideoObject JSON-LD
+  duration_seconds: 65      # plain seconds, for the video sitemap
   watch_page: "/demo/"                            # the video's watch page (link target)
   poster: "videos/teamwheels-demo-en-poster.jpg"   # still frame shown before the clip loads / video thumbnail
   webm: "videos/teamwheels-demo-en.webm"
@@ -97,11 +101,11 @@ video_demo:
 why_teamwheels:
   enable: true
   subtitle: "Comparison"
-  title: "Why TeamWheels instead of a standalone app?"
-  lede: "A standalone carpooling app is one more app your employees forget. TeamWheels lives where they already work: Microsoft Teams."
+  title: "Why TeamWheels over another carpooling solution?"
+  lede: "Corporate carpooling fails when nobody opens the app. TeamWheels is built natively into Microsoft Teams and Copilot, the tools your employees already use all day, so adoption follows. Explore our [corporate carpooling software](/en/corporate-carpooling-software/)."
   topic_label: "Criterion"
-  them_label: "Standalone carpooling app"
-  us_label: "TeamWheels in Microsoft Teams"
+  them_label: "Typical carpooling solution"
+  us_label: "TeamWheels"
   rows:
   - topic: "Access"
     them: "An app to download, an account and a password to create"
@@ -159,22 +163,44 @@ fun_facts:
     counter_prefix: "+"
     content: "annual growth in corporate carpooling adoption worldwide"
 
-# work_process
+# work_process — homepage-only steps, from the employer's side (partials/home-steps.html).
+# Without `process_item` the homepage would reuse the steps of how-it-works.md; keep the title different from that page's.
 work_process:
   enable: true
-  section: "how-it-works"
+  section: "how-it-works"   # target of the "See how it works in detail" button
+  subtitle: "Setup"
+  title: "Launch your carpool program in under a week"
+  link_label: "See how it works in detail"
+  process_item:
+    - label: "Day 1"
+      title: "Install"
+      image: "images/how-it-works/home-en-step-1.svg"
+      image_alt: "TeamWheels added from the Microsoft Teams Store, with SSO sign-in and the free trial activated"
+      content: "Your Microsoft 365 admin adds TeamWheels in 5 minutes. No app to download: employees sign in with their work account. The free trial starts at installation."
+    - label: "Week 1"
+      title: "Launch"
+      image: "images/how-it-works/home-en-step-2.svg"
+      image_alt: "The TeamWheels agent suggests a carpool on an employee's commute"
+      content: "Employees enter their commutes in Teams or tell the Copilot agent. TeamWheels automatically suggests carpools between colleagues on the same route."
+    - label: "Month 1"
+      title: "Track"
+      image: "images/how-it-works/home-en-step-3.svg"
+      image_alt: "TeamWheels dashboard: shared rides, CO₂ avoided, parking spaces freed and commute reports"
+      content: "Follow shared rides, CO₂ avoided and parking spaces freed. Per-employee commute reports are ready for your commuter benefits."
 
 # image_and_content_block
 image_and_content_blocks:
   - enable: true
     subtitle: "Why HR & Sustainability Leaders Choose TeamWheels"
     subtitle_link: "benefits/"
-    title: "Employee Carpooling That Lives Where Your Teams Already Work"
-    image: "images/why_use_teamWheels.png"
+    title: "Adopted by Your Employees, Thanks to Microsoft Teams and Copilot"
+    image: "images/home-en-adoption-teams-copilot.png"
+    image_fit: true   # product mockup: full-width image, no padding
+    image_alt: "TeamWheels in Microsoft Teams suggests a carpool to an employee, and Copilot finds colleagues on the same commute"
     content_position: "right"
-    content: "TeamWheels is corporate carpooling software that integrates natively with Microsoft Teams — no extra app, no change management. One Teams admin, a few clicks, and your carpool program is live in 5 minutes with 40%+ employee participation.
+    content: "TeamWheels is a [corporate carpooling tool](/en/corporate-carpooling-software/) that integrates natively with Microsoft Teams — no extra app, no change management. One Teams admin, a few clicks, and your carpool program is live in 5 minutes with 40%+ employee participation.
 
-    [Explore the corporate carpooling software →](/en/corporate-carpooling-software/) · [Read more →](benefits/#teams-integration)
+    [Read more →](benefits/#teams-integration)
     "
     button:
       enable: false
@@ -182,7 +208,9 @@ image_and_content_blocks:
   - enable: true
     subtitle: "Measurable ESG & Commute Impact"
     title: "Cut Scope 3 Emissions, Reduce Parking Costs, Retain Top Talent"
-    image: "images/photos/office-parking-lot.jpg"
+    image: "images/home-en-rse.png"
+    image_fit: true   # product mockup: full-width image, no padding
+    image_alt: "TeamWheels ESG report: CO₂ avoided through carpooling (Scope 3, category 7), parking spaces freed and report export"
     content_position: "left"
     content: "Fewer solo commutes mean measurable Scope 3 reductions, up to 30% less parking demand, and $2,000+ in annual savings per employee — while boosting retention and workplace well-being.
 
@@ -192,11 +220,13 @@ image_and_content_blocks:
       enable: false
 
   - enable: true
-    subtitle: "Commuter Benefits Administration Made Simple"
-    title: "Pre-Tax Commuter Programs & Sustainable Mobility Reporting"
-    image: "images/photos/commute-reporting-dashboard.jpg"
+    subtitle: "Commuter Benefits"
+    title: "Commute Reports Generated Automatically"
+    image: "images/home-en-benefits.png"
+    image_fit: true   # product mockup: full-width image, no padding
+    image_alt: "Per-employee commute reports generated by TeamWheels for every carpooler, with export for payroll"
     content_position: "right"
-    content: "Automate pre-tax commuter benefit tracking ($340/month IRS limit), generate CSRD/CDP-ready Scope 3 reports, and stay compliant across the USA, UK, and Canada — all without extra admin overhead.
+    content: "Every ride shared in Teams is logged: TeamWheels produces the per-employee trip reports you need to run commuter benefits and Scope 3 reporting, with no manual entry.
 
     [Read more →](benefits/#commuter-benefits)
 
@@ -209,11 +239,28 @@ image_and_content_blocks:
     anchor: "security"   # target of the proof strip security link
     subtitle: "Enterprise Security & Compliance"
     title: "A Secure, IT-Approved Employee Mobility Solution"
-    image: "images/why_use_teamWheels.png"
+    image: "images/home-en-securite.png"
+    image_fit: true   # product mockup: full-width image, no padding
+    image_alt: "Sign-in to TeamWheels with a Microsoft work account (Entra ID SSO), data in your tenant, hosted in the EU"
     content_position: "left"
     content: "Published on the Microsoft Teams Store with a [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/en-us/microsoft-365-app-certification/teams/hmz-digital-teamwheels), Microsoft Entra ID SSO, GDPR compliant — TeamWheels meets enterprise security standards with zero extra credentials or infrastructure changes.
 
     [Read more →](benefits/#security)
+    "
+    button:
+      enable: false
+
+  - enable: true
+    anchor: "fleet"
+    subtitle: "Early access"
+    title: "Fleet Management in Microsoft Teams"
+    image: "images/home-en-flotte.png"
+    image_fit: true   # product mockup: full-width image, no padding
+    image_alt: "Booking a pool car in Microsoft Teams with TeamWheels, mileage log and due-date alerts"
+    content_position: "right"
+    content: "For SMEs and public bodies with 5 to 30 pool vehicles still managed in Excel: book a vehicle from the Teams chat, log the mileage on return, get due-date alerts and the cost per vehicle. No tracker box, no extra app.
+
+    [Join the early access →](contact/)
     "
     button:
       enable: false

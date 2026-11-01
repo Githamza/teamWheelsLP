@@ -3,7 +3,7 @@ title: "White-Label-Fahrgemeinschaftsplattform für Unternehmen | TeamWheels"
 description: "White-Label-Plattform für Fahrgemeinschaften kaufen statt entwickeln: Ihre Marke, Ihr Microsoft-365-Tenant, HR-Anbindung, in Tagen live. Vergleich und Preise."
 keywords: "White-Label Fahrgemeinschafts-App, White-Label Fahrgemeinschaftsplattform, White-Label Fahrgemeinschaft Software, Fahrgemeinschafts-Software kaufen, White-Label Mitfahr-App für Mitarbeiter, anpassbare Fahrgemeinschaftsplattform, Fahrgemeinschafts-App mit eigenem Branding, Fahrgemeinschafts-App mit HR-Integration, betriebliche Fahrgemeinschaften, betriebliches Mobilitätsmanagement, Mitfahrgelegenheit für Mitarbeiter"
 layout: "benefits"
-lastmod: 2026-09-07
+lastmod: 2026-11-01
 
 banner:
   subtitle: "Für Arbeitgeber, Campus-Standorte & Gewerbeparks"
@@ -25,7 +25,7 @@ image_and_content_blocks:
     content_position: "right"
     content: "Wer nach einer White-Label-Fahrgemeinschafts-App sucht, findet vor allem Entwicklungsagenturen und Klon-Skripte: 14–16 Wochen Entwicklungszeit, Budgets von 20.000 bis über 200.000 € und am Ende eine App, die Ihre Mitarbeitenden trotzdem herunterladen müssen. Dieser Weg ist sinnvoll, wenn Sie ein Mitfahrangebot für Endkunden aufbauen. Für einen Arbeitgeber ist er es selten.
 
-    TeamWheels ist der andere Weg – eine sofort einsatzbereite Fahrgemeinschaftsplattform für Unternehmen, die Sie mit Ihrer Marke versehen und konfigurieren, statt sie zu entwickeln:
+    TeamWheels ist der andere Weg – eine sofort einsatzbereite White-Label-Fahrgemeinschaftsplattform, die Sie mit Ihrer Marke versehen und konfigurieren, statt sie zu entwickeln:
 
     * **In Tagen statt Quartalen live** – Installation aus Microsoft AppSource in rund 5 Minuten; Branding und Konfiguration an einem Nachmittag
 

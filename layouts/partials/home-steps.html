@@ -1,0 +1,56 @@
+{{- /*
+  Homepage "launch your programme" steps — used when the homepage's own
+  `work_process` carries `process_item` (FR, Nov 2026). Without inline items
+  the homepage keeps rendering the how-it-works page's steps (work-process.html).
+
+  Call: {{ partial "home-steps.html" (dict "data" .Params.work_process "how" $howPage) }}
+
+  work_process:
+    subtitle, title, lede   section heading
+    link_label              outline button → the how-it-works page (`section`)
+    process_item[]          label (e.g. "Jour 1"), title, content, image, image_alt
+                            SVG images are served as-is (Hugo can't resize them),
+                            raster images are resized like work-process.html.
+*/ -}}
+{{- $d := .data -}}
+{{- $how := .how -}}
+<section class="section bg-primary-soft rounded-lg wave-block home-steps">
+  <div class="container container-delta">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-8">
+        <div class="section-title">
+          {{- with $d.subtitle }}<p class="subtitle">{{ . | markdownify }}</p>{{ end }}
+          <h2 class="title">{{ $d.title | markdownify }}</h2>
+          {{- with $d.lede }}<p class="lead mb-0">{{ . | markdownify }}</p>{{ end }}
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row gy-4 justify-content-center">
+          {{- range $index, $item := $d.process_item }}
+          {{- $n := add $index 1 }}
+          <div class="col-lg-4 col-sm-6 process-item">
+            <div class="block pt-4" data-count="0{{ $n }}">
+              {{- with .image }}{{ with resources.Get . }}
+              <div class="process-image">
+                {{- if eq .MediaType.SubType "svg" }}
+                <img loading="lazy" decoding="async" class="w-100" width="480" height="300" src="{{ .RelPermalink }}" alt="{{ $item.image_alt | default $item.title }}">
+                {{- else }}
+                {{- $img := .Resize "480x" }}{{ $webp := .Resize "480x webp" }}
+                <img loading="lazy" decoding="async" class="w-100" width="{{ $img.Width }}" height="{{ $img.Height }}" src="{{ $webp.RelPermalink }}" alt="{{ $item.image_alt | default $item.title }}" onerror="this.onerror=null;this.src='{{ $img.RelPermalink }}'">
+                {{- end }}
+              </div>
+              {{- end }}{{ end }}
+              {{- with .label }}<p class="home-steps__label">{{ . }}</p>{{ end }}
+              <h3 class="title h4">{{ .title | markdownify }}</h3>
+              <p class="mb-0">{{ .content | markdownify }}</p>
+            </div>
+          </div>
+          {{- end }}
+        </div>
+      </div>
+      <div class="col-lg-12 mt-5">
+        {{ partial "teams-install.html" (dict "placement" "home-steps" "center" true "secondary" (dict "href" ($how.RelPermalink | default "how-it-works/") "label" ($d.link_label | default "Voir le fonctionnement détaillé") "track" "how_it_works_click")) }}
+      </div>
+    </div>
+  </div>
+</section>

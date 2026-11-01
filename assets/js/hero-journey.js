@@ -663,21 +663,32 @@ export function mount(root) {
     p.position.x += (rand() - 0.5) * 0.1;
   }
 
-  function blocked(c) {
+  // free road ahead of c (centre-to-centre), Infinity when nothing is close
+  const LOOK = CAR_GAP + 2.5;
+  // still on the shared road (or queued at its end): d is comparable between such cars
+  const onMainParam = (c) => c.path.pts[0] === MAIN_PTS[0] && c.d <= MAIN.length + 0.01;
+  function gapAhead(c) {
     const p = c.group.position;
+    let gap = Infinity;
     for (const o of cars) {
       if (o === c || !o.onRoad) continue;
+      // same road: measure along it, so curves don't hide the car ahead
+      if (onMainParam(c) && onMainParam(o)) {
+        const dd = o.d - c.d;
+        if (dd > 0 && dd < LOOK) gap = Math.min(gap, dd);
+        if (dd > -LOOK && dd < LOOK) continue;
+      }
       tmp.copy(o.group.position).sub(p);
       const ahead = tmp.dot(c.dir);
-      if (ahead <= 0 || ahead > CAR_GAP) continue;
+      if (ahead <= 0 || ahead > LOOK) continue;
       const lateral = Math.abs(tmp.x * c.dir.z - tmp.z * c.dir.x);
       if (lateral > 0.34) continue;
       // crossing / mutual block: the older car goes first
       tmp.multiplyScalar(-1);
-      if (tmp.dot(o.dir) > 0 && tmp.dot(o.dir) < CAR_GAP && cars.indexOf(o) > cars.indexOf(c)) continue;
-      return true;
+      if (tmp.dot(o.dir) > 0 && tmp.dot(o.dir) < LOOK && cars.indexOf(o) > cars.indexOf(c)) continue;
+      gap = Math.min(gap, ahead);
     }
-    return false;
+    return gap;
   }
 
   function arrive(c) {
@@ -721,7 +732,9 @@ export function mount(root) {
         const stop = c.stops.find((s) => !s.done);
         const end = stop ? stop.d : c.path.length;
         target = Math.min(target, Math.sqrt(2 * BRAKE * 0.35 * Math.max(end - c.d, 0)));
-        if (blocked(c)) target = 0;
+        // brake early enough to stop CAR_GAP behind the car ahead (never inside it)
+        const gap = gapAhead(c);
+        if (gap < Infinity) target = Math.min(target, Math.sqrt(2 * BRAKE * 0.35 * Math.max(gap - CAR_GAP, 0)));
         c.speed += Math.max(Math.min(target - c.speed, ACCEL * dt), -BRAKE * dt);
         c.d += c.speed * dt;
         c.path.at(c.d, c.group.position, tmpDir);
@@ -826,6 +839,17 @@ export function mount(root) {
   const buttons = [...root.querySelectorAll('[data-mode]')].filter((b) => b.tagName === 'BUTTON');
   const srLabel = root.querySelector('[data-journey-label]');
   const pauseBtn = root.querySelector('.hero-journey__pause');
+  // sliding background behind the active mode button (CSS animates left/width)
+  const ctrl = root.querySelector('.hero-journey__ctrl');
+  const pill = ctrl && ctrl.insertBefore(document.createElement('span'), ctrl.firstChild);
+  if (pill) { pill.className = 'hero-journey__pill'; pill.setAttribute('aria-hidden', 'true'); ctrl.classList.add('has-pill'); }
+  function placePill() {
+    const b = pill && buttons.find((x) => x.dataset.mode === mode);
+    if (!b) return;
+    pill.style.left = b.offsetLeft + 'px';
+    pill.style.width = b.offsetWidth + 'px';
+    pill.classList.toggle('is-with', mode === 'with');
+  }
   let pinned = false, doneAt = null, paused = reduce, visible = true;
 
   function setMode(m) {
@@ -836,6 +860,7 @@ export function mount(root) {
       b.classList.toggle('is-active', on);
       b.setAttribute('aria-pressed', String(on));
     });
+    placePill();
     if (srLabel) srLabel.textContent = srLabel.dataset[m === 'with' ? 'captionWith' : 'captionWithout'];
     (m === 'with' ? scenarioWith : scenarioWithout)();
     doneAt = null;
@@ -886,6 +911,7 @@ export function mount(root) {
     });
   }
   new ResizeObserver(resize).observe(stage);
+  if (ctrl) new ResizeObserver(placePill).observe(ctrl);   // label widths change with fonts/breakpoints
   new IntersectionObserver(([e]) => { visible = e.isIntersecting; updateRunning(); }).observe(root);
   document.addEventListener('visibilitychange', updateRunning);
 
@@ -893,6 +919,7 @@ export function mount(root) {
   setMode('without');
   renderer.render(scene, camera);
   root.classList.add('is-ready');
+  if (pill) requestAnimationFrame(() => ctrl.classList.add('pill-anim'));   // no slide on first placement
   updateRunning();
 }
 

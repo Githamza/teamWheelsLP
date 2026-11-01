@@ -34,7 +34,7 @@
                 width="{{ $imgResized.Width }}"
                 height="{{ $imgResized.Height }}"
                 src="{{ $imgResized.RelPermalink }}"
-                alt="{{ $.Title }}" />
+                alt="{{ $.Params.banner.image_alt | default $.Title }}" />
             {{ end }}
           </div>
         </div>
@@ -87,23 +87,46 @@
                   {{ else if eq . `left` }}order-lg-1
                   {{ else }}order-lg-1{{ end }}
                 {{ end }}">
-                <div class="bg-secondary-soft py-3 py-md-6 px-2 px-md-4 rounded-md">
+                {{/* Same options as the homepage blocks:
+                     `image_fit: true` (product mockups) drops the padded box so the
+                     image fills its column; `image_alt` describes the image (falls
+                     back to the block title, so each image gets its own alt). */}}
+                {{ $fit := .image_fit }}
+                {{ $alt := .image_alt | default (.title | plainify) }}
+                <div class="{{ if $fit }}home-block-mockup{{ else }}bg-secondary-soft py-3 py-md-6 px-2 px-md-4 rounded-md{{ end }}">
                   {{ with .image }}
                     {{ $img := resources.Get . }}
-                    {{ $imgDesktop := $img.Resize "570x webp" }}
-                    {{ $imgMobile := $img.Resize "400x webp" }}
-                    <picture>
-                      <source srcset="{{ $imgMobile.RelPermalink }}" media="(max-width: 767px)" type="image/webp">
-                      <source srcset="{{ $imgDesktop.RelPermalink }}" type="image/webp">
+                    {{ if eq $img.MediaType.SubType "svg" }}
+                      {{/* SVG mockups can't be resized: serve as-is (480x300 viewBox). */}}
                       <img
                         loading="lazy"
                         decoding="async"
-                        class="img-fluid rounded-lg px-0 px-md-3 py-6"
-                        width="{{ $imgDesktop.Width }}"
-                        height="{{ $imgDesktop.Height }}"
-                        src="{{ $imgDesktop.RelPermalink }}"
-                        alt="{{ $.Title }}" />
-                    </picture>
+                        class="img-fluid w-100"
+                        width="480"
+                        height="300"
+                        src="{{ $img.RelPermalink }}"
+                        alt="{{ $alt }}" />
+                    {{ else }}
+                      {{ $dw := cond $fit 680 570 }}
+                      {{ $imgDesktop := $img.Resize (printf "%dx webp" $dw) }}
+                      {{ $imgMobile := $img.Resize "400x webp" }}
+                      {{/* 2x variants for retina screens, only when the source is large enough */}}
+                      {{ $desk2 := "" }}{{ $mob2 := "" }}
+                      {{ if ge $img.Width (mul $dw 2) }}{{ $desk2 = printf ", %s 2x" ($img.Resize (printf "%dx webp" (mul $dw 2))).RelPermalink }}{{ end }}
+                      {{ if ge $img.Width 800 }}{{ $mob2 = printf ", %s 2x" ($img.Resize "800x webp").RelPermalink }}{{ end }}
+                      <picture>
+                        <source srcset="{{ $imgMobile.RelPermalink }} 1x{{ $mob2 }}" media="(max-width: 767px)" type="image/webp">
+                        <source srcset="{{ $imgDesktop.RelPermalink }} 1x{{ $desk2 }}" type="image/webp">
+                        <img
+                          loading="lazy"
+                          decoding="async"
+                          class="img-fluid{{ if $fit }} w-100{{ else }} rounded-lg px-0 px-md-3 py-6{{ end }}"
+                          width="{{ $imgDesktop.Width }}"
+                          height="{{ $imgDesktop.Height }}"
+                          src="{{ $imgDesktop.RelPermalink }}"
+                          alt="{{ $alt }}" />
+                      </picture>
+                    {{ end }}
                   {{ end }}
                 </div>
               </div>
