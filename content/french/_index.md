@@ -196,8 +196,10 @@ image_and_content_blocks:
   - enable: true
     subtitle: "Pourquoi choisir TeamWheels ?"
     subtitle_link: "benefits/"
-    title: "Le covoiturage directement dans Microsoft Teams"
-    image: "images/why_use_teamWheels.png"
+    title: "Adopté par vos salariés grâce à Microsoft Teams et Copilot"
+    image: "images/home-fr-adoption-teams-copilot.png"
+    image_fit: true   # maquette : image pleine largeur, sans marge
+    image_alt: "TeamWheels dans Microsoft Teams propose un covoiturage à une salariée, et Copilot trouve des collègues sur le même trajet"
     content_position: "right"
     content: "TeamWheels est un [outil de covoiturage entreprise](/fr/corporate-carpooling-software/) qui s'intègre nativement à Microsoft Teams — zéro app supplémentaire, adoption immédiate. Un admin, quelques clics, et votre programme covoiturage est en ligne en 5 minutes avec 40%+ de participation.
 
@@ -209,7 +211,9 @@ image_and_content_blocks:
   - enable: true
     subtitle: "Des résultats concrets"
     title: "RSE, économies et bien-être au quotidien"
-    image: "images/photos/office-parking-lot.jpg"
+    image: "images/home-fr-rse.png"
+    image_fit: true   # maquette : image pleine largeur, sans marge
+    image_alt: "Rapport RSE TeamWheels : CO₂ évité par le covoiturage (Scope 3, catégorie 7), places de parking libérées et export CSRD"
     content_position: "left"
     content: "Moins de trajets solo = émissions CO₂ mesurables, 30% de places de parking libérées, et des économies concrètes sur les frais de trajet — tout en renforçant le bien-être et la marque employeur.
 
@@ -219,11 +223,13 @@ image_and_content_blocks:
       enable: false
 
   - enable: true
-    subtitle: "Coup de pouce du gouvernement"
-    title: "Forfait mobilités durables : jusqu'à 900 €/an par salarié"
-    image: "images/photos/commute-reporting-dashboard.jpg"
+    subtitle: "Forfait mobilités durables"
+    title: "Justificatifs FMD générés automatiquement"
+    image: "images/home-fr-fmd.png"
+    image_fit: true   # maquette : image pleine largeur, sans marge
+    image_alt: "Justificatifs du forfait mobilités durables générés par TeamWheels pour chaque salarié covoitureur, avec export pour la paie"
     content_position: "right"
-    content: "Versez jusqu'à 600 € par an et par salarié — 900 € en cumul avec l'abonnement transport — exonérés de charges et d'impôt grâce au [forfait mobilités durables](/fr/forfait-mobilites-durables-covoiturage/). TeamWheels génère automatiquement les justificatifs FMD et vous permet de rejoindre la charte ADEME.
+    content: "Chaque trajet partagé dans Teams est enregistré : TeamWheels produit les justificatifs pour verser le [forfait mobilités durables](/fr/forfait-mobilites-durables-covoiturage/) à vos covoitureurs, sans saisie manuelle.
 
     [En savoir plus →](benefits/#fmd)
 
@@ -236,7 +242,9 @@ image_and_content_blocks:
     anchor: "security"   # target of the proof strip security link
     subtitle: "Sécurité & Conformité"
     title: "Une solution sécurisée, pensée pour votre DSI"
-    image: "images/why_use_teamWheels.png"
+    image: "images/home-fr-securite.png"
+    image_fit: true   # maquette : image pleine largeur, sans marge
+    image_alt: "Connexion à TeamWheels avec le compte Microsoft professionnel (SSO Entra ID), données dans votre tenant, hébergement en France"
     content_position: "left"
     content: "Publiée sur le Microsoft Teams Store avec une [Publisher Attestation Microsoft 365](https://learn.microsoft.com/fr-fr/microsoft-365-app-certification/teams/hmz-digital-teamwheels), SSO via Microsoft Entra ID, données hébergées en France et RGPD compliant — une solution enterprise sécurisée, sans identifiants supplémentaires. Les grands comptes, campus et zones d'activité peuvent la déployer sous leur propre nom avec la [plateforme de covoiturage en marque blanche](/fr/white-label-carpool-platform/).
 
@@ -248,7 +256,9 @@ image_and_content_blocks:
   - enable: true
     subtitle: "En accès anticipé"
     title: "Gestion de flotte automobile dans Microsoft Teams"
-    image: "images/parking.png"
+    image: "images/home-fr-flotte.png"
+    image_fit: true   # maquette : image pleine largeur, sans marge
+    image_alt: "Réservation d'un véhicule de service dans Microsoft Teams avec TeamWheels, relevé kilométrique et alertes d'échéances"
     content_position: "right"
     content: "Pour les PME et collectivités de 5 à 30 véhicules de service encore gérés sur Excel : réservation d'un véhicule depuis le chat Teams, relevé kilométrique au retour, alertes d'échéances et coût par véhicule. Sans boîtier, sans application supplémentaire.
 
