@@ -14,7 +14,7 @@
 <text x="200" y="167" font-size="16" font-weight="600" fill="#fff" text-anchor="middle">Toevoegen</text>
 <rect x="44" y="204" width="392" height="1" fill="#EDEDED"/>
 <circle cx="56" cy="232" r="9" fill="#13A10E"/><path d="M51.5 232l3 3 6-6" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="74" y="237" font-size="14" fill="#242424">Inloggen met het Microsoft-account (SSO)</text>
+<text x="74" y="237" font-size="14" fill="#242424">Inloggen met uw Microsoft-account (SSO)</text>
 <circle cx="56" cy="264" r="9" fill="#13A10E"/><path d="M51.5 264l3 3 6-6" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="74" y="269" font-size="14" fill="#242424">30 dagen gratis proberen: geactiveerd</text>
 </g></svg>

@@ -1,8 +1,10 @@
 ---
-title: "TeamWheels | Fahrgemeinschafts-Software für Microsoft Teams"
-seoTitle: "Fahrgemeinschaften in Microsoft Teams | TeamWheels"
-description: "Fahrgemeinschafts-App für Mitarbeitende in Microsoft Teams: weniger Scope-3-Emissionen, Parkdruck und Pendelkosten. In 5 Minuten live. 30 Tage kostenlos."
-keywords: "Fahrgemeinschafts-App für Unternehmen, Mitfahrgelegenheit für Mitarbeiter, betriebliche Fahrgemeinschaften, Fahrgemeinschaft Software, BlaBlaCar für Unternehmen, Microsoft Teams App, betriebliches Mobilitätsmanagement, Pendler-App, Pendlerverkehr reduzieren, Fahrgemeinschaften organisieren, Corporate Carpooling, Mobilitäts-App für Unternehmen, Scope-3-Reporting Pendelverkehr, nachhaltige Mobilität Mitarbeiter, Mitfahrzentrale für Firmen"
+title: "TeamWheels | Betriebliche Fahrgemeinschaften für Ihre Mitarbeitenden"
+seoTitle: "Fahrgemeinschaften im Unternehmen | TeamWheels"
+description: "Betriebliche Fahrgemeinschaften: Mitarbeitende finden Mitfahrende, Fahrtnachweise und Scope-3-Reporting inklusive. In Microsoft Teams, 30 Tage kostenlos."
+# Startseite = kommerzieller Hauptbegriff „Fahrgemeinschaften Unternehmen“ (Lösung für Arbeitgeber);
+# Teams/Copilot = Unterscheidungsmerkmal, nicht der Aufhänger. Software / App → corporate-carpooling-software
+keywords: "Fahrgemeinschaften Unternehmen, betriebliche Fahrgemeinschaften, Fahrgemeinschaft Mitarbeiter, Fahrgemeinschaftsprogramm, Mitfahrgelegenheit für Mitarbeiter, TeamWheels"
 
 # banner
 banner:
@@ -20,7 +22,7 @@ banner:
     alt: "Microsoft Teams"
   - src: "images/microsoft-copilot-icon.svg"
     alt: "Microsoft Copilot"
-  lede: "TeamWheels macht nachhaltige Mobilität für Ihre Mitarbeitenden einfach."
+  lede: "TeamWheels bringt Mitarbeitende mit derselben Strecke zusammen und steuert Ihr Fahrgemeinschaftsprogramm – von der Anmeldung bis zu den Pendlerleistungen."
   lede_logo: "images/logo.png"   # "TeamWheels" swapped for the logo
   # previous two-column texts, not shown in the centered layout
   subtitle: "Das Vertrauen von HR- und Nachhaltigkeitsteams in Europa und Nordamerika"
@@ -85,8 +87,8 @@ video_demo:
   # data is emitted on /demo/ only).
   description: "Ein 60-sekündiger Rundgang durch TeamWheels – die App für Mitarbeiter-Fahrgemeinschaften und Pendlermanagement, die nativ in Microsoft Teams läuft. Sehen Sie Fahrten-Matching, den Konversations-Bot und das Scope-3-Emissions-Dashboard in Aktion."
   uploadDate: "2026-11-01"
-  duration: "PT1M"        # ISO 8601, for VideoObject JSON-LD
-  duration_seconds: 60      # plain seconds, for the video sitemap
+  duration: "PT1M5S"        # ISO 8601, for VideoObject JSON-LD
+  duration_seconds: 65      # plain seconds, for the video sitemap
   watch_page: "/demo/"                            # the video's watch page (link target)
   poster: "videos/teamwheels-demo-de-poster.jpg"   # still frame shown before the clip loads / video thumbnail
   webm: "videos/teamwheels-demo-de.webm"
@@ -97,11 +99,11 @@ video_demo:
 why_teamwheels:
   enable: true
   subtitle: "Vergleich"
-  title: "Warum TeamWheels statt einer separaten App?"
-  lede: "Eine separate Fahrgemeinschafts-App ist eine App mehr, die Ihre Mitarbeitenden vergessen. TeamWheels ist dort, wo sie ohnehin arbeiten: in Microsoft Teams."
+  title: "Warum TeamWheels statt einer anderen Fahrgemeinschafts-Lösung?"
+  lede: "Betriebliche Fahrgemeinschaften scheitern, wenn niemand die App öffnet. TeamWheels ist nativ in Microsoft Teams und Copilot integriert, die Tools, die Ihre Mitarbeitenden ohnehin den ganzen Tag nutzen – die Nutzung folgt von selbst. Entdecken Sie unsere [Fahrgemeinschafts-Software für Unternehmen](/de/corporate-carpooling-software/)."
   topic_label: "Kriterium"
-  them_label: "Separate Fahrgemeinschafts-App"
-  us_label: "TeamWheels in Microsoft Teams"
+  them_label: "Klassische Fahrgemeinschafts-Lösung"
+  us_label: "TeamWheels"
   rows:
   - topic: "Zugang"
     them: "App herunterladen, Konto und Passwort anlegen"
@@ -159,22 +161,44 @@ fun_facts:
     counter_prefix: "+"
     content: "jährliches Wachstum betrieblicher Fahrgemeinschaften weltweit"
 
-# work_process
+# work_process — homepage-only steps, from the employer's side (partials/home-steps.html).
+# Ohne `process_item` zeigt die Startseite die Schritte aus how-it-works.md; Titel nicht von dieser Seite übernehmen.
 work_process:
   enable: true
-  section: "how-it-works"
+  section: "how-it-works"   # target of the "Funktionsweise im Detail" button
+  subtitle: "Einführung"
+  title: "Starten Sie Ihr Fahrgemeinschaftsprogramm in weniger als einer Woche"
+  link_label: "Funktionsweise im Detail"
+  process_item:
+    - label: "Tag 1"
+      title: "Installieren"
+      image: "images/how-it-works/home-de-step-1.svg"
+      image_alt: "TeamWheels aus dem Microsoft Teams Store hinzugefügt, Anmeldung per SSO und kostenloser Test aktiviert"
+      content: "Ihre Microsoft-365-Administration fügt TeamWheels in 5 Minuten hinzu. Keine App zum Herunterladen: Ihre Mitarbeitenden melden sich mit ihrem Arbeitskonto an. Der kostenlose Test startet mit der Installation."
+    - label: "Woche 1"
+      title: "Starten"
+      image: "images/how-it-works/home-de-step-2.svg"
+      image_alt: "Der TeamWheels-Agent schlägt einer Mitarbeiterin eine Fahrgemeinschaft auf ihrem Arbeitsweg vor"
+      content: "Ihre Mitarbeitenden tragen ihre Arbeitswege in Teams ein oder sagen es dem Copilot-Agenten. TeamWheels schlägt automatisch Fahrgemeinschaften unter Kolleg:innen mit derselben Strecke vor."
+    - label: "Monat 1"
+      title: "Steuern"
+      image: "images/how-it-works/home-de-step-3.svg"
+      image_alt: "TeamWheels-Dashboard: geteilte Fahrten, vermiedenes CO₂, freie Parkplätze und Fahrtnachweise"
+      content: "Verfolgen Sie geteilte Fahrten, vermiedenes CO₂ und frei gewordene Parkplätze. Die Fahrtnachweise pro Mitarbeitendem liegen für Ihre Pendlerleistungen bereit."
 
 # image_and_content_block
 image_and_content_blocks:
   - enable: true
     subtitle: "Warum sich HR- und Nachhaltigkeitsverantwortliche für TeamWheels entscheiden"
     subtitle_link: "benefits/"
-    title: "Fahrgemeinschaften dort, wo Ihre Teams bereits arbeiten"
-    image: "images/why_use_teamWheels.png"
+    title: "Von Ihren Mitarbeitenden genutzt – dank Microsoft Teams und Copilot"
+    image: "images/home-de-adoption-teams-copilot.png"
+    image_fit: true   # product mockup: full-width image, no padding
+    image_alt: "TeamWheels in Microsoft Teams schlägt einer Mitarbeiterin eine Fahrgemeinschaft vor, Copilot findet Kolleg:innen mit derselben Strecke"
     content_position: "right"
-    content: "TeamWheels ist eine Fahrgemeinschafts-Software für Unternehmen, die sich nativ in Microsoft Teams integriert – keine zusätzliche App, kein Change-Management. Ein Teams-Administrator, ein paar Klicks, und Ihr Fahrgemeinschaftsprogramm ist in 5 Minuten live – mit über 40 % Mitarbeiterbeteiligung.
+    content: "TeamWheels ist ein [Fahrgemeinschafts-Tool für Unternehmen](/de/corporate-carpooling-software/), das sich nativ in Microsoft Teams integriert – keine zusätzliche App, kein Change-Management. Ein Teams-Administrator, ein paar Klicks, und Ihr Fahrgemeinschaftsprogramm ist in 5 Minuten live – mit über 40 % Mitarbeiterbeteiligung.
 
-    [Zur Fahrgemeinschafts-Software für Unternehmen →](/de/corporate-carpooling-software/) · [Mehr erfahren →](benefits/#teams-integration)
+    [Mehr erfahren →](benefits/#teams-integration)
     "
     button:
       enable: false
@@ -182,7 +206,9 @@ image_and_content_blocks:
   - enable: true
     subtitle: "Messbare Wirkung auf ESG und Pendelverkehr"
     title: "Scope-3-Emissionen senken, Parkkosten reduzieren, Talente binden"
-    image: "images/photos/office-parking-lot.jpg"
+    image: "images/home-de-rse.png"
+    image_fit: true   # product mockup: full-width image, no padding
+    image_alt: "ESG-Bericht von TeamWheels: durch Fahrgemeinschaften vermiedenes CO₂ (Scope 3, Kategorie 7), freie Parkplätze und CSRD-Export"
     content_position: "left"
     content: "Weniger Alleinfahrten bedeuten messbare Scope-3-Reduktionen, bis zu 30 % weniger Parkplatzbedarf und über 2.000 € jährliche Ersparnis pro Mitarbeitendem – bei gleichzeitig höherer Mitarbeiterbindung und mehr Wohlbefinden am Arbeitsplatz.
 
@@ -192,11 +218,13 @@ image_and_content_blocks:
       enable: false
 
   - enable: true
-    subtitle: "Pendlerleistungen einfach verwalten"
-    title: "Steuerbegünstigte Pendlerprogramme & Reporting zur nachhaltigen Mobilität"
-    image: "images/photos/commute-reporting-dashboard.jpg"
+    subtitle: "Pendlerleistungen"
+    title: "Fahrtnachweise automatisch erstellt"
+    image: "images/home-de-benefits.png"
+    image_fit: true   # product mockup: full-width image, no padding
+    image_alt: "Von TeamWheels erstellte Fahrtnachweise für alle Mitfahrenden, mit Export für die Lohnabrechnung"
     content_position: "right"
-    content: "Automatisieren Sie die Erfassung steuerbegünstigter Pendlerleistungen (z. B. US-Grenze von 340 $/Monat laut IRS), erstellen Sie CSRD- und CDP-taugliche Scope-3-Berichte und bleiben Sie länderübergreifend compliant – ganz ohne zusätzlichen Verwaltungsaufwand.
+    content: "Jede in Teams geteilte Fahrt wird erfasst: TeamWheels erstellt die Nachweise pro Mitarbeitendem für Ihre Pendlerleistungen und Ihr Scope-3-Reporting, ohne manuelle Eingabe.
 
     [Mehr erfahren →](benefits/#commuter-benefits)
 
@@ -209,11 +237,28 @@ image_and_content_blocks:
     anchor: "security"   # target of the proof strip security link
     subtitle: "Sicherheit & Compliance auf Enterprise-Niveau"
     title: "Eine sichere, von der IT freigegebene Mobilitätslösung für Mitarbeitende"
-    image: "images/why_use_teamWheels.png"
+    image: "images/home-de-securite.png"
+    image_fit: true   # product mockup: full-width image, no padding
+    image_alt: "Anmeldung bei TeamWheels mit dem Microsoft-Arbeitskonto (SSO über Entra ID), Daten in Ihrem Tenant, Hosting in der EU"
     content_position: "left"
     content: "Veröffentlicht im Microsoft Teams Store mit einer [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/de-de/microsoft-365-app-certification/teams/hmz-digital-teamwheels), Single Sign-on über Microsoft Entra ID und DSGVO-konform – TeamWheels erfüllt Sicherheitsstandards für Unternehmen, ohne zusätzliche Zugangsdaten oder Änderungen an der Infrastruktur.
 
     [Mehr erfahren →](benefits/#security)
+    "
+    button:
+      enable: false
+
+  - enable: true
+    anchor: "fleet"
+    subtitle: "Im Early Access"
+    title: "Fuhrparkmanagement in Microsoft Teams"
+    image: "images/home-de-flotte.png"
+    image_fit: true   # product mockup: full-width image, no padding
+    image_alt: "Buchung eines Poolfahrzeugs in Microsoft Teams mit TeamWheels, Kilometerstand und Erinnerungen an Fristen"
+    content_position: "right"
+    content: "Für KMU und öffentliche Einrichtungen mit 5 bis 30 Poolfahrzeugen, die noch in Excel verwaltet werden: Fahrzeug direkt im Teams-Chat buchen, Kilometerstand bei Rückgabe erfassen, Erinnerungen an Fristen und Kosten pro Fahrzeug. Ohne Telematikbox, ohne zusätzliche App.
+
+    [Am Early Access teilnehmen →](contact/)
     "
     button:
       enable: false

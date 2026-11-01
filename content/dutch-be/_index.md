@@ -1,8 +1,10 @@
 ---
-title: "TeamWheels | Carpoolen voor bedrijven in Microsoft Teams"
-seoTitle: "Carpoolen voor bedrijven in Microsoft Teams | TeamWheels"
-description: "Carpoolen voor bedrijven, rechtstreeks in Microsoft Teams: minder woon-werkverkeer met de auto, minder parkeerdruk. In 5 minuten live, 30 dagen gratis."
-keywords: "carpoolen, carpoolen voor bedrijven, carpool app, carpool app voor bedrijven, woon-werkverkeer, carpoolen woon-werkverkeer, carpoolen werkgever, Microsoft Teams app, mobiliteitsbeleid, duurzame mobiliteit bedrijven, Scope 3 woon-werkverkeer, parkeerdruk bedrijf"
+title: "TeamWheels | Carpoolen voor bedrijven en hun medewerkers"
+seoTitle: "Carpoolen voor bedrijven en hun medewerkers | TeamWheels"
+description: "Carpoolen voor bedrijven: medewerkers met hetzelfde traject vinden elkaar, ritten worden geregistreerd en u meet de vermeden CO₂. In Teams, 30 dagen gratis."
+# homepage = commerciële hoofdterm „carpoolen voor bedrijven” (oplossing voor werkgevers);
+# Teams/Copilot = onderscheidend argument, niet de kop. Software / app → carpoolen-voor-bedrijven
+keywords: "carpoolen voor bedrijven, carpoolen, carpoolen woon-werkverkeer, carpoolprogramma, carpoolen werkgever, TeamWheels"
 # Draft until Hamza publishes the nl-BE locale (SPEC.md D3): while this home
 # is a draft, nothing under /nl-be/ is built in production.
 draft: false
@@ -23,7 +25,7 @@ banner:
     alt: "Microsoft Teams"
   - src: "images/microsoft-copilot-icon.svg"
     alt: "Microsoft Copilot"
-  lede: "TeamWheels maakt duurzame mobiliteit eenvoudig voor uw medewerkers."
+  lede: "TeamWheels brengt medewerkers met hetzelfde traject samen en beheert uw carpoolprogramma, van inschrijving tot ritregistratie."
   lede_logo: "images/logo.png"   # "TeamWheels" swapped for the logo
   # previous two-column texts, not shown in the centered layout
   subtitle: "Voor HR-, mobiliteits- en duurzaamheidsteams"
@@ -79,8 +81,8 @@ video_demo:
   lede: "Ritmatching, de chatbot en het Scope 3-dashboard, in één minuut (Engelstalig)."
   description: "Demo van 60 seconden van TeamWheels, de carpoolapp voor woon-werkverkeer die rechtstreeks in Microsoft Teams werkt: ritmatching, de chatbot en het dashboard voor Scope 3-uitstoot."
   uploadDate: "2026-11-01"
-  duration: "PT1M"
-  duration_seconds: 60
+  duration: "PT1M5S"
+  duration_seconds: 65
   watch_page: "https://www.teamwheelsapp.com/en/demo/"
   poster: "videos/teamwheels-demo-nl-be-poster.jpg"
   webm: "videos/teamwheels-demo-nl-be.webm"
@@ -91,11 +93,11 @@ video_demo:
 why_teamwheels:
   enable: true
   subtitle: "Vergelijking"
-  title: "Waarom TeamWheels en geen aparte carpoolapp?"
-  lede: "Een aparte carpoolapp is nog een app die uw medewerkers vergeten. TeamWheels zit waar ze al werken: in Microsoft Teams."
+  title: "Waarom TeamWheels en geen andere carpooloplossing?"
+  lede: "Carpoolen in een bedrijf mislukt als niemand de app opent. TeamWheels werkt rechtstreeks in Microsoft Teams en Copilot, de tools die uw medewerkers de hele dag al gebruiken. Zo wordt de app ook echt gebruikt. Ontdek onze [carpoolsoftware voor bedrijven](/nl-be/carpoolen-voor-bedrijven/)."
   topic_label: "Criterium"
-  them_label: "Aparte carpoolapp"
-  us_label: "TeamWheels in Microsoft Teams"
+  them_label: "Klassieke carpooloplossing"
+  us_label: "TeamWheels"
   rows:
   - topic: "Toegang"
     them: "Een app downloaden, een account en wachtwoord aanmaken"
@@ -153,19 +155,41 @@ fun_facts:
     counter_prefix: "+"
     content: "jaarlijkse groei van de carpoolmarkt"
 
-# work_process
+# work_process — homepage-only steps, from the employer's side (partials/home-steps.html).
+# Zonder `process_item` toont de homepage de stappen van how-it-works.md; neem de titel van die pagina niet over.
 work_process:
   enable: true
-  section: "how-it-works"
+  section: "how-it-works"   # target of the "Bekijk hoe het werkt" button
+  subtitle: "Aan de slag"
+  title: "Start uw carpoolprogramma binnen een week"
+  link_label: "Bekijk hoe het werkt"
+  process_item:
+    - label: "Dag 1"
+      title: "Installeren"
+      image: "images/how-it-works/home-nl-be-step-1.svg"
+      image_alt: "TeamWheels toegevoegd via de Microsoft Teams Store, aanmelden via SSO en gratis proefperiode geactiveerd"
+      content: "Uw Microsoft 365-beheerder voegt TeamWheels in 5 minuten toe. Geen app om te downloaden: uw medewerkers melden zich aan met hun werkaccount. De gratis proefperiode start bij de installatie."
+    - label: "Week 1"
+      title: "Lanceren"
+      image: "images/how-it-works/home-nl-be-step-2.svg"
+      image_alt: "De TeamWheels-assistent stelt een medewerker een carpoolrit op haar woon-werktraject voor"
+      content: "Uw medewerkers geven hun woon-werktrajecten in via Teams of geven ze door aan de Copilot-assistent. TeamWheels stelt automatisch carpoolritten voor tussen collega's met hetzelfde traject."
+    - label: "Maand 1"
+      title: "Opvolgen"
+      image: "images/how-it-works/home-nl-be-step-3.svg"
+      image_alt: "TeamWheels-dashboard: gedeelde ritten, vermeden CO₂, vrijgekomen parkeerplaatsen en ritoverzichten"
+      content: "Volg de gedeelde ritten, de vermeden CO₂-uitstoot en de vrijgekomen parkeerplaatsen op. De ritoverzichten per medewerker liggen klaar voor uw administratie."
 
 # image_and_content_block
 image_and_content_blocks:
   - enable: true
     subtitle: "Waarom TeamWheels?"
-    title: "Carpoolen waar uw medewerkers al werken"
-    image: "images/why_use_teamWheels.png"
+    title: "Uw medewerkers carpoolen gewoon in Microsoft Teams en Copilot"
+    image: "images/home-nl-be-adoption-teams-copilot.png"
+    image_fit: true   # product mockup: full-width image, no padding
+    image_alt: "TeamWheels in Microsoft Teams stelt een medewerker een carpoolrit voor, en Copilot vindt collega's met hetzelfde traject"
     content_position: "right"
-    content: "TeamWheels is een carpoolapp voor bedrijven die rechtstreeks in Microsoft Teams werkt: geen extra app, geen nieuwe gewoonte om aan te leren. Een Teams-beheerder, enkele klikken, en uw carpoolprogramma staat in 5 minuten online, met een deelname van meer dan 40 %.
+    content: "TeamWheels is een [carpoolapp voor bedrijven](carpoolen-voor-bedrijven/) die rechtstreeks in Microsoft Teams werkt: geen extra app, geen nieuwe gewoonte om aan te leren. Een Teams-beheerder, enkele klikken, en uw carpoolprogramma staat in 5 minuten online, met een deelname van meer dan 40 %.
 
     [Zo werkt het →](hoe-het-werkt/)
     "
@@ -175,7 +199,9 @@ image_and_content_blocks:
   - enable: true
     subtitle: "Concrete resultaten"
     title: "Minder solo-autoritten, minder parkeerdruk, meer welzijn"
-    image: "images/photos/office-parking-lot.jpg"
+    image: "images/home-nl-be-rse.png"
+    image_fit: true   # product mockup: full-width image, no padding
+    image_alt: "Duurzaamheidsrapport van TeamWheels: vermeden CO₂ door carpoolen (Scope 3, categorie 7), vrije parkeerplaatsen en CSRD-export"
     content_position: "left"
     content: "Als minder medewerkers alleen met de auto naar het werk rijden, betekent dat meetbaar minder CO₂-uitstoot, tot 30 % minder vraag naar parkeerplaatsen en lagere verplaatsingskosten, terwijl u het welzijn van uw medewerkers en uw werkgeversimago versterkt.
 
@@ -186,8 +212,10 @@ image_and_content_blocks:
 
   - enable: true
     subtitle: "Past in uw mobiliteitsbeleid"
-    title: "Carpoolen in uw beleid voor woon-werkverkeer"
-    image: "images/photos/commute-reporting-dashboard.jpg"
+    title: "Gedeelde ritten automatisch geregistreerd"
+    image: "images/home-nl-be-benefits.png"
+    image_fit: true   # product mockup: full-width image, no padding
+    image_alt: "Ritoverzicht per medewerker, automatisch bijgehouden door TeamWheels, met export"
     content_position: "right"
     content: "TeamWheels houdt bij welke ritten uw medewerkers delen. Zo hebt u de gegevens in handen om carpoolen op te nemen in uw mobiliteitsbeleid, bijvoorbeeld naast een kilometervergoeding of binnen [pijler 2 van het mobiliteitsbudget](https://mobiliteitsbudget.be/nl/5-waar-kan-je-het-mobiliteitsbudget-aan-besteden), en om de Scope 3-uitstoot van het woon-werkverkeer te rapporteren. In pijler 2 valt carpoolen onder de deeloplossingen, sinds 1 januari 2026 alleen met voertuigen zonder CO₂-uitstoot.
 
@@ -200,9 +228,26 @@ image_and_content_blocks:
     anchor: "security"   # target of the proof strip security link
     subtitle: "Veiligheid en compliance"
     title: "Een veilige oplossing, ontworpen voor uw IT-afdeling"
-    image: "images/why_use_teamWheels.png"
+    image: "images/home-nl-be-securite.png"
+    image_fit: true   # product mockup: full-width image, no padding
+    image_alt: "Aanmelden bij TeamWheels met het Microsoft-werkaccount (SSO via Entra ID), gegevens in uw tenant, opslag in de EU"
     content_position: "left"
     content: "Gepubliceerd in de Microsoft Teams Store met een [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/nl-nl/microsoft-365-app-certification/teams/hmz-digital-teamwheels), aanmelden via Microsoft Entra ID, gegevens gehost in Frankrijk en GDPR-conform: een veilige oplossing voor bedrijven, zonder extra wachtwoorden. Grote organisaties, campussen en bedrijventerreinen kunnen TeamWheels ook onder hun eigen naam inzetten met het [white-labelplatform](https://www.teamwheelsapp.com/en/white-label-carpool-platform/) (Engelstalig).
+    "
+    button:
+      enable: false
+
+  - enable: true
+    anchor: "fleet"
+    subtitle: "Early access"
+    title: "Wagenparkbeheer in Microsoft Teams"
+    image: "images/home-nl-be-flotte.png"
+    image_fit: true   # product mockup: full-width image, no padding
+    image_alt: "Een poolwagen reserveren in Microsoft Teams met TeamWheels, kilometerregistratie en herinneringen voor vervaldata"
+    content_position: "right"
+    content: "Voor kmo's en lokale besturen met 5 tot 30 poolwagens die nog in Excel worden beheerd: een wagen reserveren vanuit de Teams-chat, de kilometerstand noteren bij terugkomst, herinneringen voor vervaldata en de kosten per wagen. Zonder telematicabox in de wagen, zonder extra app.
+
+    [Schrijf u in voor early access →](contact/)
     "
     button:
       enable: false

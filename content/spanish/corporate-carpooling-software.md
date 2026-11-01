@@ -134,25 +134,18 @@ image_and_content_blocks:
       enable: false
 
   - enable: true
-    anchor: "white-label-hr-integration"
-    subtitle: "Marca blanca e integración con sistemas de RR. HH."
-    title: "Ventajas de una app de coche compartido de marca blanca integrada con sus sistemas de RR. HH."
-    image: "images/home-es-benefits.png"
-    image_fit: true
-    image_alt: "Justificantes de trayectos por empleado generados por TeamWheels, listos para exportar a nóminas y sistemas de RR. HH."
+    anchor: "white-label"
+    subtitle: "Dos formas de desplegarlo"
+    title: "¿Necesita un programa de coche compartido con su propio nombre?"
     content_position: "left"
-    content: "Una app de coche compartido de marca blanca integrada con sus sistemas de RR. HH. y de identidad permite que los empleados se unan con su cuenta de trabajo habitual, mientras que los equipos de RR. HH., nóminas y ESG obtienen datos limpios sin exportaciones manuales. TeamWheels funciona dentro de su propio tenant de Microsoft 365 y con su marca, no como una app de terceros aparte.
+    content: |
+      No son opciones opuestas: es el mismo software de carpooling corporativo, desplegado de dos formas.
 
-    * **Inicio de sesión único, cero onboarding**: el SSO con Azure AD / Entra ID convierte su directorio de empleados en la lista de participantes. Sin invitaciones ni cuentas que dar de alta o de baja
+      **TeamWheels estándar** se adapta a la gran mayoría de las empresas: la app se instala en su tenant de Microsoft 365 con el nombre TeamWheels, con sus sedes, sus reglas de emparejamiento y su política de beneficios de movilidad. Cinco minutos de instalación, una prueba gratuita y un precio por empleado.
 
-    * **Su marca, su tenant**: una experiencia de marca blanca dentro de Microsoft Teams, regida por sus propias políticas de TI y de residencia de datos
+      **La versión de marca blanca** está pensada para grandes empresas, campus, hospitales y parques empresariales que quieren que sus equipos compartan coche con su propio nombre. Puesta en marcha en pocos días, precio bajo presupuesto.
 
-    * **Preparada para ventajas fiscales y nóminas**: los registros de trayectos alimentan los flujos de beneficios de movilidad y reembolsos (Section 132f del IRS en EE. UU., regímenes del Reino Unido, Forfait Mobilité Durable en Francia) sin hojas de cálculo
-
-    * **Informes ESG en piloto automático**: los datos de participación y CO₂ se exportan directamente a los informes de Scope 3 categoría 7 y CSRD
-
-    Como identidad, RR. HH. y coche compartido comparten una única fuente de verdad, su programa se mantiene exacto aunque cambie la plantilla: sin listas desactualizadas ni cuentas huérfanas. ¿Quiere la visión completa? [Descubra la plataforma de coche compartido de marca blanca →](/es/white-label-carpool-platform/)
-    "
+      ¿Duda? Empiece con la prueba estándar: la marca blanca se activa después sin reinstalar nada. Las opciones, el calendario de despliegue y las integraciones están en la página [plataforma de coche compartido de marca blanca →](/es/white-label-carpool-platform/)
     button:
       enable: false
 

@@ -91,8 +91,8 @@ video_demo:
   # structurées émises sur /demo/ seulement).
   description: "Démonstration de 60 secondes de TeamWheels — l'application de covoiturage et de gestion des trajets domicile-travail intégrée nativement à Microsoft Teams. Découvrez le matching de trajets, le bot conversationnel et le tableau de bord des émissions Scope 3."
   uploadDate: "2026-11-01"
-  duration: "PT1M"
-  duration_seconds: 60
+  duration: "PT1M5S"
+  duration_seconds: 65
   watch_page: "/demo/"
   poster: "videos/teamwheels-demo-fr-poster.jpg"   # image fixe affichée avant le chargement / miniature de la vidéo
   webm: "videos/teamwheels-demo-fr.webm"

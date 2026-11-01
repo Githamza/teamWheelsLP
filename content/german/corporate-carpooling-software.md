@@ -134,25 +134,18 @@ image_and_content_blocks:
       enable: false
 
   - enable: true
-    anchor: "white-label-hr-integration"
-    subtitle: "White-Label & Integration in HR-Systeme"
-    title: "Vorteile einer White-Label-Fahrgemeinschafts-App mit Anbindung an Ihre HR-Systeme"
-    image: "images/home-de-benefits.png"
-    image_fit: true
-    image_alt: "Von TeamWheels erstellte Fahrtnachweise pro Mitarbeitendem, bereit für den Export in Lohnabrechnung und HR-Systeme"
+    anchor: "white-label"
+    subtitle: "Zwei Wege zur Einführung"
+    title: "Sie möchten ein Fahrgemeinschaftsprogramm unter Ihrem eigenen Namen?"
     content_position: "left"
-    content: "Eine White-Label-Fahrgemeinschafts-App, die an Ihre HR- und Identitätssysteme angebunden ist, bedeutet: Mitarbeitende steigen mit ihrem bestehenden Arbeitskonto ein, während HR-, Lohnbuchhaltungs- und ESG-Teams saubere Daten ohne manuelle Exporte erhalten. TeamWheels läuft in Ihrem eigenen Microsoft-365-Tenant unter Ihrer Marke – nicht als separate Drittanbieter-App.
+    content: |
+      Das ist kein Entweder-oder: Es ist dieselbe Fahrgemeinschafts-Software für Unternehmen, auf zwei Arten eingeführt.
 
-    * **Single Sign-on, kein Onboarding** – SSO über Azure AD / Entra ID macht Ihr Mitarbeiterverzeichnis zur Teilnehmerliste. Keine Einladungen, keine separaten Konten, die angelegt oder deaktiviert werden müssen
+      **TeamWheels in der Standardversion** passt für die meisten Arbeitgeber: Die App wird unter dem Namen TeamWheels in Ihrem Microsoft-365-Tenant installiert, mit Ihren Standorten, Ihren Matching-Regeln und Ihrer Regelung für Pendlerleistungen. Fünf Minuten Installation, ein kostenloser Test, ein Preis pro Mitarbeitendem.
 
-    * **Ihre Marke, Ihr Tenant** – Ein White-Label-Erlebnis in Microsoft Teams, gesteuert durch Ihre eigenen IT-Richtlinien und Vorgaben zur Datenresidenz
+      **Die White-Label-Version** richtet sich an Großunternehmen, Campus, Kliniken und Gewerbegebiete, deren Teams unter eigenem Namen Fahrgemeinschaften bilden sollen. Einrichtung in wenigen Tagen, Preis auf Anfrage.
 
-    * **Bereit für steuerbegünstigte Leistungen & Lohnabrechnung** – Fahrtnachweise fließen ohne Tabellen in Prozesse für Pendlerleistungen und Erstattungen ein (US IRS Section 132f, britische Programme, Forfait Mobilité Durable in Frankreich)
-
-    * **ESG-Reporting auf Autopilot** – Beteiligungs- und CO₂-Daten werden direkt in das Reporting zu Scope 3 Kategorie 7 und CSRD exportiert
-
-    Weil Identität, HR und Fahrgemeinschaften auf einer gemeinsamen Datenbasis beruhen, bleibt Ihr Programm auch bei wechselnder Belegschaft korrekt – keine veralteten Listen, keine verwaisten Konten. Sie möchten das Gesamtbild? [Zur White-Label-Fahrgemeinschaftsplattform →](/de/white-label-carpool-platform/)
-    "
+      Unsicher? Starten Sie mit dem Standardtest: White Label lässt sich später ohne Neuinstallation aktivieren. Optionen, Zeitplan und Integrationen finden Sie auf der Seite [White-Label-Fahrgemeinschaftsplattform →](/de/white-label-carpool-platform/)
     button:
       enable: false
 
