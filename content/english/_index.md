@@ -6,9 +6,25 @@ keywords: "employee rideshare app, corporate ridesharing software, BlaBlaCar for
 
 # banner
 banner:
+  # one-column hero: title + rotating Teams / Copilot logos + one line (mirrors FR)
+  layout: "centered"
+  announcement:   # pill → Microsoft Store listing (teams_app.marketplace_url)
+    label: "New version"
+    text: "View on the Microsoft Store"
+  journey:        # isometric "without / with TeamWheels" animation
+    enable: true
+  title: "Corporate carpooling"
+  title_accent: "built into the tools you use every day"   # gradient 2nd line, ends with the logos
+  rotating_logos:   # exactly 2 (CSS animation is tuned for 2 logos)
+  - src: "images/microsoft-teams-icon.svg"
+    alt: "Microsoft Teams"
+  - src: "images/microsoft-copilot-icon.svg"
+    alt: "Microsoft Copilot"
+  lede: "TeamWheels makes sustainable commuting easy for your employees."
+  lede_logo: "images/logo.png"   # "TeamWheels" swapped for the logo
+  # previous two-column texts, not shown in the centered layout
   subtitle: "Trusted by HR & Sustainability teams across the USA, UK & Canada"
   subtitle_link: "#proof"   # the hero line links to the proof strip under the hero
-  title: 'Employee Carpooling Built Into <span class="teams-brand">Microsoft Teams</span>'
   description: "Reduce Scope 3 emissions, cut parking demand by 30%, and save employees $2,000/year — zero extra apps, deployed in 5 minutes."
   button:
     enable: true
@@ -68,17 +84,55 @@ video_demo:
   # uploadDate / duration are kept here for parity with demo.md (structured
   # data is emitted on /demo/ only).
   description: "A 60-second walkthrough of TeamWheels — the employee carpooling and commute-management app that runs natively inside Microsoft Teams. See ride matching, the conversational bot, and the Scope 3 emissions dashboard in action."
-  uploadDate: "2026-07-13"
-  duration: "PT1M1S"        # ISO 8601, for VideoObject JSON-LD
-  duration_seconds: 61      # plain seconds, for the video sitemap
+  uploadDate: "2026-11-01"
+  duration: "PT1M"        # ISO 8601, for VideoObject JSON-LD
+  duration_seconds: 60      # plain seconds, for the video sitemap
   watch_page: "/demo/"                            # the video's watch page (link target)
-  poster: "videos/teamwheels-demo-poster.jpg"   # still frame shown before the clip loads / video thumbnail
-  webm: "videos/teamwheels-demo.webm"
-  mp4: "videos/teamwheels-demo.mp4"
+  poster: "videos/teamwheels-demo-en-poster.jpg"   # still frame shown before the clip loads / video thumbnail
+  webm: "videos/teamwheels-demo-en.webm"
+  mp4: "videos/teamwheels-demo-en.mp4"
+
+# why TeamWheels — comparison under the hero (partials/home-why.html),
+# replaces the key figures (fun_facts, disabled below)
+why_teamwheels:
+  enable: true
+  subtitle: "Comparison"
+  title: "Why TeamWheels instead of a standalone app?"
+  lede: "A standalone carpooling app is one more app your employees forget. TeamWheels lives where they already work: Microsoft Teams."
+  topic_label: "Criterion"
+  them_label: "Standalone carpooling app"
+  us_label: "TeamWheels in Microsoft Teams"
+  rows:
+  - topic: "Access"
+    them: "An app to download, an account and a password to create"
+    us: "Already in Teams, Microsoft Entra ID single sign-on"
+  - topic: "Rollout"
+    them: "An IT project, a sign-up campaign, reminders"
+    us: "One Teams admin, about 5 minutes, no IT project"
+  - topic: "Adoption"
+    them: "The app gets buried on the phone after a few weeks"
+    us: "Notifications and an AI agent in the tool that's open all day"
+  - topic: "Community"
+    them: "Accounts to provision, then delete when employees leave"
+    us: "Your Entra ID directory becomes the carpooler list, kept up to date automatically"
+  - topic: "Data"
+    them: "Your employees' data on an external platform"
+    us: "In your Microsoft 365 tenant, data hosted in the EU, GDPR-compliant"
+  - topic: "ESG reporting"
+    them: "Exports to rework for Scope 3 and commuter-benefit reporting"
+    us: "Scope 3 dashboard and commuter-benefit tracking, generated automatically"
+  link:
+    label: "Explore the corporate carpooling software"
+    href: "corporate-carpooling-software/"
+
+# strip under the comparison (steps + security line): hidden, the full
+# "how it works" section follows right below
+proof_strip:
+  enable: false
 
 # fun facts
 fun_facts:
-  enable: true
+  enable: false   # replaced by why_teamwheels
   title: "Enterprise carpooling by the numbers"
   fact_item:
   - icon: "fas fa-dollar-sign"

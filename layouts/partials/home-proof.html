@@ -15,13 +15,17 @@
   width and shift the layout (CLS).
 
   The hero subtitle links here (`banner.subtitle_link: "#proof"`).
+  `proof_strip.enable: false` hides the whole strip (the full "how it works"
+  section follows a little further down anyway).
 */ -}}
 {{- $facts := .Params.fun_facts -}}
 {{- $how := "" -}}
 {{- with .Params.work_process }}{{ if .enable }}{{ $how = site.GetPage (string .section) }}{{ end }}{{ end -}}
 {{- $hasSecurity := false -}}
 {{- range .Params.image_and_content_blocks }}{{ if and .enable (eq .anchor "security") }}{{ $hasSecurity = true }}{{ end }}{{ end -}}
-{{- if or (and $facts $facts.enable) $how -}}
+{{- $stripOn := true -}}
+{{- with .Params.proof_strip }}{{ if eq .enable false }}{{ $stripOn = false }}{{ end }}{{ end -}}
+{{- if and $stripOn (or (and $facts $facts.enable) $how) -}}
 <section class="home-proof" id="proof" aria-labelledby="home-proof-title">
   <div class="container container-delta">
     {{- with $facts }}{{ if .enable }}

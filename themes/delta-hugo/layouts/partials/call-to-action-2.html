@@ -17,27 +17,13 @@
                     {{ partial "teams-install.html" (dict "placement" "cta" "admin" true "trust" true) }}
                   </div>
                   {{ if .Params.call_to_action.button_label }}
-                    {{ if site.Params.teams_app.enable }}<p class="small mb-2">{{ i18n "hero_email_label" }}</p>{{ end }}
-                    <form
-                      action="{{ site.Params.contact_info.contact_form_action }}"
-                      method="POST">
-                      {{/* Web3Forms redirect on success → fires the Google Ads
-                           conversion from the thank-you page. */}}
-                      <input type="hidden" name="access_key" value="{{ site.Params.contact_info.web3forms_access_key }}" />
-                      <input type="hidden" name="redirect" value="{{ absLangURL "thank-you/" }}" />
-                      <input type="hidden" name="subject" value="{{ i18n `contact_form_subject` }}" />
-                      <div class="input-group mb-3">
-                        <input
-                          required
-                          type="email"
-                          name="email"
-                          class="form-control text-dark"
-                          placeholder="Enter your email" />
-                        <button class="btn btn-primary" type="submit">
-                          {{ .Params.call_to_action.button_label }}
-                        </button>
-                      </div>
-                    </form>
+                    {{/* Same capsule form as the hero (email icon, placeholder,
+                         honeypot, label tied to the field). */}}
+                    <div class="call-to-action__form">
+                      {{ partial "hero-demo-form.html" (dict
+                        "id" "cta-bottom-email"
+                        "button" (dict "enable" true "button_label" .Params.call_to_action.button_label)) }}
+                    </div>
                   {{ end }}
                 </div>
               </div>

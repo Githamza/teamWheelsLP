@@ -60,6 +60,20 @@ date: {{ .Format "2006-01-02" }}
 
 {{ end -}}
 
+{{- /* ─── Why TeamWheels (comparison) ─── */ -}}
+{{- with .Params.why_teamwheels }}
+{{- if .enable }}
+## {{ .title | plainify }}
+
+{{ with .lede }}{{ . | plainify }}
+
+{{ end -}}
+{{ range .rows -}}
+- **{{ .topic | plainify }}** — {{ $.Params.why_teamwheels.them_label | plainify }} : {{ .them | plainify }}. {{ $.Params.why_teamwheels.us_label | plainify }} : {{ .us | plainify }}.
+{{ end }}
+{{- end -}}
+{{- end -}}
+
 {{- /* ─── Fun facts ─── */ -}}
 {{- with .Params.fun_facts }}
 {{- if .enable }}

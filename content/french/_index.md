@@ -6,9 +6,25 @@ keywords: "covoiturage entreprise, BlaBlaCar entreprise, Uber pour salariés, ap
 
 # banner
 banner:
+  # hero une colonne : titre + logos Teams / Copilot qui défilent + une phrase
+  layout: "centered"
+  announcement:   # pastille au-dessus du titre → fiche Microsoft Store (teams_app.marketplace_url)
+    label: "Nouvelle version"
+    text: "Voir sur le Microsoft Store"
+  journey:        # animation 3D isométrique « sans / avec TeamWheels » au-dessus du titre
+    enable: true
+  title: "Le covoiturage en entreprise"
+  title_accent: "au cœur de vos outils quotidiens"   # 2e ligne en dégradé, se termine par les logos
+  rotating_logos:   # exactement 2 (animation CSS calée sur 2 logos)
+  - src: "images/microsoft-teams-icon.svg"
+    alt: "Microsoft Teams"
+  - src: "images/microsoft-copilot-icon.svg"
+    alt: "Microsoft Copilot"
+  lede: "TeamWheels facilite la mobilité durable de vos collaborateurs."
+  lede_logo: "images/logo.png"   # « TeamWheels » remplacé par le logo (icône + typo manuscrite)
+  # anciens textes (layout deux colonnes), non affichés en layout centered
   subtitle: "Plébiscité par les équipes RH & développement durable"
-  subtitle_link: "#proof"   # the hero line links to the proof strip under the hero
-  title: 'Le covoiturage, directement dans <span class="teams-brand">Microsoft Teams</span>'
+  subtitle_link: "#proof"
   description: "Réduisez votre Scope 3, libérez du parking et versez le Forfait Mobilité Durable — zéro app supplémentaire, déployé en 5 minutes."
   button:
     enable: true
@@ -68,17 +84,55 @@ video_demo:
   # uploadDate / duration restent ici par parité avec demo.md (données
   # structurées émises sur /demo/ seulement).
   description: "Démonstration de 60 secondes de TeamWheels — l'application de covoiturage et de gestion des trajets domicile-travail intégrée nativement à Microsoft Teams. Découvrez le matching de trajets, le bot conversationnel et le tableau de bord des émissions Scope 3."
-  uploadDate: "2026-07-13"
-  duration: "PT1M1S"
-  duration_seconds: 61
+  uploadDate: "2026-11-01"
+  duration: "PT1M"
+  duration_seconds: 60
   watch_page: "/demo/"
-  poster: "videos/teamwheels-demo-poster.jpg"   # image fixe affichée avant le chargement / miniature de la vidéo
-  webm: "videos/teamwheels-demo.webm"
-  mp4: "videos/teamwheels-demo.mp4"
+  poster: "videos/teamwheels-demo-fr-poster.jpg"   # image fixe affichée avant le chargement / miniature de la vidéo
+  webm: "videos/teamwheels-demo-fr.webm"
+  mp4: "videos/teamwheels-demo-fr.mp4"
+
+# pourquoi TeamWheels — comparatif sous le hero (partials/home-why.html),
+# remplace les chiffres clés (fun_facts, désactivé ci-dessous)
+why_teamwheels:
+  enable: true
+  subtitle: "Comparatif"
+  title: "Pourquoi TeamWheels et pas une application tierce ?"
+  lede: "Une application de covoiturage à part, c'est une app de plus que vos salariés oublient. TeamWheels vit là où ils travaillent déjà : Microsoft Teams."
+  topic_label: "Critère"
+  them_label: "Application de covoiturage tierce"
+  us_label: "TeamWheels dans Microsoft Teams"
+  rows:
+  - topic: "Accès"
+    them: "Une app à télécharger, un compte et un mot de passe à créer"
+    us: "Déjà dans Teams, connexion SSO Microsoft Entra ID"
+  - topic: "Déploiement"
+    them: "Projet IT, campagne d'inscription, relances"
+    us: "Un admin Teams, environ 5 minutes, sans projet IT"
+  - topic: "Adoption"
+    them: "L'app reste au fond du téléphone après quelques semaines"
+    us: "Notifications et agent IA dans l'outil ouvert toute la journée"
+  - topic: "Communauté"
+    them: "Comptes à provisionner, puis à supprimer au départ des salariés"
+    us: "Votre annuaire Entra ID devient la liste des covoitureurs, à jour automatiquement"
+  - topic: "Données"
+    them: "Données de vos salariés sur une plateforme externe"
+    us: "Dans votre tenant Microsoft 365, données hébergées en France, RGPD"
+  - topic: "Pilotage RSE"
+    them: "Exports à retraiter pour le Scope 3 et le FMD"
+    us: "Tableau de bord Scope 3 et justificatifs FMD générés automatiquement"
+  link:
+    label: "Comparer avec BlaBlaCar Daily et Karos"
+    href: "alternative-blablacar-daily-karos-entreprises/"
+
+# bandeau sous le comparatif (étapes + ligne sécurité) : masqué, la section
+# « Comment fonctionne » complète suit juste en dessous
+proof_strip:
+  enable: false
 
 # fun facts
 fun_facts:
-  enable: true
+  enable: false   # remplacé par why_teamwheels
   title: "Le covoiturage domicile-travail en chiffres"
   fact_item:
   - icon: "fas fa-euro-sign"

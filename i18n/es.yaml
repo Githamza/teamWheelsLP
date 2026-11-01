@@ -176,7 +176,7 @@
 - id: teams_install_trust
   translation: Gratis 30 días · Sin tarjeta de crédito · Operativo en 5 minutos
 - id: teams_admin_question
-  translation: "¿No es administrador de Teams?"
+  translation: "¿No es administrador?"
 - id: teams_admin_link
   translation: "Envíe la solicitud a su equipo de TI"
 - id: teams_store_badge_top
@@ -210,3 +210,28 @@
 # Homepage proof strip (layouts/partials/home-proof.html)
 - id: home_proof_security
   translation: "Seguridad y cumplimiento TI"
+- id: teams_admin_mail_fallback
+  translation: "¿No se abre nada? Ábrelo en"
+- id: teams_admin_mail_copy
+  translation: "Copiar el mensaje"
+- id: teams_admin_mail_copied
+  translation: "Mensaje copiado ✓"
+
+- id: hero_how_it_works
+  translation: Ver cómo funciona
+
+# Hero journey animation (layouts/partials/hero-journey.html)
+- id: journey_without
+  translation: "Sin TeamWheels"
+- id: journey_with
+  translation: "Con TeamWheels"
+- id: journey_toggle_label
+  translation: "Comparar el trayecto al trabajo"
+- id: journey_pause
+  translation: "Pausar la animación"
+- id: journey_play
+  translation: "Reproducir la animación"
+- id: journey_caption_without
+  translation: "Cada uno en su coche: atascos, contaminación y aparcamiento lleno… dando vueltas y de mal humor."
+- id: journey_caption_with
+  translation: "3 coches en lugar de 9: se recogen por el camino, charlan, aparcan sin buscar — y también comparten coche entre sedes."

@@ -176,7 +176,7 @@
 - id: teams_install_trust
   translation: Free for 30 days · No credit card · Live in 5 minutes
 - id: teams_admin_question
-  translation: "Not a Teams admin?"
+  translation: "Not an admin?"
 - id: teams_admin_link
   translation: "Send the request to your IT team"
 - id: teams_store_badge_top
@@ -210,3 +210,28 @@
 # Homepage proof strip (layouts/partials/home-proof.html)
 - id: home_proof_security
   translation: "Security & IT compliance"
+- id: teams_admin_mail_fallback
+  translation: "Nothing opened? Open it in"
+- id: teams_admin_mail_copy
+  translation: "Copy the message"
+- id: teams_admin_mail_copied
+  translation: "Message copied ✓"
+
+- id: hero_how_it_works
+  translation: See how it works
+
+# Hero journey animation (layouts/partials/hero-journey.html)
+- id: journey_without
+  translation: "Without TeamWheels"
+- id: journey_with
+  translation: "With TeamWheels"
+- id: journey_toggle_label
+  translation: "Compare the daily commute"
+- id: journey_pause
+  translation: "Pause the animation"
+- id: journey_play
+  translation: "Play the animation"
+- id: journey_caption_without
+  translation: "Everyone drives alone: traffic jams, pollution and a full car park… circling and getting angry."
+- id: journey_caption_with
+  translation: "3 cars instead of 9: colleagues get picked up on the way, chat, park straight away — and carpool between sites too."

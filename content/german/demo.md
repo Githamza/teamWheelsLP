@@ -12,13 +12,13 @@ video_demo:
   enable: true
   title: "TeamWheels in Aktion"
   description: "Ein 60-sekündiger Rundgang durch TeamWheels – die App für Mitarbeiter-Fahrgemeinschaften und Pendlermanagement, die nativ in Microsoft Teams läuft. Sehen Sie Fahrten-Matching, den Konversations-Bot und das Scope-3-Emissions-Dashboard in Aktion."
-  uploadDate: "2026-07-13"
-  duration: "PT1M1S"
-  duration_seconds: 61
+  uploadDate: "2026-11-01"
+  duration: "PT1M"
+  duration_seconds: 60
   watch_page: "/demo/"
-  poster: "videos/teamwheels-demo-poster.jpg"
-  webm: "videos/teamwheels-demo.webm"
-  mp4: "videos/teamwheels-demo.mp4"
+  poster: "videos/teamwheels-demo-de-poster.jpg"
+  webm: "videos/teamwheels-demo-de.webm"
+  mp4: "videos/teamwheels-demo-de.mp4"
 
 # Secondary CTA under the player
 cta:

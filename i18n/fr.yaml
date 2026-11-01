@@ -44,7 +44,7 @@
   translation: Adresse e-mail
 
 - id: hero_email_label
-  translation: Vous préférez une démo guidée ? Laissez votre email
+  translation: Vous préférez une démo guidée ? Laissez votre email professionnel
 
 - id: hero_email_placeholder
   translation: nom@entreprise.com
@@ -176,7 +176,7 @@
 - id: teams_install_trust
   translation: Gratuit 30 jours · Sans carte bancaire · Prêt en 5 min
 - id: teams_admin_question
-  translation: "Pas admin Teams ?"
+  translation: "Vous n'êtes pas un admin ?"
 - id: teams_admin_link
   translation: "Envoyez la demande à votre IT"
 - id: teams_store_badge_top
@@ -210,3 +210,28 @@
 # Homepage proof strip (layouts/partials/home-proof.html)
 - id: home_proof_security
   translation: "Sécurité et conformité IT"
+- id: teams_admin_mail_fallback
+  translation: "Rien ne s'ouvre ? Ouvrez-le dans"
+- id: teams_admin_mail_copy
+  translation: "Copier le message"
+- id: teams_admin_mail_copied
+  translation: "Message copié ✓"
+
+- id: hero_how_it_works
+  translation: Voir comment ça fonctionne
+
+# Hero journey animation (layouts/partials/hero-journey.html)
+- id: journey_without
+  translation: "Sans TeamWheels"
+- id: journey_with
+  translation: "Avec TeamWheels"
+- id: journey_toggle_label
+  translation: "Comparer les trajets domicile-travail"
+- id: journey_pause
+  translation: "Mettre l'animation en pause"
+- id: journey_play
+  translation: "Relancer l'animation"
+- id: journey_caption_without
+  translation: "Chacun sa voiture : bouchons, pollution et parking saturé… on tourne et on s'énerve."
+- id: journey_caption_with
+  translation: "3 voitures au lieu de 9 : on se récupère en chemin, on discute, on se gare sans chercher — et on covoiture aussi entre sites."

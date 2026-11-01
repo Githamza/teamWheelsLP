@@ -1,0 +1,47 @@
+{{- /*
+  "Why TeamWheels and not a third-party app" comparison, right under the
+  homepage hero (themes/delta-hugo/layouts/index.html), above the steps /
+  security strip (partials/home-proof.html). Replaces the "by the numbers"
+  facts on pages that set `why_teamwheels.enable`.
+
+  Front matter `why_teamwheels`:
+    subtitle, title, lede      — section heading
+    them_label, us_label       — column headers
+    rows[] { topic, them, us } — one comparison line each
+    link { label, href }       — optional link under the table
+  Static markup, no JS: nothing shifts near the top of the page.
+*/ -}}
+{{- with .Params.why_teamwheels }}{{ if .enable }}
+<section class="home-why" id="pourquoi" aria-labelledby="home-why-title">
+  <div class="container container-delta">
+    <div class="home-why__head">
+      {{- with .subtitle }}<p class="subtitle">{{ . | markdownify }}</p>{{ end }}
+      <h2 class="h1 title home-why__title" id="home-why-title">{{ .title | markdownify }}</h2>
+      {{- with .lede }}<p class="home-why__lede">{{ . | markdownify }}</p>{{ end }}
+    </div>
+
+    <div class="home-why__table" role="table" aria-label="{{ .title | plainify }}">
+      <div class="home-why__row home-why__row--head" role="row">
+        <span class="home-why__topic" role="columnheader"><span class="visually-hidden">{{ .topic_label | default "Critère" }}</span></span>
+        <span class="home-why__cell home-why__cell--them" role="columnheader">{{ .them_label }}</span>
+        <span class="home-why__cell home-why__cell--us" role="columnheader">{{ .us_label }}</span>
+      </div>
+      {{- range .rows }}
+      <div class="home-why__row" role="row">
+        <span class="home-why__topic" role="rowheader">{{ .topic | markdownify }}</span>
+        <span class="home-why__cell home-why__cell--them" role="cell" data-label="{{ $.Params.why_teamwheels.them_label }}">
+          <i class="fas fa-times" aria-hidden="true"></i><span>{{ .them | markdownify }}</span>
+        </span>
+        <span class="home-why__cell home-why__cell--us" role="cell" data-label="{{ $.Params.why_teamwheels.us_label }}">
+          <i class="fas fa-check" aria-hidden="true"></i><span>{{ .us | markdownify }}</span>
+        </span>
+      </div>
+      {{- end }}
+    </div>
+
+    {{- with .link }}
+    <p class="home-why__more"><a href="{{ partial "lang-url.html" .href }}">{{ .label }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
+    {{- end }}
+  </div>
+</section>
+{{- end }}{{ end -}}

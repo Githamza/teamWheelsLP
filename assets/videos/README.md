@@ -5,26 +5,27 @@ Two clips, each with its own watch page:
 | Clip | Files | Homepage placement | Watch page |
 |---|---|---|---|
 | Launch video (20 s, EN + FR) | `teamwheels-launch-{en,fr}.mp4` + `-poster.jpg` | hero carousel (`launch_video:` block) — slide 1 is the animated `banner.image` SVG, slide 2 the clip (muted autoplay after 3 s, created by JS) | `/{en,fr}/launch-video/` (`content/*/launch-video.md`) |
-| Full demo (60 s) | `teamwheels-demo.*` | section under the hero (`video_demo:` block) | `/{en,fr}/demo/` |
+| Full demo (60 s, one per language) | `teamwheels-demo-{fr,en,de,es,nl,nl-be}.*` | section under the hero (`video_demo:` block) | `/{en,fr}/demo/` |
 
 The launch `-poster.jpg` files are a 1280×720 raster render of the banner SVG (Google does
 not accept SVG thumbnails); regenerate them if the SVG changes. The launch MP4s were only
 remuxed with `-movflags +faststart` (audio kept).
 
-The demo clip is declared through a `video_demo:` front-matter block on four pages
-(`content/{english,french}/_index.md` and `content/{english,french}/demo.md`), which all
-look for the files below. Drop your encoded demo here with these exact names, or change
-the names in the front matter.
+The demo clip is declared through a `video_demo:` front-matter block on each language's
+homepage (`content/*/_index.md`) and on the `/demo/` watch pages (fr, en, de, es). Each
+language points at its own files:
 
 ```
 assets/videos/
-  teamwheels-demo.mp4           # primary (H.264, smallest encode, plays everywhere)
-  teamwheels-demo.webm          # alternative (VP9)
-  teamwheels-demo-poster.jpg    # still frame shown before play = the video thumbnail
+  teamwheels-demo-<lang>.mp4         # primary (H.264 + AAC, 1080p, +faststart)
+  teamwheels-demo-<lang>.webm        # alternative (VP9 + Opus)
+  teamwheels-demo-<lang>-poster.jpg  # frame at 24.6 s = the video thumbnail
 ```
 
-Until at least one of `.mp4` / `.webm` exists, the buttons and players are not rendered
-(`$vdOn` is false) — so the page never shows a broken/empty player.
+`<lang>` is fr, en, de, es, nl or nl-be. The source is the HyperFrames project in
+`../teamwheels-demo-motion/video` (on-screen strings per language in `assets/copy.js`);
+render with `npx hyperframes render --quality delivery --variables '{"lang":"<lang>"}'
+-o renders/teamwheels-demo-<lang>.mp4`, then encode as below.
 
 ## Watch page vs. supporting embeds (Google video indexing)
 

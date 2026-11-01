@@ -709,13 +709,79 @@ $gutters: (
     }
   }
 
+  // Fallback shown after the mailto click (no default mail app)
+  &__admin-alt {
+    display: block;
+    margin-top: .35rem;
+
+    &[hidden] {
+      display: none;
+    }
+  }
+
+  &__admin-copy {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: $color-primary;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  // install button + "see how it works" side by side (hero)
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.25rem;
+
+    .btn {
+      text-transform: none;
+    }
+  }
+
+  &.text-center &__actions {
+    justify-content: center;
+  }
+
+  &__secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    white-space: nowrap;
+    border: 0;
+    background: #fff;
+    color: #0b132b;
+    box-shadow: 0 1px 2px rgba(11, 19, 43, .06), 0 6px 18px -8px rgba(11, 19, 43, .18);
+
+    svg {
+      flex-shrink: 0;
+      color: $color-primary;
+    }
+
+    // white stays white on hover (the outline-primary hover fills it purple)
+    &:hover,
+    &:focus,
+    &:active {
+      background: #fff !important;
+      color: #0b132b !important;
+      box-shadow: 0 10px 30px -10px rgba(11, 19, 43, .3) !important;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-primary;
+      outline-offset: 2px;
+    }
+  }
+
   &.text-center &__perks,
   &.text-center &__badges {
     justify-content: center;
   }
 
   @media (max-width: 575px) {
-    .btn-teams-install {
+    .btn-teams-install,
+    &__secondary {
       white-space: normal;
       justify-content: center;
       width: 100%;
@@ -730,6 +796,47 @@ $gutters: (
       text-align: center;
     }
   }
+}
+
+// "Disponible sur le Microsoft Teams Store" badge: a bright spark travels
+// around the border. A conic gradient on ::before, masked to a thin ring.
+@property --spark-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes spark-orbit {
+  to { --spark-angle: 360deg; }
+}
+
+.teams-install__badge--spark {
+  position: relative;
+  isolation: isolate;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    padding: 2px;
+    border-radius: inherit;
+    background: conic-gradient(
+      from var(--spark-angle),
+      transparent 0deg 250deg,
+      rgba(91, 95, 199, .5) 300deg,
+      #a5a8ff 340deg,
+      #fff 355deg,
+      transparent 360deg
+    );
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+    animation: spark-orbit 3s linear infinite;
+    pointer-events: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .teams-install__badge--spark::before { animation: none; }
 }
 
 // Pricing promo: premium card (gradient border + glow), shimmering gold badge,
@@ -1099,6 +1206,140 @@ $promo-indigo-dark: #2b2d7c;
 
     &__value { font-size: 1.6rem; }
     &__step-list { justify-content: center; }
+  }
+}
+
+// ============================================================
+// Homepage "why TeamWheels and not a third-party app"
+// (layouts/partials/home-why.html). Three-column comparison on
+// desktop; on mobile each row stacks into a card.
+// ============================================================
+.home-why {
+  padding: 3.5rem 0 1rem;
+
+  &__head {
+    max-width: 46rem;
+    margin: 0 auto 2rem;
+    text-align: center;
+  }
+
+  &__title { margin-bottom: .75rem; }
+
+  &__lede {
+    margin: 0;
+    font-size: 1.05rem;
+    color: #444;
+  }
+
+  &__table {
+    max-width: 62rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(11, 19, 43, .06), 0 18px 40px -24px rgba(11, 19, 43, .25);
+    overflow: hidden;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 10rem minmax(0, 1fr) minmax(0, 1fr);
+    border-top: 1px solid rgba(11, 19, 43, .08);
+
+    &--head {
+      border-top: 0;
+      font-weight: 700;
+      font-size: .9rem;
+    }
+  }
+
+  &__topic {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    font-weight: 700;
+    color: $text-dark;
+
+    p { margin: 0; }
+  }
+
+  &__cell {
+    display: flex;
+    align-items: flex-start;
+    gap: .6rem;
+    padding: 1rem 1.25rem;
+    font-size: .95rem;
+    line-height: 1.45;
+
+    p { margin: 0; }
+    i { flex-shrink: 0; margin-top: .25rem; font-size: .85rem; }
+
+    &--them {
+      color: #6b7280;
+      i { color: #c2410c; }
+    }
+
+    &--us {
+      color: $text-dark;
+      font-weight: 500;
+      background: rgba($color-primary, .06);
+      i { color: $color-primary; }
+    }
+  }
+
+  &__row--head &__cell--us {
+    color: #fff;
+    background: $color-primary;
+  }
+
+  &__row--head &__cell--them { color: $text-dark; }
+
+  &__more {
+    margin: 1.5rem 0 0;
+    text-align: center;
+    font-weight: 600;
+
+    i { font-size: .75em; margin-left: .2rem; }
+  }
+
+  @media (max-width: 767.98px) {
+    padding-top: 2.5rem;
+
+    &__table {
+      background: transparent;
+      box-shadow: none;
+      overflow: visible;
+    }
+
+    &__row {
+      grid-template-columns: 1fr;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(11, 19, 43, .08);
+      border-radius: .75rem;
+      background: #fff;
+      overflow: hidden;
+
+      &--head { display: none; }
+    }
+
+    &__topic { padding-bottom: .25rem; }
+
+    &__cell {
+      flex-wrap: wrap;
+      padding-top: .6rem;
+      padding-bottom: .75rem;
+
+      &::before {
+        content: attr(data-label);
+        flex-basis: 100%;
+        font-size: .7rem;
+        font-weight: 700;
+        letter-spacing: .04em;
+        text-transform: uppercase;
+        opacity: .75;
+      }
+
+      > span { flex: 1; }
+    }
   }
 }
 
