@@ -12,7 +12,31 @@ host's bot protection (ModSecurity / Imunify360 / Cloudflare if proxied).
 A full run passing at 09:24 while the 06:24 run the same day was blocked points to
 reputation or rate-based bot blocking, not a static rule.
 
-## Steps (≈5 min, in the hosting control panel)
+## OVHcloud shared hosting (our host)
+
+OVH shared hosting offers **no per-user-agent allowlist**. The application firewall
+(ModSecurity) can only be switched on or off per domain, and its rules cannot be edited.
+Find which layer blocks first:
+
+1. **Logs:** Manager → Web Cloud → Hébergements → *hosting* → **Statistiques et logs** →
+   web logs for the day of an audit (Monday ~06:13 UTC). Search for `OpenSEO-Audit`.
+   - Line present with a `403` → the hosting itself refused it (ModSecurity) → step 2.
+   - **No line at all** → blocked upstream by OVH's anti-bot/anti-flood layer, which never
+     reaches Apache → step 3.
+2. **ModSecurity:** **Multisite** tab → *Pare-feu* column for `www.teamwheelsapp.com`.
+   If active: `…` → *Modifier le domaine* → untick the firewall (include www) → wait until
+   the task leaves **Tâches en cours**. Low risk: the site is static Hugo, with no PHP or
+   CMS to protect.
+3. **Upstream OVH block:** open a support ticket (Web Cloud, hosting) asking OVH to stop
+   blocking UA `OpenSEO-Audit` on `www.teamwheelsapp.com`, quoting the 403s from
+   2026-10-12, 10-19, 10-26 and 11-02 around 06:13 UTC. If OVH won't, the only fallbacks are
+   to put the site behind Cloudflare (then use the Cloudflare rule below) or to move the
+   scheduled audit off 06:00 UTC (the 09:24 UTC run on 10-19 went through).
+
+Docs: https://docs.ovhcloud.com/fr/guides/web-cloud/web-hosting/multisites-activating-application-firewall
+· https://docs.ovhcloud.com/fr/guides/web-cloud/web-hosting/request-has-been-blocked-diagnosis
+
+## Other layers
 
 Allowlist the user agent containing **`OpenSEO-Audit`** in whichever layer is active:
 
