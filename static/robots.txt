@@ -99,4 +99,11 @@ User-agent: Diffbot
 Allow: /
 Disallow: /admin/
 
+# --- SEO audit crawler (OpenSEO site audits) ---
+# https://openseo.so/docs/crawler — the host WAF must also allowlist this UA
+# (see seo/runbooks/waf-allowlist-openseo-audit.md); robots.txt alone does not lift a 403.
+User-agent: OpenSEO-Audit
+Allow: /
+Disallow: /admin/
+
 Sitemap: https://www.teamwheelsapp.com/sitemap.xml
