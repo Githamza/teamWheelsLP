@@ -4,7 +4,7 @@ seoTitle: "Frais professionnels URSSAF 2026 : règles et barèmes"
 description: "Frais professionnels URSSAF : frais réels ou allocations forfaitaires, indemnités kilométriques, repas 2026, trajets domicile-travail, télétravail et justificatifs."
 slug: "frais-professionnels-urssaf-mobilite"
 date: 2026-11-01
-lastmod: 2026-11-01
+lastmod: 2026-11-02
 draft: false
 layout: "pillar"
 keywords: ["frais professionnels", "frais professionnels urssaf", "remboursement frais professionnels", "frais professionnels 2026", "indemnité repas 2026", "frais de déplacement urssaf"]
@@ -118,7 +118,7 @@ Quelques repères pour choisir :
 
 - **La prise en charge de l'abonnement** est due à tout salarié qui présente un titre de transport public. Ce n'est pas un choix de l'employeur.
 - **La [prime transport côté employeur](/fr/prime-transport-employeur/)** finance le carburant ou la recharge des salariés qui n'ont pas d'alternative à leur voiture, selon des conditions d'éligibilité temporairement assouplies jusqu'au 31 décembre 2026.
-- **Le [forfait mobilités durables](/fr/forfait-mobilites-durables-covoiturage/)** finance les modes partagés ou actifs. Pour le covoiturage, l'employeur recueille une [attestation de covoiturage](/fr/attestation-covoiturage-forfait-mobilites-durables/) ou un relevé de trajets pour chaque salarié bénéficiaire.
+- **Le [forfait mobilités durables](/fr/forfait-mobilites-durables-covoiturage/)** finance les modes partagés ou actifs ; la liste des modes éligibles est sur notre page [prime mobilité durable](/fr/prime-mobilite-durable/). Pour le covoiturage, l'employeur recueille une [attestation de covoiturage](/fr/attestation-covoiturage-forfait-mobilites-durables/) ou un relevé de trajets pour chaque salarié bénéficiaire.
 - **Les indemnités kilométriques domicile-travail** sont réservées à des situations particulières, notamment l'absence de transport public compatible avec les horaires. Elles ne se cumulent pas avec le FMD sur un même trajet.
 
 Ces dispositifs se cumulent entre eux dans des plafonds globaux, détaillés sur la page prime transport et sur le pilier FMD. Au-delà des plafonds, l'excédent est réintégré dans l'assiette des cotisations.

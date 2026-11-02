@@ -4,7 +4,7 @@ seoTitle: "Forfait mobilités durables 2026 : guide employeur"
 description: "Prime covoiturage 2026 et forfait mobilités durables : montants, plafonds URSSAF, cumuls, mise en 4 étapes et justificatifs pour l'employeur."
 keywords: "forfait mobilités durables, forfait mobilité durable 2026, forfait mobilité durable urssaf, montant forfait mobilité durable 2026, plafond FMD 2026, forfait mobilités durables covoiturage, fmd covoiturage, prime covoiturage 2026, prime covoiturage employeur, justificatif covoiturage fmd, attestation covoiturage employeur, preuve de covoiturage"
 layout: "benefits"
-lastmod: 2026-11-01
+lastmod: 2026-11-02
 # L'article de blog « Forfait Mobilité Durable : le guide complet » (slug 2025)
 # a été fusionné dans cette page pilier en septembre 2026. L'alias est relatif à
 # la racine de langue ; la 301 serveur est déclarée dans static/.htaccess.
@@ -48,7 +48,7 @@ image_and_content_blocks:
     title: "Qu'est-ce que le Forfait Mobilités Durables ?"
     image: "images/photos/colleagues-carpooling.jpg"
     content_position: "right"
-    content: "Le forfait mobilités durables est un dispositif créé par la **loi d'orientation des mobilités (LOM)** de 2019 (article L. 3261-3-1 du Code du travail). Il permet à l'employeur de prendre en charge tout ou partie des frais de déplacement domicile-travail des salariés qui utilisent un **mode de transport durable**, avec une exonération de cotisations sociales et d'impôt sur le revenu dans les plafonds fixés par la loi de finances.
+    content: "Le forfait mobilités durables, souvent appelé [prime mobilité durable](/fr/prime-mobilite-durable/), est un dispositif créé par la **loi d'orientation des mobilités (LOM)** de 2019 (article L. 3261-3-1 du Code du travail). Il permet à l'employeur de prendre en charge tout ou partie des frais de déplacement domicile-travail des salariés qui utilisent un **mode de transport durable**, avec une exonération de cotisations sociales et d'impôt sur le revenu dans les plafonds fixés par la loi de finances.
 
     Les modes éligibles au FMD :
 
