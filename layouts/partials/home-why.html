@@ -9,6 +9,7 @@
     them_label, us_label       — column headers
     rows[] { topic, them, us } — one comparison line each
     link { label, href }       — optional link under the table
+    more_links[] { label, href } — optional extra links under it
   Static markup, no JS: nothing shifts near the top of the page.
 */ -}}
 {{- with .Params.why_teamwheels }}{{ if .enable }}
@@ -40,6 +41,9 @@
     </div>
 
     {{- with .link }}
+    <p class="home-why__more"><a href="{{ partial "lang-url.html" .href }}">{{ .label }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
+    {{- end }}
+    {{- range .more_links }}
     <p class="home-why__more"><a href="{{ partial "lang-url.html" .href }}">{{ .label }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
     {{- end }}
   </div>
