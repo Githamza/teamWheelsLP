@@ -31,16 +31,16 @@ services:
 faq_title: "Before you get in touch"
 faq:
   - question: "What happens after I send the form?"
-    answer: "A member of the TeamWheels team replies within one business day to book a 30-minute demo slot. If you would rather start the free trial straight away, we send the AppSource installation link and a configuration guide for your Teams administrator."
-  - question: "Does the free trial commit my organisation to anything?"
-    answer: "No. The trial lasts 30 days, covers up to 50 employees, requires no credit card and simply ends if you do not continue. Your data is then deleted in line with GDPR."
+    answer: "A member of the TeamWheels team replies within one business day to book a 30-minute demo slot. If you would rather start your free first month straight away, we send the AppSource installation link and a configuration guide for your Teams administrator."
+  - question: "Does the free first month commit my organisation to anything?"
+    answer: "No. The free first month covers up to 50 employees, requires no credit card and simply ends if you do not continue; your data is then deleted in line with GDPR. If you continue, the subscription runs on a quarterly commitment."
   - question: "Can you help us build the internal business case?"
     answer: "Yes. During the demo we quantify parking spaces freed, CO₂ avoided and commuter-benefit budgets from your headcount and sites, and leave you with a summary you can present to leadership."
 ---
 
 ## How the demo works
 
-The form above triggers a reply within one business day. The demo itself is a **30-minute video call** in three parts: your context (sites, headcount, parking, Scope 3 or commuter-benefit goals), a complete walkthrough inside Microsoft Teams — an employee declaring a commute, matching, notifications, the administrator dashboard, the export of trip records for commuter benefits — and the scoping of a free 30-day trial on a pilot group. You can also start with the [60-second demo video](/en/demo/).
+The form above triggers a reply within one business day. The demo itself is a **30-minute video call** in three parts: your context (sites, headcount, parking, Scope 3 or commuter-benefit goals), a complete walkthrough inside Microsoft Teams — an employee declaring a commute, matching, notifications, the administrator dashboard, the export of trip records for commuter benefits — and the scoping of your free first month on a pilot group. You can also start with the [60-second demo video](/en/demo/).
 
 ## Who it is for
 

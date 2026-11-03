@@ -1,7 +1,7 @@
 ---
 title: "Carpoolapp en carpoolsoftware voor bedrijven | TeamWheels"
 seoTitle: "Carpoolapp voor bedrijven | TeamWheels"
-description: "Carpoolapp voor bedrijven in Microsoft Teams: automatische ritmatching, chatbot en CO₂-dashboard. Carpoolsoftware, in 5 minuten live, 30 dagen gratis."
+description: "Carpoolapp voor bedrijven in Microsoft Teams: automatische ritmatching, chatbot en CO₂-dashboard. Carpoolsoftware, in 5 minuten live, eerste maand gratis."
 # deze pagina = software-intentie (carpoolapp, carpoolsoftware, carpoolplatform);
 # „carpoolen voor bedrijven” (hoofdterm) is voor de homepage. Slug behouden: bestaande URL.
 slug: "carpoolen-voor-bedrijven"
@@ -73,7 +73,7 @@ image_and_content_blocks:
     title: "Zo werkt TeamWheels in Microsoft Teams"
     image: "images/how-it-works/home-nl-be-step-1.svg"
     image_fit: true
-    image_alt: "De TeamWheels-app installeren via de Microsoft Teams Store, met aanmelden via SSO en een gratis proefperiode van 30 dagen"
+    image_alt: "De TeamWheels-app installeren via de Microsoft Teams Store, met aanmelden via SSO en een gratis eerste maand"
     content_position: "left"
     content: "TeamWheels is geen app naast Teams, maar een Teams-app die u vanuit Microsoft AppSource in uw eigen Microsoft 365-tenant installeert. TeamWheels beschikt over een Microsoft 365 Publisher Attestation. Zo verloopt het voor medewerkers en beheerders.
 
@@ -150,11 +150,11 @@ image_and_content_blocks:
 
       | Formule | Prijs | Inbegrepen |
       |---|---|---|
-      | **Gratis proefperiode** | € 0 gedurende 30 dagen | Volledige Teams-app, chatbot, beheerdersdashboard, tot 50 medewerkers, geen kredietkaart nodig |
+      | **Eerste maand gratis** | € 0 de eerste maand | Volledige Teams-app, chatbot, beheerdersdashboard, tot 50 medewerkers, geen kredietkaart nodig |
       | **TeamWheels** | **€ 3 per medewerker per maand excl. btw** (promotie, in plaats van € 5) | Onbeperkt aantal medewerkers, realtime opvolging van de CO₂-impact, overzicht van de gedeelde ritten, single sign-on met Microsoft Entra ID, uitgebreide statistieken, prioritaire support, gegevens gehost in Frankrijk |
       | **Enterprise** | Op maat | Meerdere vestigingen en entiteiten, API en HR-integraties, gegarandeerde SLA, vaste accountmanager, onboarding op maat, duurzaamheidsrapporten op maat |
 
-      Dezelfde prijs voor 10 of 10.000 medewerkers: € 3 excl. btw (promotie, in plaats van € 5) per medewerker per maand, maandelijks of jaarlijks gefactureerd en op elk moment opzegbaar.
+      Dezelfde prijs voor 10 of 10.000 medewerkers: € 3 excl. btw (promotie, in plaats van € 5) per medewerker per maand, maandelijks of jaarlijks gefactureerd, met een looptijd van telkens drie maanden na de gratis eerste maand.
 
       Alle details over de formules en de facturatie vindt u op de pagina [prijzen →](/nl-be/prijzen/)
     button:
@@ -168,11 +168,11 @@ image_and_content_blocks:
     content: |
       Het gaat om dezelfde carpoolsoftware, op twee manieren uitgerold.
 
-      **TeamWheels standaard** past voor de meeste werkgevers: de app wordt onder de naam TeamWheels in uw Microsoft 365-tenant geïnstalleerd, met uw vestigingen en uw regels voor de matching. Vijf minuten installatie, een gratis proefperiode en een prijs per medewerker.
+      **TeamWheels standaard** past voor de meeste werkgevers: de app wordt onder de naam TeamWheels in uw Microsoft 365-tenant geïnstalleerd, met uw vestigingen en uw regels voor de matching. Vijf minuten installatie, een gratis eerste maand en een prijs per medewerker.
 
       **De white-labelversie** is bedoeld voor grote bedrijven, campussen, ziekenhuizen en bedrijventerreinen die hun medewerkers onder hun eigen naam willen laten carpoolen. Opstart in enkele dagen, prijs op offerte.
 
-      Twijfelt u? Begin met de standaard proefperiode: white label activeert u later zonder herinstallatie. Meer over de opties leest u op de pagina [white-label carpoolplatform (Engelstalig) →](https://www.teamwheelsapp.com/en/white-label-carpool-platform/)
+      Twijfelt u? Begin uw gratis eerste maand met de standaardversie: white label activeert u later zonder herinstallatie. Meer over de opties leest u op de pagina [white-label carpoolplatform (Engelstalig) →](https://www.teamwheelsapp.com/en/white-label-carpool-platform/)
     button:
       enable: false
 
@@ -187,7 +187,7 @@ faq:
   - question: "Hoelang duurt de uitrol?"
     answer: "De installatie duurt ongeveer 5 minuten: een Teams-beheerder voegt TeamWheels vanuit Microsoft AppSource toe aan uw Microsoft 365-tenant, geeft toestemming via Microsoft Entra ID en voert uw vestigingen in. Geen IT-project, geen infrastructuur, geen app om te downloaden. Reken daarna op een pilot van twee tot vier weken met 20 tot 50 vrijwilligers voor u het programma breed uitrolt."
   - question: "Wat kost een carpool app voor bedrijven?"
-    answer: "TeamWheels biedt een gratis proefperiode van 30 dagen voor maximaal 50 medewerkers, daarna € 3 per medewerker per maand excl. btw (promotie, in plaats van € 5), alles inbegrepen: chatbot, matching, overzicht van de gedeelde ritten, CO₂-rapportering, single sign-on en prioritaire support. Grote organisaties met meerdere vestigingen krijgen een Enterprise-formule op maat. Details op de pagina [prijzen](/nl-be/prijzen/)."
+    answer: "Bij TeamWheels is de eerste maand gratis voor maximaal 50 medewerkers, daarna € 3 per medewerker per maand excl. btw (promotie, in plaats van € 5) met een looptijd van telkens drie maanden, alles inbegrepen: chatbot, matching, overzicht van de gedeelde ritten, CO₂-rapportering, single sign-on en prioritaire support. Grote organisaties met meerdere vestigingen krijgen een Enterprise-formule op maat. Details op de pagina [prijzen](/nl-be/prijzen/)."
   - question: "Is het carpoolplatform beschikbaar in white label?"
     answer: "Ja. TeamWheels kan in white label in uw eigen Microsoft 365-tenant worden uitgerold, onder uw merk en volgens uw IT-beleid. Medewerkers melden zich aan met hun bestaande werkaccount via single sign-on met Microsoft Entra ID: geen aparte accounts om aan te maken."
   - question: "Hoe zijn de gegevens van medewerkers beveiligd?"
@@ -198,7 +198,7 @@ faq:
 call_to_action:
   enable: true
   title: "Zie hoe carpoolen voor bedrijven werkt"
-  subtitle: "Vraag een persoonlijke demo aan en start een gratis proefperiode van 30 dagen, met begeleiding bij de uitrol voor uw HR- en duurzaamheidsteams. <br><br> <strong>Installatie in 5 minuten.</strong> Geen kredietkaart nodig. Rechtstreeks in het Microsoft Teams dat uw medewerkers al gebruiken."
+  subtitle: "Vraag een persoonlijke demo aan en start uw gratis eerste maand, met begeleiding bij de uitrol voor uw HR- en duurzaamheidsteams. <br><br> <strong>Installatie in 5 minuten.</strong> Geen kredietkaart nodig. Rechtstreeks in het Microsoft Teams dat uw medewerkers al gebruiken."
   button_label: "Demo aanvragen →"
   button_link: "contact/"
   image: "images/cta.png"

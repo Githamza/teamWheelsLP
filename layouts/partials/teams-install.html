@@ -1,12 +1,12 @@
 {{- /*
-  "Add to Microsoft Teams" CTA — the app is on the Teams Store and the trial
-  starts as soon as it is installed, so this is the primary conversion path.
+  "Add to Microsoft Teams" CTA — the app is on the Teams Store and the free
+  first month starts as soon as it is installed, so this is the primary conversion path.
 
   Call: {{ partial "teams-install.html" (dict "placement" "hero" "admin" true "trust" true "center" false) }}
     placement  GA4 `placement` param — which CTA was clicked (hero, cta, pricing, blog…)
     admin      show the "Not a Teams admin?" mailto for the IT team (HR buyers
                often cannot install apps in their tenant)
-    trust      show the "free 30 days / no card" line + store & attestation badges
+    trust      show the "first month free / no card" line + store & attestation badges
     center     center-align the block
     block      full-width install button (hero)
     icon       install-button icon (default images/microsoft-teams-icon.svg)

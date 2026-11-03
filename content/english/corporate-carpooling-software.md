@@ -1,7 +1,7 @@
 ---
 title: "Corporate Carpooling Software for Microsoft Teams | TeamWheels"
 seoTitle: "Corporate carpooling software | TeamWheels"
-description: "Corporate carpooling software built into Microsoft Teams. Cut commute costs and parking, hit Scope 3 targets, deploy in 5 minutes. Free trial."
+description: "Corporate carpooling software built into Microsoft Teams. Cut commute costs and parking, hit Scope 3 targets, deploy in 5 minutes. First month free."
 keywords: "corporate carpooling software, corporate carpool software, corporate carpooling solution, carpool management software, carpool software, corporate carpooling app, carpool administration software, carpool booking software, corporate ride sharing software, employee carpool program software, workplace ride sharing software, commute management platform, Microsoft Teams carpooling"
 layout: "benefits"
 
@@ -47,7 +47,7 @@ image_and_content_blocks:
     title: "Carpooling That Lives Where Your Employees Already Work"
     image: "images/how-it-works/home-en-step-1.svg"
     image_fit: true
-    image_alt: "Installing the TeamWheels app from the Microsoft Teams Store, with SSO sign-in and a 30-day free trial"
+    image_alt: "Installing the TeamWheels app from the Microsoft Teams Store, with SSO sign-in and the first month free"
     content_position: "left"
     content: "Why force employees to install another app they'll forget? TeamWheels integrates natively with Microsoft Teams — the tool your workforce already uses every day. That means instant adoption and zero friction.
 
@@ -55,7 +55,7 @@ image_and_content_blocks:
 
     * **Smart conversational bot** — Employees find and offer rides through simple Teams chat conversations
 
-    * **5-minute deployment** — One Teams admin, a few clicks, and your employee carpool program is live
+    * **5-minute deployment** — One Microsoft 365 admin, a few clicks, and your employee carpool program is live in Teams
 
     * **Published on the Microsoft Teams Store** — Validated by Microsoft before publication, with a public [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/en-us/microsoft-365-app-certification/teams/hmz-digital-teamwheels) your IT team can review
 
@@ -82,7 +82,7 @@ image_and_content_blocks:
 
     * **Reporting & analytics** — Export participation metrics and CO₂ impact for sustainability and finance teams
 
-    * **Enterprise security** — Azure AD / Entra ID SSO, GDPR compliant, privacy by design — no extra credentials or infrastructure
+    * **Enterprise security** — Microsoft Entra ID SSO (formerly Azure AD), data hosted in the EU, GDPR compliant, privacy by design — no extra credentials or infrastructure
     "
     button:
       enable: false
@@ -103,7 +103,7 @@ image_and_content_blocks:
 
     * **Save employees $2,000+/year** — Shared commuting costs directly improve financial well-being and retention
 
-    Trusted by forward-thinking companies across the USA, UK, and Canada. Want the numbers for your team? [Calculate your savings →](/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/) or read the [complete corporate carpooling guide →](/en/blog/corporate-carpooling-guide-2026/).
+    Trusted by forward-thinking companies across the USA, UK, and Canada, and available across Europe to any organization on Microsoft 365. Want the numbers for your team? [Calculate your savings →](/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/) or read the [complete corporate carpooling guide →](/en/blog/corporate-carpooling-guide-2026/).
     "
     button:
       enable: false
@@ -126,9 +126,9 @@ image_and_content_blocks:
 
     * **Commute mode coverage** — Carpool-first, with room to grow into vanpool groups and multi-site programs as participation scales
 
-    * **Security & compliance** — SSO through your identity provider, GDPR compliance, and data that stays in your Microsoft 365 tenant
+    * **Security & compliance** — SSO through Microsoft Entra ID, GDPR compliance, EU data hosting, and data that stays in your Microsoft 365 tenant
 
-    Shortlisting vendors? [Compare pricing →](/en/pricing/) or put TeamWheels through the same test with a free 30-day trial.
+    Shortlisting vendors? [Compare pricing →](/en/pricing/) or put TeamWheels through the same test with your first month free.
     "
     button:
       enable: false
@@ -141,11 +141,11 @@ image_and_content_blocks:
     content: |
       The two don't compete: it's the same corporate carpooling software, deployed two ways.
 
-      **Standard TeamWheels** suits most employers: the app installs in your Microsoft 365 tenant under the TeamWheels name, with your sites, your matching rules and your commuter-benefit policy. Five minutes to install, a free trial, a per-employee price.
+      **Standard TeamWheels** suits most employers: the app installs in your Microsoft 365 tenant under the TeamWheels name, with your sites, your matching rules and your commuter-benefit policy. Five minutes to install, a free first month, a per-employee price.
 
       **The white-label version** is for large companies, campuses, hospitals and business parks that want their teams to carpool under their own name. Set up in a few days, priced on quote.
 
-      Not sure? Start with the standard trial: white label switches on later without reinstalling. Options, rollout timeline and integrations are on the [white-label carpool platform →](/en/white-label-carpool-platform/) page.
+      Not sure? Start your free first month on the standard version: white label switches on later without reinstalling. Options, rollout timeline and integrations are on the [white-label carpool platform →](/en/white-label-carpool-platform/) page.
     button:
       enable: false
 
@@ -158,15 +158,15 @@ faq:
   - question: "What are the benefits of a white-label carpool app integrated with HR systems?"
     answer: "Integrating a white-label carpool app with your HR and identity systems means employees join automatically with their work account, and HR, payroll, and sustainability teams get clean data with no manual exports. Key benefits: single sign-on via Entra ID (the directory becomes the carpool roster), pre-tax and reimbursement workflows fed directly from trip records (IRS Section 132f, UK schemes, France's Forfait Mobilité Durable), and Scope 3 / CSRD ESG reporting generated automatically."
   - question: "How fast can you launch a customizable corporate carpool platform?"
-    answer: "About 5 minutes. A Teams administrator installs TeamWheels from Microsoft AppSource into your existing Microsoft 365 tenant — no IT project, no infrastructure, no app rollout. The platform is customizable to your branding, sites, and HR/ESG reporting needs, and you can run a free 30-day trial for up to 50 employees first."
+    answer: "About 5 minutes. A Teams administrator installs TeamWheels from Microsoft AppSource into your existing Microsoft 365 tenant — no IT project, no infrastructure, no app rollout. The platform is customizable to your branding, sites, and HR/ESG reporting needs, and your first month is free for up to 50 employees."
   - question: "Is it really just a Microsoft Teams app?"
-    answer: "Yes. TeamWheels installs inside your existing Microsoft 365 tenant from AppSource — there's no separate app for employees to download."
+    answer: "Yes. TeamWheels installs inside your existing Microsoft 365 tenant from AppSource — there's no separate app for employees to download. Employees sign in with their Microsoft 365 work account through Microsoft Entra ID single sign-on, and the same account works in Teams on desktop, web and mobile."
   - question: "How is employee data secured?"
-    answer: "Authentication runs through Azure AD / Entra ID SSO, and the platform is GDPR compliant with privacy by design."
+    answer: "Authentication runs through Microsoft Entra ID (formerly Azure AD) single sign-on with your employees' existing Microsoft 365 accounts, so there are no extra passwords. Data is hosted in the EU (France), and the platform is GDPR compliant with privacy by design."
   - question: "What does corporate carpooling software cost?"
-    answer: "TeamWheels offers a free 30-day trial, then transparent per-seat pricing from 3€ per seat per month excl. VAT (promo price, down from 5€). Most organizations reach positive ROI within the first quarter through parking-cost savings alone."
+    answer: "TeamWheels offers the first month free, then transparent per-seat pricing from 3€ per seat per month excl. VAT (promo price, down from 5€) on a quarterly commitment. Most organizations reach positive ROI within the first quarter through parking-cost savings alone."
   - question: "Which countries does TeamWheels support?"
-    answer: "Companies across the USA, UK, and Canada run TeamWheels today, with full support for France including the Forfait Mobilité Durable."
+    answer: "TeamWheels is available across Europe and North America: any organization on Microsoft 365 can install it from the Microsoft Teams Store. Companies in the USA, UK, and Canada run it today, the app is localized for France, Belgium, the Netherlands, Germany and Spain, and France gets full support for the Forfait Mobilités Durables. Data is hosted in the EU."
   - question: "How do I choose the best carpool management software?"
     answer: "Evaluate five criteria: employee adoption path (the #1 failure point — software employees must download separately rarely passes 18% participation), admin visibility and controls, reporting depth for Scope 3 and commuter benefits, commute mode coverage including vanpool options, and security (SSO, GDPR, data residency). TeamWheels leads on adoption because it runs inside Microsoft Teams, reaching 40%+ participation with no separate app."
   - question: "Does TeamWheels cover vanpools and other employee transportation modes?"
@@ -175,7 +175,7 @@ faq:
 call_to_action:
   enable: true
   title: "See Corporate Carpooling Software in Action"
-  subtitle: "Book a personalized demo and start a free 30-day trial — with guided deployment for your HR and sustainability teams. <br><br> <strong>5-minute setup.</strong> No credit card required. Live inside the Microsoft Teams your employees already use."
+  subtitle: "Book a personalized demo and get your first month free — with guided deployment for your HR and sustainability teams. <br><br> <strong>5-minute setup.</strong> No credit card required. Live inside the Microsoft Teams your employees already use."
   button_label: "Book my demo →"
   button_link: "contact/"
   image: "images/cta.png"

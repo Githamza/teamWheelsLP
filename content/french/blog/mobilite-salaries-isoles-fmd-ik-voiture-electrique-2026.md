@@ -107,4 +107,4 @@ Plusieurs paramètres pourraient rebattre les cartes : la non-reconduction de la
 
 Le bon réflexe n'est pas de choisir un dispositif universel, mais de cartographier vos trajets pour savoir qui peut réellement covoiturer — et de ne réserver les options les plus coûteuses qu'à ceux qui en ont vraiment besoin. Simulez vos économies potentielles avec notre [calculateur d'économies covoiturage](/fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/), ou [demandez une démo de TeamWheels](/fr/contact/) pour voir comment l'identification des salariés isolés fonctionne, directement dans Microsoft Teams.
 
-*30 jours gratuits, sans engagement, sans carte bancaire.*
+*Premier mois offert, sans carte bancaire, puis engagement trimestriel.*

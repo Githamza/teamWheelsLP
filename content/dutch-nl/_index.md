@@ -1,7 +1,7 @@
 ---
 title: "TeamWheels | Carpoolen voor bedrijven en hun medewerkers"
 seoTitle: "Carpoolen voor bedrijven: app voor werkgevers | TeamWheels"
-description: "Carpoolen voor bedrijven: medewerkers met dezelfde route vinden elkaar, ritten worden bijgehouden en u ziet de CO₂-besparing. In Teams, 30 dagen gratis."
+description: "Carpoolen voor bedrijven: medewerkers met dezelfde route vinden elkaar, ritten worden bijgehouden en u ziet de CO₂-besparing. In Teams, eerste maand gratis."
 # homepage = commerciële hoofdterm „carpoolen voor bedrijven” (oplossing voor werkgevers);
 # Teams/Copilot = onderscheidend argument, niet de kop.
 keywords: "carpoolen voor bedrijven, carpoolen, carpoolen woon-werkverkeer, carpoolprogramma, carpoolapp voor werkgevers, TeamWheels"
@@ -164,8 +164,8 @@ work_process:
     - label: "Dag 1"
       title: "Installeren"
       image: "images/how-it-works/home-nl-step-1.svg"
-      image_alt: "TeamWheels toevoegen vanuit de Microsoft Teams Store, inloggen via SSO en de gratis proefperiode activeren"
-      content: "Uw Microsoft 365-beheerder voegt TeamWheels in 5 minuten toe. Er hoeft geen app gedownload te worden: uw medewerkers loggen in met hun werkaccount. De gratis proefperiode start bij de installatie."
+      image_alt: "TeamWheels toevoegen vanuit de Microsoft Teams Store, inloggen via SSO en de gratis eerste maand activeren"
+      content: "Uw Microsoft 365-beheerder voegt TeamWheels in 5 minuten toe. Er hoeft geen app gedownload te worden: uw medewerkers loggen in met hun werkaccount. De gratis eerste maand start bij de installatie."
     - label: "Week 1"
       title: "Lanceren"
       image: "images/how-it-works/home-nl-step-2.svg"
@@ -276,7 +276,7 @@ next_step_button:
 call_to_action:
   enable: true
   title: "Start met carpoolen in uw organisatie"
-  subtitle: "Verlaag uw Scope 3-uitstoot en verbeter het welzijn van uw teams. <br><strong>30 dagen gratis</strong>, inclusief begeleiding bij de inrichting. <em>Geheel vrijblijvend.</em>"
+  subtitle: "Verlaag uw Scope 3-uitstoot en verbeter het welzijn van uw teams. <br><strong>Eerste maand gratis</strong>, inclusief begeleiding bij de inrichting. <em>Geen creditcard nodig.</em>"
   button_label : "Persoonlijke demo aanvragen →"
   button_link : "contact/"
   image : "images/cta.png"

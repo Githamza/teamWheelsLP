@@ -131,7 +131,7 @@ Look for:
 Ready to launch carpooling in your organisation? Here's how:
 
 1. **Book a demo** - See how TeamWheels integrates with Microsoft Teams
-2. **Start free trial** - 30-day trial with full features
+2. **Start your free first month** - full features, first month free
 3. **Survey employees** - Identify interest and clusters
 4. **Launch pilot** - Start with 20-50 enthusiastic users
 5. **Scale up** - Expand company-wide
@@ -146,10 +146,10 @@ Ready to launch carpooling in your organisation? Here's how:
 
 ---
 
-**Ready to transform your organisation's commuting?** Start your free trial today.
+**Ready to transform your organisation's commuting?** Start your free first month today.
 
 > **Related guide:** [Corporate Carpooling 2026: The Complete Guide](/en/blog/corporate-carpooling-guide-2026/) — Clean Air Zone compliance, FBT, ESG Scope 3, platform comparison, and 30-day launch plan.
 
 **[Book a Demo →](/en/contact/)**
 
-**[Start Free Trial →](/en/contact/)**
+**[Get Your First Month Free →](/en/contact/)**

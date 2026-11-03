@@ -1,7 +1,7 @@
 ---
 title: "Fahrgemeinschafts-Software für Unternehmen in Microsoft Teams | TeamWheels"
 seoTitle: "Fahrgemeinschafts-Software für Unternehmen | TeamWheels"
-description: "Fahrgemeinschafts-Software direkt in Microsoft Teams: Pendel- und Parkkosten senken, Scope-3-Ziele erreichen, in 5 Minuten eingerichtet. Kostenlos testen."
+description: "Fahrgemeinschafts-Software direkt in Microsoft Teams: Pendel- und Parkkosten senken, Scope-3-Ziele erreichen, in 5 Minuten eingerichtet. Erster Monat kostenlos."
 keywords: "Fahrgemeinschafts-Software, Fahrgemeinschaft Software für Unternehmen, betriebliche Fahrgemeinschaften, Fahrgemeinschafts-App für Unternehmen, Mitfahrgelegenheit für Mitarbeiter, Fahrgemeinschaften verwalten, Fahrgemeinschaften organisieren, Mitfahrzentrale für Firmen, Corporate Carpooling Software, betriebliches Mobilitätsmanagement, Pendlermanagement Plattform, Pendler-App, Microsoft Teams Fahrgemeinschaft"
 layout: "benefits"
 
@@ -47,7 +47,7 @@ image_and_content_blocks:
     title: "Fahrgemeinschaften dort, wo Ihre Mitarbeitenden bereits arbeiten"
     image: "images/how-it-works/home-de-step-1.svg"
     image_fit: true
-    image_alt: "Installation der TeamWheels-App aus dem Microsoft Teams Store, mit SSO-Anmeldung und 30 Tagen kostenlosem Test"
+    image_alt: "Installation der TeamWheels-App aus dem Microsoft Teams Store, mit SSO-Anmeldung und kostenlosem ersten Monat"
     content_position: "left"
     content: "Warum Mitarbeitende zwingen, eine weitere App zu installieren, die sie ohnehin vergessen? TeamWheels integriert sich nativ in Microsoft Teams – das Tool, das Ihre Belegschaft bereits täglich nutzt. Das bedeutet sofortige Akzeptanz ohne Reibungsverluste.
 
@@ -128,7 +128,7 @@ image_and_content_blocks:
 
     * **Sicherheit & Compliance** – SSO über Ihren Identitätsanbieter, DSGVO-Konformität und Daten, die in Ihrem Microsoft-365-Tenant bleiben
 
-    Sie erstellen eine Anbieter-Shortlist? [Preise vergleichen →](/de/pricing/) oder unterziehen Sie TeamWheels mit einem kostenlosen 30-Tage-Test demselben Praxistest.
+    Sie erstellen eine Anbieter-Shortlist? [Preise vergleichen →](/de/pricing/) oder unterziehen Sie TeamWheels im kostenlosen ersten Monat demselben Praxistest.
     "
     button:
       enable: false
@@ -141,11 +141,11 @@ image_and_content_blocks:
     content: |
       Das ist kein Entweder-oder: Es ist dieselbe Fahrgemeinschafts-Software für Unternehmen, auf zwei Arten eingeführt.
 
-      **TeamWheels in der Standardversion** passt für die meisten Arbeitgeber: Die App wird unter dem Namen TeamWheels in Ihrem Microsoft-365-Tenant installiert, mit Ihren Standorten, Ihren Matching-Regeln und Ihrer Regelung für Pendlerleistungen. Fünf Minuten Installation, ein kostenloser Test, ein Preis pro Mitarbeitendem.
+      **TeamWheels in der Standardversion** passt für die meisten Arbeitgeber: Die App wird unter dem Namen TeamWheels in Ihrem Microsoft-365-Tenant installiert, mit Ihren Standorten, Ihren Matching-Regeln und Ihrer Regelung für Pendlerleistungen. Fünf Minuten Installation, ein kostenloser erster Monat, ein Preis pro Mitarbeitendem.
 
       **Die White-Label-Version** richtet sich an Großunternehmen, Campus, Kliniken und Gewerbegebiete, deren Teams unter eigenem Namen Fahrgemeinschaften bilden sollen. Einrichtung in wenigen Tagen, Preis auf Anfrage.
 
-      Unsicher? Starten Sie mit dem Standardtest: White Label lässt sich später ohne Neuinstallation aktivieren. Optionen, Zeitplan und Integrationen finden Sie auf der Seite [White-Label-Fahrgemeinschaftsplattform →](/de/white-label-carpool-platform/)
+      Unsicher? Starten Sie den kostenlosen ersten Monat mit der Standardversion: White Label lässt sich später ohne Neuinstallation aktivieren. Optionen, Zeitplan und Integrationen finden Sie auf der Seite [White-Label-Fahrgemeinschaftsplattform →](/de/white-label-carpool-platform/)
     button:
       enable: false
 
@@ -158,13 +158,13 @@ faq:
   - question: "Welche Vorteile bietet eine White-Label-Fahrgemeinschafts-App mit Anbindung an HR-Systeme?"
     answer: "Durch die Anbindung einer White-Label-Fahrgemeinschafts-App an Ihre HR- und Identitätssysteme steigen Mitarbeitende automatisch mit ihrem Arbeitskonto ein, und HR-, Lohnbuchhaltungs- und Nachhaltigkeitsteams erhalten saubere Daten ohne manuelle Exporte. Die wichtigsten Vorteile: Single Sign-on über Entra ID (das Verzeichnis wird zur Teilnehmerliste), Prozesse für steuerbegünstigte Leistungen und Erstattungen, die direkt aus den Fahrtnachweisen gespeist werden (IRS Section 132f, britische Programme, Forfait Mobilité Durable in Frankreich), sowie automatisch erstelltes ESG-Reporting zu Scope 3 und CSRD."
   - question: "Wie schnell lässt sich eine anpassbare Fahrgemeinschaftsplattform für Unternehmen starten?"
-    answer: "In rund 5 Minuten. Ein Teams-Administrator installiert TeamWheels aus Microsoft AppSource in Ihrem bestehenden Microsoft-365-Tenant – ohne IT-Projekt, ohne Infrastruktur, ohne App-Rollout. Die Plattform lässt sich an Ihre Marke, Ihre Standorte und Ihre Anforderungen an HR- und ESG-Reporting anpassen, und Sie können sie zunächst 30 Tage kostenlos mit bis zu 50 Mitarbeitenden testen."
+    answer: "In rund 5 Minuten. Ein Teams-Administrator installiert TeamWheels aus Microsoft AppSource in Ihrem bestehenden Microsoft-365-Tenant – ohne IT-Projekt, ohne Infrastruktur, ohne App-Rollout. Die Plattform lässt sich an Ihre Marke, Ihre Standorte und Ihre Anforderungen an HR- und ESG-Reporting anpassen, und der erste Monat ist für bis zu 50 Mitarbeitende kostenlos."
   - question: "Ist es wirklich nur eine Microsoft Teams App?"
     answer: "Ja. TeamWheels wird über AppSource in Ihrem bestehenden Microsoft-365-Tenant installiert – Mitarbeitende müssen keine separate App herunterladen."
   - question: "Wie werden die Daten der Mitarbeitenden geschützt?"
     answer: "Die Authentifizierung erfolgt per SSO über Azure AD / Entra ID, und die Plattform ist DSGVO-konform und nach dem Prinzip Privacy by Design entwickelt."
   - question: "Was kostet eine Fahrgemeinschafts-Software für Unternehmen?"
-    answer: "TeamWheels bietet einen kostenlosen 30-Tage-Test und danach transparente Preise ab 3 € pro Nutzer/Monat zzgl. MwSt. (Aktionspreis statt 5 €). Die meisten Organisationen erreichen allein durch eingesparte Parkkosten bereits im ersten Quartal einen positiven ROI."
+    answer: "Bei TeamWheels ist der erste Monat kostenlos, danach gelten transparente Preise ab 3 € pro Nutzer/Monat zzgl. MwSt. (Aktionspreis statt 5 €) mit vierteljährlicher Mindestlaufzeit. Die meisten Organisationen erreichen allein durch eingesparte Parkkosten bereits im ersten Quartal einen positiven ROI."
   - question: "Welche Länder unterstützt TeamWheels?"
     answer: "Unternehmen in den USA, Großbritannien und Kanada setzen TeamWheels bereits ein, und Frankreich wird vollständig unterstützt – einschließlich des Forfait Mobilité Durable."
   - question: "Wie wähle ich die beste Software für Fahrgemeinschaften aus?"
@@ -175,7 +175,7 @@ faq:
 call_to_action:
   enable: true
   title: "Erleben Sie Fahrgemeinschafts-Software für Unternehmen in Aktion"
-  subtitle: "Buchen Sie eine persönliche Demo und starten Sie einen kostenlosen 30-Tage-Test – mit begleiteter Einführung für Ihre HR- und Nachhaltigkeitsteams. <br><br> <strong>Einrichtung in 5 Minuten.</strong> Keine Kreditkarte erforderlich. Direkt in dem Microsoft Teams, das Ihre Mitarbeitenden bereits nutzen."
+  subtitle: "Buchen Sie eine persönliche Demo und starten Sie mit dem kostenlosen ersten Monat – mit begleiteter Einführung für Ihre HR- und Nachhaltigkeitsteams. <br><br> <strong>Einrichtung in 5 Minuten.</strong> Keine Kreditkarte erforderlich. Direkt in dem Microsoft Teams, das Ihre Mitarbeitenden bereits nutzen."
   button_label: "Meine Demo buchen →"
   button_link: "contact/"
   image: "images/cta.png"

@@ -1,6 +1,6 @@
 ---
 title: "Precios del coche compartido para empresas | TeamWheels"
-description: "Precios transparentes para su programa de coche compartido: prueba gratis de 30 días y después 3 € por usuario/mes + IVA (promoción, antes 5 €) en Microsoft Teams."
+description: "Precios transparentes para su programa de coche compartido: primer mes gratis y después 3 € por usuario/mes + IVA (promoción, antes 5 €) con compromiso trimestral, en Microsoft Teams."
 draft: false
 layout: "pricing"
 keywords: "precio coche compartido para empresas, coste del carpooling corporativo, precio BlaBlaCar para empresas, coste Uber para empleados, precio app de Microsoft Teams, precio plataforma de gestión de desplazamientos, coste software de carpooling, precio programa de coche compartido, precio carpooling corporativo, plan de movilidad, movilidad sostenible"
@@ -12,15 +12,15 @@ pricing:
 
 # pricing cards
 pricing_card:
-  - name: "Prueba gratuita"
+  - name: "Primer mes gratis"
     currency: ""
     price: "0€"
     populer: false
-    content: "30 días para probar su programa de coche compartido, sin compromiso"
+    content: "Un mes para probar gratis su programa de coche compartido, sin tarjeta de crédito"
     buy_now_btn_link: ""
     buy_now_btn_label: ""
     free_trial_btn_link: "contact"
-    free_trial_btn_label: "Empezar la prueba gratuita"
+    free_trial_btn_label: "Empezar el mes gratis"
     teams_install: true   # el botón «Añadir a Microsoft Teams» (params teams_app) sustituye al enlace de prueba
     features: |
       * Aplicación completa de Microsoft Teams
@@ -43,7 +43,7 @@ pricing_card:
     free_trial_btn_link: ""
     free_trial_btn_label: ""
     features: |
-      * **Todo lo de la prueba gratuita, más:**
+      * **Todo lo incluido en el mes gratis, más:**
       * Empleados ilimitados
       * Seguimiento en tiempo real de las emisiones Scope 3 de los desplazamientos
       * Informes automáticos de movilidad y ESG
@@ -82,17 +82,17 @@ faq:
     link: "/contact/"
     icon: "fas fa-arrow-right"
   faq_list:
-    - title: "¿Cómo funciona la prueba gratuita?"
-      content: "Instale TeamWheels desde la [Microsoft Teams Store](https://teams.microsoft.com/l/app/1e3c893b-b545-49ed-a249-1c7a25b0fa46): la prueba empieza de inmediato, sin necesidad de llamada comercial. Dispone de 30 días de acceso completo a TeamWheels para hasta 50 empleados, sin tarjeta de crédito ni compromiso. Despliegue el programa de coche compartido en Microsoft Teams y mida la adopción y el impacto en CO₂ antes de decidir si continúa."
+    - title: "¿Cómo funciona el primer mes gratis?"
+      content: "Instale TeamWheels desde la [Microsoft Teams Store](https://teams.microsoft.com/l/app/1e3c893b-b545-49ed-a249-1c7a25b0fa46): el primer mes gratis empieza de inmediato, sin necesidad de llamada comercial. Dispone de un mes de acceso completo a TeamWheels para hasta 50 empleados, sin tarjeta de crédito. Despliegue el programa de coche compartido en Microsoft Teams y mida la adopción y el impacto en CO₂ antes de decidir si continúa. Tras el primer mes gratis, la suscripción se contrata con compromiso trimestral."
 
     - title: "¿Hay un número mínimo de empleados?"
       content: "No. TeamWheels se adapta a organizaciones de cualquier tamaño, de 10 a más de 10.000 empleados. El precio se mantiene en 3 € por usuario/mes + IVA (precio promocional, antes 5 €). Las empresas de toda Europa y Norteamérica disfrutan de la misma tarifa plana."
 
-    - title: "¿Puedo cancelar en cualquier momento?"
-      content: "Sí. Puede cancelar su suscripción en cualquier momento, sin penalizaciones ni preaviso. Los datos de sus empleados se eliminan conforme al RGPD. Preferimos ganarnos su confianza con resultados, no con contratos de permanencia."
+    - title: "¿Cómo puedo cancelar mi suscripción?"
+      content: "Tras el primer mes gratis, la suscripción se contrata con compromiso trimestral: puede darse de baja al final de cada trimestre. Los datos de sus empleados se eliminan después conforme al RGPD."
 
     - title: "¿Cuánto tarda el despliegue?"
-      content: "5 minutos. Un administrador de Teams instala la app desde la [Microsoft Teams Store](https://marketplace.microsoft.com/es-es/product/WA200012036), configura los ajustes básicos y su programa de coche compartido está activo. Además, ofrecemos acompañamiento gratuito en el onboarding durante la prueba."
+      content: "5 minutos. Un administrador de Teams instala la app desde la [Microsoft Teams Store](https://marketplace.microsoft.com/es-es/product/WA200012036), configura los ajustes básicos y su programa de coche compartido está activo. Además, ofrecemos acompañamiento gratuito en el onboarding durante el primer mes gratis."
 
     - title: "¿Funciona TeamWheels para organizaciones fuera de Francia?"
       content: "Por supuesto. TeamWheels está pensado para organizaciones de Estados Unidos, Reino Unido, Canadá y toda Europa. La plataforma está disponible en inglés y francés, y nuestro seguimiento de desplazamientos e informes de Scope 3 se ajustan a los marcos ESG internacionales (GRI, CDP, CSRD, divulgaciones climáticas de la SEC)."
@@ -104,7 +104,7 @@ faq:
 call_to_action:
   enable: true
   title: "¿Listo para lanzar el coche compartido en su empresa?"
-  subtitle: "Prueba gratuita de 30 días. Sin tarjeta de crédito. Sin compromiso. <br> Obtenga resultados medibles de movilidad y sostenibilidad en pocas semanas."
+  subtitle: "Primer mes gratis. Sin tarjeta de crédito. Después, compromiso trimestral. <br> Obtenga resultados medibles de movilidad y sostenibilidad en pocas semanas."
   button_label: "Solicitar una demo guiada"
   button_link: "/contact/"
   image: "images/cta.png"

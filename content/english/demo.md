@@ -22,15 +22,15 @@ video_demo:
 
 # Secondary CTA under the player
 cta:
-  label: "Start free 30-day trial"
+  label: "Get your first month free"
   link: "/contact/"
 
 faq_title: "Demo FAQ"
 faq:
   - question: "How long is the personalised demo?"
-    answer: "Thirty minutes on a video call: ten minutes on your sites and goals, fifteen minutes inside Microsoft Teams (declaring a commute, matching, the dashboard, the commuter-benefit export) and five minutes to scope a free 30-day trial."
+    answer: "Thirty minutes on a video call: ten minutes on your sites and goals, fifteen minutes inside Microsoft Teams (declaring a commute, matching, the dashboard, the commuter-benefit export) and five minutes to scope your free first month."
   - question: "Do we need to install anything before the demo?"
-    answer: "No. The demo runs on our demonstration environment. If you want to move straight to the free trial, a Teams administrator then installs the app from Microsoft AppSource into your Microsoft 365 tenant in about five minutes."
+    answer: "No. The demo runs on our demonstration environment. If you want to move straight to your free first month, a Teams administrator then installs the app from Microsoft AppSource into your Microsoft 365 tenant in about five minutes."
   - question: "Is the demo available in French?"
     answer: "Yes. TeamWheels is bilingual English / French, and the demo can be run in either language — including for teams spread across the UK, the US, Canada, France and Switzerland."
 ---

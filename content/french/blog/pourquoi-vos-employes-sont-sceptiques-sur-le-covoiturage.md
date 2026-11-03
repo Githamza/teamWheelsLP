@@ -83,7 +83,7 @@ Voici pourquoi TeamWheels est la solution idéale pour surmonter le scepticisme 
 
 Les employés ne sont pas contre le fait d'économiser de l'argent ou de réduire leur empreinte carbone — ils sont contre les frictions, les risques liés à la sécurité et la perte de temps. En adoptant TeamWheels, vous supprimez exactement les points de douleur qui génèrent le scepticisme envers le covoiturage. Vous offrez à vos employés un moyen sûr et sans application de se connecter, tandis que votre entreprise récolte les bénéfices d'une réduction des coûts de stationnement et de réductions mesurables des émissions de Scope 3.
 
-Prêt à transformer les trajets de votre entreprise ? Faites de Microsoft Teams votre outil de développement durable le plus puissant et commencez votre essai gratuit de 30 jours avec TeamWheels dès aujourd'hui.
+Prêt à transformer les trajets de votre entreprise ? Faites de Microsoft Teams votre outil de développement durable le plus puissant et profitez dès aujourd'hui du premier mois offert avec TeamWheels.
 
 ---
 

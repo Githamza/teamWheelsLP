@@ -202,4 +202,4 @@ Découvrez notre [logiciel de covoiturage d'entreprise intégré à Microsoft Te
 
 **Prêt à activer les aides à la mobilité durable dans votre entreprise ?** [Demander une démo →](/fr/contact/)
 
-*30 jours gratuits, sans engagement, sans carte bancaire.*
+*Premier mois offert, sans carte bancaire, puis engagement trimestriel.*

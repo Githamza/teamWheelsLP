@@ -2,7 +2,7 @@
 title: "Covoiturage en entreprise : le guide complet 2026"
 translationKey: "corporate-carpooling-guide-2026"
 date: 2026-04-29
-lastmod: 2026-10-28
+lastmod: 2026-11-03
 draft: false
 description: "Covoiturage domicile-travail en entreprise : FMD, loi LOM, choix de l'outil de covoiturage, organisation des trajets et lancement en 5 étapes. Le guide 2026 pour RH et DAF."
 image: "images/blog/corporate-carpooling.jpg"
@@ -55,6 +55,28 @@ howto:
 **Guide stratégique · Mobilité d'entreprise 2026 · 12 min de lecture**
 
 *FMD, loi LOM, choix de l'outil, organisation des trajets, lancement en 5 étapes — tout ce que les DRH, DAF et responsables RSE doivent savoir pour faire du covoiturage domicile-travail un levier de performance.*
+
+> **Réponse directe : mettre en place le covoiturage en entreprise en 5 étapes (30 jours)**
+>
+> 1. **Diagnostiquer** : sondez les salariés sur leurs trajets et repérez les axes domicile-travail partagés (semaine 1).
+> 2. **Choisir l'outil** : un outil d'appariement des trajets, avec justificatifs FMD et reporting CO₂ (semaine 1).
+> 3. **Cadrer** : décision ou accord FMD (jusqu'à 600 € exonérés par salarié et par an), charte de covoiturage, communication (semaine 2).
+> 4. **Piloter** : 2 à 4 semaines avec 20 à 50 volontaires, puis ajustez les règles d'appariement (semaines 3 et 4).
+> 5. **Généraliser et mesurer** : ouverture à tous, suivi mensuel de la participation, des trajets, du CO₂ et des places de parking libérées.
+>
+> Le détail de chaque étape est [plus bas](#etapes).
+
+### Quels outils pour organiser le covoiturage de vos salariés ? {#outils-2026}
+
+| Outil | Type | Covoiturage entre | Application à installer | Justificatifs FMD | Tarif public |
+|---|---|---|---|---|---|
+| Attestations + tableur | Organisation interne | Collègues | Non | Attestations sur l'honneur, à collecter à la main | Gratuit (temps RH) |
+| Karos (reprise de BlaBlaCar Daily) | Application grand public, réseau ouvert | Tous les utilisateurs de l'application | Oui | Preuves de trajets via l'opérateur | Non communiqué |
+| Comovee | Plateforme dédiée entreprise | Collègues de l'organisation | Oui (web, mobile) | Selon offre | Sur devis |
+| Un 7ème SenS | Progiciel de covoiturage d'entreprise | Collègues de l'organisation | Oui (web, mobile) | Inscrit au registre de preuve de covoiturage | Non communiqué |
+| **TeamWheels** | **Application Microsoft Teams** | **Collègues de l'organisation** | **Non, dans Teams (SSO Entra ID)** | **Relevés mensuels par salarié, exportables pour la paie** | **3 € HT par collaborateur et par mois (promo)** |
+
+*Informations publiques des éditeurs au 3 novembre 2026. Vérifiez les conditions en vigueur auprès de chaque fournisseur. Comparatif détaillé : [alternative à BlaBlaCar Daily et Karos](/fr/alternative-blablacar-daily-karos-entreprises/) et [alternative à Oxycar](/fr/alternative-oxycar/).*
 
 Chaque matin, des millions de salariés rejoignent leur lieu de travail seuls dans leur voiture. Des places vides, des parkings saturés, des émissions inutiles — et souvent, un collègue qui habite à deux kilomètres et fait exactement le même trajet. Le covoiturage en entreprise existe pour résoudre ce paradoxe. Passer de l'idée à un programme qui fonctionne vraiment, c'est une autre histoire : ce guide vous explique comment faire, concrètement, sans que cela devienne un projet chronophage pour vos équipes RH.
 
@@ -130,7 +152,7 @@ Le trajet domicile-travail est l'une des premières sources de stress des salari
 
 La différence fondamentale tient à deux points : l'intégration native dans **Microsoft Teams** et la couverture complète du cycle de mobilité — du trajet domicile-bureau aux déplacements inter-sites avec la flotte d'entreprise.
 
-> **Actualité :** Karos est en négociations exclusives pour reprendre BlaBlaCar Daily (qui avait absorbé Klaxit en 2023). Contrat, données salariés, justificatifs FMD : voir [ce que le rachat de BlaBlaCar Daily par Karos change pour votre covoiturage d'entreprise](/fr/blog/rachat-blablacar-daily-karos-covoiturage-entreprise/), et [l'alternative à BlaBlaCar Daily et Karos pour les entreprises](/fr/alternative-blablacar-daily-karos-entreprises/).
+> **Actualité :** Karos a repris BlaBlaCar Daily au 1er octobre 2026 (rebaptisée Daily), qui avait absorbé Klaxit en 2023. Oxycar, autre plateforme de covoiturage d'entreprise, a été liquidée en 2023 : voir [l'alternative à Oxycar](/fr/alternative-oxycar/). Contrat, données salariés, justificatifs FMD : voir [ce que le rachat de BlaBlaCar Daily par Karos change pour votre covoiturage d'entreprise](/fr/blog/rachat-blablacar-daily-karos-covoiturage-entreprise/), et [l'alternative à BlaBlaCar Daily et Karos pour les entreprises](/fr/alternative-blablacar-daily-karos-entreprises/).
 
 > **Le covoiturage d'entreprise n'est plus un avantage optionnel : c'est une obligation de reporting et un levier de compétitivité RH.**
 
@@ -216,7 +238,7 @@ Pour éviter ces écueils, un outil de covoiturage entreprise doit répondre à 
 4. **Le reporting** — km partagés, CO₂ évité, nombre de covoiturages : des données exploitables telles quelles dans votre DPEF, votre bilan GES (poste 7) et votre rapport CSRD.
 5. **La sécurité et la souveraineté des données** — SSO via Entra ID, conformité RGPD, données qui restent dans votre environnement Microsoft 365.
 
-Un dernier critère, souvent oublié : le coût total. Entre une application autonome facturée au siège, un développement sur mesure et un SaaS déployé dans votre tenant Microsoft 365 avec un essai gratuit de 30 jours, l'écart se chiffre en dizaines de milliers d'euros — et surtout en mois de déploiement. Si votre organisation travaille déjà sur Microsoft 365, la solution la plus rationnelle est un [logiciel de covoiturage entreprise](/fr/corporate-carpooling-software/) intégré à Microsoft Teams.
+Un dernier critère, souvent oublié : le coût total. Entre une application autonome facturée au siège, un développement sur mesure et un SaaS déployé dans votre tenant Microsoft 365 avec le premier mois offert, l'écart se chiffre en dizaines de milliers d'euros — et surtout en mois de déploiement. Si votre organisation travaille déjà sur Microsoft 365, la solution la plus rationnelle est un [logiciel de covoiturage entreprise](/fr/corporate-carpooling-software/) intégré à Microsoft Teams.
 
 ---
 
@@ -299,7 +321,7 @@ Non. Le FMD couvre uniquement les trajets domicile-travail. Les déplacements pr
 
 ## Prêt à réduire vos coûts de mobilité dès ce trimestre ?
 
-TeamWheels s'essaie **gratuitement pendant 30 jours, jusqu'à 50 collaborateurs**, sans carte bancaire. Installation en quelques minutes dans votre environnement Microsoft 365. Aucun engagement.
+Avec TeamWheels, **le premier mois est offert, jusqu'à 50 collaborateurs**, sans carte bancaire. Installation en quelques minutes dans votre environnement Microsoft 365. Ensuite, l'abonnement est souscrit avec un engagement trimestriel.
 
 **[Demander une démo gratuite](/fr/contact/)** · **[Simuler mes économies FMD](/fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/)**
 

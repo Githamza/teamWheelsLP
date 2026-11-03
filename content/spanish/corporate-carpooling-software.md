@@ -47,7 +47,7 @@ image_and_content_blocks:
     title: "Coche compartido justo donde sus empleados ya trabajan"
     image: "images/how-it-works/home-es-step-1.svg"
     image_fit: true
-    image_alt: "Instalación de la app TeamWheels desde la Microsoft Teams Store, con inicio de sesión SSO y prueba gratuita de 30 días"
+    image_alt: "Instalación de la app TeamWheels desde la Microsoft Teams Store, con inicio de sesión SSO y primer mes gratis"
     content_position: "left"
     content: "¿Por qué obligar a sus empleados a instalar otra app que acabarán olvidando? TeamWheels se integra de forma nativa en Microsoft Teams, la herramienta que su plantilla ya utiliza a diario. Eso se traduce en una adopción inmediata y cero fricción.
 
@@ -128,7 +128,7 @@ image_and_content_blocks:
 
     * **Seguridad y cumplimiento**: SSO a través de su proveedor de identidad, conformidad con el RGPD y datos que permanecen en su tenant de Microsoft 365
 
-    ¿Está preseleccionando proveedores? [Compare precios →](/es/pricing/) o someta a TeamWheels a la misma prueba con una prueba gratuita de 30 días.
+    ¿Está preseleccionando proveedores? [Compare precios →](/es/pricing/) o someta a TeamWheels a la misma prueba durante el primer mes gratis.
     "
     button:
       enable: false
@@ -141,11 +141,11 @@ image_and_content_blocks:
     content: |
       No son opciones opuestas: es el mismo software de carpooling corporativo, desplegado de dos formas.
 
-      **TeamWheels estándar** se adapta a la gran mayoría de las empresas: la app se instala en su tenant de Microsoft 365 con el nombre TeamWheels, con sus sedes, sus reglas de emparejamiento y su política de beneficios de movilidad. Cinco minutos de instalación, una prueba gratuita y un precio por empleado.
+      **TeamWheels estándar** se adapta a la gran mayoría de las empresas: la app se instala en su tenant de Microsoft 365 con el nombre TeamWheels, con sus sedes, sus reglas de emparejamiento y su política de beneficios de movilidad. Cinco minutos de instalación, el primer mes gratis y un precio por empleado.
 
       **La versión de marca blanca** está pensada para grandes empresas, campus, hospitales y parques empresariales que quieren que sus equipos compartan coche con su propio nombre. Puesta en marcha en pocos días, precio bajo presupuesto.
 
-      ¿Duda? Empiece con la prueba estándar: la marca blanca se activa después sin reinstalar nada. Las opciones, el calendario de despliegue y las integraciones están en la página [plataforma de coche compartido de marca blanca →](/es/white-label-carpool-platform/)
+      ¿Duda? Empiece el primer mes gratis con la versión estándar: la marca blanca se activa después sin reinstalar nada. Las opciones, el calendario de despliegue y las integraciones están en la página [plataforma de coche compartido de marca blanca →](/es/white-label-carpool-platform/)
     button:
       enable: false
 
@@ -158,13 +158,13 @@ faq:
   - question: "¿Qué ventajas tiene una app de coche compartido de marca blanca integrada con los sistemas de RR. HH.?"
     answer: "Integrar una app de coche compartido de marca blanca con sus sistemas de RR. HH. y de identidad permite que los empleados se unan automáticamente con su cuenta de trabajo, y que los equipos de RR. HH., nóminas y sostenibilidad obtengan datos limpios sin exportaciones manuales. Ventajas clave: inicio de sesión único con Entra ID (el directorio se convierte en la lista de participantes), flujos de ventajas fiscales y reembolsos alimentados directamente por los registros de trayectos (Section 132f del IRS, regímenes del Reino Unido, Forfait Mobilité Durable en Francia) e informes ESG de Scope 3 / CSRD generados automáticamente."
   - question: "¿Con qué rapidez se puede lanzar una plataforma de carpooling corporativo personalizable?"
-    answer: "En unos 5 minutos. Un administrador de Teams instala TeamWheels desde Microsoft AppSource en su tenant de Microsoft 365: sin proyecto de TI, sin infraestructura y sin despliegue de apps. La plataforma se adapta a su marca, sus sedes y sus necesidades de informes de RR. HH. y ESG, y puede empezar con una prueba gratuita de 30 días para hasta 50 empleados."
+    answer: "En unos 5 minutos. Un administrador de Teams instala TeamWheels desde Microsoft AppSource en su tenant de Microsoft 365: sin proyecto de TI, sin infraestructura y sin despliegue de apps. La plataforma se adapta a su marca, sus sedes y sus necesidades de informes de RR. HH. y ESG, y el primer mes es gratis para hasta 50 empleados."
   - question: "¿Es realmente solo una app de Microsoft Teams?"
     answer: "Sí. TeamWheels se instala dentro de su tenant de Microsoft 365 desde AppSource: los empleados no tienen que descargar ninguna app adicional."
   - question: "¿Cómo se protegen los datos de los empleados?"
     answer: "La autenticación se realiza mediante SSO con Azure AD / Entra ID, y la plataforma es conforme al RGPD, con privacidad desde el diseño."
   - question: "¿Cuánto cuesta un software de carpooling corporativo?"
-    answer: "TeamWheels ofrece una prueba gratuita de 30 días y, después, un precio transparente por usuario desde 3 € por usuario/mes + IVA (precio promocional, antes 5 €). La mayoría de las organizaciones obtienen un ROI positivo en el primer trimestre solo con el ahorro en aparcamiento."
+    answer: "TeamWheels ofrece el primer mes gratis y, después, un precio transparente por usuario desde 3 € por usuario/mes + IVA (precio promocional, antes 5 €) con compromiso trimestral. La mayoría de las organizaciones obtienen un ROI positivo en el primer trimestre solo con el ahorro en aparcamiento."
   - question: "¿En qué países está disponible TeamWheels?"
     answer: "Empresas de Estados Unidos, Reino Unido y Canadá ya utilizan TeamWheels, con soporte completo para Francia, incluido el Forfait Mobilité Durable."
   - question: "¿Cómo elegir el mejor software de gestión del coche compartido?"
@@ -175,7 +175,7 @@ faq:
 call_to_action:
   enable: true
   title: "Vea el software de carpooling corporativo en acción"
-  subtitle: "Reserve una demo personalizada y empiece una prueba gratuita de 30 días, con despliegue guiado para sus equipos de RR. HH. y Sostenibilidad. <br><br> <strong>Configuración en 5 minutos.</strong> Sin tarjeta de crédito. Dentro del Microsoft Teams que sus empleados ya utilizan."
+  subtitle: "Reserve una demo personalizada y aproveche el primer mes gratis, con despliegue guiado para sus equipos de RR. HH. y Sostenibilidad. <br><br> <strong>Configuración en 5 minutos.</strong> Sin tarjeta de crédito. Dentro del Microsoft Teams que sus empleados ya utilizan."
   button_label: "Reservar mi demo →"
   button_link: "contact/"
   image: "images/cta.png"

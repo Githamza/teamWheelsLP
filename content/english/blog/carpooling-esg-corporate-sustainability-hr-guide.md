@@ -179,7 +179,7 @@ Matching happens automatically. Within the first month, most companies reach **3
 
 Corporate carpooling is not another green gadget. It is one of the few measures that genuinely cuts Scope 3 emissions, concretely improves employees' lives, and produces auditable data for your reporting — all at marginal cost.
 
-**TeamWheels** brings these three benefits together in a solution built into Microsoft 365: automatic matching, audit-ready commuter tracking, and a **real-time ESG dashboard** (miles shared, CO₂ avoided, adoption). Free up to 30 employees, installed in under an hour, no commitment.
+**TeamWheels** brings these three benefits together in a solution built into Microsoft 365: automatic matching, audit-ready commuter tracking, and a **real-time ESG dashboard** (miles shared, CO₂ avoided, adoption). First month free for up to 50 employees, installed in minutes, then a quarterly commitment.
 
 **[Request a free demo](/en/contact/)** · **[Estimate my CO₂ impact and savings](/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/)**
 

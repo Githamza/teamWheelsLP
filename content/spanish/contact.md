@@ -31,16 +31,16 @@ services:
 faq_title: "Antes de ponerse en contacto"
 faq:
   - question: "¿Qué ocurre después de enviar el formulario?"
-    answer: "Un miembro del equipo de TeamWheels le responde en un día laborable para reservar una demo de 30 minutos. Si prefiere empezar directamente la prueba gratuita, le enviamos el enlace de instalación de AppSource y una guía de configuración para su administrador de Teams."
-  - question: "¿Compromete la prueba gratuita a mi organización a algo?"
-    answer: "No. La prueba dura 30 días, cubre hasta 50 empleados, no requiere tarjeta de crédito y simplemente finaliza si no continúa. Sus datos se eliminan entonces conforme al RGPD."
+    answer: "Un miembro del equipo de TeamWheels le responde en un día laborable para reservar una demo de 30 minutos. Si prefiere empezar directamente su primer mes gratis, le enviamos el enlace de instalación de AppSource y una guía de configuración para su administrador de Teams."
+  - question: "¿Compromete el primer mes gratis a mi organización a algo?"
+    answer: "No. El primer mes gratis cubre hasta 50 empleados, no requiere tarjeta de crédito y simplemente finaliza si no continúa; sus datos se eliminan entonces conforme al RGPD. Si continúa, la suscripción se contrata con compromiso trimestral."
   - question: "¿Pueden ayudarnos a preparar el caso de negocio interno?"
     answer: "Sí. Durante la demo cuantificamos las plazas de aparcamiento liberadas, el CO₂ evitado y los presupuestos de beneficios de movilidad a partir de su plantilla y sus sedes, y le entregamos un resumen que puede presentar a la dirección."
 ---
 
 ## Cómo funciona la demo
 
-El formulario anterior genera una respuesta en un día laborable. La demo en sí es una **videollamada de 30 minutos** en tres partes: su contexto (sedes, plantilla, aparcamiento, objetivos de Scope 3 o de beneficios de movilidad), un recorrido completo dentro de Microsoft Teams (un empleado que declara un trayecto, el emparejamiento, las notificaciones, el panel de administración, la exportación de los registros de trayectos para los beneficios de movilidad) y la definición de una prueba gratuita de 30 días con un grupo piloto. También puede empezar por el [vídeo de demostración de 60 segundos](/es/demo/).
+El formulario anterior genera una respuesta en un día laborable. La demo en sí es una **videollamada de 30 minutos** en tres partes: su contexto (sedes, plantilla, aparcamiento, objetivos de Scope 3 o de beneficios de movilidad), un recorrido completo dentro de Microsoft Teams (un empleado que declara un trayecto, el emparejamiento, las notificaciones, el panel de administración, la exportación de los registros de trayectos para los beneficios de movilidad) y la definición de su primer mes gratis con un grupo piloto. También puede empezar por el [vídeo de demostración de 60 segundos](/es/demo/).
 
 ## A quién va dirigida
 

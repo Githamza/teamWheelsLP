@@ -22,15 +22,15 @@ video_demo:
 
 # Secondary CTA under the player
 cta:
-  label: "30 Tage kostenlos testen"
+  label: "Ersten Monat kostenlos starten"
   link: "/contact/"
 
 faq_title: "FAQ zur Demo"
 faq:
   - question: "Wie lange dauert die persönliche Demo?"
-    answer: "Dreißig Minuten per Videocall: zehn Minuten zu Ihren Standorten und Zielen, fünfzehn Minuten direkt in Microsoft Teams (Arbeitsweg angeben, Matching, Dashboard, Export für Pendlerleistungen) und fünf Minuten, um einen kostenlosen 30-Tage-Test zu planen."
+    answer: "Dreißig Minuten per Videocall: zehn Minuten zu Ihren Standorten und Zielen, fünfzehn Minuten direkt in Microsoft Teams (Arbeitsweg angeben, Matching, Dashboard, Export für Pendlerleistungen) und fünf Minuten, um Ihren kostenlosen ersten Monat zu planen."
   - question: "Müssen wir vor der Demo etwas installieren?"
-    answer: "Nein. Die Demo läuft in unserer Demonstrationsumgebung. Wenn Sie direkt mit dem kostenlosen Test starten möchten, installiert ein Teams-Administrator die App anschließend in rund fünf Minuten aus Microsoft AppSource in Ihrem Microsoft-365-Tenant."
+    answer: "Nein. Die Demo läuft in unserer Demonstrationsumgebung. Wenn Sie direkt mit dem kostenlosen ersten Monat starten möchten, installiert ein Teams-Administrator die App anschließend in rund fünf Minuten aus Microsoft AppSource in Ihrem Microsoft-365-Tenant."
   - question: "In welchen Sprachen ist die Demo verfügbar?"
     answer: "TeamWheels ist zweisprachig (Englisch / Französisch), und die Demo kann in beiden Sprachen durchgeführt werden – auch für Teams, die über Großbritannien, die USA, Kanada, Frankreich und die Schweiz verteilt sind."
 ---

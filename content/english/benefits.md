@@ -106,7 +106,7 @@ faq:
 call_to_action:
   enable: true
   title: "Launch an Employee Carpooling Program in Your Organization"
-  subtitle: "Join forward-thinking companies across the USA, UK, and Canada that are reducing commute costs, cutting Scope 3 emissions, and improving employee well-being with TeamWheels. <br><br> <strong>Get started:</strong> Free 30-day trial + guided deployment for your HR and sustainability teams. <br> <em>Limited spots for personalized onboarding.</em>"
+  subtitle: "Join forward-thinking companies across the USA, UK, and Canada that are reducing commute costs, cutting Scope 3 emissions, and improving employee well-being with TeamWheels. <br><br> <strong>Get started:</strong> First month free + guided deployment for your HR and sustainability teams. <br> <em>Limited spots for personalized onboarding.</em>"
   button_label: "Get a guided demo →"
   button_link: "contact/"
   image: "images/cta.png"

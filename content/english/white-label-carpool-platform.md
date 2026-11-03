@@ -49,7 +49,7 @@ image_and_content_blocks:
       | | Build in-house | White-label TeamWheels | Generic carpooling app |
       |---|---|---|---|
       | **Time to production** | 6–9 months (spec, build, security review, app-store release) | Days: install in 5 minutes, brand and configure in an afternoon, pilot in 2–4 weeks | Weeks, but adoption stalls: employees must download and sign up |
-      | **Upfront cost** | $100,000–$200,000+ for a credible v1 | No setup fee; free 30-day trial | Low or free, paid for in participation |
+      | **Upfront cost** | $100,000–$200,000+ for a credible v1 | No setup fee; first month free | Low or free, paid for in participation |
       | **Ongoing cost** | 1–2 FTE for maintenance, mobile updates, hosting, support | Per-seat subscription, maintenance included | Per-seat or per-site subscription |
       | **Brand ownership** | Full — it is your app | Your program name, logo and colours inside Microsoft Teams | The vendor's brand, sometimes with a logo upload |
       | **GDPR & hosting** | Your responsibility end to end | Runs in your own Microsoft 365 tenant under your policies; GDPR compliant, privacy by design | Vendor cloud, vendor DPA, data outside your tenant |
@@ -138,13 +138,13 @@ image_and_content_blocks:
     content: |
       When you buy white label carpool software from TeamWheels, you buy a subscription, not a development project. The pricing model is per seat, and the public grid is the same one every customer starts from:
 
-      * **Free 30-day trial** — the complete platform for up to 50 employees, no credit card, no commitment. Most white-label customers run their pilot on the trial.
-      * **TeamWheels, €3 per employee per month excl. VAT (promo, down from €5)** — unlimited employees, the Teams bot and matching engine, the administration dashboard, real-time CO₂ tracking, commuter-benefit and FMD records, Entra ID SSO, advanced statistics and priority support. Monthly or annual billing, cancel any time.
+      * **First month free** — the complete platform for up to 50 employees, no credit card. Most white-label customers run their pilot during the free month.
+      * **TeamWheels, €3 per employee per month excl. VAT (promo, down from €5)** — unlimited employees, the Teams bot and matching engine, the administration dashboard, real-time CO₂ tracking, commuter-benefit and FMD records, Entra ID SSO, advanced statistics and priority support. Monthly or annual billing, on a quarterly commitment after the free first month.
       * **Enterprise, on quotation** — everything above plus the white-label package: your branding and domain, multi-site and multi-entity programmes, HR and payroll integrations through the API, a guaranteed SLA, a dedicated account manager, personalised onboarding and custom ESG reports.
 
-      **What triggers a quote rather than the flat rate:** volume (typically from several hundred seats or several sites), hosting or data-residency requirements beyond the standard Microsoft 365 tenant deployment, custom integrations with an HRIS or payroll system, and multi-employer programmes run by a campus or a business park. A quote is usually turned around within a week of the demo, and the trial keeps running in the meantime.
+      **What triggers a quote rather than the flat rate:** volume (typically from several hundred seats or several sites), hosting or data-residency requirements beyond the standard Microsoft 365 tenant deployment, custom integrations with an HRIS or payroll system, and multi-employer programmes run by a campus or a business park. A quote is usually turned around within a week of the demo, and the free month keeps running in the meantime.
 
-      **How to buy:** book a demo, run the free trial with your pilot group, then sign either online for the flat per-seat plan or an annual Enterprise agreement for the white-label package. Purchase orders and bank transfer are accepted for annual contracts; the platform is also listed on Microsoft AppSource, which some procurement teams prefer.
+      **How to buy:** book a demo, run the free first month with your pilot group, then sign either online for the flat per-seat plan or an annual Enterprise agreement for the white-label package. Purchase orders and bank transfer are accepted for annual contracts; the platform is also listed on Microsoft AppSource, which some procurement teams prefer.
 
       Ready to see it with your own branding? [Watch the 60-second demo](/en/demo/) or [book a personalised demo →](/en/contact/) and we will size the white-label package for your organisation. The standard grid is detailed on the [pricing page](/en/pricing/).
     button:
@@ -182,11 +182,11 @@ faq:
   - question: "How far can we customise the branding?"
     answer: "Program name, logo, colours and domain, plus the wording of the bot messages and notifications in English and French. Employees see your brand in Teams, on sign-in and in every reminder. What stays standard is the matching engine and the dashboard, which is what keeps deployment to days rather than months."
   - question: "What happens at the end of the contract?"
-    answer: "The platform is a subscription, so nothing is locked in. On the flat per-seat plan you can cancel at any time without notice; annual Enterprise agreements end at their term unless renewed. Your administrators can export trips, participation and CO₂ data beforehand, and employee data is deleted from the platform in line with GDPR once the account is closed — the directory itself is yours and is never touched."
+    answer: "The platform is a subscription, with no technical lock-in. On the flat per-seat plan, after the free first month the subscription runs on a quarterly commitment and can be terminated at the end of each quarter; annual Enterprise agreements end at their term unless renewed. Your administrators can export trips, participation and CO₂ data beforehand, and employee data is deleted from the platform in line with GDPR once the account is closed — the directory itself is yours and is never touched."
   - question: "Is the platform available outside Microsoft 365?"
     answer: "TeamWheels is built for organisations on Microsoft 365: the Teams bot, Entra ID single sign-on and the tenant-based data model are what make deployment take minutes and adoption exceed 40%. If part of your workforce is not on Microsoft 365 — for example a multi-employer business park — the Enterprise package can cover them through the API and web access; ask during the demo and we will tell you honestly what fits."
   - question: "How much does a white-label carpool app cost compared to building one?"
-    answer: "Building a carpool app from scratch with a development agency typically takes 14–16 weeks and costs $20,000–$200,000+, plus ongoing maintenance. TeamWheels is priced per seat (from €3 per employee per month, promo price) with a free 30-day trial; the white-label package is quoted on volume, sites and integrations, and deploys from Microsoft AppSource in about 5 minutes — most organisations reach positive ROI within the first quarter through parking savings alone."
+    answer: "Building a carpool app from scratch with a development agency typically takes 14–16 weeks and costs $20,000–$200,000+, plus ongoing maintenance. TeamWheels is priced per seat (from €3 per employee per month, promo price) with the first month free; the white-label package is quoted on volume, sites and integrations, and deploys from Microsoft AppSource in about 5 minutes — most organisations reach positive ROI within the first quarter through parking savings alone."
   - question: "Do employees need to download a separate app?"
     answer: "No. TeamWheels lives inside Microsoft Teams, which your employees already use every day. That is the main reason white-label programs on TeamWheels reach 40%+ participation, versus under 18% for standalone carpool apps that require a download and a new account."
 
@@ -214,7 +214,7 @@ howto:
 call_to_action:
   enable: true
   title: "Launch Your Branded Carpool Platform This Week"
-  subtitle: "Book a personalized demo and start a free 30-day trial — your brand, your tenant, live in days. <br><br> <strong>5-minute setup.</strong> No credit card, no development project, no separate app for employees."
+  subtitle: "Book a personalized demo and get your first month free — your brand, your tenant, live in days. <br><br> <strong>5-minute setup.</strong> No credit card, no development project, no separate app for employees."
   button_label: "Book my demo →"
   button_link: "contact/"
   image: "images/cta.png"
