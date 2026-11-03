@@ -14,7 +14,7 @@ banner:
   description: "Maak van Microsoft Teams in 5 minuten een carpoolplatform voor uw teams."
   button:
     enable: true
-    button_label: "🚀 30 dagen gratis proberen"
+    button_label: "🚀 Eerste maand gratis"
     icon: "fas fa-arrow-right"
     link: "contact/"
 
@@ -124,7 +124,7 @@ faq:
 call_to_action:
   enable: true
   title: "🚀 Klaar om het woon-werkverkeer anders aan te pakken?"
-  subtitle: "Sluit aan bij de bedrijven die carpoolen voor hun teams eenvoudig maken en hun CO₂-uitstoot verlagen. <br><br> <strong>Lanceringsaanbod:</strong> 30 dagen gratis + begeleide installatie."
+  subtitle: "Sluit aan bij de bedrijven die carpoolen voor hun teams eenvoudig maken en hun CO₂-uitstoot verlagen. <br><br> <strong>Lanceringsaanbod:</strong> eerste maand gratis + begeleide installatie."
   button_label : "Persoonlijke demo aanvragen →"
   button_link : "contact/"
   image : "images/cta.png"

@@ -12,7 +12,7 @@ banner:
   description: "Machen Sie Microsoft Teams zu einer vollständigen Plattform für das Pendlermanagement in Ihrem Unternehmen. Ihre Mitarbeitenden finden passende Fahrten, teilen den Arbeitsweg und senken Scope-3-Emissionen – alles in ihrer gewohnten Teams-Umgebung."
   button:
     enable: true
-    button_label: "30 Tage kostenlos testen"
+    button_label: "Ersten Monat kostenlos starten"
     icon: "fas fa-arrow-right"
     link: "contact/"
 
@@ -115,7 +115,7 @@ faq:
 call_to_action:
   enable: true
   title: "Bereit, Fahrgemeinschaften in Ihrem Unternehmen einzuführen?"
-  subtitle: "Schließen Sie sich Unternehmen in ganz Europa und Nordamerika an, die mit TeamWheels Pendelprobleme lösen, Scope-3-Emissionen senken und die Zufriedenheit ihrer Mitarbeitenden steigern. <br><br> <strong>Jetzt starten:</strong> 30 Tage kostenlos testen + begleitete Einführung für Ihr Team."
+  subtitle: "Schließen Sie sich Unternehmen in ganz Europa und Nordamerika an, die mit TeamWheels Pendelprobleme lösen, Scope-3-Emissionen senken und die Zufriedenheit ihrer Mitarbeitenden steigern. <br><br> <strong>Jetzt starten:</strong> Erster Monat kostenlos + begleitete Einführung für Ihr Team."
   button_label : "Begleitete Demo anfordern →"
   button_link : "contact/"
   image : "images/cta.png"

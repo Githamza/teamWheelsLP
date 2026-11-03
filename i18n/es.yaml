@@ -174,7 +174,7 @@
 - id: teams_install_button_short
   translation: Pruébelo en Teams
 - id: teams_install_trust
-  translation: Gratis 30 días · Sin tarjeta de crédito · Operativo en 5 minutos
+  translation: Primer mes gratis · Sin tarjeta de crédito · Operativo en 5 minutos
 - id: teams_admin_question
   translation: "¿No es administrador?"
 - id: teams_admin_link
@@ -193,7 +193,7 @@
   translation: |
     Hola:
 
-    Me gustaría probar TeamWheels, una aplicación de coche compartido para empleados integrada en Microsoft Teams (gratis durante 30 días, sin tarjeta de crédito).
+    Me gustaría probar TeamWheels, una aplicación de coche compartido para empleados integrada en Microsoft Teams (primer mes gratis, sin tarjeta de crédito).
 
     ¿Podrías habilitarla para nuestra organización?
 

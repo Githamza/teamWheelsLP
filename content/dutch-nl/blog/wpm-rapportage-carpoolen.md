@@ -85,9 +85,9 @@ Op de [RVO-pagina over carpoolen](https://www.rvo.nl/onderwerpen/start-met-verdu
 
 ## Plan een demo: van WPM-cijfers naar minder autoritten
 
-Carpoolen verkleint je woon-werkverkeer met de auto direct, zonder dat werknemers hun auto hoeven op te geven. In een demo laten we zien hoe je TeamWheels in Teams uitrolt, hoe collega's matches vinden en welke CO₂-cijfers je in het dashboard ziet. Je test 30 dagen gratis met maximaal 50 werknemers.
+Carpoolen verkleint je woon-werkverkeer met de auto direct, zonder dat werknemers hun auto hoeven op te geven. In een demo laten we zien hoe je TeamWheels in Teams uitrolt, hoe collega's matches vinden en welke CO₂-cijfers je in het dashboard ziet. De eerste maand is gratis voor maximaal 50 werknemers.
 
-{{< cta-demo title="Minder autoritten in je woon-werkverkeer?" text="Zie in een demo hoe TeamWheels collega's met dezelfde route koppelt in Microsoft Teams en de vermeden CO₂ bijhoudt. 30 dagen gratis, in 5 minuten geïnstalleerd." src="wpm-rapportage-end" >}}
+{{< cta-demo title="Minder autoritten in je woon-werkverkeer?" text="Zie in een demo hoe TeamWheels collega's met dezelfde route koppelt in Microsoft Teams en de vermeden CO₂ bijhoudt. Eerste maand gratis, in 5 minuten geïnstalleerd." src="wpm-rapportage-end" >}}
 
 ## Veelgestelde vragen
 

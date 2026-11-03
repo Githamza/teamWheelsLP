@@ -211,7 +211,7 @@ The algorithm begins matching commuters. The HR/Sustainability dashboard goes li
 
 ## Ready to Build the Business Case?
 
-TeamWheels is **free for teams up to 25**. Enterprise pilots for larger organisations include full onboarding support and a guaranteed ROI analysis within 30 days.
+With TeamWheels, **the first month is free for up to 50 employees**, then the subscription runs on a quarterly commitment. Enterprise pilots for larger organisations include full onboarding support and a guaranteed ROI analysis within 30 days.
 
 **[Book a Free Demo](/en/contact/)** · **[Download the ROI Template](/en/blog/carpooling-savings-calculator-corporate-co2-roi-2026/)**
 

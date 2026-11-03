@@ -122,4 +122,4 @@ Ja, onder voorwaarden. De cao nr. 164 laat meerdere vergoedingen toe als ze betr
 
 Ja. De cao nr. 164 verstaat onder fiets een rijwiel, een gemotoriseerd rijwiel of een speed pedelec, waarbij gemotoriseerde rijwielen en speed pedelecs enkel in aanmerking komen als ze elektrisch worden aangedreven.
 
-{{< cta-demo title="Carpoolen naast je fietsbeleid?" text="TeamWheels matcht collega's met een vergelijkbaar traject, rechtstreeks in Microsoft Teams. Probeer het 30 dagen gratis, tot 50 werknemers." src="fietsvergoeding-end" >}}
+{{< cta-demo title="Carpoolen naast je fietsbeleid?" text="TeamWheels matcht collega's met een vergelijkbaar traject, rechtstreeks in Microsoft Teams. De eerste maand is gratis, tot 50 werknemers." src="fietsvergoeding-end" >}}

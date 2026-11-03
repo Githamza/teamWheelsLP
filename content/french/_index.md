@@ -1,7 +1,7 @@
 ---
 title: "TeamWheels | Solution de covoiturage entreprise pour vos salariés"
 seoTitle: "Covoiturage entreprise : la solution pour vos salariés | TeamWheels"
-description: "Solution de covoiturage entreprise : mise en relation des salariés, justificatifs FMD et suivi Scope 3. Intégrée à Microsoft Teams, essai gratuit 30 jours."
+description: "Solution de covoiturage entreprise : mise en relation des salariés, justificatifs FMD et suivi Scope 3. Intégrée à Microsoft Teams, premier mois offert."
 # accueil = requête tête commerciale « covoiturage entreprise » (solution pour
 # employeurs) ; Teams/Copilot = argument de différenciation, pas l'angle principal.
 # Les autres intentions ont leur page, ne pas les viser ici :
@@ -130,6 +130,9 @@ why_teamwheels:
   link:
     label: "Comparer avec BlaBlaCar Daily et Karos"
     href: "alternative-blablacar-daily-karos-entreprises/"
+  more_links:
+  - label: "Vous utilisiez Oxycar ? Voir l'alternative"
+    href: "alternative-oxycar/"
 
 # bandeau sous le comparatif (étapes + ligne sécurité) : masqué, la section
 # « Comment fonctionne » complète suit juste en dessous
@@ -178,8 +181,8 @@ work_process:
     - label: "Jour 1"
       title: "Installez"
       image: "images/how-it-works/home-fr-step-1.svg"
-      image_alt: "TeamWheels ajouté depuis le Microsoft Teams Store, connexion SSO et essai gratuit activés"
-      content: "Votre admin Microsoft 365 ajoute TeamWheels en 5 minutes. Pas d'app à télécharger : vos salariés se connectent avec leur compte pro. L'essai gratuit démarre à l'installation."
+      image_alt: "TeamWheels ajouté depuis le Microsoft Teams Store, connexion SSO et premier mois offert activé"
+      content: "Votre admin Microsoft 365 ajoute TeamWheels en 5 minutes. Pas d'app à télécharger : vos salariés se connectent avec leur compte pro. Le premier mois offert démarre à l'installation."
     - label: "Semaine 1"
       title: "Lancez"
       image: "images/how-it-works/home-fr-step-2.svg"
@@ -289,7 +292,7 @@ testimonials:
     - name: "Sophie Bernard"
       designation: "Office Manager, StartupDEF"
       image: "images/avatar/07.jpg"
-      content: "Simple à mettre en place et gratuit pendant 30 jours. On a pu tester sans engagement."
+      content: "Simple à mettre en place, et le premier mois offert nous a permis de tester en conditions réelles."
 
 
 # blog
@@ -314,7 +317,7 @@ next_step_button:
 call_to_action:
   enable: true
   title: "Lancez le covoiturage dans votre entreprise"
-  subtitle: "Rejoignez les entreprises qui réduisent leur Scope 3 et améliorent le bien-être de leurs équipes. <br><strong>Essai gratuit 30 jours</strong> + déploiement accompagné inclus. <em>Sans engagement.</em>"
+  subtitle: "Rejoignez les entreprises qui réduisent leur Scope 3 et améliorent le bien-être de leurs équipes. <br><strong>Premier mois offert</strong> + déploiement accompagné inclus. <em>Sans carte bancaire.</em>"
   button_label : "Recevoir une démo guidée →"
   button_link : "contact/"
   image : "images/cta.png"

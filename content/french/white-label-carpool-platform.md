@@ -50,7 +50,7 @@ image_and_content_blocks:
       | | Développement interne | TeamWheels en marque blanche | App de covoiturage générique |
       |---|---|---|---|
       | **Délai de mise en production** | 6 à 9 mois (cahier des charges, développement, audit sécurité, publication) | Quelques jours : installation en 5 minutes, personnalisation en une après-midi, pilote de 2 à 4 semaines | Quelques semaines, mais l'adoption cale : les salariés doivent télécharger et s'inscrire |
-      | **Coût de départ** | 100 000 à 200 000 €+ pour une v1 crédible | Aucun frais d'installation ; essai gratuit de 30 jours | Faible ou nul, payé en participation |
+      | **Coût de départ** | 100 000 à 200 000 €+ pour une v1 crédible | Aucun frais d'installation ; premier mois offert | Faible ou nul, payé en participation |
       | **Coût de maintenance** | 1 à 2 ETP pour la maintenance, les mises à jour mobiles, l'hébergement, le support | Abonnement par collaborateur, maintenance incluse | Abonnement par collaborateur ou par site |
       | **Propriété de la marque** | Totale — c'est votre app | Le nom, le logo et les couleurs de votre programme dans Microsoft Teams | La marque de l'éditeur, parfois avec un logo à télécharger |
       | **RGPD & hébergement** | Sous votre responsabilité de bout en bout | Dans votre propre tenant Microsoft 365, sous vos politiques ; données hébergées en France, RGPD, privacy by design | Cloud de l'éditeur, données hors de votre tenant |
@@ -139,13 +139,13 @@ image_and_content_blocks:
     content: |
       Acheter un logiciel de covoiturage en marque blanche chez TeamWheels, c'est souscrire un abonnement, pas financer un projet de développement. Le modèle est par collaborateur, et la grille publique est celle dont part chaque client :
 
-      * **Essai gratuit de 30 jours** — la plateforme complète jusqu'à 50 collaborateurs, sans carte bancaire ni engagement. La plupart des clients en marque blanche mènent leur pilote sur l'essai.
-      * **TeamWheels, 3 € HT par collaborateur et par mois (promo, au lieu de 5 € HT)** — collaborateurs illimités, bot Teams et moteur d'appariement, tableau de bord d'administration, suivi CO₂ en temps réel, justificatifs FMD, SSO Entra ID, statistiques avancées et support prioritaire. Facturation mensuelle ou annuelle, résiliable à tout moment.
+      * **Premier mois offert** — la plateforme complète jusqu'à 50 collaborateurs, sans carte bancaire. La plupart des clients en marque blanche mènent leur pilote pendant ce mois offert.
+      * **TeamWheels, 3 € HT par collaborateur et par mois (promo, au lieu de 5 € HT)** — collaborateurs illimités, bot Teams et moteur d'appariement, tableau de bord d'administration, suivi CO₂ en temps réel, justificatifs FMD, SSO Entra ID, statistiques avancées et support prioritaire. Facturation mensuelle ou annuelle, avec un engagement trimestriel après le premier mois offert.
       * **Entreprise, sur devis** — tout ce qui précède plus le pack marque blanche : votre marque et votre domaine, programmes multi-sites et multi-entités, intégrations RH et paie via l'API, SLA garanti, account manager dédié, onboarding personnalisé et rapports RSE sur mesure.
 
-      **Ce qui déclenche un devis plutôt que le tarif unique :** le volume (typiquement à partir de plusieurs centaines de collaborateurs ou de plusieurs sites), des exigences d'hébergement ou de résidence des données au-delà du déploiement standard dans le tenant Microsoft 365, des intégrations sur mesure avec un SIRH ou un logiciel de paie, et les programmes multi-employeurs portés par un campus ou une zone d'activité. Un devis est en général remis dans la semaine qui suit la démo, et l'essai continue entre-temps.
+      **Ce qui déclenche un devis plutôt que le tarif unique :** le volume (typiquement à partir de plusieurs centaines de collaborateurs ou de plusieurs sites), des exigences d'hébergement ou de résidence des données au-delà du déploiement standard dans le tenant Microsoft 365, des intégrations sur mesure avec un SIRH ou un logiciel de paie, et les programmes multi-employeurs portés par un campus ou une zone d'activité. Un devis est en général remis dans la semaine qui suit la démo, et le mois offert continue entre-temps.
 
-      **Comment acheter :** demandez une démo, menez l'essai gratuit avec votre groupe pilote, puis signez soit en ligne pour l'offre par collaborateur, soit un contrat annuel Entreprise pour le pack marque blanche. Bons de commande et virement sont acceptés pour les contrats annuels ; la plateforme est aussi référencée sur Microsoft AppSource, que certains services achats préfèrent.
+      **Comment acheter :** demandez une démo, menez le premier mois offert avec votre groupe pilote, puis signez soit en ligne pour l'offre par collaborateur, soit un contrat annuel Entreprise pour le pack marque blanche. Bons de commande et virement sont acceptés pour les contrats annuels ; la plateforme est aussi référencée sur Microsoft AppSource, que certains services achats préfèrent.
 
       Envie de la voir à vos couleurs ? [Regardez la démo de 60 secondes](/fr/demo/) ou [demandez une démo personnalisée →](/fr/contact/) et nous dimensionnerons le pack marque blanche pour votre organisation. La grille standard est détaillée sur la page [tarifs](/fr/pricing/).
     button:
@@ -183,11 +183,11 @@ faq:
   - question: "Jusqu'où peut-on personnaliser la marque ?"
     answer: "Nom du programme, logo, couleurs et domaine, ainsi que la formulation des messages du bot et des notifications, en français et en anglais. Les salariés voient votre marque dans Teams, à la connexion et dans chaque rappel. Ce qui reste standard, c'est le moteur d'appariement et le tableau de bord — c'est ce qui permet un déploiement en jours plutôt qu'en mois."
   - question: "Que se passe-t-il à la fin du contrat ?"
-    answer: "La plateforme est un abonnement, rien n'est verrouillé. Sur l'offre par collaborateur, vous résiliez à tout moment sans préavis ; les contrats annuels Entreprise s'arrêtent à leur terme sauf renouvellement. Vos administrateurs exportent au préalable les trajets, la participation et les données CO₂, et les données salariés sont supprimées de la plateforme conformément au RGPD à la clôture du compte — votre annuaire, lui, n'est jamais modifié."
+    answer: "La plateforme est un abonnement, sans verrouillage technique. Sur l'offre par collaborateur, après le premier mois offert, l'abonnement est souscrit avec un engagement trimestriel et peut être résilié à la fin de chaque trimestre ; les contrats annuels Entreprise s'arrêtent à leur terme sauf renouvellement. Vos administrateurs exportent au préalable les trajets, la participation et les données CO₂, et les données salariés sont supprimées de la plateforme conformément au RGPD à la clôture du compte — votre annuaire, lui, n'est jamais modifié."
   - question: "La plateforme est-elle disponible en dehors de Microsoft 365 ?"
     answer: "TeamWheels est conçu pour les organisations sur Microsoft 365 : le bot Teams, le SSO Entra ID et le modèle de données par tenant sont ce qui ramène le déploiement à quelques minutes et l'adoption au-delà de 40 %. Si une partie de vos effectifs n'est pas sur Microsoft 365 — par exemple dans une zone d'activité multi-employeurs — le pack Entreprise peut la couvrir via l'API et un accès web ; posez la question pendant la démo et nous vous dirons honnêtement ce qui convient."
   - question: "Combien coûte une app de covoiturage en marque blanche par rapport à un développement sur mesure ?"
-    answer: "Développer une app de covoiturage avec une agence prend en général 14 à 16 semaines et coûte 20 000 à 200 000 €+, maintenance en sus. TeamWheels se facture par collaborateur (à partir de 3 € par collaborateur et par mois, tarif promo) avec un essai gratuit de 30 jours ; le pack marque blanche est chiffré sur le volume, les sites et les intégrations, et s'installe en 5 minutes environ depuis Microsoft AppSource — la plupart des organisations atteignent un ROI positif dès le premier trimestre grâce aux seules économies de parking."
+    answer: "Développer une app de covoiturage avec une agence prend en général 14 à 16 semaines et coûte 20 000 à 200 000 €+, maintenance en sus. TeamWheels se facture par collaborateur (à partir de 3 € par collaborateur et par mois, tarif promo) avec le premier mois offert ; le pack marque blanche est chiffré sur le volume, les sites et les intégrations, et s'installe en 5 minutes environ depuis Microsoft AppSource — la plupart des organisations atteignent un ROI positif dès le premier trimestre grâce aux seules économies de parking."
   - question: "Les salariés doivent-ils télécharger une app séparée ?"
     answer: "Non. TeamWheels vit dans Microsoft Teams, que vos salariés utilisent déjà tous les jours. C'est la principale raison pour laquelle les programmes en marque blanche sur TeamWheels dépassent 40 % de participation, contre moins de 18 % pour les apps de covoiturage autonomes qui exigent un téléchargement et un nouveau compte."
 
@@ -215,7 +215,7 @@ howto:
 call_to_action:
   enable: true
   title: "Lancez votre plateforme de covoiturage à votre marque cette semaine"
-  subtitle: "Demandez une démo personnalisée et démarrez un essai gratuit de 30 jours — votre marque, votre tenant, opérationnel en quelques jours. <br><br> <strong>Installation en 5 minutes.</strong> Sans carte bancaire, sans projet de développement, sans app séparée pour les salariés."
+  subtitle: "Demandez une démo personnalisée et profitez du premier mois offert — votre marque, votre tenant, opérationnel en quelques jours. <br><br> <strong>Installation en 5 minutes.</strong> Sans carte bancaire, sans projet de développement, sans app séparée pour les salariés."
   button_label: "Demander ma démo →"
   button_link: "contact/"
   image: "images/cta.png"

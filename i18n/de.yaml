@@ -174,7 +174,7 @@
 - id: teams_install_button_short
   translation: In Teams testen
 - id: teams_install_trust
-  translation: 30 Tage kostenlos · Keine Kreditkarte · In 5 Minuten startklar
+  translation: Erster Monat kostenlos · Keine Kreditkarte · In 5 Minuten startklar
 - id: teams_admin_question
   translation: "Kein Admin?"
 - id: teams_admin_link
@@ -193,7 +193,7 @@
   translation: |
     Hallo,
 
-    ich würde gerne TeamWheels testen, eine in Microsoft Teams integrierte Fahrgemeinschafts-App für Mitarbeitende (30 Tage kostenlos, keine Kreditkarte).
+    ich würde gerne TeamWheels testen, eine in Microsoft Teams integrierte Fahrgemeinschafts-App für Mitarbeitende (erster Monat kostenlos, keine Kreditkarte).
 
     Könnten Sie die App für unsere Organisation freigeben?
 

@@ -185,7 +185,7 @@ Les matchings se font automatiquement. Dès le premier mois, la plupart des entr
 
 Le covoiturage d'entreprise n'est pas un gadget vert de plus. C'est l'un des rares dispositifs qui réduit réellement les émissions de scope 3, améliore concrètement la vie des salariés et produit des données auditables pour votre reporting — le tout pour un coût marginal.
 
-**TeamWheels** réunit ces trois bénéfices dans une solution intégrée à Microsoft 365 : matching automatique, gestion du Forfait Mobilité Durable audit-ready, et **tableau de bord RSE en temps réel** (km partagés, CO₂ évité, adoption). Gratuit jusqu'à 30 salariés, installation en moins d'une heure, aucun engagement.
+**TeamWheels** réunit ces trois bénéfices dans une solution intégrée à Microsoft 365 : matching automatique, gestion du Forfait Mobilité Durable audit-ready, et **tableau de bord RSE en temps réel** (km partagés, CO₂ évité, adoption). Premier mois offert jusqu'à 50 collaborateurs, installation en quelques minutes, puis engagement trimestriel.
 
 **[Demander une démo gratuite](/fr/contact/)** · **[Simuler mon impact CO₂ et mes économies](/fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/)**
 

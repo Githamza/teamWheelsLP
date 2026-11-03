@@ -245,9 +245,9 @@ By integrating directly into the tool your employees already use every day, Team
 
 **Ready to turn employee commuting from a Scope 3 liability into a sustainability win?**
 
-[Start Your Free Trial →](/en/contact/)
+[Get Your First Month Free →](/en/contact/)
 
-*30 days free for corporate programs. No commitment, no credit card required.*
+*First month free for corporate programs, no credit card required, then a quarterly commitment.*
 
 ---
 

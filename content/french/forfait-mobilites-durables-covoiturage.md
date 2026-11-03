@@ -4,7 +4,7 @@ seoTitle: "Forfait mobilités durables 2026 : guide employeur"
 description: "Prime covoiturage 2026 et forfait mobilités durables : montants, plafonds URSSAF, cumuls, mise en 4 étapes et justificatifs pour l'employeur."
 keywords: "forfait mobilités durables, forfait mobilité durable 2026, forfait mobilité durable urssaf, montant forfait mobilité durable 2026, plafond FMD 2026, forfait mobilités durables covoiturage, fmd covoiturage, prime covoiturage 2026, prime covoiturage employeur, justificatif covoiturage fmd, attestation covoiturage employeur, preuve de covoiturage"
 layout: "benefits"
-lastmod: 2026-11-02
+lastmod: 2026-11-03
 # L'article de blog « Forfait Mobilité Durable : le guide complet » (slug 2025)
 # a été fusionné dans cette page pilier en septembre 2026. L'alias est relatif à
 # la racine de langue ; la 301 serveur est déclarée dans static/.htaccess.
@@ -39,6 +39,22 @@ image_and_content_blocks:
       | Plafond global d'exonération FMD + prime de transport (carburant, recharge) | **600 €** au total |
 
       Source : [URSSAF, frais professionnels — forfait mobilités durables](https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/frais-professionnels.html#ancre-FMD) et [service-public.gouv.fr](https://entreprendre.service-public.gouv.fr/vosdroits/F33808). La prime nationale de 100 € pour les nouveaux conducteurs a été supprimée fin janvier 2025 ; le détail des montants et des cumuls est donné [plus bas](#montants).
+    button:
+      enable: false
+
+  # Encadré de conversion (03/11/2026) : la page capte beaucoup de salariés ;
+  # les employeurs sont renvoyés vers la page logiciel FMD.
+  - enable: true
+    anchor: "vous-etes-employeur"
+    subtitle: "Vous êtes employeur ?"
+    title: "Gérer le FMD sans tableur ni attestations"
+    content_position: "left"
+    content: |
+      Verser le forfait, c'est surtout savoir chaque mois **qui a covoituré, combien de jours, avec quelle preuve**. TeamWheels enregistre les trajets partagés dans Microsoft Teams et produit un **relevé mensuel par salarié**, exportable pour la paie, avec le reporting CO₂ et parking.
+
+      [Voir le logiciel de gestion du forfait mobilités durables →](/fr/logiciel-forfait-mobilites-durables/)
+
+      *Vous êtes salarié ? Montrez ce guide à votre service RH : le FMD est facultatif, c'est l'employeur qui décide de le mettre en place.*
     button:
       enable: false
 
@@ -293,7 +309,7 @@ howto:
 call_to_action:
   enable: true
   title: "Versez le FMD covoiturage sans collecter une seule attestation"
-  subtitle: "Demandez une démo : covoiturage organisé dans Microsoft Teams, relevés de trajets automatiques prêts pour la paie, reporting RSE inclus. <br><br> <strong>Essai gratuit de 30 jours.</strong> Installation en 5 minutes, sans app séparée pour les salariés."
+  subtitle: "Demandez une démo : covoiturage organisé dans Microsoft Teams, relevés de trajets automatiques prêts pour la paie, reporting RSE inclus. <br><br> <strong>Premier mois offert.</strong> Installation en 5 minutes, sans app séparée pour les salariés."
   button_label: "Demander ma démo →"
   button_link: "contact/"
   image: "images/cta.png"

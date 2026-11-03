@@ -3,13 +3,13 @@ title: "Demo aanvragen | TeamWheels, carpoolen voor bedrijven"
 description: "Vraag een demo aan van TeamWheels, carpoolen in Microsoft Teams: zo verloopt de demo van 30 minuten, voor wie en wat u voorbereidt. Antwoord binnen 24 uur."
 draft: false
 layout: "contact"
-keywords: "demo carpoolen bedrijf, carpool app demo, gratis proefperiode carpoolen, contact TeamWheels, advies bedrijfsmobiliteit"
+keywords: "demo carpoolen bedrijf, carpool app demo, eerste maand gratis carpoolen, contact TeamWheels, advies bedrijfsmobiliteit"
 
 # contact
 contact:
-  subtitle: "30 dagen gratis"
-  title: "Start uw gratis proefperiode"
-  description: "Vul dit formulier in en een lid van ons team neemt binnen 24 uur contact met u op om uw TeamWheels-omgeving in te richten. <br><br> ✅ 30 dagen gratis &nbsp;&nbsp; ✅ Begeleide installatie &nbsp;&nbsp; ✅ Zonder verplichtingen"
+  subtitle: "Eerste maand gratis"
+  title: "Start uw gratis eerste maand"
+  description: "Vul dit formulier in en een lid van ons team neemt binnen 24 uur contact met u op om uw TeamWheels-omgeving in te richten. <br><br> ✅ Eerste maand gratis &nbsp;&nbsp; ✅ Begeleide installatie &nbsp;&nbsp; ✅ Geen kredietkaart nodig"
 
 # contact info
 contact_info:
@@ -30,16 +30,16 @@ services:
 faq_title: "Veelgestelde vragen voor u contact opneemt"
 faq:
   - question: "Wat gebeurt er nadat ik het formulier verstuur?"
-    answer: "Een lid van het TeamWheels-team antwoordt binnen 24 werkuren om een demo van 30 minuten in te plannen. Wilt u liever meteen de gratis proefperiode starten? Dan sturen we u de installatielink voor de Microsoft Teams Store en een configuratiegids voor uw Teams-beheerder."
-  - question: "Gaat uw organisatie met de gratis proefperiode een verbintenis aan?"
-    answer: "Nee. De proefperiode duurt 30 dagen, geldt voor maximaal 50 medewerkers, vraagt geen kredietkaart en stopt vanzelf als u niet verdergaat. Uw gegevens worden dan verwijderd volgens de GDPR."
+    answer: "Een lid van het TeamWheels-team antwoordt binnen 24 werkuren om een demo van 30 minuten in te plannen. Wilt u liever meteen uw gratis eerste maand starten? Dan sturen we u de installatielink voor de Microsoft Teams Store en een configuratiegids voor uw Teams-beheerder."
+  - question: "Gaat uw organisatie met de gratis eerste maand een verbintenis aan?"
+    answer: "Nee. De gratis eerste maand geldt voor maximaal 50 medewerkers, vraagt geen kredietkaart en stopt vanzelf als u niet verdergaat; uw gegevens worden dan verwijderd volgens de GDPR. Gaat u verder, dan loopt het abonnement met een looptijd van telkens drie maanden."
   - question: "Kunt u ons helpen om de businesscase intern te onderbouwen?"
     answer: "Ja. Tijdens de demo berekenen we samen met u de vrijgekomen parkeerplaatsen, de vermeden CO₂ en de besparingen op basis van uw personeelsbestand en uw sites, en u krijgt een document mee om aan uw directie voor te leggen."
 ---
 
 ## Hoe de demo verloopt
 
-Nadat u het formulier hierboven hebt verstuurd, nemen we binnen 24 werkuren contact met u op. De demo zelf duurt **30 minuten via videogesprek** en verloopt in drie delen: uw situatie (sites, aantal medewerkers, doelen rond parkeren, Scope 3 of uw mobiliteitsbeleid), een volledige rondleiding in Microsoft Teams (een medewerker biedt een rit aan, de matching, de meldingen, het beheerdersdashboard en het overzicht van de gedeelde ritten) en tot slot de afbakening van een gratis proefperiode van 30 dagen voor een pilootgroep. U kunt ook starten met de [demovideo van 60 seconden](https://www.teamwheelsapp.com/en/demo/) (Engelstalig).
+Nadat u het formulier hierboven hebt verstuurd, nemen we binnen 24 werkuren contact met u op. De demo zelf duurt **30 minuten via videogesprek** en verloopt in drie delen: uw situatie (sites, aantal medewerkers, doelen rond parkeren, Scope 3 of uw mobiliteitsbeleid), een volledige rondleiding in Microsoft Teams (een medewerker biedt een rit aan, de matching, de meldingen, het beheerdersdashboard en het overzicht van de gedeelde ritten) en tot slot de afbakening van uw gratis eerste maand voor een pilootgroep. U kunt ook starten met de [demovideo van 60 seconden](https://www.teamwheelsapp.com/en/demo/) (Engelstalig).
 
 ## Voor wie
 

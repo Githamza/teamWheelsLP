@@ -12,7 +12,7 @@ banner:
   description: "Transform Microsoft Teams into a complete commute management platform for your organization. Your employees match rides, share commutes, and reduce Scope 3 emissions — all from their existing Teams workspace."
   button:
     enable: true
-    button_label: "Start free 30-day trial"
+    button_label: "Get your first month free"
     icon: "fas fa-arrow-right"
     link: "contact/"
 
@@ -115,7 +115,7 @@ faq:
 call_to_action:
   enable: true
   title: "Ready to Launch Employee Carpooling in Your Organization?"
-  subtitle: "Join companies across the USA, UK, and Canada that are solving commute challenges, reducing Scope 3 emissions, and boosting employee satisfaction with TeamWheels. <br><br> <strong>Get started:</strong> Free 30-day trial + guided deployment for your team."
+  subtitle: "Join companies across the USA, UK, and Canada that are solving commute challenges, reducing Scope 3 emissions, and boosting employee satisfaction with TeamWheels. <br><br> <strong>Get started:</strong> First month free + guided deployment for your team."
   button_label : "Get a guided demo →"
   button_link : "contact/"
   image : "images/cta.png"

@@ -4,7 +4,7 @@ seoTitle: "Logiciel de covoiturage entreprise | TeamWheels"
 description: "Logiciel de covoiturage entreprise intégré à Microsoft Teams : mise en relation des trajets, justificatifs FMD, reporting CO₂, 3 € HT/collaborateur/mois (promo), déployé en 5 minutes."
 keywords: "logiciel covoiturage entreprise, outil covoiturage entreprise, application covoiturage entreprise, covoiturage entreprise, plateforme covoiturage entreprise, covoiturage domicile-travail, logiciel covoiturage salariés, Forfait Mobilité Durable, covoiturage Microsoft Teams"
 layout: "benefits"
-lastmod: 2026-11-01
+lastmod: 2026-11-03
 
 banner:
   subtitle: "Pour les équipes RH, Mobilité & RSE"
@@ -69,7 +69,7 @@ image_and_content_blocks:
     title: "Comment fonctionne TeamWheels dans Microsoft Teams"
     image: "images/how-it-works/home-fr-step-1.svg"
     image_fit: true
-    image_alt: "Installation de l'application TeamWheels depuis le Microsoft Teams Store, avec connexion SSO et essai gratuit de 30 jours"
+    image_alt: "Installation de l'application TeamWheels depuis le Microsoft Teams Store, avec connexion SSO et premier mois offert"
     content_position: "left"
     content: "TeamWheels n'est pas une app à côté de Teams : c'est une application Teams validée par Microsoft, installée depuis AppSource dans votre propre tenant Microsoft 365. Voici ce qui se passe, côté salarié et côté administrateur.
 
@@ -148,7 +148,7 @@ image_and_content_blocks:
 
     * **Export pour la paie** — Les RH exportent les justificatifs en un clic, sans ressaisie
 
-    Montants, conditions de mise en place et cumul avec l'abonnement transport : voir le [guide employeur du forfait mobilités durables →](/fr/forfait-mobilites-durables-covoiturage/). Pour les salariés qui covoiturent hors de l'outil, utilisez le [modèle d'attestation de covoiturage →](/fr/attestation-covoiturage-forfait-mobilites-durables/)
+    Montants, conditions de mise en place et cumul avec l'abonnement transport : voir le [guide employeur du forfait mobilités durables →](/fr/forfait-mobilites-durables-covoiturage/). Pour les salariés qui covoiturent hors de l'outil, utilisez le [modèle d'attestation de covoiturage →](/fr/attestation-covoiturage-forfait-mobilites-durables/). Export paie, DSN, conservation et reporting : voir le [logiciel de gestion du forfait mobilités durables →](/fr/logiciel-forfait-mobilites-durables/)
     "
     button:
       enable: false
@@ -163,11 +163,11 @@ image_and_content_blocks:
 
       | Offre | Prix | Ce qui est inclus |
       |---|---|---|
-      | **Essai gratuit** | 0 € pendant 30 jours | Application Teams complète, bot conversationnel, tableau de bord administrateur, jusqu'à 50 collaborateurs, sans carte bancaire |
+      | **Premier mois offert** | 0 € le premier mois | Application Teams complète, bot conversationnel, tableau de bord administrateur, jusqu'à 50 collaborateurs, sans carte bancaire |
       | **TeamWheels** | **3 € HT par collaborateur et par mois** (promo, au lieu de 5 € HT) | Collaborateurs illimités, suivi CO₂ en temps réel, justificatifs FMD automatiques, SSO Entra ID, statistiques avancées, support prioritaire, données hébergées en France |
       | **Entreprise** | Sur devis | Multi-sites et multi-entités, API et intégrations RH, SLA garanti, account manager dédié, onboarding personnalisé, rapports RSE sur mesure |
 
-      Le prix est le même que vous soyez 10 ou 10 000 : 3 € HT (tarif promo, au lieu de 5 € HT) par collaborateur et par mois, facturés mensuellement ou annuellement, résiliables à tout moment sans préavis. Pour situer l'ordre de grandeur : une place de parking en zone urbaine coûte entre 100 et 300 € par mois ; un programme qui retire 20 voitures d'un site de 200 salariés rembourse la solution dès le premier trimestre, avant même de compter le FMD et le CO₂ évité.
+      Le prix est le même que vous soyez 10 ou 10 000 : 3 € HT (tarif promo, au lieu de 5 € HT) par collaborateur et par mois, facturés mensuellement ou annuellement, avec un engagement trimestriel après le premier mois offert. Pour situer l'ordre de grandeur : une place de parking en zone urbaine coûte entre 100 et 300 € par mois ; un programme qui retire 20 voitures d'un site de 200 salariés rembourse la solution dès le premier trimestre, avant même de compter le FMD et le CO₂ évité.
 
       Le détail des offres, les moyens de paiement et les questions sur la facturation sont sur la page [tarifs →](/fr/pricing/)
     button:
@@ -181,11 +181,11 @@ image_and_content_blocks:
     content: |
       Les deux ne s'opposent pas : il s'agit du même logiciel de covoiturage entreprise, déployé de deux façons.
 
-      **TeamWheels en standard** convient à la grande majorité des employeurs : l'application s'installe dans votre tenant Microsoft 365 sous le nom TeamWheels, avec vos sites, vos règles d'appariement et votre politique FMD. Cinq minutes d'installation, un essai gratuit, un prix par collaborateur.
+      **TeamWheels en standard** convient à la grande majorité des employeurs : l'application s'installe dans votre tenant Microsoft 365 sous le nom TeamWheels, avec vos sites, vos règles d'appariement et votre politique FMD. Cinq minutes d'installation, un premier mois offert, un prix par collaborateur.
 
       **La version en marque blanche** s'adresse aux grands comptes, campus, hôpitaux et zones d'activité qui veulent faire covoiturer leurs équipes sous leur propre nom. Mise en place en quelques jours, tarif sur devis.
 
-      Si vous hésitez, commencez par l'essai standard : la marque blanche s'active ensuite sans réinstallation. Le détail des options, du calendrier de déploiement et des intégrations est sur la page [plateforme de covoiturage en marque blanche →](/fr/white-label-carpool-platform/)
+      Si vous hésitez, commencez par le premier mois offert en version standard : la marque blanche s'active ensuite sans réinstallation. Le détail des options, du calendrier de déploiement et des intégrations est sur la page [plateforme de covoiturage en marque blanche →](/fr/white-label-carpool-platform/)
     button:
       enable: false
 
@@ -200,20 +200,22 @@ faq:
   - question: "Combien de temps prend le déploiement ?"
     answer: "Environ 5 minutes pour l'installation : un administrateur Teams ajoute TeamWheels depuis Microsoft AppSource dans votre tenant Microsoft 365, accorde le consentement Entra ID et déclare vos sites. Pas de projet IT, pas d'infrastructure, pas d'app à faire télécharger. Comptez ensuite deux à quatre semaines de pilote avec 20 à 50 volontaires avant la généralisation."
   - question: "Combien coûte un logiciel de covoiturage entreprise ?"
-    answer: "TeamWheels propose un essai gratuit de 30 jours jusqu'à 50 collaborateurs, puis un tarif unique de 3 € HT par collaborateur et par mois (promo, au lieu de 5 € HT), tout inclus (bot, appariement, justificatifs FMD, reporting CO₂, SSO, support prioritaire). Les grandes organisations multi-sites disposent d'une offre Entreprise sur devis. La plupart des clients atteignent un ROI positif dès le premier trimestre grâce aux seules économies de parking."
+    answer: "TeamWheels offre le premier mois jusqu'à 50 collaborateurs, puis un tarif unique de 3 € HT par collaborateur et par mois (promo, au lieu de 5 € HT) avec engagement trimestriel, tout inclus (bot, appariement, justificatifs FMD, reporting CO₂, SSO, support prioritaire). Les grandes organisations multi-sites disposent d'une offre Entreprise sur devis. La plupart des clients atteignent un ROI positif dès le premier trimestre grâce aux seules économies de parking."
   - question: "Peut-on déployer une plateforme de covoiturage entreprise en marque blanche ?"
     answer: "Oui. TeamWheels se déploie en marque blanche dans votre propre tenant Microsoft 365, à votre marque et selon vos politiques IT. Les salariés s'authentifient avec leur compte professionnel existant via le SSO Azure AD / Entra ID : aucun compte séparé à provisionner, et l'expérience s'intègre à vos outils internes plutôt qu'à une app tierce."
   - question: "Comment les données des salariés sont-elles sécurisées ?"
     answer: "L'authentification passe par le SSO Azure AD / Entra ID, l'application tourne dans votre tenant Microsoft 365, les données sont hébergées en France et la plateforme est conforme RGPD, privacy by design. Seules les informations nécessaires à l'appariement (site, horaires, secteur de départ) sont traitées."
   - question: "Quel outil de covoiturage entreprise choisir pour un site industriel ?"
     answer: "Sur un site industriel, souvent excentré, avec des équipes en horaires postés et un parking saturé, privilégiez un outil qui regroupe les covoitureurs par site et par créneau plutôt qu'un grand réseau ouvert : le volume utile est celui de vos propres salariés. Vérifiez que l'appariement tient compte des horaires et du site de chacun, que l'outil est accessible sans nouvelle application pour les équipes de production, et qu'il produit les justificatifs FMD et le reporting CO₂ dont vos équipes RH et RSE ont besoin. TeamWheels répond à ces critères dans Microsoft Teams."
+  - question: "Quelle alternative à Oxycar, BlaBlaCar Daily ou Karos pour une entreprise ?"
+    answer: "Oxycar a été liquidé en 2023 et BlaBlaCar Daily a été repris par Karos en 2026. Pour un covoiturage entre collègues piloté par l'employeur, TeamWheels fonctionne directement dans Microsoft Teams, avec relevés FMD par salarié et reporting CO₂. Comparatifs détaillés : [alternative à Oxycar](/fr/alternative-oxycar/) et [alternative à BlaBlaCar Daily et Karos](/fr/alternative-blablacar-daily-karos-entreprises/)."
   - question: "TeamWheels est-il une application ou un logiciel de covoiturage entreprise ?"
     answer: "Les deux. TeamWheels est une application Microsoft Teams que vos salariés utilisent pour proposer et trouver des trajets, et un logiciel de covoiturage entreprise pour les administrateurs, avec tableau de bord, justificatifs FMD et reporting CO₂. Outil, application ou logiciel : ces termes désignent la même catégorie côté employeur, et TeamWheels couvre l'ensemble depuis une seule installation dans votre tenant Microsoft 365."
 
 call_to_action:
   enable: true
   title: "Voyez le logiciel de covoiturage entreprise en action"
-  subtitle: "Demandez une démo personnalisée et démarrez un essai gratuit de 30 jours — avec déploiement accompagné pour vos équipes RH et RSE. <br><br> <strong>Installation en 5 minutes.</strong> Sans carte bancaire. Directement dans le Microsoft Teams que vos salariés utilisent déjà."
+  subtitle: "Demandez une démo personnalisée et profitez du premier mois offert — avec déploiement accompagné pour vos équipes RH et RSE. <br><br> <strong>Installation en 5 minutes.</strong> Sans carte bancaire. Directement dans le Microsoft Teams que vos salariés utilisent déjà."
   button_label: "Demander ma démo →"
   button_link: "contact/"
   image: "images/cta.png"

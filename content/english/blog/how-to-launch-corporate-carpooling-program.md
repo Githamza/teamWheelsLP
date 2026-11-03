@@ -159,6 +159,6 @@ Track these KPIs to measure program success:
 
 A successful carpooling program can save your organization thousands while improving employee wellbeing and meeting sustainability goals.
 
-Start your 30-day journey today with a free trial of TeamWheels - the carpooling solution built into Microsoft Teams.
+Start your 30-day journey today with TeamWheels - the carpooling solution built into Microsoft Teams, with your first month free.
 
-**[Start Free Trial →](/en/contact/)**
+**[Get Your First Month Free →](/en/contact/)**

@@ -49,7 +49,7 @@ image_and_content_blocks:
       | | Desarrollo interno | TeamWheels en marca blanca | App de carpooling genérica |
       |---|---|---|---|
       | **Plazo hasta producción** | 6–9 meses (especificación, desarrollo, revisión de seguridad, publicación en tiendas) | Días: instalación en 5 minutos, personalización y configuración en una tarde, piloto en 2–4 semanas | Semanas, pero la adopción se estanca: los empleados deben descargarla y registrarse |
-      | **Coste inicial** | 100.000–200.000 € o más para una primera versión creíble | Sin coste de puesta en marcha; prueba gratuita de 30 días | Bajo o gratuito, pero se paga en participación |
+      | **Coste inicial** | 100.000–200.000 € o más para una primera versión creíble | Sin coste de puesta en marcha; primer mes gratis | Bajo o gratuito, pero se paga en participación |
       | **Coste recurrente** | 1–2 personas a tiempo completo para mantenimiento, actualizaciones móviles, alojamiento y soporte | Suscripción por usuario, mantenimiento incluido | Suscripción por usuario o por sede |
       | **Propiedad de la marca** | Total: es su app | El nombre de su programa, su logotipo y sus colores dentro de Microsoft Teams | La marca del proveedor, a veces con opción de subir un logotipo |
       | **RGPD y alojamiento** | Responsabilidad suya de principio a fin | Funciona en su propio tenant de Microsoft 365 bajo sus políticas; conforme al RGPD, privacidad desde el diseño | Nube del proveedor, contrato de encargo del proveedor, datos fuera de su tenant |
@@ -138,13 +138,13 @@ image_and_content_blocks:
     content: |
       Cuando compra el software de coche compartido de marca blanca de TeamWheels, compra una suscripción, no un proyecto de desarrollo. El modelo de precios es por usuario, y la tarifa pública es la misma de la que parten todos los clientes:
 
-      * **Prueba gratuita de 30 días**: la plataforma completa para hasta 50 empleados, sin tarjeta de crédito ni compromiso. La mayoría de los clientes de marca blanca realizan su piloto durante la prueba.
-      * **TeamWheels, 3 € por empleado/mes + IVA (promoción, antes 5 €)**: empleados ilimitados, el bot de Teams y el motor de emparejamiento, el panel de administración, el seguimiento de CO₂ en tiempo real, los registros de beneficios de movilidad y FMD, SSO con Entra ID, estadísticas avanzadas y soporte prioritario. Facturación mensual o anual, cancelación en cualquier momento.
+      * **Primer mes gratis**: la plataforma completa para hasta 50 empleados, sin tarjeta de crédito. La mayoría de los clientes de marca blanca realizan su piloto durante el mes gratis.
+      * **TeamWheels, 3 € por empleado/mes + IVA (promoción, antes 5 €)**: empleados ilimitados, el bot de Teams y el motor de emparejamiento, el panel de administración, el seguimiento de CO₂ en tiempo real, los registros de beneficios de movilidad y FMD, SSO con Entra ID, estadísticas avanzadas y soporte prioritario. Facturación mensual o anual, con compromiso trimestral tras el primer mes gratis.
       * **Enterprise, bajo presupuesto**: todo lo anterior más el paquete de marca blanca: su marca y su dominio, programas multisede y multientidad, integraciones con RR. HH. y nóminas a través de la API, un SLA garantizado, un gestor de cuenta dedicado, onboarding personalizado e informes ESG a medida.
 
-      **Qué requiere un presupuesto en lugar de la tarifa plana:** el volumen (normalmente a partir de varios cientos de usuarios o varias sedes), requisitos de alojamiento o de residencia de datos más allá del despliegue estándar en el tenant de Microsoft 365, integraciones a medida con un HRIS o un sistema de nóminas, y programas multiempleador gestionados por un campus o un parque empresarial. El presupuesto suele entregarse en la semana siguiente a la demo, y la prueba sigue activa mientras tanto.
+      **Qué requiere un presupuesto en lugar de la tarifa plana:** el volumen (normalmente a partir de varios cientos de usuarios o varias sedes), requisitos de alojamiento o de residencia de datos más allá del despliegue estándar en el tenant de Microsoft 365, integraciones a medida con un HRIS o un sistema de nóminas, y programas multiempleador gestionados por un campus o un parque empresarial. El presupuesto suele entregarse en la semana siguiente a la demo, y el mes gratis sigue activo mientras tanto.
 
-      **Cómo comprar:** reserve una demo, realice la prueba gratuita con su grupo piloto y, después, contrate en línea el plan plano por usuario o firme un acuerdo Enterprise anual para el paquete de marca blanca. Para los contratos anuales se aceptan órdenes de compra y transferencia bancaria; la plataforma también figura en Microsoft AppSource, algo que prefieren algunos equipos de compras.
+      **Cómo comprar:** reserve una demo, aproveche el primer mes gratis con su grupo piloto y, después, contrate en línea el plan plano por usuario o firme un acuerdo Enterprise anual para el paquete de marca blanca. Para los contratos anuales se aceptan órdenes de compra y transferencia bancaria; la plataforma también figura en Microsoft AppSource, algo que prefieren algunos equipos de compras.
 
       ¿Quiere verla con su propia marca? [Vea la demo de 60 segundos](/es/demo/) o [reserve una demo personalizada →](/es/contact/) y dimensionaremos el paquete de marca blanca para su organización. La tarifa estándar se detalla en la [página de precios](/es/pricing/).
     button:
@@ -182,11 +182,11 @@ faq:
   - question: "¿Hasta qué punto se puede personalizar la marca?"
     answer: "Nombre del programa, logotipo, colores y dominio, además del texto de los mensajes del bot y de las notificaciones en inglés y francés. Los empleados ven su marca en Teams, en el inicio de sesión y en cada recordatorio. Lo que se mantiene estándar es el motor de emparejamiento y el panel, y eso es lo que permite desplegar en días en lugar de meses."
   - question: "¿Qué ocurre al final del contrato?"
-    answer: "La plataforma es una suscripción, así que no hay permanencia. Con el plan plano por usuario puede cancelar en cualquier momento sin preaviso; los acuerdos Enterprise anuales finalizan a su vencimiento salvo renovación. Sus administradores pueden exportar previamente los datos de trayectos, participación y CO₂, y los datos de los empleados se eliminan de la plataforma conforme al RGPD una vez cerrada la cuenta; el directorio es suyo y nunca se modifica."
+    answer: "La plataforma es una suscripción, sin bloqueo técnico. Con el plan plano por usuario, tras el primer mes gratis la suscripción se contrata con compromiso trimestral y puede darse de baja al final de cada trimestre; los acuerdos Enterprise anuales finalizan a su vencimiento salvo renovación. Sus administradores pueden exportar previamente los datos de trayectos, participación y CO₂, y los datos de los empleados se eliminan de la plataforma conforme al RGPD una vez cerrada la cuenta; el directorio es suyo y nunca se modifica."
   - question: "¿Está disponible la plataforma fuera de Microsoft 365?"
     answer: "TeamWheels está diseñada para organizaciones que utilizan Microsoft 365: el bot de Teams, el inicio de sesión único con Entra ID y el modelo de datos basado en el tenant son lo que permite desplegar en minutos y superar el 40 % de adopción. Si parte de su plantilla no utiliza Microsoft 365 (por ejemplo, en un parque empresarial con varios empleadores), el paquete Enterprise puede cubrirla mediante la API y el acceso web; pregúntenos durante la demo y le diremos con franqueza qué encaja."
   - question: "¿Cuánto cuesta una app de coche compartido de marca blanca frente a desarrollarla?"
-    answer: "Desarrollar una app de coche compartido desde cero con una agencia suele llevar de 14 a 16 semanas y costar de 20.000 a más de 200.000 €, más el mantenimiento continuo. TeamWheels tiene un precio por usuario (desde 3 € por empleado/mes, precio promocional) con una prueba gratuita de 30 días; el paquete de marca blanca se presupuesta según volumen, sedes e integraciones, y se despliega desde Microsoft AppSource en unos 5 minutos. La mayoría de las organizaciones obtienen un ROI positivo en el primer trimestre solo con el ahorro en aparcamiento."
+    answer: "Desarrollar una app de coche compartido desde cero con una agencia suele llevar de 14 a 16 semanas y costar de 20.000 a más de 200.000 €, más el mantenimiento continuo. TeamWheels tiene un precio por usuario (desde 3 € por empleado/mes, precio promocional) con el primer mes gratis; el paquete de marca blanca se presupuesta según volumen, sedes e integraciones, y se despliega desde Microsoft AppSource en unos 5 minutos. La mayoría de las organizaciones obtienen un ROI positivo en el primer trimestre solo con el ahorro en aparcamiento."
   - question: "¿Necesitan los empleados descargar una app aparte?"
     answer: "No. TeamWheels está dentro de Microsoft Teams, que sus empleados ya utilizan a diario. Esa es la principal razón por la que los programas de marca blanca con TeamWheels superan el 40 % de participación, frente a menos del 18 % en las apps de coche compartido independientes que exigen una descarga y una cuenta nueva."
 
@@ -214,7 +214,7 @@ howto:
 call_to_action:
   enable: true
   title: "Lance su plataforma de coche compartido con su marca esta misma semana"
-  subtitle: "Reserve una demo personalizada y empiece una prueba gratuita de 30 días: su marca, su tenant, activa en días. <br><br> <strong>Configuración en 5 minutos.</strong> Sin tarjeta de crédito, sin proyecto de desarrollo y sin app adicional para los empleados."
+  subtitle: "Reserve una demo personalizada y aproveche el primer mes gratis: su marca, su tenant, activa en días. <br><br> <strong>Configuración en 5 minutos.</strong> Sin tarjeta de crédito, sin proyecto de desarrollo y sin app adicional para los empleados."
   button_label: "Reservar mi demo →"
   button_link: "contact/"
   image: "images/cta.png"

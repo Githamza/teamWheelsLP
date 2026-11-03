@@ -176,7 +176,7 @@
 - id: teams_install_button_short
   translation: Probeer het in Teams
 - id: teams_install_trust
-  translation: 30 dagen gratis · Geen kredietkaart nodig · In 5 minuten live
+  translation: Eerste maand gratis · Geen kredietkaart nodig · In 5 minuten live
 - id: teams_admin_question
   translation: "Bent u geen beheerder?"
 - id: teams_admin_link
@@ -195,7 +195,7 @@
   translation: |
     Hallo,
 
-    Ik wil graag TeamWheels uitproberen, een carpoolapp voor medewerkers, ingebouwd in Microsoft Teams (30 dagen gratis, geen kredietkaart nodig).
+    Ik wil graag TeamWheels uitproberen, een carpoolapp voor medewerkers, ingebouwd in Microsoft Teams (eerste maand gratis, geen kredietkaart nodig).
 
     Kunt u de app toestaan voor onze organisatie?
 

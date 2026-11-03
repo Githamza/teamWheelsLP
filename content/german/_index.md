@@ -1,7 +1,7 @@
 ---
 title: "TeamWheels | Betriebliche Fahrgemeinschaften für Ihre Mitarbeitenden"
 seoTitle: "Fahrgemeinschaften im Unternehmen | TeamWheels"
-description: "Betriebliche Fahrgemeinschaften: Mitarbeitende finden Mitfahrende, Fahrtnachweise und Scope-3-Reporting inklusive. In Microsoft Teams, 30 Tage kostenlos."
+description: "Betriebliche Fahrgemeinschaften: Mitarbeitende finden Mitfahrende, Fahrtnachweise und Scope-3-Reporting inklusive. In Microsoft Teams, erster Monat kostenlos."
 # Startseite = kommerzieller Hauptbegriff „Fahrgemeinschaften Unternehmen“ (Lösung für Arbeitgeber);
 # Teams/Copilot = Unterscheidungsmerkmal, nicht der Aufhänger. Software / App → corporate-carpooling-software
 keywords: "Fahrgemeinschaften Unternehmen, betriebliche Fahrgemeinschaften, Fahrgemeinschaft Mitarbeiter, Fahrgemeinschaftsprogramm, Mitfahrgelegenheit für Mitarbeiter, TeamWheels"
@@ -173,8 +173,8 @@ work_process:
     - label: "Tag 1"
       title: "Installieren"
       image: "images/how-it-works/home-de-step-1.svg"
-      image_alt: "TeamWheels aus dem Microsoft Teams Store hinzugefügt, Anmeldung per SSO und kostenloser Test aktiviert"
-      content: "Ihre Microsoft-365-Administration fügt TeamWheels in 5 Minuten hinzu. Keine App zum Herunterladen: Ihre Mitarbeitenden melden sich mit ihrem Arbeitskonto an. Der kostenlose Test startet mit der Installation."
+      image_alt: "TeamWheels aus dem Microsoft Teams Store hinzugefügt, Anmeldung per SSO und kostenloser erster Monat aktiviert"
+      content: "Ihre Microsoft-365-Administration fügt TeamWheels in 5 Minuten hinzu. Keine App zum Herunterladen: Ihre Mitarbeitenden melden sich mit ihrem Arbeitskonto an. Der kostenlose erste Monat startet mit der Installation."
     - label: "Woche 1"
       title: "Starten"
       image: "images/how-it-works/home-de-step-2.svg"
@@ -286,7 +286,7 @@ next_step_button:
 call_to_action:
   enable: true
   title: "Starten Sie ein Fahrgemeinschaftsprogramm in Ihrem Unternehmen"
-  subtitle: "Schließen Sie sich Unternehmen in ganz Europa und Nordamerika an, die ihre Scope-3-Emissionen senken und das Wohlbefinden ihrer Mitarbeitenden verbessern. <br><strong>30 Tage kostenlos testen</strong> + begleitete Einführung inklusive. <em>Keine Kreditkarte erforderlich.</em>"
+  subtitle: "Schließen Sie sich Unternehmen in ganz Europa und Nordamerika an, die ihre Scope-3-Emissionen senken und das Wohlbefinden ihrer Mitarbeitenden verbessern. <br><strong>Erster Monat kostenlos</strong> + begleitete Einführung inklusive. <em>Keine Kreditkarte erforderlich.</em>"
   button_label : "Begleitete Demo anfordern →"
   button_link : "contact/"
   image : "images/cta.png"
