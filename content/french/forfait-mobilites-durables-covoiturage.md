@@ -4,7 +4,7 @@ seoTitle: "Forfait mobilités durables 2026 : le guide employeur"
 description: "Forfait mobilités durables 2026 : plafonds URSSAF, modes éligibles, cumuls, justificatifs et mise en place. Le guide employeur pour verser le FMD sans risque."
 keywords: "forfait mobilités durables, forfait mobilité durable, forfait mobilité durable 2026, forfait mobilité durable urssaf, montant forfait mobilité durable 2026, plafond FMD 2026, fmd covoiturage"
 layout: "benefits"
-lastmod: 2026-11-03
+lastmod: 2026-11-04
 # Refonte J+4 (spec du 28/10/2026) le 03/11/2026 : page dégraissée vers le
 # terme principal ; chaque section déplacée garde 2-3 lignes et un lien vers
 # sa page dédiée. Surveiller les positions : retour arrière si décrochage sur
@@ -104,7 +104,7 @@ image_and_content_blocks:
     title: "Prime covoiturage 2026 : ce qu'il en reste"
     content_position: "left"
     content: |
-      **La prime covoiturage nationale n'existe plus en 2026.** Le « coup de pouce » de 100 € pour les conducteurs débutants a été ramené à 50 € au 1er janvier 2025, puis supprimé fin janvier 2025 ([Hellio](https://www.hellio.com/actualites/reglementation/prime-coup-pouce-covoiturage)). La « prime covoiturage » qu'une entreprise peut verser en 2026, c'est le forfait mobilités durables : jusqu'à 600 € par an exonérés, 900 € en cumul avec l'abonnement transport, pour le conducteur comme pour le passager. Certaines collectivités rémunèrent aussi les trajets via des plateformes partenaires, selon le territoire.
+      **La prime covoiturage nationale de 100 € a été arrêtée au 31 janvier 2025.** En 2026, la prime covoiturage qu'une entreprise peut verser, c'est le forfait mobilités durables : jusqu'à 600 € par an exonérés, 900 € en cumul avec l'abonnement transport, pour le conducteur comme pour le passager. Montants, fonctionnaires, aides locales et démarches : voir notre page [prime covoiturage 2026](/fr/prime-covoiturage-2026/).
     button:
       enable: false
 
@@ -203,7 +203,7 @@ faq:
   - question: "Quel est le montant du forfait mobilités durables en 2026 ?"
     answer: "Dans le secteur privé, le forfait mobilités durables est exonéré de cotisations et d'impôt jusqu'à 600 € par an et par salarié lorsqu'il est versé seul, et jusqu'à 900 € par an en cumul avec la prise en charge de l'abonnement de transport public. La loi ne fixe pas de montant minimum : c'est l'employeur qui fixe le montant, dans ces plafonds d'exonération."
   - question: "Quel est le montant de la prime covoiturage en 2026 ?"
-    answer: "La prime covoiturage nationale de 100 € a été supprimée fin janvier 2025. La prime covoiturage que verse l'employeur en 2026, c'est le forfait mobilités durables : exonéré jusqu'à 600 € par an et par salarié, 900 € en cumul avec l'abonnement transport, pour le conducteur comme pour le passager."
+    answer: "La prime covoiturage nationale de 100 € a été arrêtée au 31 janvier 2025. La prime covoiturage que verse l'employeur en 2026, c'est le forfait mobilités durables : exonéré jusqu'à 600 € par an et par salarié, 900 € en cumul avec l'abonnement transport, pour le conducteur comme pour le passager."
   - question: "Que demande l'URSSAF pour exonérer le forfait mobilités durables ?"
     answer: "Quatre conditions : un dispositif formalisé (accord d'entreprise, accord de branche ou décision unilatérale après consultation du CSE), un justificatif par salarié et par an (attestation sur l'honneur ou justificatif d'utilisation du mode de transport), le respect des plafonds d'exonération, et la conservation des preuves pendant au moins trois ans."
   - question: "Le forfait mobilités durables est-il obligatoire ?"
