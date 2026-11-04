@@ -202,8 +202,6 @@ faq_title: "Questions fréquentes sur le forfait mobilités durables"
 faq:
   - question: "Quel est le montant du forfait mobilités durables en 2026 ?"
     answer: "Dans le secteur privé, le forfait mobilités durables est exonéré de cotisations et d'impôt jusqu'à 600 € par an et par salarié lorsqu'il est versé seul, et jusqu'à 900 € par an en cumul avec la prise en charge de l'abonnement de transport public. La loi ne fixe pas de montant minimum : c'est l'employeur qui fixe le montant, dans ces plafonds d'exonération."
-  - question: "Quel est le montant de la prime covoiturage en 2026 ?"
-    answer: "La prime covoiturage nationale de 100 € a été arrêtée au 31 janvier 2025. La prime covoiturage que verse l'employeur en 2026, c'est le forfait mobilités durables : exonéré jusqu'à 600 € par an et par salarié, 900 € en cumul avec l'abonnement transport, pour le conducteur comme pour le passager."
   - question: "Que demande l'URSSAF pour exonérer le forfait mobilités durables ?"
     answer: "Quatre conditions : un dispositif formalisé (accord d'entreprise, accord de branche ou décision unilatérale après consultation du CSE), un justificatif par salarié et par an (attestation sur l'honneur ou justificatif d'utilisation du mode de transport), le respect des plafonds d'exonération, et la conservation des preuves pendant au moins trois ans."
   - question: "Le forfait mobilités durables est-il obligatoire ?"
