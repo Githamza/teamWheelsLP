@@ -1,14 +1,17 @@
 ---
-title: "TeamWheels | Solution de covoiturage entreprise pour vos salariés"
-seoTitle: "Covoiturage entreprise : la solution pour vos salariés | TeamWheels"
-description: "Solution de covoiturage entreprise : mise en relation des salariés, justificatifs FMD et suivi Scope 3. Intégrée à Microsoft Teams, premier mois offert."
-# accueil = requête tête commerciale « covoiturage entreprise » (solution pour
-# employeurs) ; Teams/Copilot = argument de différenciation, pas l'angle principal.
+title: "TeamWheels | Le covoiturage de vos salariés dans Microsoft Teams"
+seoTitle: "TeamWheels : le covoiturage de vos salariés dans Microsoft Teams"
+description: "TeamWheels met en relation vos salariés qui font le même trajet, directement dans Microsoft Teams et Copilot : rien à installer, justificatifs FMD, 3 € HT par collaborateur."
+# accueil = marque « TeamWheels » + positionnement Teams (décision du 04/11/2026).
+# La requête tête « covoiturage (en) entreprise » est cédée à l'URL pilier
+# blog/covoiturage-entreprise-guide-2026 pour supprimer la cannibalisation
+# (4 URLs se partageaient la requête en GSC). Ne pas la remettre dans le title.
 # Les autres intentions ont leur page, ne pas les viser ici :
+#   covoiturage en entreprise (informationnel) → blog/covoiturage-entreprise-guide-2026
 #   logiciel / outil / application → corporate-carpooling-software
-#   guide, mise en place (informationnel) → blog/covoiturage-entreprise-guide-2026
+#   covoiturage Microsoft Teams / appli Teams (détail salarié + IT) → covoiturage-microsoft-teams
 #   FMD → forfait-mobilites-durables-covoiturage ; marque blanche → white-label-carpool-platform
-keywords: "covoiturage entreprise, solution covoiturage entreprise, covoiturage salariés, programme de covoiturage entreprise, TeamWheels"
+keywords: "TeamWheels, Team Wheels, covoiturage salariés, covoiturage Microsoft Teams, covoiturage Copilot"
 
 # banner
 banner:
@@ -19,7 +22,7 @@ banner:
     text: "Voir sur le Microsoft Store"
   journey:        # animation 3D isométrique « sans / avec TeamWheels » au-dessus du titre
     enable: true
-  title: "Le covoiturage en entreprise"
+  title: "Le covoiturage de vos salariés"
   title_accent: "au cœur de vos outils quotidiens"   # 2e ligne en dégradé, se termine par les logos
   rotating_logos:   # exactement 2 (animation CSS calée sur 2 logos)
   - src: "images/microsoft-teams-icon.svg"
