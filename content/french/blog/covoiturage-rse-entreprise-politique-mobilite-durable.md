@@ -151,7 +151,7 @@ Le covoiturage est le moyen le plus direct de **donner corps au PDM** :
 2. **Dispositif** — mettre en place un outil de mise en relation et le Forfait Mobilité Durable ;
 3. **Suivi** — mesurer l'adoption et l'impact carbone, et alimenter le reporting RSE.
 
-Un PDM doté d'un programme de covoiturage actif passe du statut de **document de conformité** à celui de **levier de performance mesurable**. Pour la feuille de route détaillée, consultez [covoiturage entreprise : 5 étapes pour démarrer](/fr/blog/covoiturage-entreprise-guide-2026/).
+Un PDM doté d'un programme de covoiturage actif passe du statut de **document de conformité** à celui de **levier de performance mesurable**. Pour la feuille de route détaillée, consultez [mettre en place le covoiturage en entreprise en 5 étapes](/fr/blog/covoiturage-entreprise-guide-2026/#etapes).
 
 ---
 
