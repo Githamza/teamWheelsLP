@@ -19,7 +19,7 @@ keywords: ["prime mobilité durable", "prime de mobilité", "prime mobilité dou
 faq_title: "Questions fréquentes sur la prime mobilité durable"
 faq:
   - question: "Qu'est-ce que la prime mobilité durable ?"
-    answer: "C'est le nom courant du forfait mobilités durables : une somme que l'employeur peut verser à ses salariés qui viennent travailler à vélo, en covoiturage, en trottinette ou en scooter partagés, en autopartage de véhicules peu polluants ou en transports publics hors abonnement. Elle est facultative et, dans le secteur privé, exonérée de cotisations sociales dans la limite de 600 € par an et par salarié, 900 € en cumul avec la prise en charge d'un abonnement de transport public."
+    answer: "C'est le nom courant du FMD, le dispositif légal de soutien aux mobilités durables : une somme que l'employeur peut verser à ses salariés qui viennent travailler à vélo, en covoiturage, en trottinette ou en scooter partagés, en autopartage de véhicules peu polluants ou en transports publics hors abonnement. Elle est facultative et, dans le secteur privé, exonérée de cotisations sociales dans la limite de 600 € par an et par salarié, 900 € en cumul avec la prise en charge d'un abonnement de transport public."
   - question: "Quel est le montant de la prime mobilité durable en 2026 ?"
     answer: "La loi ne fixe ni minimum ni maximum : c'est l'accord d'entreprise ou la décision de l'employeur qui fixe le montant. L'exonération est plafonnée à 600 € par an et par salarié, et à 900 € par an si le salarié bénéficie aussi de la prise en charge d'un abonnement de transport public ou de location de vélos. Au-delà, l'excédent est soumis à cotisations."
   - question: "La prime mobilité douce est-elle obligatoire ?"
@@ -32,7 +32,7 @@ faq:
     answer: "C'est un moyen de paiement prépayé et dématérialisé, en vigueur depuis le 1er janvier 2022, que l'employeur peut utiliser pour verser la prime mobilité durable. Il s'utilise auprès de commerçants agréés pour acheter ou entretenir un vélo, payer des titres de transport, du covoiturage ou certaines locations. Il est valable au moins jusqu'au 31 décembre de l'année d'émission."
 ---
 
-**Pour les RH et dirigeants qui veulent encourager le vélo, le covoiturage ou les transports partagés pour venir au travail.** « Prime mobilité durable », « prime de mobilité », « prime mobilité douce », « forfait mobilité douce » : derrière ces noms, il y a le même dispositif, le forfait mobilités durables créé par la loi d'orientation des mobilités. Cette page explique quels trajets il finance, combien l'employeur peut verser sans cotisations en 2026, comment le verser et comment le justifier.
+**Pour les RH et dirigeants qui veulent encourager le vélo, le covoiturage ou les transports partagés pour venir au travail.** « Prime mobilité durable », « prime de mobilité », « prime mobilité douce », « forfait mobilité douce » : derrière ces noms, il y a le même dispositif légal, le FMD, créé par la loi d'orientation des mobilités. Cette page explique quels trajets il finance, combien l'employeur peut verser sans cotisations en 2026, comment le verser et comment le justifier.
 
 *Les montants cités sont ceux publiés par service-public.gouv.fr et ecologie.gouv.fr à la date indiquée dans chaque source. Vérifiez-les avant chaque exercice. Cette page ne constitue pas un conseil juridique.*
 
@@ -40,7 +40,7 @@ faq:
 
 ## Prime mobilité durable, prime de mobilité, forfait mobilité douce : de quoi parle-t-on ? {#definition}
 
-Le nom officiel est **forfait mobilités durables** (FMD). Il est prévu par l'article L. 3261-3-1 du Code du travail, issu de la loi d'orientation des mobilités du 24 décembre 2019, et mis en œuvre dans le secteur privé par le décret n° 2020-541 du 9 mai 2020. Salariés et employeurs l'appellent plus volontiers « prime mobilité durable », « prime vélo » ou « forfait mobilité douce » : ce sont des noms d'usage, pas des dispositifs différents.
+Le nom officiel est [forfait mobilités durables](/fr/forfait-mobilites-durables-covoiturage/) (FMD). Il est prévu par l'article L. 3261-3-1 du Code du travail, issu de la loi d'orientation des mobilités du 24 décembre 2019, et mis en œuvre dans le secteur privé par le décret n° 2020-541 du 9 mai 2020. Salariés et employeurs l'appellent plus volontiers « prime mobilité durable », « prime vélo » ou « forfait mobilité douce » : ce sont des noms d'usage, pas des dispositifs différents.
 
 Le FMD a remplacé l'**indemnité kilométrique vélo** (IKV), qui ne couvrait que le vélo. Selon le ministère de la Transition écologique, l'IKV peut toutefois être maintenue lorsqu'elle est déjà en vigueur dans l'entreprise et prévue par des accords salariaux existants ; l'employeur qui la poursuit est alors réputé verser le FMD (article 2 du décret n° 2020-541).
 
@@ -150,7 +150,7 @@ L'attestation sur l'honneur est la pièce la plus simple, mais elle est déclara
 
 ## Prime mobilité durable dans la fonction publique {#fonction-publique}
 
-Les agents publics bénéficient d'un forfait mobilités durables propre, avec des règles distinctes de celles du secteur privé. D'après service-public.gouv.fr et ecologie.gouv.fr :
+Les agents publics bénéficient de leur propre prime mobilité durable, avec des règles distinctes de celles du secteur privé. D'après service-public.gouv.fr et ecologie.gouv.fr :
 
 - il est dû dans la fonction publique d'État et hospitalière, et dépend d'une délibération dans la fonction publique territoriale ;
 - l'agent doit utiliser un mode éligible au moins **30 jours par an**, minimum réduit à proportion du temps de travail ;
