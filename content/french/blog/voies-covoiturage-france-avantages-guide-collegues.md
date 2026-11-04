@@ -184,4 +184,4 @@ Le covoiturage entre collègues n'est plus une contrainte — c'est un avantage 
 
 ---
 
-> **Pour aller plus loin :** [Guide complet du covoiturage domicile-travail en entreprise 2026](/fr/blog/covoiturage-entreprise-guide-2026/) — FMD, loi LOM, comparatif des plateformes et plan de déploiement en 4 semaines.
+> **Pour aller plus loin :** [Covoiturage en entreprise : le guide complet 2026](/fr/blog/covoiturage-entreprise-guide-2026/) — FMD, loi LOM, comparatif des plateformes et plan de déploiement en 4 semaines. Pour choisir l'outil : notre [logiciel de covoiturage entreprise](/fr/corporate-carpooling-software/) intégré à Microsoft Teams.

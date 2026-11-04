@@ -29,33 +29,39 @@ weight = 1
 # seo/content/spec-gestion-de-flotte-fr.md. Pas d'équivalent EN.
 [[main]]
 parent = "product"
+name = "Covoiturage dans Microsoft Teams"
+url = "covoiturage-microsoft-teams/"
+weight = 2
+
+[[main]]
+parent = "product"
 name = "Gestion de flotte"
 url = "logiciel-gestion-de-flotte-automobile/"
-weight = 2
+weight = 3
 
 [[main]]
 parent = "product"
 name = "Plateforme de covoiturage en marque blanche"
 url = "white-label-carpool-platform/"
-weight = 3
+weight = 4
 
 [[main]]
 parent = "product"
 name = "Comment ça marche ?"
 url = "how-it-works/"
-weight = 4
+weight = 5
 
 [[main]]
 parent = "product"
 name = "Avantages"
 url = "benefits/"
-weight = 5
+weight = 6
 
 [[main]]
 parent = "product"
 name = "Voir la démo"
 url = "demo/"
-weight = 6
+weight = 7
 
 # ── Tarifs (autonome) ──
 [[main]]
@@ -69,23 +75,30 @@ identifier = "resources"
 name = "Ressources"
 weight = 4
 
+# URL pilier « covoiturage en entreprise » : lien sitewide avec l'ancre cible.
+[[main]]
+parent = "resources"
+name = "Guide du covoiturage en entreprise"
+url = "blog/covoiturage-entreprise-guide-2026/"
+weight = 1
+
 [[main]]
 parent = "resources"
 name = "Calculateur d'économies"
 url = "blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/"
-weight = 1
+weight = 2
 
 [[main]]
 parent = "resources"
 name = "Forfait mobilités durables & covoiturage"
 url = "forfait-mobilites-durables-covoiturage/"
-weight = 2
+weight = 3
 
 [[main]]
 parent = "resources"
 name = "Blog"
 url = "blog/"
-weight = 3
+weight = 4
 
 # ── Contact (autonome) ──
 [[main]]
@@ -159,5 +172,15 @@ weight = 7
 name = "Forfait mobilités durables"
 url = "forfait-mobilites-durables-covoiturage/"
 weight = 8
+
+[[footer_menu_4]]
+name = "Covoiturage dans Microsoft Teams"
+url = "covoiturage-microsoft-teams/"
+weight = 9
+
+[[footer_menu_4]]
+name = "Guide du covoiturage en entreprise"
+url = "blog/covoiturage-entreprise-guide-2026/"
+weight = 10
 
 
