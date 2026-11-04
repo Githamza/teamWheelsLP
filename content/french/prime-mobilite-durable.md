@@ -4,7 +4,7 @@ seoTitle: "Prime mobilité durable 2026 : montants et modes éligibles"
 description: "Prime mobilité durable ou forfait mobilité douce : modes de transport éligibles, montants exonérés en 2026, justificatifs, titres-mobilité et règles côté employeur."
 slug: "prime-mobilite-durable"
 date: 2026-11-02
-lastmod: 2026-11-02
+lastmod: 2026-11-04
 draft: false
 layout: "pillar"
 keywords: ["prime mobilité durable", "prime de mobilité", "prime mobilité douce", "forfait mobilité douce", "prime vélo employeur", "titre-mobilité"]
@@ -157,7 +157,7 @@ Les agents publics bénéficient d'un forfait mobilités durables propre, avec d
 - le montant est de **100 €** de 30 à 59 jours, **200 €** de 60 à 99 jours, **300 €** à partir de 100 jours ;
 - l'agent remet une déclaration sur l'honneur au plus tard le 31 décembre, et le forfait est versé l'année suivante.
 
-Source : [service-public.gouv.fr, F12163](https://www.service-public.gouv.fr/particuliers/vosdroits/F12163), vérifiée le 21 février 2026.
+Source : [service-public.gouv.fr, F12163](https://www.service-public.gouv.fr/particuliers/vosdroits/F12163), vérifiée le 21 février 2026. Pour le covoiturage des agents, voir aussi la [prime covoiturage fonctionnaire](/fr/prime-covoiturage-2026/#fonctionnaire).
 
 ## Mettre en place la prime mobilité durable {#mise-en-place}
 
