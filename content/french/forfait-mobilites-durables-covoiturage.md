@@ -4,7 +4,7 @@ seoTitle: "Forfait mobilités durables 2026 : le guide employeur"
 description: "Forfait mobilités durables 2026 : plafonds URSSAF, modes éligibles, cumuls, justificatifs et mise en place. Le guide employeur pour verser le FMD sans risque."
 keywords: "forfait mobilités durables, forfait mobilité durable, forfait mobilité durable 2026, forfait mobilité durable urssaf, montant forfait mobilité durable 2026, plafond FMD 2026, fmd covoiturage"
 layout: "benefits"
-lastmod: 2026-11-04
+lastmod: 2026-11-05
 # Refonte J+4 (spec du 28/10/2026) le 03/11/2026 : page dégraissée vers le
 # terme principal ; chaque section déplacée garde 2-3 lignes et un lien vers
 # sa page dédiée. Surveiller les positions : retour arrière si décrochage sur
@@ -164,12 +164,9 @@ image_and_content_blocks:
     image: "images/carpooling_kpis.png"
     content_position: "right"
     content: |
-      1. **Définir les modalités et le budget** — mode de calcul, modes encouragés, salariés éligibles, rythme de versement.
-      2. **Formaliser** — accord d'entreprise ou décision unilatérale de l'employeur (DUE), après consultation du CSE s'il existe.
-      3. **Choisir le mode de preuve des trajets et communiquer** — attestation, registre de preuve ou relevés de plateforme ; c'est ce choix qui fixe votre charge administrative.
-      4. **Verser et inscrire en paie** — le FMD figure sur le bulletin, exonéré dans les plafonds ; justificatifs conservés trois ans.
+      Le FMD se met en place par accord d'entreprise ou par décision unilatérale de l'employeur (DUE) après consultation du CSE, puis s'inscrit en paie, avec des justificatifs conservés trois ans. **Exemple chiffré** : 40 salariés covoiturent 2 jours par semaine (≈ 90 jours/an) à 3 €/jour → 270 € par salarié et par an, soit 10 800 € de budget exonéré de charges.
 
-      **Exemple chiffré** : 40 salariés covoiturent 2 jours par semaine (≈ 90 jours/an) à 3 €/jour → 270 € par salarié et par an, soit 10 800 € de budget exonéré de charges.
+      Les deux voies, la check-list en 10 étapes et un modèle indicatif de DUE sont sur notre page [mise en place du forfait mobilités durables](/fr/forfait-mobilites-durables-mise-en-place/).
     button:
       enable: false
 

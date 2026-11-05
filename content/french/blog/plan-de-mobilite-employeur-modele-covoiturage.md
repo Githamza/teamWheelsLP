@@ -2,7 +2,7 @@
 title: "Plan de mobilité employeur : modèle à télécharger (Word/PDF) et volet covoiturage"
 seoTitle: "Plan de mobilité employeur : modèle Word + volet covoiturage"
 date: 2026-10-01
-lastmod: 2026-10-01
+lastmod: 2026-11-05
 draft: false
 description: "Obligation LOM, contenu légal et modèle de plan de mobilité employeur à télécharger en Word et PDF, avec un vrai volet covoiturage : diagnostic des flux, mesures, indicateurs et lien avec le forfait mobilités durables."
 image: "images/blog/sustainable-mobility.jpg"
@@ -98,7 +98,7 @@ Le résultat se résume en deux chiffres à mettre en tête du volet : le nombre
 Quatre leviers se combinent généralement :
 
 - **La mise en relation.** Sans outil, personne ne sait qui habite à côté. L'appariement doit se faire par trajet, horaires et jours sur site, idéalement **entre collègues**, car la réticence à covoiturer avec un inconnu est le premier frein (voir [pourquoi vos salariés sont sceptiques](/fr/blog/pourquoi-vos-employes-sont-sceptiques-sur-le-covoiturage/)).
-- **L'incitation financière.** Le [forfait mobilités durables](/fr/forfait-mobilites-durables-covoiturage/) permet de verser un montant par jour covoituré ou par kilomètre, exonéré dans les plafonds.
+- **L'incitation financière.** Le [forfait mobilités durables](/fr/forfait-mobilites-durables-covoiturage/) permet de verser un montant par jour covoituré ou par kilomètre, exonéré dans les plafonds. Pour l'inscrire dans le plan, voir la [mise en place du FMD par accord ou décision unilatérale](/fr/forfait-mobilites-durables-mise-en-place/).
 - **Les avantages d'usage.** Places de parking réservées aux covoitureurs, accès prioritaire.
 - **La sécurisation.** Une garantie retour (taxi ou VTC pris en charge en cas d'imprévu) lève la crainte de rester bloqué, objection numéro un des conducteurs comme des passagers.
 
