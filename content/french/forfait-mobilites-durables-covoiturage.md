@@ -4,7 +4,7 @@ seoTitle: "Forfait mobilités durables 2026 : le guide employeur"
 description: "Forfait mobilités durables 2026 : plafonds URSSAF, modes éligibles, cumuls, justificatifs et mise en place. Le guide employeur pour verser le FMD sans risque."
 keywords: "forfait mobilités durables, forfait mobilité durable, forfait mobilité durable 2026, forfait mobilité durable urssaf, montant forfait mobilité durable 2026, plafond FMD 2026, fmd covoiturage"
 layout: "benefits"
-lastmod: 2026-11-05
+lastmod: 2026-11-06
 # Refonte J+4 (spec du 28/10/2026) le 03/11/2026 : page dégraissée vers le
 # terme principal ; chaque section déplacée garde 2-3 lignes et un lien vers
 # sa page dédiée. Surveiller les positions : retour arrière si décrochage sur
@@ -192,6 +192,24 @@ image_and_content_blocks:
     content_position: "right"
     content: |
       Les redressements viennent presque toujours de cinq manquements : verser le FMD **sans accord ni DUE** ; ne collecter **aucun justificatif** ; **dépasser les plafonds** de cumul sans réintégrer l'excédent ; réserver le FMD à **certains salariés** ; verser **le même montant à tous**, sans lien avec les trajets. La parade : un cadre écrit, un mode de preuve fiable et un suivi des plafonds par salarié.
+    button:
+      enable: false
+
+  # Hub du cluster mobilité employeur (J+7 de la spec du 28/10/2026) : un lien
+  # vers chacune des pages dédiées.
+  - enable: true
+    anchor: "guides-fmd"
+    subtitle: "Aller plus loin"
+    title: "Les guides du cluster mobilité employeur"
+    content_position: "left"
+    content: |
+      * [Attestation de covoiturage](/fr/attestation-covoiturage-forfait-mobilites-durables/) — modèle Word et PDF, justificatifs acceptés par l'URSSAF, collecte côté employeur.
+      * [Mise en place du FMD](/fr/forfait-mobilites-durables-mise-en-place/) — accord ou décision unilatérale, consultation du CSE, modèle indicatif de DUE.
+      * [Prime covoiturage 2026](/fr/prime-covoiturage-2026/) — fin de la prime de 100 €, forfait des fonctionnaires, aides locales.
+      * [Prime mobilité durable](/fr/prime-mobilite-durable/) — modes éligibles, titres-mobilité, justificatifs par mode.
+      * [Prime transport côté employeur](/fr/prime-transport-employeur/) — prime carburant, plafonds 2026, cumul avec le FMD.
+      * [Frais professionnels URSSAF](/fr/frais-professionnels-urssaf-mobilite/) — frais réels ou forfait, repas 2026, télétravail.
+      * [Indemnité kilométrique](/fr/blog/bareme-kilometrique-2026-indemnite-domicile-travail/) — calcul pas à pas et barème domicile-travail.
     button:
       enable: false
 
