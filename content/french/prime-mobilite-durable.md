@@ -4,7 +4,7 @@ seoTitle: "Prime mobilité durable 2026 : montants et modes éligibles"
 description: "Prime mobilité durable ou forfait mobilité douce : modes de transport éligibles, montants exonérés en 2026, justificatifs, titres-mobilité et règles côté employeur."
 slug: "prime-mobilite-durable"
 date: 2026-11-02
-lastmod: 2026-11-04
+lastmod: 2026-11-05
 draft: false
 layout: "pillar"
 keywords: ["prime mobilité durable", "prime de mobilité", "prime mobilité douce", "forfait mobilité douce", "prime vélo employeur", "titre-mobilité"]
@@ -165,7 +165,7 @@ La prime se met en place par accord d'entreprise, accord interentreprises ou acc
 
 Dans les entreprises d'au moins 50 salariés dotées de représentants du personnel, la mobilité des salariés fait partie des thèmes de la négociation annuelle. À défaut d'accord, l'entreprise établit un plan de mobilité employeur : la prime mobilité durable en est souvent l'un des leviers. Notre [modèle de plan de mobilité employeur](/fr/blog/plan-de-mobilite-employeur-modele-covoiturage/) détaille la démarche.
 
-Les étapes et les erreurs à éviter sont décrites dans la section [mise en place du guide FMD](/fr/forfait-mobilites-durables-covoiturage/#mise-en-place).
+Les étapes, les clauses à prévoir et un modèle indicatif de décision unilatérale sont sur notre page [mise en place du FMD](/fr/forfait-mobilites-durables-mise-en-place/).
 
 ## Pour aller plus loin
 

@@ -4,7 +4,7 @@ seoTitle: "Prime covoiturage 2026 : montant, conditions et alternatives"
 description: "Prime covoiturage 2026 : la prime de 100 € a pris fin, mais l'employeur peut verser jusqu'à 600 € par an. Montants, fonctionnaires, aides locales et démarches."
 slug: "prime-covoiturage-2026"
 date: 2026-11-04
-lastmod: 2026-11-04
+lastmod: 2026-11-05
 draft: false
 layout: "pillar"
 keywords: ["prime covoiturage 2026", "prime covoiturage 2025", "prime covoiturage fonctionnaire", "prime covoiturage employeur", "prime covoiturage 100 euros", "prime covoiturage passager"]
@@ -145,6 +145,8 @@ Pour l'employeur, verser une prime covoiturage revient à mettre en place le for
 - **Choisir le mode de calcul** : forfait, montant par jour ou au kilomètre, dans les plafonds d'exonération.
 - **Choisir le mode de preuve** : attestation sur l'honneur, registre de preuve de covoiturage ou relevés d'une plateforme. C'est ce choix qui détermine la charge administrative et la solidité en cas de contrôle URSSAF.
 - **Verser en paie** ou en titres-mobilité, et conserver les justificatifs au moins trois ans.
+
+La check-list complète et un modèle indicatif de décision unilatérale sont sur notre page [mise en place du forfait mobilités durables](/fr/forfait-mobilites-durables-mise-en-place/).
 
 Une prime covoiturage n'a d'effet que si les salariés trouvent des collègues avec qui covoiturer. C'est l'objet du [logiciel de covoiturage entreprise](/fr/corporate-carpooling-software/) TeamWheels : il met en relation les salariés qui font le même trajet, directement dans Microsoft Teams, et produit les relevés de trajets qui justifient le versement.
 
