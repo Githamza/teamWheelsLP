@@ -2,7 +2,7 @@
 title: "Avantages du covoiturage pour vos salariés | Ce que TeamWheels change pour vos équipes"
 seoTitle: "Avantages du covoiturage pour vos salariés | TeamWheels"
 description: "Avantages du covoiturage pour vos salariés : économies de trajet, moins de parking, Scope 3 réduit. Versez le Forfait Mobilité Durable depuis Teams."
-keywords: "avantages covoiturage entreprise, ROI covoiturage entreprise, BlaBlaCar entreprise avantages, Uber pour salariés, application Microsoft Teams, ridesharing entreprise avantages, Scope 3 trajets domicile-travail, Forfait Mobilité Durable, économies trajet salarié, mobilité durable entreprise, autopartage entreprise, bien-être salarié mobilité, gestion commute salariés"
+keywords: "avantages covoiturage salariés, avantages TeamWheels, BlaBlaCar entreprise avantages, Uber pour salariés, application Microsoft Teams, ridesharing entreprise avantages, Scope 3 trajets domicile-travail, Forfait Mobilité Durable, économies trajet salarié, mobilité durable entreprise, autopartage entreprise, bien-être salarié mobilité, gestion commute salariés"
 layout: "benefits"
 
 banner:

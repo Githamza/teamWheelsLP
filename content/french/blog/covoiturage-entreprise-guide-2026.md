@@ -1,8 +1,9 @@
 ---
-title: "Covoiturage en entreprise : le guide complet 2026"
+title: "Covoiturage en entreprise : comment le mettre en place"
+seoTitle: "Covoiturage en entreprise : guide complet domicile-travail 2026"
 translationKey: "corporate-carpooling-guide-2026"
 date: 2026-04-29
-lastmod: 2026-11-04
+lastmod: 2026-11-12
 draft: false
 description: "Covoiturage en entreprise : FMD, assurance et accident de trajet, coûts, choix de l'outil et mise en place en 5 étapes. Le guide 2026 pour RH, DAF et RSE."
 image: "images/blog/corporate-carpooling.jpg"
@@ -72,7 +73,7 @@ howto:
 > **Réponse directe : mettre en place le covoiturage en entreprise en 5 étapes (30 jours)**
 >
 > 1. **Diagnostiquer** : sondez les salariés sur leurs trajets et repérez les axes domicile-travail partagés (semaine 1).
-> 2. **Choisir l'outil** : un outil d'appariement des trajets, avec justificatifs FMD et reporting CO₂ (semaine 1).
+> 2. **Choisir l'outil** : un [logiciel de covoiturage d'entreprise](/fr/corporate-carpooling-software/) qui apparie les trajets, avec justificatifs FMD et reporting CO₂ (semaine 1).
 > 3. **Cadrer** : décision ou accord FMD (jusqu'à 600 € exonérés par salarié et par an), charte de covoiturage, communication (semaine 2).
 > 4. **Piloter** : 2 à 4 semaines avec 20 à 50 volontaires, puis ajustez les règles d'appariement (semaines 3 et 4).
 > 5. **Généraliser et mesurer** : ouverture à tous, suivi mensuel de la participation, des trajets, du CO₂ et des places de parking libérées.
@@ -410,7 +411,7 @@ Non. Le FMD couvre uniquement les trajets domicile-travail. Les déplacements pr
 
 Avec TeamWheels, **le premier mois est offert, jusqu'à 50 collaborateurs**, sans carte bancaire. Installation en quelques minutes dans votre environnement Microsoft 365. Ensuite, l'abonnement est souscrit avec un engagement trimestriel.
 
-**[Demander une démo gratuite](/fr/contact/)** · **[Simuler mes économies FMD](/fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/)**
+**[Demander une démo gratuite](/fr/contact/)** · **[Voir le logiciel de covoiturage d'entreprise](/fr/corporate-carpooling-software/)** · **[Simuler mes économies FMD](/fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/)**
 
 ---
 

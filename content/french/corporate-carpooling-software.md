@@ -6,7 +6,7 @@ seoTitle: "Logiciel covoiturage entreprise dans Teams, 3 € HT | TeamWheels"
 # /fr/blog/covoiturage-entreprise-guide-2026/ ; « covoiturage Microsoft Teams »
 # à /fr/covoiturage-microsoft-teams/.
 description: "Logiciel covoiturage entreprise intégré à Microsoft Teams : rien à installer, multi-sites, justificatifs FMD, reporting CO₂. Prix public : 3 € HT par collaborateur et par mois."
-keywords: "logiciel covoiturage entreprise, outil covoiturage entreprise, application covoiturage entreprise, covoiturage entreprise, plateforme covoiturage entreprise, covoiturage domicile-travail, logiciel covoiturage salariés, covoiturage inter-sites, Forfait Mobilité Durable"
+keywords: "logiciel covoiturage entreprise, outil covoiturage entreprise, application covoiturage entreprise, plateforme covoiturage entreprise, covoiturage domicile-travail, logiciel covoiturage salariés, covoiturage inter-sites, Forfait Mobilité Durable"
 layout: "benefits"
 lastmod: 2026-11-04
 
