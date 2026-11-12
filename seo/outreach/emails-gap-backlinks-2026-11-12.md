@@ -180,6 +180,20 @@ Page : `https://ecomobilite.org/Le-covoiturage.html`. La liste cite Klaxit et Id
 Page : `https://frontaliers-grandest.eu/accueil/transports/luxembourg/covoiturage/`
 (« Covoiturage vers le Luxembourg : applications et aides 2026 »).
 
+Contacts relevés le 12/11/2026 dans les résultats de recherche (le site n'a pas pu être ouvert
+depuis la session : à confirmer sur la page contact avant envoi) :
+
+- Éditeur : CRD EURES / Frontaliers Grand Est, 11 rue Claude Chappe, 57070 Metz Technopôle
+  (second bureau : 22 avenue Georges Corneau, 08000 Charleville-Mézières).
+- Responsable de la publication : Julien Dauer, directeur (mentions légales).
+- E-mail : contact@frontaliers-grandest.eu
+- Téléphone : +33 (0)3 87 20 40 91, lundi, mardi et jeudi, 9 h 30-12 h et 14 h 30-17 h.
+- Formulaire : `https://frontaliers-grandest.eu/a-propos/contact/` (captcha à valider).
+
+La page cite BlaBlaCar Daily, Karos et Mobicoop, et indique que certains employeurs
+luxembourgeois proposent leurs propres incitations : c'est le point d'accroche. Une page
+équivalente existe pour la Belgique (`/accueil/transports/belgique/covoiturage/`).
+
 > **Objet :** Une solution côté employeur pour votre page covoiturage Luxembourg
 >
 > Bonjour,
