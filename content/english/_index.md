@@ -121,7 +121,7 @@ why_teamwheels:
     us: "Your Entra ID directory becomes the carpooler list, kept up to date automatically"
   - topic: "Data"
     them: "Your employees' data on an external platform"
-    us: "In your Microsoft 365 tenant, data hosted in the EU, GDPR-compliant"
+    us: "In your Microsoft 365 tenant, GDPR-compliant"
   - topic: "ESG reporting"
     them: "Exports to rework for Scope 3 and commuter-benefit reporting"
     us: "Scope 3 dashboard and commuter-benefit tracking, generated automatically"
@@ -241,9 +241,9 @@ image_and_content_blocks:
     title: "A Secure, IT-Approved Employee Mobility Solution"
     image: "images/home-en-securite.png"
     image_fit: true   # product mockup: full-width image, no padding
-    image_alt: "Sign-in to TeamWheels with a Microsoft work account (Entra ID SSO), data in your tenant, hosted in the EU"
+    image_alt: "Sign-in to TeamWheels with a Microsoft work account (Entra ID SSO), data in your tenant"
     content_position: "left"
-    content: "Published on the Microsoft Teams Store with a [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/en-us/microsoft-365-app-certification/teams/hmz-digital-teamwheels), Microsoft Entra ID SSO, data hosted in the EU, GDPR compliant — TeamWheels meets enterprise security standards with zero extra credentials or infrastructure changes. It runs in your Microsoft 365 tenant and is available across Europe and North America.
+    content: "Published on the Microsoft Teams Store with a [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/en-us/microsoft-365-app-certification/teams/hmz-digital-teamwheels), Microsoft Entra ID SSO, GDPR compliant — TeamWheels meets enterprise security standards with zero extra credentials or infrastructure changes. It runs in your Microsoft 365 tenant and is available across Europe and North America.
 
     [Read more →](benefits/#security)
     "
@@ -275,7 +275,7 @@ faq:
   - question: "How do employees sign in?"
     answer: "With their existing Microsoft 365 work account, through Microsoft Entra ID single sign-on. There is no new app to download and no password to create, and your Entra ID directory becomes the carpooler list, updated automatically when people join or leave."
   - question: "Where is employee data hosted?"
-    answer: "TeamWheels runs in your Microsoft 365 tenant and its data is hosted in the EU (France). The platform is GDPR compliant and built with privacy by design."
+    answer: "TeamWheels runs in your Microsoft 365 tenant and its data is hosted in the EU. The platform is GDPR compliant and built with privacy by design."
   - question: "Which countries is TeamWheels available in?"
     answer: "TeamWheels is available across Europe and North America. Companies in the USA, UK and Canada run it today, the app is localized for France, Belgium, the Netherlands, Germany and Spain, and French employers get ready-made records for the Forfait Mobilités Durables."
   - question: "How long does it take to launch a carpool program?"

@@ -17,7 +17,7 @@ faq:
   - question: "Does Oxycar still exist?"
     answer: "No. The judicial court of Saverne (France) placed Oxycar SAS in simplified judicial liquidation on 16 May 2023, and closed the proceedings for insufficient assets on 14 November 2023 (BODACC notices). According to the French press, the carpooling tool was not taken over."
   - question: "What is the best Oxycar alternative for a company on Microsoft 365?"
-    answer: "TeamWheels follows the same idea, employer-run carpooling between coworkers, but runs directly inside Microsoft Teams: no app to install, sign-in with the Microsoft 365 work account through Microsoft Entra ID SSO, monthly per-employee records for commuter benefits such as France's Forfait Mobilités Durables, and CO₂ reporting. It is available across Europe and its data is hosted in the EU."
+    answer: "TeamWheels follows the same idea, employer-run carpooling between coworkers, but runs directly inside Microsoft Teams: no app to install, sign-in with the Microsoft 365 work account through Microsoft Entra ID SSO, monthly per-employee records for commuter benefits such as France's Forfait Mobilités Durables, and CO₂ reporting. It is available across Europe."
   - question: "How long does it take to replace Oxycar with TeamWheels?"
     answer: "About five minutes for the installation by a Microsoft 365 admin, then a two- to four-week pilot with 20 to 50 volunteers before opening it to every employee."
   - question: "Can we recover our Oxycar trip history?"
@@ -52,7 +52,7 @@ Oxycar information is what was published before the liquidation. Where something
 | **Sign-in** | Not disclosed | Microsoft 365 work account, Microsoft Entra ID SSO |
 | **Commuter-benefit records** | Not disclosed | Monthly per-employee record, exportable for payroll |
 | **Reporting** | Not disclosed | Participation, trips, CO₂ avoided (Scope 3, category 7), parking spaces freed |
-| **Data** | Not disclosed | In your Microsoft 365 tenant, hosted in the EU (France), GDPR |
+| **Data** | Not disclosed | In your Microsoft 365 tenant, GDPR compliant |
 | **Availability** | France | Available across Europe and North America |
 | **Price** | Not disclosed | €3 excl. VAT per employee per month (promo), first month free, quarterly commitment |
 
