@@ -24,7 +24,7 @@
  *   --dry-run                 Print the payload without sending.
  *
  * Environment:
- *   INDEXNOW_KEY              API key (required). Falls back to the value
+ *   INDEXNOW_KEY              Optional key override. Defaults to the value
  *                             baked into KEY_FALLBACK below.
  */
 
@@ -36,7 +36,7 @@ const https = require('https');
 const { execSync } = require('child_process');
 
 const HOST = 'www.teamwheelsapp.com';
-const KEY_FALLBACK = 'c496718c095a4114b0ddbb8cf661fed5';
+const KEY_FALLBACK = '24e5827e6d3f440ca6d93c4a4c8c9d0c';
 const ENDPOINT = 'https://api.indexnow.org/IndexNow';
 const BATCH_SIZE = 10000; // IndexNow per-request cap
 

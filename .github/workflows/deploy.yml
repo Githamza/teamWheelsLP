@@ -153,9 +153,10 @@ jobs:
           echo "ref=$BEFORE" >> "$GITHUB_OUTPUT"
           echo "Comparing against $BEFORE"
 
+      # The key is public by design (served at /<key>.txt, see static/), so
+      # it lives in scripts/indexnow/submit.js rather than in a secret that
+      # could drift out of sync with the hosted key file.
       - name: Submit changed URLs to IndexNow
-        env:
-          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: node scripts/indexnow/submit.js --changed --base "${{ steps.base.outputs.ref }}"
 
   # ─── Tag release after deployment succeeds ─────────────────────────────
