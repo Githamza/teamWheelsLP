@@ -123,7 +123,7 @@ why_teamwheels:
     us: "Votre annuaire Entra ID devient la liste des covoitureurs, à jour automatiquement"
   - topic: "Données"
     them: "Données de vos salariés sur une plateforme externe"
-    us: "Dans votre tenant Microsoft 365, données hébergées en France, RGPD"
+    us: "Dans votre tenant Microsoft 365, données hébergées en Europe, RGPD"
   - topic: "Pilotage RSE"
     them: "Exports à retraiter pour le Scope 3 et le FMD"
     us: "Tableau de bord Scope 3 et justificatifs FMD générés automatiquement"
@@ -244,9 +244,9 @@ image_and_content_blocks:
     title: "Une solution sécurisée, pensée pour votre DSI"
     image: "images/home-fr-securite.png"
     image_fit: true   # maquette : image pleine largeur, sans marge
-    image_alt: "Connexion à TeamWheels avec le compte Microsoft professionnel (SSO Entra ID), données dans votre tenant, hébergement en France"
+    image_alt: "Connexion à TeamWheels avec le compte Microsoft professionnel (SSO Entra ID), données dans votre tenant, hébergement en Europe"
     content_position: "left"
-    content: "Publiée sur le Microsoft Teams Store avec une [Publisher Attestation Microsoft 365](https://learn.microsoft.com/fr-fr/microsoft-365-app-certification/teams/hmz-digital-teamwheels), SSO via Microsoft Entra ID, données hébergées en France et RGPD compliant — une solution enterprise sécurisée, sans identifiants supplémentaires. Les grands comptes, campus et zones d'activité peuvent la déployer sous leur propre nom avec la [plateforme de covoiturage en marque blanche](/fr/white-label-carpool-platform/).
+    content: "Publiée sur le Microsoft Teams Store avec une [Publisher Attestation Microsoft 365](https://learn.microsoft.com/fr-fr/microsoft-365-app-certification/teams/hmz-digital-teamwheels), SSO via Microsoft Entra ID, données hébergées en Europe et RGPD compliant — une solution enterprise sécurisée, sans identifiants supplémentaires. Les grands comptes, campus et zones d'activité peuvent la déployer sous leur propre nom avec la [plateforme de covoiturage en marque blanche](/fr/white-label-carpool-platform/).
 
     [En savoir plus →](benefits/#securite)
     "

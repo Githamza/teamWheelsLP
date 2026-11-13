@@ -201,7 +201,7 @@
     - Microsoft Marketplace listing: {{ .Marketplace }}
     - Microsoft 365 Publisher Attestation (security, data handling, compliance): {{ .Attestation }}
 
-    Key points: sign-in through Microsoft Entra ID (your Conditional Access policies apply), data hosted in France on Azure and encrypted at rest, no data shared with third parties, GDPR compliant.
+    Key points: sign-in through Microsoft Entra ID (your Conditional Access policies apply), data hosted in Europe on Azure and encrypted at rest, no data shared with third parties, GDPR compliant.
 
     In the Teams admin center: Teams apps > Manage apps > search "TeamWheels" > Allow.
 

@@ -80,11 +80,11 @@ image_and_content_blocks:
     content_position: "left"
     content: "TeamWheels répond aux exigences de sécurité les plus strictes pour protéger vos données et celles de vos collaborateurs.
 
-    * **Publiée sur le Microsoft Teams Store** — Application validée par Microsoft avant publication, avec une [Publisher Attestation Microsoft 365](https://learn.microsoft.com/fr-fr/microsoft-365-app-certification/teams/hmz-digital-teamwheels) publique qui documente pour votre DSI l'hébergement Azure en France, le chiffrement au repos et l'absence de transfert de données à des tiers
+    * **Publiée sur le Microsoft Teams Store** — Application validée par Microsoft avant publication, avec une [Publisher Attestation Microsoft 365](https://learn.microsoft.com/fr-fr/microsoft-365-app-certification/teams/hmz-digital-teamwheels) publique qui documente pour votre DSI l'hébergement Azure en Europe, le chiffrement au repos et l'absence de transfert de données à des tiers
 
     * **SSO Entreprise** — Authentification sécurisée via Azure AD / Entra ID — aucun identifiant supplémentaire nécessaire
 
-    * **RGPD Compliant** — Données hébergées en France, protection de la vie privée par conception
+    * **RGPD Compliant** — Données hébergées en Europe, protection de la vie privée par conception
 
     * **Dashboard admin** — Suivez l'adoption du programme, la participation et l'impact CO₂ sans atteinte à la vie privée des collaborateurs
     "

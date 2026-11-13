@@ -232,7 +232,7 @@ image_and_content_blocks:
     image_fit: true   # product mockup: full-width image, no padding
     image_alt: "Aanmelden bij TeamWheels met het Microsoft-werkaccount (SSO via Entra ID), gegevens in uw tenant, opslag in de EU"
     content_position: "left"
-    content: "Gepubliceerd in de Microsoft Teams Store met een [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/nl-nl/microsoft-365-app-certification/teams/hmz-digital-teamwheels), aanmelden via Microsoft Entra ID, gegevens gehost in Frankrijk en GDPR-conform: een veilige oplossing voor bedrijven, zonder extra wachtwoorden. Grote organisaties, campussen en bedrijventerreinen kunnen TeamWheels ook onder hun eigen naam inzetten met het [white-labelplatform](https://www.teamwheelsapp.com/en/white-label-carpool-platform/) (Engelstalig).
+    content: "Gepubliceerd in de Microsoft Teams Store met een [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/nl-nl/microsoft-365-app-certification/teams/hmz-digital-teamwheels), aanmelden via Microsoft Entra ID, gegevens gehost in Europa en GDPR-conform: een veilige oplossing voor bedrijven, zonder extra wachtwoorden. Grote organisaties, campussen en bedrijventerreinen kunnen TeamWheels ook onder hun eigen naam inzetten met het [white-labelplatform](https://www.teamwheelsapp.com/en/white-label-carpool-platform/) (Engelstalig).
     "
     button:
       enable: false

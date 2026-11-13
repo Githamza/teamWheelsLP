@@ -50,7 +50,7 @@ pricing_card:
       * SSO Azure AD inclus
       * Statistiques avancées
       * Support prioritaire
-      * Données hébergées en France
+      * Données hébergées en Europe
 
   - name: "Entreprise"
     currency: ""

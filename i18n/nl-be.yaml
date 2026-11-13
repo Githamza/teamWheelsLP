@@ -203,7 +203,7 @@
     - Productpagina in Microsoft Marketplace: {{ .Marketplace }}
     - Microsoft 365 Publisher Attestation (beveiliging, gegevensverwerking, compliance): {{ .Attestation }}
 
-    Belangrijkste punten: aanmelden via Microsoft Entra ID (uw Conditional Access-beleid blijft gelden), gegevens gehost in Frankrijk op Azure en versleuteld opgeslagen, geen gegevens gedeeld met derden, GDPR-conform.
+    Belangrijkste punten: aanmelden via Microsoft Entra ID (uw Conditional Access-beleid blijft gelden), gegevens gehost in Europa op Azure en versleuteld opgeslagen, geen gegevens gedeeld met derden, GDPR-conform.
 
     In het Teams-beheercentrum: Teams-apps > Apps beheren > zoek "TeamWheels" > Toestaan.
 

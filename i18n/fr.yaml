@@ -201,7 +201,7 @@
     - Fiche Microsoft Marketplace : {{ .Marketplace }}
     - Attestation Microsoft 365 (sécurité, données, conformité) : {{ .Attestation }}
 
-    Points clés : connexion via Microsoft Entra ID (les politiques d'accès conditionnel s'appliquent), données hébergées en France sur Azure et chiffrées au repos, aucune donnée transmise à des tiers, conformité RGPD.
+    Points clés : connexion via Microsoft Entra ID (les politiques d'accès conditionnel s'appliquent), données hébergées en Europe sur Azure et chiffrées au repos, aucune donnée transmise à des tiers, conformité RGPD.
 
     Dans le centre d'administration Teams : Applications Teams > Gérer les applications > rechercher « TeamWheels » > Autoriser.
 

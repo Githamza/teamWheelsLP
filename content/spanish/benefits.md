@@ -80,7 +80,7 @@ image_and_content_blocks:
     content_position: "left"
     content: "TeamWheels cumple los requisitos de seguridad empresarial más estrictos para proteger a su organización y la privacidad de sus empleados.
 
-    * **Publicada en la Microsoft Teams Store**: validada por Microsoft antes de su publicación, con una [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/es-es/microsoft-365-app-certification/teams/hmz-digital-teamwheels) pública que documenta para su equipo de TI: alojamiento en Azure en Francia, cifrado en reposo y ningún dato compartido con terceros
+    * **Publicada en la Microsoft Teams Store**: validada por Microsoft antes de su publicación, con una [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/es-es/microsoft-365-app-certification/teams/hmz-digital-teamwheels) pública que documenta para su equipo de TI: alojamiento en Azure en la UE, cifrado en reposo y ningún dato compartido con terceros
 
     * **SSO empresarial**: autenticación segura mediante Azure AD / Entra ID, sin credenciales adicionales
 

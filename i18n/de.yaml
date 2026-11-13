@@ -201,7 +201,7 @@
     - Eintrag im Microsoft Marketplace: {{ .Marketplace }}
     - Microsoft 365 Publisher Attestation (Sicherheit, Datenverarbeitung, Compliance): {{ .Attestation }}
 
-    Wichtigste Punkte: Anmeldung über Microsoft Entra ID (Ihre Richtlinien für bedingten Zugriff gelten), Daten in Frankreich auf Azure gehostet und im Ruhezustand verschlüsselt, keine Weitergabe von Daten an Dritte, DSGVO-konform.
+    Wichtigste Punkte: Anmeldung über Microsoft Entra ID (Ihre Richtlinien für bedingten Zugriff gelten), Daten in Europa auf Azure gehostet und im Ruhezustand verschlüsselt, keine Weitergabe von Daten an Dritte, DSGVO-konform.
 
     Im Teams Admin Center: Teams-Apps > Apps verwalten > nach „TeamWheels“ suchen > Zulassen.
 

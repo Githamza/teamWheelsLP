@@ -201,7 +201,7 @@
     - Ficha en Microsoft Marketplace: {{ .Marketplace }}
     - Microsoft 365 Publisher Attestation (seguridad, tratamiento de datos, cumplimiento): {{ .Attestation }}
 
-    Puntos clave: inicio de sesión mediante Microsoft Entra ID (se aplican vuestras directivas de acceso condicional), datos alojados en Francia en Azure y cifrados en reposo, ningún dato compartido con terceros, conforme con el RGPD.
+    Puntos clave: inicio de sesión mediante Microsoft Entra ID (se aplican vuestras directivas de acceso condicional), datos alojados en la UE en Azure y cifrados en reposo, ningún dato compartido con terceros, conforme con el RGPD.
 
     En el Centro de administración de Teams: Aplicaciones de Teams > Administrar aplicaciones > buscar «TeamWheels» > Permitir.
 

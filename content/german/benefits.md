@@ -80,7 +80,7 @@ image_and_content_blocks:
     content_position: "left"
     content: "TeamWheels erfüllt höchste Sicherheitsanforderungen von Unternehmen und schützt Ihre Organisation ebenso wie die Privatsphäre Ihrer Mitarbeitenden.
 
-    * **Im Microsoft Teams Store veröffentlicht** – Vor der Veröffentlichung von Microsoft geprüft, mit einer öffentlichen [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/de-de/microsoft-365-app-certification/teams/hmz-digital-teamwheels), die Ihrem IT-Team dokumentiert: Azure-Hosting in Frankreich, Verschlüsselung ruhender Daten, keine Weitergabe von Daten an Dritte
+    * **Im Microsoft Teams Store veröffentlicht** – Vor der Veröffentlichung von Microsoft geprüft, mit einer öffentlichen [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/de-de/microsoft-365-app-certification/teams/hmz-digital-teamwheels), die Ihrem IT-Team dokumentiert: Azure-Hosting in Europa, Verschlüsselung ruhender Daten, keine Weitergabe von Daten an Dritte
 
     * **Enterprise-SSO** – Sichere Anmeldung über Azure AD / Entra ID – keine separaten Zugangsdaten nötig
 

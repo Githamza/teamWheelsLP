@@ -164,7 +164,7 @@ image_and_content_blocks:
       | Offre | Prix | Ce qui est inclus |
       |---|---|---|
       | **Essai gratuit** | 0 € pendant 30 jours | Application Teams complète, bot conversationnel, tableau de bord administrateur, jusqu'à 50 collaborateurs, sans carte bancaire |
-      | **TeamWheels** | **3 € HT par collaborateur et par mois** (promo, au lieu de 5 € HT) | Collaborateurs illimités, suivi CO₂ en temps réel, justificatifs FMD automatiques, SSO Entra ID, statistiques avancées, support prioritaire, données hébergées en France |
+      | **TeamWheels** | **3 € HT par collaborateur et par mois** (promo, au lieu de 5 € HT) | Collaborateurs illimités, suivi CO₂ en temps réel, justificatifs FMD automatiques, SSO Entra ID, statistiques avancées, support prioritaire, données hébergées en Europe |
       | **Entreprise** | Sur devis | Multi-sites et multi-entités, API et intégrations RH, SLA garanti, account manager dédié, onboarding personnalisé, rapports RSE sur mesure |
 
       Le prix est le même que vous soyez 10 ou 10 000 : 3 € HT (tarif promo, au lieu de 5 € HT) par collaborateur et par mois, facturés mensuellement ou annuellement, résiliables à tout moment sans préavis. Pour situer l'ordre de grandeur : une place de parking en zone urbaine coûte entre 100 et 300 € par mois ; un programme qui retire 20 voitures d'un site de 200 salariés rembourse la solution dès le premier trimestre, avant même de compter le FMD et le CO₂ évité.
@@ -204,7 +204,7 @@ faq:
   - question: "Peut-on déployer une plateforme de covoiturage entreprise en marque blanche ?"
     answer: "Oui. TeamWheels se déploie en marque blanche dans votre propre tenant Microsoft 365, à votre marque et selon vos politiques IT. Les salariés s'authentifient avec leur compte professionnel existant via le SSO Azure AD / Entra ID : aucun compte séparé à provisionner, et l'expérience s'intègre à vos outils internes plutôt qu'à une app tierce."
   - question: "Comment les données des salariés sont-elles sécurisées ?"
-    answer: "L'authentification passe par le SSO Azure AD / Entra ID, l'application tourne dans votre tenant Microsoft 365, les données sont hébergées en France et la plateforme est conforme RGPD, privacy by design. Seules les informations nécessaires à l'appariement (site, horaires, secteur de départ) sont traitées."
+    answer: "L'authentification passe par le SSO Azure AD / Entra ID, l'application tourne dans votre tenant Microsoft 365, les données sont hébergées en Europe et la plateforme est conforme RGPD, privacy by design. Seules les informations nécessaires à l'appariement (site, horaires, secteur de départ) sont traitées."
   - question: "Quel outil de covoiturage entreprise choisir pour un site industriel ?"
     answer: "Sur un site industriel, souvent excentré, avec des équipes en horaires postés et un parking saturé, privilégiez un outil qui regroupe les covoitureurs par site et par créneau plutôt qu'un grand réseau ouvert : le volume utile est celui de vos propres salariés. Vérifiez que l'appariement tient compte des horaires et du site de chacun, que l'outil est accessible sans nouvelle application pour les équipes de production, et qu'il produit les justificatifs FMD et le reporting CO₂ dont vos équipes RH et RSE ont besoin. TeamWheels répond à ces critères dans Microsoft Teams."
   - question: "TeamWheels est-il une application ou un logiciel de covoiturage entreprise ?"

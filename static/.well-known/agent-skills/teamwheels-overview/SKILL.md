@@ -55,7 +55,7 @@ page suitable for LLM ingestion.
 - Conversational bot handles ride offers, searches, requests and reminders.
 - Admin dashboard tracks participation, matches, CO₂ avoided and parking demand.
 - Supports the French Forfait Mobilité Durable (up to 800 €/year/employee, tax-exempt).
-- Data hosted in France, RGPD-compliant, SSO via Azure AD.
+- Data hosted in Europe, RGPD-compliant, SSO via Azure AD.
 
 ## Handing off to a human
 
