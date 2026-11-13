@@ -147,7 +147,7 @@ Autrement dit : **aucune urgence à paniquer, mais aucune raison d'attendre** po
 | **Modèle** | Application grand public, réseau ouvert, partenariats entreprises et collectivités | Plateforme de covoiturage dédiée entreprise | Progiciel de covoiturage d'entreprise (depuis 2005) | Application intégrée à Microsoft Teams |
 | **Qui covoiture avec qui** | Tous les utilisateurs de l'application | Les collègues de l'organisation, tous sites | Les collègues de l'organisation (et partenaires selon configuration) | Les collègues de l'organisation, dans leur Teams |
 | **Compte salarié** | Compte personnel chez l'opérateur | Compte sur la plateforme | Compte sur la plateforme | Compte Microsoft 365 existant (SSO Entra ID) |
-| **Données salariés** | Opérateur responsable du traitement | Selon contrat | Selon contrat | Dans votre tenant Microsoft 365, hébergement en France |
+| **Données salariés** | Opérateur responsable du traitement | Selon contrat | Selon contrat | Dans votre tenant Microsoft 365, hébergement en Europe |
 | **Justificatifs FMD** | Preuves de trajets via l'opérateur | Selon offre | Inscrit au registre de preuve de covoiturage | Relevés mensuels prêts pour la paie |
 | **Nouvelle app à installer** | Oui | Oui (web / mobile) | Oui (web / mobile) | Non — dans Teams |
 | **Incitations au trajet** | Subventions des collectivités, selon territoire (prime nationale supprimée en janvier 2025) | Selon politique employeur (FMD) | Selon politique employeur (FMD) | Selon politique employeur (FMD) |
@@ -170,7 +170,7 @@ La plupart des programmes de covoiturage d'entreprise échouent pour une raison 
 
 Pour une entreprise qui sort de BlaBlaCar Daily ou de Klaxit, trois différences comptent :
 
-- **Aucun compte à recréer** : connexion avec le compte Microsoft 365 existant (SSO Entra ID), données dans votre tenant, hébergées en France.
+- **Aucun compte à recréer** : connexion avec le compte Microsoft 365 existant (SSO Entra ID), données dans votre tenant, hébergées en Europe.
 - **Aucune dépendance aux subventions** : le dispositif repose sur votre politique mobilité, pas sur une prime dont les règles peuvent changer.
 - **Une bascule rapide** : installation en quelques minutes, premier mois offert jusqu'à 50 collaborateurs, puis 3 € HT par collaborateur et par mois (tarif promotionnel, au lieu de 5 € HT) — voir les [tarifs](/fr/pricing/).
 

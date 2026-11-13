@@ -31,3 +31,9 @@ scripts/search-console/data/
 .claude/skills/
 skills-lock.json
 
+
+# YouTube channel OAuth credentials & tokens (local sync script only, never deployed)
+themes/delta-hugo/youtube/
+scripts/youtube/client_secret*.json
+scripts/youtube/tokens.json
+scripts/youtube/data/

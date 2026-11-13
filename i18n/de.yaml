@@ -103,6 +103,9 @@
 - id: video_play_label
   translation: Demo-Video abspielen
 
+- id: video_play_short
+  translation: Video abspielen
+
 - id: hero_carousel_image
   translation: Wie TeamWheels Kolleginnen und Kollegen in Microsoft Teams zusammenbringt
 
@@ -201,7 +204,7 @@
     - Eintrag im Microsoft Marketplace: {{ .Marketplace }}
     - Microsoft 365 Publisher Attestation (Sicherheit, Datenverarbeitung, Compliance): {{ .Attestation }}
 
-    Wichtigste Punkte: Anmeldung über Microsoft Entra ID (Ihre Richtlinien für bedingten Zugriff gelten), Daten in Frankreich auf Azure gehostet und im Ruhezustand verschlüsselt, keine Weitergabe von Daten an Dritte, DSGVO-konform.
+    Wichtigste Punkte: Anmeldung über Microsoft Entra ID (Ihre Richtlinien für bedingten Zugriff gelten), Daten in Europa auf Azure gehostet und im Ruhezustand verschlüsselt, keine Weitergabe von Daten an Dritte, DSGVO-konform.
 
     Im Teams Admin Center: Teams-Apps > Apps verwalten > nach „TeamWheels“ suchen > Zulassen.
 

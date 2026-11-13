@@ -99,6 +99,10 @@ figurent dans la [politique de confidentialité](/fr/privacy-policy/).
   traitement. Écrivez-nous pour demander la suppression des données de trajet
   stockées.
 
+L'installation en vidéo, en quatre étapes (1 min 30) :
+
+{{< youtube-video topic="install" >}}
+
 Pour les questions contractuelles (contrat d'abonnement, bon de commande,
 accord de traitement des données) ou une démonstration, écrivez à
 [contact@teamwheels.fr](mailto:contact@teamwheels.fr) ou utilisez la

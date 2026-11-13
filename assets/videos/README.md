@@ -77,3 +77,24 @@ GA4 `placement` param). It renders the same click-to-play facade as the hero plu
 language. Currently used on `/demo/` and in 10 product-related blog posts (5 EN, 5 FR), each
 preceded by a sentence with a text link to the watch page. The shortcode is stripped from
 the Markdown-for-agents output (`layouts/partials/agent/page.md`).
+
+## YouTube clips (features + install walkthrough)
+
+The short feature clips and the "install in Teams" walkthrough live on the YouTube
+channel `@teamwheelsapp`, not in this folder. The site embeds them click-to-play: our own
+thumbnail first, and a `youtube-nocookie.com` iframe created on the click (same facade and
+script as above), so a page makes no request to Google until a visitor presses play.
+
+- `scripts/youtube/topics.json` maps each topic (`install`, `route-matching`, …) to one
+  video id per language. A language without an id plays the one named in `fallback`
+  (nl and nl-be → the English clips, with an "Engelstalig" play label), or shows nothing
+  (de today).
+- `npm run youtube:sync` signs in to the channel (read-only; `scripts/youtube/client_secret.json`
+  and `tokens.json` are git-ignored), then writes `data/youtube.json` (title, description,
+  duration) and the thumbnails in `assets/images/youtube/`. Both are committed, so the
+  build and CI need no credentials. Re-run it after adding a video or editing a title on
+  YouTube. `node scripts/youtube/inventory.js` lists everything on the channel.
+- In a layout: `partials/youtube-section.html` with a front-matter block (`install_video:`
+  and `feature_videos:` on `/how-it-works/`). In Markdown: the `youtube-video` shortcode
+  with `topic="install"` (used on `/support/`).
+- These are supporting embeds: no `VideoObject`, no video-sitemap entry.

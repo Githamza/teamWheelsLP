@@ -1,0 +1,224 @@
+{
+  "fallback": {
+    "nl": "en",
+    "nl-be": "en"
+  },
+  "topics": [
+    {
+      "slug": "install",
+      "category": "setup",
+      "videos": {
+        "fr": {
+          "id": "FXUEv7mkQ9Y",
+          "title": "Installer TeamWheels dans Microsoft Teams",
+          "description": "Le covoiturage pour toute votre entreprise, dans Microsoft Teams. Les quatre étapes pour installer TeamWheels : l'obtenir sur le Microsoft Marketplace, demander l'approbation, la validation et l'épinglage par votre service informatique, puis la configuration de votre trajet.",
+          "duration": "PT1M30S",
+          "duration_seconds": 90,
+          "published": "2026-11-12T19:34:34Z",
+          "privacy": "unlisted",
+          "thumbnail": "images/youtube/FXUEv7mkQ9Y.jpg"
+        },
+        "en": {
+          "id": "TS2slqVlsgU",
+          "title": "How to install TeamWheels in Microsoft Teams",
+          "description": "Carpooling for your whole company, inside Microsoft Teams. The four steps to install TeamWheels: get it from the Microsoft Marketplace, request approval, let your IT admin approve and pin it, then set up your commute.",
+          "duration": "PT1M30S",
+          "duration_seconds": 90,
+          "published": "2026-11-12T19:34:31Z",
+          "privacy": "unlisted",
+          "thumbnail": "images/youtube/TS2slqVlsgU.jpg"
+        },
+        "es": {
+          "id": "KpDQcrJ2Wmc",
+          "title": "Cómo instalar TeamWheels en Microsoft Teams",
+          "description": "Coche compartido para toda tu empresa, dentro de Microsoft Teams. Los cuatro pasos para instalar TeamWheels: consíguelo en Microsoft Marketplace, solicita la aprobación, tu equipo de TI lo aprueba y lo ancla, y configura tu trayecto.",
+          "duration": "PT1M30S",
+          "duration_seconds": 90,
+          "published": "2026-11-12T19:34:38Z",
+          "privacy": "unlisted",
+          "thumbnail": "images/youtube/KpDQcrJ2Wmc.jpg"
+        }
+      }
+    },
+    {
+      "slug": "route-matching",
+      "category": "feature",
+      "videos": {
+        "fr": {
+          "id": "g9zOct8AbD4",
+          "title": "Trajets compatibles : covoiturez avec les collègues qui font déjà votre route",
+          "description": "Indiquez votre trajet à TeamWheels et découvrez quels collègues habitent sur votre route. La mise en relation est anonyme : les noms ne sont partagés que si vous dites oui tous les deux. Le tout dans Microsoft Teams.",
+          "duration": "PT53S",
+          "duration_seconds": 53,
+          "published": "2026-11-12T19:34:49Z",
+          "privacy": "unlisted",
+          "thumbnail": "images/youtube/g9zOct8AbD4.jpg"
+        },
+        "en": {
+          "id": "Ts4fMgxIIIc",
+          "title": "Route matching: carpool with colleagues already going your way",
+          "description": "Tell TeamWheels about your commute and see which colleagues live on your route. Matching is anonymous: names are shared only when both of you say yes. All inside Microsoft Teams.",
+          "duration": "PT53S",
+          "duration_seconds": 53,
+          "published": "2026-11-12T19:34:47Z",
+          "privacy": "unlisted",
+          "thumbnail": "images/youtube/Ts4fMgxIIIc.jpg"
+        },
+        "es": {
+          "id": "VYxSP_1zyrM",
+          "title": "Rutas compatibles: comparte coche con compañeros que ya hacen tu camino",
+          "description": "Cuéntale a TeamWheels tu trayecto y descubre qué compañeros viven en tu ruta. La coincidencia es anónima: los nombres solo se comparten cuando los dos decís que sí. Todo dentro de Microsoft Teams.",
+          "duration": "PT53S",
+          "duration_seconds": 53,
+          "published": "2026-11-12T19:34:52Z",
+          "privacy": "unlisted",
+          "thumbnail": "images/youtube/VYxSP_1zyrM.jpg"
+        }
+      }
+    },
+    {
+      "slug": "recurring-trips",
+      "category": "feature",
+      "videos": {
+        "fr": {
+          "id": "_YEGYtlLUSI",
+          "title": "Trajets récurrents : proposez votre trajet une seule fois",
+          "description": "Vous faites la même route chaque semaine ? Proposez-la une fois dans TeamWheels, choisissez les jours, et chaque nouvelle date s'ouvre à la réservation toute seule. Le tout dans Microsoft Teams.",
+          "duration": "PT50S",
+          "duration_seconds": 50,
+          "published": "2026-11-13T12:19:17Z",
+          "privacy": "unlisted",
+          "thumbnail": "images/youtube/_YEGYtlLUSI.jpg"
+        },
+        "en": {
+          "id": "BrD-6T-3sS4",
+          "title": "Recurring trips: offer your commute once",
+          "description": "Driving the same route every week? Offer it once in TeamWheels, pick the days it repeats, and each new date opens for booking by itself. All inside Microsoft Teams.",
+          "duration": "PT50S",
+          "duration_seconds": 50,
+          "published": "2026-11-12T19:34:55Z",
+          "privacy": "unlisted",
+          "thumbnail": "images/youtube/BrD-6T-3sS4.jpg"
+        },
+        "es": {
+          "id": "TV4biJpkYVQ",
+          "title": "Viajes recurrentes: ofrece tu trayecto una sola vez",
+          "description": "¿Haces la misma ruta cada semana? Ofrécela una vez en TeamWheels, elige los días y cada nueva fecha se abre sola para reservar. Todo dentro de Microsoft Teams.",
+          "duration": "PT50S",
+          "duration_seconds": 50,
+          "published": "2026-11-13T12:19:21Z",
+          "privacy": "unlisted",
+          "thumbnail": "images/youtube/TV4biJpkYVQ.jpg"
+        }
+      }
+    },
+    {
+      "slug": "ride-alerts",
+      "category": "feature",
+      "videos": {
+        "fr": {
+          "id": "Nc2o1a-6DNU",
+          "title": "Alertes trajet : pas de trajet trouvé n'est jamais une impasse",
+          "description": "Pas encore de covoiturage pour votre trajet ? TeamWheels continue de chercher pour vous, prévient en douceur les collègues qui font cette route, et vous avertit en premier dès qu'un trajet apparaît. Le tout dans Microsoft Teams.",
+          "duration": "PT41S",
+          "duration_seconds": 41,
+          "published": "2026-11-12T19:34:42Z",
+          "privacy": "unlisted",
+          "thumbnail": "images/youtube/Nc2o1a-6DNU.jpg"
+        },
+        "en": {
+          "id": "xg3J68-CYC4",
+          "title": "Ride alerts: no ride found is never a dead end",
+          "description": "No carpool for your trip yet? TeamWheels keeps watching for you, gently nudges colleagues who drive that route, and tells you first when a ride appears. All inside Microsoft Teams.",
+          "duration": "PT41S",
+          "duration_seconds": 41,
+          "published": "2026-11-12T19:33:31Z",
+          "privacy": "unlisted",
+          "thumbnail": "images/youtube/xg3J68-CYC4.jpg"
+        },
+        "es": {
+          "id": "wTpWQRkX3X0",
+          "title": "Alertas de viaje: sin viaje no es un callejón sin salida",
+          "description": "¿Aún no hay coche compartido para tu trayecto? TeamWheels sigue buscando por ti, avisa con suavidad a los compañeros que hacen esa ruta y te lo dice primero cuando aparece un viaje. Todo dentro de Microsoft Teams.",
+          "duration": "PT41S",
+          "duration_seconds": 41,
+          "published": "2026-11-12T19:34:44Z",
+          "privacy": "unlisted",
+          "thumbnail": "images/youtube/wTpWQRkX3X0.jpg"
+        }
+      }
+    },
+    {
+      "slug": "site-champions",
+      "category": "feature",
+      "videos": {
+        "fr": {
+          "id": "TvEu3KV81Oc",
+          "title": "Ambassadeurs de site et bilan mensuel : chaque site voit ses progrès",
+          "description": "Désignez un ambassadeur volontaire pour chaque site, et TeamWheels envoie à chacun son bilan mensuel de covoiturage dans Microsoft Teams. Des chiffres d'équipe, site par site. Jamais de classement individuel.",
+          "duration": "PT47S",
+          "duration_seconds": 47,
+          "published": "2026-11-13T12:19:28Z",
+          "privacy": "unlisted",
+          "thumbnail": "images/youtube/TvEu3KV81Oc.jpg"
+        },
+        "en": {
+          "id": "lR2OXzZ14Gs",
+          "title": "Site champions & monthly recap: every office sees its progress",
+          "description": "Name a volunteer champion for each office, and TeamWheels sends every site its own monthly carpooling recap in Microsoft Teams. Team numbers, site by site. Never individual rankings.",
+          "duration": "PT47S",
+          "duration_seconds": 47,
+          "published": "2026-11-13T12:19:24Z",
+          "privacy": "unlisted",
+          "thumbnail": "images/youtube/lR2OXzZ14Gs.jpg"
+        },
+        "es": {
+          "id": "K8oxOfwp828",
+          "title": "Embajadores de sede y resumen mensual: cada oficina ve su progreso",
+          "description": "Nombra a un embajador voluntario en cada oficina y TeamWheels envía a cada sede su resumen mensual de coche compartido en Microsoft Teams. Cifras de equipo, sede por sede. Nunca clasificaciones individuales.",
+          "duration": "PT47S",
+          "duration_seconds": 47,
+          "published": "2026-11-13T12:19:32Z",
+          "privacy": "unlisted",
+          "thumbnail": "images/youtube/K8oxOfwp828.jpg"
+        }
+      }
+    },
+    {
+      "slug": "reports",
+      "category": "feature",
+      "videos": {
+        "fr": {
+          "id": "xk916qDTwPk",
+          "title": "CO2 évité et export FMD : vos bilans de covoiturage en un clic",
+          "description": "Voyez combien de covoiturage se fait vraiment dans votre entreprise : trajets, places occupées, conducteurs actifs et CO2 évité. Exportez les trajets pour le Forfait Mobilités Durables (FMD) en un clic.",
+          "duration": "PT53S",
+          "duration_seconds": 53,
+          "published": "2026-11-13T12:19:40Z",
+          "privacy": "unlisted",
+          "thumbnail": "images/youtube/xk916qDTwPk.jpg"
+        },
+        "en": {
+          "id": "sS-1xp3XCo0",
+          "title": "CO2 avoided & FMD export: your carpooling reports in one click",
+          "description": "See how much carpooling really happens at your company: trips, seats filled, active drivers and CO2 avoided. Export the trips for France's sustainable mobility allowance (FMD) in one click.",
+          "duration": "PT53S",
+          "duration_seconds": 53,
+          "published": "2026-11-13T12:19:36Z",
+          "privacy": "unlisted",
+          "thumbnail": "images/youtube/sS-1xp3XCo0.jpg"
+        },
+        "es": {
+          "id": "2CJM-0PqWBY",
+          "title": "CO2 evitado y exportación FMD: tus informes de coche compartido en un clic",
+          "description": "Descubre cuánto se comparte coche de verdad en tu empresa: viajes, plazas ocupadas, conductores activos y CO2 evitado. Exporta los viajes para el Forfait Mobilités Durables (FMD) francés en un clic.",
+          "duration": "PT53S",
+          "duration_seconds": 53,
+          "published": "2026-11-13T12:19:44Z",
+          "privacy": "unlisted",
+          "thumbnail": "images/youtube/2CJM-0PqWBY.jpg"
+        }
+      }
+    }
+  ]
+}

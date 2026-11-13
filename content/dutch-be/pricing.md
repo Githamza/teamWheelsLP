@@ -51,7 +51,7 @@ pricing_card:
       * Single sign-on met Microsoft Entra ID
       * Uitgebreide statistieken
       * Prioritaire support
-      * Gegevens gehost in Frankrijk
+      * Gegevens gehost in Europa
 
   - name: "Enterprise"
     currency: ""

@@ -102,6 +102,22 @@ image_and_content_blocks:
     [Guía completa del carpooling corporativo (en inglés) →](/en/blog/corporate-carpooling-guide-2026/) · [Descubra el software de gestión del coche compartido →](/es/corporate-carpooling-software/)"
 
 
+# Vídeos de YouTube (reproducción al hacer clic). Los `topics` son los slugs
+# de data/youtube.json, generado por `npm run youtube:sync`.
+install_video:
+  enable: true
+  subtitle: "Puesta en marcha"
+  title: "La instalación en Microsoft Teams, en vídeo"
+  description: "Los cuatro pasos en 90 segundos: consigue TeamWheels en Microsoft Marketplace, solicita la aprobación, tu equipo de TI la aprueba y la ancla, y configuras tu trayecto."
+  topics: ["install"]
+
+feature_videos:
+  enable: true
+  subtitle: "Las funciones en vídeo"
+  title: "Cada función en menos de un minuto"
+  description: "Cinco vídeos cortos, del lado del empleado y del lado de la empresa."
+  topics: ["route-matching", "recurring-trips", "ride-alerts", "site-champions", "reports"]
+
 faq:
   - question: "¿Cómo funciona el coche compartido dentro de Microsoft Teams?"
     answer: "Un administrador de Teams instala TeamWheels desde Microsoft AppSource en unos 5 minutos. Después, los empleados ofrecen o buscan trayectos mediante un bot conversacional directamente en Teams: el bot los empareja por ruta y horario, coordina los trayectos diarios y envía recordatorios, todo sin salir de Teams ni instalar una app aparte."

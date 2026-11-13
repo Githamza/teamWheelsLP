@@ -21,8 +21,19 @@
        the empty lower-left area of the illustration instead. */
     .hero-demo-video__frame--fit .hero-demo-video__play{inset:auto;left:20%;top:72%;margin:-2.25rem 0 0 -2.25rem}
     .hero-demo-video__frame--fit .hero-demo-video__label{left:50%;bottom:0;transform:translateX(-50%);white-space:nowrap}
-    .hero-demo-video__player{width:100%;height:100%;display:block;background:#0b132b;object-fit:contain}
+    .hero-demo-video__player{width:100%;height:100%;display:block;border:0;background:#0b132b;object-fit:contain}
     .hero-demo-video__link{font-weight:500}
+    /* YouTube clips (partials/youtube-video.html): light thumbnails, so a
+       hairline instead of the dark frame; title + blurb under each card. */
+    .yt-video{margin:0}
+    .yt-video .hero-demo-video__frame{background:#eef0fa;box-shadow:0 .5rem 1.75rem rgba(11,19,43,.12);outline:1px solid rgba(11,19,43,.08)}
+    .yt-video .hero-demo-video__poster{object-fit:cover}
+    .yt-video .hero-demo-video__play{width:3.75rem;height:3.75rem;border-radius:50%;background:#fff;box-shadow:0 .4rem 1.25rem rgba(11,19,43,.25)}
+    .yt-video .hero-demo-video__play svg{width:2rem;height:2rem;filter:none;margin-left:.15rem}
+    .yt-video__title{margin:1rem 0 .4rem}
+    .yt-video__text{margin:0;font-size:.95rem}
+    .content figure.yt-video{display:block;max-width:40rem;margin:2rem auto}
+    .content figure.yt-video .hero-demo-video__poster{margin:0;border-radius:0;box-shadow:none}
     .hero-demo-section__lede{max-width:42rem;margin-left:auto;margin-right:auto}
     @media(prefers-reduced-motion:reduce){.hero-demo-video__play{transition:none}}
   </style>
@@ -36,6 +47,24 @@
         if (!facade || frame.dataset.bound) return;
         frame.dataset.bound = '1';
         facade.addEventListener('click', function () {
+          document.querySelectorAll('video').forEach(function (o) { o.pause(); });
+          // YouTube clip: the iframe (and with it every request to Google)
+          // only exists after this click. youtube-nocookie.com = YouTube's
+          // privacy-enhanced mode; the referrer policy is required by the
+          // embedded player (error 153 without it).
+          if (frame.dataset.youtube) {
+            var f = document.createElement('iframe');
+            f.className = 'hero-demo-video__player';
+            f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(frame.dataset.youtube) +
+              '?autoplay=1&rel=0&playsinline=1&hl=' + encodeURIComponent(document.documentElement.lang || 'en');
+            f.title = frame.dataset.title || 'YouTube video';
+            f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+            f.referrerPolicy = 'strict-origin-when-cross-origin';
+            f.allowFullscreen = true;
+            frame.classList.add('is-playing');
+            frame.replaceChild(f, facade);
+            return;
+          }
           var v = document.createElement('video');
           v.className = 'hero-demo-video__player';
           v.controls = true;

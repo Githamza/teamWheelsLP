@@ -1,0 +1,18 @@
+{
+  "_comment": "Which YouTube video covers which topic, per site language. Edit this, then run `npm run youtube:sync`. Categories: setup | feature. A language without an id uses the language named in `fallback` (the play label then says the video is in English), or shows no video.",
+  "fallback": { "nl": "en", "nl-be": "en" },
+  "topics": [
+    { "slug": "install", "category": "setup",
+      "videos": { "fr": "FXUEv7mkQ9Y", "en": "TS2slqVlsgU", "es": "KpDQcrJ2Wmc" } },
+    { "slug": "route-matching", "category": "feature",
+      "videos": { "fr": "g9zOct8AbD4", "en": "Ts4fMgxIIIc", "es": "VYxSP_1zyrM" } },
+    { "slug": "recurring-trips", "category": "feature",
+      "videos": { "fr": "_YEGYtlLUSI", "en": "BrD-6T-3sS4", "es": "TV4biJpkYVQ" } },
+    { "slug": "ride-alerts", "category": "feature",
+      "videos": { "fr": "Nc2o1a-6DNU", "en": "xg3J68-CYC4", "es": "wTpWQRkX3X0" } },
+    { "slug": "site-champions", "category": "feature",
+      "videos": { "fr": "TvEu3KV81Oc", "en": "lR2OXzZ14Gs", "es": "K8oxOfwp828" } },
+    { "slug": "reports", "category": "feature",
+      "videos": { "fr": "xk916qDTwPk", "en": "sS-1xp3XCo0", "es": "2CJM-0PqWBY" } }
+  ]
+}

@@ -105,6 +105,12 @@
 - id: video_play_label
   translation: Demovideo afspelen
 
+- id: video_play_short
+  translation: Video afspelen
+
+- id: video_play_short_en
+  translation: Video afspelen (Engelstalig)
+
 - id: hero_carousel_image
   translation: Zo koppelt TeamWheels collega's aan elkaar in Microsoft Teams
 
@@ -203,7 +209,7 @@
     - Productpagina in Microsoft Marketplace: {{ .Marketplace }}
     - Microsoft 365 Publisher Attestation (beveiliging, gegevensverwerking, compliance): {{ .Attestation }}
 
-    Belangrijkste punten: aanmelden via Microsoft Entra ID (uw Conditional Access-beleid blijft gelden), gegevens gehost in Frankrijk op Azure en versleuteld opgeslagen, geen gegevens gedeeld met derden, GDPR-conform.
+    Belangrijkste punten: aanmelden via Microsoft Entra ID (uw Conditional Access-beleid blijft gelden), gegevens gehost in Europa op Azure en versleuteld opgeslagen, geen gegevens gedeeld met derden, GDPR-conform.
 
     In het Teams-beheercentrum: Teams-apps > Apps beheren > zoek "TeamWheels" > Toestaan.
 

@@ -53,7 +53,7 @@ image_and_content_blocks:
       | **Coût de départ** | 100 000 à 200 000 €+ pour une v1 crédible | Aucun frais d'installation ; premier mois offert | Faible ou nul, payé en participation |
       | **Coût de maintenance** | 1 à 2 ETP pour la maintenance, les mises à jour mobiles, l'hébergement, le support | Abonnement par collaborateur, maintenance incluse | Abonnement par collaborateur ou par site |
       | **Propriété de la marque** | Totale — c'est votre app | Le nom, le logo et les couleurs de votre programme dans Microsoft Teams | La marque de l'éditeur, parfois avec un logo à télécharger |
-      | **RGPD & hébergement** | Sous votre responsabilité de bout en bout | Dans votre propre tenant Microsoft 365, sous vos politiques ; données hébergées en France, RGPD, privacy by design | Cloud de l'éditeur, données hors de votre tenant |
+      | **RGPD & hébergement** | Sous votre responsabilité de bout en bout | Dans votre propre tenant Microsoft 365, sous vos politiques ; données hébergées en Europe, RGPD, privacy by design | Cloud de l'éditeur, données hors de votre tenant |
       | **Intégration à l'annuaire** | À construire (SSO, provisioning, départs) | Native : Entra ID est la liste des covoitureurs, aucun compte à créer ni à fermer | Invitations manuelles ou imports CSV |
       | **Reporting Scope 3** | À construire après le lancement | Export poste 7 inclus (trajets, km, CO₂) pour le bilan GES et la CSRD | Variable ; souvent un PDF, rarement auditable |
 

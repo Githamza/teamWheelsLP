@@ -108,7 +108,7 @@ image_and_content_blocks:
 
     * **Minder parkeerdruk** – Elke gedeelde rit is een wagen minder op uw parking
 
-    * **Beveiliging op bedrijfsniveau** – Single sign-on met Microsoft Entra ID, GDPR-conform, privacy by design, gegevens gehost in Frankrijk
+    * **Beveiliging op bedrijfsniveau** – Single sign-on met Microsoft Entra ID, GDPR-conform, privacy by design, gegevens gehost in Europa
 
     **Voor uw medewerkers**
 
@@ -151,7 +151,7 @@ image_and_content_blocks:
       | Formule | Prijs | Inbegrepen |
       |---|---|---|
       | **Eerste maand gratis** | € 0 de eerste maand | Volledige Teams-app, chatbot, beheerdersdashboard, tot 50 medewerkers, geen kredietkaart nodig |
-      | **TeamWheels** | **€ 3 per medewerker per maand excl. btw** (promotie, in plaats van € 5) | Onbeperkt aantal medewerkers, realtime opvolging van de CO₂-impact, overzicht van de gedeelde ritten, single sign-on met Microsoft Entra ID, uitgebreide statistieken, prioritaire support, gegevens gehost in Frankrijk |
+      | **TeamWheels** | **€ 3 per medewerker per maand excl. btw** (promotie, in plaats van € 5) | Onbeperkt aantal medewerkers, realtime opvolging van de CO₂-impact, overzicht van de gedeelde ritten, single sign-on met Microsoft Entra ID, uitgebreide statistieken, prioritaire support, gegevens gehost in Europa |
       | **Enterprise** | Op maat | Meerdere vestigingen en entiteiten, API en HR-integraties, gegarandeerde SLA, vaste accountmanager, onboarding op maat, duurzaamheidsrapporten op maat |
 
       Dezelfde prijs voor 10 of 10.000 medewerkers: € 3 excl. btw (promotie, in plaats van € 5) per medewerker per maand, maandelijks of jaarlijks gefactureerd, met een looptijd van telkens drie maanden na de gratis eerste maand.
@@ -176,6 +176,16 @@ image_and_content_blocks:
     button:
       enable: false
 
+# YouTube-video's (afspelen na klik). `topics` zijn de slugs uit
+# data/youtube.json. Nog geen Nederlandstalige versie: de Engelse video's
+# worden getoond (`fallback` in scripts/youtube/topics.json).
+feature_videos:
+  enable: true
+  subtitle: "De functies in beeld"
+  title: "Elke functie in minder dan een minuut"
+  description: "Drie korte video's, vanuit het oogpunt van de medewerker en van het bedrijf. De video's zijn in het Engels."
+  topics: ["route-matching", "recurring-trips", "reports"]
+
 faq_title: "Veelgestelde vragen over carpoolen voor bedrijven"
 faq:
   - question: "Welke carpool app kiest u voor uw bedrijf?"
@@ -191,7 +201,7 @@ faq:
   - question: "Is het carpoolplatform beschikbaar in white label?"
     answer: "Ja. TeamWheels kan in white label in uw eigen Microsoft 365-tenant worden uitgerold, onder uw merk en volgens uw IT-beleid. Medewerkers melden zich aan met hun bestaande werkaccount via single sign-on met Microsoft Entra ID: geen aparte accounts om aan te maken."
   - question: "Hoe zijn de gegevens van medewerkers beveiligd?"
-    answer: "De aanmelding verloopt via single sign-on met Microsoft Entra ID, de app draait in uw Microsoft 365-tenant, de gegevens worden in Frankrijk gehost en het platform is GDPR-conform, privacy by design. Alleen de gegevens die nodig zijn voor de matching (vestiging, uren, vertrekzone) worden verwerkt."
+    answer: "De aanmelding verloopt via single sign-on met Microsoft Entra ID, de app draait in uw Microsoft 365-tenant, de gegevens worden in Europa gehost en het platform is GDPR-conform, privacy by design. Alleen de gegevens die nodig zijn voor de matching (vestiging, uren, vertrekzone) worden verwerkt."
   - question: "Is TeamWheels een app of software?"
     answer: "Beide. TeamWheels is een Microsoft Teams-app waarmee medewerkers ritten aanbieden en zoeken, en carpoolsoftware voor beheerders, met een dashboard, een overzicht van de gedeelde ritten en CO₂-rapportering. Alles vanuit één installatie in uw Microsoft 365-tenant."
 
