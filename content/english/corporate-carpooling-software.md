@@ -82,7 +82,7 @@ image_and_content_blocks:
 
     * **Reporting & analytics** — Export participation metrics and CO₂ impact for sustainability and finance teams
 
-    * **Enterprise security** — Microsoft Entra ID SSO (formerly Azure AD), data hosted in the EU, GDPR compliant, privacy by design — no extra credentials or infrastructure
+    * **Enterprise security** — Microsoft Entra ID SSO (formerly Azure AD), GDPR compliant, privacy by design — no extra credentials or infrastructure
     "
     button:
       enable: false
@@ -171,11 +171,11 @@ faq:
   - question: "Is it really just a Microsoft Teams app?"
     answer: "Yes. TeamWheels installs inside your existing Microsoft 365 tenant from AppSource — there's no separate app for employees to download. Employees sign in with their Microsoft 365 work account through Microsoft Entra ID single sign-on, and the same account works in Teams on desktop, web and mobile."
   - question: "How is employee data secured?"
-    answer: "Authentication runs through Microsoft Entra ID (formerly Azure AD) single sign-on with your employees' existing Microsoft 365 accounts, so there are no extra passwords. Data is hosted in the EU (France), and the platform is GDPR compliant with privacy by design."
+    answer: "Authentication runs through Microsoft Entra ID (formerly Azure AD) single sign-on with your employees' existing Microsoft 365 accounts, so there are no extra passwords. Data is hosted in the EU, and the platform is GDPR compliant with privacy by design."
   - question: "What does corporate carpooling software cost?"
     answer: "TeamWheels offers the first month free, then transparent per-seat pricing from 3€ per seat per month excl. VAT (promo price, down from 5€) on a quarterly commitment. Most organizations reach positive ROI within the first quarter through parking-cost savings alone."
   - question: "Which countries does TeamWheels support?"
-    answer: "TeamWheels is available across Europe and North America: any organization on Microsoft 365 can install it from the Microsoft Teams Store. Companies in the USA, UK, and Canada run it today, the app is localized for France, Belgium, the Netherlands, Germany and Spain, and France gets full support for the Forfait Mobilités Durables. Data is hosted in the EU."
+    answer: "TeamWheels is available across Europe and North America: any organization on Microsoft 365 can install it from the Microsoft Teams Store. Companies in the USA, UK, and Canada run it today, the app is localized for France, Belgium, the Netherlands, Germany and Spain, and France gets full support for the Forfait Mobilités Durables."
   - question: "How do I choose the best carpool management software?"
     answer: "Evaluate five criteria: employee adoption path (the #1 failure point — software employees must download separately rarely passes 18% participation), admin visibility and controls, reporting depth for Scope 3 and commuter benefits, commute mode coverage including vanpool options, and security (SSO, GDPR, data residency). TeamWheels leads on adoption because it runs inside Microsoft Teams, reaching 40%+ participation with no separate app."
   - question: "Does TeamWheels cover vanpools and other employee transportation modes?"

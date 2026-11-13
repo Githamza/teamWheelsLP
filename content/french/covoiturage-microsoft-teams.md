@@ -27,7 +27,7 @@ faq:
   - question: "Peut-on réserver un covoiturage avec Copilot ?"
     answer: "Oui. L'agent TeamWheels répond aussi dans Microsoft Copilot : un salarié peut demander un trajet en langage naturel et Copilot réserve la place auprès d'un collègue. Le fonctionnement et les données restent les mêmes que dans le bot Teams."
   - question: "Où sont stockées les données de covoiturage ?"
-    answer: "L'authentification passe par Entra ID, l'application s'installe dans votre tenant Microsoft 365, les données sont hébergées en France et traitées conformément au RGPD. Seules les informations nécessaires à l'appariement sont utilisées  : site, horaires habituels et secteur de départ."
+    answer: "L'authentification passe par Entra ID, l'application s'installe dans votre tenant Microsoft 365, les données sont hébergées en Europe et traitées conformément au RGPD. Seules les informations nécessaires à l'appariement sont utilisées  : site, horaires habituels et secteur de départ."
   - question: "Combien coûte l'appli de covoiturage Teams ?"
     answer: "Le premier mois est offert jusqu'à 50 collaborateurs, sans carte bancaire. Ensuite, 3 € HT par collaborateur et par mois (tarif promotionnel, au lieu de 5 € HT) avec un engagement trimestriel, justificatifs FMD et reporting CO₂ inclus."
 ---
@@ -71,7 +71,7 @@ Chaque trajet partagé est enregistré, ce qui sert de justificatif pour le [for
 | 3. Configurer | Déclarer les sites de l'entreprise et les règles d'appariement | 2 min |
 | 4. Publier | Rendre l'application disponible pour tous ou pour un groupe pilote via les stratégies d'application Teams | 1 min |
 
-Pas de serveur, pas d'infrastructure, pas de fichier d'utilisateurs à importer : l'annuaire Microsoft 365 est la liste des covoitureurs. L'application est validée par Microsoft et publiée sur AppSource. Les données sont hébergées en France et l'application respecte le RGPD : seules les informations nécessaires à l'appariement sont traitées (site, horaires, secteur de départ).
+Pas de serveur, pas d'infrastructure, pas de fichier d'utilisateurs à importer : l'annuaire Microsoft 365 est la liste des covoitureurs. L'application est validée par Microsoft et publiée sur AppSource. Les données sont hébergées en Europe et l'application respecte le RGPD : seules les informations nécessaires à l'appariement sont traitées (site, horaires, secteur de départ).
 
 ## Ce que voient les RH et l'équipe RSE {#rh}
 

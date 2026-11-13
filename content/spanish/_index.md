@@ -120,7 +120,7 @@ why_teamwheels:
     us: "Su directorio de Entra ID se convierte en la lista de participantes, actualizada automáticamente"
   - topic: "Datos"
     them: "Los datos de sus empleados en una plataforma externa"
-    us: "En su tenant de Microsoft 365, datos alojados en la UE, conforme al RGPD"
+    us: "En su tenant de Microsoft 365, conforme al RGPD"
   - topic: "Informes ESG"
     them: "Exportaciones que hay que reelaborar para el Scope 3"
     us: "Panel de Scope 3 e informes listos para CSRD, generados automáticamente"
@@ -240,7 +240,7 @@ image_and_content_blocks:
     title: "Una solución de movilidad para empleados segura y aprobada por TI"
     image: "images/home-es-securite.png"
     image_fit: true   # product mockup: full-width image, no padding
-    image_alt: "Inicio de sesión en TeamWheels con la cuenta profesional de Microsoft (SSO con Entra ID), datos en su tenant, alojados en la UE"
+    image_alt: "Inicio de sesión en TeamWheels con la cuenta profesional de Microsoft (SSO con Entra ID), datos en su tenant"
     content_position: "left"
     content: "Publicada en la Microsoft Teams Store con una [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/es-es/microsoft-365-app-certification/teams/hmz-digital-teamwheels), SSO con Microsoft Entra ID y conforme al RGPD: TeamWheels cumple los estándares de seguridad empresariales sin credenciales adicionales ni cambios de infraestructura.
 

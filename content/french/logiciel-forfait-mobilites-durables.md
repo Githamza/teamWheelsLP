@@ -86,7 +86,7 @@ Le [registre de preuve de covoiturage](https://covoiturage.beta.gouv.fr/) est un
 
 ## Pourquoi dans Microsoft Teams {#teams}
 
-Un justificatif n'existe que si le trajet est enregistré. Les applications de covoiturage séparées perdent leurs utilisateurs après quelques semaines, et les relevés FMD se vident avec eux. TeamWheels vit dans Microsoft Teams, ouvert toute la journée par les salariés : connexion avec le compte Microsoft 365 (SSO Entra ID), aucune application à installer, données hébergées en France.
+Un justificatif n'existe que si le trajet est enregistré. Les applications de covoiturage séparées perdent leurs utilisateurs après quelques semaines, et les relevés FMD se vident avec eux. TeamWheels vit dans Microsoft Teams, ouvert toute la journée par les salariés : connexion avec le compte Microsoft 365 (SSO Entra ID), aucune application à installer, données hébergées en Europe.
 
 - **Installation** : environ 5 minutes par un administrateur Microsoft 365.
 - **Tarif** : justificatifs FMD inclus, 3 € HT par collaborateur et par mois (tarif promotionnel, au lieu de 5 € HT). Premier mois offert, puis engagement trimestriel. Voir les [tarifs](/fr/pricing/).
