@@ -105,6 +105,12 @@
 - id: video_play_label
   translation: Demovideo afspelen
 
+- id: video_play_short
+  translation: Video afspelen
+
+- id: video_play_short_en
+  translation: Video afspelen (Engelstalig)
+
 - id: hero_carousel_image
   translation: Zo koppelt TeamWheels in Microsoft Teams collega's aan elkaar
 

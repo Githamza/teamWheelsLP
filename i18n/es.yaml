@@ -103,6 +103,9 @@
 - id: video_play_label
   translation: Reproducir el vídeo de demostración
 
+- id: video_play_short
+  translation: Reproducir el vídeo
+
 - id: hero_carousel_image
   translation: Cómo TeamWheels pone en contacto a compañeros en Microsoft Teams
 

@@ -90,6 +90,10 @@ employer's Teams administrator or email us. Details are in the
 * **Removal:** uninstalling the app for your tenant stops all processing. Email
   us to request deletion of stored trip data.
 
+The installation on video, in four steps (90 seconds):
+
+{{< youtube-video topic="install" >}}
+
 For contractual questions (subscription agreement, order form, data processing
 agreement) or a demo, write to
 [contact@teamwheels.fr](mailto:contact@teamwheels.fr) or use the

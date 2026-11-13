@@ -103,6 +103,9 @@
 - id: video_play_label
   translation: Demo-Video abspielen
 
+- id: video_play_short
+  translation: Video abspielen
+
 - id: hero_carousel_image
   translation: Wie TeamWheels Kolleginnen und Kollegen in Microsoft Teams zusammenbringt
 

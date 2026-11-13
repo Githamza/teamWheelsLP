@@ -166,6 +166,10 @@
     {{ end }}
   {{ end }}
 
+  {{/* YouTube feature clips (click-to-play), declared in a `feature_videos:`
+       front-matter block; skipped when the language has no video. */}}
+  {{ partial "youtube-section.html" (dict "page" . "block" .Params.feature_videos) }}
+
   {{/* Visible FAQ rendered from the same `faq:` list that feeds the FAQPage
        JSON-LD (partials/seo/schema.html), so markup and page stay aligned. */}}
   {{ partial "faq-section.html" . }}

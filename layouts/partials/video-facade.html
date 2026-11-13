@@ -14,19 +14,24 @@
                      on a transparent background (for the animated SVG);
                      false → a 16:9 dark frame
          eager       true for the hero (LCP image)
-         alt, label, duration, placement, watchPage */ -}}
+         alt, label, duration, placement, watchPage
+         youtube     YouTube video id: the click creates a
+                     youtube-nocookie.com iframe instead of a <video>
+                     (mp4/webm/poster are then unused)
+         track       GA4 event name (default demo_video_play) */ -}}
 <div class="hero-video">
   <div
     class="hero-demo-video__frame{{ if .fit }} hero-demo-video__frame--fit{{ end }}"
     data-demo-video
     data-mp4="{{ .mp4 }}"
     data-webm="{{ .webm }}"
-    data-poster="{{ .poster }}">
+    data-poster="{{ .poster }}"
+    {{ with .youtube }}data-youtube="{{ . }}" data-title="{{ $.alt }}"{{ end }}>
     <button
       type="button"
       class="hero-demo-video__facade"
       data-play-demo
-      data-track="demo_video_play"
+      data-track="{{ .track | default "demo_video_play" }}"
       data-placement="{{ .placement }}">
       {{ with .thumb }}
         <img

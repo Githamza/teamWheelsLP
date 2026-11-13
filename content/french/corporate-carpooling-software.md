@@ -189,6 +189,15 @@ image_and_content_blocks:
     button:
       enable: false
 
+# Vidéos YouTube (lecture au clic). Les `topics` sont les slugs de
+# data/youtube.json, généré par `npm run youtube:sync`.
+feature_videos:
+  enable: true
+  subtitle: "Les fonctionnalités en vidéo"
+  title: "Trois fonctionnalités, moins d'une minute chacune"
+  description: "La mise en relation des collègues, les trajets récurrents et les bilans de covoiturage."
+  topics: ["route-matching", "recurring-trips", "reports"]
+
 faq_title: "Questions fréquentes sur le logiciel de covoiturage entreprise"
 faq:
   - question: "Quel outil de covoiturage choisir pour son entreprise ?"

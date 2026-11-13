@@ -1,0 +1,9 @@
+{{- /* A YouTube clip inside Markdown content (click-to-play, see
+       partials/youtube-video.html). Renders nothing when the topic has no
+       video in the page's language.
+       Usage: the `youtube-video` shortcode with topic="install". */ -}}
+{{- $card := partial "youtube-video.html" (dict "page" .Page "topic" (.Get "topic") "heading" "none") -}}
+{{- if $card -}}
+{{ $card }}
+{{ partial "video-facade-assets.html" .Page }}
+{{- end -}}

@@ -162,6 +162,10 @@ Les deux peuvent coexister : un employeur peut accepter l'attestation sur l'honn
 
 C'est l'approche de TeamWheels : les salariés organisent leurs trajets dans Microsoft Teams, et chaque trajet partagé alimente des relevés mensuels par salarié, exportables pour la paie. Le fonctionnement est détaillé sur la page du [logiciel de covoiturage entreprise](/fr/corporate-carpooling-software/).
 
+Le bilan de covoiturage et l'export des trajets pour le FMD, en vidéo (53 secondes) :
+
+{{< youtube-video topic="reports" >}}
+
 {{< cta-demo title="Remplacer la collecte d'attestations par des relevés de trajets" text="TeamWheels enregistre les trajets covoiturés dans Teams et produit chaque mois des relevés nominatifs prêts pour le versement du FMD." src="attestation-covoiturage" >}}
 
 ## Secteur public : les attestations spécifiques {#secteur-public}

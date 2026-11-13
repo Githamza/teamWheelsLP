@@ -149,6 +149,15 @@ image_and_content_blocks:
     button:
       enable: false
 
+# Vídeos de YouTube (reproducción al hacer clic). Los `topics` son los slugs
+# de data/youtube.json, generado por `npm run youtube:sync`.
+feature_videos:
+  enable: true
+  subtitle: "Las funciones en vídeo"
+  title: "Tres funciones, menos de un minuto cada una"
+  description: "La coincidencia de rutas entre compañeros, los viajes recurrentes y los informes de coche compartido."
+  topics: ["route-matching", "recurring-trips", "reports"]
+
 faq_title: "Preguntas frecuentes sobre el software de carpooling corporativo"
 faq:
   - question: "¿Existe una app de Microsoft Teams para compartir coche?"

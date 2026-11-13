@@ -77,6 +77,15 @@
 {{ partialCached "custom-script.html" . }}
 
 
+{{/* Keep development and preview traffic out of the reports (Nov 2026: 1,792
+     of the /fr/ page views in GA4 came from `localhost`). Anywhere but the
+     production domain, GA4 is switched off with its official opt-out flag
+     (honoured by gtag.js, also when the tag is fired through GTM) and
+     Clarity is not loaded. Must run before the tags below. */}}
+<script>
+(function(){var h=location.hostname;if(h==='teamwheelsapp.com'||/\.teamwheelsapp\.com$/.test(h))return;window.twNoTrack=true;{{ with site.Config.Services.GoogleAnalytics.ID }}window['ga-disable-{{ . }}']=true;{{ end }}})();
+</script>
+
 <!-- google tag manager -->
 {{ partialCached "gtm.html" . }}
 
@@ -125,7 +134,7 @@ function _loadDeferred() {
   var cs=document.createElement("script");cs.src="https://client.crisp.chat/l.js";cs.async=1;document.head.appendChild(cs);
   {{ end }}{{ end }}
   {{ with site.Params.ms_clarity }}{{ if .enable }}
-  (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","{{ .ms_clarity_code }}");
+  if(!window.twNoTrack)(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","{{ .ms_clarity_code }}");
   {{ end }}{{ end }}
 }
 if(typeof requestIdleCallback!=="undefined"){requestIdleCallback(_loadDeferred)}else{setTimeout(_loadDeferred,3000)}

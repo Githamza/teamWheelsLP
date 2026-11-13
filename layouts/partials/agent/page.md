@@ -280,7 +280,7 @@ date: {{ .Format "2006-01-02" }}
 {{- $body = replaceRE "^\\s*#\\s+[^\\n]+\\n+" "" $body -}}
 {{- /* The launch-video embed is a player, not text: drop it (the sentence
        before it already links to the watch page). */ -}}
-{{- $body = replaceRE "\\{\\{<\\s*launch-video[^>]*>\\}\\}\\n*" "" $body -}}
+{{- $body = replaceRE "\\{\\{<\\s*(?:launch-video|youtube-video)[^>]*>\\}\\}\\n*" "" $body -}}
 {{ $body }}
 
 {{ end -}}

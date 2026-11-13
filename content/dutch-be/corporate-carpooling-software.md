@@ -176,6 +176,16 @@ image_and_content_blocks:
     button:
       enable: false
 
+# YouTube-video's (afspelen na klik). `topics` zijn de slugs uit
+# data/youtube.json. Nog geen Nederlandstalige versie: de Engelse video's
+# worden getoond (`fallback` in scripts/youtube/topics.json).
+feature_videos:
+  enable: true
+  subtitle: "De functies in beeld"
+  title: "Elke functie in minder dan een minuut"
+  description: "Drie korte video's, vanuit het oogpunt van de medewerker en van het bedrijf. De video's zijn in het Engels."
+  topics: ["route-matching", "recurring-trips", "reports"]
+
 faq_title: "Veelgestelde vragen over carpoolen voor bedrijven"
 faq:
   - question: "Welke carpool app kiest u voor uw bedrijf?"

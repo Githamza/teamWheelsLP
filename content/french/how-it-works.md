@@ -109,6 +109,22 @@ image_and_content_blocks:
     [Guide complet : lancer votre programme covoiturage →](/fr/blog/covoiturage-entreprise-guide-2026/)"
 
 
+# Vidéos YouTube (lecture au clic). Les `topics` sont les slugs de
+# data/youtube.json, généré par `npm run youtube:sync`.
+install_video:
+  enable: true
+  subtitle: "Mise en place"
+  title: "L'installation dans Microsoft Teams, en vidéo"
+  description: "Les quatre étapes en 1 min 30 : obtenir TeamWheels sur le Microsoft Marketplace, demander l'approbation, validation et épinglage par le service informatique, puis configuration du trajet."
+  topics: ["install"]
+
+feature_videos:
+  enable: true
+  subtitle: "Les fonctionnalités en vidéo"
+  title: "Chaque fonctionnalité en moins d'une minute"
+  description: "Cinq courtes vidéos, côté salarié et côté entreprise."
+  topics: ["route-matching", "recurring-trips", "ride-alerts", "site-champions", "reports"]
+
 faq:
   - question: "Comment fonctionne le covoiturage dans Microsoft Teams ?"
     answer: "Un administrateur Teams installe TeamWheels depuis Microsoft AppSource en environ 5 minutes. Les salariés proposent ou trouvent ensuite des trajets via un bot conversationnel directement dans Teams : le bot les met en relation par trajet et horaires, coordonne les trajets quotidiens et envoie des rappels — sans quitter Teams ni installer d'app séparée."

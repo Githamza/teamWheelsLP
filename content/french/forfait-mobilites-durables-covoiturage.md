@@ -249,6 +249,15 @@ image_and_content_blocks:
       enable: false
 
 faq_title: "Questions fréquentes sur le forfait mobilités durables"
+# Vidéos YouTube (lecture au clic). Les `topics` sont les slugs de
+# data/youtube.json, généré par `npm run youtube:sync`.
+feature_videos:
+  enable: true
+  subtitle: "En vidéo"
+  title: "L'export FMD des trajets covoiturés, en 53 secondes"
+  description: "Trajets, places occupées, conducteurs actifs et CO₂ évité : le bilan de covoiturage de l'entreprise, et l'export des trajets pour le forfait mobilités durables en un clic."
+  topics: ["reports"]
+
 faq:
   - question: "Quel est le montant de la prime covoiturage en 2026 ?"
     answer: "La prime covoiturage que verse l'employeur en 2026, c'est le forfait mobilités durables : il est exonéré de cotisations et d'impôt jusqu'à 600 € par an et par salarié lorsqu'il est versé seul, et jusqu'à 900 € par an en cas de cumul avec la prise en charge de l'abonnement aux transports en commun. Ces plafonds sont fixés par la loi de finances et peuvent évoluer : vérifiez-les chaque année sur service-public.gouv.fr ou urssaf.fr."

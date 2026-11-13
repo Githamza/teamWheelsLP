@@ -136,6 +136,10 @@
     </section>
   {{ end }}
 
+  {{/* YouTube clips (click-to-play): the install walkthrough right after
+       the four steps, the feature clips after the content blocks. */}}
+  {{ partial "youtube-section.html" (dict "page" . "block" .Params.install_video) }}
+
   {{ range .Params.image_and_content_blocks }}
     {{ with . }}
       {{ if .enable }}
@@ -205,6 +209,8 @@
       {{ end }}
     {{ end }}
   {{ end }}
+
+  {{ partial "youtube-section.html" (dict "page" . "block" .Params.feature_videos) }}
 
   {{ with .Params.slider_and_content_block }}
     {{ if .enable }}

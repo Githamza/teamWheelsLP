@@ -103,6 +103,9 @@
 - id: video_play_label
   translation: Play the demo video
 
+- id: video_play_short
+  translation: Play video
+
 - id: hero_carousel_image
   translation: How TeamWheels matches colleagues in Microsoft Teams
 

@@ -111,6 +111,24 @@ image_and_content_blocks:
     [Bekijk de prijzen →](/nl-be/prijzen/) · [Bereken uw besparing →](/nl-be/besparingscalculator/)"
 
 
+# YouTube-video's (afspelen na klik). `topics` zijn de slugs uit
+# data/youtube.json, gegenereerd door `npm run youtube:sync`. Er is nog geen
+# Nederlandstalige versie: de Engelse video's worden getoond
+# (`fallback` in scripts/youtube/topics.json).
+install_video:
+  enable: true
+  subtitle: "Installatie"
+  title: "TeamWheels installeren in Microsoft Teams, in beeld"
+  description: "De vier stappen in 90 seconden: TeamWheels opzoeken in de Microsoft Marketplace, goedkeuring aanvragen, de app laten goedkeuren en vastmaken in Teams door uw IT-beheerder, en het woon-werktraject instellen. De video is in het Engels."
+  topics: ["install"]
+
+feature_videos:
+  enable: true
+  subtitle: "De functies in beeld"
+  title: "Elke functie in minder dan een minuut"
+  description: "Vijf korte video's, vanuit het oogpunt van de medewerker en van het bedrijf. De video's zijn in het Engels."
+  topics: ["route-matching", "recurring-trips", "ride-alerts", "site-champions", "reports"]
+
 faq:
   - question: "Hoe werkt carpoolen in Microsoft Teams?"
     answer: "Een Teams-beheerder installeert TeamWheels in ongeveer 5 minuten vanuit de Microsoft Teams Store. Daarna bieden medewerkers ritten aan of zoeken ze er een via een chatbot in Teams: de bot koppelt collega's op basis van traject en uren, coördineert de dagelijkse ritten en stuurt herinneringen, zonder dat iemand Teams moet verlaten of een aparte app moet installeren."

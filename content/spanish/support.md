@@ -103,6 +103,10 @@ en la [política de privacidad](/es/privacy-policy/).
   todo tratamiento. Escríbanos para solicitar la supresión de los datos de
   trayectos almacenados.
 
+La instalación en vídeo, en cuatro pasos (90 segundos):
+
+{{< youtube-video topic="install" >}}
+
 Para cuestiones contractuales (contrato de suscripción, formulario de pedido,
 contrato de encargo del tratamiento) o para solicitar una demostración, escriba
 a [contact@teamwheels.fr](mailto:contact@teamwheels.fr) o utilice la
