@@ -879,6 +879,9 @@
       </div>
     {{ end }}
   {{ end }}
+  {{/* Home FAQ: only pages that declare `faq` (EN today). Same list as the
+       FAQPage JSON-LD in partials/seo/schema.html. */}}
+  {{ partial "faq-section.html" . }}
   {{ if .Params.call_to_action.enable }}
     {{ partial "call-to-action-2.html" . }}
   {{ end }}

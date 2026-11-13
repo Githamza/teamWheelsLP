@@ -4,7 +4,7 @@ seoTitle: "Attestation de covoiturage FMD : modèle et justificatifs"
 description: "Modèle d'attestation sur l'honneur de covoiturage pour le forfait mobilités durables, justificatifs acceptés par l'URSSAF et procédure de collecte côté employeur."
 slug: "attestation-covoiturage-forfait-mobilites-durables"
 date: 2026-10-28
-lastmod: 2026-10-28
+lastmod: 2026-11-04
 draft: false
 layout: "pillar"
 keywords: ["attestation covoiturage", "attestation sur l'honneur covoiturage", "attestation de covoiturage", "modèle attestation covoiturage", "attestation covoiturage forfait mobilité durable", "attestation de covoiturage pdf", "attestation covoiturage fonction publique"]
@@ -178,7 +178,7 @@ Les trois versants de la fonction publique (État, territoriale, hospitalière) 
 - pour le covoiturage, l'employeur public contrôle l'usage et peut demander tout justificatif utile ;
 - le forfait est versé l'année suivant le dépôt de la déclaration. Dans la fonction publique territoriale, il n'est versé que si une délibération le prévoit.
 
-C'est ce qui explique le pic de recherches sur l'« attestation covoiturage fonction publique » en décembre : la date limite de dépôt tombe le 31. Chaque administration peut diffuser son propre formulaire de déclaration, à utiliser en priorité ; à défaut, le service public [covoiturage.beta.gouv.fr](https://covoiturage.beta.gouv.fr/) propose un formulaire en ligne pour éditer une attestation sur l'honneur de covoiturage. Le modèle TeamWheels, conçu pour le secteur privé, n'est pas adapté aux règles propres à la fonction publique.
+C'est ce qui explique le pic de recherches sur l'« attestation covoiturage fonction publique » en décembre : la date limite de dépôt tombe le 31. Chaque administration peut diffuser son propre formulaire de déclaration, à utiliser en priorité ; à défaut, le service public [covoiturage.beta.gouv.fr](https://covoiturage.beta.gouv.fr/) propose un formulaire en ligne pour éditer une attestation sur l'honneur de covoiturage. Le modèle TeamWheels, conçu pour le secteur privé, n'est pas adapté aux règles propres à la fonction publique. Le détail du forfait des agents est sur notre page [prime covoiturage 2026](/fr/prime-covoiturage-2026/#fonctionnaire).
 
 ## Pour aller plus loin
 

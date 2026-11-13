@@ -12,7 +12,7 @@ banner:
   description: "En 5 minutes, transformez Microsoft Teams en plateforme de covoiturage pour vos équipes."
   button:
     enable: true
-    button_label: "🚀 Essai gratuit 30 jours"
+    button_label: "🚀 Premier mois offert"
     icon: "fas fa-arrow-right"
     link: "contact/"
 
@@ -138,7 +138,7 @@ faq:
 call_to_action:
   enable: true
   title: "🚀 Prêt à transformer vos trajets domicile-travail ?"
-  subtitle: "Rejoignez les entreprises qui facilitent le covoiturage de leurs équipes et réduisent leur empreinte carbone. <br><br> <strong>Offre de lancement :</strong> Essai gratuit 30 jours + déploiement accompagné."
+  subtitle: "Rejoignez les entreprises qui facilitent le covoiturage de leurs équipes et réduisent leur empreinte carbone. <br><br> <strong>Offre de lancement :</strong> Premier mois offert + déploiement accompagné."
   button_label : "Recevoir une démo guidée →"
   button_link : "contact/"
   image : "images/cta.png"

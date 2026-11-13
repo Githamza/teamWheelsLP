@@ -12,7 +12,7 @@ banner:
   description: "Convierta Microsoft Teams en una plataforma completa de gestión de desplazamientos para su organización. Sus empleados emparejan trayectos, comparten coche y reducen las emisiones Scope 3, todo desde su entorno de Teams habitual."
   button:
     enable: true
-    button_label: "Empezar la prueba gratuita de 30 días"
+    button_label: "Empezar el primer mes gratis"
     icon: "fas fa-arrow-right"
     link: "contact/"
 
@@ -131,7 +131,7 @@ faq:
 call_to_action:
   enable: true
   title: "¿Listo para lanzar el coche compartido en su organización?"
-  subtitle: "Únase a las empresas de toda Europa y Norteamérica que resuelven sus problemas de desplazamiento, reducen sus emisiones Scope 3 y aumentan la satisfacción de sus empleados con TeamWheels. <br><br> <strong>Empiece ya:</strong> prueba gratuita de 30 días + despliegue guiado para su equipo."
+  subtitle: "Únase a las empresas de toda Europa y Norteamérica que resuelven sus problemas de desplazamiento, reducen sus emisiones Scope 3 y aumentan la satisfacción de sus empleados con TeamWheels. <br><br> <strong>Empiece ya:</strong> primer mes gratis + despliegue guiado para su equipo."
   button_label : "Solicitar una demo guiada →"
   button_link : "contact/"
   image : "images/cta.png"

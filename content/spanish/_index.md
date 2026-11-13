@@ -1,7 +1,7 @@
 ---
 title: "TeamWheels | Coche compartido para empresas y sus empleados"
 seoTitle: "Coche compartido para empresas y empleados | TeamWheels"
-description: "Coche compartido para empresas: emparejamiento de empleados, justificantes de trayectos e informes Scope 3. En Microsoft Teams, prueba gratis 30 días."
+description: "Coche compartido para empresas: emparejamiento de empleados, justificantes de trayectos e informes Scope 3. En Microsoft Teams, primer mes gratis."
 # portada = término comercial principal «coche compartido para empresas» (solución para empleadores);
 # Teams/Copilot = argumento diferenciador, no el titular. Software / app → corporate-carpooling-software
 keywords: "coche compartido para empresas, carpooling empresas, carpooling corporativo, coche compartido empleados, programa de coche compartido, TeamWheels"
@@ -174,8 +174,8 @@ work_process:
     - label: "Día 1"
       title: "Instale"
       image: "images/how-it-works/home-es-step-1.svg"
-      image_alt: "TeamWheels agregado desde la Microsoft Teams Store, con inicio de sesión SSO y prueba gratuita activada"
-      content: "Su administrador de Microsoft 365 agrega TeamWheels en 5 minutos. Sin app que descargar: sus empleados inician sesión con su cuenta profesional. La prueba gratuita empieza con la instalación."
+      image_alt: "TeamWheels agregado desde la Microsoft Teams Store, con inicio de sesión SSO y primer mes gratis activado"
+      content: "Su administrador de Microsoft 365 agrega TeamWheels en 5 minutos. Sin app que descargar: sus empleados inician sesión con su cuenta profesional. El primer mes gratis empieza con la instalación."
     - label: "Semana 1"
       title: "Lance"
       image: "images/how-it-works/home-es-step-2.svg"
@@ -287,7 +287,7 @@ next_step_button:
 call_to_action:
   enable: true
   title: "Ponga en marcha un programa de coche compartido en su organización"
-  subtitle: "Únase a las empresas de toda Europa y Norteamérica que ya reducen sus emisiones Scope 3 y mejoran el bienestar de sus empleados. <br><strong>Prueba gratuita de 30 días</strong> + despliegue guiado incluido. <em>Sin tarjeta de crédito.</em>"
+  subtitle: "Únase a las empresas de toda Europa y Norteamérica que ya reducen sus emisiones Scope 3 y mejoran el bienestar de sus empleados. <br><strong>Primer mes gratis</strong> + despliegue guiado incluido. <em>Sin tarjeta de crédito.</em>"
   button_label : "Solicitar una demo guiada →"
   button_link : "contact/"
   image : "images/cta.png"

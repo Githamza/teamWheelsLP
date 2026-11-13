@@ -1,14 +1,17 @@
 ---
-title: "TeamWheels | Solution de covoiturage entreprise pour vos salariés"
-seoTitle: "Covoiturage entreprise : la solution pour vos salariés | TeamWheels"
-description: "Solution de covoiturage entreprise : mise en relation des salariés, justificatifs FMD et suivi Scope 3. Intégrée à Microsoft Teams, essai gratuit 30 jours."
-# accueil = requête tête commerciale « covoiturage entreprise » (solution pour
-# employeurs) ; Teams/Copilot = argument de différenciation, pas l'angle principal.
+title: "TeamWheels | Le covoiturage de vos salariés dans Microsoft Teams"
+seoTitle: "TeamWheels : le covoiturage de vos salariés dans Microsoft Teams"
+description: "TeamWheels met en relation vos salariés qui font le même trajet, directement dans Microsoft Teams et Copilot : rien à installer, justificatifs FMD, 3 € HT par collaborateur."
+# accueil = marque « TeamWheels » + positionnement Teams (décision du 04/11/2026).
+# La requête tête « covoiturage (en) entreprise » est cédée à l'URL pilier
+# blog/covoiturage-entreprise-guide-2026 pour supprimer la cannibalisation
+# (4 URLs se partageaient la requête en GSC). Ne pas la remettre dans le title.
 # Les autres intentions ont leur page, ne pas les viser ici :
+#   covoiturage en entreprise (informationnel) → blog/covoiturage-entreprise-guide-2026
 #   logiciel / outil / application → corporate-carpooling-software
-#   guide, mise en place (informationnel) → blog/covoiturage-entreprise-guide-2026
+#   covoiturage Microsoft Teams / appli Teams (détail salarié + IT) → covoiturage-microsoft-teams
 #   FMD → forfait-mobilites-durables-covoiturage ; marque blanche → white-label-carpool-platform
-keywords: "covoiturage entreprise, solution covoiturage entreprise, covoiturage salariés, programme de covoiturage entreprise, TeamWheels"
+keywords: "TeamWheels, Team Wheels, covoiturage salariés, covoiturage Microsoft Teams, covoiturage Copilot"
 
 # banner
 banner:
@@ -19,7 +22,7 @@ banner:
     text: "Voir sur le Microsoft Store"
   journey:        # animation 3D isométrique « sans / avec TeamWheels » au-dessus du titre
     enable: true
-  title: "Le covoiturage en entreprise"
+  title: "Le covoiturage de vos salariés"
   title_accent: "au cœur de vos outils quotidiens"   # 2e ligne en dégradé, se termine par les logos
   rotating_logos:   # exactement 2 (animation CSS calée sur 2 logos)
   - src: "images/microsoft-teams-icon.svg"
@@ -130,6 +133,9 @@ why_teamwheels:
   link:
     label: "Comparer avec BlaBlaCar Daily et Karos"
     href: "alternative-blablacar-daily-karos-entreprises/"
+  more_links:
+  - label: "Vous utilisiez Oxycar ? Voir l'alternative"
+    href: "alternative-oxycar/"
 
 # bandeau sous le comparatif (étapes + ligne sécurité) : masqué, la section
 # « Comment fonctionne » complète suit juste en dessous
@@ -178,8 +184,8 @@ work_process:
     - label: "Jour 1"
       title: "Installez"
       image: "images/how-it-works/home-fr-step-1.svg"
-      image_alt: "TeamWheels ajouté depuis le Microsoft Teams Store, connexion SSO et essai gratuit activés"
-      content: "Votre admin Microsoft 365 ajoute TeamWheels en 5 minutes. Pas d'app à télécharger : vos salariés se connectent avec leur compte pro. L'essai gratuit démarre à l'installation."
+      image_alt: "TeamWheels ajouté depuis le Microsoft Teams Store, connexion SSO et premier mois offert activé"
+      content: "Votre admin Microsoft 365 ajoute TeamWheels en 5 minutes. Pas d'app à télécharger : vos salariés se connectent avec leur compte pro. Le premier mois offert démarre à l'installation."
     - label: "Semaine 1"
       title: "Lancez"
       image: "images/how-it-works/home-fr-step-2.svg"
@@ -289,7 +295,7 @@ testimonials:
     - name: "Sophie Bernard"
       designation: "Office Manager, StartupDEF"
       image: "images/avatar/07.jpg"
-      content: "Simple à mettre en place et gratuit pendant 30 jours. On a pu tester sans engagement."
+      content: "Simple à mettre en place, et le premier mois offert nous a permis de tester en conditions réelles."
 
 
 # blog
@@ -314,7 +320,7 @@ next_step_button:
 call_to_action:
   enable: true
   title: "Lancez le covoiturage dans votre entreprise"
-  subtitle: "Rejoignez les entreprises qui réduisent leur Scope 3 et améliorent le bien-être de leurs équipes. <br><strong>Essai gratuit 30 jours</strong> + déploiement accompagné inclus. <em>Sans engagement.</em>"
+  subtitle: "Rejoignez les entreprises qui réduisent leur Scope 3 et améliorent le bien-être de leurs équipes. <br><strong>Premier mois offert</strong> + déploiement accompagné inclus. <em>Sans carte bancaire.</em>"
   button_label : "Recevoir une démo guidée →"
   button_link : "contact/"
   image : "images/cta.png"

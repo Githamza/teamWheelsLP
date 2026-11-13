@@ -2,7 +2,7 @@
 title: "Plan de mobilité employeur : modèle à télécharger (Word/PDF) et volet covoiturage"
 seoTitle: "Plan de mobilité employeur : modèle Word + volet covoiturage"
 date: 2026-10-01
-lastmod: 2026-10-01
+lastmod: 2026-11-05
 draft: false
 description: "Obligation LOM, contenu légal et modèle de plan de mobilité employeur à télécharger en Word et PDF, avec un vrai volet covoiturage : diagnostic des flux, mesures, indicateurs et lien avec le forfait mobilités durables."
 image: "images/blog/sustainable-mobility.jpg"
@@ -98,7 +98,7 @@ Le résultat se résume en deux chiffres à mettre en tête du volet : le nombre
 Quatre leviers se combinent généralement :
 
 - **La mise en relation.** Sans outil, personne ne sait qui habite à côté. L'appariement doit se faire par trajet, horaires et jours sur site, idéalement **entre collègues**, car la réticence à covoiturer avec un inconnu est le premier frein (voir [pourquoi vos salariés sont sceptiques](/fr/blog/pourquoi-vos-employes-sont-sceptiques-sur-le-covoiturage/)).
-- **L'incitation financière.** Le [forfait mobilités durables](/fr/forfait-mobilites-durables-covoiturage/) permet de verser un montant par jour covoituré ou par kilomètre, exonéré dans les plafonds.
+- **L'incitation financière.** Le [forfait mobilités durables](/fr/forfait-mobilites-durables-covoiturage/) permet de verser un montant par jour covoituré ou par kilomètre, exonéré dans les plafonds. Pour l'inscrire dans le plan, voir la [mise en place du FMD par accord ou décision unilatérale](/fr/forfait-mobilites-durables-mise-en-place/).
 - **Les avantages d'usage.** Places de parking réservées aux covoitureurs, accès prioritaire.
 - **La sécurisation.** Une garantie retour (taxi ou VTC pris en charge en cas d'imprévu) lève la crainte de rester bloqué, objection numéro un des conducteurs comme des passagers.
 
@@ -139,7 +139,7 @@ Si votre outil de covoiturage produit des relevés mensuels, le justificatif est
 
 La plupart des plans de mobilité échouent sur un détail pratique : les salariés n'installent pas une application de plus. TeamWheels est un [logiciel de covoiturage entreprise](/fr/corporate-carpooling-software/) qui fonctionne **directement dans Microsoft Teams** : les collègues publient et trouvent un trajet là où ils travaillent déjà, l'appariement se fait par trajet, horaires et jours sur site, et l'employeur obtient chaque mois les relevés utiles pour le FMD. Les indicateurs d'adoption et de trajets de la section 6 du modèle en sont directement issus.
 
-Pour un essai sur un site pilote : 30 jours gratuits jusqu'à 50 collaborateurs, puis 3 € HT par collaborateur et par mois (tarif promotionnel) — voir les [tarifs](/fr/pricing/). Pour la méthode de déploiement complète, voir notre [guide du covoiturage en entreprise 2026](/fr/blog/covoiturage-entreprise-guide-2026/).
+Pour un essai sur un site pilote : premier mois offert jusqu'à 50 collaborateurs, puis 3 € HT par collaborateur et par mois (tarif promotionnel, engagement trimestriel) — voir les [tarifs](/fr/pricing/). Pour la méthode de déploiement complète, voir notre [guide du covoiturage en entreprise 2026](/fr/blog/covoiturage-entreprise-guide-2026/).
 
 ## Foire aux questions
 

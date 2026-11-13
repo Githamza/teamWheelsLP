@@ -2,7 +2,7 @@
 title: "Rachat de BlaBlaCar Daily par Karos : que faire pour votre covoiturage d'entreprise (ex-Klaxit, BBD) ?"
 seoTitle: "Karos rachète BlaBlaCar Daily : que faire en entreprise ?"
 date: 2026-09-30
-lastmod: 2026-09-30
+lastmod: 2026-11-03
 draft: false
 description: "Karos reprend BlaBlaCar Daily (ex-Klaxit) : contrat, données salariés, justificatifs FMD, dépendance à un acteur unique. Checklist de bascule et alternatives pour l'employeur."
 image: "images/blog/enterprise-carpooling.jpg"
@@ -12,27 +12,30 @@ keywords: "karos ou blablacar daily, rachat blablacar daily karos, alternative k
 canonical: "https://www.teamwheelsapp.com/fr/blog/rachat-blablacar-daily-karos-covoiturage-entreprise/"
 faq:
   - question: "Karos a-t-il racheté BlaBlaCar Daily ?"
-    answer: "Karos et BlaBlaCar ont annoncé le 20 juillet 2026 être entrés en négociations exclusives pour la reprise de BlaBlaCar Daily, l'activité de covoiturage domicile-travail de BlaBlaCar. L'opération reste soumise à la consultation des instances représentatives du personnel ; ses conditions financières n'ont pas été communiquées. À la date du 30 septembre 2026, aucune finalisation n'a été annoncée publiquement : il s'agit d'un projet de rachat, pas encore d'un fait accompli."
+    answer: "Oui. Karos et BlaBlaCar ont annoncé le 20 juillet 2026 des négociations exclusives pour la reprise de BlaBlaCar Daily, l'activité de covoiturage domicile-travail de BlaBlaCar. Karos a finalisé l'acquisition avec effet au 1er octobre 2026 (communiqué du 5 octobre 2026) ; l'application a été rebaptisée Daily. Les deux applications coexistent jusqu'à fin 2026, puis Daily doit rejoindre l'écosystème Karos début 2027. Les conditions financières n'ont pas été communiquées."
   - question: "Karos ou BlaBlaCar Daily : lequel choisir pour mon entreprise en 2026 ?"
-    answer: "La question se pose de moins en moins : si l'opération aboutit, les deux services seront opérés par le même acteur, Karos, avec une intégration annoncée comme progressive et sans interruption. Le vrai choix pour un employeur n'est donc plus entre Karos et BlaBlaCar Daily, mais entre une application grand public subventionnée (où le salarié a un compte personnel chez l'opérateur) et un outil interne dédié à l'entreprise (Comovee, Un 7ème SenS, TeamWheels…), où l'employeur garde la main sur les données et les justificatifs."
+    answer: "La question ne se pose plus vraiment : depuis le 1er octobre 2026, les deux services sont opérés par le même acteur, Karos, avec une intégration de Daily dans l'écosystème Karos prévue début 2027. Le vrai choix pour un employeur n'est donc plus entre Karos et BlaBlaCar Daily, mais entre une application grand public subventionnée (où le salarié a un compte personnel chez l'opérateur) et un outil interne dédié à l'entreprise (Comovee, Un 7ème SenS, TeamWheels…), où l'employeur garde la main sur les données et les justificatifs."
+  - question: "Qu'est devenu Klaxit ?"
+    answer: "Klaxit, spécialiste du covoiturage domicile-travail pour les entreprises et les collectivités, a été racheté par BlaBlaCar : opération annoncée le 15 mars 2023 et finalisée en avril 2023. L'application Klaxit a ensuite été remplacée par BlaBlaCar Daily, territoire par territoire, en 2024. BlaBlaCar Daily a à son tour été repris par Karos au 1er octobre 2026 et rebaptisé Daily."
   - question: "Que deviennent les anciens clients Klaxit ?"
-    answer: "Klaxit a été racheté par BlaBlaCar en 2023 puis intégré à BlaBlaCar Daily. Les entreprises et collectivités passées de Klaxit à BlaBlaCar Daily sont donc concernées une deuxième fois en trois ans par un changement d'opérateur si la reprise par Karos aboutit. Les modalités concrètes (application, tarifs, fusion des comptes) ne seront précisées qu'une fois l'opération finalisée."
+    answer: "Les entreprises et collectivités clientes de Klaxit sont passées sur BlaBlaCar Daily en 2024, puis sont concernées une deuxième fois en trois ans par un changement d'opérateur avec la reprise de BlaBlaCar Daily par Karos, finalisée au 1er octobre 2026. Les modalités concrètes après l'intégration dans Karos, prévue début 2027 (application, tarifs, fusion des comptes), n'ont pas été détaillées publiquement."
   - question: "Mes justificatifs de Forfait Mobilités Durables restent-ils valables après le rachat ?"
     answer: "Les justificatifs déjà émis restent valables : ce qui compte pour l'URSSAF, c'est que l'employeur puisse produire, pour chaque bénéficiaire, une attestation sur l'honneur ou un justificatif d'utilisation du covoiturage, et les conserver au moins trois ans. Le risque est pratique, pas juridique : si l'historique reste chez l'opérateur et que les comptes migrent, il peut devenir difficile à récupérer. Exportez dès maintenant les relevés de 2024, 2025 et 2026 et archivez-les de votre côté."
   - question: "Faut-il informer les salariés du changement d'opérateur ?"
     answer: "Oui, dans la plupart des cas. Si le rachat entraîne un changement du responsable de traitement des données de vos salariés, ceux-ci doivent en être informés au titre du RGPD — par l'opérateur, et idéalement relayé par l'employeur. Si votre dispositif FMD ou votre plan de mobilité mentionne nommément la plateforme, une mise à jour et, selon votre accord, une information du CSE sont également à prévoir."
   - question: "Quelle alternative à BlaBlaCar Daily pour une entreprise ?"
-    answer: "Trois familles coexistent : rester sur l'application grand public subventionnée (Karos, qui reprendrait BlaBlaCar Daily), passer sur une plateforme de covoiturage dédiée entreprise (Comovee, Un 7ème SenS), ou déployer un outil intégré aux outils de travail existants, comme TeamWheels dans Microsoft Teams. Les critères qui départagent : propriété des données, génération des justificatifs FMD, taux d'adoption et dépendance à des subventions publiques."
+    answer: "Trois familles coexistent : rester sur l'application grand public subventionnée (Karos, qui a repris BlaBlaCar Daily), passer sur une plateforme de covoiturage dédiée entreprise (Comovee, Un 7ème SenS), ou déployer un outil intégré aux outils de travail existants, comme TeamWheels dans Microsoft Teams. Les critères qui départagent : propriété des données, génération des justificatifs FMD, taux d'adoption et dépendance à des subventions publiques."
 ---
 
 # Rachat de BlaBlaCar Daily par Karos : que faire pour votre covoiturage d'entreprise (ex-Klaxit, BBD) ?
 
-*Le 20 juillet 2026, BlaBlaCar a annoncé vouloir céder BlaBlaCar Daily — son application de covoiturage domicile-travail, qui avait déjà absorbé Klaxit en 2023 — à son principal concurrent, Karos. Si l'opération aboutit, les trois grands noms du covoiturage du quotidien en France ne formeront plus qu'un seul acteur. Pour les salariés, l'application changera peut-être de logo. Pour les RH et responsables mobilité, les questions sont plus concrètes : que devient notre contrat, où vont les données de nos salariés, nos justificatifs de Forfait Mobilités Durables tiennent-ils, et avons-nous encore envie de dépendre d'un seul opérateur ? Voici ce que l'on sait, ce que l'on ne sait pas encore, et la checklist pour décider maintenant.*
+*Le 20 juillet 2026, BlaBlaCar a annoncé vouloir céder BlaBlaCar Daily — son application de covoiturage domicile-travail, qui avait déjà absorbé Klaxit en 2023 — à son principal concurrent, Karos. La reprise a été finalisée au 1er octobre 2026 : les trois grands noms du covoiturage du quotidien en France ne forment plus qu'un seul acteur. Pour les salariés, l'application changera peut-être de logo. Pour les RH et responsables mobilité, les questions sont plus concrètes : que devient notre contrat, où vont les données de nos salariés, nos justificatifs de Forfait Mobilités Durables tiennent-ils, et avons-nous encore envie de dépendre d'un seul opérateur ? Voici ce que l'on sait, ce que l'on ne sait pas encore, et la checklist pour décider maintenant.*
 
 > **L'essentiel en 30 secondes**
-> - Karos et BlaBlaCar sont **en négociations exclusives** depuis le 20 juillet 2026 pour la reprise de BlaBlaCar Daily. Le projet est soumis à la consultation des instances représentatives du personnel ; à la date du 30 septembre 2026, **aucune finalisation n'a été annoncée**.
+> - **Karos a finalisé le rachat de BlaBlaCar Daily**, rebaptisée Daily, avec effet au **1er octobre 2026**, après des négociations exclusives annoncées le 20 juillet 2026. Les deux applications coexistent jusqu'à fin 2026 ; Daily doit rejoindre l'écosystème Karos **début 2027**.
+> - **Klaxit** avait été racheté par BlaBlaCar en 2023 et fondu dans BlaBlaCar Daily en 2024 : ses anciens clients changent d'opérateur pour la deuxième fois.
 > - L'ensemble revendiquerait **plus de 150 000 covoitureurs actifs par mois**, **11 millions de trajets par an**, **plus de 250 collectivités et 1 500 entreprises partenaires**.
-> - Application, tarifs et fusion des comptes **ne seront précisés qu'une fois l'opération finalisée**.
+> - Application, tarifs et fusion des comptes après l'intégration **n'ont pas été détaillés publiquement**.
 > - Pour l'employeur, quatre sujets : **contrat**, **données salariés**, **justificatifs FMD**, **dépendance à un acteur B2C unique**. Les trois premiers se sécurisent en quelques jours ; le quatrième est une décision de fond.
 
 {{< cta-demo title="Vous êtes client BlaBlaCar Daily ou Karos ?" text="Karos, BlaBlaCar Daily, Comovee, TeamWheels : le comparatif côté employeur (données, FMD, Microsoft Teams, sites isolés, reporting CSRD) pour décider avant la fin de l'intégration." src="rachat-karos-top" href="/fr/alternative-blablacar-daily-karos-entreprises/?src=rachat-karos-top" label="Voir le comparatif des alternatives" >}}
@@ -43,12 +46,24 @@ faq:
 |---|---|---|
 | **2017** | BlaBlaCar lance **BlaBlaLines**, qui deviendra BlaBlaCar Daily | Le leader du covoiturage longue distance s'attaque au domicile-travail |
 | **1er janvier 2023** | Lancement de la **prime covoiturage** de 100 € pour les nouveaux conducteurs, financée par les certificats d'économies d'énergie (CEE) ; supprimée fin janvier 2025 | Le modèle des applis grand public s'appuie de plus en plus sur des financements publics et des incitations |
-| **2023** | BlaBlaCar **rachète Klaxit**, spécialiste du covoiturage d'entreprise, et l'intègre à BlaBlaCar Daily | Les clients Klaxit changent une première fois d'opérateur |
+| **Mars-avril 2023** | BlaBlaCar **rachète Klaxit**, spécialiste du covoiturage d'entreprise (annonce le 15 mars, finalisation en avril) | Les clients Klaxit changent une première fois d'opérateur |
+| **2024** | L'application Klaxit est remplacée par **BlaBlaCar Daily**, territoire par territoire (à Monaco, le 10 juin 2024) | Les salariés recréent leurs habitudes dans une nouvelle application |
 | **20 juillet 2026** | Karos et BlaBlaCar annoncent des **négociations exclusives** pour la reprise de BlaBlaCar Daily | BlaBlaCar se recentre sur le longue distance ; Karos cherche la « masse critique » |
 | **Été 2026** | Consultation des instances représentatives du personnel ; une dizaine de postes BlaBlaCar Daily concernés selon la presse | Étape préalable obligatoire avant toute signature |
-| **À venir** | Finalisation éventuelle, puis intégration « progressive et sans interruption » des services dans l'écosystème Karos | C'est à ce moment que les conditions pour les entreprises clientes seront connues |
+| **1er octobre 2026** | **Finalisation** : Karos acquiert BlaBlaCar Daily, rebaptisée Daily (communiqué du 5 octobre 2026) | Les deux applications coexistent jusqu'à fin 2026 |
+| **Début 2027** | Intégration de Daily dans l'écosystème Karos | C'est à ce moment que les conditions pour les entreprises clientes seront connues |
 
 Le mouvement est clair : en trois ans, le marché du covoiturage domicile-travail grand public est passé de trois acteurs majeurs (Klaxit, BlaBlaCar Daily, Karos) à un seul. Pour une collectivité, c'est une simplification. Pour un employeur, c'est un risque de concentration qu'il faut regarder en face.
+
+## Klaxit : racheté par BlaBlaCar en 2023, aujourd'hui chez Karos {#klaxit}
+
+Klaxit était l'un des pionniers français du covoiturage domicile-travail pour les entreprises et les collectivités. Son parcours en trois dates :
+
+1. **2023 : rachat par BlaBlaCar.** L'opération est annoncée le 15 mars 2023 ([TechCrunch](https://techcrunch.com/2023/03/15/blablacar-to-acquire-klaxit-a-ride-sharing-service-for-daily-commutes)) et finalisée en avril 2023 ([BlaBlaCar](https://newsroom.blablacar.com/news/blablacar-acquires-klaxit-to-strengthen-its-short-distance-carpooling-offer)).
+2. **2024 : fin de l'application Klaxit.** Les utilisateurs basculent sur BlaBlaCar Daily, territoire par territoire. À Monaco, par exemple, BlaBlaCar Daily remplace Klaxit le 10 juin 2024 ([gouvernement princier](https://monservicepublic.gouv.mc/en/news/klaxit-is-moving-to-blablacar-daily)).
+3. **2026 : reprise par Karos.** BlaBlaCar Daily, qui a absorbé Klaxit, passe chez Karos au 1er octobre 2026 et devient Daily ([L'argus](https://www.largus.fr/pros/actualite-automobile/covoiturage-karos-officialise-le-rachat-de-blablacar-daily-40011747.html)).
+
+**Vous cherchez une alternative à Klaxit ?** Klaxit n'existe plus en tant que service : ses clients sont aujourd'hui chez Karos, via Daily. Les options d'un employeur sont les mêmes que pour BlaBlaCar Daily : rester chez Karos, internaliser, ou passer sur un outil dédié à l'employeur. Elles sont comparées sur notre page [alternative à BlaBlaCar Daily et Karos](/fr/alternative-blablacar-daily-karos-entreprises/). Autre plateforme de covoiturage d'entreprise disparue : Oxycar, liquidée en 2023 (voir [alternative à Oxycar](/fr/alternative-oxycar/)).
 
 ## Ce qui change pour l'employeur
 
@@ -87,7 +102,7 @@ Pour le détail des plafonds et des règles de cumul, voir notre [guide des aide
 
 C'est le sujet de fond. Les applications grand public de covoiturage du quotidien reposent sur un modèle hybride : un réseau ouvert d'utilisateurs, financé en bonne partie par les collectivités (subventions par trajet), et les partenariats entreprises (la prime covoiturage nationale, financée par les certificats d'économies d'énergie, a pris fin en janvier 2025). Ce modèle a des atouts — un grand réseau, des trajets gratuits ou très peu chers pour les passagers — mais aussi trois fragilités du point de vue de l'employeur :
 
-- **Plus d'alternative équivalente.** Si l'opération aboutit, il ne restera plus de concurrent grand public de taille comparable vers qui se tourner en cas de désaccord sur les conditions.
+- **Plus d'alternative équivalente.** Depuis la reprise, il ne reste plus de concurrent grand public de taille comparable vers qui se tourner en cas de désaccord sur les conditions.
 - **Une économie sensible aux subventions.** Si les financements publics évoluent, les incitations pour vos salariés évoluent avec — sans que vous ayez votre mot à dire.
 - **Un produit conçu pour le grand public.** Votre programme est une communauté parmi 1 500 entreprises partenaires ; ses priorités (animation, reporting, intégrations RH) passent après celles de la plateforme.
 
@@ -98,7 +113,8 @@ Rien de tout cela ne rend le modèle mauvais. Mais c'est le bon moment pour se d
 Pour être honnête avec vos équipes, distinguez les faits des spéculations :
 
 - **On sait** : l'annonce de négociations exclusives du 20 juillet 2026, les volumes revendiqués (150 000 covoitureurs actifs mensuels, 11 millions de trajets par an, 250 collectivités et 1 500 entreprises partenaires), la volonté affichée d'une intégration progressive et sans interruption.
-- **On ne sait pas** : la date de finalisation, le sort de l'application BlaBlaCar Daily (maintien, fusion, fermeture), les tarifs et conditions pour les entreprises, les modalités de migration des comptes et des historiques.
+- **On sait aussi** : la finalisation au 1er octobre 2026, le nouveau nom (Daily), la coexistence des deux applications jusqu'à fin 2026 et l'intégration prévue début 2027.
+- **On ne sait pas** : le sort de l'application Daily après l'intégration (maintien, fusion, fermeture), les tarifs et conditions pour les entreprises, les modalités de migration des comptes et des historiques.
 
 Autrement dit : **aucune urgence à paniquer, mais aucune raison d'attendre** pour sécuriser ce qui dépend de vous.
 
@@ -126,7 +142,7 @@ Autrement dit : **aucune urgence à paniquer, mais aucune raison d'attendre** po
 
 ## B2C subventionné ou outil interne : le comparatif
 
-| | **Karos** (reprendrait BlaBlaCar Daily) | **Comovee** | **Un 7ème SenS** | **TeamWheels** |
+| | **Karos** (a repris BlaBlaCar Daily) | **Comovee** | **Un 7ème SenS** | **TeamWheels** |
 |---|---|---|---|---|
 | **Modèle** | Application grand public, réseau ouvert, partenariats entreprises et collectivités | Plateforme de covoiturage dédiée entreprise | Progiciel de covoiturage d'entreprise (depuis 2005) | Application intégrée à Microsoft Teams |
 | **Qui covoiture avec qui** | Tous les utilisateurs de l'application | Les collègues de l'organisation, tous sites | Les collègues de l'organisation (et partenaires selon configuration) | Les collègues de l'organisation, dans leur Teams |
@@ -138,7 +154,7 @@ Autrement dit : **aucune urgence à paniquer, mais aucune raison d'attendre** po
 | **Dépendance aux subventions publiques** | Forte | Faible | Faible | Nulle |
 | **Idéal pour** | Trajets longs, zones peu denses, salariés sans collègue proche | Grandes organisations multi-sites | Organisations publiques et privées cherchant un progiciel éprouvé | Entreprises sous Microsoft 365 qui veulent de l'adoption sans conduite du changement |
 
-*Informations établies à partir des sites des éditeurs et de la presse au 30 septembre 2026 ; vérifiez toujours les conditions en vigueur auprès de chaque fournisseur.*
+*Informations établies à partir des sites des éditeurs et de la presse au 3 novembre 2026 ; vérifiez toujours les conditions en vigueur auprès de chaque fournisseur.*
 
 ## Comment choisir : trois profils
 
@@ -156,7 +172,7 @@ Pour une entreprise qui sort de BlaBlaCar Daily ou de Klaxit, trois différences
 
 - **Aucun compte à recréer** : connexion avec le compte Microsoft 365 existant (SSO Entra ID), données dans votre tenant, hébergées en Europe.
 - **Aucune dépendance aux subventions** : le dispositif repose sur votre politique mobilité, pas sur une prime dont les règles peuvent changer.
-- **Une bascule rapide** : installation en quelques minutes, essai gratuit de 30 jours jusqu'à 50 collaborateurs, puis 3 € HT par collaborateur et par mois (tarif promotionnel, au lieu de 5 € HT) — voir les [tarifs](/fr/pricing/).
+- **Une bascule rapide** : installation en quelques minutes, premier mois offert jusqu'à 50 collaborateurs, puis 3 € HT par collaborateur et par mois (tarif promotionnel, au lieu de 5 € HT) — voir les [tarifs](/fr/pricing/).
 
 À voir en 20 secondes : un salarié demande un trajet dans Microsoft Teams et rejoint un collègue en un clic.
 
@@ -167,13 +183,16 @@ Pour aller plus loin sur la méthode de déploiement, voir notre [guide complet 
 ## Foire aux questions
 
 **Karos a-t-il racheté BlaBlaCar Daily ?**
-Karos et BlaBlaCar ont annoncé le 20 juillet 2026 être entrés en négociations exclusives pour la reprise de BlaBlaCar Daily, l'activité de covoiturage domicile-travail de BlaBlaCar. L'opération reste soumise à la consultation des instances représentatives du personnel ; ses conditions financières n'ont pas été communiquées. À la date du 30 septembre 2026, aucune finalisation n'a été annoncée publiquement : il s'agit d'un projet de rachat, pas encore d'un fait accompli.
+Oui. Karos et BlaBlaCar ont annoncé le 20 juillet 2026 des négociations exclusives pour la reprise de BlaBlaCar Daily, l'activité de covoiturage domicile-travail de BlaBlaCar. Karos a finalisé l'acquisition avec effet au 1er octobre 2026 (communiqué du 5 octobre 2026) ; l'application a été rebaptisée Daily. Les deux applications coexistent jusqu'à fin 2026, puis Daily doit rejoindre l'écosystème Karos début 2027. Les conditions financières n'ont pas été communiquées.
 
 **Karos ou BlaBlaCar Daily : lequel choisir pour mon entreprise en 2026 ?**
-La question se pose de moins en moins : si l'opération aboutit, les deux services seront opérés par le même acteur, Karos, avec une intégration annoncée comme progressive et sans interruption. Le vrai choix pour un employeur n'est donc plus entre Karos et BlaBlaCar Daily, mais entre une application grand public subventionnée (où le salarié a un compte personnel chez l'opérateur) et un outil interne dédié à l'entreprise (Comovee, Un 7ème SenS, TeamWheels…), où l'employeur garde la main sur les données et les justificatifs.
+La question ne se pose plus vraiment : depuis le 1er octobre 2026, les deux services sont opérés par le même acteur, Karos, avec une intégration de Daily dans l'écosystème Karos prévue début 2027. Le vrai choix pour un employeur n'est donc plus entre Karos et BlaBlaCar Daily, mais entre une application grand public subventionnée (où le salarié a un compte personnel chez l'opérateur) et un outil interne dédié à l'entreprise (Comovee, Un 7ème SenS, TeamWheels…), où l'employeur garde la main sur les données et les justificatifs.
+
+**Qu'est devenu Klaxit ?**
+Klaxit, spécialiste du covoiturage domicile-travail pour les entreprises et les collectivités, a été racheté par BlaBlaCar : opération annoncée le 15 mars 2023 et finalisée en avril 2023. L'application Klaxit a ensuite été remplacée par BlaBlaCar Daily, territoire par territoire, en 2024. BlaBlaCar Daily a à son tour été repris par Karos au 1er octobre 2026 et rebaptisé Daily.
 
 **Que deviennent les anciens clients Klaxit ?**
-Klaxit a été racheté par BlaBlaCar en 2023 puis intégré à BlaBlaCar Daily. Les entreprises et collectivités passées de Klaxit à BlaBlaCar Daily sont donc concernées une deuxième fois en trois ans par un changement d'opérateur si la reprise par Karos aboutit. Les modalités concrètes (application, tarifs, fusion des comptes) ne seront précisées qu'une fois l'opération finalisée.
+Les entreprises et collectivités clientes de Klaxit sont passées sur BlaBlaCar Daily en 2024, puis sont concernées une deuxième fois en trois ans par un changement d'opérateur avec la reprise de BlaBlaCar Daily par Karos, finalisée au 1er octobre 2026. Les modalités concrètes après l'intégration dans Karos, prévue début 2027 (application, tarifs, fusion des comptes), n'ont pas été détaillées publiquement.
 
 **Mes justificatifs de Forfait Mobilités Durables restent-ils valables après le rachat ?**
 Les justificatifs déjà émis restent valables : ce qui compte pour l'URSSAF, c'est que l'employeur puisse produire, pour chaque bénéficiaire, une attestation sur l'honneur ou un justificatif d'utilisation du covoiturage, et les conserver au moins trois ans. Le risque est pratique, pas juridique : si l'historique reste chez l'opérateur et que les comptes migrent, il peut devenir difficile à récupérer. Exportez dès maintenant les relevés de 2024, 2025 et 2026 et archivez-les de votre côté.
@@ -182,14 +201,14 @@ Les justificatifs déjà émis restent valables : ce qui compte pour l'URSSAF, c
 Oui, dans la plupart des cas. Si le rachat entraîne un changement du responsable de traitement des données de vos salariés, ceux-ci doivent en être informés au titre du RGPD — par l'opérateur, et idéalement relayé par l'employeur. Si votre dispositif FMD ou votre plan de mobilité mentionne nommément la plateforme, une mise à jour et, selon votre accord, une information du CSE sont également à prévoir.
 
 **Quelle alternative à BlaBlaCar Daily pour une entreprise ?**
-Trois familles coexistent : rester sur l'application grand public subventionnée (Karos, qui reprendrait BlaBlaCar Daily), passer sur une plateforme de covoiturage dédiée entreprise (Comovee, Un 7ème SenS), ou déployer un outil intégré aux outils de travail existants, comme TeamWheels dans Microsoft Teams. Les critères qui départagent : propriété des données, génération des justificatifs FMD, taux d'adoption et dépendance à des subventions publiques.
+Trois familles coexistent : rester sur l'application grand public subventionnée (Karos, qui a repris BlaBlaCar Daily), passer sur une plateforme de covoiturage dédiée entreprise (Comovee, Un 7ème SenS), ou déployer un outil intégré aux outils de travail existants, comme TeamWheels dans Microsoft Teams. Les critères qui départagent : propriété des données, génération des justificatifs FMD, taux d'adoption et dépendance à des subventions publiques.
 
 ---
 
-*Article à jour au 30 septembre 2026. L'opération étant en cours, nous le mettrons à jour dès l'annonce de sa finalisation et des conditions pour les entreprises clientes. Sources : communiqués et articles de presse de juillet et août 2026 ([Maddyness](https://www.maddyness.com/2026/07/21/covoiturage-blablacar-veut-ceder-sa-branche-dediee-aux-trajets-domicile-travail-a-karos/), [Journal de l'Automobile](https://journalauto.com/services/covoiturage-karos-seul-en-course-pour-reprendre-blablacar-daily/), [Ville, Rail & Transports](https://www.ville-rail-transports.com/actualites-mobilites/karos-avale-blablacar-daily/)).*
+*Article à jour au 3 novembre 2026. Nous le mettrons à jour dès l'annonce des conditions pour les entreprises clientes après l'intégration. Sources : communiqué de Karos du 5 octobre 2026 ([L'argus](https://www.largus.fr/pros/actualite-automobile/covoiturage-karos-officialise-le-rachat-de-blablacar-daily-40011747.html), [Auto Infos](https://www.auto-infos.fr/article/covoiturage-karos-finalise-l-acquisition-de-daily-anciennement-detenue-par-le-groupe-blablacar.293855)), communiqués et articles de presse de juillet et août 2026 ([Maddyness](https://www.maddyness.com/2026/07/21/covoiturage-blablacar-veut-ceder-sa-branche-dediee-aux-trajets-domicile-travail-a-karos/), [Journal de l'Automobile](https://journalauto.com/services/covoiturage-karos-seul-en-course-pour-reprendre-blablacar-daily/), [Ville, Rail & Transports](https://www.ville-rail-transports.com/actualites-mobilites/karos-avale-blablacar-daily/)).*
 
 ## Passez à l'action
 
 Vous devez décider avant la fin de votre contrat ? [Demandez une démo de TeamWheels](/fr/contact/) : nous vous montrons en 20 minutes comment un programme de covoiturage tourne dans Microsoft Teams, et comment organiser une bascule sans trou dans vos justificatifs FMD.
 
-*30 jours gratuits, sans engagement, sans carte bancaire.*
+*Premier mois offert, sans carte bancaire, puis engagement trimestriel.*

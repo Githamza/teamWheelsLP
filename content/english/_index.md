@@ -1,7 +1,7 @@
 ---
 title: "TeamWheels | Corporate Carpooling Solution for Your Employees"
 seoTitle: "Corporate carpooling for your employees | TeamWheels"
-description: "Corporate carpooling solution: ride matching for employees, commuter benefit tracking and Scope 3 reporting. Built into Microsoft Teams, free 30-day trial."
+description: "Corporate carpooling solution: ride matching for employees, commuter benefit tracking and Scope 3 reporting. Built into Microsoft Teams, first month free."
 # homepage = commercial head term "corporate carpooling" (a solution for employers);
 # Teams/Copilot is the differentiator, not the headline. Other intents have their page:
 #   software / tool / app → corporate-carpooling-software ; white label → white-label-carpool-platform
@@ -175,8 +175,8 @@ work_process:
     - label: "Day 1"
       title: "Install"
       image: "images/how-it-works/home-en-step-1.svg"
-      image_alt: "TeamWheels added from the Microsoft Teams Store, with SSO sign-in and the free trial activated"
-      content: "Your Microsoft 365 admin adds TeamWheels in 5 minutes. No app to download: employees sign in with their work account. The free trial starts at installation."
+      image_alt: "TeamWheels added from the Microsoft Teams Store, with SSO sign-in and the free first month activated"
+      content: "Your Microsoft 365 admin adds TeamWheels in 5 minutes. No app to download: employees sign in with their work account. The free first month starts at installation."
     - label: "Week 1"
       title: "Launch"
       image: "images/how-it-works/home-en-step-2.svg"
@@ -243,7 +243,7 @@ image_and_content_blocks:
     image_fit: true   # product mockup: full-width image, no padding
     image_alt: "Sign-in to TeamWheels with a Microsoft work account (Entra ID SSO), data in your tenant, hosted in the EU"
     content_position: "left"
-    content: "Published on the Microsoft Teams Store with a [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/en-us/microsoft-365-app-certification/teams/hmz-digital-teamwheels), Microsoft Entra ID SSO, GDPR compliant — TeamWheels meets enterprise security standards with zero extra credentials or infrastructure changes.
+    content: "Published on the Microsoft Teams Store with a [Microsoft 365 Publisher Attestation](https://learn.microsoft.com/en-us/microsoft-365-app-certification/teams/hmz-digital-teamwheels), Microsoft Entra ID SSO, data hosted in the EU, GDPR compliant — TeamWheels meets enterprise security standards with zero extra credentials or infrastructure changes. It runs in your Microsoft 365 tenant and is available across Europe and North America.
 
     [Read more →](benefits/#security)
     "
@@ -265,6 +265,21 @@ image_and_content_blocks:
     button:
       enable: false
 
+
+# FAQ — rendered under the "how it works" button (partials/faq-section.html,
+# called from the theme index.html) and emitted as FAQPage JSON-LD.
+faq_title: "Corporate carpooling FAQ"
+faq:
+  - question: "Does TeamWheels require Microsoft 365?"
+    answer: "Yes. TeamWheels is a Microsoft Teams app: it installs from the Microsoft Teams Store into your Microsoft 365 tenant, and employees use it in Teams on desktop, web and mobile. If your organization does not use Microsoft 365, another carpooling solution will suit you better."
+  - question: "How do employees sign in?"
+    answer: "With their existing Microsoft 365 work account, through Microsoft Entra ID single sign-on. There is no new app to download and no password to create, and your Entra ID directory becomes the carpooler list, updated automatically when people join or leave."
+  - question: "Where is employee data hosted?"
+    answer: "TeamWheels runs in your Microsoft 365 tenant and its data is hosted in the EU (France). The platform is GDPR compliant and built with privacy by design."
+  - question: "Which countries is TeamWheels available in?"
+    answer: "TeamWheels is available across Europe and North America. Companies in the USA, UK and Canada run it today, the app is localized for France, Belgium, the Netherlands, Germany and Spain, and French employers get ready-made records for the Forfait Mobilités Durables."
+  - question: "How long does it take to launch a carpool program?"
+    answer: "About 5 minutes for the installation by a Microsoft 365 admin, then a two- to four-week pilot with 20 to 50 volunteers before you open it to everyone."
 
 # blog
 blog:
@@ -288,7 +303,7 @@ next_step_button:
 call_to_action:
   enable: true
   title: "Launch an Employee Carpooling Program in Your Organization"
-  subtitle: "Join companies across the USA, UK, and Canada reducing Scope 3 emissions and improving employee well-being. <br><strong>Free 30-day trial</strong> + guided deployment included. <em>No credit card required.</em>"
+  subtitle: "Join companies across the USA, UK, Canada and Europe reducing Scope 3 emissions and improving employee well-being. <br><strong>First month free</strong> + guided deployment included. <em>No credit card required.</em>"
   button_label : "Get a guided demo →"
   button_link : "contact/"
   image : "images/cta.png"

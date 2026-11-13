@@ -241,8 +241,8 @@ Covoit IDFM est l'application officielle d'Île-de-France Mobilités, subvention
 
 **Prêt à transformer la mobilité de vos équipes ?**
 
-> **Article associé :** [Guide complet du covoiturage domicile-travail en entreprise 2026](/fr/blog/covoiturage-entreprise-guide-2026/) — FMD, loi LOM, comparatif BlaBlaCar / Klaxit / TeamWheels et déploiement en 4 semaines.
+> **Article associé :** [Covoiturage en entreprise : le guide complet 2026](/fr/blog/covoiturage-entreprise-guide-2026/) — FMD, loi LOM, comparatif BlaBlaCar / Klaxit / TeamWheels et déploiement en 4 semaines. Pour choisir l'outil : notre [logiciel de covoiturage entreprise](/fr/corporate-carpooling-software/) intégré à Microsoft Teams.
 
-[Démarrer l'essai gratuit →](/fr/contact/)
+[Profiter du premier mois offert →](/fr/contact/)
 
-*30 jours gratuits, sans engagement, sans carte bancaire.*
+*Premier mois offert, sans carte bancaire, puis engagement trimestriel.*

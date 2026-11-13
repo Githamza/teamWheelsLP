@@ -223,7 +223,7 @@ Vous voulez réduire le coût et la pénibilité des trajets domicile-travail de
 
 **[Parlez à notre équipe et planifiez une démo →](/fr/contact/)**
 
-> **Pour aller plus loin :** lisez notre guide [Covoiturage domicile-travail en entreprise](/fr/blog/covoiturage-entreprise-guide-2026/) pour structurer votre démarche de A à Z.
+> **Pour aller plus loin :** lisez notre guide [Covoiturage en entreprise : le guide](/fr/blog/covoiturage-entreprise-guide-2026/) pour structurer votre démarche de A à Z.
 
 ---
 

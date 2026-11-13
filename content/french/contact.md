@@ -3,14 +3,14 @@ title: "Demander une démo | TeamWheels covoiturage entreprise"
 description: "Réservez une démo personnalisée de TeamWheels, la plateforme de covoiturage pour Microsoft Teams : déroulé de 30 minutes, à qui elle s'adresse, ce qu'il faut préparer, réponse sous 24 h."
 draft: false
 layout: "contact"
-keywords: "démo covoiturage entreprise, essai gratuit covoiturage, contact TeamWheels, consultation mobilité entreprise"
+keywords: "démo covoiturage entreprise, premier mois offert covoiturage, contact TeamWheels, consultation mobilité entreprise"
 lastmod: 2026-09-07
 
 # contact
 contact:
-  subtitle: "Essai gratuit 30 jours"
-  title: "Démarrez votre essai gratuit"
-  description: "Remplissez ce formulaire et un membre de notre équipe vous contactera sous 24h pour configurer votre espace TeamWheels. <br><br> ✅ Essai gratuit 30 jours &nbsp;&nbsp; ✅ Déploiement accompagné &nbsp;&nbsp; ✅ Sans engagement"
+  subtitle: "Premier mois offert"
+  title: "Profitez du premier mois offert"
+  description: "Remplissez ce formulaire et un membre de notre équipe vous contactera sous 24h pour configurer votre espace TeamWheels. <br><br> ✅ Premier mois offert &nbsp;&nbsp; ✅ Déploiement accompagné &nbsp;&nbsp; ✅ Sans carte bancaire"
 
 # contact info
 contact_info:
@@ -31,16 +31,16 @@ services:
 faq_title: "Questions fréquentes avant de nous contacter"
 faq:
   - question: "Que se passe-t-il après l'envoi du formulaire ?"
-    answer: "Un membre de l'équipe TeamWheels vous répond sous 24 heures ouvrées pour fixer un créneau de démo de 30 minutes. Si vous préférez démarrer directement l'essai gratuit, nous vous envoyons le lien d'installation AppSource et un guide de configuration pour votre administrateur Teams."
-  - question: "L'essai gratuit engage-t-il l'entreprise ?"
-    answer: "Non. L'essai dure 30 jours, couvre jusqu'à 50 collaborateurs, ne demande aucune carte bancaire et s'arrête de lui-même à la fin de la période si vous ne poursuivez pas. Vos données sont alors supprimées conformément au RGPD."
+    answer: "Un membre de l'équipe TeamWheels vous répond sous 24 heures ouvrées pour fixer un créneau de démo de 30 minutes. Si vous préférez démarrer directement le premier mois offert, nous vous envoyons le lien d'installation AppSource et un guide de configuration pour votre administrateur Teams."
+  - question: "Le premier mois offert engage-t-il l'entreprise ?"
+    answer: "Non. Le premier mois offert couvre jusqu'à 50 collaborateurs, ne demande aucune carte bancaire et s'arrête de lui-même à la fin du mois si vous ne poursuivez pas ; vos données sont alors supprimées conformément au RGPD. Si vous poursuivez, l'abonnement est souscrit avec un engagement trimestriel."
   - question: "Pouvez-vous nous aider à construire le business case en interne ?"
     answer: "Oui. Pendant la démo, nous chiffrons avec vous les places de parking libérées, le CO₂ évité et le budget FMD à partir de vos effectifs et de vos sites, et nous vous laissons un support à présenter à votre direction."
 ---
 
 ## Comment se déroule la démo
 
-Le formulaire ci-dessus déclenche une prise de contact sous 24 heures ouvrées. La démo elle-même dure **30 minutes en visioconférence** et suit trois temps : votre contexte (sites, effectifs, objectifs parking, Scope 3 ou forfait mobilités durables), un parcours complet dans Microsoft Teams — déclaration d'un trajet par un salarié, appariement, notifications, tableau de bord administrateur, export des justificatifs FMD — puis le cadrage d'un essai gratuit de 30 jours sur un périmètre pilote. Vous pouvez aussi commencer par la [vidéo de démonstration de 60 secondes](/fr/demo/).
+Le formulaire ci-dessus déclenche une prise de contact sous 24 heures ouvrées. La démo elle-même dure **30 minutes en visioconférence** et suit trois temps : votre contexte (sites, effectifs, objectifs parking, Scope 3 ou forfait mobilités durables), un parcours complet dans Microsoft Teams — déclaration d'un trajet par un salarié, appariement, notifications, tableau de bord administrateur, export des justificatifs FMD — puis le cadrage du premier mois offert sur un périmètre pilote. Vous pouvez aussi commencer par la [vidéo de démonstration de 60 secondes](/fr/demo/).
 
 ## À qui elle s'adresse
 

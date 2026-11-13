@@ -16,5 +16,5 @@
 <circle cx="56" cy="232" r="9" fill="#13A10E"/><path d="M51.5 232l3 3 6-6" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="74" y="237" font-size="14" fill="#242424">Connexion avec le compte Microsoft (SSO)</text>
 <circle cx="56" cy="264" r="9" fill="#13A10E"/><path d="M51.5 264l3 3 6-6" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="74" y="269" font-size="14" fill="#242424">Essai gratuit 30 jours activé</text>
+<text x="74" y="269" font-size="14" fill="#242424">Premier mois offert activé</text>
 </g></svg>

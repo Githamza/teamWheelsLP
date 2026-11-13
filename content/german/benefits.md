@@ -106,7 +106,7 @@ faq:
 call_to_action:
   enable: true
   title: "Starten Sie ein Fahrgemeinschaftsprogramm in Ihrem Unternehmen"
-  subtitle: "Schließen Sie sich zukunftsorientierten Unternehmen in ganz Europa und Nordamerika an, die mit TeamWheels Pendelkosten senken, Scope-3-Emissionen reduzieren und das Wohlbefinden ihrer Mitarbeitenden verbessern. <br><br> <strong>Jetzt starten:</strong> 30 Tage kostenlos testen + begleitete Einführung für Ihre HR- und Nachhaltigkeitsteams. <br> <em>Begrenzte Plätze für persönliches Onboarding.</em>"
+  subtitle: "Schließen Sie sich zukunftsorientierten Unternehmen in ganz Europa und Nordamerika an, die mit TeamWheels Pendelkosten senken, Scope-3-Emissionen reduzieren und das Wohlbefinden ihrer Mitarbeitenden verbessern. <br><br> <strong>Jetzt starten:</strong> Erster Monat kostenlos + begleitete Einführung für Ihre HR- und Nachhaltigkeitsteams. <br> <em>Begrenzte Plätze für persönliches Onboarding.</em>"
   button_label: "Begleitete Demo anfordern →"
   button_link: "contact/"
   image: "images/cta.png"

@@ -31,16 +31,16 @@ services:
 faq_title: "Bevor Sie uns kontaktieren"
 faq:
   - question: "Was passiert, nachdem ich das Formular abgeschickt habe?"
-    answer: "Ein Mitglied des TeamWheels-Teams meldet sich innerhalb eines Werktags, um einen 30-minütigen Demo-Termin zu vereinbaren. Wenn Sie lieber direkt mit dem kostenlosen Test starten möchten, senden wir Ihnen den AppSource-Installationslink und eine Konfigurationsanleitung für Ihren Teams-Administrator."
-  - question: "Verpflichtet der kostenlose Test mein Unternehmen zu irgendetwas?"
-    answer: "Nein. Der Test läuft 30 Tage, umfasst bis zu 50 Mitarbeitende, erfordert keine Kreditkarte und endet einfach, wenn Sie nicht fortfahren. Ihre Daten werden anschließend DSGVO-konform gelöscht."
+    answer: "Ein Mitglied des TeamWheels-Teams meldet sich innerhalb eines Werktags, um einen 30-minütigen Demo-Termin zu vereinbaren. Wenn Sie lieber direkt mit dem kostenlosen ersten Monat starten möchten, senden wir Ihnen den AppSource-Installationslink und eine Konfigurationsanleitung für Ihren Teams-Administrator."
+  - question: "Verpflichtet der kostenlose erste Monat mein Unternehmen zu irgendetwas?"
+    answer: "Nein. Der kostenlose erste Monat umfasst bis zu 50 Mitarbeitende, erfordert keine Kreditkarte und endet einfach, wenn Sie nicht fortfahren; Ihre Daten werden anschließend DSGVO-konform gelöscht. Wenn Sie fortfahren, wird das Abonnement mit vierteljährlicher Mindestlaufzeit abgeschlossen."
   - question: "Können Sie uns bei der Erstellung des internen Business Case unterstützen?"
     answer: "Ja. In der Demo beziffern wir anhand Ihrer Mitarbeiterzahl und Standorte frei werdende Parkplätze, vermiedenes CO₂ und Budgets für Pendlerleistungen – und hinterlassen Ihnen eine Zusammenfassung, die Sie der Geschäftsleitung präsentieren können."
 ---
 
 ## So läuft die Demo ab
 
-Nach dem Absenden des Formulars erhalten Sie innerhalb eines Werktags eine Antwort. Die Demo selbst ist ein **30-minütiger Videocall** in drei Teilen: Ihre Ausgangslage (Standorte, Mitarbeiterzahl, Parkplätze, Ziele zu Scope 3 oder Pendlerleistungen), ein vollständiger Rundgang direkt in Microsoft Teams – ein Mitarbeitender gibt seinen Arbeitsweg an, Matching, Benachrichtigungen, das Administrator-Dashboard, der Export der Fahrtnachweise für Pendlerleistungen – und die Planung eines kostenlosen 30-Tage-Tests mit einer Pilotgruppe. Sie können auch mit dem [60-Sekunden-Demovideo](/de/demo/) beginnen.
+Nach dem Absenden des Formulars erhalten Sie innerhalb eines Werktags eine Antwort. Die Demo selbst ist ein **30-minütiger Videocall** in drei Teilen: Ihre Ausgangslage (Standorte, Mitarbeiterzahl, Parkplätze, Ziele zu Scope 3 oder Pendlerleistungen), ein vollständiger Rundgang direkt in Microsoft Teams – ein Mitarbeitender gibt seinen Arbeitsweg an, Matching, Benachrichtigungen, das Administrator-Dashboard, der Export der Fahrtnachweise für Pendlerleistungen – und die Planung Ihres kostenlosen ersten Monats mit einer Pilotgruppe. Sie können auch mit dem [60-Sekunden-Demovideo](/de/demo/) beginnen.
 
 ## Für wen TeamWheels gedacht ist
 

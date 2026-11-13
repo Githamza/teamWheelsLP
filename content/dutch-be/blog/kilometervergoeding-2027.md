@@ -90,7 +90,7 @@ Het bedrag per km ligt vast en je sectorcao blijft gelden. Wat je wel kunt verla
 
 Stel dat 10 van de 30 bestuurders voortaan meerijden met een collega die dezelfde route rijdt. Dan rijden er nog 20 wagens. Vergoedt je beleid enkel de bestuurder per km, dan daalt het aantal vergoede kilometers van 240.000 naar 160.000. Aan het jaarbedrag is dat 80.000 x 0,4761 = **38.088 euro minder per jaar**, en 10 parkeerplaatsen vrij. Reken wel omrijden mee en kijk na of je sectorcao ook passagiers een tussenkomst geeft: dan valt de besparing lager uit.
 
-Het moeilijke deel is niet de rekensom, maar weten wie dezelfde route rijdt. [TeamWheels](/nl-be/carpoolen-voor-bedrijven/) werkt rechtstreeks in Microsoft Teams: een chatbot zoekt collega's met een gelijkaardig traject en uurrooster, en een dashboard voor de beheerder toont het gebruik en de vermeden CO₂. Je installeert het in 5 minuten, en je kunt het 30 dagen gratis testen met maximaal 50 werknemers. Hoe dat in de praktijk loopt, lees je op [hoe het werkt](/nl-be/hoe-het-werkt/).
+Het moeilijke deel is niet de rekensom, maar weten wie dezelfde route rijdt. [TeamWheels](/nl-be/carpoolen-voor-bedrijven/) werkt rechtstreeks in Microsoft Teams: een chatbot zoekt collega's met een gelijkaardig traject en uurrooster, en een dashboard voor de beheerder toont het gebruik en de vermeden CO₂. Je installeert het in 5 minuten, en de eerste maand is gratis voor maximaal 50 werknemers. Hoe dat in de praktijk loopt, lees je op [hoe het werkt](/nl-be/hoe-het-werkt/).
 
 ## Bereken je eigen kosten
 

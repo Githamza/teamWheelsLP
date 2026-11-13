@@ -98,4 +98,4 @@ Volgens de wet van 25 november 2021 zijn de beroepskosten van bedrijfswagens die
 
 Niet voor iedereen. Werknemers die veel klantbezoeken afleggen of op wisselende locaties werken, hebben vaak nog een eigen wagen nodig. Voor wie de wagen vooral gebruikt voor woon-werkverkeer, kunnen poolwagens en carpool samen met het mobiliteitsbudget een deel van het wagenpark overbodig maken.
 
-{{< cta-demo title="Minder wagens, even bereikbaar" text="Ontdek in een korte demo hoe TeamWheels carpool organiseert in Microsoft Teams en het gebruik meet in een dashboard. Gratis proefperiode van 30 dagen, tot 50 werknemers." src="bedrijfswagen-carpool-end" >}}
+{{< cta-demo title="Minder wagens, even bereikbaar" text="Ontdek in een korte demo hoe TeamWheels carpool organiseert in Microsoft Teams en het gebruik meet in een dashboard. Eerste maand gratis, tot 50 werknemers." src="bedrijfswagen-carpool-end" >}}

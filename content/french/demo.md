@@ -20,15 +20,15 @@ video_demo:
   mp4: "videos/teamwheels-demo-fr.mp4"
 
 cta:
-  label: "Démarrer l'essai gratuit de 30 jours"
+  label: "Profiter du premier mois offert"
   link: "/contact/"
 
 faq_title: "Questions fréquentes sur la démo"
 faq:
   - question: "Combien de temps dure la démo personnalisée ?"
-    answer: "Trente minutes en visioconférence : dix minutes de contexte sur vos sites et vos objectifs, quinze minutes de parcours dans Microsoft Teams (déclaration d'un trajet, appariement, tableau de bord, export FMD) et cinq minutes pour cadrer un essai gratuit de 30 jours."
+    answer: "Trente minutes en visioconférence : dix minutes de contexte sur vos sites et vos objectifs, quinze minutes de parcours dans Microsoft Teams (déclaration d'un trajet, appariement, tableau de bord, export FMD) et cinq minutes pour cadrer le premier mois offert."
   - question: "Faut-il installer quelque chose avant la démo ?"
-    answer: "Non. La démo se déroule sur notre environnement de démonstration. Si vous souhaitez enchaîner sur l'essai gratuit, un administrateur Teams installe ensuite l'application depuis Microsoft AppSource dans votre tenant Microsoft 365 en cinq minutes environ."
+    answer: "Non. La démo se déroule sur notre environnement de démonstration. Si vous souhaitez enchaîner sur le premier mois offert, un administrateur Teams installe ensuite l'application depuis Microsoft AppSource dans votre tenant Microsoft 365 en cinq minutes environ."
   - question: "La démo est-elle disponible en anglais ?"
     answer: "Oui. TeamWheels est bilingue français / anglais, et la démo peut être menée dans l'une ou l'autre langue, y compris pour des équipes réparties entre la France, la Suisse, le Royaume-Uni et le Canada."
 ---

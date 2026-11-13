@@ -22,15 +22,15 @@ video_demo:
 
 # CTA secundario bajo el reproductor
 cta:
-  label: "Empezar la prueba gratuita de 30 días"
+  label: "Empezar el primer mes gratis"
   link: "/contact/"
 
 faq_title: "Preguntas frecuentes sobre la demo"
 faq:
   - question: "¿Cuánto dura la demo personalizada?"
-    answer: "Treinta minutos por videollamada: diez minutos sobre sus sedes y objetivos, quince minutos dentro de Microsoft Teams (declaración de un trayecto, emparejamiento, el panel, la exportación de beneficios de movilidad) y cinco minutos para definir una prueba gratuita de 30 días."
+    answer: "Treinta minutos por videollamada: diez minutos sobre sus sedes y objetivos, quince minutos dentro de Microsoft Teams (declaración de un trayecto, emparejamiento, el panel, la exportación de beneficios de movilidad) y cinco minutos para definir su primer mes gratis."
   - question: "¿Tenemos que instalar algo antes de la demo?"
-    answer: "No. La demo se realiza en nuestro entorno de demostración. Si prefiere pasar directamente a la prueba gratuita, un administrador de Teams instala la app desde Microsoft AppSource en su tenant de Microsoft 365 en unos cinco minutos."
+    answer: "No. La demo se realiza en nuestro entorno de demostración. Si prefiere pasar directamente al primer mes gratis, un administrador de Teams instala la app desde Microsoft AppSource en su tenant de Microsoft 365 en unos cinco minutos."
   - question: "¿Está disponible la demo en francés?"
     answer: "Sí. TeamWheels es bilingüe inglés / francés, y la demo puede realizarse en cualquiera de los dos idiomas, también para equipos repartidos entre el Reino Unido, Estados Unidos, Canadá, Francia y Suiza."
 ---

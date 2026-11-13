@@ -79,7 +79,7 @@ Let op: regelen de collega's de carpool zelf, dan mogen ze allebei € 0,25 per 
 
 ## Van kilometervergoeding naar carpoolbeleid
 
-Het rekenvoorbeeld laat zien waar de besparing zit: niet in een lager tarief, maar in minder gereden kilometers. De vraag is dan hoe je weet wie in jouw organisatie dezelfde route rijdt. Met [TeamWheels](/nl/hoe-het-werkt/) zoeken werknemers carpoolmaatjes direct in Microsoft Teams, via een chatbot die ritten op basis van route en tijden koppelt. Het beheerdersdashboard laat de gedeelde ritten en de CO₂-besparing zien. De app is in 5 minuten geïnstalleerd en je kunt hem 30 dagen gratis proberen met maximaal 50 werknemers. Zie de [prijzen](/nl/prijzen/).
+Het rekenvoorbeeld laat zien waar de besparing zit: niet in een lager tarief, maar in minder gereden kilometers. De vraag is dan hoe je weet wie in jouw organisatie dezelfde route rijdt. Met [TeamWheels](/nl/hoe-het-werkt/) zoeken werknemers carpoolmaatjes direct in Microsoft Teams, via een chatbot die ritten op basis van route en tijden koppelt. Het beheerdersdashboard laat de gedeelde ritten en de CO₂-besparing zien. De app is in 5 minuten geïnstalleerd en de eerste maand is gratis voor maximaal 50 werknemers. Zie de [prijzen](/nl/prijzen/).
 
 Meer weten over vaste reiskostenvergoedingen, de thuiswerkvergoeding en de totale kosten per werknemer? Lees de [complete gids over de reiskostenvergoeding 2027](/nl/blog/reiskostenvergoeding-2027/) of reken je eigen situatie door met de [besparingscalculator](/nl/besparingscalculator/).
 

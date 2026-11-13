@@ -29,7 +29,7 @@ theme_copyright = true
 career_form_action = "#!" # career form works with https://formspree.io or any formspree-alternatives
 
 # OpenGraph / Twitter Card metadata
-description = "TeamWheels - Enterprise employee carpooling platform for Microsoft Teams. Reduce Scope 3 commute emissions, cut parking costs, and improve employee retention. Free 30-day trial. Deploy in 5 minutes."
+description = "TeamWheels - Enterprise employee carpooling platform for Microsoft Teams. Reduce Scope 3 commute emissions, cut parking costs, and improve employee retention. First month free. Deploy in 5 minutes."
 author = "TeamWheels"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
@@ -80,8 +80,8 @@ link = "#!"
 [call_to_action]
 enable = true
 title = "Lancez le covoiturage dans votre entreprise"
-subtitle = "Rejoignez les entreprises qui facilitent les trajets de leurs équipes et réduisent leur empreinte carbone. <br> <strong>Offre de lancement :</strong> Essai gratuit 30 jours + déploiement accompagné."
-button_label = "Commencer mon essai gratuit →"
+subtitle = "Rejoignez les entreprises qui facilitent les trajets de leurs équipes et réduisent leur empreinte carbone. <br> <strong>Offre de lancement :</strong> Premier mois offert + déploiement accompagné."
+button_label = "Profiter du premier mois offert →"
 button_link = "contact/"
 image = "images/cta.png"
 
@@ -92,7 +92,7 @@ image = "images/cta.png"
 # ignored it since 2009 and the site-wide list was off-topic on most pages),
 # and nothing else read this value. Per-page front-matter `keywords` stay —
 # they still feed the Markdown-for-agents output (partials/agent/page.md).
-description = "TeamWheels - Enterprise carpooling platform integrated into Microsoft Teams. Reduce Scope 3 commute emissions, cut parking costs by 30%, and boost employee retention. Free 30-day trial. Deploy in 5 minutes."
+description = "TeamWheels - Enterprise carpooling platform integrated into Microsoft Teams. Reduce Scope 3 commute emissions, cut parking costs by 30%, and boost employee retention. First month free. Deploy in 5 minutes."
 author = "TeamWheels"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 

@@ -106,7 +106,7 @@ faq:
 call_to_action:
   enable: true
   title: "Ponga en marcha un programa de coche compartido en su organización"
-  subtitle: "Únase a las empresas pioneras de toda Europa y Norteamérica que reducen sus costes de desplazamiento y sus emisiones Scope 3, y mejoran el bienestar de sus empleados con TeamWheels. <br><br> <strong>Empiece ya:</strong> prueba gratuita de 30 días + despliegue guiado para sus equipos de RR. HH. y Sostenibilidad. <br> <em>Plazas limitadas para el onboarding personalizado.</em>"
+  subtitle: "Únase a las empresas pioneras de toda Europa y Norteamérica que reducen sus costes de desplazamiento y sus emisiones Scope 3, y mejoran el bienestar de sus empleados con TeamWheels. <br><br> <strong>Empiece ya:</strong> primer mes gratis + despliegue guiado para sus equipos de RR. HH. y Sostenibilidad. <br> <em>Plazas limitadas para el onboarding personalizado.</em>"
   button_label: "Solicitar una demo guiada →"
   button_link: "contact/"
   image: "images/cta.png"

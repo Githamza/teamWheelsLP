@@ -2,14 +2,17 @@
 title: "Covoiturage en entreprise : le guide complet 2026"
 translationKey: "corporate-carpooling-guide-2026"
 date: 2026-04-29
-lastmod: 2026-10-28
+lastmod: 2026-11-04
 draft: false
-description: "Covoiturage domicile-travail en entreprise : FMD, loi LOM, choix de l'outil de covoiturage, organisation des trajets et lancement en 5 étapes. Le guide 2026 pour RH et DAF."
+description: "Covoiturage en entreprise : FMD, assurance et accident de trajet, coûts, choix de l'outil et mise en place en 5 étapes. Le guide 2026 pour RH, DAF et RSE."
 image: "images/blog/corporate-carpooling.jpg"
 author: "TeamWheels Editorial"
-reading_time: "12 min"
-keywords: "covoiturage entreprise, covoiturage domicile-travail, outil covoiturage entreprise, logiciel covoiturage entreprise, organiser un covoiturage, covoiturage salariés, Forfait Mobilité Durable, loi LOM, RSE, CSRD, mobilité durable, Microsoft Teams, TeamWheels"
+reading_time: "15 min"
+keywords: "covoiturage en entreprise, covoiturage entreprise, covoiturage domicile-travail, covoiturage professionnel, covoiturage entre collègues, mettre en place le covoiturage en entreprise, assurance covoiturage domicile-travail, accident de trajet covoiturage, organiser un covoiturage, covoiturage salariés, Forfait Mobilité Durable, loi LOM, RSE, CSRD, mobilité durable, Microsoft Teams, TeamWheels"
 canonical: "https://www.teamwheelsapp.com/fr/blog/covoiturage-entreprise-guide-2026/"
+# URL pilier unique de la requête « covoiturage en entreprise » (informationnel).
+# « logiciel / outil / application covoiturage entreprise » → /fr/corporate-carpooling-software/
+# (lien avec cette ancre depuis la section #outil, ne pas viser ces requêtes ici).
 # Les deux articles ci-dessous ont été fusionnés dans ce guide (septembre 2026).
 # Hugo résout les aliases par rapport à la racine de langue (pas de /fr/ en tête) ;
 # la 301 serveur qui fait autorité est déclarée dans static/.htaccess.
@@ -19,6 +22,16 @@ aliases:
 faq:
   - question: "Qu'est-ce que le covoiturage domicile-travail en entreprise ?"
     answer: "Le covoiturage domicile-travail consiste pour des salariés d'une même entreprise — ou de sites proches — à partager un véhicule particulier pour le trajet entre leur domicile et leur lieu de travail. Il n'y a pas de chauffeur professionnel : conducteur et passagers partagent les frais. En France, il est encadré par la loi d'orientation des mobilités (LOM) et peut être financé par l'employeur via le forfait mobilités durables, exonéré de cotisations dans la limite de 600 € par an et par salarié (900 € en cumul avec l'abonnement transport)."
+  - question: "Comment mettre en place le covoiturage en entreprise ?"
+    answer: "En cinq étapes sur environ 30 jours : diagnostiquer les trajets des salariés, choisir un outil d'appariement, cadrer le dispositif (forfait mobilités durables, charte de covoiturage, communication), lancer un pilote de deux à quatre semaines avec 20 à 50 volontaires, puis généraliser et suivre chaque mois la participation, les trajets partagés et le CO₂ évité."
+  - question: "Faut-il une assurance spéciale pour le covoiturage entre collègues ?"
+    answer: "Non, tant que le covoiturage reste un partage de frais. Le Code des transports (article L3132-1) le définit comme un trajet effectué à titre non onéreux, excepté le partage des frais, et la DGCCRF précise que le passager est garanti par l'assurance responsabilité civile obligatoire du véhicule. Le conducteur doit en revanche vérifier sa propre garantie conducteur, que la responsabilité civile ne couvre pas."
+  - question: "Un accident pendant un covoiturage domicile-travail est-il un accident de trajet ?"
+    answer: "Oui. L'article L411-2 du Code de la sécurité sociale protège le trajet entre la résidence et le lieu de travail, et ce parcours peut ne pas être le plus direct lorsque le détour est rendu nécessaire par un covoiturage régulier, comme le rappelle l'INRS. Conducteur et passagers n'ont pas besoin de travailler dans la même entreprise. L'employeur déclare l'accident à la CPAM comme tout accident de trajet."
+  - question: "L'employeur peut-il obliger ses salariés à covoiturer ?"
+    answer: "Non. Le salarié choisit son mode de transport pour venir travailler : le covoiturage reste une démarche volontaire. L'employeur peut en revanche l'encourager, l'organiser avec un outil d'appariement, réserver des places de parking aux covoitureurs et le financer par le forfait mobilités durables."
+  - question: "Combien coûte le covoiturage en entreprise pour l'employeur ?"
+    answer: "Trois postes : l'outil (de 0 € pour un tableur à quelques euros par salarié et par mois ; TeamWheels coûte 3 € HT par collaborateur et par mois en tarif promotionnel), le forfait mobilités durables s'il est versé (facultatif, exonéré jusqu'à 600 € par salarié et par an) et le temps d'animation RH. Pour 200 collaborateurs, l'outil TeamWheels revient à 7 200 € HT par an, avant les économies de parking et d'indemnités kilométriques."
   - question: "Quel outil de covoiturage choisir pour son entreprise ?"
     answer: "Le critère décisif est l'adoption : un outil de covoiturage entreprise que les salariés doivent télécharger et ouvrir séparément dépasse rarement 18 % de participation. Privilégiez une solution intégrée aux outils déjà utilisés au quotidien (Microsoft Teams), avec un appariement automatique par trajet, horaires et site, des justificatifs FMD générés automatiquement et un reporting CO₂ exploitable pour la CSRD."
   - question: "Combien de temps faut-il pour lancer un programme de covoiturage en entreprise ?"
@@ -52,9 +65,31 @@ howto:
       url: "#etape-5"
 ---
 
-**Guide stratégique · Mobilité d'entreprise 2026 · 12 min de lecture**
+**Guide stratégique · Mobilité d'entreprise 2026 · 15 min de lecture**
 
-*FMD, loi LOM, choix de l'outil, organisation des trajets, lancement en 5 étapes — tout ce que les DRH, DAF et responsables RSE doivent savoir pour faire du covoiturage domicile-travail un levier de performance.*
+*FMD, loi LOM, assurance et accident de trajet, coûts, choix de l'outil, lancement en 5 étapes — tout ce que les DRH, DAF et responsables RSE doivent savoir pour faire du covoiturage domicile-travail un levier de performance.*
+
+> **Réponse directe : mettre en place le covoiturage en entreprise en 5 étapes (30 jours)**
+>
+> 1. **Diagnostiquer** : sondez les salariés sur leurs trajets et repérez les axes domicile-travail partagés (semaine 1).
+> 2. **Choisir l'outil** : un outil d'appariement des trajets, avec justificatifs FMD et reporting CO₂ (semaine 1).
+> 3. **Cadrer** : décision ou accord FMD (jusqu'à 600 € exonérés par salarié et par an), charte de covoiturage, communication (semaine 2).
+> 4. **Piloter** : 2 à 4 semaines avec 20 à 50 volontaires, puis ajustez les règles d'appariement (semaines 3 et 4).
+> 5. **Généraliser et mesurer** : ouverture à tous, suivi mensuel de la participation, des trajets, du CO₂ et des places de parking libérées.
+>
+> Le détail de chaque étape est [plus bas](#etapes).
+
+### Quels outils pour organiser le covoiturage de vos salariés ? {#outils-2026}
+
+| Outil | Type | Covoiturage entre | Application à installer | Justificatifs FMD | Tarif public |
+|---|---|---|---|---|---|
+| Attestations + tableur | Organisation interne | Collègues | Non | Attestations sur l'honneur, à collecter à la main | Gratuit (temps RH) |
+| Karos (reprise de BlaBlaCar Daily) | Application grand public, réseau ouvert | Tous les utilisateurs de l'application | Oui | Preuves de trajets via l'opérateur | Non communiqué |
+| Comovee | Plateforme dédiée entreprise | Collègues de l'organisation | Oui (web, mobile) | Selon offre | Sur devis |
+| Un 7ème SenS | Progiciel de covoiturage d'entreprise | Collègues de l'organisation | Oui (web, mobile) | Inscrit au registre de preuve de covoiturage | Non communiqué |
+| **TeamWheels** | **Application Microsoft Teams** | **Collègues de l'organisation** | **Non, dans Teams (SSO Entra ID)** | **Relevés mensuels par salarié, exportables pour la paie** | **3 € HT par collaborateur et par mois (promo)** |
+
+*Informations publiques des éditeurs au 3 novembre 2026. Vérifiez les conditions en vigueur auprès de chaque fournisseur. Comparatif détaillé : [alternative à BlaBlaCar Daily et Karos](/fr/alternative-blablacar-daily-karos-entreprises/) et [alternative à Oxycar](/fr/alternative-oxycar/).*
 
 Chaque matin, des millions de salariés rejoignent leur lieu de travail seuls dans leur voiture. Des places vides, des parkings saturés, des émissions inutiles — et souvent, un collègue qui habite à deux kilomètres et fait exactement le même trajet. Le covoiturage en entreprise existe pour résoudre ce paradoxe. Passer de l'idée à un programme qui fonctionne vraiment, c'est une autre histoire : ce guide vous explique comment faire, concrètement, sans que cela devienne un projet chronophage pour vos équipes RH.
 
@@ -65,17 +100,21 @@ Chaque matin, des millions de salariés rejoignent leur lieu de travail seuls da
 1. [Covoiturage, ridesharing : de quoi parle-t-on ?](#definitions)
 2. [Pourquoi 2026 est l'année charnière](#pourquoi)
 3. [BlaBlaCar, Klaxit, Uber vs TeamWheels](#comparatif)
-4. [Les deux cas d'usage en entreprise](#usages)
+4. [Covoiturage entre collègues et covoiturage professionnel](#usages)
 5. [Organiser le covoiturage au quotidien](#organisation)
-6. [Quel outil de covoiturage choisir pour son entreprise ?](#outil)
-7. [Lancer un programme de covoiturage en 5 étapes](#etapes)
-8. [Questions fréquentes](#faq)
+6. [Assurance, responsabilité et accident de trajet](#assurance)
+7. [Quel outil de covoiturage choisir pour son entreprise ?](#outil)
+8. [Combien coûte le covoiturage en entreprise ?](#couts)
+9. [Lancer un programme de covoiturage en 5 étapes](#etapes)
+10. [Questions fréquentes](#faq)
 
 ---
 
 ## 1. Covoiturage, ridesharing : de quoi parle-t-on exactement ? {#definitions}
 
 > **Définition** — Le covoiturage domicile-travail (ou covoiturage pendulaire) consiste à partager un véhicule particulier entre deux personnes ou plus qui effectuent le même trajet entre leur domicile et leur lieu de travail. Contrairement au VTC (Uber, Bolt, Heetch), il n'y a pas de chauffeur professionnel rémunéré : les passagers partagent les frais réels du trajet. Il se distingue du covoiturage longue distance (BlaBlaCar) par sa **régularité** — les mêmes personnes, les mêmes trajets, chaque semaine — et par le **cadre employeur** : l'entreprise joue un rôle facilitateur, souvent financier.
+
+On parle aussi de **covoiturage entre collègues** quand les covoitureurs travaillent pour le même employeur, et de **covoiturage professionnel** quand le trajet partagé est un déplacement de travail (une réunion sur un autre site, une visite client). Les deux relèvent de régimes différents, détaillés [plus bas](#usages).
 
 En France, on distingue deux grandes familles de mobilité partagée :
 
@@ -102,7 +141,7 @@ La directive **CSRD** (Corporate Sustainability Reporting Directive), applicable
 
 ### Le coût de la vie pèse sur la fidélisation
 
-Selon l'Observatoire des mobilités, un salarié qui utilise sa voiture pour aller travailler dépense entre 3 000 et 5 000 € par an en carburant, assurance et entretien. En covoiturant 4 jours sur 5 sur un trajet de 30 km, il économise en moyenne **1 400 à 1 800 € par an** — un avantage plus visible qu'une prime ponctuelle, et un argument de rétention concret dans un marché du travail tendu.
+Un salarié qui vient seul en voiture paie seul le carburant, les péages, l'usure et une partie de l'assurance de chaque trajet. En partageant ces frais avec un ou deux collègues 4 jours sur 5 sur un trajet de 30 km, il économise de l'ordre de **1 400 à 1 800 € par an** (estimation TeamWheels, à refaire avec vos distances dans le [simulateur](/fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/)) — un avantage plus visible qu'une prime ponctuelle, et un argument de rétention concret dans un marché du travail tendu.
 
 ### Le retour au bureau repose la question de la mobilité
 
@@ -110,12 +149,13 @@ Le trajet domicile-travail est l'une des premières sources de stress des salari
 
 ### Chiffres clés
 
-| Indicateur | Valeur |
-|---|---|
-| Plafond FMD exonéré de charges (FMD seul / cumul abonnement transport) | 600 € / 900 € par salarié et par an |
-| Réduction du coût par trajet vs usage individuel | -58 % |
-| Véhicules nécessaires pour le même effectif | 2,4× moins |
-| Hausse d'engagement salarié (ADEME 2024) | +23 % |
+| Indicateur | Valeur | Source |
+|---|---|---|
+| Actifs qui vont travailler en voiture (parmi ceux qui se déplacent) | 74 % | [Insee Première n° 1835, janvier 2021](https://www.insee.fr/fr/statistiques/5013868) (données 2017) |
+| Actifs qui prennent la voiture pour un trajet de 5 km ou moins | 60 % | [Insee Première n° 1835](https://www.insee.fr/fr/statistiques/5013868) |
+| Plafond FMD exonéré de charges (FMD seul / cumul abonnement transport) | 600 € / 900 € par salarié et par an | Code de la sécurité sociale, voir notre [guide FMD](/fr/forfait-mobilites-durables-covoiturage/) |
+| Objectif national de trajets covoiturés par jour d'ici 2027 | 3 millions (contre environ 900 000 au lancement) | Plan national covoiturage du quotidien, décembre 2022 |
+| Assurance spécifique nécessaire pour covoiturer | Aucune, tant que le trajet reste un partage de frais | [DGCCRF](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/covoiturage-la-reglementation-applicable) |
 
 ---
 
@@ -130,17 +170,17 @@ Le trajet domicile-travail est l'une des premières sources de stress des salari
 
 La différence fondamentale tient à deux points : l'intégration native dans **Microsoft Teams** et la couverture complète du cycle de mobilité — du trajet domicile-bureau aux déplacements inter-sites avec la flotte d'entreprise.
 
-> **Actualité :** Karos est en négociations exclusives pour reprendre BlaBlaCar Daily (qui avait absorbé Klaxit en 2023). Contrat, données salariés, justificatifs FMD : voir [ce que le rachat de BlaBlaCar Daily par Karos change pour votre covoiturage d'entreprise](/fr/blog/rachat-blablacar-daily-karos-covoiturage-entreprise/), et [l'alternative à BlaBlaCar Daily et Karos pour les entreprises](/fr/alternative-blablacar-daily-karos-entreprises/).
+> **Actualité :** Karos a repris BlaBlaCar Daily au 1er octobre 2026 (rebaptisée Daily), qui avait absorbé Klaxit en 2023. Oxycar, autre plateforme de covoiturage d'entreprise, a été liquidée en 2023 : voir [l'alternative à Oxycar](/fr/alternative-oxycar/). Contrat, données salariés, justificatifs FMD : voir [ce que le rachat de BlaBlaCar Daily par Karos change pour votre covoiturage d'entreprise](/fr/blog/rachat-blablacar-daily-karos-covoiturage-entreprise/), et [l'alternative à BlaBlaCar Daily et Karos pour les entreprises](/fr/alternative-blablacar-daily-karos-entreprises/).
 
 > **Le covoiturage d'entreprise n'est plus un avantage optionnel : c'est une obligation de reporting et un levier de compétitivité RH.**
 
 ---
 
-## 4. Les deux cas d'usage du covoiturage en entreprise {#usages}
+## 4. Covoiturage entre collègues et covoiturage professionnel : les deux cas d'usage {#usages}
 
-### Cas n°1 — Le trajet domicile-travail quotidien
+### Cas n°1 — Le covoiturage entre collègues pour le trajet domicile-travail
 
-En France, **70 % des actifs** utilisent leur voiture personnelle pour se rendre au travail (ADEME). Pour une entreprise de 80 salariés dont 60 viennent en voiture individuelle, un programme de covoiturage bien organisé peut représenter :
+En France, **74 % des actifs** qui se déplacent pour travailler prennent leur voiture, et c'est encore le cas de 60 % d'entre eux pour un trajet de 5 km ou moins ([Insee, 2021](https://www.insee.fr/fr/statistiques/5013868)). Pour une entreprise de 80 salariés dont 60 viennent en voiture individuelle, un programme de covoiturage bien organisé peut représenter :
 
 - 30 à 35 voitures en moins sur le parking
 - Entre 120 000 et 180 000 km de trajets partagés par an
@@ -162,7 +202,7 @@ Ces chiffres sont illustratifs, mais cohérents avec les retours observés sur d
 >
 > Pour les salariés dont le lieu de travail principal est un site différent de leur domicile déclaré, le FMD s'applique sur le trajet habituel domicile-site. Les trajets entre deux sites de l'entreprise relèvent des frais professionnels et sont remboursables selon le barème kilométrique de l'administration fiscale. TeamWheels gère les deux régimes de façon transparente.
 
-### Cas n°2 — Les déplacements professionnels inter-sites avec la flotte d'entreprise
+### Cas n°2 — Le covoiturage professionnel : déplacements inter-sites et flotte d'entreprise
 
 Beaucoup d'entreprises françaises gèrent des déplacements réguliers entre leurs établissements — du siège vers les agences régionales, du dépôt vers les chantiers. Ces trajets mobilisent soit des véhicules de la flotte (pool de voitures partagées), soit des véhicules personnels remboursés aux frais kilométriques, soit des VTC ou taxis, l'option la plus coûteuse.
 
@@ -200,7 +240,40 @@ Enfin, communiquez régulièrement sur les résultats collectifs — trajets par
 
 ---
 
-## 6. Quel outil de covoiturage choisir pour son entreprise ? {#outil}
+## 6. Assurance, responsabilité et accident de trajet {#assurance}
+
+> **En bref** — Le covoiturage domicile-travail ne demande pas d'assurance spéciale tant qu'il reste un partage de frais : le passager est couvert par l'assurance responsabilité civile obligatoire du véhicule. Un accident pendant un covoiturage régulier reste un accident de trajet, même si le conducteur fait un détour pour prendre un collègue.
+
+### Le passager est couvert par l'assurance du conducteur
+
+Le Code des transports (article L3132-1) définit le covoiturage comme l'utilisation en commun d'un véhicule par un conducteur et un ou plusieurs passagers, **à titre non onéreux, excepté le partage des frais**. Tant que la participation demandée aux passagers ne dépasse pas les frais réels (carburant, péages, usure), le trajet reste non professionnel et le passager est garanti par l'assurance responsabilité civile obligatoire du véhicule, comme le rappelle la [DGCCRF](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/covoiturage-la-reglementation-applicable).
+
+Deux limites à écrire noir sur blanc dans votre charte de covoiturage :
+
+- **Le conducteur n'est pas couvert par sa propre responsabilité civile** pour ses dommages corporels : il vérifie sa garantie conducteur auprès de son assureur.
+- **Un conducteur qui fait du bénéfice sort du cadre du covoiturage** : il s'agit alors de transport rémunéré, et son assurance risque de ne plus jouer.
+
+Pour une voiture de fonction ou de service, le covoiturage est possible avec l'accord de l'employeur : vérifiez que le contrat de la flotte couvre le transport de collègues.
+
+### Un accident pendant un covoiturage régulier reste un accident de trajet
+
+L'article L411-2 du Code de la sécurité sociale protège le trajet entre la résidence et le lieu de travail. Ce parcours **peut ne pas être le plus direct lorsque le détour est rendu nécessaire par un covoiturage régulier** : l'INRS le rappelle dans son [focus juridique sur les accidents de trajet](https://www.inrs.fr/publications/juridique/focus-juridiques/focus-juridique-accidents-trajet.html). Conducteur et passagers n'ont pas besoin de travailler pour le même employeur.
+
+Le mot important est *régulier*. Un relevé de trajets daté par salarié, comme celui que produit un outil de covoiturage, le démontre bien plus facilement qu'un arrangement oral entre collègues. L'INRS consacre aussi une fiche au sujet dans *Travail & Sécurité* : [« Covoiturage et travail »](https://www.inrs.fr/dam/inrs/CataloguePapier/TS/TI-TS857page44.pdf).
+
+### Ce que l'employeur fait, et ce qu'il ne fait pas
+
+| L'employeur… | |
+|---|---|
+| **ne peut pas** imposer le covoiturage | Le salarié choisit son mode de transport : le covoiturage reste volontaire. |
+| **n'a pas à** assurer les véhicules personnels | Les trajets domicile-travail se font sous l'assurance de chaque conducteur. |
+| **déclare** l'accident de trajet | Comme pour tout accident de trajet, auprès de la CPAM, dès qu'il en est informé. |
+| **fixe** le cadre | Charte (partage des frais, ponctualité, imprévus, sécurité), FMD, places réservées. |
+| **conserve** les justificatifs | Relevés ou attestations de covoiturage, utiles pour le FMD comme pour démontrer la régularité d'un trajet. |
+
+---
+
+## 7. Quel outil de covoiturage choisir pour son entreprise ? {#outil}
 
 C'est la décision la plus critique du projet, et deux erreurs reviennent sans cesse.
 
@@ -216,11 +289,27 @@ Pour éviter ces écueils, un outil de covoiturage entreprise doit répondre à 
 4. **Le reporting** — km partagés, CO₂ évité, nombre de covoiturages : des données exploitables telles quelles dans votre DPEF, votre bilan GES (poste 7) et votre rapport CSRD.
 5. **La sécurité et la souveraineté des données** — SSO via Entra ID, conformité RGPD, données qui restent dans votre environnement Microsoft 365.
 
-Un dernier critère, souvent oublié : le coût total. Entre une application autonome facturée au siège, un développement sur mesure et un SaaS déployé dans votre tenant Microsoft 365 avec un essai gratuit de 30 jours, l'écart se chiffre en dizaines de milliers d'euros — et surtout en mois de déploiement. Si votre organisation travaille déjà sur Microsoft 365, la solution la plus rationnelle est un [logiciel de covoiturage entreprise](/fr/corporate-carpooling-software/) intégré à Microsoft Teams.
+Un dernier critère, souvent oublié : le coût total. Entre une application autonome facturée au siège, un développement sur mesure et un SaaS déployé dans votre tenant Microsoft 365 avec le premier mois offert, l'écart se chiffre en dizaines de milliers d'euros — et surtout en mois de déploiement. Si votre organisation travaille déjà sur Microsoft 365, la solution la plus rationnelle est un [logiciel de covoiturage entreprise](/fr/corporate-carpooling-software/) intégré à Microsoft Teams.
 
 ---
 
-## 7. Lancer un programme de covoiturage en 5 étapes {#etapes}
+## 8. Combien coûte le covoiturage en entreprise ? {#couts}
+
+Un programme de covoiturage coûte peu à l'employeur, et la plupart des postes sont facultatifs. Voici les trois lignes à budgéter.
+
+| Poste | Ordre de grandeur | À savoir |
+|---|---|---|
+| **L'outil** | De 0 € (tableur et attestations) à quelques euros par salarié et par mois | TeamWheels : 3 € HT par collaborateur et par mois (tarif promotionnel, au lieu de 5 € HT), premier mois offert. La plupart des éditeurs ne publient pas de grille. |
+| **Le forfait mobilités durables** | Montant libre, exonéré jusqu'à 600 € par salarié et par an (900 € en cumul avec l'abonnement transport) | Facultatif. Fixé par accord d'entreprise ou décision unilatérale. Voir le [guide FMD](/fr/forfait-mobilites-durables-covoiturage/). |
+| **Le temps RH** | Deux à quatre jours pour le lancement, puis quelques heures par mois | Réduit si l'appariement, les relevés et le reporting sont automatisés. |
+
+**Exemple : un site de 200 salariés.** L'outil TeamWheels revient à 3 € × 200 × 12 = **7 200 € HT par an**. Si 40 covoitureurs reçoivent un FMD de 300 € par an, l'enveloppe FMD est de 12 000 €, sans cotisations sociales. En face : les places de parking que vous n'avez plus à louer ou à construire, les indemnités kilométriques évitées sur les déplacements professionnels partagés et le CO₂ du poste 7 de votre bilan GES.
+
+**Faites le calcul avec vos chiffres** : effectif, distance moyenne et part de covoitureurs dans le [simulateur d'économies, de CO₂ et de ROI du covoiturage](/fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/).
+
+---
+
+## 9. Lancer un programme de covoiturage en 5 étapes {#etapes}
 
 Un programme de covoiturage d'entreprise n'a pas besoin de mois de préparation : de la décision aux premiers trajets partagés, comptez 30 jours. Voici la feuille de route que nous recommandons.
 
@@ -232,7 +321,7 @@ Commencez par fixer vos objectifs : réduire la pression sur le parking, atteind
 
 ### Étape 2 — Choisir l'outil de covoiturage (jours 5 à 7) {#etape-2}
 
-Sélectionnez votre outil selon les cinq critères de la section précédente : intégration aux outils existants, appariement automatique, justificatifs FMD, reporting, sécurité. Si vous êtes sur Microsoft 365, l'installation depuis AppSource prend quelques minutes à un administrateur Teams — pas de projet IT, pas d'infrastructure à prévoir.
+Sélectionnez votre outil selon les cinq critères de la [section 7](#outil) : intégration aux outils existants, appariement automatique, justificatifs FMD, reporting, sécurité. Si vous êtes sur Microsoft 365, l'installation depuis AppSource prend quelques minutes à un administrateur Teams — pas de projet IT, pas d'infrastructure à prévoir.
 
 ### Étape 3 — Préparer le cadre (jours 8 à 14) {#etape-3}
 
@@ -279,6 +368,26 @@ L'obstacle numéro un à l'adoption d'un programme de covoiturage est la **frict
 
 ## Questions fréquentes {#faq}
 
+### Comment mettre en place le covoiturage en entreprise ?
+
+En cinq étapes sur environ 30 jours : diagnostiquer les trajets des salariés, choisir un outil d'appariement, cadrer le dispositif (forfait mobilités durables, charte de covoiturage, communication), lancer un pilote de deux à quatre semaines avec 20 à 50 volontaires, puis généraliser et suivre chaque mois la participation, les trajets partagés et le CO₂ évité. Le détail est [plus haut](#etapes).
+
+### Faut-il une assurance spéciale pour le covoiturage entre collègues ?
+
+Non, tant que le covoiturage reste un partage de frais. Le Code des transports (article L3132-1) le définit comme un trajet effectué à titre non onéreux, excepté le partage des frais, et la DGCCRF précise que le passager est garanti par l'assurance responsabilité civile obligatoire du véhicule. Le conducteur doit en revanche vérifier sa propre garantie conducteur, que la responsabilité civile ne couvre pas.
+
+### Un accident pendant un covoiturage domicile-travail est-il un accident de trajet ?
+
+Oui. L'article L411-2 du Code de la sécurité sociale protège le trajet entre la résidence et le lieu de travail, et ce parcours peut ne pas être le plus direct lorsque le détour est rendu nécessaire par un covoiturage régulier, comme le rappelle l'INRS. Conducteur et passagers n'ont pas besoin de travailler dans la même entreprise. L'employeur déclare l'accident à la CPAM comme tout accident de trajet.
+
+### L'employeur peut-il obliger ses salariés à covoiturer ?
+
+Non. Le salarié choisit son mode de transport pour venir travailler : le covoiturage reste une démarche volontaire. L'employeur peut en revanche l'encourager, l'organiser avec un outil d'appariement, réserver des places de parking aux covoitureurs et le financer par le forfait mobilités durables.
+
+### Combien coûte le covoiturage en entreprise pour l'employeur ?
+
+Trois postes : l'outil (de 0 € pour un tableur à quelques euros par salarié et par mois ; TeamWheels coûte 3 € HT par collaborateur et par mois en tarif promotionnel), le forfait mobilités durables s'il est versé (facultatif, exonéré jusqu'à 600 € par salarié et par an) et le temps d'animation RH. Pour 200 collaborateurs, l'outil TeamWheels revient à 7 200 € HT par an, avant les économies de parking et d'indemnités kilométriques.
+
 ### Qu'est-ce que le covoiturage domicile-travail en entreprise ?
 
 Le covoiturage domicile-travail consiste pour des salariés d'une même entreprise — ou de sites proches — à partager un véhicule particulier pour le trajet entre leur domicile et leur lieu de travail. Il n'y a pas de chauffeur professionnel : conducteur et passagers partagent les frais. En France, il est encadré par la loi d'orientation des mobilités (LOM) et peut être financé par l'employeur via le forfait mobilités durables, exonéré de cotisations dans la limite de 600 € par an et par salarié (900 € en cumul avec l'abonnement transport).
@@ -299,10 +408,10 @@ Non. Le FMD couvre uniquement les trajets domicile-travail. Les déplacements pr
 
 ## Prêt à réduire vos coûts de mobilité dès ce trimestre ?
 
-TeamWheels s'essaie **gratuitement pendant 30 jours, jusqu'à 50 collaborateurs**, sans carte bancaire. Installation en quelques minutes dans votre environnement Microsoft 365. Aucun engagement.
+Avec TeamWheels, **le premier mois est offert, jusqu'à 50 collaborateurs**, sans carte bancaire. Installation en quelques minutes dans votre environnement Microsoft 365. Ensuite, l'abonnement est souscrit avec un engagement trimestriel.
 
 **[Demander une démo gratuite](/fr/contact/)** · **[Simuler mes économies FMD](/fr/blog/calculateur-economies-covoiturage-entreprise-co2-roi-2026/)**
 
 ---
 
-*Article publié par l'équipe TeamWheels le 29 avril 2026, mis à jour le 7 septembre 2026 (fusion des guides « Covoiturage domicile-travail : comment l'organiser » et « Outil de covoiturage entreprise : 5 étapes pour démarrer »).*
+*Article publié par l'équipe TeamWheels le 29 avril 2026, mis à jour le 4 novembre 2026 (assurance et accident de trajet, coûts, chiffres sourcés) et le 7 septembre 2026 (fusion des guides « Covoiturage domicile-travail : comment l'organiser » et « Outil de covoiturage entreprise : 5 étapes pour démarrer »).*

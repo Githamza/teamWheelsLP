@@ -106,7 +106,7 @@ faq:
 call_to_action:
   enable: true
   title: "Lancez le covoiturage dans votre entreprise"
-  subtitle: "Rejoignez les entreprises qui facilitent les trajets de leurs équipes et réduisent leur empreinte carbone. <br><br> <strong>Offre de lancement :</strong> Essai gratuit 30 jours + déploiement accompagné. <br> <em>Places limitées pour l'accompagnement personnalisé.</em>"
+  subtitle: "Rejoignez les entreprises qui facilitent les trajets de leurs équipes et réduisent leur empreinte carbone. <br><br> <strong>Offre de lancement :</strong> Premier mois offert + déploiement accompagné. <br> <em>Places limitées pour l'accompagnement personnalisé.</em>"
   button_label: "Recevoir une démo guidée →"
   button_link: "contact/"
   image: "images/cta.png"

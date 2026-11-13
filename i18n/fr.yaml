@@ -177,7 +177,7 @@
 - id: teams_install_button_short
   translation: Essayer dans Teams
 - id: teams_install_trust
-  translation: Gratuit 30 jours · Sans carte bancaire · Prêt en 5 min
+  translation: Premier mois offert · Sans carte bancaire · Prêt en 5 min
 - id: teams_admin_question
   translation: "Vous n'êtes pas un admin ?"
 - id: teams_admin_link
@@ -196,7 +196,7 @@
   translation: |
     Bonjour,
 
-    Je souhaiterais tester TeamWheels, une application de covoiturage domicile-travail intégrée à Microsoft Teams (essai gratuit 30 jours, sans carte bancaire).
+    Je souhaiterais tester TeamWheels, une application de covoiturage domicile-travail intégrée à Microsoft Teams (premier mois offert, sans carte bancaire).
 
     Pourriez-vous l'autoriser pour notre organisation ?
 

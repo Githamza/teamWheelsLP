@@ -1,10 +1,14 @@
 ---
 title: "Forfait Mobilités Durables 2026 : le guide employeur | TeamWheels"
-seoTitle: "Forfait mobilités durables 2026 : guide employeur"
-description: "Prime covoiturage 2026 et forfait mobilités durables : montants, plafonds URSSAF, cumuls, mise en 4 étapes et justificatifs pour l'employeur."
-keywords: "forfait mobilités durables, forfait mobilité durable 2026, forfait mobilité durable urssaf, montant forfait mobilité durable 2026, plafond FMD 2026, forfait mobilités durables covoiturage, fmd covoiturage, prime covoiturage 2026, prime covoiturage employeur, justificatif covoiturage fmd, attestation covoiturage employeur, preuve de covoiturage"
+seoTitle: "Forfait mobilités durables 2026 : le guide employeur"
+description: "Forfait mobilités durables 2026 : plafonds URSSAF, modes éligibles, cumuls, justificatifs et mise en place. Le guide employeur pour verser le FMD sans risque."
+keywords: "forfait mobilités durables, forfait mobilité durable, forfait mobilité durable 2026, forfait mobilité durable urssaf, montant forfait mobilité durable 2026, plafond FMD 2026, fmd covoiturage"
 layout: "benefits"
-lastmod: 2026-10-28
+lastmod: 2026-11-06
+# Refonte J+4 (spec du 28/10/2026) le 03/11/2026 : page dégraissée vers le
+# terme principal ; chaque section déplacée garde 2-3 lignes et un lien vers
+# sa page dédiée. Surveiller les positions : retour arrière si décrochage sur
+# deux relevés consécutifs.
 # L'article de blog « Forfait Mobilité Durable : le guide complet » (slug 2025)
 # a été fusionné dans cette page pilier en septembre 2026. L'alias est relatif à
 # la racine de langue ; la 301 serveur est déclarée dans static/.htaccess.
@@ -23,22 +27,39 @@ banner:
   image: "images/photos/commute-reporting-dashboard.jpg"
 
 image_and_content_blocks:
-  # Bloc réponse placé en tête du corps (brief SEO du 19/10/2026) : la requête
-  # « prime covoiturage 2026 » demande un montant, pas un guide de mise en place.
+  # Bloc réponse en tête du corps : le montant du FMD 2026, qui est la
+  # première question posée. L'ancre historique est conservée.
   - enable: true
     anchor: "montant-prime-covoiturage-2026"
-    title: "Montant de la prime covoiturage 2026"
+    title: "Forfait mobilités durables 2026 : le montant en bref"
     content_position: "left"
     content: |
-      En 2026, la prime covoiturage versée par l'employeur, le forfait mobilités durables, est exonérée jusqu'à **600 € par an et par salarié**, et jusqu'à **900 €** en cumul avec la prise en charge de l'abonnement transport.
+      En 2026, le forfait mobilités durables versé par un employeur privé est exonéré de cotisations sociales et d'impôt sur le revenu jusqu'à **600 € par an et par salarié**, et jusqu'à **900 €** en cumul avec la prise en charge de l'abonnement de transport public.
 
       | Situation (employeur privé, 2026) | Plafond exonéré par salarié et par an |
       |---|---|
-      | Forfait mobilités durables pour le covoiturage, versé seul | **600 €** |
-      | FMD cumulé avec la prise en charge de l'abonnement transports en commun | **900 €** au total, part employeur de l'abonnement comprise |
-      | Plafond global d'exonération FMD + prime de transport (carburant, recharge) | **600 €** au total |
+      | FMD versé seul | **600 €** |
+      | FMD + prise en charge de l'abonnement transport | **900 €** au total, part employeur de l'abonnement comprise |
+      | FMD + prime de transport (carburant, recharge) | **600 €** au total, dont 300 € au maximum de carburant |
+      | Excédent au-delà des plafonds | réintégré dans l'assiette des cotisations |
 
-      Source : [URSSAF, frais professionnels — forfait mobilités durables](https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/frais-professionnels.html#ancre-FMD) et [service-public.gouv.fr](https://entreprendre.service-public.gouv.fr/vosdroits/F33808). La prime nationale de 100 € pour les nouveaux conducteurs a été supprimée fin janvier 2025 ; le détail des montants et des cumuls est donné [plus bas](#montants).
+      Source : [service-public.gouv.fr, F33808](https://entreprendre.service-public.gouv.fr/vosdroits/F33808), vérifiée le 22 octobre 2026, et [URSSAF](https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/frais-professionnels.html#ancre-FMD). Ces plafonds sont révisés chaque année.
+    button:
+      enable: false
+
+  # Encadré de conversion (03/11/2026) : la page capte beaucoup de salariés ;
+  # les employeurs sont renvoyés vers la page logiciel FMD.
+  - enable: true
+    anchor: "vous-etes-employeur"
+    subtitle: "Vous êtes employeur ?"
+    title: "Gérer le FMD sans tableur ni attestations"
+    content_position: "left"
+    content: |
+      Verser le forfait, c'est surtout savoir chaque mois **qui a covoituré, combien de jours, avec quelle preuve**. TeamWheels enregistre les trajets partagés dans Microsoft Teams et produit un **relevé mensuel par salarié**, exportable pour la paie, avec le reporting CO₂ et parking.
+
+      [Voir le logiciel de gestion du forfait mobilités durables →](/fr/logiciel-forfait-mobilites-durables/)
+
+      *Vous êtes salarié ? Montrez ce guide à votre service RH : le FMD est facultatif, c'est l'employeur qui décide de le mettre en place.*
     button:
       enable: false
 
@@ -48,47 +69,26 @@ image_and_content_blocks:
     title: "Qu'est-ce que le Forfait Mobilités Durables ?"
     image: "images/photos/colleagues-carpooling.jpg"
     content_position: "right"
-    content: "Le forfait mobilités durables est un dispositif créé par la **loi d'orientation des mobilités (LOM)** de 2019 (article L. 3261-3-1 du Code du travail). Il permet à l'employeur de prendre en charge tout ou partie des frais de déplacement domicile-travail des salariés qui utilisent un **mode de transport durable**, avec une exonération de cotisations sociales et d'impôt sur le revenu dans les plafonds fixés par la loi de finances.
+    content: |
+      Le forfait mobilités durables, souvent appelé [prime mobilité durable](/fr/prime-mobilite-durable/), est créé par la **loi d'orientation des mobilités (LOM)** de 2019 (article L. 3261-3-1 du Code du travail). L'employeur prend en charge tout ou partie des trajets domicile-travail des salariés qui utilisent un **mode de transport durable** : covoiturage (conducteur ou passager), vélo, engins de déplacement en libre-service, autopartage de véhicules à faibles émissions, transports publics hors abonnement.
 
-    Les modes éligibles au FMD :
-
-    * **Le covoiturage domicile-travail**, que le salarié soit conducteur ou passager
-
-    * **Le vélo** (personnel ou en location) et les engins de déplacement personnel (trottinettes, gyropodes)
-
-    * **L'autopartage** avec des véhicules à faibles émissions et les services de mobilité partagée
-
-    * **Les transports en commun** hors abonnement (déjà couverts par la prise en charge obligatoire de 50 %)
-
-    Le FMD est **facultatif** dans le secteur privé : il se met en place par accord d'entreprise, accord de branche ou décision unilatérale de l'employeur après consultation du CSE, **à conditions égales pour tous les salariés éligibles** (750 à 3 750 € d'amende en cas de manquement). Le montant versé figure sur le bulletin de paie.
-    "
+      Le FMD est **facultatif** dans le secteur privé. Une fois mis en place, il doit être ouvert **à conditions égales à tous les salariés éligibles** (750 à 3 750 € d'amende en cas de manquement), et le montant versé figure sur le bulletin de paie. La liste complète des modes éligibles et exclus est sur notre page [prime mobilité durable](/fr/prime-mobilite-durable/#modes-eligibles).
     button:
       enable: false
 
   - enable: true
     anchor: "montants"
     subtitle: "Chiffres 2026"
-    title: "Montants et Plafonds d'Exonération 2026"
+    title: "Calculer le forfait mobilités durables"
     content_position: "left"
     content: |
-      Les plafonds d'exonération du forfait mobilités durables sont fixés par la loi de finances et publiés par l'URSSAF. Voici les montants applicables aux employeurs privés en 2026 :
+      La loi ne fixe ni minimum ni maximum : seule l'exonération est plafonnée (tableau ci-dessus). Pour le covoiturage, trois formules dominent :
 
-      | Situation | Montant maximum exonéré (par salarié et par an) |
-      |---|---|
-      | FMD versé seul | **600 €** |
-      | FMD cumulé avec la prise en charge obligatoire de l'abonnement transports en commun | plafond global **900 €** (après déduction de la part employeur de l'abonnement) |
-      | FMD cumulé avec la prime de transport (carburant, recharge électrique) | plafond global **600 €**, dont 300 € maximum au titre du carburant |
-      | Excédent au-delà des plafonds | réintégré dans l'assiette des cotisations |
-
-      **Ce que cela signifie concrètement** pour un salarié qui covoiture régulièrement : l'employeur peut lui verser jusqu'à 600 € par an (900 € en cumul avec l'abonnement transport), exonérés de cotisations pour l'entreprise et d'impôt sur le revenu pour le salarié. C'est du net direct pour vos collaborateurs, sans charges pour vous — comparé à une augmentation de salaire équivalente, l'économie employeur avoisine **45 % du montant versé**.
-
-      **Comment calculer le FMD pour le covoiturage ?** La loi laisse le choix du mode de calcul. Trois formules dominent :
-
-      * **Le forfait annuel** — un montant fixe versé à tout salarié qui atteste covoiturer, simple mais peu proportionnel ;
+      * **Le forfait annuel** — un montant fixe pour tout salarié qui covoiture, simple mais peu proportionnel ;
       * **Le forfait par jour covoituré** — par exemple 2 à 3 € par jour, plafonné à 600 €/an, la formule la plus répandue ;
-      * **Le barème kilométrique** — entre 0,10 € et 0,25 € par kilomètre parcouru en covoiturage. Exemple : 30 km aller-retour, 200 jours par an, soit 6 000 km ; à 0,10 €/km, le salarié atteint les 600 € du plafond FMD seul.
+      * **Le montant au kilomètre** — entre 0,10 € et 0,25 € par kilomètre covoituré. Exemple : 30 km aller-retour, 200 jours par an, soit 6 000 km ; à 0,10 €/km, le salarié atteint les 600 € du plafond.
 
-      Le montant retenu doit rester **proportionnel aux trajets réellement effectués** : un salarié qui ne covoiture pas ne peut pas percevoir le même montant qu'un covoitureur régulier. Ces plafonds sont révisés chaque année : vérifiez-les sur [service-public.gouv.fr](https://entreprendre.service-public.gouv.fr/vosdroits/F33808) ou [urssaf.fr](https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/frais-professionnels.html#ancre-FMD) avant chaque exercice.
+      Le montant doit rester **proportionnel aux trajets réellement effectués**. Comparé à une augmentation de salaire équivalente, l'économie employeur avoisine **45 % du montant versé**, puisque le FMD est exonéré de charges dans les plafonds.
     button:
       enable: false
 
@@ -101,84 +101,25 @@ image_and_content_blocks:
   - enable: true
     anchor: "prime-covoiturage"
     subtitle: "Ce qui existe encore en 2026"
-    title: "Prime covoiturage 2026 : montant et conditions"
+    title: "Prime covoiturage 2026 : ce qu'il en reste"
     content_position: "left"
     content: |
-      **Le montant de la prime covoiturage nationale en 2026 est de 0 € : elle n'existe plus.** Le « coup de pouce » de 100 € pour les conducteurs débutants, financé par les certificats d'économies d'énergie, a été ramené à 50 € au 1er janvier 2025, puis supprimé fin janvier 2025 ([Hellio](https://www.hellio.com/actualites/reglementation/prime-coup-pouce-covoiturage)). Une page qui promet encore « 100 € » en 2026 est périmée.
-
-      Ce qui finance réellement le covoiturage domicile-travail en 2026 :
-
-      * **Le forfait mobilités durables, versé par l'employeur** — jusqu'à **600 € par an** exonérés de cotisations et d'impôt, **900 € par an** en cumul avec la prise en charge de l'abonnement transport. Il s'applique au conducteur comme au passager
-
-      * **Les aides locales** — certaines collectivités et régions rémunèrent encore les trajets via des plateformes partenaires, selon le territoire : à vérifier localement, ce n'est pas un dispositif national
-
-      **Condition URSSAF :** pour que l'exonération tienne, l'employeur doit pouvoir produire, pour chaque bénéficiaire, une attestation sur l'honneur ou un justificatif d'utilisation du covoiturage ([service-public.fr](https://entreprendre.service-public.gouv.fr/vosdroits/F33808)). En pratique, la « prime covoiturage » que peut verser votre entreprise, c'est le FMD : la section suivante détaille comment le mettre en place et le justifier.
+      **La prime covoiturage nationale de 100 € a été arrêtée au 31 janvier 2025.** En 2026, la prime covoiturage qu'une entreprise peut verser, c'est le forfait mobilités durables : jusqu'à 600 € par an exonérés, 900 € en cumul avec l'abonnement transport, pour le conducteur comme pour le passager. Montants, fonctionnaires, aides locales et démarches : voir notre page [prime covoiturage 2026](/fr/prime-covoiturage-2026/).
     button:
       enable: false
 
   - enable: true
     anchor: "urssaf"
     subtitle: "Conformité"
-    title: "Ce que dit l'URSSAF : conditions d'exonération et justificatifs recevables"
+    title: "Ce que dit l'URSSAF : conditions d'exonération"
     content_position: "left"
     content: |
-      Pour que le forfait mobilités durables reste exonéré en cas de contrôle URSSAF, quatre conditions doivent être réunies.
+      L'URSSAF ne valide pas le dispositif a priori : en cas de contrôle, l'employeur démontre que quatre conditions sont réunies.
 
-      **1. Un cadre formalisé.** Le FMD est instauré par accord d'entreprise ou de branche, ou par décision unilatérale de l'employeur après consultation du CSE (article L. 3261-3-1 du Code du travail, décret n° 2020-541 du 9 mai 2020). Un forfait versé sans support formel est requalifié en salaire.
-
-      **2. Un justificatif par salarié et par an.** L'employeur doit recueillir, pour chaque bénéficiaire, **une attestation sur l'honneur ou un justificatif de l'utilisation du mode de transport** (article R. 3261-13-2 du Code du travail). Pour le covoiturage, l'URSSAF admet :
-
-      * l'attestation sur l'honneur du salarié — recevable, mais purement déclarative, donc fragile en cas de contrôle (modèle d'[attestation de covoiturage](/fr/attestation-covoiturage-forfait-mobilites-durables/) à télécharger) ;
-      * l'attestation ou le relevé de trajets d'une plateforme de covoiturage — nominatif, daté, la solution recommandée ;
-      * les preuves certifiées du registre de preuve de covoiturage (classes A, B ou C selon la fiabilité de l'identification et de la géolocalisation).
-
-      **3. Le respect des plafonds.** L'exonération sociale (article L. 136-1-1 du Code de la sécurité sociale) et fiscale (article 81, 19° ter b du CGI) s'applique dans les limites du tableau ci-dessus. Tout dépassement est réintégré dans l'assiette des cotisations et devient imposable pour le salarié.
-
-      **4. La conservation des preuves.** Les justificatifs se conservent au moins **trois ans**, durée de la prescription du contrôle URSSAF. Un tableur de suivi ne suffit pas : l'inspecteur demandera les pièces sous-jacentes.
-
-      Point de vigilance sur la requête « forfait mobilité durable URSSAF » : l'URSSAF ne valide pas le dispositif a priori. C'est à l'employeur de démontrer la réalité des trajets — d'où l'intérêt d'un mode de preuve automatisé, décrit plus bas.
-    button:
-      enable: false
-
-  - enable: true
-    anchor: "cumuls"
-    subtitle: "Cumuls & cas particuliers"
-    title: "Cumuler le FMD avec les Autres Dispositifs"
-    image: "images/why_use_teamWheels.png"
-    content_position: "left"
-    content: "Plusieurs aides à la mobilité coexistent — elles se cumulent, mais pas n'importe comment :
-
-    * **FMD + abonnement transports en commun** — Cumul possible, plafond global porté à **900 €/an** après déduction de votre prise en charge obligatoire de 50 % de l'abonnement
-
-    * **FMD + prime de transport (carburant, recharge)** — Plafond global maintenu à 600 €/an, dont 300 € maximum pour le carburant (règles et conditions de la [prime transport côté employeur](/fr/prime-transport-employeur/))
-
-    * **FMD + aides locales au covoiturage** — Cumulables : certaines collectivités rémunèrent les trajets via des plateformes partenaires, indépendamment du FMD versé par l'employeur. La prime covoiturage nationale de 100 € (financée par les certificats d'économies d'énergie) a pris fin en janvier 2025 et ne fait plus partie des dispositifs à cumuler
-
-    * **FMD + indemnités kilométriques** — Le FMD couvre le domicile-travail ; les déplacements professionnels inter-sites relèvent du [barème kilométrique](/fr/blog/bareme-kilometrique-2026-indemnite-domicile-travail/), sans cumul sur un même trajet
-
-    Le détail des règles, plafonds et cumuls de toutes les aides mobilité (titre-mobilité, prise en charge à 75 % de l'abonnement, prime de transport) est dans notre guide dédié : [aides à la mobilité durable en entreprise : règles, plafonds et cumuls →](/fr/blog/aides-mobilite-durable-entreprise-regles-plafonds-cumuls/). Pour arbitrer salarié par salarié entre FMD, indemnité kilométrique et voiture de fonction électrique, lisez notre [comparatif des coûts employeur 2026](/fr/blog/mobilite-salaries-isoles-fmd-ik-voiture-electrique-2026/).
-    "
-    button:
-      enable: false
-
-  - enable: true
-    anchor: "mise-en-place"
-    subtitle: "Mode opératoire"
-    title: "Mettre en Place le FMD en 4 Étapes"
-    image: "images/carpooling_kpis.png"
-    content_position: "right"
-    content: "La mise en place du FMD covoiturage est plus simple que la plupart des avantages salariés — à condition de traiter la question des justificatifs dès le départ :
-
-    * **1. Définir les modalités et le budget** — Montant (forfait annuel, forfait par jour covoituré ou barème kilométrique), modes de transport encouragés, salariés éligibles, rythme de versement. La plupart des entreprises retiennent un forfait simple : par exemple 2 à 3 € par jour covoituré, plafonné à 600 €/an
-
-    * **2. Formaliser** — Accord d'entreprise (recommandé au-delà de 50 salariés) ou décision unilatérale de l'employeur (DUE), après consultation du CSE s'il existe. Comptez 2 à 4 semaines, modèles de DUE disponibles auprès de l'ADEME
-
-    * **3. Choisir le mode de preuve des trajets et communiquer** — Attestation sur l'honneur, registre de preuve de covoiturage ou relevés automatiques de plateforme (voir ci-dessous) : c'est le choix qui détermine votre charge administrative et votre solidité en cas de contrôle. Expliquez ensuite aux salariés les montants, les justificatifs attendus et la façon de déclarer leurs trajets
-
-    * **4. Verser et inscrire en paie** — Le FMD apparaît sur le bulletin de paie, exonéré dans les plafonds en vigueur ; conservez les justificatifs au moins trois ans
-
-    **Exemple chiffré** : 40 salariés covoiturent 2 jours par semaine (≈ 90 jours/an) avec un forfait de 3 €/jour → 270 € par salarié et par an, soit 10 800 € de budget, exonérés de charges — souvent moins que le coût de 4 places de parking.
-    "
+      1. **Un cadre formalisé** — accord d'entreprise ou de branche, ou décision unilatérale après consultation du CSE (décret n° 2020-541 du 9 mai 2020). Sans support formel, le forfait est requalifié en salaire.
+      2. **Un justificatif par salarié et par an** — attestation sur l'honneur ou justificatif d'utilisation du mode de transport (article R. 3261-13-2 du Code du travail).
+      3. **Le respect des plafonds** — exonération sociale (article L. 136-1-1 du Code de la sécurité sociale) et fiscale (article 81, 19° ter b du CGI) ; tout dépassement est réintégré.
+      4. **La conservation des preuves au moins trois ans**, durée de la prescription du contrôle URSSAF.
     button:
       enable: false
 
@@ -188,18 +129,10 @@ image_and_content_blocks:
     title: "Justifier les Trajets de Covoiturage"
     image: "images/microsoft-teams.png"
     content_position: "left"
-    content: "Pour que l'exonération tienne en cas de contrôle URSSAF, l'employeur doit pouvoir **prouver la réalité des trajets covoiturés**. C'est le point qui bloque le plus souvent — et celui qui décide de la charge administrative des RH. Trois options, du plus fragile au plus robuste :
+    content: |
+      C'est le point qui bloque le plus souvent. Trois justificatifs sont recevables, du plus fragile au plus robuste : **l'attestation sur l'honneur** du salarié, déclarative ; **les preuves du registre de preuve de covoiturage** ([covoiturage.beta.gouv.fr](https://covoiturage.beta.gouv.fr/)), classées A, B ou C selon la fiabilité ; **les relevés nominatifs et datés d'une plateforme de covoiturage**. Le modèle à télécharger, les pièces acceptées et la procédure de collecte sont détaillés sur notre page [attestation de covoiturage](/fr/attestation-covoiturage-forfait-mobilites-durables/).
 
-    * **L'attestation sur l'honneur du salarié** — Acceptée par l'administration, mais déclarative : fragile en cas de contrôle et lourde à collecter chaque année
-
-    * **Le registre de preuve de covoiturage (RPC)** — Le service public [covoiturage.beta.gouv.fr](https://covoiturage.beta.gouv.fr/) certifie les trajets réalisés via les opérateurs enregistrés, avec des classes de preuve (A, B, C) selon la fiabilité de l'identification et de la géolocalisation
-
-    * **Les relevés automatiques de votre plateforme de covoiturage** — Chaque trajet organisé génère sa propre trace : relevés nominatifs, datés, exportables pour la paie
-
-    C'est là que TeamWheels change la donne : les trajets se déclarent et s'organisent dans Microsoft Teams, et la plateforme produit **des relevés mensuels prêts pour le versement du FMD** — pas de tableur, pas de collecte d'attestations, et un reporting CO₂ qui alimente directement votre bilan GES (poste 7) et la CSRD. Les mêmes relevés servent au reporting Scope 3 et au suivi des plafonds par salarié.
-
-    [Découvrez le logiciel de covoiturage entreprise →](/fr/corporate-carpooling-software/)
-    "
+      Avec TeamWheels, les trajets s'organisent dans Microsoft Teams et la plateforme produit **des relevés mensuels prêts pour le versement du FMD**, qui alimentent aussi le reporting CO₂ (bilan GES poste 7, CSRD). [Découvrez le logiciel de covoiturage entreprise →](/fr/corporate-carpooling-software/)
     button:
       enable: false
 
@@ -209,19 +142,45 @@ image_and_content_blocks:
       src: "fmd-covoiturage"
 
   - enable: true
+    anchor: "cumuls"
+    subtitle: "Cumuls & cas particuliers"
+    title: "Cumuler le FMD avec les Autres Dispositifs"
+    image: "images/why_use_teamWheels.png"
+    content_position: "left"
+    content: |
+      * **FMD + abonnement transport** — plafond global de **900 €/an**, part employeur de l'abonnement comprise.
+      * **FMD + prime de transport (carburant, recharge)** — plafond global de 600 €/an, dont 300 € de carburant ; la mesure exceptionnelle de fin 2026 est expliquée sur notre page [prime transport côté employeur](/fr/prime-transport-employeur/).
+      * **FMD + indemnités kilométriques** — pas de cumul sur un même trajet ; le calcul est sur notre page [indemnité kilométrique](/fr/blog/bareme-kilometrique-2026-indemnite-domicile-travail/).
+      * **FMD + aides locales au covoiturage** — cumulables, ce sont des dispositifs indépendants.
+
+      Toutes les aides et leurs cumuls : [aides à la mobilité durable en entreprise](/fr/blog/aides-mobilite-durable-entreprise-regles-plafonds-cumuls/). Les autres remboursements (repas, télétravail, frais de mission) : [frais professionnels URSSAF](/fr/frais-professionnels-urssaf-mobilite/). Arbitrer salarié par salarié : [comparatif des coûts employeur 2026](/fr/blog/mobilite-salaries-isoles-fmd-ik-voiture-electrique-2026/).
+    button:
+      enable: false
+
+  - enable: true
+    anchor: "mise-en-place"
+    subtitle: "Mode opératoire"
+    title: "Mettre en Place le FMD en 4 Étapes"
+    image: "images/carpooling_kpis.png"
+    content_position: "right"
+    content: |
+      Le FMD se met en place par accord d'entreprise ou par décision unilatérale de l'employeur (DUE) après consultation du CSE, puis s'inscrit en paie, avec des justificatifs conservés trois ans. **Exemple chiffré** : 40 salariés covoiturent 2 jours par semaine (≈ 90 jours/an) à 3 €/jour → 270 € par salarié et par an, soit 10 800 € de budget exonéré de charges.
+
+      Les deux voies, la check-list en 10 étapes et un modèle indicatif de DUE sont sur notre page [mise en place du forfait mobilités durables](/fr/forfait-mobilites-durables-mise-en-place/).
+    button:
+      enable: false
+
+  - enable: true
     anchor: "pourquoi"
     subtitle: "Retour sur investissement"
     title: "Ce que le FMD Rapporte à l'Employeur"
     content_position: "left"
     content: |
-      Le forfait mobilités durables n'est pas qu'une ligne de paie : bien appliqué au covoiturage, il agit sur quatre postes à la fois.
+      * **Attractivité** — un avantage mobilité net d'impôt, différenciant auprès des candidats.
+      * **Impact RSE mesurable** — chaque trajet partagé évite environ 6 kg de CO₂ ; les données alimentent le bilan GES (poste 7) et la CSRD.
+      * **Parking** — 40 covoitureurs réguliers libèrent 15 à 20 places.
 
-      * **Attractivité et fidélisation** — Dans un marché de l'emploi tendu, un avantage mobilité net d'impôt est différenciant, en particulier auprès des candidats sensibles aux engagements environnementaux de leur employeur. Un salarié qui covoiture 4 jours sur 5 sur 30 km économise 1 400 à 1 800 € par an, FMD compris.
-      * **Impact RSE mesurable** — Chaque trajet partagé évite environ 6 kg de CO₂ et retire une voiture du parking. Ces données alimentent directement le bilan GES (poste 7, déplacements domicile-travail) et le reporting CSRD.
-      * **Économies pour l'entreprise** — Le FMD est exonéré de charges : à budget égal, il rapporte au salarié environ 45 % de plus qu'une augmentation brute, et coûte moins qu'un remboursement kilométrique individuel.
-      * **Moins de pression sur le parking** — 40 covoitureurs réguliers, c'est 15 à 20 places libérées ; en zone urbaine, une place de parking coûte souvent plus que le FMD annuel d'un salarié.
-
-      **Cas particuliers.** Le FMD existe aussi dans les trois versants de la fonction publique (État, territoriale, hospitalière), avec des montants et des modalités propres fixés par décret : un employeur public vérifie les conditions applicables à son versant auprès de la DGAFP. Enfin, l'ADEME propose aux entreprises de signer la [Charte d'engagement en faveur du covoiturage](https://employeursprocovoiturage.ademe.fr/) — mettre en place le FMD covoiturage, communiquer activement et publier ses résultats — un moyen simple de valoriser la démarche dans votre rapport RSE.
+      Le FMD existe aussi dans la fonction publique, avec des règles propres (montants de 100 à 300 € selon le nombre de jours) : voir la section dédiée de notre page [prime mobilité durable](/fr/prime-mobilite-durable/#fonction-publique).
     button:
       enable: false
 
@@ -231,20 +190,26 @@ image_and_content_blocks:
     title: "Les Erreurs à Éviter avec le FMD Covoiturage"
     image: "images/photos/office-parking-lot.jpg"
     content_position: "right"
-    content: "Les redressements URSSAF sur le forfait mobilités durables viennent presque toujours des mêmes manquements :
+    content: |
+      Les redressements viennent presque toujours de cinq manquements : verser le FMD **sans accord ni DUE** ; ne collecter **aucun justificatif** ; **dépasser les plafonds** de cumul sans réintégrer l'excédent ; réserver le FMD à **certains salariés** ; verser **le même montant à tous**, sans lien avec les trajets. La parade : un cadre écrit, un mode de preuve fiable et un suivi des plafonds par salarié.
+    button:
+      enable: false
 
-    * **Verser le FMD sans le formaliser** — Sans accord ni DUE, le forfait est requalifié en salaire et les exonérations tombent
-
-    * **Ne collecter aucun justificatif** — L'absence d'attestation ou de relevé de trajets entraîne la réintégration des sommes dans l'assiette des cotisations
-
-    * **Dépasser les plafonds de cumul** — 900 € en cumul avec l'abonnement transport, 600 € avec la prime carburant : l'excédent doit être réintégré, pas ignoré
-
-    * **Réserver le FMD à certains salariés à conditions inégales** — Le dispositif doit être ouvert à tous les salariés éligibles selon les mêmes règles
-
-    * **Verser le même montant à tous** — Le FMD doit rester proportionnel aux trajets effectués ; un montant uniforme, sans lien avec l'usage réel, est le premier signal qu'un contrôleur relève
-
-    La parade est la même pour les cinq : un cadre écrit, un mode de preuve automatisé et un suivi des plafonds par salarié — ce que produit un outil de covoiturage intégré à la paie.
-    "
+  # Hub du cluster mobilité employeur (J+7 de la spec du 28/10/2026) : un lien
+  # vers chacune des pages dédiées.
+  - enable: true
+    anchor: "guides-fmd"
+    subtitle: "Aller plus loin"
+    title: "Les guides du cluster mobilité employeur"
+    content_position: "left"
+    content: |
+      * [Attestation de covoiturage](/fr/attestation-covoiturage-forfait-mobilites-durables/) — modèle Word et PDF, justificatifs acceptés par l'URSSAF, collecte côté employeur.
+      * [Mise en place du FMD](/fr/forfait-mobilites-durables-mise-en-place/) — accord ou décision unilatérale, consultation du CSE, modèle indicatif de DUE.
+      * [Prime covoiturage 2026](/fr/prime-covoiturage-2026/) — fin de la prime de 100 €, forfait des fonctionnaires, aides locales.
+      * [Prime mobilité durable](/fr/prime-mobilite-durable/) — modes éligibles, titres-mobilité, justificatifs par mode.
+      * [Prime transport côté employeur](/fr/prime-transport-employeur/) — prime carburant, plafonds 2026, cumul avec le FMD.
+      * [Frais professionnels URSSAF](/fr/frais-professionnels-urssaf-mobilite/) — frais réels ou forfait, repas 2026, télétravail.
+      * [Indemnité kilométrique](/fr/blog/bareme-kilometrique-2026-indemnite-domicile-travail/) — calcul pas à pas et barème domicile-travail.
     button:
       enable: false
 
@@ -259,24 +224,16 @@ feature_videos:
   topics: ["reports"]
 
 faq:
-  - question: "Quel est le montant de la prime covoiturage en 2026 ?"
-    answer: "La prime covoiturage que verse l'employeur en 2026, c'est le forfait mobilités durables : il est exonéré de cotisations et d'impôt jusqu'à 600 € par an et par salarié lorsqu'il est versé seul, et jusqu'à 900 € par an en cas de cumul avec la prise en charge de l'abonnement aux transports en commun. Ces plafonds sont fixés par la loi de finances et peuvent évoluer : vérifiez-les chaque année sur service-public.gouv.fr ou urssaf.fr."
-  - question: "Le covoiturage est-il éligible au forfait mobilités durables ?"
-    answer: "Oui. Depuis la loi d'orientation des mobilités (LOM), le covoiturage domicile-travail est un mode éligible au forfait mobilités durables, que le salarié soit conducteur ou passager. L'employeur peut le financer jusqu'à 600 € par an et par salarié exonérés de cotisations sociales et d'impôt sur le revenu — 900 € par an en cas de cumul avec la prise en charge de l'abonnement aux transports en commun."
+  - question: "Quel est le montant du forfait mobilités durables en 2026 ?"
+    answer: "Dans le secteur privé, le forfait mobilités durables est exonéré de cotisations et d'impôt jusqu'à 600 € par an et par salarié lorsqu'il est versé seul, et jusqu'à 900 € par an en cumul avec la prise en charge de l'abonnement de transport public. La loi ne fixe pas de montant minimum : c'est l'employeur qui fixe le montant, dans ces plafonds d'exonération."
   - question: "Que demande l'URSSAF pour exonérer le forfait mobilités durables ?"
-    answer: "Quatre conditions : un dispositif formalisé (accord d'entreprise, accord de branche ou décision unilatérale après consultation du CSE), un justificatif par salarié et par an (attestation sur l'honneur ou justificatif d'utilisation du mode de transport), le respect des plafonds d'exonération, et la conservation des preuves pendant au moins trois ans. Tout montant versé au-delà des plafonds est réintégré dans l'assiette des cotisations."
-  - question: "Quels justificatifs demander pour le covoiturage dans le cadre du FMD ?"
-    answer: "L'employeur doit pouvoir prouver la réalité des trajets covoiturés. Trois options : l'attestation sur l'honneur du salarié (acceptée mais fragile en cas de contrôle URSSAF), les preuves certifiées du registre de preuve de covoiturage (classes A, B ou C selon la fiabilité), ou les relevés automatiques d'une plateforme de covoiturage — la solution la plus robuste et la moins chronophage. Les justificatifs se conservent au moins trois ans."
-  - question: "La prime covoiturage est-elle obligatoire pour l'employeur ?"
-    answer: "Non. Dans le secteur privé, la prime covoiturage (le forfait mobilités durables) est facultative. En revanche, s'il est mis en place, il doit l'être à conditions égales pour tous les salariés éligibles, et la prise en charge de 50 % de l'abonnement aux transports en commun reste, elle, obligatoire."
+    answer: "Quatre conditions : un dispositif formalisé (accord d'entreprise, accord de branche ou décision unilatérale après consultation du CSE), un justificatif par salarié et par an (attestation sur l'honneur ou justificatif d'utilisation du mode de transport), le respect des plafonds d'exonération, et la conservation des preuves pendant au moins trois ans."
+  - question: "Le forfait mobilités durables est-il obligatoire ?"
+    answer: "Non. Dans le secteur privé, le forfait mobilités durables est facultatif. S'il est mis en place, il doit l'être à conditions égales pour tous les salariés éligibles. La prise en charge de 50 % de l'abonnement de transport public reste, elle, obligatoire."
   - question: "Peut-on cumuler le forfait mobilités durables et l'abonnement transport ?"
-    answer: "Le FMD se cumule avec la prise en charge obligatoire de l'abonnement aux transports en commun, dans une limite globale de 900 € par an. Il peut aussi se cumuler avec les aides locales versées par certaines collectivités via des plateformes partenaires, qui sont des dispositifs indépendants. La prime covoiturage nationale de 100 € a, elle, pris fin en janvier 2025. Le cumul avec la prime de transport carburant reste plafonné à 600 € par an au total."
-  - question: "Quel tarif de covoiturage au kilomètre en 2026 ?"
-    answer: "Il n'existe pas de tarif officiel. Le Code des transports autorise seulement le partage des frais : la participation demandée aux passagers ne doit pas dépasser le coût du trajet, que l'on peut estimer avec le barème kilométrique 2026 (0,636 €/km pour une 5 CV jusqu'à 5 000 km), réparti entre tous les occupants, conducteur compris. Côté employeur, un FMD calculé au kilomètre se situe en pratique entre 0,10 et 0,25 € par kilomètre covoituré."
+    answer: "Oui, dans une limite globale de 900 € par an et par salarié, part employeur de l'abonnement comprise. Le cumul avec la prime de transport carburant reste plafonné à 600 € par an au total, dont 300 € de carburant."
   - question: "Conducteur et passager ont-ils tous les deux droit au FMD ?"
-    answer: "Oui. Le forfait mobilités durables couvre le covoiturage domicile-travail pour le conducteur comme pour le passager. Un salarié qui alterne les deux rôles reste éligible ; ce qui compte, c'est la réalité des trajets covoiturés, que l'employeur doit pouvoir justifier."
-  - question: "Comment TeamWheels automatise-t-il les justificatifs FMD ?"
-    answer: "TeamWheels organise le covoiturage domicile-travail directement dans Microsoft Teams : chaque trajet génère un relevé nominatif et daté. L'employeur exporte des attestations mensuelles prêtes pour le versement du FMD en paie, sans collecte manuelle d'attestations sur l'honneur, et le reporting CO₂ alimente le bilan GES (poste 7) et la CSRD."
+    answer: "Oui. Le forfait mobilités durables couvre le covoiturage domicile-travail pour le conducteur comme pour le passager. Un salarié qui alterne les deux rôles reste éligible ; l'employeur doit pouvoir justifier la réalité des trajets."
 
 howto:
   name: "Mettre en place le forfait mobilités durables covoiturage dans votre entreprise"
@@ -302,7 +259,7 @@ howto:
 call_to_action:
   enable: true
   title: "Versez le FMD covoiturage sans collecter une seule attestation"
-  subtitle: "Demandez une démo : covoiturage organisé dans Microsoft Teams, relevés de trajets automatiques prêts pour la paie, reporting RSE inclus. <br><br> <strong>Essai gratuit de 30 jours.</strong> Installation en 5 minutes, sans app séparée pour les salariés."
+  subtitle: "Demandez une démo : covoiturage organisé dans Microsoft Teams, relevés de trajets automatiques prêts pour la paie, reporting RSE inclus. <br><br> <strong>Premier mois offert.</strong> Installation en 5 minutes, sans app séparée pour les salariés."
   button_label: "Demander ma démo →"
   button_link: "contact/"
   image: "images/cta.png"
