@@ -42,7 +42,7 @@ Informations publiques des éditeurs au 4 novembre 2026. Quand une information n
 
 | | **Comovee** | **TeamWheels** |
 |---|---|---|
-| **Éditeur** | [[VERIFY: pays et ville de l'éditeur, source comovee.com/mentions légales]] | Données hébergées en France |
+| **Éditeur** | [[VERIFY: pays et ville de l'éditeur, source comovee.com/mentions légales]] | Données hébergées en Europe |
 | **Modèle** | Plateforme employeur, covoiturage entre collègues | Application Microsoft Teams, covoiturage entre collègues |
 | **Où l'utilisent les salariés** | [[VERIFY: web, iOS, Android ?]] | Dans Microsoft Teams (ordinateur, web, mobile), rien à installer |
 | **Connexion** | [[VERIFY: e-mail professionnel, SSO ?]] | Compte Microsoft 365, SSO Entra ID |

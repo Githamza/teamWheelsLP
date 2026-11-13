@@ -54,7 +54,7 @@ Les informations sur Oxycar sont celles publiées avant sa liquidation. Quand un
 | **Connexion** | Non communiqué | Compte Microsoft 365, SSO Entra ID |
 | **Justificatifs FMD** | Non communiqué | Relevé mensuel par salarié, exportable pour la paie |
 | **Reporting** | Non communiqué | Participation, trajets, CO₂ évité (scope 3, catégorie 7), places de parking libérées |
-| **Données** | Non communiqué | Dans votre tenant Microsoft 365, hébergées en France, RGPD |
+| **Données** | Non communiqué | Dans votre tenant Microsoft 365, hébergées en Europe, RGPD |
 | **Tarif** | Non communiqué | 3 € HT par collaborateur et par mois (promo), premier mois offert, engagement trimestriel |
 
 </div>
